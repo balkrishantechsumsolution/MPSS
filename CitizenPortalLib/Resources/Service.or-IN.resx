@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="addressLine1" xml:space="preserve">
+    <value>ଠିକଣା ଧାଡି-୧ (ମାର୍ଫତ)</value>
+  </data>
+  <data name="addressLine2" xml:space="preserve">
+    <value>ଠିକଣା ଧାଡି-୨ (ମହଲା)</value>
+  </data>
+  <data name="ageason01012016" xml:space="preserve">
+    <value>୦୧.୦୧.୨୦୧୬  ସୁଦ୍ଧା ହୋଇଥିବା ବୟସ</value>
+  </data>
+  <data name="appaadharno" xml:space="preserve">
+    <value>ଅ।ଧାରକାର୍ଡର ସମ୍ପୁର୍ଣ୍ଣ ବିବରଣୀ</value>
+  </data>
+  <data name="applicantDetails" xml:space="preserve">
+    <value>ଅ।ବେଦକଙ୍କ ସମ୍ପୁର୍ଣ୍ଣ ବିବରଣୀ</value>
+  </data>
+  <data name="applicantPhotograph" xml:space="preserve">
+    <value>ଅ।ବେଦନକାରୀଙ୍କ ଫଟୋ</value>
+  </data>
+  <data name="applicantSignature" xml:space="preserve">
+    <value>ଅ।ବେଦନକାରୀଙ୍କ ଦସ୍ତଖତ</value>
+  </data>
+  <data name="asperHSCCertificate" xml:space="preserve">
+    <value>(ମାଟ୍ରିକ ପ୍ରମାଣପତ୍ର ଅନୁସାରେ)</value>
+  </data>
+  <data name="blockTaluka" xml:space="preserve">
+    <value>ପଞ୍ଚାୟତ ସମିତି</value>
+  </data>
+  <data name="bronze" xml:space="preserve">
+    <value>ତାମ୍ର</value>
+  </data>
+  <data name="category" xml:space="preserve">
+    <value>ଶ୍ରେଣୀ</value>
+  </data>
+  <data name="chest" xml:space="preserve">
+    <value>ଛାତି</value>
+  </data>
+  <data name="date" xml:space="preserve">
+    <value>ତାରିଖ</value>
+  </data>
+  <data name="dateofBirth" xml:space="preserve">
+    <value>ଜନ୍ମ ତାରିଖ (ମାଟ୍ରିକ ପ୍ରମାଣପତ୍ର ଅନୁସାରେ)</value>
+  </data>
+  <data name="declaration" xml:space="preserve">
+    <value>ଘୋଷଣା</value>
+  </data>
+  <data name="declaration2" xml:space="preserve">
+    <value>ଶାରୀରିକ ସକ୍ଷମ ପରୀକ୍ଷାରେ ଅଂଶଗ୍ରହଣ  ପାଇଁ ଘୋଷଣାନାମା</value>
+  </data>
+  <data name="declarationtext" xml:space="preserve">
+    <value>ଘୋଷଣା କରୁଛି ଯେ, ମୋର ଜ୍ଞାତସାରରେ ଉପରୋକ୍ତ ପ୍ରଦତ୍ତ ତଥ୍ୟ ସଂମ୍ପୁର୍ଣ୍ଣ ଭାବରେ ଠିକ୍। ଯଦି ପ୍ରଦତ୍ତ ତଥ୍ୟରେ କୌଣସି ଭୁଲ ଅଛି ବୋଲି ପ୍ରମାଣିତ ହୁଏ, ତେବେ ମୋର ପ୍ରାର୍ଥୀତ୍ୱ ନାକଚ କରାଯାଇପାରିବ।</value>
+  </data>
+  <data name="declarationtext1" xml:space="preserve">
+    <value>ଯଦି ମୁଁ  ନବମ  ଭାରତୀୟ ରିର୍ଜରଭ  ବ୍ୟାଙ୍କ ବାଟାଲିୟନ(ସ୍ୱତନ୍ତ୍ର)ରେ ମନୋନୀତ ହୁଏ ତେବେ ଓଡିଶାର ଯେକୌଣସି ସ୍ଥାନରେ ସେବା କରିବାକୁ ମୋର କୌଣସି ଅ।ପତ୍ତି ନାହିଁ ।</value>
+  </data>
+  <data name="declarationtext2" xml:space="preserve">
+    <value>ମୁଁ ନିମ୍ନ ସ୍ୱାକ୍ଷରକାରୀ ଶ୍ରୀ</value>
+  </data>
+  <data name="declarationtext3" xml:space="preserve">
+    <value>ଏଠାରେ ଘୋଷଣା କରୁଛି ଯେ ନବମ ଭାରତୀୟ ବଳ(ସ୍ୱତନ୍ତ୍ରର) କନେଷ୍ଟବଳ ପଦବୀ ପାଇଁ ଅନୁଷ୍ଠିତ ଶାରୀରିକ ଦକ୍ଷତା ପରୀକ୍ଷାରେ ଅଂଶଗ୍ରହଣ କରିବା ପାଇଁ ଯୋଗ୍ୟ ଓ ଉପଯୁକ୍ତ ଯେକୌଣସି ଶାରୀରିକ ସକ୍ଷମ ପରୀକ୍ଷା ସମୟରେ ଶାରୀରିକ ଅ।ଘାତ କିମ୍ୱା ଅ।କସ୍ମିକ ଦୁର୍ଘଟଣା ଉକ୍ତ ସ୍ଥାନରେ ଘଟେ, ତେବେ ସଂପୃକ୍ତ ଅଧିକାରୀ ଏଥିପାଇଁ କୌଣସି ପ୍ରକାର ଦାୟୀ କିମ୍ୱା ଉତ୍ତରଦାୟୀ ରହିବେନାହିଁ।</value>
+  </data>
+  <data name="district" xml:space="preserve">
+    <value>ଜିଲ୍ଲା</value>
+  </data>
+  <data name="educationalQualificationofHSC" xml:space="preserve">
+    <value>ଶିକ୍ଷାଗତ ଯୋଗ୍ୟତା, ମାଟ୍ରିକ</value>
+  </data>
+  <data name="eExDistrict" xml:space="preserve">
+    <value>ନିଯୁକ୍ତି ପଞ୍ଜିକୃତ ଜିଲ୍ଲା</value>
+  </data>
+  <data name="eExRegistrationDate" xml:space="preserve">
+    <value>ନିଯୁକ୍ତି ପଞ୍ଜିକୃତ ତାରିଖ</value>
+  </data>
+  <data name="eExRegistrationName" xml:space="preserve">
+    <value>ନିଯୁକ୍ତି ପଞ୍ଜିକରଣ କେନ୍ଦ୍ର ର ନାମ</value>
+  </data>
+  <data name="eExRegistrationNo" xml:space="preserve">
+    <value>ନିଯୁକ୍ତି ପଞ୍ଜିକୃତ କ୍ରମାଙ୍କ</value>
+  </data>
+  <data name="emailID" xml:space="preserve">
+    <value>ଇମେଲ</value>
+  </data>
+  <data name="employmentExchangeDetails" xml:space="preserve">
+    <value>ନିଯୁକ୍ତି ପଞ୍ଜିକରଣ ସଂସ୍ଥାର ବିସ୍ତୃତ ବିବରଣୀ</value>
+  </data>
+  <data name="examCleared" xml:space="preserve">
+    <value>ପରୀକ୍ଷାରେ ସଫଳତା</value>
+  </data>
+  <data name="fatherName" xml:space="preserve">
+    <value>ପିତାଙ୍କର ନାମ</value>
+  </data>
+  <data name="forcorrespondence" xml:space="preserve">
+    <value>(ଯୋଗାଯୋଗପାଇଁ)</value>
+  </data>
+  <data name="from" xml:space="preserve">
+    <value>ଠାରୁ</value>
+  </data>
+  <data name="gender" xml:space="preserve">
+    <value>ଲିଙ୍ଗ</value>
+  </data>
+  <data name="gold" xml:space="preserve">
+    <value>ସ୍ୱର୍ଣ୍ଣ</value>
+  </data>
+  <data name="grade" xml:space="preserve">
+    <value>ଗ୍ରେଡ୍</value>
+  </data>
+  <data name="heavyVehicle" xml:space="preserve">
+    <value>ଭାରି  ଯାନ</value>
+  </data>
+  <data name="height" xml:space="preserve">
+    <value>ଉଚ୍ଚତା</value>
+  </data>
+  <data name="i" xml:space="preserve">
+    <value>ମୁଁ ଶ୍ରୀ</value>
+  </data>
+  <data name="international" xml:space="preserve">
+    <value>ଅ।ର୍ନ୍ତଜାତୀୟ</value>
+  </data>
+  <data name="landmark" xml:space="preserve">
+    <value>ସ୍ଥାନୀୟ ଚିହ୍ନ</value>
+  </data>
+  <data name="lblAppGender" xml:space="preserve">
+    <value>ଲିଙ୍ଗ</value>
+  </data>
+  <data name="lblFirstPreference" xml:space="preserve">
+    <value>ପ୍ରଥମ ପସନ୍ଦ</value>
+  </data>
+  <data name="lblOISFTitle" xml:space="preserve">
+    <value>ନବମ ଇଣ୍ଡିଆ ରିଜର୍ଭ ବାଟାଲିୟନ୍ (ସ୍ୱତନ୍ତ୍ର) ରେ କନେଷ୍ଟବଳ ନିଯୁକ୍ତି ପାଇଁ ଆବେଦନ ପତ୍ର</value>
+  </data>
+  <data name="lightVehicle" xml:space="preserve">
+    <value>ହାଲୁକା  ଯାନ</value>
+  </data>
+  <data name="locality" xml:space="preserve">
+    <value>ଅଞ୍ଚଳ</value>
+  </data>
+  <data name="markSecured" xml:space="preserve">
+    <value>ପ୍ରାପ୍ତ ନମ୍ବର</value>
+  </data>
+  <data name="mobileno" xml:space="preserve">
+    <value>ମୋବଇଲ୍ ନମ୍ବର</value>
+  </data>
+  <data name="nameoftheBoardCouncil" xml:space="preserve">
+    <value>ମାଧ୍ୟମିକ/ଉଚ୍ଚମାଧ୍ୟମିକ ଶିକ୍ଷାପରିଷଦର ନାମ</value>
+  </data>
+  <data name="nameoftheCandidate" xml:space="preserve">
+    <value>ପ୍ରାର୍ଥୀଙ୍କର ନାମ</value>
+  </data>
+  <data name="nameoftheExaminationPassed" xml:space="preserve">
+    <value>ଉତ୍ତୀର୍ଣ୍ଣ ପରୀକ୍ଷା ନାମ(ମାଧ୍ୟମିକ ଶିକ୍ଷା ପରିଷଦ ବା ତତୁଲ୍ୟ)</value>
+  </data>
+  <data name="national" xml:space="preserve">
+    <value>ଜାତୀୟ</value>
+  </data>
+  <data name="nationality" xml:space="preserve">
+    <value>ଜାତୀୟତା</value>
+  </data>
+  <data name="no" xml:space="preserve">
+    <value>ନାଁ</value>
+  </data>
+  <data name="noabilitytoOdialang" xml:space="preserve">
+    <value>ଓଡିଅ। ଭାଷା ଯୋଗ୍ୟତା</value>
+  </data>
+  <data name="otherInformation" xml:space="preserve">
+    <value>ଅନ୍ୟ ସୂଚନା</value>
+  </data>
+  <data name="panchayatVillageCity" xml:space="preserve">
+    <value>ପଞ୍ଚାୟତ/ଗ୍ରାମ/ସହର</value>
+  </data>
+  <data name="percentage" xml:space="preserve">
+    <value>ଶତକଡା</value>
+  </data>
+  <data name="permanentAddress" xml:space="preserve">
+    <value>ସ୍ଥାୟୀ ଠିକଣା</value>
+  </data>
+  <data name="pincode" xml:space="preserve">
+    <value>ଡାକଘର କ୍ରମାଙ୍କ</value>
+  </data>
+  <data name="place" xml:space="preserve">
+    <value>ସ୍ଥାନ</value>
+  </data>
+  <data name="presentAddress" xml:space="preserve">
+    <value>ବର୍ତ୍ତମାନ ଠିକଣା</value>
+  </data>
+  <data name="read" xml:space="preserve">
+    <value>ପଢିବା</value>
+  </data>
+  <data name="religion" xml:space="preserve">
+    <value>ଧର୍ମ</value>
+  </data>
+  <data name="roadStreetName" xml:space="preserve">
+    <value>ରାସ୍ତା/ମାର୍ଗର ନାମ</value>
+  </data>
+  <data name="sameasPermanentAddress" xml:space="preserve">
+    <value>ଯଦି ସ୍ଥାୟୀ ଠିକଣା ସମାନ</value>
+  </data>
+  <data name="secondpreference" xml:space="preserve">
+    <value>ଅପ୍ପଳୟ ଫୋର ସେକେଣ୍ଡ ପ୍ରିଫରେନ୍ସ</value>
+  </data>
+  <data name="section1" xml:space="preserve">
+    <value>ଅ।ବେଦନକାରୀ  ମେଟ୍ରିକ  ପରୀକ୍ଷାରେ  ଓଡିଅ।କୁ ବିଷୟ ରଖି ଉତ୍ତୀର୍ଣ୍ଣ ହୋଇଛନ୍ତି    କିମ୍ବା  ଗଣଶିକ୍ଷା  ବିଭାଗ   ଅଧୀନରେ ମଧ୍ୟ  ଇଂଗ୍ରାଜୀ ଶ୍ରେଣୀ ସମତୁଲ୍ୟ ଓଡିଅ।  ଭାଷା ପରୀକ୍ଷାରେ ଉତ୍ତୀର୍ଣ୍ଣ ହୋଇଛନ୍ତି କି?( ଉତ୍ତୀର୍ଣ୍ଣ ପ୍ରମାଣପତ୍ରର ଅବିକଳ ନକଲ ନିଜ ସ୍ୱାକ୍ଷର ଥାଇ ଏହା ସହ ସଂପୃକ୍ତ କରିବେ)</value>
+  </data>
+  <data name="section2" xml:space="preserve">
+    <value>ଅ।ବେଦନକାରୀ ବିବାହିତ କି?</value>
+  </data>
+  <data name="section2a" xml:space="preserve">
+    <value>ଯଦି ହଁ, ତେବେ ଏକାଧିକ ସ୍ତ୍ରୀ ସହ ବାସ କରୁଛନ୍ତି କି?</value>
+  </data>
+  <data name="section3" xml:space="preserve">
+    <value>ଅ।ବେଦନକାରୀ ପ୍ରାକ୍ତନ ପ୍ରତିରକ୍ଷା କର୍ମଚାରୀ କି?</value>
+  </data>
+  <data name="section3a" xml:space="preserve">
+    <value>ପ୍ରତିରକ୍ଷା ବାହିନୀର   ନିଯୁକ୍ତି  କାଳୀନ ବିବରଣୀ(ଅବଧି)</value>
+  </data>
+  <data name="section3b" xml:space="preserve">
+    <value>ଚାକିରି ବର୍ଷ ସଂଖ୍ୟା</value>
+  </data>
+  <data name="section4" xml:space="preserve">
+    <value>ଅବେଦନକାରୀ ଖେଳାଳୀ କି?</value>
+  </data>
+  <data name="section4a" xml:space="preserve">
+    <value>ଦୟାକରି ଭାଗନେଇଥିବା ଖେଳଟିକୁ ଚୟନ କରନ୍ତୁ</value>
+  </data>
+  <data name="section4b" xml:space="preserve">
+    <value>ଦୟାକରି କ୍ରୀଡାସଙ୍ଘ/ସଂଙ୍ଗଠନର ନାମ ଉଲ୍ଲେଖ କରନ୍ତୁ</value>
+  </data>
+  <data name="section4c" xml:space="preserve">
+    <value>ଉଚ୍ଚତା,  ଓଜନ,  ଛାତି କୋହଳ ଚାହୁଁଛନ୍ତି କି?</value>
+  </data>
+  <data name="section4d" xml:space="preserve">
+    <value>ଶାରୀରିକ ମାପ କୋହଳ ଚାହୁଁଛନ୍ତି କି?</value>
+  </data>
+  <data name="section5" xml:space="preserve">
+    <value>କ୍ରୀଡାବିତ୍ କି?  (ଜାତୀୟ ପ୍ରତିଯୋଗିତାରେ ଅଂଶଗ୍ରହଣ କରିଥିବେ / ଅ।ର୍ନ୍ତଜାତୀୟ ପ୍ରତିଯୋଗିତା ଏବଂ ଜାତୀୟ କ୍ରୀଡା ମହାସଂଘ ଅନୁମୋଦିତ ଏବଂ ପ୍ରାୟୋଜିତ ସମତୁଲ୍ୟ/ଭାରତୀୟ   ଅଲମ୍ପିକ   କ୍ରୀଡାସଂଘ/ଓଡିଶା   ରାଜ୍ୟ  କ୍ରୀଡାସଂଘ /ଜାତୀୟ   କ୍ରୀଡା   ମହାସଂଘ  ଦ୍ୱାରା  ଅନୁବନ୍ଧିତ  ହୋଇଥିବା ସଙ୍ଗଠନ ମଧ୍ୟରୁ ପ୍ରାର୍ଥୀ ଗୋଟିଏ କ୍ରୀଡାକୁ ସୂଚୀତ କରିବେ)</value>
+  </data>
+  <data name="section5a" xml:space="preserve">
+    <value>ଅଂଶଗ୍ରହଣ କରିଥିବା କ୍ରୀଡା ପ୍ରତିଯୋଗିତା</value>
+  </data>
+  <data name="section5b" xml:space="preserve">
+    <value>କେଉଁ ଖେଳ ଓ ଶ୍ରେଣୀ (ଜାତୀୟ, ଅ।ର୍ନ୍ତଜାତୀୟ)</value>
+  </data>
+  <data name="section5c" xml:space="preserve">
+    <value>ସମ୍ବର୍ଦ୍ଧିତ ଯେକୌଣସି ପଦକ (ସ୍ୱର୍ଣ, ରୌପ୍ୟ, ବ୍ରୋଞ୍ଚ) (ପ୍ରଥମ.ଦ୍ୱିତୀୟ,ତୃତୀୟ)</value>
+  </data>
+  <data name="section6" xml:space="preserve">
+    <value>ପ୍ରାର୍ଥୀ ଜାତୀୟ ସମର ଶିକ୍ଷାର୍ଥୀ  ବାହୀନି ସର୍ଟିଫିକେଟ  ପାଇଛନ୍ତି କି? </value>
+  </data>
+  <data name="section6a" xml:space="preserve">
+    <value>ସମର ଶିକ୍ଷାର୍ଥୀ ବାହିନୀ ପ୍ରମାଣପତ୍ରର ଶ୍ରେଣୀ</value>
+  </data>
+  <data name="section7" xml:space="preserve">
+    <value>ପ୍ରାର୍ଥୀ ମୋଟର ଚାଳନା ଅନୁମତିପତ୍ର ପାଇଛନ୍ତି ଯାହା ବୈଧତା ୧ବର୍ଷ(ଅସ୍ଥାୟୀ କାଳସମେତ)</value>
+  </data>
+  <data name="section7a" xml:space="preserve">
+    <value>ଏହି ଅନୁମତି ପତ୍ର ଭାରୀଯାନ କିମ୍ୱା ହାଲୁକାଯାନପାଇଁ ଉପଯୁକ୍ତ(ଅନୁମତିପତ୍ରର ଅବିକଳ ନକଲ ନିଜ ସ୍ୱାକ୍ଷରସହିତ ଏଥିରେ ସଂଯୁକ୍ତ କରନ୍ତୁ) ।</value>
+  </data>
+  <data name="section7b" xml:space="preserve">
+    <value>ମୋଟର ଗାଡି ଚାଳନା ଅନୁମତିପତ୍ର  ନମ୍ୱର ଓ ତାରିଖ</value>
+  </data>
+  <data name="section7c" xml:space="preserve">
+    <value>ଅନୁମତି  ପତ୍ର ପ୍ରଦାନ କରିଥିବା  ଜିଲ୍ଲା ପରିବହନ କାର୍ଯ୍ୟାଳୟ</value>
+  </data>
+  <data name="section7d" xml:space="preserve">
+    <value>ଅନୁମତି ପତ୍ର ପ୍ରଦାନ କରିଥିବା  ପରିବହନ କାର୍ଯ୍ୟାଳୟ</value>
+  </data>
+  <data name="section8" xml:space="preserve">
+    <value>ପ୍ରାର୍ଥୀ କୌଣସି ଅପରାଧ ମାମଲାରେ ସଂପୃକ୍ତ ଅଛନ୍ତି କି?</value>
+  </data>
+  <data name="section8a" xml:space="preserve">
+    <value>ଅପରାଧ ମାମଲାର ସ୍ଥିତି</value>
+  </data>
+  <data name="section8b" xml:space="preserve">
+    <value>କେଉଁ ଥାନାରେ ଏହା ପଞ୍ଜିକୃତ</value>
+  </data>
+  <data name="section8c" xml:space="preserve">
+    <value>ଜିଲ୍ଲାର ନାମ</value>
+  </data>
+  <data name="section8d" xml:space="preserve">
+    <value>ପୋଲିସ  ଥାନାର ନାମ</value>
+  </data>
+  <data name="section8e" xml:space="preserve">
+    <value>ଥାନାରେ ଏହାର ଅନୁସୂଚୀତ କ୍ରମାଙ୍କ</value>
+  </data>
+  <data name="section8f" xml:space="preserve">
+    <value>ଭାରତୀୟ ପିଙ୍ଗଳକୋର୍ଡ ଧାରା</value>
+  </data>
+  <data name="signature" xml:space="preserve">
+    <value>ଆବେଦନ କାରୀଙ୍କ ସମ୍ପୂର୍ଣ ନାମ</value>
+  </data>
+  <data name="silver" xml:space="preserve">
+    <value>ରୌପ୍ୟ</value>
+  </data>
+  <data name="sonof" xml:space="preserve">
+    <value>ପିତା</value>
+  </data>
+  <data name="speak" xml:space="preserve">
+    <value>କହିବା</value>
+  </data>
+  <data name="state" xml:space="preserve">
+    <value>ରାଜ୍ୟ</value>
+  </data>
+  <data name="telelphone" xml:space="preserve">
+    <value>ଟେଲିଫୋନ</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>ପର୍ଯ୍ୟନ୍ତ</value>
+  </data>
+  <data name="totalMarks" xml:space="preserve">
+    <value>ମୋଟ ନମ୍ବର</value>
+  </data>
+  <data name="weight" xml:space="preserve">
+    <value>ଓଜନ</value>
+  </data>
+  <data name="withSTDCode" xml:space="preserve">
+    <value>ଦୁରଭାଷା (ସ୍ଥାନୀୟ କୋଡ୍)</value>
+  </data>
+  <data name="write" xml:space="preserve">
+    <value>ଲେଖିବା</value>
+  </data>
+  <data name="yearofPassing" xml:space="preserve">
+    <value>ଉତ୍ତୀର୍ଣ୍ଣ ବର୍ଷ</value>
+  </data>
+  <data name="yes" xml:space="preserve">
+    <value>ହଁ</value>
+  </data>
+  <data name="alternatemobile" xml:space="preserve">
+    <value>ଅନ୍ୟ ମୋବଇଲ୍ ନମ୍ବର</value>
+  </data>
+  <data name="boardRollNo" xml:space="preserve">
+    <value>Board Roll No.</value>
+  </data>
+  <data name="designation" xml:space="preserve">
+    <value>Designation</value>
+  </data>
+  <data name="diplomaAgro" xml:space="preserve">
+    <value>Diploma in Agro-Polytechnic Details (only for OUAT Diploma Student)</value>
+  </data>
+  <data name="empcode" xml:space="preserve">
+    <value>Employee Code</value>
+  </data>
+  <data name="examcenter" xml:space="preserve">
+    <value>Choice of Examination Center</value>
+  </data>
+  <data name="hSc2ouat" xml:space="preserve">
+    <value>Education Qualification of Higher Secondary Examination (10+2) Sc</value>
+  </data>
+  <data name="milsubject" xml:space="preserve">
+    <value>Name of the MIL Subject</value>
+  </data>
+  <data name="motherName" xml:space="preserve">
+    <value>Mother's Name</value>
+  </data>
+  <data name="motherTongue" xml:space="preserve">
+    <value>Mother Tongue</value>
+  </data>
+  <data name="nriaddressAbroad" xml:space="preserve">
+    <value>NRI Present Address in Abroad</value>
+  </data>
+  <data name="nriadressIndia" xml:space="preserve">
+    <value>NRI Permanent Address in India</value>
+  </data>
+  <data name="nRISponsor" xml:space="preserve">
+    <value>Details Sponsorship Under NRI Quota (as per Passport)</value>
+  </data>
+  <data name="officeOUAT" xml:space="preserve">
+    <value>Name of the Office Serving / Last Served</value>
+  </data>
+  <data name="ouatDeclaration" xml:space="preserve">
+    <value>hereby affirm that the information given by me in the application is complete and true to the best of my knowledge and belief and that I have made the application with the consent and approval of my parents/guardian</value>
+  </data>
+  <data name="ouatEmp" xml:space="preserve">
+    <value>Is a children of OUAT Employee? (If yes need to Identity Card of the Employee as a Proof)</value>
+  </data>
+  <data name="ouatUndertaking" xml:space="preserve">
+    <value>In the event of my admission to any course I hereby undertake to abide by the disciplinary rules and regulations of  the Hostel, College and the University and not to involve my self in any such activities as : violation of hostel discipline, disobedience of instructions of hostel authorities, Immoral conduct of disorderly behavior including “ragging”</value>
+  </data>
+  <data name="ouatUndertaking11ouat" xml:space="preserve">
+    <value>hereby undertake to abide by the disciplinary rules and regulations of  the Hostel, College and the University and not to involve my self in any such activities as : violation of hostel discipline, disobedience of instructions of hostel authorities, Immoral conduct of disorderly behavior including “ragging”.</value>
+  </data>
+  <data name="ouatUndertaking12ouat" xml:space="preserve">
+    <value>In case of my involvement in any of above indiscipline conduct, I hereby undertake to abide by the decisions of the competent authority and to withdraw my self from the Hostel, College and the University if the authority to direct me that such withdrawal is necessary in the interest of the institution.</value>
+  </data>
+  <data name="ouatUndertaking1ouat" xml:space="preserve">
+    <value>In case of my involvement in any of above indiscipline conduct, I hereby undertake to abide by the decisions of the competent authority and to withdraw my self from the Hostel, College and the University if the authority to direct me that such withdrawal is necessary in the interest of the institution.</value>
+  </data>
+  <data name="relationcandidate" xml:space="preserve">
+    <value>Relation with Candidate</value>
+  </data>
+  <data name="reservedseat" xml:space="preserve">
+    <value>Wants to claim for Reserved Seats?</value>
+  </data>
+  <data name="seatcategory" xml:space="preserve">
+    <value>Select Category to claim reserved seat</value>
+  </data>
+  <data name="selectEducation" xml:space="preserve">
+    <value>Highest Education Passed</value>
+  </data>
+  <data name="sponsoremail" xml:space="preserve">
+    <value>Email ID of Sponsor</value>
+  </data>
+  <data name="sponsormobile" xml:space="preserve">
+    <value>Mobile No of Sponsor</value>
+  </data>
+  <data name="sponsorperson" xml:space="preserve">
+    <value>Name of Sponsoring Person</value>
+  </data>
+  <data name="sponsorrelation" xml:space="preserve">
+    <value>Relationship with Sponsor</value>
+  </data>
+  <data name="statusservice" xml:space="preserve">
+    <value>Status of Service</value>
+  </data>
+</root>

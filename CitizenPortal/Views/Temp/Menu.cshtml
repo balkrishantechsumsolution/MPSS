@@ -1,0 +1,67 @@
+﻿@{
+    List<CitizenPortalLib.PortalViewModel.MenuDataModel> menuList = ViewBag.MenuData;
+}
+<script>
+
+    jQuery(document).ready(function () {
+        jQuery('ul.sf-menu').superfish({
+            animation: { height: 'show' },	// slide-down effect without fade-in
+            delay: 120		// 1.2 second delay on mouseout
+        });
+    });
+
+</script>
+
+@if (menuList != null)
+{
+    foreach (var mp in menuList.Where(p => p.PARENTID == 0))
+    {
+        <div>
+            @* <ul id="accordion">*@
+            <nav>
+                <ul id="verticalmenu" class="sf-menu sf-vertical">
+
+                    <li>
+                        <a href="#">@mp.MenuHeading</a>
+                        @if (menuList.Count(p => p.PARENTID == mp.MenuId) > 0)
+                        {
+                        @:<ul>
+                }
+                        @RenderMenuItem(menuList, mp)
+                        @if (menuList.Count(p => p.PARENTID == mp.MenuId) > 0)
+                        {
+                        @:</ul>
+                        }
+                    </li>
+                </ul>
+            </nav>
+            @* </ul>*@
+        </div>
+        @helper RenderMenuItem(List<CitizenPortalLib.PortalViewModel.MenuDataModel> menuList, CitizenPortalLib.PortalViewModel.MenuDataModel mi)
+        {
+foreach (var cp in menuList.Where(p => p.PARENTID == mi.MenuId))
+{
+
+        @:<li>
+if (menuList.Count(p => p.PARENTID == cp.MenuId) > 0)
+    {
+            <a href="#">@cp.MenuHeading</a>
+            @:<ul class="sf-menu sf-vertical">
+        }
+
+        @RenderMenuItem(menuList, cp)
+    if (menuList.Count(p => p.PARENTID == cp.MenuId) > 0)
+    {
+            <a href="#">@cp.MenuHeading</a>
+            @:</ul>
+    }
+    else
+    {
+            @Html.ActionLink(@cp.MenuHeading, @cp.Action, @cp.Controller, new { area = @cp.Area }, null)
+            @:</li>
+    }
+
+}
+}
+    }
+}

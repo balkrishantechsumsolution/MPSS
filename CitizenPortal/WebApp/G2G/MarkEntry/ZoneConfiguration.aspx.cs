@@ -1,0 +1,572 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data;
+using CitizenPortalLib.BLL;
+using System.Web.UI.HtmlControls;
+using System.Text;
+using CitizenPortalLib;
+using CitizenPortalLib.DataStructs;
+
+namespace CitizenPortal.WebApp.G2G.MarkEntry
+{
+    public partial class ZoneConfiguration : AdminBasePage
+    {
+        CBCSAdmissionFormBLL m_AdmissionFormBLL = new CBCSAdmissionFormBLL();
+        G2GDashboardBLL m_G2GDashboardBLL = new G2GDashboardBLL();
+        List<string> Checked = new List<string>();
+        string m_Message = "";
+        string m_LoginID = "";
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            m_LoginID = Session["LoginID"].ToString();
+            //if ((!Session["LoginID"].ToString().Contains("Admin")))
+            if (Session["menuRole"].ToString() == "College" || Session["menuRole"].ToString() == "Principal")
+            {
+                ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Invalid User!!", "alert('" + Session["LoginID"].ToString() + "' is not a valid user to use this page.');", true);
+                return;
+            }
+
+            if (!IsPostBack)
+            {
+                divDetails.Visible = false;
+                GetZone();
+                BranchList();
+                divAddH.Visible = false;
+                divAddD.Visible = false;
+            }
+           
+        }
+
+        public void BranchList()
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                dt = m_AdmissionFormBLL.GetCBCSCourseLists();
+                if (dt != null && dt.Rows.Count > 0)
+                {
+                    ddlBranch.DataSource = dt;
+                    ddlBranch.DataTextField = "Course";
+                    ddlBranch.DataValueField = "BranchCode";
+                    ddlBranch.DataBind();
+                    ddlBranch.Items.Insert(0, new ListItem("Select", "0"));
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+        private void GetZone()
+        {
+            DataTable dt = new DataTable();
+            dt = m_AdmissionFormBLL.GetZone(m_LoginID);
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                ddlZone.DataSource = dt;
+                ddlZone.DataTextField = "ZoneName";
+                ddlZone.DataValueField = "ZoneID";
+                ddlZone.DataBind();
+                ddlZone.Items.Insert(0, new ListItem("Select", "0"));
+            }
+        }
+        private void GetSubjectType()
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                dt = m_AdmissionFormBLL.GetPaperSubjectType(ddlBranch.SelectedValue, ddlSemester.SelectedValue);
+                if (dt != null && dt.Rows.Count > 0)
+                {
+                    ddlSubject.DataSource = dt;
+                    ddlSubject.DataTextField = "SubjectType";
+                    ddlSubject.DataValueField = "SubjectType";
+                    ddlSubject.DataBind();                    
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
+        public void LoadGridData(string p_ActionType)
+        {
+            string LoginID = ""; 
+            string t_Zone = "";
+            string t_Year = "";
+            string Semester = "";
+            
+
+            LoginID = Convert.ToString(Session["LoginID"]);
+            
+            if (ddlZone.SelectedIndex != 0)
+            {
+                t_Zone = ddlZone.SelectedValue;
+            }            
+            
+            if (ddlSession.SelectedIndex != 0)
+            {
+                t_Year = ddlSession.SelectedValue;
+            }
+
+            if (ddlSemester.SelectedIndex != 0)
+            {
+                Semester = ddlSemester.SelectedValue;
+            }
+                        
+
+            DataSet ds = null;
+            ds = m_G2GDashboardBLL.GetZoneConfiguration(LoginID, Semester, t_Zone, t_Year, hdfActionType.Value, ddlBranch.SelectedValue);
+            
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                DataGridView.DataSource = ds.Tables[0];
+                divDetails.Visible = true;
+                divBtn.Visible = true;
+                divAddD.Visible = false;
+                divAddH.Visible = false;
+            }
+            else
+            {
+                //ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('No Data Found!!!')", true);
+                DataGridView.DataSource = null;
+                DataGridView.DataBind();
+                divDetails.Visible = false;
+                divBtn.Visible = false;
+                divAddD.Visible = false;
+                divAddH.Visible = false;
+            }
+            DataGridView.DataBind();
+        }     
+
+        protected void DataGridView_PreRender(object sender, EventArgs e)
+        {
+            if (DataGridView.Rows.Count > 0)
+            {
+                DataGridView.UseAccessibleHeader = true;
+                DataGridView.HeaderRow.TableSection = TableRowSection.TableHeader;
+                DataGridView.FooterRow.TableSection = TableRowSection.TableFooter;
+            }
+        }
+
+        protected void grdView_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+
+            if (e.Row.RowType == DataControlRowType.DataRow
+            || e.Row.RowType == DataControlRowType.Header
+            || e.Row.RowType == DataControlRowType.Footer)
+            {
+                if (hdfActionType.Value == "0")//Search
+                {
+                    e.Row.Cells[1].Attributes.Add("style", "display:none");
+                    e.Row.Cells[1].Enabled = false;
+                }
+                else if (hdfActionType.Value == "2")//Add
+                {
+                    e.Row.Cells[1].Enabled = true;
+                }
+                else if (hdfActionType.Value == "1")//Edit
+                {
+                    e.Row.Cells[1].Enabled = true;
+                }
+
+
+                e.Row.Cells[2].Enabled = false;
+                e.Row.Cells[3].Enabled = false;
+                e.Row.Cells[4].Enabled = false;
+                e.Row.Cells[5].Enabled = false;
+                e.Row.Cells[6].Enabled = false;
+                e.Row.Cells[7].Enabled = false;
+                e.Row.Cells[8].Enabled = false;
+                e.Row.Cells[9].Enabled = false;
+            }
+        }
+
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
+            hdfActionType.Value = "0";
+            LoadGridData(hdfActionType.Value);
+            divBtn.Visible = false;
+        }
+       
+        public string isApproved(string flg, string req4)
+        {
+            bool isEnable = false;
+            string show = "";
+
+            switch (req4.Trim())
+            {
+                case "U":
+                    {
+                        if (flg.Trim().Substring(0, 1) == "U" || flg.Trim().Substring(3, 1) == "U" || flg.Trim().Substring(0, 1) == "A" || flg.Trim().Substring(3, 1) == "A")
+                        {
+                            isEnable = false;
+                            show = "submitted";
+                        }
+                        else
+                        {
+                            isEnable = true;
+                            show = "Not submitted";
+                        }
+                        break;
+                    }
+                case "A":
+                    {
+                        //if (flg.Trim().Substring(0, 1) == "U" || flg.Trim().Substring(3, 1) == "U")
+                        //{
+                        //    isEnable = true;
+                        //    show = "Not approved";
+                        //}
+                        if (flg.Trim().Substring(0, 1) == "A" || flg.Trim().Substring(3, 1) == "A")
+                        {
+                            isEnable = false;
+                            show = "approved";
+                        }
+                        else
+                        {
+                            isEnable = true;
+                            show = "Not approved";
+                        }
+                        break;
+                    }
+                default:
+                    {
+                        isEnable = false;
+                        show = "";
+                        break;
+                    }
+            }
+            //return isEnable;
+            return show;
+        }
+
+        public bool isAbsent(string marks)
+        {
+            if (marks.Trim().ToUpper() == "Y")
+            { return true; }
+            else { return false; }
+        }
+
+        public bool isApplicable(string flg, string chk4)
+        {
+            bool isApply = false;
+
+            switch (chk4.Trim())
+            {
+
+
+                case "int":
+                    {
+                        if (flg.Trim().Substring(0, 1) == "N")
+                        {
+                            isApply = true;
+                        }
+                        else { isApply = false; }
+
+                        break;
+                    }               
+
+                default:
+                    {
+                        isApply = false;
+                        break;
+                    }
+            }
+            return isApply;
+        }
+
+        void GetSelectedRec()
+        {
+            if (ViewState["Checked"] != null)
+            {
+                Checked = (List<string>)ViewState["Checked"];
+            }
+            foreach (GridViewRow rows in DataGridView.Rows)
+            {
+                if (rows.Cells[0].Controls.Count > 0 && rows.Cells[1].Controls[1].GetType().FullName.Equals(typeof(CheckBox).FullName))
+                {
+                    CheckBox chk = rows.Cells[1].Controls[1] as CheckBox;
+                    HiddenField RowID = rows.Cells[0].Controls[1] as HiddenField;
+                    string t_RowID = RowID.Value;
+                    if (chk.Checked == true)
+                    {
+                        if (!Checked.Contains(t_RowID))
+                            Checked.Add(t_RowID);
+                    }
+                    else
+                    {
+                        if (Checked.Contains(t_RowID))
+                            Checked.Remove(t_RowID);
+                    }
+                }
+            }
+            ViewState.Remove("Checked");
+            ViewState["Checked"] = Checked;
+        }
+
+        string GetRecords()
+        {
+            GetSelectedRec();
+            string t_RowID = "";
+            if (ViewState["Checked"] != null)
+            {
+                Checked = (List<string>)ViewState["Checked"];
+                int t_itemcount = Checked.Count;
+                if (t_itemcount == 0)
+                {
+                    //ScriptManager.RegisterStartupScript(Page, Page.GetType(), "PageScript", "alert('Please Select a Record');", true);
+                    return "";
+                }
+                for (int i = 0; i < t_itemcount; i++)
+                {
+                    if (i > 0)
+                        t_RowID = t_RowID + ",";
+
+                    t_RowID += Checked[i].Split('_')[0];
+                }
+                Checked.Clear();
+                ViewState["Checked"] = Checked;
+                return t_RowID;
+            }
+            return "";
+        }
+
+        protected void btnSave_Click(object sender, EventArgs e)
+        {
+            string FromDate = "";
+            string ToDate = "";
+
+            string t_SubjectType = "";
+            foreach (ListItem item in ddlSubject.Items)
+            {
+                if (item.Selected)
+                {
+                    if (t_SubjectType == "")
+                    { t_SubjectType = item.Value; }
+                    else
+                    {
+                        t_SubjectType += "," + item.Value;
+                    }
+                }
+            }
+            //ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", "alert('" + t_SubjectType + "');", true);
+
+
+            //FromDate = Convert.ToDateTime(StartDate.Text).ToString("yyyy-MM-dd");
+            //ToDate = Convert.ToDateTime(txtToDate.Text).ToString("yyyy-MM-dd");
+
+            int t_UpdateCount = 0;
+            //string t_RowID = GetRecords();
+
+            //if (string.IsNullOrEmpty(t_RowID))
+            //{
+            //    ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Message", "alert('Select Records to continue');", true);
+            //    return;
+            //}
+
+            //string[] t_RowIDArr = t_RowID.Split(',');
+            string t_Semester = ddlSemester.SelectedValue;
+            string t_Year = ddlSession.SelectedValue;
+            string t_Zone = ddlZone.SelectedValue;
+            string t_College = "";
+            string t_Branch = ddlBranch.SelectedValue;
+            bool t_ShowMsg = false;
+            string t_Script = "";
+            bool t_status = false;
+            m_Message = " Record/s updated";
+
+            try
+            {
+                t_College = txtCollegeCode.Text;               
+
+                //Conditation Validation
+                if (t_Zone == "" || t_Zone == "0")
+                {
+                    t_Script = "Please select Zone to configure details!";
+                    ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Invalid Activity", "alert('" + t_Script + "');", true);
+                    return;
+                }
+                if (t_Semester == "" || t_Semester == "0")
+                {
+                    t_Script = "Please select Semester!";
+                    ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Invalid Semester", "alert('" + t_Script + "');", true);
+                    return;
+                }
+
+                if (t_Year == "" || t_Year == "0")
+                {
+                    t_Script = "Please select Exam Year!";
+                    ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Invalid Year", "alert('" + t_Script + "');", true);
+                    return;
+                }
+
+                if (t_College == "" || t_College == "0")
+                {
+                    t_Script = "Please enter College code!";
+                    ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Invalid Year", "alert('" + t_Script + "');", true);
+                    return;
+                }
+
+                if (t_Branch == "" || t_Branch == "0")
+                {
+                    t_Script = "Please select Branch!";
+                    ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Invalid Year", "alert('" + t_Script + "');", true);
+                    return;
+                }
+
+                if (t_SubjectType == "" || t_SubjectType == "0")
+                {
+                    t_Script = "Please select Subject Type!";
+                    ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Invalid Year", "alert('" + t_Script + "');", true);
+                    return;
+                }
+
+                //if (t_txtStartDate.Text == "") { t_Script = "Examination Start Date is blank!"; ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Invalid Activity Start Date", "alert('" + t_Script + "');", true); return; }
+                //if (t_txtEndDate.Text == "") { t_Script = "Examination End Date is blank!"; ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Invalid Activity End Date", "alert('" + t_Script + "');", true); return; }
+
+
+                //DateTime StartDate = Convert.ToDateTime(t_txtStartDate.Text);
+                //DateTime EndDate = Convert.ToDateTime(t_txtEndDate.Text);
+
+
+                //if (StartDate.CompareTo(EndDate) > 0)
+                //{
+                //    t_Script = "End Date should be greated then Start Date!";
+                //    ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Invalid Date", "alert('" + t_Script + "');", true);
+                //    return;
+                //}
+
+                string[] AFields =
+                            {
+                                "RowID"
+                                ,"ZoneID"
+                                ,"Semester"
+                                ,"ExamYear"
+                                ,"MappedCollege"
+                                ,"SubjectType"
+                                ,"CreatedOn"
+                                ,"CreatedBy"
+
+                                ,"StartDate"
+                                ,"EndDate"
+
+                                ,"ActionType"
+                                , "BranchCode"
+                            };
+
+                Zone_DT t_Zone_DT = new Zone_DT();
+
+                t_Zone_DT.RowID = "";
+                t_Zone_DT.ZoneID = t_Zone;
+                t_Zone_DT.CreatedBy = Session["LoginID"].ToString();
+                t_Zone_DT.Semester = t_Semester;
+                t_Zone_DT.ExamYear = t_Year;
+                t_Zone_DT.MappedCollege = t_College;
+                t_Zone_DT.SubjectType = t_SubjectType;
+                t_Zone_DT.CreatedOn = "";
+
+                t_Zone_DT.StartDate = "";// Convert.ToDateTime(t_txtStartDate.Text).ToString("yyyy-MM-dd HH:mm:ss");
+                t_Zone_DT.EndDate = "";// Convert.ToDateTime(t_txtEndDate.Text).ToString("yyyy-MM-dd HH:mm:ss");
+
+                t_Zone_DT.ActionType = "2";// hdfActionType.Value;
+                t_Zone_DT.BranchCode = t_Branch;
+
+                CBCSAdmissionFormBLL m_AdmissionFormBLL = new CBCSAdmissionFormBLL();
+
+                System.Data.DataTable result = null;
+                string UID = "";
+
+                result = m_AdmissionFormBLL.InsertZoneConfiguration(t_Zone_DT, AFields);
+
+                if (result != null && result.Rows.Count > 0)
+                {
+                    if (result.Rows[0]["Result"].ToString() != "0")
+                    {
+                        t_UpdateCount++;
+
+                    }
+                    t_ShowMsg = true;
+                    m_Message = result.Rows[0]["MSGText"].ToString();
+                }
+                
+                if (t_ShowMsg == true)
+                {
+                    t_Script = "alert('\"{0}\" {1}');";
+                    //if (hdfActionType.Value  != "1")
+                    //    m_Message = "Record inserted sucessfully.";
+                    hdfActionType.Value = "0";
+                    LoadGridData("0");
+                    t_Script = string.Format(t_Script, result.Rows.Count, m_Message);
+
+                }
+
+
+            }
+            catch (Exception ee)
+            {
+
+                t_status = false;
+                m_Message = ee.Message.Replace("\\", "").Replace("\\r\\n", "").Replace(Environment.NewLine, "").Replace("'", "").Replace("\"", "");
+                t_Script = "alert('\"{0}\" {1}')";
+                t_Script = string.Format(t_Script, "Error ", m_Message.Replace("\r\n", ""));
+
+                //ScriptManager.RegisterClientScriptBlock(Page, this.GetType(), "Message", "alert('" + ee.Message.Replace("'", "") + ee.StackTrace.Replace(Environment.NewLine, "<br />") + "')", true);
+            }
+            finally
+            {
+
+            }
+
+            ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Message", t_Script, true);
+        }
+
+        protected void btnAdd_Click(object sender, EventArgs e)
+        {
+            if (ddlZone.SelectedValue == "0" && ddlSemester.SelectedValue == "0" && ddlSession.SelectedValue == "0")
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Please select Activity, Semester & Exam Year to edit record!!!')", true);
+                DataGridView.DataSource = null;
+                divDetails.Visible = false;
+                divBtn.Visible = false;
+                divAddH.Visible = false;
+                divAddD.Visible = false;
+                return;
+            }
+            else
+            {
+                divAddH.Visible = true;
+                divAddD.Visible = true;
+            }
+        }
+
+        protected void btnEdit_Click(object sender, EventArgs e)
+        {
+            if (ddlZone.SelectedValue == "0" && ddlSemester.SelectedValue == "0" && ddlSession.SelectedValue == "0" && ddlBranch.SelectedValue == "0")
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Please select Zone, Semester, Exam Year & Branch to edit record!!!')", true);
+                DataGridView.DataSource = null;
+                divDetails.Visible = false;
+                divBtn.Visible = false;
+                return;
+            }
+            else
+            {
+                divAddD.Visible = true;
+                divAddH.Visible = true;
+                hdfActionType.Value = "0";
+                LoadGridData("0");
+            }
+        }
+
+        protected void ddlBranch_SelectedIndexChanged1(object sender, EventArgs e)
+        {
+            GetSubjectType();            
+        }
+
+    }
+
+}

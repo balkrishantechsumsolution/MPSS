@@ -1,0 +1,287 @@
+﻿body {
+    font-family: Arial;
+    font-size: 13px;
+}
+
+
+keygen, select, select[size="0"], select[size="1"] {
+    border-radius: 0px;
+    border-color: #eee;
+}
+
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border-width: 1px;
+    border-style: inset;
+    border-color: #eee;
+    border-image: initial;
+}
+.capcityBoxHold {
+    background-color: #E9E9E9;
+    border-top: 4px solid #8BBBEA;
+    height: auto;
+}
+
+td, th {
+    padding-left: 5px;
+}
+
+
+.defaultholdTbl {
+        width: 100%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    height: 60%;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-top: 8px solid #8bbbea;
+    border-collapse: collapse;
+    box-shadow: 3px 3px 5px #e0e0e0;
+    padding-bottom:10px;
+}
+
+    .defaultholdTbl h4 {
+        background-color:#1565C0;
+        color:#fff;
+        padding:10px 0 10px 10px;
+    }
+
+
+table.phsclmsmnt {border: 1px solid #CFD8DC; width:100%;
+}
+
+.phsclmsmnt_th {
+    background-color:#90A4AE;
+    border-bottom: 1px solid #CFD8DC;
+    color:#fff;
+}
+
+table#grdCandidatesDtls {
+    width: 95%;
+    background-color: #fff;
+    border: 1px solid #338EE7;
+    border-collapse: collapse;
+}
+
+    table#grdCandidatesDtls th {
+        background-color: #00BFFF;
+        border-bottom: 1px solid #fff;
+        color: #fff;
+        line-height: 30px;
+    }
+
+    table#grdCandidatesDtls td {
+        border-bottom: 1px solid #338EE7;
+        border-left: 1px solid #338EE7;
+        color: #0079A2;
+        padding: 10px;
+    }
+
+#btnAllocate,#btnSeacrh,#btnSearch {
+    background: #DD3D00; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#DD3D00, #FF5113); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#DD3D00, #FF5113); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#DD3D00, #FF5113); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#DD3D00, #FF5113); /* Standard syntax */
+    color: #fff;
+    padding: 10px 0 10px 0;
+    border-radius: 2px;
+    border: 1px solid #E63F00;
+    font-weight: bold;
+    margin-bottom:5px;
+}
+
+
+#btnSearch {
+    background: #DD3D00; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#DD3D00, #FF5113); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#DD3D00, #FF5113); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#DD3D00, #FF5113); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#DD3D00, #FF5113); /* Standard syntax */
+    color: #fff;
+    padding: 4px 10px 4px 10px;
+    border-radius: 2px;
+    border: 1px solid #E63F00;
+    font-weight: bold;
+    margin-bottom:5px;
+}
+
+#btnAssign{ background-color:#5bc0de;
+    color: #fff;
+    padding: 10px 0 10px 0;
+    border-radius: 2px;
+    border: 1px solid #46b8da;
+    font-weight: bold;
+    margin-bottom:5px;
+}
+
+
+#btnSubmit {
+    background-color:#5bc0de;
+    color: #fff;
+    padding: 4px 10px 23px 10px;
+    border-radius: 2px;
+    border: 1px solid #46b8da;
+    font-weight: bold;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+
+#btnHome {
+     background-color:#d9534f;
+    color: #fff;
+    padding: 4px 10px 23px 10px;
+    border-radius: 2px;
+    border: 1px solid #d43f3a;
+    font-weight: bold;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+
+.mtop15 {
+    margin-top:15px !important;
+}
+#btnPrint {
+    background-color:#286090;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+    border-radius: 2px;
+    border: 1px solid #204d74;
+    font-weight: bold;
+    margin-top:5px;
+    margin-bottom:5px;
+    margin-left:5px;
+}
+
+.cndteRw {
+        width: 100%;
+        background-color:#fff;
+        border:1px solid #ddd;
+}
+
+.Rwhd {
+   background-color: #607D8B;
+   padding:5px;
+    color: #fff; 
+        font-weight: bold;
+}
+
+
+.cndteDtlbox {
+        border: 1px solid #CFD8DC;
+}
+
+.cndteDOB {
+    border: 1px solid #CFD8DC;
+    background-color: #CFD8DC;
+}
+
+.cndteFthNme {
+    background-color:#ECEFF1;
+    border: 1px solid #CFD8DC;
+}
+
+table#grdbeforeallocate {
+    width: 100%;
+    line-height: 30px;
+    border: 1px solid #fff;
+    padding: 0 0 0 5px;
+}
+
+    table#grdbeforeallocate th {
+        background: #0080FF; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(#0080FF, #4DA6FF); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#0080FF, #4DA6FF); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#0080FF, #4DA6FF); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#0080FF, #4DA6FF); /* Standard syntax */
+        color: #fff;
+        text-align: left;
+        padding: 0 0 0 5px;
+    }
+
+
+
+    table#grdbeforeallocate tr:nth-child(odd) {
+        background: #A8DFF7;
+        color: #00008C;
+        padding: 0 0 0 5px;
+    }
+
+    table#grdbeforeallocate tr:nth-child(even) {
+        background: #E0F7FA;
+        color: #00008C;
+        padding: 0 0 0 5px;
+    }
+
+
+
+
+
+    table#grdafterallocateCapacity,table#grdafterallocate,table#grdCenter {
+    width: 100%;
+    line-height: 30px;
+    border: 1px solid #fff;
+    padding: 0 0 0 5px;
+}
+
+    table#grdafterallocateCapacity th {
+        background: #0080FF; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(#0080FF, #4DA6FF); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#0080FF, #4DA6FF); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#0080FF, #4DA6FF); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#0080FF, #4DA6FF); /* Standard syntax */
+        color: #fff;
+        text-align: left;
+        padding: 0 0 0 5px;
+    }
+
+
+    table#grdafterallocate th {
+        background: #0080FF; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(#0080FF, #4DA6FF); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#0080FF, #4DA6FF); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#0080FF, #4DA6FF); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#0080FF, #4DA6FF); /* Standard syntax */
+        color: #fff;
+        text-align: left;
+        padding: 0 0 0 5px;
+    }
+
+table#grdCenter {width:99%;
+    margin:0 auto 10px;
+
+}
+    table#grdCenter th {
+        background: #0080FF; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(#0080FF, #4DA6FF); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#0080FF, #4DA6FF); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#0080FF, #4DA6FF); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#0080FF, #4DA6FF); /* Standard syntax */
+        color: #fff;
+        text-align: left;
+        padding: 0 0 0 5px;
+    }
+
+
+    table#grdafterallocateCapacity,table#grdafterallocate,table#grdCenter tr:nth-child(odd) {
+        background: #A8DFF7;
+        color: #00008C;
+        padding: 0 0 0 5px;
+    }
+
+    table#grdafterallocateCapacity,table#grdafterallocate,table#grdCenter tr:nth-child(even) {
+        background: #B2EBF2;
+        color: #00008C;
+        padding: 0 0 0 5px;
+    }
+
+
+#grdCenter {
+}

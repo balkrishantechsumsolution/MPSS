@@ -1,0 +1,624 @@
+﻿@{
+    Layout = "~/Areas/Application/Views/Shared/_KioskRegistrationLayout.cshtml";
+}
+@{
+    ViewBag.Title = "KioskRegistration";
+}
+<h2>KioskRegistration</h2>
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<link href="~/PortalStyles/Kiosk/style.admin.css" rel="stylesheet" />
+
+<div id="progressbar" class="modalBackground" runat="server" clientidmode="Static"
+     style="display: none;">
+    <center style="z-index: 105; left: 45%; position: absolute; top: 50%">
+        <img id="imgloader" alt="" runat="server" src="../Images/waiting.gif"
+             style="width: 150px;" />
+        <center style="font-size: 15px; font-weight: bold; color: Maroon">
+            <br />
+            Please Wait It's Processing
+        </center>
+    </center>
+</div>
+<div id="wrapper">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="col-md-2 navbar-header">
+            <a class="navbar-brand" href="#">
+                <img src="../Images/logo.png" alt="NetPost" />
+            </a>
+        </div>
+        <div class="navbar-header col-md-8">
+            <div class="title">Services</div>
+        </div>
+        <ul class="nav navbar-top-links navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-user fa-fw"></i><i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li>
+                        <a href="#"><i class="fa fa-user fa-fw"></i>User Profile</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-gear fa-fw"></i>Settings</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="login.html"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div id="page-wrapper" style="min-height: 500px !important;">
+        <div class="row">
+        </div>
+        @*<%---Start of Steps----%>*@
+        <div class="row" id="divSteps" style="display: none">
+            <div class="col-md-12 box-container" style="padding: 0;">
+                <div class="text-danger text-danger-green mt0">
+                    <div class="col-md-12" style="margin: 0 auto; width: 100%;">
+                        <div class="step1" id="step1">
+                            <p class="steptext">
+                                1
+                            </p>
+                            <p class="optiontext">
+                                Fill the Application
+                            </p>
+                        </div>
+                        <div class="arrow-line">
+                        </div>
+                        <div class="step2" id="step2">
+                            <p class="steptext">
+                                2
+                            </p>
+                            <p class="optiontext">
+                                Submited the Application
+                            </p>
+                        </div>
+                        <div class="arrow-line">
+                        </div>
+                        <div class="step3" id="step3">
+                            <p class="steptext">
+                                3
+                            </p>
+                            <p class="optiontext">
+                                P
+                            </p>
+                        </div>
+                        <div class="arrow-line">
+                        </div>
+                        <div class="step4" id="step4">
+                            <p class="steptext">
+                                4
+                            </p>
+                            <p class="optiontext">
+                                Receipt Generated
+                            </p>
+                        </div>
+                        <div class="arrow-line">
+                        </div>
+                        <div class="step5" id="step5">
+                            <p class="steptext">
+                                5
+                            </p>
+                            <p class="optiontext">
+                                Pending for Signature
+                            </p>
+                        </div>
+                        <div class="arrow-line">
+                        </div>
+                        <div class="step6" id="step6">
+                            <p class="steptext">
+                                6
+                            </p>
+                            <p class="optiontext">
+                                Certificate Generated
+                            </p>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </div>
+            </div>
+        </div>
+        @*<%---END of Steps-----%>*@
+        @*<%---Start of Instruction----%>*@
+        <div class="row">
+            <div class="col-md-12 box-container mTop15">
+                <div class="box-heading">
+                    <h4 class="box-title register-num">
+                        KIOSK Registration
+                    </h4>
+                </div>
+                <div class="">
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-info">
+                            <span><i class="fa fa-gear fa-fw"></i>Instruction</span>
+                            <ul class="">
+                                <li>
+                                    All astric (*) marked field are mandatory
+                                </li>
+                                <li>
+                                    UID / Voter Id No / PAN No is mandatory
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item list-group-item-success">
+                            <span class=""><i class="fa fa-gear fa-fw"></i>Applicant Photograph</span>
+                            <ul class="">
+                                <li>
+                                    Photograph Format should be JPG/JPEG/ PNG/ TIFF
+                                </li>
+                                <li>
+                                    The size of the photograph should fall between 5KB to 20KB
+                                </li>
+                                <li>
+                                    The width of the photograph should be 160 pixels
+                                </li>
+                                <li>
+                                    The height of the photograph should fall between 200 to 212 pixels
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item list-group-item-info">
+                            <span><i class="fa fa-gear fa-fw"></i>Verification</span>
+                            <ul class="">
+                                <li>
+                                    Verify the mobile and email id, through verification code send through SMS and email
+                                </li>
+                                <li>
+                                    Enter the captcha to verify youself
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="clearfix">
+                    </div>
+                </div>
+            </div>
+        </div>
+        @*<%---END of Instruction-----%>*@
+        <div class="row">
+            @*<%---Start of Verification----%>*@
+            <div class="col-md-9 box-container mTop15">
+                <div class="box-heading">
+                    <h4 class="box-title register-num">
+                        Authenticate User
+                    </h4>
+                </div>
+                <div class="box-body box-body-open">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                        <div class="form-group">
+                            <label class="manadatory" for="lblAadhar">
+                                UID Aadhar No.
+                            </label>
+                            <input class="form-control" placeholder="Enter 12 Digit Aadhar No." name="lblAadhar" type="text" value="" maxlength="12"
+                                   autofocus />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                        <div class="form-group">
+                            <label class="manadatory" for="lblPanNo">
+                                PAN No.
+                            </label>
+                            <input class="form-control" placeholder="Enter PAN No. (AAAAA1111A)" name="lblPanNo" type="text" value="" maxlength="10"
+                                   autofocus />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                        <div class="form-group">
+                            <label class="manadatory" for="lblVoterId">
+                                Voter ID No.
+                            </label>
+                            <input class="form-control" placeholder="Voter ID No." name="lblVoterId" type="text" value=""
+                                   autofocus />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="form-group">
+                            <label class="manadatory" for="lblMobileNo">
+                                Mobile No.
+                            </label>
+                            <input class="form-control" placeholder="Enter 10 Digit Mobile No." name="lblMobileNo" type="text" value="" maxlength="10"
+                                   autofocus />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="form-group">
+                            <label class="manadatory" for="CompanyName">
+                                Mobile No. OTP Verification
+                            </label>
+                            <input class="form-control" placeholder="6 Digit Code received as SMS" name="OTPVerification" type="text" value=""
+                                   autofocus />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="form-group">
+                            <label class="manadatory" for="lblEmailId">
+                                Email Id
+                            </label>
+                            <input class="form-control" placeholder="Email Id" name="lblEmailId" type="email" value=""
+                                   autofocus />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="form-group">
+                            <label class="manadatory" for="ddlYearTerm">
+                                Email Id Verification
+                            </label>
+                            <input class="form-control" placeholder="Enter text send in register email id" name="EmailIdVerification" type="email" value=""
+                                   autofocus />
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </div>
+            </div>
+            @*<%---END of Verification-----%>*@
+            @*<%---Start of PhotoUpload----%>*@
+            <div class="col-md-3 box-container">
+                <div class="box-heading">
+                    <h4 class="box-title register-num">
+                        Applicant Photograph
+                    </h4>
+                </div>
+                <div class="panel panel-success">
+                    <div class="panel-body">
+                        <div class="alert alert-info col-xs-12 col-sm-6 col-md-12 col-lg-12" style="display: none">
+                            Please, upload your recent pasport size photograph size between 200 to 250 pixels.
+                        </div>
+                        <div class="col-lg-12">
+                            <img class="form-control" src="../Images/photo.png" name="photocustomer" style="height: 220px" />
+                            <input class="camera"
+                                   id="File1" name="Photoupload" type="file">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @*<%---END of PhotoUpload-----%>*@
+        </div>
+        @*<%---Start of Personal----%>*@
+        <div class="row">
+            <div class="col-md-12 box-container mTop15">
+                <div class="box-heading">
+                    <h4 class="box-title register-num">
+                        Applicant's Details
+                    </h4>
+                </div>
+                <div class="box-body box-body-open">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="form-group">
+                            <label class="manadatory" for="ddlYearTerm">
+                                First Name
+                            </label>
+                            <input class="form-control" placeholder="First Name" name="First Name" type="text" value=""
+                                   autofocus />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="form-group">
+                            <label class="manadatory" for="Village">
+                                Last Name
+                            </label>
+                            <input class="form-control" placeholder="Last Name" name="Last Name" type="text" value=""
+                                   autofocus />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="form-group">
+                            <label class="manadatory" for="Village">
+                                Father / Husband Name
+                            </label>
+                            <input class="form-control" placeholder="Last Name" name="Last Name" type="text" value=""
+                                   autofocus />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2">
+                        <div class="form-group">
+                            <label class="manadatory" for="Village">
+                                Is Divine Body
+                            </label>
+                            <select class="form-control" data-val="true" data-val-number="State."
+                                    data-val-required="Please select gender." id="ddlState" name="State">
+                                <option>Select</option>
+                                <option>No</option>
+                                <option>Yes</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2">
+                        <div class="form-group">
+                            <label class="manadatory" for="Village">
+                                Date of Birth
+                            </label>
+                            <input class="form-control" name="Date of Birth" type="date" value=""
+                                   autofocus />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-1">
+                        <div class="form-group">
+                            <label class="" for="ddlYearTerm">
+                                Age
+                            </label>
+                            <input class="form-control" name="Age" type="number" value="" min="18" max="99"
+                                   autofocus />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2">
+                        <div class="form-group">
+                            <label class="manadatory" for="ddlGender">
+                                Gender
+                            </label>
+                            <select class="form-control" data-val="true" data-val-number="Gender."
+                                    data-val-required="Please select gender." id="ddlGender" name="Gender">
+                                <option>Select Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Transgender</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </div>
+            </div>
+        </div>
+        @*<%---END of Personal-----%>*@
+        @*<%---Start of PostalAddress----%>*@
+        <div class="row">
+            <div class="col-md-12 box-container mTop15">
+                <div class="box-heading">
+                    <h4 class="box-title register-num">
+                        Postal Address
+                    </h4>
+                </div>
+                <div class="box-body box-body-open">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="form-group">
+                            <label class="manadatory" for="ddlYearTerm">
+                                Address Line-1 (Care of)
+                            </label>
+                            <input class="form-control" placeholder="First Line Address" name="Address Line-1 (Care of)" type="text" value=""
+                                   autofocus />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="form-group">
+                            <label class="" for="Village">
+                                Address Line-2 (Building)
+                            </label>
+                            <input class="form-control" placeholder="Second Line Address" name="Address Line-2 (Building)" type="text" value=""
+                                   autofocus />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="form-group">
+                            <label class="manadatory" for="Village">
+                                Road / Street Name Road
+                            </label>
+                            <input class="form-control" placeholder="Road / Street Name Road" name="Road / Street Name Road" type="text" value=""
+                                   autofocus />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="form-group">
+                            <label class="" for="ddlYearTerm">
+                                Landmark
+                            </label>
+                            <input class="form-control" placeholder="Landmark" name="Landmark" type="text" value=""
+                                   autofocus />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                        <div class="form-group">
+                            <label class="manadatory" for="Village">
+                                Locality
+                            </label>
+                            <input class="form-control" placeholder="Locality" name="Locality" type="text" value=""
+                                   autofocus />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                        <div class="form-group">
+                            <label class="manadatory" for="ddlGender">
+                                State
+                            </label>
+                            <select class="form-control" data-val="true" data-val-number="State."
+                                    data-val-required="Please select gender." id="ddlState" name="State">
+                                <option>Select Sate</option>
+                                <option>Assam</option>
+                                <option>Bihar</option>
+                                <option>Sikkim</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                        <div class="form-group">
+                            <label class="manadatory" for="ddlGender">
+                                District
+                            </label>
+                            <select class="form-control" data-val="true" data-val-number="District."
+                                    data-val-required="Please select District." id="ddlDistrict" name="District">
+                                <option>Select District</option>
+                                <option>Assam</option>
+                                <option>Bihar</option>
+                                <option>Sikkim</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                        <div class="form-group">
+                            <label class="manadatory" for="ddlGender">
+                                Taluka
+                            </label>
+                            <select class="form-control" data-val="true" data-val-number="Taluka."
+                                    data-val-required="Please select gender." id="ddlTaluka" name="Taluka">
+                                <option>Select Taluka</option>
+                                <option>Assam</option>
+                                <option>Bihar</option>
+                                <option>Sikkim</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                        <div class="form-group">
+                            <label class="manadatory" for="ddlGender">
+                                City/Town/Village
+                            </label>
+                            <select class="form-control" data-val="true" data-val-number="State."
+                                    data-val-required="Please select gender." id="ddlVillage" name="State">
+                                <option>Select Village</option>
+                                <option>Assam</option>
+                                <option>Bihar</option>
+                                <option>Sikkim</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                        <div class="form-group">
+                            <label class="manadatory" for="PIN">
+                                PIN
+                            </label>
+                            <input class="form-control" placeholder="PIN" name="PIN" type="" value="" max-length="6"
+                                   autofocus />
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+                </div>
+            </div>
+        </div>
+        @*<%---END of PostalAddress-----%>*@
+        @*<%---Start of Verification----%>*@
+        <div class="row">
+            <div class="col-md-12 box-container mTop15">
+                <div class="box-heading">
+                    <h4 class="box-title register-num">
+                        Login Credential
+                    </h4>
+                </div>
+                <div class="box-body box-body-open">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-12 margin-btm">
+                        <div class="alert-info col-sm-6 col-md-6 col-lg-12 padding10" id="divCredential">
+                            <span style="font-weight: bold; margin-bottom: 5px">Password must include:</span><br />
+                            <span>
+                                1. Minimum of Eight (8) character<br />
+                                2. One character must be in CAPS (Capital Alphabet A-Z)
+                                <br />
+                                3. One character must be in Numeric&nbsp;(0-9) and<br />
+                                @*4. One Character must be special character (!@#$%^&amp;*)*@
+                        </span>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="form-group">
+                        <label class="manadatory" for="Village">
+                            Login Id
+                        </label>
+                        <input class="form-control" name="Login Id" type="text" value="" placeholder="Enter Login Id"
+                               autofocus />
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="form-group">
+                        <label class="" for="Village">
+                            &nbsp;
+                        </label>
+                        <input type="button" id="btnAvability" class="btn btn-danger" value="Check Login Id Avability" />
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="form-group">
+                        <label class="manadatory" for="lblPassword">
+                            Password
+                        </label>
+                        <input class="form-control" name="Password" placeholder="Enter Password" type="password" value=""
+                               autofocus />
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                    <div class="form-group">
+                        <label class="manadatory" for="lblConPassword">
+                            Confirm Password
+                        </label>
+                        <input class="form-control" name="Confirm Password" type="password" placeholder="Confrim Password" value=""
+                               autofocus />
+                    </div>
+                </div>
+                <div class="clearfix">
+                </div>
+            </div>
+        </div>
+    </div>
+    @*<%---END of Verification-----%>*@
+        @*<%---Start of Declaration----%>*@
+        <div class="row">
+            <div class="col-md-12 box-container" id="Div2">
+                <div class="box-heading">
+                    <h4 class="box-title register-num">
+                        Declaration
+                    </h4>
+                </div>
+                <div class="box-body box-body-open">
+                    <div class="col-sm-6 col-md-6 col-lg-12">
+                        <div class="text-danger text-danger-green">
+                            <p class="text-justify">
+                                <input type="checkbox" runat="server" id="disclaimercheck" onclick="javascript: declaration(this.checked, '1');" />
+                                I &nbsp;<span id="spndecl" style="text-decoration: underline; text-transform: capitalize; font-weight: bold;"></span>&nbsp; solemly affirm that the above mentioned information submitted by me is
+                                true and correct to my knowledge and and if anything contray to the above is found, I will be liable for punishment/penalty under Section193(2),199 &amp; 200 of the Indian Penal Code.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        &nbsp;
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+                        <div class="form-group">
+                            <img src="" height="70" width="250" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2">
+                        <div class="form-group">
+                            <label class="" for="Village">
+                                &nbsp;
+                            </label>
+                            <input type="button" id="btnRefresh" class="btn btn-danger" value="Refresh Captcha" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                        <div class="form-group">
+                            <label class="manadatory" for="Village">
+                                Enter Captcha Code
+                            </label>
+                            <input class="form-control" placeholder="Verify yourself" name="Captcha" type="text" value=""
+                                   autofocus />
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        @*<%---END of Declaration-----%>*@
+        @*<%---Start of Button----%>*@
+        <div class="row">
+            <div class="col-md-12 box-container" id="divBtn">
+                <div class="box-body box-body-open" style="text-align: center;">
+                    @*<%--<asp:Button ID="btnConfirm" runat="server" Text="Submit" class="btn btn-success"
+                                OnClientClick="return checkDeclaration();" />--%>*@
+                <input type="button" id="btnConfirm" class="btn btn-success" value="Submit" onclick="checkDeclaration();" />
+            </div>
+        </div>
+        <div class="clearfix">
+        </div>
+    </div>
+    @*<%---END of Button-----%>*@
+    </div>
+</div>
+@section Scripts {
+@Scripts.Render("~/bundles/jquery", "~/bundles/jqueryval", "~/bundles/bootstrap")
+    <script type="text/javascript" >
+
+    </script>
+}

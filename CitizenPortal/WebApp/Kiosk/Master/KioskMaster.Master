@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="KioskMaster.master.cs" Inherits="CSVTUPortal.WebApp.Kiosk.Master.KioskMaster" 
+    ClientIDMode="Static" %>
+
+<%@ Register Src="~/WebApp/Control/LeftPanel.ascx" TagPrefix="uc1" TagName="LeftPanel" %>
+<%@ Register Src="~/Sambalpur/controls/AdminHeader.ascx" TagPrefix="uc1" TagName="AdminHeader" %>
+<%@ Register Src="~/WebApp/Control/EventDate.ascx" TagPrefix="uc1" TagName="EventDate" %>
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="/Scripts/jquery-2.2.3.min.js" type="text/javascript"></script>
+    <script src="../../../Sambalpur/js/bootstrap.min.js"></script>
+    <script src="/Scripts/angular.min.js?v=<%=CitizenPortal.Common.GlobalValues.JSVersion%>"></script>
+    <link href="../../../Sambalpur/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+    <script src="/PortalScripts/Wallet.js?v=<%=CitizenPortal.Common.GlobalValues.JSVersion%>"></script>
+    <link href="../../../Sambalpur/css/bootstrap.min.css" type="text/css"  rel="stylesheet" />
+    <link href="../../../Sambalpur/css/homestyle.css" type="text/css" rel="stylesheet" />
+
+    <link href="/WebApp/Common/Styles/StyleSheet1.css" type="text/css" rel="stylesheet" />
+    <link href="/WebApp/Common/Styles/StyleSheet3.css" type="text/css" rel="stylesheet" />
+    <link href="/WebApp/Common/Styles/StyleSheet4.css" type="text/css" rel="stylesheet" />
+     <link href="/WebApp/Common/Styles/style.admin.css" type="text/css" rel="stylesheet" />
+    <link href="../../Styles/sb-admin-2.css" type="text/css" rel="stylesheet" />
+    <script src="/g2c/js/jquery.liMarquee.js" type="text/javascript"></script>    
+    <script src="/WebApp/Scripts/DisableBackButton.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .form-heading {
+            text-transform: none !important;
+        }
+        .form-heading {
+            color: #820000;
+            text-align: left;
+            border-left: 15px solid #ce6d07;
+            border-right: 2px solid #ce6d07;
+            border-top: 1px solid #d8d8d8;
+            border-bottom: 1px solid #d8d8d8;
+            background: rgba(0, 0, 0, .075);
+            padding: 10px 20px 10px 15px;
+            border-top-right-radius: 2px;
+            border-top-left-radius: 2px;            
+            font-weight: bold;
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:HiddenField ID="HFLang" runat="server" />
+        <uc1:AdminHeader runat="server" ID="AdminHeader" />
+        <uc1:LeftPanel runat="server" ID="LeftPanel" />
+        <uc1:EventDate runat="server" ID="EventDate" />
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <script src="/WebApp/Common/Scripts/metisMenu.js"></script>
+            <script>
+                if (document.getElementById("intrnlContent") != null) {
+                    angular.bootstrap(document.getElementById("intrnlContent"), ['appmodule']);
+                }
+            </script>
+            
+        </div>
+    </form>
+</body>
+</html>

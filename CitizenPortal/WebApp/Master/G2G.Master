@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="G2G.master.cs" Inherits="CitizenPortal.WebApp.Master.G2G" %>
+
+<%@ Register Src="~/WebApp/Control/Header.ascx" TagPrefix="uc1" TagName="Header" %>
+<%@ Register Src="~/WebApp/Control/LeftPanel.ascx" TagPrefix="uc1" TagName="LeftPanel" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <%--<script src="../../Scripts/jquery-2.2.3.min.js"></script>
+    <link href="../Styles/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Styles/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/style.admin.css" rel="stylesheet" />
+    <link href="../bootstrap.min.css" rel="stylesheet" />
+    <link href="../Styles/StyleSheet1.css" rel="stylesheet" />
+    <link href="../Styles/timeline.css" rel="stylesheet" />
+    <link href="../Styles/StyleSheet1.css" rel="stylesheet" />
+    <link href="../Styles/StyleSheet3.css" rel="stylesheet" />
+    <link href="../Styles/StyleSheet4.css" rel="stylesheet" />
+    <link href="../Styles/style.admin.css" rel="stylesheet" />
+    <link href="../Styles/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Styles/sb-admin-2.css" rel="stylesheet" />
+    <link href="../Styles/beyond.css" rel="stylesheet" />--%>
+
+    <script src="/Scripts/jquery-2.2.3.min.js"></script>
+    <script src="/Scripts/angular.min.js"></script>
+    <link href="../Styles/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Styles/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/style.admin.css" rel="stylesheet" />
+    <link href="../Styles/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Styles/StyleSheet1.css" rel="stylesheet" />
+    <link href="../Styles/timeline.css" rel="stylesheet" />
+    <link href="../Styles/StyleSheet1.css" rel="stylesheet" />
+    <link href="../Styles/StyleSheet3.css" rel="stylesheet" />
+    <link href="../Styles/StyleSheet4.css" rel="stylesheet" />
+    <link href="../Styles/style.admin.css" rel="stylesheet" />
+    <link href="../Styles/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Styles/sb-admin-2.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <uc1:Header runat="server" ID="Header" />
+            <uc1:LeftPanel runat="server" ID="LeftPanel" />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" ClientIDMode="Static">
+            </asp:ContentPlaceHolder>
+            <script src="../Common/Scripts/bootstrap.min.js"></script>
+            <script src="../Common/Scripts/metisMenu.js"></script>
+            <script src="../Common/Scripts/raphael.js"></script>
+            <script src="../Common/Scripts/morris.js"></script>
+            <script src="../Common/Scripts/sb-admin-2.js"></script>
+            <script>
+                if (document.getElementById("intrnlContent") != null) {
+                    angular.bootstrap(document.getElementById("intrnlContent"), ['appmodule']);
+                }
+            </script>
+        </div>
+    </form>
+</body>
+</html>

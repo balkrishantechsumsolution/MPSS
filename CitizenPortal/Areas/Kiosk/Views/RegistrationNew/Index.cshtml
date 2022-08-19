@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<html ng-app="personInfoModule">
+<head>
+    <title></title>
+
+    <link href="@Url.Content("~/Content/bootstrap.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/angular.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/angular-ui/ui-bootstrap-tpls.min.js")"></script>
+
+    <script src="@Url.Content("~/Areas/Kiosk/Scripts/pModule.js")"></script>
+    <script src="@Url.Content("~/Areas/Kiosk/Scripts/pService.js")"></script>
+    <script src="@Url.Content("~/Areas/Kiosk/Scripts/pController.js")"></script>
+
+    <script src="@Url.Content("~/Areas/Kiosk/Scripts/pDirective.js")"></script>
+    <style type="text/css" media="screen">
+        .validation-message {
+            color: #f00;
+        }
+
+        .submitted input.ng-invalid {
+            border: 1px solid #f00;
+            background-color: #fee;
+        }
+    </style>
+</head>
+<body class="container" ng-controller="personInfoController">
+    <h1>
+        Person Information Portal
+    </h1>
+    <person-form></person-form>
+</body>
+</html>

@@ -1,0 +1,163 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="WebApplication1.lokaseba_adhikar.master.Home" %>
+
+<%@ Register Src="~/g2c/controls/footer.ascx" TagPrefix="uc1" TagName="footer" %>
+<%@ Register Src="~/g2c/controls/tophead.ascx" TagPrefix="uc1" TagName="tophead" %>
+<%@ Register Src="~/g2c/controls/topnavigation.ascx" TagPrefix="uc1" TagName="topnavigation" %>
+<%@ Register Src="~/g2c/controls/mainhead.ascx" TagPrefix="uc1" TagName="mainhead" %>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name=viewport content="width=device-width,initial-scale=1"/>
+    <title>Lokaseba Adhikara - Common Application Portal,Odisha</title>
+    <script type="text/javascript" src="/g2c/js/jquery.min.js"></script>
+    <link type="text/css" href="/g2c/css/style.css" rel="stylesheet" />
+    <link type="text/css" href="/g2c/css/responsive_media.css" rel="stylesheet" />
+    <link type="text/css" href="/g2c/css/hmepge.bootstrap.css" rel="stylesheet" />
+    <link type="text/css" href="/g2c/css/font-awesome.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="/g2c/js/jquery.liMarquee.js"></script>
+    <%--<script type="text/javascript" src="../js/textsizer.js"></script>--%>
+    <%--<script type="text/javascript" src="/g2c/js/service-scroll.js"></script>--%>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link type="text/css" href="/g2c/css/ie10-viewport-bug-workaround.css" rel="stylesheet" />
+    <script type="text/javascript" src="/g2c/js/ie-emulation-modes-warning.js"></script>
+    <script src="../../WebApp/Scripts/DisableBackButton.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+  <script type="text/javascript" src="/g2c/js/html5shiv.min.js"></script>
+  <script type="text/javascript" src="/g2c/js/respond.min.js"></script>
+<![endif]-->
+    <script type="text/javascript">
+        $(window).load(function () {
+
+            /* basic - default settings */
+            $('.str1').liMarquee({
+                direction: 'left',
+                loop: -1,
+                scrolldelay: 100,
+                scrollamount: 50,
+                circular: true,
+                drag: true
+            });
+        
+        $('.str4').liMarquee({
+            direction: 'up',
+            loop: -1,
+            scrolldelay: 0,
+            scrollamount: 30,
+            circular: true,
+            drag: true
+        });
+        });
+        </script>
+        
+    <script type="text/javascript">
+        var boolNotice = 0;
+
+        function toggleNotice() {
+            //debugger;
+            //$("#hdn").click(function () {
+            //    $(".oisf_noti").toggle();
+            //});
+
+            if (boolNotice == 1) {
+                boolNotice = 0;
+                $('#divNotice').slideDown(500);
+            }
+            else {
+                boolNotice = 1;
+                $('#divNotice').slideUp(500);
+            }
+
+
+        }
+
+        $(document).ready(function () {
+            debugger;
+
+            $('#divNotice').slideDown(500);
+            //$('.oisf_noti').slideDown(1000);
+            //$("h2.trigger").click(function () {
+            //    debugger;
+            //    $('.oisf_noti').toggleClass("active").next().slideToggle("slow");
+            //     //Prevent the browser jump to the link anchor
+            //});
+        });
+        //$("#slideupdiv").click(function () {
+        //    $(".oisf_noti").toggle(1000);
+        //});
+        // $(".toggle_container").hide();
+
+        //Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+
+
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header>
+                <uc1:tophead runat="server" ID="tophead" />
+                <uc1:mainhead runat="server" ID="mainhead" />
+                <uc1:topnavigation runat="server" ID="topnavigation" />
+            </header>
+            <asp:ContentPlaceHolder ID="cphbody" runat="server">
+            </asp:ContentPlaceHolder>
+            <uc1:footer runat="server" ID="footer" />
+        </div>
+    </form>
+    <script type="text/javascript" src="/g2c/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script type="text/javascript" src="/g2c/js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //console.log("ready!");
+
+            var currentURL = window.location.href;
+
+            if (currentURL.indexOf("_odia") >= 0) {
+                $("#chooselang").val("2");
+            }
+            else {
+                $("#chooselang").val("1");
+            }
+
+            $("#chooselang").bind("change", function (e) { return ChangeLanguage(); });
+        });
+
+
+        function ChangeLanguage() {
+            //chooselang
+
+            var SelectedLang = $("#chooselang").val();
+            //var pathname = window.location.pathname; // Returns path only
+            //var url = window.location.href;     // Returns full URL
+
+            var newURL = "";
+
+            //alert(SelectedLang);
+            //alert($(location).attr('pathname'));
+
+            if (SelectedLang == "1") {
+                newURL = window.location.href.replace("_odia.aspx", ".aspx");
+                window.location.href = newURL;
+            }
+            else {
+
+                newURL = window.location.href.replace(".aspx", "_odia.aspx");
+                window.location.href = newURL;
+            }
+        }
+    </script>
+    <script type="text/javascript" src="/g2c/js/jquery.dataTables.min.js"></script>
+    <link type="text/css" href="/PortalStyles/jquery-ui.min.css" rel="stylesheet" />
+    <%--<link type="text/css" href="/g2c/css/jquery-ui.css" rel="stylesheet" />--%>
+    <%--<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+        <link type="text/css" href="css/jquery-ui.css" rel="stylesheet" />--%>
+</body>
+</html>

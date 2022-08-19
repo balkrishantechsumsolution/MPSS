@@ -1,0 +1,962 @@
+/*Get rid of from Margin & Padding*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-size: 13px;
+}
+
+@font-face {
+    font-family: Heebo-Regular;
+    src: url(../fonts/Heebo-Regular.ttf);
+}
+
+@font-face {
+    font-family: Heebo-Medium;
+    src: url(../fonts/Heebo-Medium.ttf);
+}
+
+@font-face {
+    font-family: Heebo-Bold;
+    src: url(../fonts/Heebo-Bold.ttf);
+}
+
+@font-face {
+    font-family: AlternateGothic2 BT;
+    src: url(../fonts/ALTGOT2N.ttf);
+}
+
+body {
+    background-color: #F5F2E7;
+    font-family: 'Heebo-Regular', Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.pright0 {
+    padding-right: 0 !important;
+}
+
+.pleft0 {
+    padding-left: 0 !important;
+}
+
+.mtop0 {
+    margin-top: 0 !important;
+}
+
+.mtop5 {
+    margin-top: 5px !important;
+}
+
+.mtop10 {
+    margin-top: 10px !important;
+}
+
+.mtop15 {
+    margin-top: 15px !important;
+}
+
+.mtop20 {
+    margin-top: 20px !important;
+}
+
+.mbtm20 {
+    margin-bottom: 20px !important;
+}
+
+
+.p0 {
+    padding: 0px !important;
+}
+
+.p5 {
+    padding: 5px !important;
+}
+
+.p10 {
+    padding: 10px !important;
+}
+
+.ptop0 {
+    padding-top: 0px !important;
+}
+
+.ptop5 {
+    padding-top: 5px !important;
+}
+
+.ptop10 {
+    padding-top: 10px !important;
+}
+
+.ptop15 {
+    padding-top: 15px !important;
+}
+
+.ptop20 {
+    padding-top: 20px !important;
+}
+.bdrnone {
+    border: none !important;
+}
+
+
+.btn-grey {
+    background-color: #95492D;
+    font-family: 'Heebo-Bold', Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
+    color: #fff;
+    letter-spacing: 0.1em;
+    border: none;
+    border-radius: 60px;
+    padding: 6px 12px;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+}
+
+    .btn-grey:hover {
+        background-color: #884328;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .btn-grey:hover, focus {
+        color: #fff;
+        text-decoration: none;
+    }
+
+
+.myheader {
+   display: block;
+    height: auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.52);
+    position:relative;
+}
+
+    .navtop-homebtn {
+    background-color: #de8362;
+    font-family: 'Heebo-Bold', Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
+    color: #fff;
+    letter-spacing: 0.1em;
+    border: none;
+    border-radius: 60px;
+    padding: 6px 12px;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+}
+
+    .navtop-homebtn:hover {
+        background-color:#e27618;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .navtop-homebtn:hover, focus {
+        color: #fff;
+        text-decoration: none;
+    }
+
+.btn-darkgrey {
+    background-color: #726454;
+    font-family: 'Heebo-Bold', Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
+    color: #fff;
+    letter-spacing: 0.1em;
+    border: none;
+    border-radius: 60px;
+    padding: 6px 12px;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+
+    .btn-darkgrey:hover {
+        background-color: #884328;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .btn-darkgrey:hover, focus {
+        color: #fff;
+        text-decoration: none;
+    }
+
+form-heading {
+    color: #884328 !important;
+    text-align: left;
+    border-left: 15px solid #884328;
+    border-right: 2px solid #884328;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    background: rgba(0, 0, 0, .075);
+    padding: 10px 20px 10px 15px;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*Date Picker CSS START*/
+.ui-widget-header {
+    color: #333 !important;
+    font-weight: normal !important;
+}
+
+.form-heading {
+    font-size: 1.9em !important;
+    color: #97492F !important;
+    text-align: left;
+    /*letter-spacing: 0.04em;*/
+    border-left: 15px solid #FF9326 !important;
+    border-right: 2px solid #FF9326 !important;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    background: #fff !important;
+    padding: 10px 20px 10px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/*Date Picker CSS END*/
+
+
+.btn-verify {
+    background-color: #B65838;
+    color: #fff;
+}
+
+    .btn-verify:hover {
+        color: #fff !important;
+    }
+/*Modal CSS START Here*/
+
+a[data-toggle="modal"] {
+    margin: 5px;
+}
+
+.title {
+    color: #757575;
+    font-weight: bold;
+}
+
+.modal {
+    text-align: left;
+}
+
+.modal-content {
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+}
+
+.modal-header {
+    border-bottom: 0;
+    padding-top: 15px;
+    padding-right: 26px;
+    padding-left: 26px;
+    padding-bottom: 0px;
+}
+
+.modal-title {
+    font-size: 34px;
+}
+
+.modal-body {
+    border-bottom: 0;
+    padding-top: 5px;
+    padding-right: 26px;
+    padding-left: 26px;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+    .modal-body ul li {
+        line-height: 22px;
+        display: flex;
+    }
+
+        .modal-body ul li:before {
+            font-family: FontAwesome;
+            font-size: 14px;
+            content: "";
+            color: #68503E;
+            float: left;
+            /*display: inline-block;*/
+            padding-right: 8px;
+            vertical-align: middle;
+        }
+
+
+.modal-footer {
+    border-top: 0;
+    padding-top: 0px;
+    padding-right: 26px;
+    padding-bottom: 26px;
+    padding-left: 26px;
+}
+
+.mdlHd-txt {
+    background-color: #83644D !important;
+    text-align: center !important;
+    color: #fff !important;
+    font-size: 22px;
+    padding: 10px;
+}
+/*Modal CSS END Here*/
+
+
+.whitebg {
+    background-color: #fff !important;
+}
+
+.logo {
+    /*padding:3rem 4rem;*/
+}
+
+    .logo img {
+        display: inline !important;
+    }
+
+    .logo h1 {
+        display: inline !important;
+        font-family: 'AlternateGothic2 BT', Helvetica, Arial, sans-serif;
+        font-size: 3.2em;
+        color: #19366c;
+    }
+
+    .logo span {
+        font-size: 1.071428571428571em;
+        display: block;
+        color: #444444;
+        padding-left: 2rem;
+    }
+
+.common-nav {
+    /*padding-top: 2rem;*/
+}
+
+    .common-nav ul li {
+        /*display: inline-block;*/
+        font-family: 'Heebo-Regular', Helvetica, Arial, sans-serif;
+        padding-top: .25rem;
+        /*padding: .25rem 1rem;
+        margin-right: 1rem;*/
+        font-size: 1.214285714285714em;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+
+    .common-nav li a {
+        color: #3F3000;
+        text-decoration: none;
+        padding: 10px 18px 3px;
+    }
+
+    .common-nav li .active {
+        background-color: #FEAE33;
+        color: #fff;
+        padding: 8px;
+        border-top-right-radius: 2px;
+        border-top-left-radius: 2px;
+    }
+
+        .common-nav li .active:hover {
+            color: #fff;
+        }
+
+    .common-nav li a:hover {
+        border-bottom: 3px solid #6F3620;
+        color: #FEAE33;
+    }
+
+.nav-tabs a {
+    color: #fff;
+}
+
+    .nav-tabs a:hover {
+        /*color: #B65838;*/
+    }
+
+
+.header-shadow {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+    margin-bottom: 10px;
+}
+
+.tophead {
+    /*background-color: #fff;*/
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+
+.mainnav {
+    width: 90%;
+    height: auto;
+    background: #6A331E;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#A95234, #6A331E);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#A95234, #6A331E);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#A95234, #6A331E);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#A95234, #6A331E);
+    /* Standard syntax */
+    padding: 0.5rem;
+    border-bottom-left-radius: 0.8em;
+    border-bottom-right-radius: 0.8em;
+    margin: 0 auto;
+}
+
+    .mainnav ul li {
+        display: inline-block;
+        padding: .25rem 1rem;
+        margin-right: 1rem;
+        font-size: 1.285714285714286em;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+    /*.acdmic { display:inline; background: url('/Forms/img/academic-icon.png') bottom left no-repeat;
+    }*/
+
+    .mainnav li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+        .mainnav li a:hover {
+            color: #FEAE33;
+        }
+
+.slide-img {
+    width: 100%;
+    height: 450px;
+    background-image: url(/Sambalpur/img/slider-img1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 115%;
+    max-height: 100%;
+    margin-top: 0px;
+}
+
+.scroll-txt {
+    width: 80% !important;
+    height: auto;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    position: absolute;
+    top: 300px;
+    right: 0;
+    /* bottom: 0; */
+    left: 10px;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px #000;
+    padding: 10px 15px;
+}
+
+.admission-txt {
+    width: 100%;    
+    height: auto; 
+    position: absolute !important; 
+    top: 24em;left: 1.5em;
+    z-index:90;
+}
+
+
+.link {
+    max-width: 90px;
+    width: 100%;
+    background-color: #FEAE33;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 40px;
+    margin-left: 1%;
+}
+
+.advt-link {
+    color: #664C00;
+    text-decoration: underline;
+}
+
+.notice-box {
+    display: block;
+    background-color: rgba(255,255,255,0.7);
+    max-width: 420px;
+    text-align: center;
+    border: 15px solid rgba(255,255,255,0.5);
+    color: #1E382B;
+    /* padding: 8px; */
+    line-height: 19px;
+    position: absolute;
+    top: 11.28571428571429em;
+}
+
+    .notice-box .hd {
+        background-color: #FEAE33;
+        color: #fff;
+        padding: 8px;
+        font-size: 1.785714285714286em;
+        text-align: left;
+    }
+
+    .notice-box .notice-scroll {
+        background-color: #fff;
+        text-align: left;
+        padding: 5px;
+    }
+
+.notice-scroll .post {
+    display: inline;
+    width: 100%;
+    color: #868695;
+    font-size: 0.8571428571428571em;
+}
+
+.notice-scroll .newicon {
+    background-color: #D93600;
+    font-size: 0.7142857142857143em;
+    color: #fff;
+    width: 20px;
+    display: inline-table;
+    height: 20px;
+    padding: 3px 5px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 50px;
+}
+
+.quicklink-hd {
+    background-color: #355282;
+    font-family: 'Heebo-Bold', Helvetica, Arial, sans-serif;
+    color: #fff;
+    letter-spacing: 0.05em;
+    padding: 10px;
+    font-size: 1.428571428571429em;
+}
+
+.quicklink-txt {
+    background-color: #E3E6EC;
+    height: 46px;
+    color: #fff;
+    padding: 0;
+    color: #2C456C;
+}
+
+    .quicklink-txt li {
+        float: left;
+        padding: .25rem 1rem;
+        border-right: 1px solid #2C456C;
+        line-height: 10px;
+    }
+
+        .quicklink-txt li:last-child {
+            border-right: none;
+        }
+
+        .quicklink-txt li a {
+            padding: .25rem 1rem;
+            color: #2C456C;
+            text-decoration: none;
+        }
+
+            .quicklink-txt li a:hover {
+                color: #1F314B;
+            }
+
+        .quicklink-txt li .more-link {
+            background-color: #486FAE;
+            color: #fff;
+            border-radius: 25px;
+        }
+
+            .quicklink-txt li .more-link:hover {
+                color: yellow;
+            }
+
+.main-content {
+    width: 100%;
+    height:100vh;    
+    background-image: url(/Sambalpur/img/login-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -48px;
+    padding-top: 3em;
+}
+
+.home-contentbox {
+    background-color: #fff;
+    min-height: 450px;
+    padding: 8px 15px;
+    margin: 0 20px;
+}
+
+#morequick-link {
+    background-color: #355282;
+    padding: 10px 0;
+    margin: 0;
+}
+
+    #morequick-link li {
+        font-size: 11px;
+        color: #fff;
+        line-height: 28px;
+    }
+
+        #morequick-link li:before {
+            font-family: 'FontAwesome';
+            content: "";
+            padding-right: 5px;
+        }
+
+        #morequick-link li a {
+            color: #fff;
+        }
+
+.tab-content h3 {
+    background-color: #868695;
+    font-size: 1.071428571428571em;
+    color: #fff;
+    padding: 8px;
+}
+
+.tab-content p {
+    padding: 8px;
+}
+
+.curntevents h3 {
+    font-family: 'Heebo-Bold', Helvetica, Arial, sans-serif;
+    color: #FF7D00;
+}
+
+.event-line {
+    background-color: #FF7D01;
+    height: 4px;
+}
+
+.curntevents .hold {
+    display: inline-flex;
+    clear: both;
+    margin-bottom: 5px;
+}
+
+.event-date {
+    float: left;
+    width: 60px;
+    display: inline-block;
+    background-color: #FF9326;
+    color: #fff;
+    padding: 8px;
+    margin: 0;
+}
+
+    .event-date span {
+        font-family: 'Heebo-Bold', Helvetica, Arial, sans-serif;
+        font-size: 1.428571428571429em;
+    }
+
+    .event-date small {
+        display: block;
+    }
+
+.event-txt {
+    float: left;
+    display: inline;
+    width: 100%;
+    background-color: #B65838;
+    color: #fff;
+    padding: 8px;
+    margin: 0;
+}
+
+    .event-txt a {
+        color: #fff;
+    }
+
+.chancellor-box {
+    background-color: #348156;
+}
+
+    .chancellor-box h2 {
+        font-family: 'Heebo-Bold', Helvetica, Arial, sans-serif;
+        color: #fff;
+    }
+
+    .chancellor-box p {
+        font-family: 'Heebo-Regular', Helvetica, Arial, sans-serif;
+        color: #fff;
+        line-height: 22px;
+    }
+
+.university-profilebx {
+    height: 335px;
+    background-image: url(/Sambalpur/img/university-entrance.jpg);
+    background-repeat: repeat-y;
+    background-color: #fff;
+    background-size: cover;
+    padding-left: 20px;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    margin: 0 auto;
+}
+
+    .university-profilebx h3 {
+        font-family: 'Heebo-Bold', Helvetica, Arial, sans-serif;
+        color: #338055;
+    }
+
+    .university-profilebx p {
+        width: 420px;
+        background-color: rgba(255, 255, 255, 0.8);
+        font-family: 'Heebo-Regular', Helvetica, Arial, sans-serif;
+        color: #252635;
+        text-align: justify;
+        line-height: 22px;
+        padding: 15px;
+    }
+
+.admission-noticebox {
+    /*height: 373px;*/
+    background-image: url(/Sambalpur/img/courses-offer-bg.jpg);
+    background-repeat: repeat-y;
+    background-color: #fff;
+    background-size: cover;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+
+    .admission-noticebox h2 {
+        font-family: 'Heebo-Bold', Helvetica, Arial, sans-serif;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+.blue-panelhd {
+    color: #fff !important;
+    background-color: #486FAE !important;
+    border-color: #486FAE;
+}
+
+    .blue-panelhd h2 {
+        font-family: 'Heebo-Bold', Helvetica, Arial, sans-serif;
+        font-size: 1.714285714285714em;
+        color: #fff;
+        text-align: left;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+.blue-panelhd-txt {
+    background-color: #E3E6EC !important;
+    border-bottom: 5px solid #486FAE;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+    .blue-panelhd-txt h4 {
+        border-bottom: 1px dotted #486FAE;
+        padding-bottom: 15px;
+    }
+
+.clck-here {
+    float: right;
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #0059B2;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid #0059B2;
+    border-radius: 10px;
+}
+
+.bottom-bg {
+    /*display: flex;*/
+    background-color: #5A554D;
+    color: #fff;
+    /*padding: 10px 0 20px;*/
+}
+
+    .bottom-bg p {
+        font-family: 'Heebo-Regular', Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        /*line-height: 22px;*/
+        letter-spacing: 0.03em;
+    }
+
+        .bottom-bg p a {
+            color: #FFB800;
+        }
+
+            .bottom-bg p a:hover {
+                color: #99FFB2;
+            }
+
+    .bottom-bg .p2x {
+        font-family: 'Heebo-Bold', Helvetica, Arial, sans-serif;
+        font-size: 1.285714285714286em;
+        letter-spacing: 0.04em;
+    }
+
+.tvstor {
+    width:auto;
+    font-family: 'Heebo-Bold', Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    color: #000 !important;
+    border-radius:25px;
+    margin-left: 5px;
+    padding: 5px 10px;
+}
+
+.tdyvstor {
+    width:auto;
+    font-family: 'Heebo-Bold', Helvetica, Arial, sans-serif;
+    background-color: #a9ff2f;
+    color: #000 !important;
+    border-radius:25px;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin-left:10px;
+}
+
+.copyrights {
+    color:#fff;
+    /*color: #7F3C23;*/
+    padding: 15px 0;
+}
+/*Top Navigation CSS END Here*/
+
+.error {
+    color: #D8000C;
+    background-color: #fbeded;
+    padding: 8px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    body {
+        font-size: 10px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container-fluid {
+        padding: 0 !important;
+    }
+
+    .mainnav {
+        width: 100%;
+    }
+
+    .small-view {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .mleft40 {
+        margin-left: 0 !important;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .login-wrapper {
+        width: 100%;
+    }
+
+    .btn-grey {
+        display: block;
+        width: 100%;
+        clear: both;
+        text-align: center;
+        margin: 1em 0;
+        border-radius: 2px;
+    }
+
+    .clck-here, .nav-tabs > li {
+        float: none;
+    }
+
+    .quicklink-hd, .quicklink-txt, .notice-box {
+        display: none;
+    }
+
+    .admission-noticebox {
+        height: auto !important;
+    }
+
+    .university-profilebx {
+        width: 100%;
+    }
+
+        .university-profilebx p {
+            width: 100%;
+            height: 100%;
+            padding: 3px 5px;
+        }
+
+    .btn-darkgrey {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin: 1em auto;
+    }
+
+    .SrvDiv {
+    }
+
+    .scroll-txt {
+        width: 100%;
+        font-size: 1.8em;
+    }
+
+    .admission-txt {
+        max-width: 100%;
+        font-size: 1.5em;
+        
+    }
+
+    .bottom-bg {
+        display: block;
+    }
+}
+
+@media all and (min-width: 736px) {
+    .scroll-txt {
+        width: 100%;
+    }
+
+    .notice-box {
+        /*display: none;*/
+    }
+}
+
+@media only screen and (min-device-width: 736px) and (max-device-width: 768px) {
+    .admission-noticebox {
+        height: auto !important;
+    }
+
+    .bottom-bg {
+        display: block;
+    }
+
+    .mleft40 {
+        margin-left: 0 !important;
+    }
+}

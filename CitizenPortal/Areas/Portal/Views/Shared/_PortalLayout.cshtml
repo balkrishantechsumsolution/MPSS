@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Citizen Portal</title>
+
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/Portal/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/jqueryval")
+
+</head>
+<body>
+
+    @if (!Request.IsAuthenticated)
+    {
+        using (Html.BeginForm("CitizenRegistration", "Home", FormMethod.Post, new { area = "portal", name = "Registration", id = "Registration" }))
+        {
+
+            //Citizen Registration
+            <input type="hidden" name="hdnsaltkey" id="hdnsaltkey" />
+            @Html.Partial("_CitizenRegistration")
+        }
+    }
+    <!-- Citizen Registration END -->
+
+    @Html.Partial("_AppStatus")
+    <!-- Application Status END -->
+
+    <header>
+        @Html.Partial("_PortalHeader")
+    </header>
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    <footer>
+        @Html.Partial("_PortalFooter")
+    </footer>
+
+
+    @RenderSection("scripts", required: false)
+
+    <script type="text/javascript">
+
+        $(function () {
+            $("#OTP").hide();
+
+            $("#btnCitizenReg").on("click", function () {
+                if ($("#Registration").valid())
+                { GenerateOTP(); }
+                else {
+                    $(".input-validation-error").eq(0).focus();
+                }
+            });
+
+            $("#btnSubmitOTP").on("click", function () {
+                if ($("#Registration").valid())
+                {
+                    md5auth("ssdfdfgfghhgfhgjhj33254354");
+                    CitizenRegistration();
+                } else {
+                    $(".input-validation-error").eq(0).focus();
+                }
+            });
+
+            $('#checkUserID').on("click", function () {
+                CheckUserID();
+            });
+        });
+
+        //Generate OTP No for Verification
+        function GenerateOTP() {
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("GenerateOTP")',
+                dataType: 'json',
+                data: {
+                    CaptchaInputText: $("#captcha").val(),
+                    SKV: $("#hdnsaltkey").val(),
+                    MobileNo: $("#MobileNo").val()
+                },
+                success: function (OTP) {
+                    if (OTP == "OTP") {
+                        $("#ctzDetails").hide();
+                        $("#OTP").show();
+                    }
+                    else {
+                        alert(OTP);
+                    }
+                },
+                error: function (ex) {
+                    alert('Failed to retrieve Location. ' + ex);
+                }
+            });
+        }
+
+        //Check User ID Availibilty
+        function CheckUserID() {
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("CheckUserID")',
+                dataType: 'json',
+                data: {
+                    UserID: $("#UserID").val(),
+                },
+                success: function (UserID) {
+                    if (UserID = 'N') {
+                        $("#lblUserStatus").text("User ID Availlable!");
+                        $("#lblUserStatus").addClass("success");
+                    } else {
+                        $("#lblUserStatus").text("User ID Not Availlable!");
+                        $("#lblUserStatus").addClass("error");
+                    }
+                },
+                error: function (ex) {
+                    alert('Failed to retrieve Location. ' + ex);
+                }
+            });
+        }
+
+        //Create New Citizen Registration
+        function CitizenRegistration() {
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("CitizenRegistration")',
+                dataType: 'json',
+                data: {
+                    FirstName: $("#FirstName").val(),
+                    LastName: $("#LastName").val(),
+                    MobileNo: $("#MobileNo").val(),
+                    eMailID: $("#eMailID").val(),
+                    AadharNo: $("#AadharNo").val(),
+                    UserID: $("#UserID").val(),
+                    Password: $("#Password").val()
+                },
+                success: function (registrations) {
+                    if (registrations = 'Y') {
+                        alert("You are register successfully. Login details has been sent to your registerd mobile number!");
+                        location.href = "http://localhost/Portal/Home";
+                    }
+                },
+                error: function (ex) {
+                    alert('Failed to retrieve Location. ' + ex);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

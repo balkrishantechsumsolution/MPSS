@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EmployeeImformationLabel" xml:space="preserve">
+    <value>Name in Hindi</value>
+  </data>
+  <data name="EmpNameLabel" xml:space="preserve">
+    <value>Emp Name in Hindi</value>
+  </data>
+  <data name="lblAffidavitName" xml:space="preserve">
+    <value>हलफनामा नाम</value>
+  </data>
+  <data name="lblAppAddress" xml:space="preserve">
+    <value>पता</value>
+  </data>
+  <data name="lblAppAge" xml:space="preserve">
+    <value>उम्र</value>
+  </data>
+  <data name="lblAppBuilding" xml:space="preserve">
+    <value>भवन</value>
+  </data>
+  <data name="lblAppDistrict" xml:space="preserve">
+    <value>जिला</value>
+  </data>
+  <data name="lblAppDOB" xml:space="preserve">
+    <value>जन्म तारीख</value>
+  </data>
+  <data name="lblAppEmail" xml:space="preserve">
+    <value>ई-मेल</value>
+  </data>
+  <data name="lblAppFatherName" xml:space="preserve">
+    <value>पिता / पति का नाम</value>
+  </data>
+  <data name="lblAppGender" xml:space="preserve">
+    <value>लिंग</value>
+  </data>
+  <data name="lblAppLandmark" xml:space="preserve">
+    <value>सीमा चिन्ह</value>
+  </data>
+  <data name="lblAppLocality" xml:space="preserve">
+    <value>स्थान</value>
+  </data>
+  <data name="lblAppMobile" xml:space="preserve">
+    <value>भ्रमणध्वनी क्रमांक</value>
+  </data>
+  <data name="lblAppMotherName" xml:space="preserve">
+    <value>माँ का नाम</value>
+  </data>
+  <data name="lblAppName" xml:space="preserve">
+    <value>प्रथम नाम</value>
+  </data>
+  <data name="lblAppNameLL" xml:space="preserve">
+    <value>प्रथम नाम</value>
+  </data>
+  <data name="lblAppOccupation" xml:space="preserve">
+    <value>व्यवसाय</value>
+  </data>
+  <data name="lblAppPincode" xml:space="preserve">
+    <value>पिनकोड</value>
+  </data>
+  <data name="lblAppSal" xml:space="preserve">
+    <value>उपाधी</value>
+  </data>
+  <data name="lblAppState" xml:space="preserve">
+    <value>राज्य</value>
+  </data>
+  <data name="lblAppStreet" xml:space="preserve">
+    <value>मार्ग</value>
+  </data>
+  <data name="lblappsubdis" xml:space="preserve">
+    <value>तहसील</value>
+  </data>
+  <data name="lblAppVillage" xml:space="preserve">
+    <value>गाँव</value>
+  </data>
+  <data name="lblNameOfIdentifier" xml:space="preserve">
+    <value>पहचानकर्ता का नाम</value>
+  </data>
+  <data name="lblReason" xml:space="preserve">
+    <value>कारण</value>
+  </data>
+  <data name="lblAffidavitDetails" xml:space="preserve">
+    <value>शपथ पत्र का विवरण</value>
+  </data>
+  <data name="lblApplicantDetails" xml:space="preserve">
+    <value>आवेदक का विवरण</value>
+  </data>
+  <data name="lblAppPhotograph" xml:space="preserve">
+    <value>आवेदक फोटोग्राफ</value>
+  </data>
+  <data name="lblDeclaration" xml:space="preserve">
+    <value>घोषणा</value>
+  </data>
+  <data name="lblFirstName" xml:space="preserve">
+    <value>प्रथम नाम</value>
+  </data>
+  <data name="lblIdentifierResidenceDetails" xml:space="preserve">
+    <value>पहचानकर्ता निवास विवरण</value>
+  </data>
+  <data name="lblLastName" xml:space="preserve">
+    <value>सरनेम</value>
+  </data>
+  <data name="lblPostalAddress" xml:space="preserve">
+    <value>डाक पता</value>
+  </data>
+  <data name="lblReasonForAffidavit" xml:space="preserve">
+    <value>शपथ पत्र के लिए कारण</value>
+  </data>
+  <data name="lblResidentialAddress" xml:space="preserve">
+    <value>घर का पता</value>
+  </data>
+  <data name="address" xml:space="preserve">
+    <value>पता</value>
+  </data>
+  <data name="appage" xml:space="preserve">
+    <value>आवेदक की आयु</value>
+  </data>
+  <data name="BloodGroup" xml:space="preserve">
+    <value>रक्त वर्ग</value>
+  </data>
+  <data name="district" xml:space="preserve">
+    <value>जिला</value>
+  </data>
+  <data name="lblDOB" xml:space="preserve">
+    <value>जन्मतिथि</value>
+  </data>
+  <data name="emgperson" xml:space="preserve">
+    <value>आपातकाल मे व्यक्ति से संपर्क कारने का विवरण</value>
+  </data>
+  <data name="govtorissa" xml:space="preserve">
+    <value>ओडिशा सरकार</value>
+  </data>
+  <data name="information" xml:space="preserve">
+    <value>जानकारी</value>
+  </data>
+  <data name="lbl1" xml:space="preserve">
+    <value>1.</value>
+  </data>
+  <data name="lbl1txt" xml:space="preserve">
+    <value>कृपया कार्ड को रखे और कार्ड का उपयोग करे</value>
+  </data>
+  <data name="lbl2" xml:space="preserve">
+    <value>2.</value>
+  </data>
+  <data name="lbl2txt" xml:space="preserve">
+    <value>कार्ड का दुरुपयोग कारेने पर् कानूनी कार्रवाई की जाएगी</value>
+  </data>
+  <data name="lbl3" xml:space="preserve">
+    <value>3. </value>
+  </data>
+  <data name="lbl3txt" xml:space="preserve">
+    <value>कार्ड खो जाता है तो तुरंत प्रासंगिक कार्यालय को सूचित</value>
+  </data>
+  <data name="lbl4" xml:space="preserve">
+    <value>4. </value>
+  </data>
+  <data name="lblDeclarationText" xml:space="preserve">
+    <value>सत्यनिष्ठा से घोषणा करता हुँ, मेरे द्वारा ऊपर उल्लेख जानकारी सात्य और सही है यदि कोई भी जानकारी गलत या झूठ होता है तो कानूनी परिणाम के लिए उत्तरदायी होना के लिए सहमत हैं।</value>
+  </data>
+  <data name="lblDocAge" xml:space="preserve">
+    <value>आयु प्रमाण दस्तावेज़</value>
+  </data>
+  <data name="lblDocDomicile" xml:space="preserve">
+    <value>अधिवास प्रमाण दस्तावेज</value>
+  </data>
+  <data name="lblDocOther" xml:space="preserve">
+    <value>कोई अन्य दस्तावेज</value>
+  </data>
+  <data name="lblDocRes" xml:space="preserve">
+    <value>निवास प्रमाण दस्तावेज</value>
+  </data>
+  <data name="lblI" xml:space="preserve">
+    <value>मैं</value>
+  </data>
+  <data name="lblSenCertHeading" xml:space="preserve">
+    <value>वरिष्ठ नागरिक</value>
+  </data>
+  <data name="lblSenCertOut" xml:space="preserve">
+    <value>वरिष्ठ नागरिक प्रमाण पत्र आउटपुट</value>
+  </data>
+  <data name="lblUploadDetails" xml:space="preserve">
+    <value>सहायक दस्तावेज अपलोड</value>
+  </data>
+  <data name="mobileno" xml:space="preserve">
+    <value>मोबाइल नंबर</value>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>नाम</value>
+  </data>
+  <data name="on" xml:space="preserve">
+    <value>पर</value>
+  </data>
+  <data name="serialno" xml:space="preserve">
+    <value>क्रम सं</value>
+  </data>
+  <data name="srcitcert" xml:space="preserve">
+    <value>वरिष्ठ नागरिक प्रमाण पत्र</value>
+  </data>
+  <data name="taluka" xml:space="preserve">
+    <value>तालुका</value>
+  </data>
+  <data name="tehsil" xml:space="preserve">
+    <value>तहसीलदार</value>
+  </data>
+  <data name="year" xml:space="preserve">
+    <value>वर्षों</value>
+  </data>
+  <data name="years" xml:space="preserve">
+    <value>वर्षों</value>
+  </data>
+  <data name="aadhaar" xml:space="preserve">
+    <value>आधार संख्या</value>
+  </data>
+  <data name="child" xml:space="preserve">
+    <value>Name of Child</value>
+  </data>
+  <data name="father" xml:space="preserve">
+    <value>Father Name</value>
+  </data>
+  <data name="hospitalname" xml:space="preserve">
+    <value>Name of Hospital</value>
+  </data>
+  <data name="lblPOB" xml:space="preserve">
+    <value>Place of Birth</value>
+  </data>
+  <data name="relationwithchild" xml:space="preserve">
+    <value>Relation with Child</value>
+  </data>
+  <data name="lblAppPhone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="lblDOD" xml:space="preserve">
+    <value>Date of Death</value>
+  </data>
+  <data name="lblTOD" xml:space="preserve">
+    <value>Time of Death</value>
+  </data>
+  <data name="bplcardNo" xml:space="preserve">
+    <value>BPL Card No.</value>
+  </data>
+  <data name="bplYear" xml:space="preserve">
+    <value>BPL Year</value>
+  </data>
+  <data name="concernedOffice" xml:space="preserve">
+    <value>Concerned Office</value>
+  </data>
+  <data name="designatedOfficer" xml:space="preserve">
+    <value>Designated Officer</value>
+  </data>
+  <data name="designatedOfficeOfficer" xml:space="preserve">
+    <value>Designated Office &amp; Officer</value>
+  </data>
+</root>

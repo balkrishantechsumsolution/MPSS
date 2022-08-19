@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="AnswerSheet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RegistrationNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SYCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ExamYMCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BranchCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SubjectCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AnswerSheetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AnswerSheetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ViewStudentDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StudRegdNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NameofStudent" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YearofPassing" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Course" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UniqueID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ViewStudentDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ViewStudentDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MigrationCertificate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RegistrationNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YearOfAdmission" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MigrationCertificateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MigrationCertificateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DuplicateDivisionalCertificate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RegistrationNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="YearOfPassing" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DuplicateDivisionalCertificateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DuplicateDivisionalCertificateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DuplicateSemseterMarkSheet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RegistrationNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SYCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ExamYMCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DuplicateSemseterMarkSheetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DuplicateSemseterMarkSheetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DuplicateDivisionalMarksheet">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RegistrationNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ExamYMCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DuplicateDivisionalMarksheetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DuplicateDivisionalMarksheetResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataTable" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataSet" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:element ref="s:schema" />
+            <s:any />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AnswerSheetSoapIn">
+    <wsdl:part name="parameters" element="tns:AnswerSheet" />
+  </wsdl:message>
+  <wsdl:message name="AnswerSheetSoapOut">
+    <wsdl:part name="parameters" element="tns:AnswerSheetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ViewStudentDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:ViewStudentDetails" />
+  </wsdl:message>
+  <wsdl:message name="ViewStudentDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:ViewStudentDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="MigrationCertificateSoapIn">
+    <wsdl:part name="parameters" element="tns:MigrationCertificate" />
+  </wsdl:message>
+  <wsdl:message name="MigrationCertificateSoapOut">
+    <wsdl:part name="parameters" element="tns:MigrationCertificateResponse" />
+  </wsdl:message>
+  <wsdl:message name="DuplicateDivisionalCertificateSoapIn">
+    <wsdl:part name="parameters" element="tns:DuplicateDivisionalCertificate" />
+  </wsdl:message>
+  <wsdl:message name="DuplicateDivisionalCertificateSoapOut">
+    <wsdl:part name="parameters" element="tns:DuplicateDivisionalCertificateResponse" />
+  </wsdl:message>
+  <wsdl:message name="DuplicateSemseterMarkSheetSoapIn">
+    <wsdl:part name="parameters" element="tns:DuplicateSemseterMarkSheet" />
+  </wsdl:message>
+  <wsdl:message name="DuplicateSemseterMarkSheetSoapOut">
+    <wsdl:part name="parameters" element="tns:DuplicateSemseterMarkSheetResponse" />
+  </wsdl:message>
+  <wsdl:message name="DuplicateDivisionalMarksheetSoapIn">
+    <wsdl:part name="parameters" element="tns:DuplicateDivisionalMarksheet" />
+  </wsdl:message>
+  <wsdl:message name="DuplicateDivisionalMarksheetSoapOut">
+    <wsdl:part name="parameters" element="tns:DuplicateDivisionalMarksheetResponse" />
+  </wsdl:message>
+  <wsdl:message name="AnswerSheetHttpGetIn">
+    <wsdl:part name="RegistrationNo" type="s:string" />
+    <wsdl:part name="SYCode" type="s:string" />
+    <wsdl:part name="ExamYMCode" type="s:string" />
+    <wsdl:part name="BranchCode" type="s:string" />
+    <wsdl:part name="SubjectCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AnswerSheetHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ViewStudentDetailsHttpGetIn">
+    <wsdl:part name="StudRegdNo" type="s:string" />
+    <wsdl:part name="NameofStudent" type="s:string" />
+    <wsdl:part name="YearofPassing" type="s:string" />
+    <wsdl:part name="Course" type="s:string" />
+    <wsdl:part name="UniqueID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ViewStudentDetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="MigrationCertificateHttpGetIn">
+    <wsdl:part name="RegistrationNo" type="s:string" />
+    <wsdl:part name="YearOfAdmission" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="MigrationCertificateHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="DuplicateDivisionalCertificateHttpGetIn">
+    <wsdl:part name="RegistrationNo" type="s:string" />
+    <wsdl:part name="YearOfPassing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DuplicateDivisionalCertificateHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="DuplicateSemseterMarkSheetHttpGetIn">
+    <wsdl:part name="RegistrationNo" type="s:string" />
+    <wsdl:part name="SYCode" type="s:string" />
+    <wsdl:part name="ExamYMCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DuplicateSemseterMarkSheetHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="DuplicateDivisionalMarksheetHttpGetIn">
+    <wsdl:part name="RegistrationNo" type="s:string" />
+    <wsdl:part name="ExamYMCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DuplicateDivisionalMarksheetHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="AnswerSheetHttpPostIn">
+    <wsdl:part name="RegistrationNo" type="s:string" />
+    <wsdl:part name="SYCode" type="s:string" />
+    <wsdl:part name="ExamYMCode" type="s:string" />
+    <wsdl:part name="BranchCode" type="s:string" />
+    <wsdl:part name="SubjectCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AnswerSheetHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="ViewStudentDetailsHttpPostIn">
+    <wsdl:part name="StudRegdNo" type="s:string" />
+    <wsdl:part name="NameofStudent" type="s:string" />
+    <wsdl:part name="YearofPassing" type="s:string" />
+    <wsdl:part name="Course" type="s:string" />
+    <wsdl:part name="UniqueID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ViewStudentDetailsHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="MigrationCertificateHttpPostIn">
+    <wsdl:part name="RegistrationNo" type="s:string" />
+    <wsdl:part name="YearOfAdmission" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="MigrationCertificateHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="DuplicateDivisionalCertificateHttpPostIn">
+    <wsdl:part name="RegistrationNo" type="s:string" />
+    <wsdl:part name="YearOfPassing" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DuplicateDivisionalCertificateHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="DuplicateSemseterMarkSheetHttpPostIn">
+    <wsdl:part name="RegistrationNo" type="s:string" />
+    <wsdl:part name="SYCode" type="s:string" />
+    <wsdl:part name="ExamYMCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DuplicateSemseterMarkSheetHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="DuplicateDivisionalMarksheetHttpPostIn">
+    <wsdl:part name="RegistrationNo" type="s:string" />
+    <wsdl:part name="ExamYMCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DuplicateDivisionalMarksheetHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:portType name="StudentDetailsWSSoap">
+    <wsdl:operation name="AnswerSheet">
+      <wsdl:input message="tns:AnswerSheetSoapIn" />
+      <wsdl:output message="tns:AnswerSheetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewStudentDetails">
+      <wsdl:input message="tns:ViewStudentDetailsSoapIn" />
+      <wsdl:output message="tns:ViewStudentDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MigrationCertificate">
+      <wsdl:input message="tns:MigrationCertificateSoapIn" />
+      <wsdl:output message="tns:MigrationCertificateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DuplicateDivisionalCertificate">
+      <wsdl:input message="tns:DuplicateDivisionalCertificateSoapIn" />
+      <wsdl:output message="tns:DuplicateDivisionalCertificateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DuplicateSemseterMarkSheet">
+      <wsdl:input message="tns:DuplicateSemseterMarkSheetSoapIn" />
+      <wsdl:output message="tns:DuplicateSemseterMarkSheetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DuplicateDivisionalMarksheet">
+      <wsdl:input message="tns:DuplicateDivisionalMarksheetSoapIn" />
+      <wsdl:output message="tns:DuplicateDivisionalMarksheetSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="StudentDetailsWSHttpGet">
+    <wsdl:operation name="AnswerSheet">
+      <wsdl:input message="tns:AnswerSheetHttpGetIn" />
+      <wsdl:output message="tns:AnswerSheetHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewStudentDetails">
+      <wsdl:input message="tns:ViewStudentDetailsHttpGetIn" />
+      <wsdl:output message="tns:ViewStudentDetailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MigrationCertificate">
+      <wsdl:input message="tns:MigrationCertificateHttpGetIn" />
+      <wsdl:output message="tns:MigrationCertificateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DuplicateDivisionalCertificate">
+      <wsdl:input message="tns:DuplicateDivisionalCertificateHttpGetIn" />
+      <wsdl:output message="tns:DuplicateDivisionalCertificateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DuplicateSemseterMarkSheet">
+      <wsdl:input message="tns:DuplicateSemseterMarkSheetHttpGetIn" />
+      <wsdl:output message="tns:DuplicateSemseterMarkSheetHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DuplicateDivisionalMarksheet">
+      <wsdl:input message="tns:DuplicateDivisionalMarksheetHttpGetIn" />
+      <wsdl:output message="tns:DuplicateDivisionalMarksheetHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="StudentDetailsWSHttpPost">
+    <wsdl:operation name="AnswerSheet">
+      <wsdl:input message="tns:AnswerSheetHttpPostIn" />
+      <wsdl:output message="tns:AnswerSheetHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewStudentDetails">
+      <wsdl:input message="tns:ViewStudentDetailsHttpPostIn" />
+      <wsdl:output message="tns:ViewStudentDetailsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MigrationCertificate">
+      <wsdl:input message="tns:MigrationCertificateHttpPostIn" />
+      <wsdl:output message="tns:MigrationCertificateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DuplicateDivisionalCertificate">
+      <wsdl:input message="tns:DuplicateDivisionalCertificateHttpPostIn" />
+      <wsdl:output message="tns:DuplicateDivisionalCertificateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DuplicateSemseterMarkSheet">
+      <wsdl:input message="tns:DuplicateSemseterMarkSheetHttpPostIn" />
+      <wsdl:output message="tns:DuplicateSemseterMarkSheetHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DuplicateDivisionalMarksheet">
+      <wsdl:input message="tns:DuplicateDivisionalMarksheetHttpPostIn" />
+      <wsdl:output message="tns:DuplicateDivisionalMarksheetHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="StudentDetailsWSSoap" type="tns:StudentDetailsWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AnswerSheet">
+      <soap:operation soapAction="http://tempuri.org/AnswerSheet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewStudentDetails">
+      <soap:operation soapAction="http://tempuri.org/ViewStudentDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MigrationCertificate">
+      <soap:operation soapAction="http://tempuri.org/MigrationCertificate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DuplicateDivisionalCertificate">
+      <soap:operation soapAction="http://tempuri.org/DuplicateDivisionalCertificate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DuplicateSemseterMarkSheet">
+      <soap:operation soapAction="http://tempuri.org/DuplicateSemseterMarkSheet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DuplicateDivisionalMarksheet">
+      <soap:operation soapAction="http://tempuri.org/DuplicateDivisionalMarksheet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="StudentDetailsWSSoap12" type="tns:StudentDetailsWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AnswerSheet">
+      <soap12:operation soapAction="http://tempuri.org/AnswerSheet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewStudentDetails">
+      <soap12:operation soapAction="http://tempuri.org/ViewStudentDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MigrationCertificate">
+      <soap12:operation soapAction="http://tempuri.org/MigrationCertificate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DuplicateDivisionalCertificate">
+      <soap12:operation soapAction="http://tempuri.org/DuplicateDivisionalCertificate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DuplicateSemseterMarkSheet">
+      <soap12:operation soapAction="http://tempuri.org/DuplicateSemseterMarkSheet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DuplicateDivisionalMarksheet">
+      <soap12:operation soapAction="http://tempuri.org/DuplicateDivisionalMarksheet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="StudentDetailsWSHttpGet" type="tns:StudentDetailsWSHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="AnswerSheet">
+      <http:operation location="/AnswerSheet" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewStudentDetails">
+      <http:operation location="/ViewStudentDetails" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MigrationCertificate">
+      <http:operation location="/MigrationCertificate" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DuplicateDivisionalCertificate">
+      <http:operation location="/DuplicateDivisionalCertificate" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DuplicateSemseterMarkSheet">
+      <http:operation location="/DuplicateSemseterMarkSheet" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DuplicateDivisionalMarksheet">
+      <http:operation location="/DuplicateDivisionalMarksheet" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="StudentDetailsWSHttpPost" type="tns:StudentDetailsWSHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="AnswerSheet">
+      <http:operation location="/AnswerSheet" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewStudentDetails">
+      <http:operation location="/ViewStudentDetails" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MigrationCertificate">
+      <http:operation location="/MigrationCertificate" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DuplicateDivisionalCertificate">
+      <http:operation location="/DuplicateDivisionalCertificate" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DuplicateSemseterMarkSheet">
+      <http:operation location="/DuplicateSemseterMarkSheet" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DuplicateDivisionalMarksheet">
+      <http:operation location="/DuplicateDivisionalMarksheet" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="StudentDetailsWS">
+    <wsdl:port name="StudentDetailsWSSoap" binding="tns:StudentDetailsWSSoap">
+      <soap:address location="http://sctevtodisha.nic.in/Diploma/StudentDetailsWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="StudentDetailsWSSoap12" binding="tns:StudentDetailsWSSoap12">
+      <soap12:address location="http://sctevtodisha.nic.in/Diploma/StudentDetailsWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="StudentDetailsWSHttpGet" binding="tns:StudentDetailsWSHttpGet">
+      <http:address location="http://sctevtodisha.nic.in/Diploma/StudentDetailsWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="StudentDetailsWSHttpPost" binding="tns:StudentDetailsWSHttpPost">
+      <http:address location="http://sctevtodisha.nic.in/Diploma/StudentDetailsWS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

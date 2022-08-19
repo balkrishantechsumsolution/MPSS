@@ -1,0 +1,136 @@
+﻿@font-face {
+    font-family: 'Roboto-Regular_0';
+    src: url('../../../g2c/fonts/Roboto-Regular_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Bold_0';
+    src: url('../../../g2c/fonts/Roboto-Bold_0.ttf') format('truetype');
+}
+
+.inner-section-page {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #cdcdcd;
+    margin: 60px 0;
+    padding: 15px;
+}
+
+    .inner-section-page h1 {
+        font-family: 'Roboto-Regular_0' !important;
+    }
+
+.box-container {
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+    .box-container .text-danger {
+        font-size: 0.9em;
+        font-family: 'Roboto-Regular_0';
+        color: #CE4343;
+        background: #EEE;
+        padding: 7px 10px;
+        border-radius: 3px;
+        margin-top: 10px;
+    }
+
+.text-danger li {
+    font-family: 'Roboto-Regular_0';
+    list-style: circle;
+    color: #CE4343;
+}
+
+.register-note ul {
+    padding: 0px;
+    margin: 0px 0px 0px 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+#disableDivTemp {
+    position: relative;
+    overflow: hidden;
+}
+
+.tab-reg-org {
+    background: #f76025;
+}
+
+.tab-reg {
+    color: #fff;
+    font-weight: bold;
+    min-height: 345px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+    .tab-reg p {
+        font-family: 'Roboto-Regular_0';
+        color: #fff;
+    }
+
+.tab-reg-green {
+    background: #27ae60;
+}
+
+.tab-reg {
+    color: #fff;
+    font-weight: bold;
+    min-height: 345px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn span.glyphicon {
+    opacity: 0;
+}
+
+.reg_opt1 {
+    background-color: #eee;
+    border: 2px solid #ddd;
+    margin-bottom: 15px;
+    min-height: 179px;
+}
+
+.ftcl_black { color:#000 !important;
+}
+
+
+
+    .reg_opt1 > .icon {
+        float: left;
+        background-color: #E4E4E4;
+        display: inline;
+        color: #72B8FF;
+        padding: 15px;
+        min-height: 177px;
+    }
+
+    .reg_opt1 > .txt {
+        display: table-cell;
+    }
+
+        .reg_opt1 > .txt p {     color: #6B6B6B;
+    font-family: 'Roboto-Regular_0';
+    padding: 5px 10px 0 10px !important; font-size:0.95em;
+        }
+         .reg_opt1 > .txt b{ font-size:13px; padding-top:5px;}
+
+        .reg_opt1 > .txt h2 {
+            padding: 10px 0 10px 10px !important;
+            background-color: #394850;
+            color: #fff;
+            margin: 0px;
+        }
+
+    .reg_opt1:hover {
+        box-shadow: 5px 5px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
+        
+    }

@@ -1,0 +1,76 @@
+﻿body {
+}
+.container {
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+}
+.inner-section-page{
+background: #fff none repeat scroll 0 0;
+border: 1px solid #cdcdcd;
+margin: 60px 0;
+padding: 15px;
+}
+.inner-content{background: #ebebeb none repeat scroll 0 0;
+min-height: 500px;}
+
+.clearfix{clear:both;}
+.step1{height: 38px;
+width: 38px;
+-moz-border-radius: 35px;
+border-radius: 35px;border:1px solid ;float:left; margin:10px 0 30px 60px;background-color:#f15925;}
+.step2{height:38px;
+width: 38px;
+-moz-border-radius: 35px;
+border-radius: 35px;border:1px solid ; float:left; margin:10px 0 20px 0;background-color:#f15925;}
+.step3{height: 38px;
+width: 38px;
+-moz-border-radius: 35px;
+border-radius: 35px;border:1px solid ;float:left; margin:10px 0 20px 0;background-color:#f15925;}
+.step4 {height: 38px;
+width: 38px;
+-moz-border-radius: 35px;
+border-radius: 35px;border:1px solid ;float:left; margin:10px 0 20px 0;background-color:#f15925;}
+.step5 {height: 38px;
+width: 38px;
+-moz-border-radius: 35px;
+border-radius: 35px;border:1px solid ;float:left; margin:10px 0 20px 0;background-color:#f15925;}
+.step6 {height: 38px;
+width: 38px;
+-moz-border-radius: 35px;
+border-radius: 35px;border:1px solid ;float:left; margin:10px 0 20px 0;background-color:#f15925;}
+.arrow-line{border:1px solid; margin:10px;width:130px;float:left;margin: 30px 0 0 0px;background-color:#f15925;height:2px}
+.steptext{margin: 0px 0px 0px 10px;font-size: 25px;font-weight: bold;color: wheat;}
+.optiontext{width: 125px;display: block;text-align: center;margin: 10px 0px 0px -45px;}
+.data-label{display:table-cell;font-size:1.015em;color:#393939;width:40%;white-space:nowrap;padding-bottom:9px}.data-value{display:table-cell;font-size:1.216em;color:#393939;text-align:right}#total{font-weight:bold;font-size:1.271em;display:inline-block}.total .data-label{color:#000}#total{color:#469C3D;font-weight:bold}
+.receipt small{font-size:.647em;padding-left:0.455em;display:inline-block;min-width:2em}
+.receipt-section{padding:14px 23px 10px;background:#f0efeb;border-bottom:5px solid #e1ddd3;-moz-box-sizing:border-box;box-sizing:border-box;display:table;width:100%}
+.dashed-line{border-bottom:1px dashed #ccc;padding-top:2px}
+.box-container {margin-bottom: 15px;padding-left: 8px;padding-right: 8px;
+}
+.iconBank{width:75px;height:62px;background-image:url("../images/bankcard.png");margin:5px;}
+.payment-content{font-size:12px;}
+.thumbnail1{text-align:center;margin:0 auto;border:none !important;padding:0;}
+.thumbnail1 img{width:85px;text-align:center;margin:5px auto}
+.thumbnail1 p{text-align:center;}
+.ustilityicon{cursor:pointer;}    
+.ustilityicon:hover{cursor:pointer;box-shadow: 1px 2px 8px #888888;padding:0;}
+.list-group-item img{width:10px;}
+.inner-section-page{margin-top:-1px;margin-bottom:60px;}
+.logo {width:170px;}
+.logo img{margin:10px;}
+.{background: #ffffff;
+background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%);
+background: -webkit-linear-gradiheader-innerent(top, #ffffff 0%,#f2f2f2 100%);
+background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 );border: 1px solid #cdcdcd;}
+.footerbottom{
+z-index: 9;
+color: #fff;
+font-size: 0.8em;
+margin: 0 auto;
+margin-top: -435px;
+}
+.footerback{width:100%;height:455px;background-image:url("../images/monuments-.jpg");}
+dl{margin-bottom:10px;}

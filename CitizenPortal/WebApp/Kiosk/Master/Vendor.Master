@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Vendor.master.cs" Inherits="CitizenPortal.WebApp.Kiosk.Master.Vendor" %>
+<%--<%@ Register Src="~/WebApp/Control/Header.ascx" TagPrefix="uc1" TagName="Header" %>--%>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Vendor</title>
+    <script src="../../../Scripts/jquery-2.2.3.min.js"></script>
+    <script src="../../../Scripts/angular.min.js"></script>
+    <link href="/g2c/css/font-awesome.min.css" rel="stylesheet" />
+    <!--<link href="../../Styles/bootstrap.min.css" rel="stylesheet" />-->
+    <%--<link href="../../Styles/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />--%>
+    <%--<link href="../../Styles/style.admin.css" rel="stylesheet" />
+    <link href="../../bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Styles/StyleSheet1.css" rel="stylesheet" />--%>
+    <%--<link href="../../Styles/timeline.css" rel="stylesheet" />
+    <link href="../../Styles/StyleSheet1.css" rel="stylesheet" />
+    <link href="../../Styles/StyleSheet3.css" rel="stylesheet" />
+    <link href="../../Styles/StyleSheet4.css" rel="stylesheet" />
+    <link href="../../Styles/style.admin.css" rel="stylesheet" />--%>
+    <%--//For request Page--Start Here --%> 
+    
+   <%-- <link href="../../../g2c/css/style.admin.css" rel="stylesheet" />--%>
+    <link href="../../../g2c/css/style.css" rel="stylesheet" />
+    <link href="../../../g2c/css/hmepge.bootstrap.css" rel="stylesheet" />
+    
+    <%--<link href="../../Styles/bootstrap.min.css" rel="stylesheet" />--%>
+    <link href="../../Styles/sb-admin-2.css" rel="stylesheet" />
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        /*body {
+             background: #118187; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#20CEA6, #118187); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#20CEA6, #118187); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#20CEA6, #118187); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#20CEA6, #118187); /* Standard syntax */
+        }*/
+        .form-heading {
+            text-transform:none !important;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <%--   <uc1:Header runat="server" ID="Header" />--%>
+<div>
+            <asp:ContentPlaceHolder ID="cphbody" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <script src="../../Common/Scripts/bootstrap.min.js"></script>
+            <script src="../../Common/Scripts/metisMenu.js"></script>
+            <script src="../../Common/Scripts/raphael.js"></script>
+            <script src="../../Common/Scripts/morris.js"></script>
+            <script src="../../Common/Scripts/sb-admin-2.js"></script>
+            <script>
+                if (document.getElementById("intrnlContent") != null) {
+                    angular.bootstrap(document.getElementById("intrnlContent"), ['appmodule']);
+                }
+            </script>
+        </div>
+    </form>
+</body>
+</html>

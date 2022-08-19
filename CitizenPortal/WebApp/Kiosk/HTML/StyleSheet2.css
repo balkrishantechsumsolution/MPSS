@@ -1,0 +1,177 @@
+﻿@charset "utf-8";
+/* CSS Document */
+Body{
+	background-color:#fafafa;
+	margin:20px 0 0 0;
+	font-family:Calibri!important;
+}
+* {font-family:Calibri!important;}
+.paymentcontainer{
+	width:1000px;
+	margin:0 auto;
+	font-family:Calibri;
+	font-weight:100;
+	font-size:1em;
+	line-height:2.1em;
+	}
+	
+.paymentbox{
+	float:left;
+	width:250px;
+	background-color:#fff;
+	border:solid 1px #C7DCEF;
+	border-bottom:none;
+	border-radius:5px 0 0 5px;
+	box-shadow:0 3px 6px #ddd;
+	
+}
+.box-content{
+	float:right;
+	width:727px;
+	font-family:Calibri;
+	font-weight:100;
+	font-size:14px;
+	color:#000;
+	padding:10px 10px;
+	background-color:#fff;
+	border:solid 1px #C7DCEF;
+	margin:0 0 0 -1px;
+	border-radius:0 5px 5px 0;
+	min-height:313px;
+	box-shadow:0 3px 6px #ddd;
+
+}
+.paymentbox1, .paymentbox2, .paymentbox3, .paymentbox4, .paymentbox5, .paymentbox6{
+	
+	font-size:1.7em;
+	display:block;
+
+}
+.paymentbox1 a, .paymentbox2 a, .paymentbox3 a, .paymentbox4 a, .paymentbox5 a, .paymentbox6 a{
+	color:#000;
+	text-decoration:none;
+	display:block;
+	float:left;
+	border-bottom:solid 1px #C7DCEF;
+	border-top:solid 1px #ffffff;
+	padding:10px 5px;
+	width:96%;
+	
+	}
+.paymentbox1 a:hover, .paymentbox2 a:hover, .paymentbox3 a:hover, .paymentbox4 a:hover, .paymentbox5 a:hover, .paymentbox6 a:hover{
+	background-color:#E2EBF3;
+	text-decoration:none;
+	color:#000 !important;
+	}
+.payactive{
+	/*background-image:url("images/hover-bg.png");*/
+	background-color:#0994D8;
+	text-decoration:none;
+	border-top:none;
+	color:#fff!important;
+	
+	}
+.paymentbox1 a:hover{
+	border-top:none;
+}
+.box1-content, .box2-content, .box3-content, .box4-content, .box5-content, .box6-content{
+	padding:5px 5px;
+
+}
+
+/*background-image:url('Images/netbanking.png'); background-position:right bottom;*/
+
+.box1-content 
+{
+	 background-repeat:no-repeat; min-height:300px;}
+
+.box2-content
+{
+	background-position:right bottom; background-repeat:no-repeat; min-height:300px;}
+.box3-content
+{
+	 background-position:right bottom; background-repeat:no-repeat; min-height:300px;}
+.box4-content
+{
+	 background-position:right bottom; background-repeat:no-repeat; min-height:300px;}
+.box5-content, .box6-content
+{
+	background-position:right bottom; background-repeat:no-repeat; min-height:300px;}
+.paymentbox1 a{
+	border-top:none;
+}
+.paymentbox5 a{
+	border-bottom:none;
+}
+/*************************************************************************/
+
+.box-content h1{
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif!important;
+	font-size:2.2em;
+	font-weight:normal;
+	border-bottom:solid 3px #eee;
+	padding-bottom:10px;
+	margin:0px 0;
+	color:#5C8DC7;
+}
+.main-head{
+	border-left:solid 4px #2C95E1; 
+}
+.main-head a{
+	font-size:1.7em; text-decoration:none;font-weight:100!important; color:#000;padding:0 0 0 20px; }
+.main-head a:hover{
+		color:#2183F7; text-decoration:underline;padding:0 0 0 20px;
+	}
+h2{color:#1256BD!important; margin:5px 0 0 0!important;}
+.sub-head{color:#666; font-size:1.1em; border-left:solid 4px #2C95E1; padding:0 0 0 20px;}
+.position{
+	float:right;  width:190px;}
+.note{
+	color:#D15E06; font-size:1.1em; text-align:center;
+}
+.natbanking{
+	background-image:url(../../Images/card.png); background-position:right bottom; background-repeat:no-repeat; min-height:282px;
+}
+.cards{
+	background-image:url(../../Images/netbanking.png); background-position:right bottom; background-repeat:no-repeat; min-height:282px;
+}
+.nsdl{
+	background-image:url(../../Images/icici.png); background-position:right bottom; background-repeat:no-repeat; min-height:282px;
+}
+.icici{
+	background-image:url(../../Images/nsdl.png); background-position:right bottom; background-repeat:no-repeat; min-height:282px;
+}
+.imps{
+	background-image:url(../../Images/imps.png); background-position:right bottom; background-repeat:no-repeat; min-height:282px;
+}
+.list-group-item.active, .list-group-item.active:focus{
+	background-image:url(../../Images/tab-bg.png); background-repeat:repeat-x;}
+.div-md-12{
+	width:100%;
+	float:left;
+	 margin: 5px 10px 0px 10px;
+	 border-bottom:solid 1px #ddd;
+	 padding:10px 0;
+}
+img{
+	border:none;
+}
+p{
+	font-size:16px;
+	display:inline;
+}
+.text-right{
+	text-align:right;
+}
+.header{
+	width:99%;
+	margin:0 0 20px 0;
+	padding:10px 6px;
+	background-color:#D4DDE1;
+	border:solid 1px #B5CAD5;
+	color:#000;
+	font-family:Calibri;
+	font-weight:100;
+	font-size:28px;
+	border-radius:5px 5px;
+}

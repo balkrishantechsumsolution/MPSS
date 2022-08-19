@@ -1,0 +1,628 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <link href="StyleSheet2.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="sslMainBodyContainer">
+        <div class="merchantBanner">
+            <div class="merchantBannerImage">
+                <img title="" src="/resources/upload/uwpum1q2sk_MTT001_logo.gif" onerror="imgError(this);">
+                <!--<img title="" src="/resources/pg/images/rechargeitnowBanner.png" /> -->
+            </div>
+        </div>
+        <div class="ForgotPsdBody" id="ForgotPsdBody">
+            <div class="ForgotPsdPopUp" id="ForgotPsdPopUp">
+                <img class="FgtPassclosePopUp" id="fgtPassClose" src="/resources/pg/images/crossIcon.png">
+                <div class="forgotPassContent" id="forgotPassContent">
+                    <h1>Forgot Your Password ?</h1>
+                    <p> Please Enter Your Registered Email Address </p>
+                    <div style="text-align:center;">
+                        <input class="ForgotEmailInput" id="ForgotEmailInput" placeholder="Email" type="text">
+                    </div>
+                    <div class="forgotPswbtn">
+                        <p id="fgtPassErrMsg" class="fgtPassErrMsg">please verify your email address</p>
+                        <button id="fgtPasswordMail">
+                            <span>Continue</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="cnfFrgtPass" id="cnfFrgtPass">
+                    <p class="ForgotPsdNoti">Your password has been sent to your Email address </p>
+                </div>
+            </div>
+        </div>
+        <div class="sslMainContainer">
+            <form id="payment">
+                <input name="returnUrl" value="https://www.mponline.gov.in/ePG/HDFCNF/frmHdfcNfResponse.aspx" type="hidden">
+                <input name="emiSignature" value="0f41514b99785c59c8668ae9d4340ddfc145d5ae" type="hidden">
+                <input name="customParams[0].value" value="EV167721294" type="hidden">
+                <input name="addressStreet1" value="" type="hidden">
+                <input name="addressStreet2" value="" type="hidden">
+                <input name="phoneNumber" value="" type="hidden">
+                <input name="orderAmount" value="1690.00" type="hidden">
+                <input name="retryCount" value="0" type="hidden">
+                <input name="customParams[3].value" value="0.00" type="hidden">
+                <input name="lazyPayFirstNameReq" value="false" type="hidden">
+                <input name="ctx" value="CTX1607200928002863657" type="hidden">
+                <input name="citrusDpFlag" value="false" type="hidden">
+                <input name="addressCountry" value="" type="hidden">
+                <input name="paymentModeType" value="Editable" type="hidden">
+                <input name="addressState" value="" type="hidden">
+                <input name="lastName" value="" type="hidden">
+                <input name="addressCity" value="" type="hidden">
+                <input name="lazyPayEnabled" value="false" type="hidden">
+                <input name="customParams[0].name" value="ApplicationNumber" type="hidden">
+                <input name="cvvNumber" value="" type="hidden">
+                <input name="countryCode" value="0" type="hidden">
+                <input name="alteredAmount" value="" type="hidden">
+                <input name="issuerCode" value="" type="hidden">
+                <input name="customParams[2].value" value="0.00" type="hidden">
+                <input name="cardType" value="" type="hidden">
+                <input name="customParams[1].name" value="Merchant Amount" type="hidden">
+                <input name="mcpFlagFromMerchant" value="" type="hidden">
+                <input name="customParams[4].value" value="0" type="hidden">
+                <input name="email" value="" type="hidden">
+                <input name="pgCode" value="" type="hidden">
+                <input name="merchantTxnId" value="146902682338" type="hidden">
+                <input name="lazyPayLastNameReq" value="false" type="hidden">
+                <input name="mcpEnabledForMerchant" value="false" type="hidden">
+                <input name="secSignature" value="d43740c592373c6083a8550d5f995b9d5e62479e" type="hidden">
+                <input name="addressZip" value="" type="hidden">
+                <input name="errorMessage" value="" type="hidden">
+                <input name="paymentMode" value="NET_BANKING" type="hidden">
+                <input name="dpQuerySignature" value="aa90255894465e4c19ff1c79e0565888f371119f" type="hidden">
+                <input name="customParams[4].name" value="SslRetry" type="hidden">
+                <input name="lazyPayPaymentSignature" value="d43740c592373c6083a8550d5f995b9d5e62479e" type="hidden">
+                <input name="multiMidLookUpSignature" value="fbba64dfcac258e3fe57d0cd1dd44fe350b4047f" type="hidden">
+                <input name="lazyPaySignature" value="00c9be72f0a8eb80bd8f7fae762812d6ee16ffb1" type="hidden">
+                <input name="dpApplicableForMerchant" value="true" type="hidden">
+                <input name="currency" value="INR" type="hidden">
+                <input name="dpFlag" value="" type="hidden">
+                <input name="expiryMonth" value="MM" type="hidden">
+                <input name="lazyPayEligibilitySign" value="26526e1e73a9572b944bcc63ffdcd564d72e4158" type="hidden">
+                <input name="lazyPayAddressReq" value="false" type="hidden">
+                <input name="dpSignature" value="dc679599a4751d4b2cd500da3abc4eb0fa9b8bdd" type="hidden">
+                <input name="notifyUrl" value="" type="hidden">
+                <input name="firstName" value="" type="hidden">
+                <input name="oneClickBuy" value="false" type="hidden">
+                <input name="productSKU" value="" type="hidden">
+                <input name="customParams[1].value" value="1690.00" type="hidden">
+                <input name="lazyPaySignUpModes" value="" type="hidden">
+                <input name="expiryYear" value="YY" type="hidden">
+                <input name="cardHolderName" value="" type="hidden">
+                <input name="amountWithinCODRange" value="false" type="hidden">
+                <input name="customParams[3].name" value="Service Tax" type="hidden">
+                <input name="couponCode" value="" type="hidden">
+                <input name="customParams[2].name" value="Convenience Fee" type="hidden">
+                <input name="productName" value="" type="hidden">
+                <input name="cardNumber" value="" type="hidden">
+                <input name="vanityUrl" value="mponline" type="hidden">
+                <input name="merchantAccessKey" value="E2PO34AFRHNJE7JT3RBD" type="hidden">
+                <input name="motoUrl" value="https://admin.citruspay.com/service/moto/authorize/struct/mponline" type="hidden">
+                <input name="dpBaseUrl" value="https://mars.citruspay.com/dynamicpricing" type="hidden">
+                <input name="isdpEnabled" value="false" type="hidden">
+                <input name="emiServiceBaseUrl" value="https://mars.citruspay.com/emi-service" type="hidden">
+                <input name="mcpBaseUrl" value="https://mercury.citruspay.com/multi-currency-pricing" type="hidden">
+                <input name="binServiceUrl" value="https://citrusapi.citruspay.com/binservice/v2/bin/" type="hidden">
+                <input name="isEMI" value="" type="hidden">
+                <input class="mobileDetection" value="false" type="hidden">
+                <input name="lazyPayBaseUrl" value="https://www.lazypay.in" type="hidden">
+                <input name="citrusJsPaymentEnv" value="production" type="hidden">
+            </form>
+            <form id="cancel" method="POST" action="https://www.citruspay.com/sslperf/mponline/cancel">
+                <!--<img id="cancelButton" title="Cancel Transiction" style="cursor:pointer;" src="/resources/pg/images/crossIcon.png" />-->
+                <!--<a href="#" title="Review Order" onclick="cancel()" style="position: absolute;left: 479px;margin-top: 8px;text-decoration:underline">Review Order</a>-->
+            </form>
+            <form id="cod" method="POST" action="https://www.citruspay.com/sslperf/mponline/cod" target="_parent"> </form>
+            <form method="POST" name="payForm" id="payForm">
+                <input name="TxStatus" type="hidden">
+                <input name="TxId" type="hidden">
+                <input name="TxRefNo" type="hidden">
+                <input name="pgTxnNo" type="hidden">
+                <input name="pgRespCode" type="hidden">
+                <input name="TxMsg" type="hidden">
+                <input name="amount" type="hidden">
+                <input name="authIdCode" type="hidden">
+                <input name="issuerRefNo" type="hidden">
+                <input name="transactionId" type="hidden">
+                <input name="paymentMode" type="hidden">
+                <input name="TxGateway" type="hidden">
+                <input name="currency" type="hidden">
+                <input name="maskedCardNumber" type="hidden">
+                <input name="cardType" type="hidden">
+                <input name="productName" type="hidden">
+                <input name="avoidSaveCard" type="hidden">
+                <input name="firstName" type="hidden">
+                <input name="lastName" type="hidden">
+                <input name="email" type="hidden">
+                <input name="addressStreet1" type="hidden">
+                <input name="addressStreet2" type="hidden">
+                <input name="addressState" type="hidden">
+                <input name="addressCountry" type="hidden">
+                <input name="addressZip" type="hidden">
+                <input name="mobileNo" type="hidden">
+                <input name="isCod" type="hidden">
+                <input name="txnDateTime" type="hidden">
+                <input name="impsMmid" type="hidden">
+                <input name="impsMobileNumber" type="hidden">
+                <input name="param1" type="hidden">
+                <input name="param2" type="hidden">
+                <input name="signature" type="hidden">
+            </form>
+            <div class="header">
+                <div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="paramName">
+                                    <span style="color:black">* </span>Email
+                                </td>
+                                <td class="fullTd" colspan="2"><input id="systemp_Email" placeholder="Email Id" value="" mandatory="y" style="margin: -5px;" type="text"></td>
+                            </tr>
+                            <tr>
+                                <td class="paramName">
+                                    <span style="color:black;visibility: hidden;">* </span>Merchant Amount
+                                </td>
+                                <td class="fullTd" colspan="2"><input value="1690.00" style="margin: -5px;" readonly="" type="text"></td>
+                            </tr>
+                            <tr>
+                                <td class="paramName">
+                                    <span style="color:black;visibility: hidden;">* </span>Convenience Fee
+                                </td>
+                                <td class="fullTd" colspan="2"><input value="0.00" style="margin: -5px;" readonly="" type="text"></td>
+                            </tr>
+                            <tr>
+                                <td class="paramName">
+                                    <span style="color:black;visibility: hidden;">* </span>Service Tax
+                                </td>
+                                <td class="fullTd" colspan="2"><input value="0.00" style="margin: -5px;" readonly="" type="text"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab">
+                <ul>
+                    <li>
+                        <input name="paymentMode" id="CITRUS_WALLET" type="radio"><label style="padding: 11px 40px;" for="CITRUS_WALLET">Citrus<br>Account</label>
+                        <div class="memberSection">
+                            <img src="/resources/pg/images/logo_citrus1.png">
+                            <span>itrus</span> <span style="color: gray;">Member</span>
+                            <p>
+                            </p><form id="login" action="https://www.citruspay.com/sslperf/mponline/login" onsubmit="return validateLoginForm()" method="POST">
+                                <input name="_spring_security_remember_me" value="true" type="hidden">
+                                <label for="username">Username</label>
+                                <input id="username" name="username" autocomplete="false" value="" placeholder="abc@example.com" type="text"><br>
+                                <div id="errorIncorrectEmail" class="Citrus_Members_Errors" style="display:none">The email you entered is Incorrect</div>
+                                <label for="password">Password</label>
+                                <!-- Below two fields are just to avoid autofill in browser -->
+                                <input name="prevent_autofill" id="prevent_autofill" value="" style="display:none;" type="text">
+                                <input name="password_fake" id="password_fake" value="" style="display:none;" type="password">
+                                <input id="password" name="password" value="" placeholder="Password" type="password"><br>
+                                <div id="errorIncorrectPassword" class="Citrus_Members_Errors" style="display:none">The password you entered is Incorrect</div>
+                                <button onclick="login()" disabled="">Login</button>
+                                <div class="fgtPwdDiv">
+                                    <span class="fgtPwdSpan" id="forgotPass">Forgot Password</span>
+                                </div>
+                            </form>
+                            <p></p>
+                        </div>
+                    </li>
+                    <li>
+                        <input name="paymentMode" id="CREDIT_CARD" checked="" type="radio"><label style="padding: 11px 40px;" for="CREDIT_CARD">Credit<br>Card</label>
+                        <div>
+                            <div class="creditCradSection">
+                                <h4 id="citruCCFailureMsg" class="headerMsg"></h4>
+                                <h4 id="isCreditCardSchemeEnabled" class="headerMsg"></h4>
+                                <form novalidate="novalidate" id="creditCardDetails" autocomplete="off">
+                                    <div class="new-account-details">
+                                        <div>
+                                            <input placeholder="Card Number" id="creditCardNumber" name="creditCardNumber" autocomplete="off" class="FailureMsgHide" value="" type="text">
+                                            <!-- Below one fields are just to avoid autofill in browser -->
+                                            <input name="prevent_autofill" id="prevent_autofill" value="" style="display:none;" type="text">
+                                        </div>
+                                        <input id="creditCardScheme" value="" type="hidden">
+                                        <div class="expCvvDiv">
+                                            <select id="creditCardExpiryMonth" class="expiryMonth">
+                                                <option value="MM">MM</option>
+                                                <option value="01">01</option>
+                                                <option value="02">02</option>
+                                                <option value="03">03</option>
+                                                <option value="04">04</option>
+                                                <option value="05">05</option>
+                                                <option value="06">06</option>
+                                                <option value="07">07</option>
+                                                <option value="08">08</option>
+                                                <option value="09">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                            <select id="creditCardExpiryYear" class="expiryYear">
+                                                <option value="YY">YYYY</option>
+                                                <option value="16">2016</option>
+                                                <option value="17">2017</option>
+                                                <option value="18">2018</option>
+                                                <option value="19">2019</option>
+                                                <option value="20">2020</option>
+                                                <option value="21">2021</option>
+                                                <option value="22">2022</option>
+                                                <option value="23">2023</option>
+                                                <option value="24">2024</option>
+                                                <option value="25">2025</option>
+                                                <option value="26">2026</option>
+                                                <option value="27">2027</option>
+                                                <option value="28">2028</option>
+                                                <option value="29">2029</option>
+                                                <option value="30">2030</option>
+                                                <option value="31">2031</option>
+                                                <option value="32">2032</option>
+                                                <option value="33">2033</option>
+                                                <option value="34">2034</option>
+                                                <option value="35">2035</option>
+                                                <option value="36">2036</option>
+                                                <option value="37">2037</option>
+                                                <option value="38">2038</option>
+                                                <option value="39">2039</option>
+                                                <option value="40">2040</option>
+                                                <option value="41">2041</option>
+                                                <option value="42">2042</option>
+                                                <option value="43">2043</option>
+                                                <option value="44">2044</option>
+                                                <option value="45">2045</option>
+                                                <option value="46">2046</option>
+                                                <option value="47">2047</option>
+                                                <option value="48">2048</option>
+                                                <option value="49">2049</option>
+                                                <option value="50">2050</option>
+                                                <option value="51">2051</option>
+                                                <option value="52">2052</option>
+                                                <option value="53">2053</option>
+                                                <option value="54">2054</option>
+                                                <option value="55">2055</option>
+                                                <option value="56">2056</option>
+                                                <option value="57">2057</option>
+                                                <option value="58">2058</option>
+                                                <option value="59">2059</option>
+                                                <option value="60">2060</option>
+                                                <option value="61">2061</option>
+                                                <option value="62">2062</option>
+                                                <option value="63">2063</option>
+                                                <option value="64">2064</option>
+                                                <option value="65">2065</option>
+                                                <option value="66">2066</option>
+                                                <option value="67">2067</option>
+                                                <option value="68">2068</option>
+                                                <option value="69">2069</option>
+                                                <option value="70">2070</option>
+                                                <option value="71">2071</option>
+                                                <option value="72">2072</option>
+                                                <option value="73">2073</option>
+                                                <option value="74">2074</option>
+                                                <option value="75">2075</option>
+                                                <option value="76">2076</option>
+                                                <option value="77">2077</option>
+                                                <option value="78">2078</option>
+                                                <option value="79">2079</option>
+                                                <option value="80">2080</option>
+                                                <option value="81">2081</option>
+                                                <option value="82">2082</option>
+                                                <option value="83">2083</option>
+                                                <option value="84">2084</option>
+                                                <option value="85">2085</option>
+                                                <option value="86">2086</option>
+                                                <option value="87">2087</option>
+                                                <option value="88">2088</option>
+                                                <option value="89">2089</option>
+                                                <option value="90">2090</option>
+                                                <option value="91">2091</option>
+                                                <option value="92">2092</option>
+                                                <option value="93">2093</option>
+                                                <option value="94">2094</option>
+                                                <option value="95">2095</option>
+                                                <option value="96">2096</option>
+                                                <option value="97">2097</option>
+                                                <option value="98">2098</option>
+                                                <option value="99">2099</option>
+                                                <option value="100">2100</option>
+                                            </select>
+                                            <!--<input type="text" id="creditCardExpiryDate" name="expiryDate" placeholder="MM/YY" autocomplete="off" maxlength="7" class="FailureMsgHide"
+                                            value="MM/YY" />-->
+                                            <input placeholder="CVV" id="creditCardCVV" name="cvv" class="FailureMsgHide" autocomplete="off" value="" type="password">
+                                            <span class="cvvSpan">
+                                                <label href="#" style="position:relative;">
+                                                    <img src="/resources/pg/images/questionIcon.jpg">
+                                                    <div class="tool-tip slideIn top">
+                                                        <img style="width:50px;" src="/resources/pg/images/cvv_help.jpg">
+                                                    </div>
+                                                </label>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <h3 id="ccMaestroCardMsg" class="maestroMsg">* Expiry and CVV not Mandatory for Maestro Card (if applicable)</h3>
+                                        </div>
+                                        <div class="Namecard_div">
+                                            <input placeholder="Name on Card" id="creditCardHolderName" autocomplete="off" class="nameOnCard FailureMsgHide" onkeypress="return onlyAlphabets(event,this);" value="" type="text">
+                                            <!-- Below one fields are just to avoid autofill in browser -->
+                                            <input name="prevent_autofill" id="prevent_autofill" value="" style="display:none;" type="text">
+                                        </div>
+                                    </div>
+                                    <div style="display: none;" class="dynamicPricingMsg"></div>
+                                    <div id="amountConvTexCC" style="display:none;">Converted from INR 1690.00</div>
+                                    <div class="btnCenter">
+                                        <button onclick=" " class="pay">Pay<span name="currency"> ₹</span><span name="originalAmt"> 1690.00</span></button>
+                                    </div>
+                                </form>
+                                <div style="display: block;" class="newBackIcon"><span onclick="cancel()" class="goBackToMer" title="Cancel transaction">Cancel</span></div>
+                                <!--<img onclick="cancel()" title="Go back to http://www.mponline.gov.in" class="newBackIcon" src="/resources/pg/images/arrow_left.png" />-->
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <input name="paymentMode" id="DEBIT_CARD" type="radio"><label style="padding: 11px 40px;" for="DEBIT_CARD">Debit<br>Card</label>
+                        <div>
+                            <div class="debitCradSection">
+                                <h4 id="citruDCFailureMsg" class="headerMsg"></h4>
+                                <h4 id="isDebitCardSchemeEnabled" class="headerMsg"></h4>
+                                <form novalidate="novalidate" id="debitCardDetails" autocomplete="off">
+                                    <div class="new-account-details">
+                                        <div>
+                                            <input placeholder="Card Number" id="debitCardNumber" name="debitCardNumber" autocomplete="off" class="FailureMsgHide" value="" type="text">
+                                            <!-- Below one fields are just to avoid autofill in browser -->
+                                            <input name="prevent_autofill" id="prevent_autofill" value="" style="display:none;" type="text">
+                                        </div>
+                                        <input id="debitCardScheme" value="" type="hidden">
+                                        <div class="expCvvDiv">
+                                            <select id="debitCardExpiryMonth" class="expiryMonth">
+                                                <option value="MM">MM</option>
+                                                <option value="01">01</option>
+                                                <option value="02">02</option>
+                                                <option value="03">03</option>
+                                                <option value="04">04</option>
+                                                <option value="05">05</option>
+                                                <option value="06">06</option>
+                                                <option value="07">07</option>
+                                                <option value="08">08</option>
+                                                <option value="09">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                            <select id="debitCardExpiryYear" class="expiryYear">
+                                                <option value="YY">YYYY</option>
+                                                <option value="16">2016</option>
+                                                <option value="17">2017</option>
+                                                <option value="18">2018</option>
+                                                <option value="19">2019</option>
+                                                <option value="20">2020</option>
+                                                <option value="21">2021</option>
+                                                <option value="22">2022</option>
+                                                <option value="23">2023</option>
+                                                <option value="24">2024</option>
+                                                <option value="25">2025</option>
+                                                <option value="26">2026</option>
+                                                <option value="27">2027</option>
+                                                <option value="28">2028</option>
+                                                <option value="29">2029</option>
+                                                <option value="30">2030</option>
+                                                <option value="31">2031</option>
+                                                <option value="32">2032</option>
+                                                <option value="33">2033</option>
+                                                <option value="34">2034</option>
+                                                <option value="35">2035</option>
+                                                <option value="36">2036</option>
+                                                <option value="37">2037</option>
+                                                <option value="38">2038</option>
+                                                <option value="39">2039</option>
+                                                <option value="40">2040</option>
+                                                <option value="41">2041</option>
+                                                <option value="42">2042</option>
+                                                <option value="43">2043</option>
+                                                <option value="44">2044</option>
+                                                <option value="45">2045</option>
+                                                <option value="46">2046</option>
+                                                <option value="47">2047</option>
+                                                <option value="48">2048</option>
+                                                <option value="49">2049</option>
+                                                <option value="50">2050</option>
+                                                <option value="51">2051</option>
+                                                <option value="52">2052</option>
+                                                <option value="53">2053</option>
+                                                <option value="54">2054</option>
+                                                <option value="55">2055</option>
+                                                <option value="56">2056</option>
+                                                <option value="57">2057</option>
+                                                <option value="58">2058</option>
+                                                <option value="59">2059</option>
+                                                <option value="60">2060</option>
+                                                <option value="61">2061</option>
+                                                <option value="62">2062</option>
+                                                <option value="63">2063</option>
+                                                <option value="64">2064</option>
+                                                <option value="65">2065</option>
+                                                <option value="66">2066</option>
+                                                <option value="67">2067</option>
+                                                <option value="68">2068</option>
+                                                <option value="69">2069</option>
+                                                <option value="70">2070</option>
+                                                <option value="71">2071</option>
+                                                <option value="72">2072</option>
+                                                <option value="73">2073</option>
+                                                <option value="74">2074</option>
+                                                <option value="75">2075</option>
+                                                <option value="76">2076</option>
+                                                <option value="77">2077</option>
+                                                <option value="78">2078</option>
+                                                <option value="79">2079</option>
+                                                <option value="80">2080</option>
+                                                <option value="81">2081</option>
+                                                <option value="82">2082</option>
+                                                <option value="83">2083</option>
+                                                <option value="84">2084</option>
+                                                <option value="85">2085</option>
+                                                <option value="86">2086</option>
+                                                <option value="87">2087</option>
+                                                <option value="88">2088</option>
+                                                <option value="89">2089</option>
+                                                <option value="90">2090</option>
+                                                <option value="91">2091</option>
+                                                <option value="92">2092</option>
+                                                <option value="93">2093</option>
+                                                <option value="94">2094</option>
+                                                <option value="95">2095</option>
+                                                <option value="96">2096</option>
+                                                <option value="97">2097</option>
+                                                <option value="98">2098</option>
+                                                <option value="99">2099</option>
+                                                <option value="100">2100</option>
+                                            </select>
+                                            <!--<input type="text" id="debitCardExpiryDate" name="expiryDate" placeholder="MM/YY" autocomplete="off" maxlength="7" class="FailureMsgHide"
+                                            value="MM/YY" />-->
+                                            <input placeholder="CVV" id="debitCardCVV" name="cvv" class="FailureMsgHide" autocomplete="off" value="" type="password">
+                                            <span class="cvvSpan">
+                                                <label href="#" style="position:relative;">
+                                                    <img src="/resources/pg/images/questionIcon.jpg">
+                                                    <div class="tool-tip slideIn top">
+                                                        <img style="width:50px;" src="/resources/pg/images/cvv_help.jpg">
+                                                    </div>
+                                                </label>
+                                            </span>
+                                            <!-- Below one fields are just to avoid autofill in browser -->
+                                            <input placeholder="CVV" name="prevent_autofill" id="prevent_autofill" value="" style="display:none;" type="password">
+                                        </div>
+                                        <div>
+                                            <h3 id="dcMaestroCardMsg" class="maestroMsg">* CVV and Expiry not Mandatory for Maestro Card (if applicable)</h3>
+                                        </div>
+                                        <div class="Namecard_div">
+                                            <input placeholder="Name on Card" id="debitCardHolderName" autocomplete="off" class="nameOnCard FailureMsgHide" onkeypress="return onlyAlphabets(event,this);" value="" type="text">
+                                            <!-- Below one fields are just to avoid autofill in browser -->
+                                            <input name="prevent_autofill" id="prevent_autofill" value="" style="display:none;" type="text">
+                                        </div>
+                                    </div>
+                                    <div style="display: none;" class="dynamicPricingMsg"></div>
+                                    <div id="amountConvTexDB" style="display:none;">Converted from INR 1690.00</div>
+                                    <div class="btnCenter">
+                                        <button onclick=" " class="pay">Pay<span name="currency"> ₹</span><span name="originalAmt"> 1690.00</span></button>
+                                    </div>
+                                </form>
+                                <div style="display: block;" class="newBackIcon"><span onclick="cancel()" class="goBackToMer" title="Cancel transaction">Cancel</span></div>
+                                <!--<img onclick="cancel()" title="Go back to http://www.mponline.gov.in" class="newBackIcon" src="/resources/pg/images/arrow_left.png" />-->
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <input name="paymentMode" id="NET_BANKING" type="radio"><label style="padding: 11px 40px;" for="NET_BANKING">Net<br>Banking</label>
+                        <div>
+                            <div class="netBankingSection">
+                                <h4 id="citruNetBankingFailureMsg" class="headerMsg netBankheaderMsg"></h4>
+                                <div class="Content">
+                                    <h3 class="radioBtnBox">
+                                        <input id="radioBank1" value="SBI Bank" class="radioForBank" name="bank" type="radio"><img alt="SBI Bank" src="/resources/pg/images/sbibank.png">
+                                    </h3>
+                                    <h3 class="radioBtnBox">
+                                        <input id="radioBank2" value="ICICI Bank" class="radioForBank" name="bank" type="radio"><img alt="ICICI Bank" src="/resources/pg/images/icicibank.png">
+                                    </h3>
+                                    <h3 class="radioBtnBox">
+                                        <input id="radioBank3" value="AXIS Bank" class="radioForBank" name="bank" type="radio"><img alt="AXIS Bank" src="/resources/pg/images/axisbank.png">
+                                    </h3>
+                                    <h3 class="radioBtnBox">
+                                        <input id="radioBank4" value="Kotak Mahindra Bank" class="radioForBank" name="bank" type="radio"><img alt="Kotak Mahindra Bank" src="/resources/pg/images/kotakmahindrabank.png">
+                                    </h3>
+                                    <h3 class="radioBtnBox">
+                                        <input id="radioBank5" value="Indian Overseas Bank" class="radioForBank" name="bank" type="radio"><img alt="Indian Overseas Bank" src="/resources/pg/images/indianoverseasbank.png">
+                                    </h3>
+                                    <h3 class="radioBtnBox">
+                                        <input id="radioBank6" value="State Bank of Hyderabad" class="radioForBank" name="bank" type="radio"><img alt="State Bank of Hyderabad" src="/resources/pg/images/statebankofhyderabad.png">
+                                    </h3>
+                                </div>
+                                <center>
+                                    <div>
+                                        <select id="bank" class="dropDown">
+                                            <option value="">Select Another Bank</option>
+                                            <option value="CID005">SBI Bank</option>
+                                            <option value="CID001">ICICI Bank</option>
+                                            <option value="CID002">AXIS Bank</option>
+                                            <option value="CID033">Kotak Mahindra Bank</option>
+                                            <option value="CID027">Indian Overseas Bank</option>
+                                            <option value="CID012">State Bank of Hyderabad</option>
+                                            <option value="CID011">IDBI Bank</option>
+                                            <option value="CID016">Andhra Bank</option>
+                                            <option value="CID019">Bank of India</option>
+                                            <option value="CID021">Bank of Maharashtra</option>
+                                            <option value="CID051">Canara Bank</option>
+                                            <option value="CID045">Catholic Syrian Bank</option>
+                                            <option value="CID023">Central Bank of India</option>
+                                            <option value="CID024">City Union Bank</option>
+                                            <option value="CID025">Corporation Bank</option>
+                                            <option value="CID053">Cosmos Bank</option>
+                                            <option value="CID026">DCB Bank Personal</option>
+                                            <option value="CID006">Deutsche Bank</option>
+                                            <option value="CID009">Federal Bank</option>
+                                            <option value="CID050">ICICI Corporate Bank</option>
+                                            <option value="CID008">Indian Bank</option>
+                                            <option value="CID028">IndusInd Bank</option>
+                                            <option value="CID031">Karnataka Bank</option>
+                                            <option value="CID032">Karur Vysya Bank</option>
+                                            <option value="CID036">PNB Corporate</option>
+                                            <option value="CID044">PNB Retail</option>
+                                            <option value="CID037">South Indian Bank</option>
+                                            <option value="CID013">State Bank of Bikaner and Jaipur</option>
+                                            <option value="CID014">State Bank of Mysore</option>
+                                            <option value="CID043">State Bank of Patiala</option>
+                                            <option value="CID015">State Bank of Travancore</option>
+                                            <option value="CID070">UCO Bank</option>
+                                            <option value="CID007">Union Bank</option>
+                                            <option value="CID041">United Bank of India</option>
+                                            <option value="CID042">Vijaya Bank</option>
+                                            <option value="CID004">YES Bank</option>
+                                        </select>
+                                    </div>
+                                </center>
+                                <div class="bankPgHealthMsgContainer" id="bankPgHealthMsg">
+                                </div>
+                                <div style="display: none;" class="dynamicPricingMsg"></div>
+                                <div class="netBankingBtn">
+                                    <div>
+                                        <button onclick=" " class="pay">Pay<span name="currency"> ₹</span><span name="originalAmt"> 1690.00</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="display: block;" class="newBackIcon"><span onclick="cancel()" class="goBackToMer" title="Cancel transaction">Cancel</span></div>
+                            <!--<img onclick="cancel()" title="Go back to http://www.mponline.gov.in" class="newBackIcon" src="/resources/pg/images/arrow_left.png" />-->
+                        </div>
+                    </li>
+
+                </ul>
+                <div style="display: block; margin-top: 295px;" class="createWalletchkBox walletChkPosition">
+                    <input value="true" id="createWalletchk" name="createWallet" checked="" type="checkbox">
+                    <span>Enable Quick Pay</span>
+                    <label href="#" style="position:relative;">
+                        <img src="/resources/pg/images/questionIcon.jpg">
+                        <div class="tool-tip-terms slideIn top">
+                            <div>
+                                Citrus will remember you to make your next payment faster
+                                <a href="/resources/pg/privacydoc/terms.html" title="Terms &amp; Privacy" target="_blank">Terms &amp; Privacy</a>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h4>
+                <div class="footerContent">
+                    <span>
+                        <img class="footerLockIcon" src="/resources/pg/images/lock2.png">
+                    </span>
+                    <span class="footerTextCitrus">Secured with Citrus</span>
+                    <img class="securityIcons" src="/resources/pg/images/FooterIcons.png">
+                </div>
+            </h4>
+        </div>
+    </div>
+</body>
+</html>

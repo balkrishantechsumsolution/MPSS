@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PayBill.master.cs" Inherits="CitizenPortal.WebApp.Kiosk.Master.PayBill" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Payment Reciep'Pay Bill</title>
+    <link href="../../../g2c/css/style.css" rel="stylesheet" />
+    <link href="../../../g2c/css/hmepge.bootstrap.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="cphbody" runat="server">
+        <link href="../g2c/css/style.admin.css" rel="stylesheet" />
+       <link href="../g2c/css/style.css" rel="stylesheet" />
+    <link href="../g2c/css/hmepge.bootstrap.css" rel="stylesheet" />
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

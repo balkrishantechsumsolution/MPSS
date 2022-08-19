@@ -1,0 +1,396 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <link href="StyleSheet2.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div>
+        <input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+        <input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+        <input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTQxNzIxODk2Mg9kFgICAw9kFgQCBQ8WAh4HVmlzaWJsZWhkAgcPFgIfAGhkZMj4SEmsRlW5C0w8bk9KpsYKbtG9BLaSs6cDOsH5UCqd" type="hidden">
+    </div>
+    <script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['frmPaymentGate'];
+if (!theForm) {
+    theForm = document.frmPaymentGate;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+    </script>
+
+    <div>
+        <input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D4F385F6" type="hidden">
+    </div>
+    <div class="paymentcontainer">
+        <br>
+        <div class="header">
+            MPOnline Payment Option
+        </div>
+        <!-- Left Navigation Start -->
+        <div class="paymentbox">
+            <div class="paymentbox1">
+                <a class="payactive" id="paybox1" href="#" onclick="toggleDisplay('box1-content');">
+                    <img src="/Portal/userinterface/Citizen/Images/paytm.png" alt="" align="absmiddle">&nbsp;Pay
+                    through Paytm
+                </a>
+            </div>
+            <div id="paymentoptionlink" class="paymentbox2">
+                <a class="" id="paybox2" href="#" onclick="toggleDisplay('box2-content');">
+                    <img src="/Portal/userinterface/Citizen/Images/card_icon.png" alt="" align="absmiddle">&nbsp;Debit
+                    / Credit Card
+                </a>
+            </div>
+            <div id="paymentbox3" class="paymentbox3">
+                <a class="" id="paybox3" href="#" onclick="toggleDisplay('box3-content');">
+                    <img src="/Portal/userinterface/Citizen/Images/nb.png" alt="" align="absmiddle">&nbsp;Net
+                    Banking
+                </a>
+            </div>
+            <!--<div class="paymentbox3"><a id="paybox3" href="#" onClick="toggleDisplay('box3-content');"><img src="Images/nsdl-icon.png" alt="" align="absmiddle">&nbsp;NSDL PayGov</a></div>-->
+
+
+            <div id="paymentbox6" class="paymentbox6">
+                <a class="" id="paybox6" href="#" onclick="toggleDisplay('box6-content');">
+                    <img src="/Portal/userinterface/Citizen/Images/IMPS_mobile.png" alt="" align="absmiddle">&nbsp;
+                    IMPS
+                </a>
+            </div>
+        </div>
+        <!-- Left Navigation End -->
+        <!-- Main Body Start -->
+        <div class="box-content">
+            <!-- Net Banking Starts -->
+            <div style="display: none;" class="box3-content" id="box3-content">
+                <h1>
+                    Net Banking
+                </h1>
+                <div class="div-md-12">
+                    <div class="main-head">
+                        <a id="btnHdfcNetBanking" href="javascript:__doPostBack('btnHdfcNetBanking','')">Free NetBanking for All Banks</a>
+                    </div>
+                    <div class="sub-head">
+                        No transaction-processing fees for Net Banking of All Banks
+                    </div>
+                </div>
+                <div class="div-md-12">
+                    <div class="main-head">
+                        <a id="lnkINSDLPayGov" class="anchors" href="javascript:__doPostBack('lnkINSDLPayGov','')">PayGov India(All Major Banks)&nbsp;&nbsp;NDML for Govt. of India</a>&nbsp;<div style="float: right;">
+                            <img src="/Portal/userinterface/Citizen/Images/pay-gov.jpg" alt="" align="absmiddle">
+                        </div>
+                    </div>
+                    <div class="sub-head">
+                        Rs 5 + service charges as transaction-processing fees for amount upto Rs 500,<br>
+                        Rs 10 + service charges as transaction-processing fees for any amount from Rs 501
+                        and above
+                    </div>
+                </div>
+                <div id="BillDeskNF">
+                    <div class="div-md-12">
+                        <div class="main-head">
+                            <a id="btnBillDeskNetbanking" class="anchors" href="javascript:__doPostBack('btnBillDeskNetbanking','')">BillDesk</a>
+                        </div>
+                        <div class="sub-head">
+                            Rs. 8/- + service charges as transaction-processing fees
+                        </div>
+                    </div>
+                </div>
+                <div class="div-md-12">
+                    <div class="main-head">
+                        <a id="btnSbiNetBanking" class="anchors" href="javascript:__doPostBack('btnSbiNetBanking','')">Only for SBI A/C Holders</a>
+                    </div>
+                    <div class="sub-head">
+                        No transaction-processing fees
+                    </div>
+                </div>
+                <div class="div-md-12">
+                    <div class="main-head">
+                        <a id="lnkSbiePayNB" class="anchors" href="javascript:__doPostBack('lnkSbiePayNB','')">SBI ePay</a>
+                    </div>
+                    <div class="sub-head">
+                        For State Bank of India - Rs. 3.0 per Transaction.<br>
+                        For Other Banks - Rs. 7.0 per Transaction.
+                    </div>
+                </div>
+            </div>
+            <!-- Net Banking Ends -->
+            <!-- Debit Card/Credit Card Starts -->
+            <div style="display: none;" class="box2-content" id="box2-content">
+                <div id="Box1">
+                    <h1>
+                        Debit / Credit Card
+                    </h1>
+                    <div class="div-md-12">
+                        <div class="main-head">
+                            <a id="btnYesBankCreditDebitCard" href="javascript:__doPostBack('btnYesBankCreditDebitCard','')">Yes Bank</a>
+                            <div class="position text-right">
+                                <img src="/Portal/userinterface/Citizen/Images/cards_2.png" alt="" width="80%">
+                            </div>
+                        </div>
+                        <div class="sub-head">
+                            <strong>Debit Card</strong> - (Below INR 2000/-) - 0.75% Processing Fee, (Above
+                            INR 2000/-) - 1.00% Processing Fee<br>
+                            <strong>Credit Card</strong> - 1.05% Processing Fee
+                        </div>
+                    </div>
+                    <div class="div-md-12">
+                        <div class="main-head">
+                            <a id="lnkINSDLPayGovCreditDebitCard" href="javascript:__doPostBack('lnkINSDLPayGovCreditDebitCard','')">PayGov India(All Major Banks)&nbsp;&nbsp;NDML for Govt. of India</a>&nbsp;<div style="float: right;">
+                                <img src="/Portal/userinterface/Citizen/Images/pay-gov.jpg" alt="" align="absmiddle">
+                            </div>
+                        </div>
+                        <div class="sub-head">
+                            <strong>Credit Card -</strong> 1% per transaction for any amount
+                            <div class="position text-right">
+                                <img src="/Portal/userinterface/Citizen/Images/cards_1.png" alt="" width="80%">
+                            </div>
+                            <br>
+                            <strong>Debit Card -</strong> 0.75% for any amount less than Rs 2000 and 1% for
+                            amount greater than<br>
+                            Rs 2000
+                            <div class="position text-right">
+                                <img src="/Portal/userinterface/Citizen/Images/cards_3.jpg" alt="" width="80%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div-md-12">
+                        <div class="main-head">
+                            <a id="LinkButton1" href="javascript:__doPostBack('LinkButton1','')">HDFC Payment Gateway</a>
+                            <div class="position text-right">
+                                <img src="/Portal/userinterface/Citizen/Images/cards_3.jpg" alt="" width="80%">
+                            </div>
+                        </div>
+                        <div class="sub-head">
+                            0.5% transaction-processing fees
+                        </div>
+                    </div>
+                    <div class="div-md-12">
+                        <div class="main-head">
+                            <a id="btnSbiCC" href="javascript:__doPostBack('btnSbiCC','')">SBI Payment Gateway</a>
+                            <div class="position text-right">
+                                <img src="/Portal/userinterface/Citizen/Images/cards_2.png" alt="" width="80%">
+                            </div>
+                        </div>
+                        <div class="sub-head">
+                            1.8% transaction-processing fees
+                        </div>
+                    </div>
+                    <div id="BillDeskCC">
+                        <div class="div-md-12">
+                            <div class="main-head">
+                                <a id="btnBillDeskCC" href="javascript:__doPostBack('btnBillDeskCC','')">Billdesk Payment Gateway</a>
+                                <div class="position text-right">
+                                    <img src="/Portal/userinterface/Citizen/Images/cards_3.jpg" alt="" width="80%">
+                                </div>
+                            </div>
+                            <div class="sub-head">
+                                1.25% transaction-processing fees
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div-md-12">
+                        <div class="main-head">
+                            <a id="lnkSbiEPayCDCard" href="javascript:__doPostBack('lnkSbiEPayCDCard','')">SBI ePay</a>
+                            <div class="position text-right">
+                                <img src="/Portal/userinterface/Citizen/Images/cards_2.png" alt="" width="80%">
+                            </div>
+                        </div>
+                        <div class="sub-head">
+                            For Credit Card 1.0% of the Transaction Amount<br>
+                            For Debit Card of SBI Group - 0.50% of the Transaction Amount<br>
+                            For Debit Card other than SBI Group - 0.75% of Transaction Amount upto Rs. 2000
+                            and 1% of the Transaction Amount above Rs. 2000.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Debit Card/Credit Card Ends -->
+            <div style="display: block;" class="box1-content" id="box1-content">
+                <h1>
+                    Pay through Paytm
+                </h1>
+                <div class="div-md-12">
+                    <div class="main-head">
+                        <a id="lnkPaytm" class="anchors" href="javascript:__doPostBack('lnkPaytm','')">Paytm Payment Gateway</a>
+                    </div>
+                    <div class="sub-head">
+                        <strong>Credit Card -</strong> 0.85% + Service tax
+                        <div class="position text-right">
+                            <img src="/Portal/userinterface/Citizen/Images/cards_1.png" alt="" width="80%">
+                        </div>
+                        <br>
+                        <strong>Debit Card -</strong> 0.75% + Service tax for transaction amount upto Rs.
+                        2000/-<br>
+                        0.90% + Service tax for transaction amount above Rs. 2000/-
+                        <div class="position text-right">
+                            <img src="/Portal/userinterface/Citizen/Images/cards_3.jpg" alt="" width="80%">
+                        </div>
+                        <br>
+                        <strong>Net Banking -</strong>Flat Rs. 3/- + Service tax on each transaction for
+                        others Banks
+                        <br>
+                        Flat Rs. 5/- + Service tax on each transaction for State Bank group Bank<br>
+                        <strong>Paytm Wallet -</strong>1.00 % + Service tax for transaction done through
+                        Paytm Wallet
+                    </div>
+                </div>
+            </div>
+            <!-- ICICI I-Sure Starts -->
+            <div style="display: none;" class="box4-content" id="box4-content">
+                <h1>
+                    Pay through ICICI Bank
+                </h1>
+                <div class="div-md-12">
+                    <div class="main-head">
+                        <a id="cmdICICIISure" class="anchors" href="javascript:__doPostBack('cmdICICIISure','')">ICICI ISure Payment Gateway</a>
+                    </div>
+                </div>
+            </div>
+            <!-- ICICI I-Sure Ends -->
+            <!-- YES BANK NEFT/RTGS Starts -->
+            <div style="display: none;" class="box5-content" id="box5-content">
+                <h1>
+                    Yes Bank Payment Gateway NEFT/RTGS
+                </h1>
+                <div class="div-md-12">
+                    <div class="main-head">
+                        <a id="cmdYesBankNEFTRTGS" class="anchors" href="javascript:__doPostBack('cmdYesBankNEFTRTGS','')">Yes Bank Payment Gateway NEFT/RTGS</a>
+                    </div>
+                </div>
+            </div>
+            <!-- YES BANK NEFT/RTGS Ends -->
+            <!-- IMPS through SBI EPAY Starts -->
+            <div style="display: none;" class="box6-content" id="box6-content">
+                <h1>
+                    Pay through Sbi ePay
+                </h1>
+                <div class="div-md-12">
+                    <div class="main-head">
+                        <a id="lblsbiepayIMPS" class="anchors" href="javascript:__doPostBack('lblsbiepayIMPS','')">Payment through SBI ePay</a>
+                    </div>
+                    <div class="sub-head">
+                        Rs. 5.0 per Transaction of Amount upto Rs. 5000.00.<br>
+                        Rs. 7.0 per Transaction of Amount above Rs. 5000.00.
+                    </div>
+                </div>
+            </div>
+            <!-- IMPS through SBI EPAY Ends -->
+            <div class="note">
+                अगर आपके खाते से राशि कट गई हो और रसीद प्राप्त नहीं हुई हो तो वह ट्रांजेक्शन फेल
+                माना जावेगा और वह राशि आपको वापस कर दी जावेगी। अतः उस आवेदन ( नया फार्म न भरें)
+                का दुबारा भुगतान करें।
+            </div>
+        </div>
+    </div>
+    <div class="mpo_logo_div">
+        <img src="/Portal/userinterface/Citizen/jQueryAssets/Images/MPOnline-Logo.jpg" class="mpo" alt="">
+    </div>
+    <div role="tablist" class="ui-accordion ui-widget ui-helper-reset" id="Accordion1">
+        <!-------------------------- NET BANKING ------------------------------------->
+        <h3 tabindex="0" aria-expanded="true" aria-selected="true" aria-controls="ui-accordion-Accordion1-panel-0" id="ui-accordion-Accordion1-header-0" role="tab" class="ui-accordion-header ui-helper-reset ui-state-default ui-accordion-header-active ui-state-active ui-corner-top ui-accordion-icons">
+            <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>
+            <a href="#">Net Banking</a>
+        </h3>
+        <div aria-hidden="false" role="tabpanel" aria-labelledby="ui-accordion-Accordion1-header-0" id="ui-accordion-Accordion1-panel-0" style="display: block; height: 0px;" class="Accor_Content ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active">
+            <div class="Content-box">
+                <h3>
+                    <a id="LinkButton2" href="javascript:__doPostBack('LinkButton2','')">Free NetBanking for All Banks</a>
+                </h3>
+                No transaction-processing fees for Net Banking of All Banks
+            </div>
+            <div class="Content-box">
+                <h3>
+                    <a id="LinkButton3" class="anchors" href="javascript:__doPostBack('LinkButton3','')">PayGov India(All Major Banks)&nbsp;&nbsp;NDML for Govt. of India</a>
+                    <img src="/Portal/userinterface/Citizen/jQueryAssets/images/pay-gov.jpg" alt="">
+                </h3>
+                Rs 5 + service charges as transaction-processing fees for amount upto Rs 500,
+                <br>
+                Rs 10 + service charges as transaction-processing fees for any amount from Rs 501
+                and above
+            </div>
+            <div class="Content-box">
+                <h3>
+                    <a id="LinkButton4" class="anchors" href="javascript:__doPostBack('LinkButton4','')">BillDesk</a>
+                </h3>
+                Rs. 8/- + service charges as transaction-processing fees
+            </div>
+            <div class="Content-box">
+                <h3>
+                    <a id="LinkButton5" class="anchors" href="javascript:__doPostBack('LinkButton5','')">Only for SBI A/C Holders</a>
+                </h3>
+                No transaction-processing fees
+            </div>
+        </div>
+        <!-------------------------- DEBIT / CREDIT CARDS ------------------------------------->
+        <h3 tabindex="-1" aria-expanded="false" aria-selected="false" aria-controls="ui-accordion-Accordion1-panel-1" id="ui-accordion-Accordion1-header-1" role="tab" class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons">
+            <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+            <a href="#">Debit/ Credit Card</a>
+        </h3>
+        <div aria-hidden="true" role="tabpanel" aria-labelledby="ui-accordion-Accordion1-header-1" id="ui-accordion-Accordion1-panel-1" style="display: none; height: 0px;" class="Accor_Content ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
+            <div class="Content-box">
+                <h3>
+                    <a id="LinkButton6" href="javascript:__doPostBack('LinkButton6','')">Yes Bank</a><img src="/Portal/userinterface/Citizen/jQueryAssets/images/cards_2.jpg" alt="">
+                </h3>
+                <strong>Debit Card -</strong> (Below INR 2000/-) - 0.75% Processing Fee, (Above
+                INR 2000/-) - 1.00% Processing Fee<br>
+                <strong>Credit Card -</strong> 1.05% Processing Fee
+            </div>
+            <div class="Content-box">
+                <h3>
+                    <a id="LinkButton7" href="javascript:__doPostBack('LinkButton7','')">PayGov India(All Major Banks)&nbsp;&nbsp;NDML for Govt. of India</a><img src="/Portal/userinterface/Citizen/jQueryAssets/images/pay-gov.jpg" alt="">
+                </h3>
+                <strong>Credit Card -</strong> 1% per transaction for any amount &nbsp;<img src="/Portal/userinterface/Citizen/jQueryAssets/images/cards_1.jpg" alt="">
+                <br>
+                <strong>Debit Card -</strong> 0.75% for any amount less than Rs 2000 and 1% for
+                amount greater than Rs 2000&nbsp;<img src="/Portal/userinterface/Citizen/jQueryAssets/images/cards_3.jpg" alt="">
+            </div>
+            <div class="Content-box">
+                <h3>
+                    <a id="LinkButton8" href="javascript:__doPostBack('LinkButton8','')">HDFC Payment Gateway</a>
+                    <img src="/Portal/userinterface/Citizen/jQueryAssets/images/cards_3.jpg" alt="">
+                </h3>
+                0.5% transaction-processing fees
+            </div>
+            <div class="Content-box">
+                <h3>
+                    <a id="LinkButton9" href="javascript:__doPostBack('LinkButton9','')">SBI Payment Gateway</a><img src="/Portal/userinterface/Citizen/jQueryAssets/images/cards_2.jpg" alt="">
+                </h3>
+                1.8% transaction-processing fees
+            </div>
+            <div class="Content-box">
+                <h3>
+                    <a id="LinkButton10" href="javascript:__doPostBack('LinkButton10','')">Billdesk Payment Gateway</a>
+                    <img src="/Portal/userinterface/Citizen/jQueryAssets/images/cards_3.jpg" alt="">
+                </h3>
+                1.25% transaction-processing fees
+            </div>
+        </div>
+        <!-------------------------- Pay through ICICI Bank ------------------------------------->
+        <h3 tabindex="-1" aria-expanded="false" aria-selected="false" aria-controls="ui-accordion-Accordion1-panel-2" id="ui-accordion-Accordion1-header-2" role="tab" class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all ui-accordion-icons">
+            <span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>
+            <a href="#">Pay through PayTM</a>
+        </h3>
+        <div aria-hidden="true" role="tabpanel" aria-labelledby="ui-accordion-Accordion1-header-2" id="ui-accordion-Accordion1-panel-2" style="display: none; height: 0px;" class="Accor_Content ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
+            <div class="Content-box">
+                <h3>
+                    <a id="LinkButton11" class="anchors" href="javascript:__doPostBack('LinkButton11','')">Paytm Payment Gateway</a>
+                </h3>
+                Pay through Paytm
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

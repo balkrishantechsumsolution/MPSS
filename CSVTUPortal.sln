@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSVTUPortal", "CitizenPortal\CSVTUPortal.csproj", "{1435B018-BC2D-43EE-973B-591B33068571}"
+	ProjectSection(ProjectDependencies) = postProject
+		{77284134-7192-4AE0-B444-4A492C179898} = {77284134-7192-4AE0-B444-4A492C179898}
+		{A77E9FA4-4365-4BFE-92AF-026D59E76CB4} = {A77E9FA4-4365-4BFE-92AF-026D59E76CB4}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSVTUPortalLib", "CitizenPortalLib\CSVTUPortalLib.csproj", "{77284134-7192-4AE0-B444-4A492C179898}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSVTUPortal.Services", "CitizenPortal.Services\CSVTUPortal.Services.csproj", "{A77E9FA4-4365-4BFE-92AF-026D59E76CB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSVTUConsole", "SambalpurConsole\CSVTUConsole.csproj", "{605F2002-B1E2-40C2-B822-89AE5201E5DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1435B018-BC2D-43EE-973B-591B33068571}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1435B018-BC2D-43EE-973B-591B33068571}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1435B018-BC2D-43EE-973B-591B33068571}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1435B018-BC2D-43EE-973B-591B33068571}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77284134-7192-4AE0-B444-4A492C179898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77284134-7192-4AE0-B444-4A492C179898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77284134-7192-4AE0-B444-4A492C179898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77284134-7192-4AE0-B444-4A492C179898}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A77E9FA4-4365-4BFE-92AF-026D59E76CB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A77E9FA4-4365-4BFE-92AF-026D59E76CB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A77E9FA4-4365-4BFE-92AF-026D59E76CB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A77E9FA4-4365-4BFE-92AF-026D59E76CB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{605F2002-B1E2-40C2-B822-89AE5201E5DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{605F2002-B1E2-40C2-B822-89AE5201E5DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{605F2002-B1E2-40C2-B822-89AE5201E5DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{605F2002-B1E2-40C2-B822-89AE5201E5DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal

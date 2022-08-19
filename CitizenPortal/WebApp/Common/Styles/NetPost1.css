@@ -1,0 +1,44 @@
+﻿.boxJointControl .box-container .box-heading
+{
+    display: none;
+}
+.box-container > .box-heading
+{
+    background-color: #5e8232;
+    border: 1px solid #5e8232;
+    border-radius: 3px 3px 0 0;
+    color: #fff;
+    font-size: 1.4em;
+    margin: 0;
+    padding: 2px 15px;
+}
+.box-container
+{
+    margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.box-container > .box-heading
+{
+    background-color: #5e8232;
+    border: 1px solid #5e8232;
+    border-radius: 3px 3px 0 0;
+    color: #fff;
+    font-size: 1.4em;
+    margin: 0;
+    padding: 2px 15px;
+}
+.box-container > .box-body
+{
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #fcfcfc;
+    border-color: #ccc;
+    border-image: none;
+    border-radius: 0 0 3px 3px;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    padding: 15px 0;
+}

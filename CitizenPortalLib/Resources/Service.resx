@@ -1,0 +1,873 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EmployeeImformationLabel" xml:space="preserve">
+    <value>Name in English</value>
+  </data>
+  <data name="EmpNameLabel" xml:space="preserve">
+    <value>Emp Name in English</value>
+  </data>
+  <data name="lblAffidavitName" xml:space="preserve">
+    <value>Affidavit Name</value>
+  </data>
+  <data name="lblAppAddress" xml:space="preserve">
+    <value>Address Line-1 (Care of)</value>
+  </data>
+  <data name="lblAppAge" xml:space="preserve">
+    <value>Age</value>
+  </data>
+  <data name="lblAppBuilding" xml:space="preserve">
+    <value>Address Line-2 (Building)</value>
+  </data>
+  <data name="lblAppDistrict" xml:space="preserve">
+    <value>District</value>
+  </data>
+  <data name="lblAppDOB" xml:space="preserve">
+    <value>Date of Birth</value>
+  </data>
+  <data name="lblAppEmail" xml:space="preserve">
+    <value>Email ID</value>
+  </data>
+  <data name="lblAppFatherName" xml:space="preserve">
+    <value>Father / Husband Name</value>
+  </data>
+  <data name="lblAppGender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="lblAppLandmark" xml:space="preserve">
+    <value>Landmark</value>
+  </data>
+  <data name="lblAppLocality" xml:space="preserve">
+    <value>Locality</value>
+  </data>
+  <data name="lblAppMobile" xml:space="preserve">
+    <value>Mobile Number</value>
+  </data>
+  <data name="lblAppMotherName" xml:space="preserve">
+    <value>Mother Name</value>
+  </data>
+  <data name="lblAppName" xml:space="preserve">
+    <value>Applicant Name</value>
+  </data>
+  <data name="lblAppNameLL" xml:space="preserve">
+    <value>Applicant Name Local</value>
+  </data>
+  <data name="lblAppOccupation" xml:space="preserve">
+    <value>Occupation</value>
+  </data>
+  <data name="lblAppPincode" xml:space="preserve">
+    <value>Pin Code</value>
+  </data>
+  <data name="lblAppSal" xml:space="preserve">
+    <value>Title/Initial</value>
+  </data>
+  <data name="lblAppState" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="lblAppStreet" xml:space="preserve">
+    <value>Road/Street Name</value>
+  </data>
+  <data name="lblappsubdis" xml:space="preserve">
+    <value>Block/Taluka</value>
+  </data>
+  <data name="lblAppVillage" xml:space="preserve">
+    <value>Panchayat/Village/City</value>
+  </data>
+  <data name="lblNameOfIdentifier" xml:space="preserve">
+    <value>Name of the Identifier</value>
+  </data>
+  <data name="lblReason" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="lblAffidavitDetails" xml:space="preserve">
+    <value>Affidavit Details</value>
+  </data>
+  <data name="lblApplicantDetails" xml:space="preserve">
+    <value>Applicant Details</value>
+  </data>
+  <data name="lblAppPhotograph" xml:space="preserve">
+    <value>Applicant Photograph</value>
+  </data>
+  <data name="lblDeclaration" xml:space="preserve">
+    <value>Declaration</value>
+  </data>
+  <data name="lblFirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="lblIdentifierResidenceDetails" xml:space="preserve">
+    <value>Identifier Residence Details</value>
+  </data>
+  <data name="lblLastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="lblPostalAddress" xml:space="preserve">
+    <value>Postal Address</value>
+  </data>
+  <data name="lblReasonForAffidavit" xml:space="preserve">
+    <value>Reason for Affidavit</value>
+  </data>
+  <data name="lblResidentialAddress" xml:space="preserve">
+    <value>Residential Address</value>
+  </data>
+  <data name="address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="appage" xml:space="preserve">
+    <value>Applicant Age</value>
+  </data>
+  <data name="BloodGroup" xml:space="preserve">
+    <value>Blood Group</value>
+  </data>
+  <data name="district" xml:space="preserve">
+    <value>District</value>
+  </data>
+  <data name="lblDOB" xml:space="preserve">
+    <value>Date of Birth</value>
+  </data>
+  <data name="emgperson" xml:space="preserve">
+    <value>Emergency contact person details</value>
+  </data>
+  <data name="govtorissa" xml:space="preserve">
+    <value>GOVERNMENT OF ODISA</value>
+  </data>
+  <data name="information" xml:space="preserve">
+    <value>INFORMATION</value>
+  </data>
+  <data name="lbl1" xml:space="preserve">
+    <value>1. </value>
+  </data>
+  <data name="lbl1txt" xml:space="preserve">
+    <value> Please keep and use the card</value>
+  </data>
+  <data name="lbl2" xml:space="preserve">
+    <value>2. </value>
+  </data>
+  <data name="lbl2txt" xml:space="preserve">
+    <value> If the card is misused, the legal action will be taken</value>
+  </data>
+  <data name="lbl3" xml:space="preserve">
+    <value>3. </value>
+  </data>
+  <data name="lbl3txt" xml:space="preserve">
+    <value> If the card is lost, immediately inform the relevant office</value>
+  </data>
+  <data name="lbl4" xml:space="preserve">
+    <value>4. </value>
+  </data>
+  <data name="lblDeclarationText" xml:space="preserve">
+    <value>solemnly affirm that the above mentioned information / documnets submitted by me is true and correct to my knowledge and belief. I hereby agree to be liable for legal consequences for any information found incorrect or untrue at a later date.</value>
+  </data>
+  <data name="lblDocAge" xml:space="preserve">
+    <value>Age Proof</value>
+  </data>
+  <data name="lblDocDomicile" xml:space="preserve">
+    <value>Domicile Proof</value>
+  </data>
+  <data name="lblDocOther" xml:space="preserve">
+    <value>Any Other Document</value>
+  </data>
+  <data name="lblDocRes" xml:space="preserve">
+    <value>Residence Proof</value>
+  </data>
+  <data name="lblI" xml:space="preserve">
+    <value>I</value>
+  </data>
+  <data name="lblSenCertHeading" xml:space="preserve">
+    <value>SENIOR CITIZEN</value>
+  </data>
+  <data name="lblSenCertOut" xml:space="preserve">
+    <value>Senior Cetizen Certificate Output</value>
+  </data>
+  <data name="lblUploadDetails" xml:space="preserve">
+    <value>Supporting Documents</value>
+  </data>
+  <data name="mobileno" xml:space="preserve">
+    <value>Mobile Number</value>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="on" xml:space="preserve">
+    <value>on</value>
+  </data>
+  <data name="serialno" xml:space="preserve">
+    <value>Sl. No.</value>
+  </data>
+  <data name="srcitcert" xml:space="preserve">
+    <value>SENIOR CITIZEN CERTIFICATE</value>
+  </data>
+  <data name="taluka" xml:space="preserve">
+    <value>Taluka</value>
+  </data>
+  <data name="tehsil" xml:space="preserve">
+    <value>Tahasildar</value>
+  </data>
+  <data name="year" xml:space="preserve">
+    <value>years</value>
+  </data>
+  <data name="years" xml:space="preserve">
+    <value>yrs</value>
+  </data>
+  <data name="aadhaar" xml:space="preserve">
+    <value>Aadhar Number</value>
+  </data>
+  <data name="child" xml:space="preserve">
+    <value>Name of Child</value>
+  </data>
+  <data name="father" xml:space="preserve">
+    <value>Father Name</value>
+  </data>
+  <data name="hospitalname" xml:space="preserve">
+    <value>Name of Hospital</value>
+  </data>
+  <data name="lblPOB" xml:space="preserve">
+    <value>Place of Birth</value>
+  </data>
+  <data name="relationwithchild" xml:space="preserve">
+    <value>Relation with Child</value>
+  </data>
+  <data name="lblAppPhone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="deceasedrelation" xml:space="preserve">
+    <value>Relation with Deceased </value>
+  </data>
+  <data name="lblDOD" xml:space="preserve">
+    <value>Date of Death</value>
+  </data>
+  <data name="lblTOD" xml:space="preserve">
+    <value>Time of Death</value>
+  </data>
+  <data name="bplcardno" xml:space="preserve">
+    <value>BPL Card No.</value>
+  </data>
+  <data name="bplYear" xml:space="preserve">
+    <value>BPL Year</value>
+  </data>
+  <data name="fullname" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="concernedOffice" xml:space="preserve">
+    <value>Concerned Office</value>
+  </data>
+  <data name="designatedOfficer" xml:space="preserve">
+    <value>Designated Officer</value>
+  </data>
+  <data name="designatedOfficeOfficer" xml:space="preserve">
+    <value>Designated Office &amp; Officer</value>
+  </data>
+  <data name="department" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="servicedetail" xml:space="preserve">
+    <value>Concerned Office &amp; Designated Officer</value>
+  </data>
+  <data name="services" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="servicedepartment" xml:space="preserve">
+    <value>Service &amp; Department</value>
+  </data>
+  <data name="lblFirstPreference" xml:space="preserve">
+    <value>First Preference</value>
+  </data>
+  <data name="lblOISFTitle" xml:space="preserve">
+    <value>Application for Recruitment of Constables in 9th SIRB</value>
+  </data>
+  <data name="addressLine1" xml:space="preserve">
+    <value>Address Line-1 (Care of)</value>
+  </data>
+  <data name="addressLine2" xml:space="preserve">
+    <value>Address Line-2 (Building)</value>
+  </data>
+  <data name="ageason01012016" xml:space="preserve">
+    <value>Age as on 01.01.2016</value>
+  </data>
+  <data name="appaadharno" xml:space="preserve">
+    <value>Applicant Aadhar Number (if available)</value>
+  </data>
+  <data name="applicantDetails" xml:space="preserve">
+    <value>Applicant Details</value>
+  </data>
+  <data name="applicantPhotograph" xml:space="preserve">
+    <value>Applicant Photograph</value>
+  </data>
+  <data name="applicantSignature" xml:space="preserve">
+    <value>Applicant Signature</value>
+  </data>
+  <data name="asperHSCCertificate" xml:space="preserve">
+    <value>(As per HSC Certificate)</value>
+  </data>
+  <data name="blockTaluka" xml:space="preserve">
+    <value>Block/Taluka</value>
+  </data>
+  <data name="bronze" xml:space="preserve">
+    <value>Bronze/3rd</value>
+  </data>
+  <data name="category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="chest" xml:space="preserve">
+    <value>Chest</value>
+  </data>
+  <data name="date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="dateofBirth" xml:space="preserve">
+    <value>Date of Birth</value>
+  </data>
+  <data name="declaration" xml:space="preserve">
+    <value>Declaration</value>
+  </data>
+  <data name="declaration2" xml:space="preserve">
+    <value>Declaration for Participation in Physical Efficiency Test</value>
+  </data>
+  <data name="declarationtext" xml:space="preserve">
+    <value>declared that the above statement furnished is completely correct to the best of my knowledge. If any, facts stated above are found to be in-correct my candidature will stand cancelled.</value>
+  </data>
+  <data name="declarationtext1" xml:space="preserve">
+    <value>I agree to serve anywhere in Odisha if selected</value>
+  </data>
+  <data name="declarationtext2" xml:space="preserve">
+    <value>undersigned Shri</value>
+  </data>
+  <data name="declarationtext3" xml:space="preserve">
+    <value>I hereby declare that I am completely capable and fit to appear in the Physical Efficiency Test for the post of Constables. During the Physical Efficiency Test if any, Physical injury or untoward accident takes place, the concerned officers shall not be held responsible or liable.</value>
+  </data>
+  <data name="educationalQualificationofHSC" xml:space="preserve">
+    <value>Educational Qualification of High School Certificate (HSC)/Equivalent</value>
+  </data>
+  <data name="eExDistrict" xml:space="preserve">
+    <value>Employment Exchange District</value>
+  </data>
+  <data name="eExRegistrationDate" xml:space="preserve">
+    <value>Employment Exchange Registration Date</value>
+  </data>
+  <data name="eExRegistrationName" xml:space="preserve">
+    <value>Name of Employment Exchange</value>
+  </data>
+  <data name="eExRegistrationNo" xml:space="preserve">
+    <value>Employment Exchange Registration Number</value>
+  </data>
+  <data name="emailID" xml:space="preserve">
+    <value>Email ID</value>
+  </data>
+  <data name="employmentExchangeDetails" xml:space="preserve">
+    <value>Employment Exchange Details</value>
+  </data>
+  <data name="examCleared" xml:space="preserve">
+    <value>Exam Cleared</value>
+  </data>
+  <data name="fatherName" xml:space="preserve">
+    <value>Father's Name</value>
+  </data>
+  <data name="forcorrespondence" xml:space="preserve">
+    <value>(For correspondence)</value>
+  </data>
+  <data name="from" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="gold" xml:space="preserve">
+    <value>Gold/1st</value>
+  </data>
+  <data name="grade" xml:space="preserve">
+    <value>Grade System</value>
+  </data>
+  <data name="heavyVehicle" xml:space="preserve">
+    <value>Heavy Vehicle</value>
+  </data>
+  <data name="height" xml:space="preserve">
+    <value>Height</value>
+  </data>
+  <data name="i" xml:space="preserve">
+    <value>I</value>
+  </data>
+  <data name="international" xml:space="preserve">
+    <value>International</value>
+  </data>
+  <data name="landmark" xml:space="preserve">
+    <value>Landmark</value>
+  </data>
+  <data name="lightVehicle" xml:space="preserve">
+    <value>Light Vehicle</value>
+  </data>
+  <data name="locality" xml:space="preserve">
+    <value>Locality</value>
+  </data>
+  <data name="markSecured" xml:space="preserve">
+    <value>Mark Secured</value>
+  </data>
+  <data name="nameoftheBoardCouncil" xml:space="preserve">
+    <value>Name of the Board / Council</value>
+  </data>
+  <data name="nameoftheCandidate" xml:space="preserve">
+    <value>Name of the Candidate</value>
+  </data>
+  <data name="nameoftheExaminationPassed" xml:space="preserve">
+    <value>Name of the Examination Passed (HSC &amp; Equivalent)</value>
+  </data>
+  <data name="national" xml:space="preserve">
+    <value>National</value>
+  </data>
+  <data name="nationality" xml:space="preserve">
+    <value>Nationality</value>
+  </data>
+  <data name="no" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="noabilitytoOdialang" xml:space="preserve">
+    <value>Ability to read, write and speak Odia langugae</value>
+  </data>
+  <data name="otherInformation" xml:space="preserve">
+    <value>Other Information</value>
+  </data>
+  <data name="panchayatVillageCity" xml:space="preserve">
+    <value>Panchayat/Village/City</value>
+  </data>
+  <data name="percentage" xml:space="preserve">
+    <value>Percentage (%)</value>
+  </data>
+  <data name="permanentAddress" xml:space="preserve">
+    <value>Permanent Address</value>
+  </data>
+  <data name="pincode" xml:space="preserve">
+    <value>Pin Code</value>
+  </data>
+  <data name="place" xml:space="preserve">
+    <value>Place</value>
+  </data>
+  <data name="presentAddress" xml:space="preserve">
+    <value>Present Address</value>
+  </data>
+  <data name="read" xml:space="preserve">
+    <value>Read</value>
+  </data>
+  <data name="religion" xml:space="preserve">
+    <value>Religion</value>
+  </data>
+  <data name="roadStreetName" xml:space="preserve">
+    <value>Road/Street Name</value>
+  </data>
+  <data name="sameasPermanentAddress" xml:space="preserve">
+    <value>Same as Permanent Address</value>
+  </data>
+  <data name="secondpreference" xml:space="preserve">
+    <value>Apply for second preference</value>
+  </data>
+  <data name="section1" xml:space="preserve">
+    <value>Has the Candidate passed Odia as one of the subject in HSC Examination or an examination in Odia language equivalent to M.E. Standard recognised or conducted by the School and Mass Education Department of Odisha. (photo copy with self attestation should be enclosed)</value>
+  </data>
+  <data name="section2" xml:space="preserve">
+    <value>Whether the candidate is married?</value>
+  </data>
+  <data name="section2a" xml:space="preserve">
+    <value>If Married, whether he has more than one spouse living?</value>
+  </data>
+  <data name="section3" xml:space="preserve">
+    <value>Whether the Candidate is a Ex-Serviceman?</value>
+  </data>
+  <data name="section3a" xml:space="preserve">
+    <value>Qualifying Service rendered in Defence</value>
+  </data>
+  <data name="section3b" xml:space="preserve">
+    <value>Duration of service</value>
+  </data>
+  <data name="section4" xml:space="preserve">
+    <value>Whether the candidate is a Sports Person?</value>
+  </data>
+  <data name="section4a" xml:space="preserve">
+    <value>Name of the participated Sports event</value>
+  </data>
+  <data name="section4b" xml:space="preserve">
+    <value>Please Mention the Sports Federation or Association Name</value>
+  </data>
+  <data name="section4c" xml:space="preserve">
+    <value>Whether he wants to avail relaxation in height, weight &amp; chest</value>
+  </data>
+  <data name="section4d" xml:space="preserve">
+    <value>Relaxation wants to avail in Physical Measurements</value>
+  </data>
+  <data name="section5" xml:space="preserve">
+    <value>If Sports Person (candidate only indicate one sports event participated in Open National Championship / International Championship and the same should be recognized and sponsored either by the recognized National Sports Federations / Associations or Indian Olympic Association, Odisha State Sports Association, Affiliated to the recognized National Sports Federation /Association)</value>
+  </data>
+  <data name="section5a" xml:space="preserve">
+    <value>Participated in Sports Event</value>
+  </data>
+  <data name="section5b" xml:space="preserve">
+    <value>In which Sports and Category (National/International)</value>
+  </data>
+  <data name="section5c" xml:space="preserve">
+    <value>Awarded any Medal (Gold/Silver/Bronze) Appreciation ( 1st / 2nd / 3rd)</value>
+  </data>
+  <data name="section6" xml:space="preserve">
+    <value>Whether the candidate possesses NCC Certificate?</value>
+  </data>
+  <data name="section6a" xml:space="preserve">
+    <value>Category of NCC Certificate</value>
+  </data>
+  <data name="section7" xml:space="preserve">
+    <value>Whether the candidate possesses a Driving licenses having the validity for at least 1 year (Excluding the learning period)?</value>
+  </data>
+  <data name="section7a" xml:space="preserve">
+    <value>Whether the license is applicable for Heavy Vehicle or Light Vehicle (photo copy of such license with self attestation should be enclosed)</value>
+  </data>
+  <data name="section7b" xml:space="preserve">
+    <value>License Number and Date</value>
+  </data>
+  <data name="section7c" xml:space="preserve">
+    <value>District of RTO Office from which license issued</value>
+  </data>
+  <data name="section7d" xml:space="preserve">
+    <value>Name of the RTO Office from which license issued</value>
+  </data>
+  <data name="section8" xml:space="preserve">
+    <value>Whether the candidate is involved in any criminal case?</value>
+  </data>
+  <data name="section8a" xml:space="preserve">
+    <value>Status of the Criminal Case</value>
+  </data>
+  <data name="section8b" xml:space="preserve">
+    <value>State where case is Registered</value>
+  </data>
+  <data name="section8c" xml:space="preserve">
+    <value>Name of the District</value>
+  </data>
+  <data name="section8d" xml:space="preserve">
+    <value>Police Station Name</value>
+  </data>
+  <data name="section8e" xml:space="preserve">
+    <value>Police Station Case Reference Number</value>
+  </data>
+  <data name="section8f" xml:space="preserve">
+    <value>IPC Section</value>
+  </data>
+  <data name="signature" xml:space="preserve">
+    <value>Full Name of the Candidate</value>
+  </data>
+  <data name="silver" xml:space="preserve">
+    <value>Silver/2nd</value>
+  </data>
+  <data name="sonof" xml:space="preserve">
+    <value>Son of</value>
+  </data>
+  <data name="speak" xml:space="preserve">
+    <value>Speak</value>
+  </data>
+  <data name="state" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="telelphone" xml:space="preserve">
+    <value>Telelphone</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="totalMarks" xml:space="preserve">
+    <value>Total Marks</value>
+  </data>
+  <data name="weight" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+  <data name="withSTDCode" xml:space="preserve">
+    <value>(with STD Code)</value>
+  </data>
+  <data name="write" xml:space="preserve">
+    <value>Write</value>
+  </data>
+  <data name="yearofPassing" xml:space="preserve">
+    <value>Year of Passing</value>
+  </data>
+  <data name="yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="alternatemobile" xml:space="preserve">
+    <value>Alternate Mobile Number</value>
+  </data>
+  <data name="battalionditails" xml:space="preserve">
+    <value>Battalion Detail's Of 50 Rs. Demand Draft</value>
+  </data>
+  <data name="ddno" xml:space="preserve">
+    <value>DD Number</value>
+  </data>
+  <data name="formno" xml:space="preserve">
+    <value>Form Number</value>
+  </data>
+  <data name="issuedate" xml:space="preserve">
+    <value>Issue Date</value>
+  </data>
+  <data name="issuedfrombattalion" xml:space="preserve">
+    <value>Issued From Battalion</value>
+  </data>
+  <data name="issuefrombattalion" xml:space="preserve">
+    <value>Issued From Battalion</value>
+  </data>
+  <data name="section9" xml:space="preserve">
+    <value>Whether the candidate is come with Demand Draft of 200 Rs.?</value>
+  </data>
+  <data name="section9a" xml:space="preserve">
+    <value>DD Issue Bank Name</value>
+  </data>
+  <data name="sectionb" xml:space="preserve">
+    <value>DD Number</value>
+  </data>
+  <data name="sectionc" xml:space="preserve">
+    <value>Date Of Issue</value>
+  </data>
+  <data name="sectiond" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="txtamount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="txtddno" xml:space="preserve">
+    <value>DD Number</value>
+  </data>
+  <data name="txtformno" xml:space="preserve">
+    <value>Form Number</value>
+  </data>
+  <data name="txtissuebanknameof200rs" xml:space="preserve">
+    <value>DD Issue Bank Name</value>
+  </data>
+  <data name="txtissueddate" xml:space="preserve">
+    <value>Issue Date</value>
+  </data>
+  <data name="txtissuedfrombattalion" xml:space="preserve">
+    <value>Issue From Battalion</value>
+  </data>
+  <data name="txtsecdateofissue" xml:space="preserve">
+    <value>Date Of Issue</value>
+  </data>
+  <data name="txtsecddno" xml:space="preserve">
+    <value>DD Number</value>
+  </data>
+  <data name="secb" xml:space="preserve">
+    <value>DD Number</value>
+  </data>
+  <data name="secc" xml:space="preserve">
+    <value>Date Of Issue</value>
+  </data>
+  <data name="secd" xml:space="preserve">
+    <value>Amout</value>
+  </data>
+  <data name="BattalionName" xml:space="preserve">
+    <value>BattalionName</value>
+  </data>
+  <data name="IssueDateOfDD" xml:space="preserve">
+    <value>Date Of Issue</value>
+  </data>
+  <data name="lblDeclarationTextCraft" xml:space="preserve">
+    <value>hereby declare that the above information and documents furnished by me are true to the best of my knowledge and belief. I do further declare that I have not availed any subsidy under the scheme earlier. In case of any false information submitted by me and detected hereafter, I shall be punished under the law.</value>
+  </data>
+  <data name="sonwife" xml:space="preserve">
+    <value>Son / Wife of</value>
+  </data>
+  <data name="lblFisheriesRegistrationText" xml:space="preserve">
+    <value>do hereby declare that to the best of my
+Knowledge and belief the above information are correct and complete.
+That I/We fully understand all the provisions of the Act and Rules and
+orders issued thereunder and agree to abide by them.</value>
+  </data>
+  <data name="boardRollNo" xml:space="preserve">
+    <value>Board Roll No.</value>
+  </data>
+  <data name="designation" xml:space="preserve">
+    <value>Designation</value>
+  </data>
+  <data name="diplomaAgro" xml:space="preserve">
+    <value>Diploma in Agro-Polytechnic Details (only for OUAT Diploma Student)</value>
+  </data>
+  <data name="empcode" xml:space="preserve">
+    <value>Employee Code</value>
+  </data>
+  <data name="examcenter" xml:space="preserve">
+    <value>Choice of Examination Center</value>
+  </data>
+  <data name="hSc2ouat" xml:space="preserve">
+    <value>Education Qualification of Higher Secondary Examination +2Science /Equivalent</value>
+  </data>
+  <data name="milsubject" xml:space="preserve">
+    <value>Name of the MIL Subject</value>
+  </data>
+  <data name="motherName" xml:space="preserve">
+    <value>Mother's Name</value>
+  </data>
+  <data name="motherTongue" xml:space="preserve">
+    <value>Mother Tongue</value>
+  </data>
+  <data name="nriaddressAbroad" xml:space="preserve">
+    <value>NRI Present Address in Abroad</value>
+  </data>
+  <data name="nriadressIndia" xml:space="preserve">
+    <value>NRI Permanent Address in India</value>
+  </data>
+  <data name="nRISponsor" xml:space="preserve">
+    <value>Details Sponsorship Under NRI Quota (as per Passport)</value>
+  </data>
+  <data name="officeOUAT" xml:space="preserve">
+    <value>Name of the Office Serving / Last Served</value>
+  </data>
+  <data name="ouatDeclaration" xml:space="preserve">
+    <value>hereby affirm that the information given by me in the application is complete and true to the best of my knowledge and belief and that I have made the application with the consent and approval of my parents/guardian.</value>
+  </data>
+  <data name="ouatEmp" xml:space="preserve">
+    <value>Is a children of OUAT Employee? (If yes need to Identity Card of the Employee as a Proof)</value>
+  </data>
+  <data name="ouatUndertaking" xml:space="preserve">
+    <value>In the event of my admission to any course</value>
+  </data>
+  <data name="ouatUndertaking11ouat" xml:space="preserve">
+    <value>hereby undertake to abide by the disciplinary rules and regulations of  the Hostel, College and the University and not to involve my self in any such activities as : violation of hostel discipline, disobedience of instructions of hostel authorities, Immoral conduct of disorderly behavior including “ragging”.</value>
+  </data>
+  <data name="ouatUndertaking12ouat" xml:space="preserve">
+    <value>In case of my involvement in any of above indiscipline conduct, I hereby undertake to abide by the decisions of the competent authority and to withdraw my self from the Hostel, College and the University if the authority to direct me that such withdrawal is necessary in the interest of the institution.</value>
+  </data>
+  <data name="ouatUndertaking1ouat" xml:space="preserve">
+    <value>In case of my involvement in any of above indiscipline conduct, I hereby undertake to abide by the decisions of the competent authority and to withdraw my self from the Hostel, College and the University if the authority to direct me that such withdrawal is necessary in the interest of the institution.</value>
+  </data>
+  <data name="relationcandidate" xml:space="preserve">
+    <value>Relation with Candidate</value>
+  </data>
+  <data name="reservedseat" xml:space="preserve">
+    <value>Wants to claim for Reserved Seats?</value>
+  </data>
+  <data name="seatcategory" xml:space="preserve">
+    <value>Select Category to claim reserved seat</value>
+  </data>
+  <data name="selectEducation" xml:space="preserve">
+    <value>Highest Education Passed</value>
+  </data>
+  <data name="sponsoremail" xml:space="preserve">
+    <value>Email ID of Sponsor</value>
+  </data>
+  <data name="sponsormobile" xml:space="preserve">
+    <value>Mobile No of Sponsor</value>
+  </data>
+  <data name="sponsorperson" xml:space="preserve">
+    <value>Name of Sponsoring Person</value>
+  </data>
+  <data name="sponsorrelation" xml:space="preserve">
+    <value>Relationship with Sponsor</value>
+  </data>
+  <data name="statusservice" xml:space="preserve">
+    <value>Status of Service</value>
+  </data>
+</root>

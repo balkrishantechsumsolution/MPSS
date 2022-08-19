@@ -1,0 +1,53 @@
+﻿<%--<%@ OutputCache Duration="0" VaryByParam="*" %>--%>
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Citizen.master.cs" Inherits="CitizenPortal.WebApp.Citizen.Master.Citizen" %>
+
+<%@ Register Src="~/WebApp/Control/LeftPanel.ascx" TagPrefix="uc1" TagName="LeftPanel" %>
+<%@ Register Src="~/Sambalpur/controls/AdminHeader.ascx" TagPrefix="uc1" TagName="AdminHeader" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <%-- <meta http-equiv="PRAGMA" content="NO-CACHE"/>                                             
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE"/>--%>
+    <title></title>
+    <script src="../../../Scripts/jquery-2.2.3.min.js"></script>
+    <script src="../../../Scripts/angular.min.js"></script>
+    <link href="../../../Sambalpur/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../Sambalpur/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../../../Sambalpur/css/homestyle.css" rel="stylesheet" />
+    <link href="../../Styles/style.admin1.css" rel="stylesheet" />
+    <link href="/WebApp/Styles/sb-admin-2.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" asp-antiforgery="false">
+        <asp:HiddenField ID="HFLang" runat="server" />
+        <uc1:AdminHeader runat="server" ID="AdminHeader" />
+        <div>
+        <uc1:LeftPanel runat="server" ID="LeftPanel" />
+            </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <script src="../../Common/Scripts/bootstrap.min.js"></script>
+            <script src="../../Common/Scripts/metisMenu.js"></script>
+            <script src="../../Common/Scripts/raphael.js"></script>
+            <script src="../../Common/Scripts/morris.js"></script>
+            <script src="../../Common/Scripts/sb-admin-2.js"></script>
+            <script>
+                if (document.getElementById("intrnlContent") != null) {
+                    angular.bootstrap(document.getElementById("intrnlContent"), ['appmodule']);
+                }
+            </script>
+            <script src="../../Scripts/modaleffect.js"></script>
+            <script src="../../Scripts/velocity.min.js"></script>
+            <script src="../../Scripts/velocity.ui.min.js"></script>
+
+        </div>
+          <asp:HiddenField ID="antiforgery" runat="server"/>
+    </form>
+</body>
+</html>

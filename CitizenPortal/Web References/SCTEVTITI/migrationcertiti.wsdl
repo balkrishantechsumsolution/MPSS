@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="MigrationCertificate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RegistrationNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AcademicYear" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MigrationCertificateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MigrationCertificateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ViewStudentDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RegistrationNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Course" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UniqueID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ViewStudentDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ViewStudentDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProvisionalCertificateYearly">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RegistrationNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProvisionalCertificateYearlyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProvisionalCertificateYearlyResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataSet" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:element ref="s:schema" />
+            <s:any />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="MigrationCertificateSoapIn">
+    <wsdl:part name="parameters" element="tns:MigrationCertificate" />
+  </wsdl:message>
+  <wsdl:message name="MigrationCertificateSoapOut">
+    <wsdl:part name="parameters" element="tns:MigrationCertificateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ViewStudentDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:ViewStudentDetails" />
+  </wsdl:message>
+  <wsdl:message name="ViewStudentDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:ViewStudentDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProvisionalCertificateYearlySoapIn">
+    <wsdl:part name="parameters" element="tns:ProvisionalCertificateYearly" />
+  </wsdl:message>
+  <wsdl:message name="ProvisionalCertificateYearlySoapOut">
+    <wsdl:part name="parameters" element="tns:ProvisionalCertificateYearlyResponse" />
+  </wsdl:message>
+  <wsdl:message name="MigrationCertificateHttpGetIn">
+    <wsdl:part name="RegistrationNumber" type="s:string" />
+    <wsdl:part name="AcademicYear" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="MigrationCertificateHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="ViewStudentDetailsHttpGetIn">
+    <wsdl:part name="RegistrationNumber" type="s:string" />
+    <wsdl:part name="Course" type="s:string" />
+    <wsdl:part name="UniqueID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ViewStudentDetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="ProvisionalCertificateYearlyHttpGetIn">
+    <wsdl:part name="RegistrationNumber" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ProvisionalCertificateYearlyHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="MigrationCertificateHttpPostIn">
+    <wsdl:part name="RegistrationNumber" type="s:string" />
+    <wsdl:part name="AcademicYear" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="MigrationCertificateHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="ViewStudentDetailsHttpPostIn">
+    <wsdl:part name="RegistrationNumber" type="s:string" />
+    <wsdl:part name="Course" type="s:string" />
+    <wsdl:part name="UniqueID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ViewStudentDetailsHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="ProvisionalCertificateYearlyHttpPostIn">
+    <wsdl:part name="RegistrationNumber" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ProvisionalCertificateYearlyHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:portType name="MigrationCertITISoap">
+    <wsdl:operation name="MigrationCertificate">
+      <wsdl:input message="tns:MigrationCertificateSoapIn" />
+      <wsdl:output message="tns:MigrationCertificateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewStudentDetails">
+      <wsdl:input message="tns:ViewStudentDetailsSoapIn" />
+      <wsdl:output message="tns:ViewStudentDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProvisionalCertificateYearly">
+      <wsdl:input message="tns:ProvisionalCertificateYearlySoapIn" />
+      <wsdl:output message="tns:ProvisionalCertificateYearlySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="MigrationCertITIHttpGet">
+    <wsdl:operation name="MigrationCertificate">
+      <wsdl:input message="tns:MigrationCertificateHttpGetIn" />
+      <wsdl:output message="tns:MigrationCertificateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewStudentDetails">
+      <wsdl:input message="tns:ViewStudentDetailsHttpGetIn" />
+      <wsdl:output message="tns:ViewStudentDetailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProvisionalCertificateYearly">
+      <wsdl:input message="tns:ProvisionalCertificateYearlyHttpGetIn" />
+      <wsdl:output message="tns:ProvisionalCertificateYearlyHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="MigrationCertITIHttpPost">
+    <wsdl:operation name="MigrationCertificate">
+      <wsdl:input message="tns:MigrationCertificateHttpPostIn" />
+      <wsdl:output message="tns:MigrationCertificateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ViewStudentDetails">
+      <wsdl:input message="tns:ViewStudentDetailsHttpPostIn" />
+      <wsdl:output message="tns:ViewStudentDetailsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProvisionalCertificateYearly">
+      <wsdl:input message="tns:ProvisionalCertificateYearlyHttpPostIn" />
+      <wsdl:output message="tns:ProvisionalCertificateYearlyHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MigrationCertITISoap" type="tns:MigrationCertITISoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="MigrationCertificate">
+      <soap:operation soapAction="http://tempuri.org/MigrationCertificate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewStudentDetails">
+      <soap:operation soapAction="http://tempuri.org/ViewStudentDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProvisionalCertificateYearly">
+      <soap:operation soapAction="http://tempuri.org/ProvisionalCertificateYearly" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MigrationCertITISoap12" type="tns:MigrationCertITISoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="MigrationCertificate">
+      <soap12:operation soapAction="http://tempuri.org/MigrationCertificate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewStudentDetails">
+      <soap12:operation soapAction="http://tempuri.org/ViewStudentDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProvisionalCertificateYearly">
+      <soap12:operation soapAction="http://tempuri.org/ProvisionalCertificateYearly" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MigrationCertITIHttpGet" type="tns:MigrationCertITIHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="MigrationCertificate">
+      <http:operation location="/MigrationCertificate" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewStudentDetails">
+      <http:operation location="/ViewStudentDetails" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProvisionalCertificateYearly">
+      <http:operation location="/ProvisionalCertificateYearly" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MigrationCertITIHttpPost" type="tns:MigrationCertITIHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="MigrationCertificate">
+      <http:operation location="/MigrationCertificate" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ViewStudentDetails">
+      <http:operation location="/ViewStudentDetails" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProvisionalCertificateYearly">
+      <http:operation location="/ProvisionalCertificateYearly" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MigrationCertITI">
+    <wsdl:port name="MigrationCertITISoap" binding="tns:MigrationCertITISoap">
+      <soap:address location="http://sctevtodisha.nic.in/migrationcertiti.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MigrationCertITISoap12" binding="tns:MigrationCertITISoap12">
+      <soap12:address location="http://sctevtodisha.nic.in/migrationcertiti.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MigrationCertITIHttpGet" binding="tns:MigrationCertITIHttpGet">
+      <http:address location="http://sctevtodisha.nic.in/migrationcertiti.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MigrationCertITIHttpPost" binding="tns:MigrationCertITIHttpPost">
+      <http:address location="http://sctevtodisha.nic.in/migrationcertiti.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

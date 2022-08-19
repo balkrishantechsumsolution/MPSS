@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        table#stc_crtfte {
+            width: 100%;
+            max-width: 100%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        /*#stc_crtfte > .act tr > th {
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 8px 0 8px 8px;
+        }
+
+        #stc_crtfte > .act tr > td {
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 8px;
+        }
+
+            #stc_crtfte > .act tr > td a {
+                text-decoration: underline;
+            }*/
+    </style>
+    <script>
+        function printDiv() {
+
+            var divToPrint = document.getElementById('stc_crtfte');
+
+            var newWin = window.open('', 'Print-Window');
+
+            newWin.document.open();
+
+            newWin.document.write('<html><body onload="window.print()">' + divToPrint.innerHTML + '</body></html>');
+
+            newWin.document.close();
+
+            setTimeout(function () { newWin.close(); }, 10);
+
+        }
+    </script>
+</head>
+<body>
+    <div id="stc_crtfte" style="display:block;">
+        <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" style="border:2px solid #ddd; line-height:22px; padding:0 0 0 10px;">
+            <tr>
+                <td colspan="2" style="text-align:right;  padding:10px 30px 10px 0;">No. ..................................</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <b style="font-size:28px; line-height:35px; letter-spacing:0.1em;">
+                        STATE COUNCIL FOR TECHNICAL EDUCATION & <br />
+                        VOCATIONAL TRAINING ODISHA
+                    </b>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center; padding-top:10px;"><img src="img/sctevt_certificate_logo.png" alt="SCTEVT Logo" /></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center; padding-top:15px; padding-bottom:20px;"><b style="font-size:35px; letter-spacing:0.08em;">MIGRATION CERTIFICATE</b></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="font-family:'Apple Chancery'; font-size:18px; padding-bottom:25px; padding-left:10px; padding-right:10px;  line-height:35px;">.......................................................................................................................................................................................................................................................................................................................................................<br/>Registration No .................................................................................................................................................................................................................................................................................................................... <br/>of....................................................................................................................................................................................................................................................................................................................................................<br/>is informed that this State Council has no objection to his/her migration to any other State Board / Council / University for further higher studies.</td>
+            </tr>
+            <tr>
+                <td width="80%" style="padding-left:10px;">Bhubaneswar</td>
+                <td width="20%" rowspan="2" style="text-align:center; font-weight:bold; padding-bottom:40px;">
+                    <i>Secretary </i><br />
+                    State Council for Technical <br />
+                    Education & Vocational Training <br />
+                    Odisha
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-left:10px;" valign="top">Date ..............................</td>
+            </tr>
+        </table>
+        <div style="clear:both"></div>
+        
+    </div>
+    <div style="display:block; text-align:center;  margin:10px auto; ">
+        <input type="button" style="background-color: #5cb85c;color: #fff; border-color: #4cae4c; border: 1px solid transparent; border-radius: 4px; padding: 6px 12px;" onclick="printDiv('stc_crtfte')" value="Print" />
+        <input type="button" style="background-color: #d9534f;color: #fff; border-color: #d43f3a; border: 1px solid transparent; border-radius: 4px; padding: 6px 12px;" value="Cancel" />
+    </div>
+</body>
+</html>

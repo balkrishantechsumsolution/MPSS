@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="20ef390d-418c-42f6-81b6-592d9e331dba" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://5.79.69.78:8081/PushService.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="fddf2e2d-4585-499e-a835-b192dee87849" SourceId="1" SourceUrl="http://5.79.69.78:8081/PushService.svc/mex" />
+    <MetadataFile FileName="PushService.svc.wsdl" MetadataType="Wsdl" ID="25d017e2-7fe1-43aa-8e4e-010c22a41861" SourceId="1" SourceUrl="http://5.79.69.78:8081/PushService.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="05b22aab-be9d-44fc-8b0f-b4b8fcda3dcb" SourceId="1" SourceUrl="http://5.79.69.78:8081/PushService.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="1f661882-3284-4d56-bea9-eafaaa0a1d59" SourceId="1" SourceUrl="http://5.79.69.78:8081/PushService.svc/mex" />
+    <MetadataFile FileName="SMSGateway.Contracts.Data.xsd" MetadataType="Schema" ID="d32159f5-9d6b-42dd-83d5-fcc8edbeed12" SourceId="1" SourceUrl="http://5.79.69.78:8081/PushService.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

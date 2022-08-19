@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SMSGateway.Contracts.Data" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SMSGateway.Contracts.Data" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="SMS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ApplicationIDNew" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ApplicationId" type="xs:int" />
+      <xs:element minOccurs="0" name="ApplicationName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ApplicationUserName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ApplicationUserPassword" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AttendanceDetails" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DepartmentName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DeptId" type="xs:int" />
+      <xs:element minOccurs="0" name="Error" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrorCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrorStatusId" type="xs:int" />
+      <xs:element minOccurs="0" name="IsError" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsPush" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsSent" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsSingle" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MobileNos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phrase" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Priority" type="xs:int" />
+      <xs:element minOccurs="0" name="ProfileID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReferenceId" type="xs:int" />
+      <xs:element minOccurs="0" name="SendDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SenderId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SenderMobileNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ServiceIDNew" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ServiceName" type="xs:int" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SMS" nillable="true" type="tns:SMS" />
+</xs:schema>
