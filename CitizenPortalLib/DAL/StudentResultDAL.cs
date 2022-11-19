@@ -429,5 +429,205 @@ namespace CitizenPortalLib.DAL
                 }
             }
         }
+
+        internal DataTable GetCollegeCSVTU()
+        {
+            DataTable oDataTable = new DataTable();
+            IDataReader Reader = null;
+            m_DataBase = Factory.Create(this.ConnectionString);
+
+            try
+            {
+                DbCommand selectCommand;
+                selectCommand = m_DataBase.GetStoredProcCommand("GetCollegeCSVTUSP");
+                Reader = m_DataBase.ExecuteReader(selectCommand);
+                if (Reader != null)
+                    oDataTable.Load(Reader);
+                return oDataTable;
+            }
+            finally
+            {
+                if (Reader != null)
+                {
+                    Reader.Close();
+                }
+            }
+        }
+
+        internal DataTable GetCourseCSVTU()
+        {
+            DataTable oDataTable = new DataTable();
+            IDataReader Reader = null;
+            m_DataBase = Factory.Create(this.ConnectionString);
+
+            try
+            {
+                DbCommand selectCommand;
+                selectCommand = m_DataBase.GetStoredProcCommand("GetCourseMasterCSVTUSP");
+                Reader = m_DataBase.ExecuteReader(selectCommand);
+                if (Reader != null)
+                    oDataTable.Load(Reader);
+                return oDataTable;
+            }
+            finally
+            {
+                if (Reader != null)
+                {
+                    Reader.Close();
+                }
+            }
+        }
+
+        internal DataSet GetAttendentSheetDetails(string m_coursecode, string m_CollegeCode, string m_Semester, string m_ExamType, string m_ExamYear, string Range, string m_RollNo, string nextset)
+        {
+            DataSet oDataTable = new DataSet();
+            IDataReader Reader = null;
+            m_DataBase = Factory.Create(this.ConnectionString);
+
+            try
+            {
+                DbCommand selectCommand;
+                selectCommand = m_DataBase.GetStoredProcCommand("GetStudentDetailsEligible_MarksheetSP");
+                m_DataBase.AddInParameter(selectCommand, "@CourseCode", DbType.AnsiString, m_coursecode);
+                m_DataBase.AddInParameter(selectCommand, "@CollegeCode", DbType.AnsiString, m_CollegeCode);
+                m_DataBase.AddInParameter(selectCommand, "@Semester", DbType.AnsiString, m_Semester);
+                m_DataBase.AddInParameter(selectCommand, "@ExamYear", DbType.AnsiString, m_ExamType);
+                m_DataBase.AddInParameter(selectCommand, "@ExamType", DbType.AnsiString, m_ExamYear);
+                m_DataBase.AddInParameter(selectCommand, "@rollno", DbType.AnsiString, m_RollNo);
+                m_DataBase.AddInParameter(selectCommand, "@OffSet", DbType.AnsiString, Range);
+                m_DataBase.AddInParameter(selectCommand, "@NextSet", DbType.AnsiString, nextset);
+                //m_DataBase.AddInParameter(selectCommand, "@PrintFlag", DbType.AnsiString, m_PrintFlag);
+
+                // selectCommand.CommandTimeout = m_TimeOut;
+                Reader = m_DataBase.ExecuteReader(selectCommand);
+                if (Reader != null)
+                    oDataTable.Load(Reader, LoadOption.OverwriteChanges, new string[] { "StudentResult" });
+                return oDataTable;
+            }
+            finally
+            {
+                if (Reader != null)
+                {
+                    Reader.Close();
+                }
+            }
+        }
+
+        internal DataSet GetResultData(string m_RollNo, string m_Semester, string m_ExamType, string m_ExamYear)
+        {
+            DataSet oDataTable = new DataSet();
+            IDataReader Reader = null;
+            m_DataBase = Factory.Create(this.ConnectionString);
+
+            try
+            {
+                DbCommand selectCommand;
+                selectCommand = m_DataBase.GetStoredProcCommand("GetResultData_Marksheet");
+                m_DataBase.AddInParameter(selectCommand, "@rollno", DbType.AnsiString, m_RollNo);
+                m_DataBase.AddInParameter(selectCommand, "@Semester", DbType.AnsiString, m_Semester);
+                m_DataBase.AddInParameter(selectCommand, "@ExamYear", DbType.AnsiString, m_ExamType);
+                m_DataBase.AddInParameter(selectCommand, "@ExamType", DbType.AnsiString, m_ExamYear);
+                //m_DataBase.AddInParameter(selectCommand, "@OffSet", DbType.AnsiString, Range);
+                //m_DataBase.AddInParameter(selectCommand, "@NextSet", DbType.AnsiString, nextset);
+                // selectCommand.CommandTimeout = m_TimeOut;
+                Reader = m_DataBase.ExecuteReader(selectCommand);
+                if (Reader != null)
+                    oDataTable.Load(Reader, LoadOption.OverwriteChanges, new string[] { "StudentResult" });
+                return oDataTable;
+            }
+            finally
+            {
+                if (Reader != null)
+                {
+                    Reader.Close();
+                }
+            }
+        }
+
+        internal DataSet GetAggregareDetetails(string m_RollNo, string m_Semester, string m_ExamYear, string m_ExamType)
+        {
+            DataSet oDataTable = new DataSet();
+            IDataReader Reader = null;
+            m_DataBase = Factory.Create(this.ConnectionString);
+
+            try
+            {
+                DbCommand selectCommand;
+                selectCommand = m_DataBase.GetStoredProcCommand("GetResultDetails");
+                m_DataBase.AddInParameter(selectCommand, "@rollno", DbType.AnsiString, m_RollNo);
+                m_DataBase.AddInParameter(selectCommand, "@Semester", DbType.AnsiString, m_Semester);
+                m_DataBase.AddInParameter(selectCommand, "@ExamYear", DbType.AnsiString, m_ExamYear);
+                m_DataBase.AddInParameter(selectCommand, "@Examtype", DbType.AnsiString, m_ExamType);
+                //m_DataBase.AddInParameter(selectCommand, "@OffSet", DbType.AnsiString, Range);
+                //m_DataBase.AddInParameter(selectCommand, "@NextSet", DbType.AnsiString, nextset);
+                // selectCommand.CommandTimeout = m_TimeOut;
+                Reader = m_DataBase.ExecuteReader(selectCommand);
+                if (Reader != null)
+                    oDataTable.Load(Reader, LoadOption.OverwriteChanges, new string[] { "StudentResult" });
+                return oDataTable;
+            }
+            finally
+            {
+                if (Reader != null)
+                {
+                    Reader.Close();
+                }
+            }
+        }
+
+        internal DataSet GetQRCode(string m_RollNo, string m_Semester, string m_ExamType, string m_ExamYear)
+        {
+            DataSet oDataTable = new DataSet();
+            IDataReader Reader = null;
+            m_DataBase = Factory.Create(this.ConnectionString);
+
+            try
+            {
+                DbCommand selectCommand;
+                selectCommand = m_DataBase.GetStoredProcCommand("Get_QRCodeMarksheetvalues");
+                m_DataBase.AddInParameter(selectCommand, "@rollno", DbType.AnsiString, m_RollNo);
+                m_DataBase.AddInParameter(selectCommand, "@Semester", DbType.AnsiString, m_Semester);
+                m_DataBase.AddInParameter(selectCommand, "@ExamYear", DbType.AnsiString, m_ExamYear);
+                m_DataBase.AddInParameter(selectCommand, "@ExamType", DbType.AnsiString, m_ExamType);
+                // selectCommand.CommandTimeout = m_TimeOut;
+                Reader = m_DataBase.ExecuteReader(selectCommand);
+                if (Reader != null)
+                    oDataTable.Load(Reader, LoadOption.OverwriteChanges, new string[] { "StudentResult" });
+                return oDataTable;
+            }
+            finally
+            {
+                if (Reader != null)
+                {
+                    Reader.Close();
+                }
+            }
+        }
+
+        internal DataSet GetTotalBox(string m_RollNo)
+        {
+            DataSet oDataTable = new DataSet();
+            IDataReader Reader = null;
+            m_DataBase = Factory.Create(this.ConnectionString);
+
+            try
+            {
+                DbCommand selectCommand;
+                selectCommand = m_DataBase.GetStoredProcCommand("GetTotalSemestersObtSP");
+                m_DataBase.AddInParameter(selectCommand, "@rollno", DbType.AnsiString, m_RollNo);
+                // selectCommand.CommandTimeout = m_TimeOut;
+                Reader = m_DataBase.ExecuteReader(selectCommand);
+                if (Reader != null)
+                    oDataTable.Load(Reader, LoadOption.OverwriteChanges, new string[] { "StudentResult" });
+                return oDataTable;
+            }
+            finally
+            {
+                if (Reader != null)
+                {
+                    Reader.Close();
+                }
+            }
+        }
     }
 }

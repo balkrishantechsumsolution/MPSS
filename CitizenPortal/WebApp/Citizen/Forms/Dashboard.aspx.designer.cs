@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CitizenPortal.WebApp.Citizen.Forms {
-    
-    
-    public partial class Dashboard {
-        
+namespace CitizenPortal.WebApp.Citizen.Forms
+{
+
+
+    public partial class Dashboard
+    {
+
         /// <summary>
         /// Panel1 control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace CitizenPortal.WebApp.Citizen.Forms {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel Panel1;
-        
+
         /// <summary>
         /// Div1 control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace CitizenPortal.WebApp.Citizen.Forms {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Div1;
-        
+
         /// <summary>
         /// Div2 control.
         /// </summary>
@@ -38,7 +40,16 @@ namespace CitizenPortal.WebApp.Citizen.Forms {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Div2;
-        
+
+        /// <summary>
+        /// Div3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Div3;
+
         /// <summary>
         /// pnlMenu control.
         /// </summary>
@@ -47,7 +58,7 @@ namespace CitizenPortal.WebApp.Citizen.Forms {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel pnlMenu;
-        
+
         /// <summary>
         /// gridServices control.
         /// </summary>
@@ -56,7 +67,7 @@ namespace CitizenPortal.WebApp.Citizen.Forms {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView gridServices;
-        
+
         /// <summary>
         /// gridview control.
         /// </summary>
@@ -65,7 +76,7 @@ namespace CitizenPortal.WebApp.Citizen.Forms {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView gridview;
-        
+
         /// <summary>
         /// grdView1 control.
         /// </summary>
@@ -74,7 +85,7 @@ namespace CitizenPortal.WebApp.Citizen.Forms {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView grdView1;
-        
+
         /// <summary>
         /// HFServiceID control.
         /// </summary>
@@ -83,7 +94,7 @@ namespace CitizenPortal.WebApp.Citizen.Forms {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField HFServiceID;
-        
+
         /// <summary>
         /// HFRollNo control.
         /// </summary>

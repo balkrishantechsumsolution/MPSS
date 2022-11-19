@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CitizenPortal.WebApp.G2G.Master {
-    
-    
-    public partial class G2GMaster {
-        
+namespace CitizenPortal.WebApp.G2G.Master
+{
+
+
+    public partial class G2GMaster
+    {
+
         /// <summary>
         /// head control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace CitizenPortal.WebApp.G2G.Master {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
-        
+
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace CitizenPortal.WebApp.G2G.Master {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
         /// HFLang control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace CitizenPortal.WebApp.G2G.Master {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField HFLang;
-        
+
         /// <summary>
         /// AdminHeader control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace CitizenPortal.WebApp.G2G.Master {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::CitizenPortal.Sambalpur.controls.AdminHeader AdminHeader;
-        
+
         /// <summary>
         /// LeftPanel control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace CitizenPortal.WebApp.G2G.Master {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::CitizenPortal.WebApp.Control.LeftPanel LeftPanel;
-        
+
         /// <summary>
         /// ContentPlaceHolder1 control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace CitizenPortal.WebApp.G2G.Master {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
-        
+
         /// <summary>
         /// antiforgery control.
         /// </summary>

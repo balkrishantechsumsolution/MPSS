@@ -51,23 +51,26 @@ namespace CitizenPortal.WebApp.Faculty
             if (dt.Tables[2].Rows.Count != 0)
             {
                 lblCollegeName.Text = dtSubmitted.Rows[0]["CollegeName"].ToString();
-                lblCollegeCode.Text = dtSubmitted.Rows[0]["CollegeCode"].ToString();
-                lblSubject.Text = dtPaper.Rows[0]["SubjectName"].ToString();
-                lblSubjectCode.Text = dtPaper.Rows[0]["SubjectCode"].ToString();
+                lblCollegeCode.Text = dtSubmitted.Rows[0]["CollegeCode"].ToString();                
                 lblCourse.Text = dtSubmitted.Rows[0]["CourseName"].ToString();
                 lblCourseCode.Text = dtSubmitted.Rows[0]["CourseCode"].ToString();
-
                 lblProgram.Text = dtSubmitted.Rows[0]["ProgramName"].ToString();
                 lblProgramCode.Text = dtSubmitted.Rows[0]["ProgramCode"].ToString();
+                if (dtPaper.Rows.Count != 0)
+                {
+                    lblsemester.Text = dtPaper.Rows[0]["Semester"].ToString();
+                    lblExamType.Text = dtPaper.Rows[0]["ExamType"].ToString();
+                    lblExamYear.Text = dtPaper.Rows[0]["ExamYear"].ToString();
+                    lblSubject.Text = dtPaper.Rows[0]["SubjectName"].ToString();
+                    lblSubjectCode.Text = dtPaper.Rows[0]["SubjectCode"].ToString();
+                }
 
-                lblsemester.Text = dtPaper.Rows[0]["Semester"].ToString();
-                lblExamType.Text = dtPaper.Rows[0]["ExamType"].ToString();
-                lblExamYear.Text = dtPaper.Rows[0]["ExamYear"].ToString();
-
-                lblTotalNo.Text = dtSummary.Rows[0]["TotalStudent"].ToString();
-                lblExamNo.Text = dtSummary.Rows[0]["Submitted"].ToString();
-                lblEnteredNo.Text = dtSummary.Rows[0]["PaperStudent"].ToString();
-
+                if (dtSummary.Rows.Count != 0)
+                {
+                    lblTotalNo.Text = dtSummary.Rows[0]["TotalStudent"].ToString();
+                    lblExamNo.Text = dtSummary.Rows[0]["Submitted"].ToString();
+                    lblEnteredNo.Text = dtSummary.Rows[0]["PaperStudent"].ToString();
+                }
                 lblSubmittedBy.Text = dtSubmitted.Rows[0]["FirstName"].ToString();
                 lblSubmittedOn.Text = dtMarksDetail.Rows[0]["Submitted On"].ToString();
                 lblPrintedOn.Text = DateTime.Now.ToString("dd-MM-yyyy HH:mm:ss");

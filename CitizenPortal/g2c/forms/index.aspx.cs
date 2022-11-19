@@ -30,7 +30,7 @@ namespace WebApplication1.lokaseba_adhikar.forms
             //Session.Abandon();
             //Session.Clear();
             //Session.RemoveAll();
-            Response.Redirect("/Sambalpur/index.aspx");
+            Response.Redirect("~/Default.aspx");
             DataTable dt = m_GetcountBLL.Getcount();
             lblDepartment.Text = dt.Rows[0]["Department"].ToString();
             lblServices.Text = dt.Rows[0]["Services"].ToString();

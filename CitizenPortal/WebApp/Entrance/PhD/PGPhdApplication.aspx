@@ -2071,11 +2071,28 @@
 
                                                 </div>
                                             </div>
-
-
                                         </div>
-                                    </div>
+                                        <div class="clearfix"></div>
+                                        <div id="divIndExp" style="">
+                                            <div class="form-group mtop5">
+                                                <div class="col-lg-12 othrinfohd">
+                                                    <div class="col-md-9 pleft0">
+                                                        <p><span id="lblIndExp"><span class="fom-Numbx">3.</span> Total Years of Industrial Or Work Experience</span></p>
+                                                    </div>
+                                                    <div class="col-md-3 pleft0 pright0">
+                                                        <div class="col-xs-4 pleft0">
+                                                            <input id="txtIndExp" class="form-control" placeholder="" name="" type="text" maxlength="2" onkeypress="return isNumberKey(event);" />
+                                                        </div>
+                                                        <div class="col-xs-8 pleft0">
+                                                            Years                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                    
                                     <div class="clearfix"></div>
+
                                 </div>
                             </div>
                         </div>

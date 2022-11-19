@@ -78,7 +78,7 @@ namespace CitizenPortal.WebApp.Result
 
         private void Resultdetails()
         {
-            if (ET.ToUpper() == "BACKLOG")
+            if (ET.ToUpper() == "BACKLOG" || ET.ToUpper() == "AGGBACKLOG")
             {
                 //String strConnString = ConfigurationManager.ConnectionStrings["MasterDBlive1"].ConnectionString;
                 //SqlConnection con = new SqlConnection(strConnString);
@@ -403,7 +403,7 @@ namespace CitizenPortal.WebApp.Result
 
         private void GetStudentDetails()
         {
-            if (ET.ToUpper() == "BACKLOG")
+            if (ET.ToUpper() == "BACKLOG" || ET.ToUpper() == "AGGBACKLOG")
             {
                 //String strConnString = ConfigurationManager.ConnectionStrings["MasterDBlive1"].ConnectionString;
                 //SqlConnection con = new SqlConnection(strConnString);
@@ -593,7 +593,7 @@ namespace CitizenPortal.WebApp.Result
 
         private void OverallDetails()
         {
-            if (ET.ToUpper() == "BACKLOG")
+            if (ET.ToUpper() == "BACKLOG" || ET.ToUpper() == "AGGBACKLOG")
             {
                 DataSet ds = new DataSet();
                 ds = t_ObjBLL.ResultPassFail(rollno, semes, ET, examsession);

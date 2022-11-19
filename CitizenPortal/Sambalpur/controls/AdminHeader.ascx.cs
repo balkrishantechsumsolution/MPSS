@@ -14,6 +14,33 @@ namespace CitizenPortal.Sambalpur.controls
             if (Session["LoginID"].ToString() != null)
             {
                 lblUser.InnerHtml = Session["FullName"].ToString();
+
+                string culture = "en-GB";
+
+                if (HFCurrentLang.Value == "")
+                {
+                    HFCurrentLang.Value = "1";
+                    btnLang.Value = "हिन्दी";
+
+                }
+
+                if (HFCurrentLang.Value != "")
+                {
+                    if (HFCurrentLang.Value == "1")
+                    {
+                        culture = "en-GB";
+                        HFCurrentLang.Value = "1";
+                        btnLang.Value = "हिन्दी";
+                    }
+                    else if (HFCurrentLang.Value == "2")
+                    {
+                        culture = "hi-IN";
+                        HFCurrentLang.Value = "2";
+                        btnLang.Value = "English";
+                    }
+                }
+
+                Session["CurrentCultureLabels"] = culture;
             }
         }
         protected void lnkbtnLogOut_Click(object sender, EventArgs e)
@@ -33,7 +60,7 @@ namespace CitizenPortal.Sambalpur.controls
                 Response.Cookies["AuthToken"].Expires = DateTime.Now.AddMonths(-20);
             }
 
-            Response.Redirect("/Sambalpur/index.aspx");
+            Response.Redirect("/mpss/mpss/index.html");
         }
 
     }

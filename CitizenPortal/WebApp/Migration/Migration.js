@@ -123,6 +123,10 @@ function fnFetchUserDetails(AppID) {
       })
        ).then(function (data, textStatus, jqXHR) {
            var obj = jQuery.parseJSON(data.d);
+           if (obj.ApplicationTB.length == 0) {
+               alert('Student Detail not present');
+               return;
+           }
            var AppID = obj.ApplicationTB[0].RegNo;
            var arr = eval(obj.ApplicationTB);
            var arrAge = eval(obj.AgeTB);

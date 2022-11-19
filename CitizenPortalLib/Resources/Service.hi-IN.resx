@@ -366,4 +366,298 @@
   <data name="designatedOfficeOfficer" xml:space="preserve">
     <value>Designated Office &amp; Officer</value>
   </data>
+  <data name="lblInstruction" xml:space="preserve">
+    <value>कृपया अंग्रेजी भाषा में ही डेटा दर्ज करें</value>
+  </data>
+  <data name="lblLanguage" xml:space="preserve">
+    <value>भाषा चुनें :</value>
+  </data>
+  <data name="lblClass" xml:space="preserve">
+    <value>कक्षा का चयन करें</value>
+  </data>
+  <data name="lblCode" xml:space="preserve">
+    <value>स्कूल कोड</value>
+  </data>
+  <data name="lblFatherFullName" xml:space="preserve">
+    <value>पिता का पूरा नाम</value>
+  </data>
+  <data name="lblFullName" xml:space="preserve">
+    <value>आवेदक का पूरा नाम</value>
+  </data>
+  <data name="lblMotherFullName" xml:space="preserve">
+    <value>माता का नाम</value>
+  </data>
+  <data name="lblPassExam" xml:space="preserve">
+    <value>क्या अहर्कारी परीक्षा अन्य बोर्ड से उत्तीर्ण की है ?</value>
+  </data>
+  <data name="lblSchool" xml:space="preserve">
+    <value>स्कूल का चयन करें</value>
+  </data>
+  <data name="lblSchoolClassDtl" xml:space="preserve">
+    <value>चुनें गए विद्यालय एवं कक्षा का विवरण</value>
+  </data>
+  <data name="lblScName" xml:space="preserve">
+    <value>स्कॉलरशिप फॉर्म </value>
+  </data>
+  <data name="lblScSIsFreeEscortDis" xml:space="preserve">
+    <value>विकलांगता की स्थिति में विद्यार्थी को निशुल्क अनुरक्षण सुविधा दी जा रही है।</value>
+  </data>
+  <data name="lblScStAdmissionNo" xml:space="preserve">
+    <value>विद्यार्थी का स्कूल प्रवेशांक</value>
+  </data>
+  <data name="lblScStBankAccount" xml:space="preserve">
+    <value>बैंक खाता नं.</value>
+  </data>
+  <data name="lblScStBankInfo" xml:space="preserve">
+    <value>बैंक का विवरण</value>
+  </data>
+  <data name="lblScStCaste" xml:space="preserve">
+    <value>जाति</value>
+  </data>
+  <data name="lblScStCBankAccount" xml:space="preserve">
+    <value>बैंक खाता संख्या की पुष्टि करें</value>
+  </data>
+  <data name="lblScStCBankIFSC" xml:space="preserve">
+    <value>बैंक आईएफएससी कोड</value>
+  </data>
+  <data name="lblScStClass" xml:space="preserve">
+    <value>कक्षा</value>
+  </data>
+  <data name="lblScStCodeFacultySt" xml:space="preserve">
+    <value>संकाय/स्ट्रीम का कोड</value>
+  </data>
+  <data name="lblScStCodeTradeVocationalPrg" xml:space="preserve">
+    <value>व्यावसायिक शिक्षा में छात्र द्वारा लिया गया व्यापार संहिता</value>
+  </data>
+  <data name="lblScStCurrentCls" xml:space="preserve">
+    <value>वर्तमान वर्ग </value>
+  </data>
+  <data name="lblScStDateAdmisCurrClass" xml:space="preserve">
+    <value>कक्षा में प्रवेश की तिथि (डीडी /एमएम/वाईवाईवाईवाई)</value>
+  </data>
+  <data name="lblScStDateAdmisCurrSch" xml:space="preserve">
+    <value>वर्तमान विद्यालय में प्रवेश की तिथि</value>
+  </data>
+  <data name="lblScStDigitalCasteNo" xml:space="preserve">
+    <value>डिजिटल जाति सेटिफिकेट नंबर </value>
+  </data>
+  <data name="lblScStDisability" xml:space="preserve">
+    <value>विकलांगता का प्रकार</value>
+  </data>
+  <data name="lblScStDtls" xml:space="preserve">
+    <value>व्यक्तिगत विवरण</value>
+  </data>
+  <data name="lblScStEquipDisability" xml:space="preserve">
+    <value>विकलांग छात्रों को दिए गए उपकरण </value>
+  </data>
+  <data name="lblScStExamBoardName" xml:space="preserve">
+    <value>परीक्षा बोर्ड का नाम </value>
+  </data>
+  <data name="lblScStFather" xml:space="preserve">
+    <value>पिता का नाम </value>
+  </data>
+  <data name="lblScStFatherDead" xml:space="preserve">
+    <value>क्या पिता मर चुके हैं</value>
+  </data>
+  <data name="lblScStFatherOcc" xml:space="preserve">
+    <value>पिता का व्यवसाय</value>
+  </data>
+  <data name="lblScStFIncome" xml:space="preserve">
+    <value>परिवार की आय </value>
+  </data>
+  <data name="lblScStFreeBicycle" xml:space="preserve">
+    <value>नि: शुल्क साइकिल </value>
+  </data>
+  <data name="lblScStFreeUniform" xml:space="preserve">
+    <value>नि: शुल्क वर्दी </value>
+  </data>
+  <data name="lblScStID" xml:space="preserve">
+    <value>विद्यार्थी आईडी </value>
+  </data>
+  <data name="lblScStIsAnyHaveScholarShip" xml:space="preserve">
+    <value>क्या छात्रवृत्ति परिवार के केवल दो छात्र ले रहे हैं? (प्रमाण पत्र संलग्न)</value>
+  </data>
+  <data name="lblScStIsClsFirstEnrollStatus" xml:space="preserve">
+    <value>यदि छात्र कक्षा 1 में प्रवेश ले रहा है तो पिछले वर्ष में नामांकन की स्थिति </value>
+  </data>
+  <data name="lblScStIsDGSCaste" xml:space="preserve">
+    <value>चाहे वह विमुक्त/घुमक्कड़/अर्ध-घुमंतू जाति हो</value>
+  </data>
+  <data name="lblScStIsDisadvantagedgroup" xml:space="preserve">
+    <value>वंचित समूह से संबंधित है?</value>
+  </data>
+  <data name="lblScStIsFamilyBPL" xml:space="preserve">
+    <value>परिवार बी. पी. एल. कार्डधारक?</value>
+  </data>
+  <data name="lblScStIsFreeTextbooks" xml:space="preserve">
+    <value>मुफ्त पाठ्यपुस्तकों का एक पूरा सेट प्राप्त करें?</value>
+  </data>
+  <data name="lblScStIsFreeTransport" xml:space="preserve">
+    <value>मुफ्त परिवहन सुविधा लेना</value>
+  </data>
+  <data name="lblScStIshomeless" xml:space="preserve">
+    <value>क्या विद्यार्थी बेघर है</value>
+  </data>
+  <data name="lblScStIsHosteller" xml:space="preserve">
+    <value>हॉस्टलर है?</value>
+  </data>
+  <data name="lblScStIsRecSpecialTraining" xml:space="preserve">
+    <value>क्या विद्यार्थी विशेष प्रशिक्षण प्राप्त कर रहा है</value>
+  </data>
+  <data name="lblScStIsRegVocationalPrg" xml:space="preserve">
+    <value>छात्र नए व्यावसायिक शिक्षा कार्यक्रम में पंजीकृत है</value>
+  </data>
+  <data name="lblScStIsResidingHostel" xml:space="preserve">
+    <value>क्या विद्यार्थी छात्रावास में रह रहा है</value>
+  </data>
+  <data name="lblScStIsRTE" xml:space="preserve">
+    <value>क्या छात्र को आरटीई के तहत दाखिला दिया गया है?</value>
+  </data>
+  <data name="lblScStJobSalary" xml:space="preserve">
+    <value>नौकरी का वेतन </value>
+  </data>
+  <data name="lblScStJobStaus" xml:space="preserve">
+    <value>नौकरी / प्लेसमेंट की स्थिति</value>
+  </data>
+  <data name="lblScStLadliLaxmiNo" xml:space="preserve">
+    <value>लाड़ली लक्ष्मी नं.(प्राथमिक/माध्यमिक विद्यालय में पढ़ने वाले छात्रों के लिए)</value>
+  </data>
+  <data name="lblScStLastAnnualResult" xml:space="preserve">
+    <value>अंतिम वार्षिक परिणाम </value>
+  </data>
+  <data name="lblScStLastCls" xml:space="preserve">
+    <value>पिछले साल की कक्षा </value>
+  </data>
+  <data name="lblScStLastClsInt" xml:space="preserve">
+    <value>अंतिम श्रेणी के संस्थान का नाम </value>
+  </data>
+  <data name="lblScStLvlNSFQ" xml:space="preserve">
+    <value>छात्र द्वारा एनएसएफक्यू का कौन सा स्तर पूरा किया गया है?</value>
+  </data>
+  <data name="lblScStMediums" xml:space="preserve">
+    <value>विद्यार्थी शिक्षा का माध्यम </value>
+  </data>
+  <data name="lblScStMobieNoParent" xml:space="preserve">
+    <value>विद्यार्थी/पालक माता-पिता का मोबाइल नंबर </value>
+  </data>
+  <data name="lblScStMonthlyFee" xml:space="preserve">
+    <value>मासिक शुल्क</value>
+  </data>
+  <data name="lblScStMother" xml:space="preserve">
+    <value>माता का नाम </value>
+  </data>
+  <data name="lblScStMotherOcc" xml:space="preserve">
+    <value>माँ का व्यवसाय </value>
+  </data>
+  <data name="lblScStName" xml:space="preserve">
+    <value>छात्र का नाम (अंग्रेजी)</value>
+  </data>
+  <data name="lblScStNative" xml:space="preserve">
+    <value>मध्य प्रदेश का मूल निवासी है?</value>
+  </data>
+  <data name="lblScStNoOfSibling" xml:space="preserve">
+    <value>कितने भाई/बहन </value>
+  </data>
+  <data name="lblScStObjVocationalPrg" xml:space="preserve">
+    <value>व्यावसायिक शिक्षा लेने के लिए छात्र के उद्देश्य </value>
+  </data>
+  <data name="lblScStParentIcomeTaxPayer" xml:space="preserve">
+    <value>पिता या अभिभावक आयकरदाता हैं या उनके पास 10 एकड़ से अधिक जमीन है? (प्रमाण पत्र संलग्न)</value>
+  </data>
+  <data name="lblScStPassPercentage" xml:space="preserve">
+    <value>उत्तीर्ण प्रतिशत </value>
+  </data>
+  <data name="lblScStPreAttDays" xml:space="preserve">
+    <value>पिछले वर्ष में छात्र की उपस्थिति दिवस </value>
+  </data>
+  <data name="lblScStReligion" xml:space="preserve">
+    <value>धर्म</value>
+  </data>
+  <data name="lblScStSchool" xml:space="preserve">
+    <value>विद्यार्थी स्कूल </value>
+  </data>
+  <data name="lblScStSection" xml:space="preserve">
+    <value>विद्यार्थी अनुभाग </value>
+  </data>
+  <data name="lblScStStudentStatus" xml:space="preserve">
+    <value>छात्र की स्थिति </value>
+  </data>
+  <data name="lblScStSubCaste" xml:space="preserve">
+    <value>उप जाति </value>
+  </data>
+  <data name="lblScStSubject" xml:space="preserve">
+    <value>विद्यार्थी विषय </value>
+  </data>
+  <data name="lblScStTypeJobRoleVocationalPrg" xml:space="preserve">
+    <value>व्यावसायिक शिक्षा में किस प्रकार की नौकरी की भूमिकाओं की उम्मीद की जाती है</value>
+  </data>
+  <data name="lblScStYrLastExam" xml:space="preserve">
+    <value>अंतिम कक्षा की परीक्षा का वर्ष </value>
+  </data>
+  <data name="lblStAge" xml:space="preserve">
+    <value>(आयु 01/08/2021 तक)</value>
+  </data>
+  <data name="lblStApplicantAddress" xml:space="preserve">
+    <value>आवेदक का पता</value>
+  </data>
+  <data name="lblStBlock" xml:space="preserve">
+    <value>ब्लॉक</value>
+  </data>
+  <data name="lblStCategory" xml:space="preserve">
+    <value>लिंग</value>
+  </data>
+  <data name="lblStCity" xml:space="preserve">
+    <value>शहर/ग्राम</value>
+  </data>
+  <data name="lblStColony" xml:space="preserve">
+    <value>कॉलोनी</value>
+  </data>
+  <data name="lblStDeclaration" xml:space="preserve">
+    <value>घोषणा*   मैं एतद घोषणा करता करती हूँ कि इस आवेदन पत्र में मेरे द्वारा की गयी प्रविष्टिया सत्य और सही है। किसी भी प्रकार की त्रुटी या गलत जानकारी पाये जाने पर प्रवेष निरस्त किया जायें जिसकी सम्पूर्ण जिम्मेदारी स्वयं की होगी।</value>
+  </data>
+  <data name="lblStDistrict" xml:space="preserve">
+    <value>जिला</value>
+  </data>
+  <data name="lblStDOB" xml:space="preserve">
+    <value>जन्म तिथि (dd/mm/yyyy)</value>
+  </data>
+  <data name="lblStEnroll" xml:space="preserve">
+    <value>नामांकन प्रपत्र सत्र</value>
+  </data>
+  <data name="lblStFilter" xml:space="preserve">
+    <value>छात्र विवरण फ़िल्टर</value>
+  </data>
+  <data name="lblStGender" xml:space="preserve">
+    <value>श्रेणी</value>
+  </data>
+  <data name="lblStHouseNo" xml:space="preserve">
+    <value>मकान नंबर</value>
+  </data>
+  <data name="lblStMoblie" xml:space="preserve">
+    <value>मोबाइल नं</value>
+  </data>
+  <data name="lblStNative" xml:space="preserve">
+    <value>क्या आप मध्यप्रदेश के मूलनिवासी है ?</value>
+  </data>
+  <data name="lblStPinCode" xml:space="preserve">
+    <value>पिन कोड</value>
+  </data>
+  <data name="lblStSamagraID" xml:space="preserve">
+    <value>समग्र आईडी</value>
+  </data>
+  <data name="lblStTCUpload" xml:space="preserve">
+    <value>अपलोड करने के लिए टीसी:</value>
+  </data>
+  <data name="lblStudentProfile" xml:space="preserve">
+    <value>छात्र प्रोफ़ाइल विवरण</value>
+  </data>
+  <data name="lblStUpload" xml:space="preserve">
+    <value>अपलोड करें</value>
+  </data>
+  <data name="lblScStInform" xml:space="preserve">
+    <value>छात्र विवरण</value>
+  </data>
+  <data name="lblScStInformation" xml:space="preserve">
+    <value>अन्य विवरण</value>
+  </data>
 </root>

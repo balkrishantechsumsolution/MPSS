@@ -287,12 +287,13 @@ namespace CitizenPortalLib.DAL
             {
                 DbCommand selectCommand;
                 selectCommand = m_DataBase.GetStoredProcCommand("GetMigrationCertificateSP");
+                selectCommand.CommandTimeout = m_TimeOut;
                 m_DataBase.AddInParameter(selectCommand, "@ServiceID", DbType.AnsiString, ServiceID);
                 m_DataBase.AddInParameter(selectCommand, "@AppID", DbType.AnsiString, AppID);
                 m_DataBase.AddInParameter(selectCommand, "@RegNo", DbType.AnsiString, RegNo);
                 Reader = m_DataBase.ExecuteReader(selectCommand);
                 if (Reader != null)
-                    oDataTable.Load(Reader, LoadOption.OverwriteChanges, new string[] { "MigrationDetails","ResultTB", "ExamSessionTB" });
+                    oDataTable.Load(Reader, LoadOption.OverwriteChanges, new string[] { "MigrationDetails","ResultTB", "ExamSessionTB" ,"SemesterTB"});
                 return oDataTable;
             }
             finally
@@ -682,13 +683,14 @@ namespace CitizenPortalLib.DAL
             {
                 DbCommand selectCommand;
                 selectCommand = m_DataBase.GetStoredProcCommand("GetDegreeCertificateSP");
+                selectCommand.CommandTimeout = m_TimeOut;
                 m_DataBase.AddInParameter(selectCommand, "@ServiceID", DbType.AnsiString, ServiceID);
                 m_DataBase.AddInParameter(selectCommand, "@AppID", DbType.AnsiString, AppID);
                 m_DataBase.AddInParameter(selectCommand, "@RegNo", DbType.AnsiString, RegNo);
                 m_DataBase.AddInParameter(selectCommand, "@Flag", DbType.AnsiString, Flag);
                 Reader = m_DataBase.ExecuteReader(selectCommand);
                 if (Reader != null)
-                    oDataTable.Load(Reader, LoadOption.OverwriteChanges, new string[] { "CertificateTB", "ResultTB" });
+                    oDataTable.Load(Reader, LoadOption.OverwriteChanges, new string[] { "CertificateTB", "ResultTB", "DivisionTB" });
                 return oDataTable;
             }
             finally

@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Header.ascx.cs" Inherits="CitizenPortal.Sambalpur.controls.Header" %>
 <header>
-    <div class="container-fluid">
+    <%--<div class="container-fluid">
         <div class="row" style="background-color: #fd3535; clear: both; color: #fff;">
             <div class="col-lg-12" style="padding-top: 7px;font-weight:bold">
                 <marquee>
@@ -8,7 +8,7 @@
                     </marquee>
             </div>
         </div>
-    </div>
+    </div>--%>
     <div class="container-fluid whitebg myheader">
         
         <div class="row tophead">

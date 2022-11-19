@@ -79,7 +79,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td colspan="3" style="text-align: center">
-                                                        <asp:Label ID="lblCertificateHindi" runat="server" Font-Bold="true" Font-Names="Arial Unicode MS" Font-Size="30px" Text="इंजीनिरिंग में पत्रोपाधि"></asp:Label>
+                                                        <asp:Label ID="lblCertificateHindi" runat="server" Font-Bold="true" Font-Names="Arial" Font-Size="30px" Text="इंजीनिरिंग में पत्रोपाधि"></asp:Label>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -121,7 +121,7 @@
                                                                     <asp:Label ID="lblSession" runat="server" Font-Bold="True" Font-Italic="True" Font-Names="Arial" Font-Size="20px"></asp:Label>
                                                                     &nbsp;<br /> in the&nbsp;
                                                                     <asp:Label ID="lblDivision" runat="server" Font-Bold="True" Font-Italic="True" Font-Names="Arial" Font-Size="20px"></asp:Label>
-                                                                    &nbsp;Division,
+                                                                    ,
                                                                     <br />
                                                                     is awarded the&nbsp;
                                                                     <br />

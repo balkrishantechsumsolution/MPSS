@@ -159,6 +159,8 @@ namespace CitizenPortal.WebApp.Activity
                     e.Row.Cells[9].Enabled = false;
                     e.Row.Cells[10].Enabled = false;
                     e.Row.Cells[11].Enabled = false;
+                    e.Row.Cells[12].Enabled = false;
+                    e.Row.Cells[13].Enabled = false;
                 }
                 else if (hdfActionType.Value == "2")//Add
                 {
@@ -217,6 +219,8 @@ namespace CitizenPortal.WebApp.Activity
                 e.Row.Cells[9].Enabled = false;
                 e.Row.Cells[10].Enabled = false;
                 e.Row.Cells[11].Enabled = false;
+                e.Row.Cells[12].Enabled = false;
+                e.Row.Cells[13].Enabled = false;
             }
         }
 
@@ -439,6 +443,9 @@ namespace CitizenPortal.WebApp.Activity
                                 TextBox t_txtOfflineEndDate = (TextBox)rows.FindControl("txtOfflineEndDate");
                                 TextBox t_txtElectiveSubjectEndDate = (TextBox)rows.FindControl("txtElectiveSubjectEndDate");
 
+                                TextBox t_txtRTRVStartDate = (TextBox)rows.FindControl("txtRTRVStartDate");
+                                TextBox t_txtRTRVEndDate = (TextBox)rows.FindControl("txtRTRVEndDate");
+
                                 //Conditation Validation
                                 if (t_Course == "" || t_Course == "0")
                                 {
@@ -471,6 +478,10 @@ namespace CitizenPortal.WebApp.Activity
                                 if (t_txtOfflineEndDate.Text == "") { t_Script = "Offline End Date is blank!"; ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Invalid Activity Start Date", "alert('" + t_Script + "');", true); return; }
                                 if (t_txtResultDate.Text == "") { t_Script = "Result Declaration Date is blank!"; ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Invalid Activity End Date", "alert('" + t_Script + "');", true); return; }
 
+                                if (t_txtRTRVStartDate.Text == "") { t_Script = "RT/RV Start Date is blank!"; ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Invalid Activity Start Date", "alert('" + t_Script + "');", true); return; }
+                                if (t_txtRTRVEndDate.Text == "") { t_Script = "RT/RV End Date is blank!"; ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Invalid Activity End Date", "alert('" + t_Script + "');", true); return; }
+
+
                                 DateTime StartDate = Convert.ToDateTime(t_txtStartDate.Text);
                                 DateTime EndDate = Convert.ToDateTime(t_txtEndDate.Text);
 
@@ -479,6 +490,9 @@ namespace CitizenPortal.WebApp.Activity
                                 DateTime AttendanceEndDate = Convert.ToDateTime(t_txtAttendanceEndDate.Text);
                                 DateTime OfflineEndDate = Convert.ToDateTime(t_txtOfflineEndDate.Text);
                                 DateTime ElectiveSubjectEndDate = Convert.ToDateTime(t_txtElectiveSubjectEndDate.Text);
+
+                                DateTime RTRVStartDate = Convert.ToDateTime(t_txtRTRVStartDate.Text);
+                                DateTime RTRVEndDate = Convert.ToDateTime(t_txtRTRVEndDate.Text);
 
                                 if (StartDate.CompareTo(EndDate) > 0)
                                 {
@@ -522,7 +536,19 @@ namespace CitizenPortal.WebApp.Activity
                                     return;
                                 }
 
-                                
+                                if (ResultDate.CompareTo(RTRVStartDate) > 0)
+                                {
+                                    t_Script = "RT/RV Start Date should be greated then Result Date!";
+                                    ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Invalid Date", "alert('" + t_Script + "');", true);
+                                    return;
+                                }
+
+                                if (RTRVStartDate.CompareTo(RTRVEndDate) > 0)
+                                {
+                                    t_Script = "RT/RV End Date should be greated then RT/RV Start Date!";
+                                    ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Invalid Date", "alert('" + t_Script + "');", true);
+                                    return;
+                                }
                                 string[] AFields =
                                 {
                                     "RowID"
@@ -537,6 +563,8 @@ namespace CitizenPortal.WebApp.Activity
                                     , "AttendanceEndDate"
                                     , "OfflineEndDate"
                                     , "ElectiveSubjectEndDate"
+                                    , "RTRVStartDate"
+                                    , "RTRVEndDate"
                                     , "CreatedBy"
                                     , "ActionType"
                             };
@@ -557,7 +585,10 @@ namespace CitizenPortal.WebApp.Activity
                                 t_Activity_DT.AttendanceEndDate = Convert.ToDateTime(t_txtAttendanceEndDate.Text).ToString("yyyy-MM-dd HH:mm:ss");
                                 t_Activity_DT.OfflineEndDate = Convert.ToDateTime(t_txtOfflineEndDate.Text).ToString("yyyy-MM-dd HH:mm:ss");
                                 t_Activity_DT.ElectiveSubjectEndDate = Convert.ToDateTime(t_txtElectiveSubjectEndDate.Text).ToString("yyyy-MM-dd HH:mm:ss");
-                                
+
+                                t_Activity_DT.RTRVStartDate = Convert.ToDateTime(t_txtRTRVStartDate.Text).ToString("yyyy-MM-dd HH:mm:ss");
+                                t_Activity_DT.RTRVEndDate = Convert.ToDateTime(t_txtRTRVEndDate.Text).ToString("yyyy-MM-dd HH:mm:ss");
+
                                 t_Activity_DT.ActionType = hdfActionType.Value;
 
                                 CBCSAdmissionFormBLL m_AdmissionFormBLL = new CBCSAdmissionFormBLL();

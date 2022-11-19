@@ -359,7 +359,7 @@
                                         ErrorMessage="Please select Status" ValidationGroup="A" ForeColor="Red" SetFocusOnError="true" EnableClientScript="true" />--%>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2" style="display: none">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2" >
                                 <div class="form-group">
                                     <label class="" for="txtRollNo">Roll No</label>
                                     <asp:TextBox runat="server" ID="txtRollNo" class="form-control" placeholder="Roll No" name="txtRollNo" MaxLength="25" onkeypress="return isNumberKey(event);"

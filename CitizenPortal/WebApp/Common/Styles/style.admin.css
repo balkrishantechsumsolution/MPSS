@@ -3702,10 +3702,16 @@ input[type="checkbox"], input[type="radio"]
     border-width: 0 1px 1px;
     padding: 15px 0;
 }
-.box-container > .box-body-open
-{
+.box-container > .box-body-open {
     border: 1px solid #dddddd;
     border-radius: 3px;
+    
+}
+.box-container > .fls {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    max-width:1038px!important;
 }
 .register-num{padding:0 0 0 44px;margin-top:5px}
 .register-num img{position: absolute; left: 12px; top: -8px;}
@@ -3899,3 +3905,22 @@ input[type="checkbox"], input[type="radio"]
 
 .log-info .panel .panel-heading {background-color: #f7f7f7 !important; padding:0px;}
 .log-info .panel .panel-heading h1{margin: 0;}
+fieldset {
+    padding: 10px;
+    border: 1px solid #c06969;
+    border-radius: 5px;
+}
+
+legend {
+    display: block;
+    width: auto;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: inherit;
+    color: #b96969;
+    border: 0;
+    border-bottom: none;
+    font-weight: bold;
+    padding: 0px 10px;
+}

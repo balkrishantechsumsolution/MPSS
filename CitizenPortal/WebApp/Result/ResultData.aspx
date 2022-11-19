@@ -188,7 +188,14 @@
                                 </label>
                                 <asp:DropDownList ID="ddlSession" runat="server" CssClass="form-control">
                                     <asp:ListItem Value="0" Text="--Select--"></asp:ListItem>
-                                    <asp:ListItem Selected="True" Value="Nov-Dec 2021" Text="Nov-Dec 2021"></asp:ListItem>
+									<asp:ListItem Value="Apr-May 2019" Text="Apr-May 2019"></asp:ListItem>
+									<asp:ListItem Value="Nov-Dec 2019" Text="Nov-Dec 2019"></asp:ListItem>
+                                    <asp:ListItem Value="Apr-May 2020" Text="Apr-May 2020"></asp:ListItem>
+									<asp:ListItem Value="Nov-Dec 2020" Text="Nov-Dec 2020"></asp:ListItem>
+									<asp:ListItem Value="Apr-May 2021" Text="Apr-May 2021"></asp:ListItem>
+									<asp:ListItem Value="Nov-Dec 2021" Text="Nov-Dec 2021"></asp:ListItem>
+									<asp:ListItem Value="Apr-May 2022" Text="Apr-May 2022"></asp:ListItem>
+									<asp:ListItem Value="Nov-Dec 2022" Text="Nov-Dec 2022"></asp:ListItem>
                                 </asp:DropDownList>
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" InitialValue="0" ControlToValidate="ddlSession" Display="Dynamic"
                                     ErrorMessage="Please select SESSION" ValidationGroup="G" ForeColor="Red" SetFocusOnError="true" EnableClientScript="true" />

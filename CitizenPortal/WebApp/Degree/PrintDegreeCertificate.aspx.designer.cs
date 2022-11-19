@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CitizenPortal.WebApp.Degree
-{
-
-
-    public partial class PrintDegreeCertificate
-    {
-
+namespace CitizenPortal.WebApp.Degree {
+    
+    
+    public partial class PrintDegreeCertificate {
+        
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace CitizenPortal.WebApp.Degree
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
+        
         /// <summary>
         /// divPrint control.
         /// </summary>
@@ -31,7 +29,7 @@ namespace CitizenPortal.WebApp.Degree
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel divPrint;
-
+        
         /// <summary>
         /// lblEnrollment control.
         /// </summary>
@@ -40,7 +38,7 @@ namespace CitizenPortal.WebApp.Degree
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblEnrollment;
-
+        
         /// <summary>
         /// lblRollNo control.
         /// </summary>
@@ -49,7 +47,7 @@ namespace CitizenPortal.WebApp.Degree
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblRollNo;
-
+        
         /// <summary>
         /// lblCertificateHindi control.
         /// </summary>
@@ -58,7 +56,7 @@ namespace CitizenPortal.WebApp.Degree
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblCertificateHindi;
-
+        
         /// <summary>
         /// lblNameH control.
         /// </summary>
@@ -67,7 +65,7 @@ namespace CitizenPortal.WebApp.Degree
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblNameH;
-
+        
         /// <summary>
         /// lblSessionH control.
         /// </summary>
@@ -76,7 +74,7 @@ namespace CitizenPortal.WebApp.Degree
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSessionH;
-
+        
         /// <summary>
         /// lblBranchH1 control.
         /// </summary>
@@ -85,7 +83,7 @@ namespace CitizenPortal.WebApp.Degree
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblBranchH1;
-
+        
         /// <summary>
         /// lblDivisionH control.
         /// </summary>
@@ -94,7 +92,7 @@ namespace CitizenPortal.WebApp.Degree
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblDivisionH;
-
+        
         /// <summary>
         /// lblBranchH2 control.
         /// </summary>
@@ -103,7 +101,7 @@ namespace CitizenPortal.WebApp.Degree
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblBranchH2;
-
+        
         /// <summary>
         /// lblCertificate control.
         /// </summary>
@@ -112,7 +110,7 @@ namespace CitizenPortal.WebApp.Degree
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblCertificate;
-
+        
         /// <summary>
         /// lblName control.
         /// </summary>
@@ -121,7 +119,7 @@ namespace CitizenPortal.WebApp.Degree
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblName;
-
+        
         /// <summary>
         /// lblBranchE control.
         /// </summary>
@@ -130,7 +128,7 @@ namespace CitizenPortal.WebApp.Degree
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblBranchE;
-
+        
         /// <summary>
         /// lblSession control.
         /// </summary>
@@ -139,7 +137,7 @@ namespace CitizenPortal.WebApp.Degree
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSession;
-
+        
         /// <summary>
         /// lblDivision control.
         /// </summary>
@@ -148,7 +146,7 @@ namespace CitizenPortal.WebApp.Degree
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblDivision;
-
+        
         /// <summary>
         /// lblBranch control.
         /// </summary>
@@ -157,7 +155,7 @@ namespace CitizenPortal.WebApp.Degree
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblBranch;
-
+        
         /// <summary>
         /// lblDate control.
         /// </summary>
@@ -166,7 +164,7 @@ namespace CitizenPortal.WebApp.Degree
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblDate;
-
+        
         /// <summary>
         /// QRCode1 control.
         /// </summary>
@@ -175,7 +173,7 @@ namespace CitizenPortal.WebApp.Degree
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::CitizenPortal.WebApp.Common.QRCode.QRCode QRCode1;
-
+        
         /// <summary>
         /// lblVCName control.
         /// </summary>

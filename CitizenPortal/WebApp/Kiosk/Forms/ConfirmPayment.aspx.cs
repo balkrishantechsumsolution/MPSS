@@ -321,6 +321,18 @@ namespace CitizenPortal.WebApp.Kiosk.Forms
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
+            if (lblTotal.InnerText == "0.00")
+            {
+
+                string t_URL = "~/WebApp/Kiosk/Forms/PaymentReceipt.aspx?SvcID=" + m_ServiceID + "&AppID=" + m_AppID + "&Status=Y";
+
+                if (Request.QueryString["CustomPayFlag"] != null && Request.QueryString["CustomPayFlag"].ToString().ToUpper() == "Y")
+                {
+                    t_URL = t_URL + "&CustomPayFlag=Y";
+                }
+
+                Response.Redirect(t_URL);
+            }
             SafeXPaymentGateway();
         }
         protected void btnSubmit_Click_old(object sender, EventArgs e)

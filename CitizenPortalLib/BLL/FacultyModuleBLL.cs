@@ -274,6 +274,15 @@ namespace CitizenPortalLib.BLL
             return t_DT;
         }
 
+        public DataTable InsertElectiveSubjectSelectNew(ElectiveSubject_TB obj_DT, string[] AFields)
+        {
+            DataTable t_DT = null;
+
+            t_DT = m_FacultyModuleDAL.InsertElectiveSubjectSelectNew(obj_DT, AFields);
+
+            return t_DT;
+        }
+
         public DataTable GetOfflineExamData(string LoginID, string College, string ExamType, string ExamSession, string Course, string Program, string paymentStatus, string RollNo, string Semester)
         {
             return m_FacultyModuleDAL.GetOfflineExamData(LoginID, College, ExamType, ExamSession, Course,Program, paymentStatus, RollNo, Semester);

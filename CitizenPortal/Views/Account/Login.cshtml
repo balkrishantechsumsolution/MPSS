@@ -171,19 +171,19 @@
             <div class="container-fluid whitebg myheader">
                 <div class="row tophead">
                     <div class="col-xs-12 col-sm-3 col-md-1 col-lg-1">
-                        <img src="/Sambalpur/img/sambalpur-university-logo.png" class="img-responsive small-view" width="141" height="124" alt="Chhattisgarh Swami Vivekanad Technical University, Raipur" />
+                        <img src="~/PortalImages/MPLogo.png" class="img-responsive small-view" width="141" height="124" alt="Maharshi Patanjali Sanskrit Sansthan, Bhopal" />
                     </div>
                     <div class="col-xs-12 col-sm-9 col-md-5 col-lg-6 logo">
-                        <h1>CHHATTISGARH SWAMI VIVEKANAND<br />TECHNICAL UNIVERSITY</h1>
-                        @*<span>(State Government Owned)</span>*@
+                        <h2 style="margin: 10px auto; font-size: 23px; font-weight: bolder">MAHARSHI PATANJALI SANSKRIT SANSTHAN</h2>
+                        <h2 style="margin:10px auto;font-size:25px;font-weight:bolder">महर्षि पतंजलि संस्कृत संस्थान, भोपाल</h2>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 common-nav text-right ptop20">
-                        <a href="/CSVTU/index.aspx" class="navtop-homebtn"><i class="fa fa-home fa-fw"></i>Home</a>
-                        
-                        
+                        <a href="~/mpss/mpss/index.html" class="navtop-homebtn"><i class="fa fa-home fa-fw"></i>Home</a>
+
+
                     </div>
                 </div>
-                
+
             </div>
         </header>
         @*End Header*@
@@ -204,29 +204,31 @@
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <a href="#" onclick="return DispLoginPanel('C');" class="btn-info button" id="rgstrUser" title="Student Login (already registered student)">
-                                <i class="fa fa-group fa-3x fa-fw pbottom5"></i><br />Student Login</a>
-    @*<a href="~/WebApp/Entrance/Login/Login.aspx" class="btn-info button" id="rgstrUser"><i class="fa fa-group fa-3x fa-fw pbottom5"></i><br />Student Login</a>*@
+                                    <i class="fa fa-group fa-3x fa-fw pbottom5"></i><br />Student Login
+                                </a>
+                                @*<a href="~/WebApp/Entrance/Login/Login.aspx" class="btn-info button" id="rgstrUser"><i class="fa fa-group fa-3x fa-fw pbottom5"></i><br />Student Login</a>*@
                             </div>
                             @*<div class="mtop40"></div>
                                 <div class="clearfix"></div>*@
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                 <a href="#" onclick="return DispLoginPanel('D');" class="btn-warning button" title="Department Login">
-                                <i class="fa fa-university fa-3x fa-fw pbottom5"></i><br />Department Login</a>
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="">
-                                <a id="btncscConnect" href="~/WebApp/Entrance/Login/Login.aspx" name="CSCsubmit" class="btn-primary button" title="Candidate Appearing for Entrance Examination">
-                                    <i class="fa fa-graduation-cap fa-3x fa-fw pbottom5"></i><br />
-                                    <input type="submit" id="btnCSC" name="CSCsubmit" style="display:none;" class="fa fa-wheelchair fa-3x fa-fw pbottom5" value="PhD Entrance Candidate Login" />
-                                    PhD. Entrance Login
+                                    <i class="fa fa-university fa-3x fa-fw pbottom5"></i><br />Department Login
                                 </a>
                             </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="">
-                                <a id="btncscConnect" href="~/WebApp/Examination/SearchStudent.aspx" name="CSCsubmit" class="btn-dark button" title="Click to Create Logi ID & Password">
-                                    <i class="fa fa-pencil-square fa-3x fa-fw pbottom5"></i><br />
-                                    <input type="submit" id="btnCSC" name="CSCsubmit" style="display:none;" class="fa fa-wheelchair fa-3x fa-fw pbottom5" value="Click to Create Logi ID & Password" />
-                                    Unregistered Student
-                                </a>
-                            </div>
+                            @*<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="">
+                                    <a id="btncscConnect" href="~/WebApp/Entrance/Login/Login.aspx" name="CSCsubmit" class="btn-primary button" title="Candidate Appearing for Entrance Examination">
+                                        <i class="fa fa-graduation-cap fa-3x fa-fw pbottom5"></i><br />
+                                        <input type="submit" id="btnCSC" name="CSCsubmit" style="display:none;" class="fa fa-wheelchair fa-3x fa-fw pbottom5" value="PhD Entrance Candidate Login" />
+                                        PhD. Entrance Login
+                                    </a>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="">
+                                    <a id="btncscConnect" href="~/WebApp/Examination/SearchStudent.aspx" name="CSCsubmit" class="btn-dark button" title="Click to Create Logi ID & Password">
+                                        <i class="fa fa-pencil-square fa-3x fa-fw pbottom5"></i><br />
+                                        <input type="submit" id="btnCSC" name="CSCsubmit" style="display:none;" class="fa fa-wheelchair fa-3x fa-fw pbottom5" value="Click to Create Logi ID & Password" />
+                                        Unregistered Student
+                                    </a>
+                                </div>*@
                             <div class="clearfix"></div>
                         </div>
                     </div>
@@ -285,7 +287,7 @@
                                     <label class="manadatory" for="UserName">
                                         Login ID
                                     </label>
-                                    <input type="text" class="form-control" placeholder="Enter User Login ID" name="LoginID" id="LoginID" maxlength="25" autocomplete="off" readonly onfocus="this.removeAttribute('readonly');"/>
+                                    <input type="text" class="form-control" placeholder="Enter User Login ID" name="LoginID" id="LoginID" maxlength="25" autocomplete="off" readonly onfocus="this.removeAttribute('readonly');" />
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -293,7 +295,7 @@
                                     <label class="manadatory" for="Password">
                                         Password
                                     </label>
-                                    <input type="password" class="form-control" placeholder="Enter Password" name="Password" id="Password" maxlength="20" autocomplete="off" readonly onfocus="this.removeAttribute('readonly');"/>
+                                    <input type="password" class="form-control" placeholder="Enter Password" name="Password" id="Password" maxlength="20" autocomplete="off" readonly onfocus="this.removeAttribute('readonly');" />
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -301,41 +303,47 @@
                                     Verification Code
                                 </label>
                             </div>
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                                <div>
-                                    <img src='@Url.Action("GetCaptcha")' alt="verification code" class=".gov.inform-control" />
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
+                                
+                               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 pleft0 text-left">
+
+                                    <img src='@Url.Action("GetCaptcha")' alt="verification code" class=".gov.inform-control" id="captchaImage" />
+                                    <a id="btnrefresh" onclick="GenerateCaptcha();">
+                                        <i class="fa fa-refresh"></i>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                                <div>
-                                    <input type="text" class="form-control" placeholder="Enter verification code" name="captcha" id="captcha" maxlength="6" />
+                           
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
+                                    <div>
+                                        <input type="text" class="form-control" placeholder="Enter Verification Code" name="captcha" id="captcha" maxlength="6" />
+                                    </div>
                                 </div>
+
+                                <div class="clearfix"></div>
+
+
+                                @*<div class="col-xs-7">
+                <b><span style="margin-top: 0;"><a href="~/WebApp/Registration/CitizenRegistration.aspx?SvcID=995" target="_blank" class="btn btn-primary">Citizen Registration >></a></span></b>
+            </div>*@
+                                <div class="col-xs-8 mtop15 text-left mbtm10">
+                                    @*<a class="btn-link frdgetPwd"  href='~/WebApp/Login/NewForgetPassword.aspx'>Forgot Login ID/Password?</a>
+                <a class="btn-link frdgetPwd" href="#" onclick="javascript: return RedirectToForgetPassword()">Forgot Login ID/Password?</a>
+                <br />*@
+                                    @*<a class="btn-link" href='#' data-toggle="modal" data-target="#CitizenReg">Citizen Registeration</a>*@
+                                </div>
+                                <div class="mtop10"></div>
+                                <div class="col-xs-4 ">
+                                    <input type="submit" id="btnlogin" name="CSCsubmit" class="btn-success pull-right" value="Login" onclick="javascript: return submitForm()" />
+                                </div>
+                                <br />
+                                <div class="clearfix"></div>
+                                <div class="mtop10"></div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin:0 auto; text-align:center;"><a href="#" id="backuser" style="color:#b71c1c; text-decoration:underline;"><i class="fa fa-arrow-circle-left pright5"></i>BACK TO PAGE</a></div>
+                                <div class="clearfix"></div>
                             </div>
 
-                            <div class="clearfix"></div>
-
-
-                            @*<div class="col-xs-7">
-                                    <b><span style="margin-top: 0;"><a href="~/WebApp/Registration/CitizenRegistration.aspx?SvcID=995" target="_blank" class="btn btn-primary">Citizen Registration >></a></span></b>
-                                </div>*@
-                            <div class="col-xs-8 mtop15 text-left mbtm10">
-                                @*<a class="btn-link frdgetPwd"  href='~/WebApp/Login/NewForgetPassword.aspx'>Forgot Login ID/Password?</a>
-    <a class="btn-link frdgetPwd" href="#" onclick="javascript: return RedirectToForgetPassword()">Forgot Login ID/Password?</a>
-    <br />*@
-                                @*<a class="btn-link" href='#' data-toggle="modal" data-target="#CitizenReg">Citizen Registeration</a>*@
-                            </div>
-                            <div class="mtop10"></div>
-                            <div class="col-xs-4 ">
-                                <input type="submit" id="btnlogin" name="CSCsubmit" class="btn-success pull-right" value="Login" onclick="javascript: return submitForm()" />
-                            </div>
-                            <br />
-                            <div class="clearfix"></div>
-                            <div class="mtop10"></div>
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin:0 auto; text-align:center;"><a href="#" id="backuser" style="color:#b71c1c; text-decoration:underline;"><i class="fa fa-arrow-circle-left pright5"></i>BACK TO PAGE</a></div>
-                            <div class="clearfix"></div>
                         </div>
-
-                    </div>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -566,6 +574,18 @@
                     //$("#CSCsubmit").click();
                 }
 
+            }
+
+
+            function GenerateCaptcha() {
+
+                var _randomNumber = randomNumber(100000, 999999);
+                $("#captchaImage").attr("src", "GetCaptcha?ver=" + parseInt(_randomNumber));
+            }
+        
+         
+            function randomNumber(min, max) {
+                return Math.random() * (max - min) + min;
             }
         </script>
         <!-- Bootstrap core JavaScript

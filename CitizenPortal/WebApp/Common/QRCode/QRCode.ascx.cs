@@ -112,18 +112,19 @@ namespace CitizenPortal.WebApp.Common.QRCode
             }
         }
 
-        public void GenerateQRCodeDegree(string ServiceID, string AppID)
+        public void GenerateQRCodeDegree(string ServiceID, string AppID, string QRText)
         {
-            CitizenPortalLib.BLL.PaymentReceiptBLL m_PaymentReceiptBLL = new CitizenPortalLib.BLL.PaymentReceiptBLL();
-            System.Data.DataSet dt = m_PaymentReceiptBLL.GenerateQRCodeDegree(ServiceID, AppID);
-            string CSCID = "";
+            //CitizenPortalLib.BLL.PaymentReceiptBLL m_PaymentReceiptBLL = new CitizenPortalLib.BLL.PaymentReceiptBLL();
+            //System.Data.DataSet dt = m_PaymentReceiptBLL.GenerateQRCodeDegree(ServiceID, AppID);
+            //string CSCID = "";
 
-            if (dt != null && dt.Tables[0].Rows.Count > 0)
-            {
-                System.Data.DataTable AppDetails = dt.Tables[0];
+            //if (dt != null && dt.Tables[0].Rows.Count > 0)
+            //{
+            //    System.Data.DataTable AppDetails = dt.Tables[0];
 
-                GenerateQRCode(AppDetails.Rows[0][0].ToString());
-            }
+            //    GenerateQRCode(AppDetails.Rows[0][0].ToString().Replace("|","\n"));
+            //}
+            GenerateQRCode(QRText);
         }
 
         public void GenerateQRCode(string Content)
@@ -145,7 +146,7 @@ namespace CitizenPortal.WebApp.Common.QRCode
             //data = Content;
             //Bitmap image = qrCodeEncoder.Encode(data);
             //Crop(image);
-            if (Content.Length <= 2254)
+            if (Content.Length <= 9254)
             {
                 QRCodeGenerator qrGenerator = new QRCodeGenerator();
                 QRCodeGenerator.QRCode qrCode = qrGenerator.CreateQrCode(Content, QRCodeGenerator.ECCLevel.M);
@@ -219,6 +220,38 @@ namespace CitizenPortal.WebApp.Common.QRCode
             {
                 //MessageBox.Show("max. characters");
                 return;
+            }
+        }
+
+        public void GenerateQRCodeMarksheet(string RollNo, string Semester, string Examtype, string ExamYear)
+        {
+            string SubjectDetails = "";
+            CitizenPortalLib.BLL.StudentResultBLL m_studentmarksheet = new CitizenPortalLib.BLL.StudentResultBLL();
+            System.Data.DataSet dt = m_studentmarksheet.GetQRCode(RollNo, Semester, Examtype, ExamYear);
+            System.Data.DataTable MarkDetails = null;
+            if (dt != null && dt.Tables[0].Rows.Count > 0)
+            {
+                System.Data.DataTable AppDetails = dt.Tables[0];
+
+                if (dt != null && dt.Tables[1].Rows.Count > 0)
+                {
+                    MarkDetails = dt.Tables[1];
+                    for (int i = 0; i < MarkDetails.Rows.Count; i++)
+                    {
+                        if (i == 0)
+                        {
+                            SubjectDetails = MarkDetails.Rows[i][0].ToString();
+                        }
+                        else
+                            SubjectDetails = SubjectDetails + "\n" + MarkDetails.Rows[i][0].ToString();
+                    }
+                    
+                }
+                    GenerateQRCode("Enrollment NO:" + AppDetails.Rows[0]["EnrollmentNo"].ToString() + "\nRoll No.:" + AppDetails.Rows[0]["RollNo"].ToString() + "\nName:" + AppDetails.Rows[0]["Name"].ToString() + " \nFather's Name:" 
+                         + AppDetails.Rows[0]["Father"].ToString() + " \nInstitute Name:" + AppDetails.Rows[0]["CollegeName"].ToString().Replace("&","and")
+                                                                   + " \nExam Name:" + AppDetails.Rows[0]["ProgramName"].ToString()
+                         + "\n" + SubjectDetails
+                         + " \nSemester:" + AppDetails.Rows[0]["Semester"].ToString() + "\nResult:" + AppDetails.Rows[0]["lettergrade"].ToString() + "\nDate:" + AppDetails.Rows[0]["ResultDate"].ToString());
             }
         }
     }

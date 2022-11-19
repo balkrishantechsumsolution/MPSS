@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 
 namespace CitizenPortal.WebApp.Degree
 {
-    public partial class DegreeCertificate : System.Web.UI.Page
+    public partial class DegreeCertificate : AdminBasePage
     {
         MigrationBLL m_MigrationBLLL = new MigrationBLL();
         DuplicateDiplomaBLL m_DuplicateDiplomaBLL = new DuplicateDiplomaBLL();
@@ -26,43 +26,74 @@ namespace CitizenPortal.WebApp.Degree
             DataSet ds = m_MigrationBLLL.DegreeCertificate(m_ServiceID, m_AppID, RegNo, "");
             DataTable dt = ds.Tables[0];
             DataTable dtResult = ds.Tables[1];
+            DataTable dtDivision = ds.Tables[2];
 
             if (dt.Rows.Count != 0)
             {
                 lblDate.Text = DateTime.Now.ToString("dd-MM-yyyy HH:mm:ss");
-                lblAppDate.Text = dt.Rows[0]["CreatedOn"].ToString();
+                lblAppDate.Text = dt.Rows[0]["ApprovedDate"].ToString();
                 lblEnrollment.Text = dt.Rows[0]["EnrollmentNo"].ToString();
                 lblRollNo.Text = dt.Rows[0]["RollNo"].ToString();
 
                 lblRollNo.Text = dt.Rows[0]["RollNo"].ToString();                
                 lblName.Text = dt.Rows[0]["StudentName"].ToString();;
-                lblBranch.Text = dt.Rows[0]["ProgramName"].ToString();
+                lblBranch.Text = dtResult.Rows[0]["ProgramEnglish"].ToString();
                 lblBranchE.Text = dt.Rows[0]["Course"].ToString();
                 lblSession.Text = dtResult.Rows[0]["ExamSession"].ToString();
                 lblDivision.Text = dtResult.Rows[0]["Result"].ToString();
 
-                lblNameH.Text = dt.Rows[0]["StudentNameHindi"].ToString(); ;
-                lblBranchH1.Text = dt.Rows[0]["CourseHindiName"].ToString();
-                lblBranchH2.Text = dt.Rows[0]["ProgramNameHindi"].ToString();
+                lblNameH.Text = dt.Rows[0]["StudentNameHindi"].ToString();
+                lblBranchH1.Text = dtResult.Rows[0]["CourseHindiName"].ToString();
+                lblBranchH2.Text = dtResult.Rows[0]["ProgramNameHindi"].ToString();
                 lblSessionH.Text = dtResult.Rows[0]["ExamSessionH"].ToString();
                 lblDivisionH.Text = dtResult.Rows[0]["Result"].ToString();
 
 
-                lblCertificateHindi.Text = dt.Rows[0]["CourseHindi"].ToString();
-                lblBranchH1.Text = dt.Rows[0]["ProgramHindi"].ToString();
+                lblCertificateHindi.Text = dtResult.Rows[0]["CourseHindi"].ToString();
+                lblBranchH1.Text = dtResult.Rows[0]["ProgramHindi"].ToString();
                 //lblDivisionH.Text = dt.Rows[0]["DivisionHindi"].ToString();
-                lblBranchH2.Text = dt.Rows[0]["ProgramHindi"].ToString();
+                lblBranchH2.Text = dtResult.Rows[0]["ProgramHindi"].ToString();
 
-                lblCertificate.Text = dt.Rows[0]["CourseEnglish"].ToString();
-                lblBranch.Text = dt.Rows[0]["ProgramEnglish"].ToString();
+                lblCertificate.Text = dtResult.Rows[0]["CourseEnglish"].ToString();
+                lblBranch.Text = dtResult.Rows[0]["ProgramEnglish"].ToString();
                 lblDivisionH.Text = dtResult.Rows[0]["ResultHindi"].ToString();
-                lblBranchE.Text = dt.Rows[0]["ProgramEnglish"].ToString();
+                lblBranchE.Text = dtResult.Rows[0]["DegreeEnglish"].ToString();
 
             }
+            if (dtDivision.Rows.Count != 0)
+            {
+                string m_Division = dtDivision.Rows[0]["Division"].ToString().Trim();
 
+                if (m_Division.Contains("DISTINCTION"))
+                { lblDivisionH.Text = "डिस्टिंक्शन"; }
+                if (m_Division.Contains("FIRST"))
+                { lblDivisionH.Text = "प्रथम"; }
+                if (m_Division.Contains("FIRST (HONORS)"))
+                { lblDivisionH.Text = "प्रथम (आनर्स)"; }
+
+                if (m_Division.Contains("SECOND"))
+                { lblDivisionH.Text = "द्वितीय"; }
+
+                if (m_Division.Contains("PASS"))
+                { lblDivisionH.Text = "उत्तीर्ण"; }
+
+                lblDivision.Text = m_Division;
+            }
             try
             {
-                QRCode1.GenerateQRCodeDegree(m_ServiceID, m_AppID);
+                string QRText = "";
+                QRText = "CSVTU - DEGREE CERTIFICATE" +
+                " \n Enrollment No:" + lblEnrollment.Text +
+                " \n Roll No: " + lblRollNo.Text +
+                " \n Name : " + lblName.Text +
+                " \n Father's Name: " + dt.Rows[0]["FatherName"].ToString() +
+                " \n Institute Name: " + dt.Rows[0]["CollegeName"].ToString() +
+                " \n Exam Name: " + lblBranchE.Text +
+                " \n Examination: " + lblBranchH2.Text +
+                " \n Result Status: Pass" +
+                " \n Division: " + lblDivision.Text +
+                " \n Date: " + lblDate.Text;
+                QRCode1.GenerateQRCodeDegree(m_ServiceID, m_AppID, QRText);
             }
             catch { }
 

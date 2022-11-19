@@ -19,7 +19,7 @@ namespace CitizenPortalLib.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Service {
@@ -1033,6 +1033,24 @@ namespace CitizenPortalLib.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Select Class.
+        /// </summary>
+        public static string lblClass {
+            get {
+                return ResourceManager.GetString("lblClass", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to School Code.
+        /// </summary>
+        public static string lblCode {
+            get {
+                return ResourceManager.GetString("lblCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Declaration.
         /// </summary>
         public static string lblDeclaration {
@@ -1114,6 +1132,15 @@ namespace CitizenPortalLib.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Father&apos;s Full name.
+        /// </summary>
+        public static string lblFatherFullName {
+            get {
+                return ResourceManager.GetString("lblFatherFullName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to First Name.
         /// </summary>
         public static string lblFirstName {
@@ -1144,6 +1171,15 @@ namespace CitizenPortalLib.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Full Name.
+        /// </summary>
+        public static string lblFullName {
+            get {
+                return ResourceManager.GetString("lblFullName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to I.
         /// </summary>
         public static string lblI {
@@ -1162,11 +1198,38 @@ namespace CitizenPortalLib.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please enter the data in English Language only.
+        /// </summary>
+        public static string lblInstruction {
+            get {
+                return ResourceManager.GetString("lblInstruction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Choose Language :.
+        /// </summary>
+        public static string lblLanguage {
+            get {
+                return ResourceManager.GetString("lblLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Last Name.
         /// </summary>
         public static string lblLastName {
             get {
                 return ResourceManager.GetString("lblLastName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mother&apos;s Full Name.
+        /// </summary>
+        public static string lblMotherFullName {
+            get {
+                return ResourceManager.GetString("lblMotherFullName", resourceCulture);
             }
         }
         
@@ -1185,6 +1248,15 @@ namespace CitizenPortalLib.Resources {
         public static string lblOISFTitle {
             get {
                 return ResourceManager.GetString("lblOISFTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Have passed the qualifying exam from other board?.
+        /// </summary>
+        public static string lblPassExam {
+            get {
+                return ResourceManager.GetString("lblPassExam", resourceCulture);
             }
         }
         
@@ -1234,6 +1306,636 @@ namespace CitizenPortalLib.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Select School.
+        /// </summary>
+        public static string lblSchool {
+            get {
+                return ResourceManager.GetString("lblSchool", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Selected school and class details.
+        /// </summary>
+        public static string lblSchoolClassDtl {
+            get {
+                return ResourceManager.GetString("lblSchoolClassDtl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ScholarShip Form.
+        /// </summary>
+        public static string lblScName {
+            get {
+                return ResourceManager.GetString("lblScName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Free escort facility is being given to the student in case of disability..
+        /// </summary>
+        public static string lblScSIsFreeEscortDis {
+            get {
+                return ResourceManager.GetString("lblScSIsFreeEscortDis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Student&apos;s School admission number.
+        /// </summary>
+        public static string lblScStAdmissionNo {
+            get {
+                return ResourceManager.GetString("lblScStAdmissionNo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bank Account No..
+        /// </summary>
+        public static string lblScStBankAccount {
+            get {
+                return ResourceManager.GetString("lblScStBankAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bank Information.
+        /// </summary>
+        public static string lblScStBankInfo {
+            get {
+                return ResourceManager.GetString("lblScStBankInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Caste.
+        /// </summary>
+        public static string lblScStCaste {
+            get {
+                return ResourceManager.GetString("lblScStCaste", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirm Bank Account No..
+        /// </summary>
+        public static string lblScStCBankAccount {
+            get {
+                return ResourceManager.GetString("lblScStCBankAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bank IFSC Code.
+        /// </summary>
+        public static string lblScStCBankIFSC {
+            get {
+                return ResourceManager.GetString("lblScStCBankIFSC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Class.
+        /// </summary>
+        public static string lblScStClass {
+            get {
+                return ResourceManager.GetString("lblScStClass", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Code of Faculty/Stream.
+        /// </summary>
+        public static string lblScStCodeFacultySt {
+            get {
+                return ResourceManager.GetString("lblScStCodeFacultySt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Code of trade taken by the student in vocational education.
+        /// </summary>
+        public static string lblScStCodeTradeVocationalPrg {
+            get {
+                return ResourceManager.GetString("lblScStCodeTradeVocationalPrg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Current Class.
+        /// </summary>
+        public static string lblScStCurrentCls {
+            get {
+                return ResourceManager.GetString("lblScStCurrentCls", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date of Admission to class (DD/MM/YYYY).
+        /// </summary>
+        public static string lblScStDateAdmisCurrClass {
+            get {
+                return ResourceManager.GetString("lblScStDateAdmisCurrClass", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date of admission in current school.
+        /// </summary>
+        public static string lblScStDateAdmisCurrSch {
+            get {
+                return ResourceManager.GetString("lblScStDateAdmisCurrSch", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Digital Caste Cetrtificate Number.
+        /// </summary>
+        public static string lblScStDigitalCasteNo {
+            get {
+                return ResourceManager.GetString("lblScStDigitalCasteNo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Type of disability.
+        /// </summary>
+        public static string lblScStDisability {
+            get {
+                return ResourceManager.GetString("lblScStDisability", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Personal Information.
+        /// </summary>
+        public static string lblScStDtls {
+            get {
+                return ResourceManager.GetString("lblScStDtls", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Equipment given to students with disabilities.
+        /// </summary>
+        public static string lblScStEquipDisability {
+            get {
+                return ResourceManager.GetString("lblScStEquipDisability", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Exam Board Name.
+        /// </summary>
+        public static string lblScStExamBoardName {
+            get {
+                return ResourceManager.GetString("lblScStExamBoardName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Father&apos;s Name.
+        /// </summary>
+        public static string lblScStFather {
+            get {
+                return ResourceManager.GetString("lblScStFather", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Is Father Dead.
+        /// </summary>
+        public static string lblScStFatherDead {
+            get {
+                return ResourceManager.GetString("lblScStFatherDead", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Father&apos;s Occupation.
+        /// </summary>
+        public static string lblScStFatherOcc {
+            get {
+                return ResourceManager.GetString("lblScStFatherOcc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Family Income.
+        /// </summary>
+        public static string lblScStFIncome {
+            get {
+                return ResourceManager.GetString("lblScStFIncome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Free Bicycle.
+        /// </summary>
+        public static string lblScStFreeBicycle {
+            get {
+                return ResourceManager.GetString("lblScStFreeBicycle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Free Uniform.
+        /// </summary>
+        public static string lblScStFreeUniform {
+            get {
+                return ResourceManager.GetString("lblScStFreeUniform", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Student ID.
+        /// </summary>
+        public static string lblScStID {
+            get {
+                return ResourceManager.GetString("lblScStID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Student Information.
+        /// </summary>
+        public static string lblScStInform {
+            get {
+                return ResourceManager.GetString("lblScStInform", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Other Information.
+        /// </summary>
+        public static string lblScStInformation {
+            get {
+                return ResourceManager.GetString("lblScStInformation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Is the scholarship being taken by only two students from the family? (certificate attached).
+        /// </summary>
+        public static string lblScStIsAnyHaveScholarShip {
+            get {
+                return ResourceManager.GetString("lblScStIsAnyHaveScholarShip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If the student is taking admission in class 1, then the enrollment status in the previous year.
+        /// </summary>
+        public static string lblScStIsClsFirstEnrollStatus {
+            get {
+                return ResourceManager.GetString("lblScStIsClsFirstEnrollStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether it is a Denotified / Ghumkkad / Semi-nomadic caste.
+        /// </summary>
+        public static string lblScStIsDGSCaste {
+            get {
+                return ResourceManager.GetString("lblScStIsDGSCaste", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Belongs to the disadvantaged group?.
+        /// </summary>
+        public static string lblScStIsDisadvantagedgroup {
+            get {
+                return ResourceManager.GetString("lblScStIsDisadvantagedgroup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Family b. P. L. Cardholder?.
+        /// </summary>
+        public static string lblScStIsFamilyBPL {
+            get {
+                return ResourceManager.GetString("lblScStIsFamilyBPL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Receive a complete set of free textbooks?.
+        /// </summary>
+        public static string lblScStIsFreeTextbooks {
+            get {
+                return ResourceManager.GetString("lblScStIsFreeTextbooks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Taking free transport facility.
+        /// </summary>
+        public static string lblScStIsFreeTransport {
+            get {
+                return ResourceManager.GetString("lblScStIsFreeTransport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Is the student homeless.
+        /// </summary>
+        public static string lblScStIshomeless {
+            get {
+                return ResourceManager.GetString("lblScStIshomeless", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Is Hosteller?.
+        /// </summary>
+        public static string lblScStIsHosteller {
+            get {
+                return ResourceManager.GetString("lblScStIsHosteller", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether the student is receiving special training.
+        /// </summary>
+        public static string lblScStIsRecSpecialTraining {
+            get {
+                return ResourceManager.GetString("lblScStIsRecSpecialTraining", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Is the student registered in the new vocational education program.
+        /// </summary>
+        public static string lblScStIsRegVocationalPrg {
+            get {
+                return ResourceManager.GetString("lblScStIsRegVocationalPrg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether the student is residing in the hostel.
+        /// </summary>
+        public static string lblScStIsResidingHostel {
+            get {
+                return ResourceManager.GetString("lblScStIsResidingHostel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether the student has been admitted under RTE?.
+        /// </summary>
+        public static string lblScStIsRTE {
+            get {
+                return ResourceManager.GetString("lblScStIsRTE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Job Salary.
+        /// </summary>
+        public static string lblScStJobSalary {
+            get {
+                return ResourceManager.GetString("lblScStJobSalary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Job / Placement Status.
+        /// </summary>
+        public static string lblScStJobStaus {
+            get {
+                return ResourceManager.GetString("lblScStJobStaus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ladli Laxmi No. (For students studying in primary / secondary school).
+        /// </summary>
+        public static string lblScStLadliLaxmiNo {
+            get {
+                return ResourceManager.GetString("lblScStLadliLaxmiNo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to last annual result.
+        /// </summary>
+        public static string lblScStLastAnnualResult {
+            get {
+                return ResourceManager.GetString("lblScStLastAnnualResult", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last year&apos;s class.
+        /// </summary>
+        public static string lblScStLastCls {
+            get {
+                return ResourceManager.GetString("lblScStLastCls", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name of last class institution.
+        /// </summary>
+        public static string lblScStLastClsInt {
+            get {
+                return ResourceManager.GetString("lblScStLastClsInt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Which level of NSFQ has been completed by the student?.
+        /// </summary>
+        public static string lblScStLvlNSFQ {
+            get {
+                return ResourceManager.GetString("lblScStLvlNSFQ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Student&apos;s medium of instruction.
+        /// </summary>
+        public static string lblScStMediums {
+            get {
+                return ResourceManager.GetString("lblScStMediums", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mobile number of student / foster parent.
+        /// </summary>
+        public static string lblScStMobieNoParent {
+            get {
+                return ResourceManager.GetString("lblScStMobieNoParent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Monthly fee.
+        /// </summary>
+        public static string lblScStMonthlyFee {
+            get {
+                return ResourceManager.GetString("lblScStMonthlyFee", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mother&apos;s Name.
+        /// </summary>
+        public static string lblScStMother {
+            get {
+                return ResourceManager.GetString("lblScStMother", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mother&apos;s Occupation.
+        /// </summary>
+        public static string lblScStMotherOcc {
+            get {
+                return ResourceManager.GetString("lblScStMotherOcc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Student Name (English).
+        /// </summary>
+        public static string lblScStName {
+            get {
+                return ResourceManager.GetString("lblScStName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Is a native of Madhya Pradesh.
+        /// </summary>
+        public static string lblScStNative {
+            get {
+                return ResourceManager.GetString("lblScStNative", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to How many brothers/sisters.
+        /// </summary>
+        public static string lblScStNoOfSibling {
+            get {
+                return ResourceManager.GetString("lblScStNoOfSibling", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Objectives of student to take vocational education.
+        /// </summary>
+        public static string lblScStObjVocationalPrg {
+            get {
+                return ResourceManager.GetString("lblScStObjVocationalPrg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whether father or guardian is income tax payer or has more than 10 acres of land? (certificate attached).
+        /// </summary>
+        public static string lblScStParentIcomeTaxPayer {
+            get {
+                return ResourceManager.GetString("lblScStParentIcomeTaxPayer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pass percentage.
+        /// </summary>
+        public static string lblScStPassPercentage {
+            get {
+                return ResourceManager.GetString("lblScStPassPercentage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Student&apos;s attendance day in the previous year.
+        /// </summary>
+        public static string lblScStPreAttDays {
+            get {
+                return ResourceManager.GetString("lblScStPreAttDays", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Religion.
+        /// </summary>
+        public static string lblScStReligion {
+            get {
+                return ResourceManager.GetString("lblScStReligion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Student School.
+        /// </summary>
+        public static string lblScStSchool {
+            get {
+                return ResourceManager.GetString("lblScStSchool", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Student Section.
+        /// </summary>
+        public static string lblScStSection {
+            get {
+                return ResourceManager.GetString("lblScStSection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Student Status.
+        /// </summary>
+        public static string lblScStStudentStatus {
+            get {
+                return ResourceManager.GetString("lblScStStudentStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sub Caste.
+        /// </summary>
+        public static string lblScStSubCaste {
+            get {
+                return ResourceManager.GetString("lblScStSubCaste", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Student Subject.
+        /// </summary>
+        public static string lblScStSubject {
+            get {
+                return ResourceManager.GetString("lblScStSubject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to What type of job roles are expected in vocational education.
+        /// </summary>
+        public static string lblScStTypeJobRoleVocationalPrg {
+            get {
+                return ResourceManager.GetString("lblScStTypeJobRoleVocationalPrg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Year of last class exam.
+        /// </summary>
+        public static string lblScStYrLastExam {
+            get {
+                return ResourceManager.GetString("lblScStYrLastExam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to SENIOR CITIZEN.
         /// </summary>
         public static string lblSenCertHeading {
@@ -1248,6 +1950,186 @@ namespace CitizenPortalLib.Resources {
         public static string lblSenCertOut {
             get {
                 return ResourceManager.GetString("lblSenCertOut", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (Age upto 01/08/2021).
+        /// </summary>
+        public static string lblStAge {
+            get {
+                return ResourceManager.GetString("lblStAge", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Applicant Address.
+        /// </summary>
+        public static string lblStApplicantAddress {
+            get {
+                return ResourceManager.GetString("lblStApplicantAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Block.
+        /// </summary>
+        public static string lblStBlock {
+            get {
+                return ResourceManager.GetString("lblStBlock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Category.
+        /// </summary>
+        public static string lblStCategory {
+            get {
+                return ResourceManager.GetString("lblStCategory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to City/Village.
+        /// </summary>
+        public static string lblStCity {
+            get {
+                return ResourceManager.GetString("lblStCity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Colony.
+        /// </summary>
+        public static string lblStColony {
+            get {
+                return ResourceManager.GetString("lblStColony", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Declaration* I hereby declare that the entries made by me in this application are true and correct. If any type of error or wrong information is found, the admission will be canceled for which the entire responsibility will be with itself..
+        /// </summary>
+        public static string lblStDeclaration {
+            get {
+                return ResourceManager.GetString("lblStDeclaration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to District.
+        /// </summary>
+        public static string lblStDistrict {
+            get {
+                return ResourceManager.GetString("lblStDistrict", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date of Birth (dd/mm/yyyy).
+        /// </summary>
+        public static string lblStDOB {
+            get {
+                return ResourceManager.GetString("lblStDOB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enrollment Form Session.
+        /// </summary>
+        public static string lblStEnroll {
+            get {
+                return ResourceManager.GetString("lblStEnroll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Student Details Filter.
+        /// </summary>
+        public static string lblStFilter {
+            get {
+                return ResourceManager.GetString("lblStFilter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gender.
+        /// </summary>
+        public static string lblStGender {
+            get {
+                return ResourceManager.GetString("lblStGender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to House No..
+        /// </summary>
+        public static string lblStHouseNo {
+            get {
+                return ResourceManager.GetString("lblStHouseNo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Moblie.
+        /// </summary>
+        public static string lblStMoblie {
+            get {
+                return ResourceManager.GetString("lblStMoblie", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you a native of Madhya Pradesh?.
+        /// </summary>
+        public static string lblStNative {
+            get {
+                return ResourceManager.GetString("lblStNative", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pin Code.
+        /// </summary>
+        public static string lblStPinCode {
+            get {
+                return ResourceManager.GetString("lblStPinCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Samagra ID.
+        /// </summary>
+        public static string lblStSamagraID {
+            get {
+                return ResourceManager.GetString("lblStSamagraID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TC to upload:.
+        /// </summary>
+        public static string lblStTCUpload {
+            get {
+                return ResourceManager.GetString("lblStTCUpload", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Student Profile Details.
+        /// </summary>
+        public static string lblStudentProfile {
+            get {
+                return ResourceManager.GetString("lblStudentProfile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Upload&apos;s.
+        /// </summary>
+        public static string lblStUpload {
+            get {
+                return ResourceManager.GetString("lblStUpload", resourceCulture);
             }
         }
         

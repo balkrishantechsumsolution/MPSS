@@ -71,7 +71,7 @@
                 //Blockdata = eval(jsonData.list);
             },
             error: function (a, b, c) {
-                alert("2." + a.responseText);
+                /*alert("2." + a.responseText);*/
             }
         });
     }
@@ -236,7 +236,7 @@
 
                 },
                 error: function (a, b, c) {
-                    alert("1." + a.responseText);
+                  /*  alert("1." + a.responseText);*/
                 }
             })
         )

@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CitizenPortal.Sambalpur.controls {
-    
-    
-    public partial class AdminHeader {
-        
+namespace CitizenPortal.Sambalpur.controls
+{
+
+
+    public partial class AdminHeader
+    {
+
         /// <summary>
         /// lblUser control.
         /// </summary>
@@ -20,5 +22,32 @@ namespace CitizenPortal.Sambalpur.controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblUser;
+
+        /// <summary>
+        /// div5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl div5;
+
+        /// <summary>
+        /// btnLang control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputButton btnLang;
+
+        /// <summary>
+        /// HFCurrentLang control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField HFCurrentLang;
     }
 }

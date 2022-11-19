@@ -1837,6 +1837,17 @@ function ValidateForm() {
 
     }
 
+    var IndExp = $('#txtIndExp')
+    if (IndExp.val() != null && IndExp.val() == '') {
+        text += "<BR>" + " \u002A" + " Please enter Years of Industrial/work Experience.";
+        IndExp.attr('style', 'border:1px solid #d03100 !important;');
+        IndExp.css({ "background-color": "#fff2ee" });
+        opt = 1;
+    } else {
+        IndExp.attr('style', 'border:1px solid #cdcdcd !important;');
+        IndExp.css({ "background-color": "#ffffff" });
+    }
+
     var chkdeclaration = 0;
     if ($('#chkDeclaration').is(":checked")) {
         // it is checked
@@ -2333,7 +2344,8 @@ function SubmitData() {
         'CourseName':  $('#txtCourseName').val(),
         'CourseCollege':  $('#txtCourseCollege').val(),
         'CourseUniversity':  $('#txtCourseUniversity').val(),
-        'CourseRollNo':  $('#txtCourseRollNo').val()
+        'CourseRollNo': $('#txtCourseRollNo').val(),
+        'IndExp': $('#txtIndExp').val()
         
     };
 

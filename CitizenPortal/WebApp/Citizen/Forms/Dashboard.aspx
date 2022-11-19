@@ -430,6 +430,11 @@
                             <img alt="" align="left"/><b>Apply for RT/RV/RRV/ABR</b><br />
                             <span>Semester RT/RV/RRV/ABR form fill-up</span></a>
                     </div>
+                    <div class="SrvDiv" id="Div3" runat="server">
+                        <a href="/WebApp/Citizen/Forms/eLibrary.aspx" target="_blank">
+                            <img alt="" align="left"/><b>E-Library</b><br />
+                            <span>Online e-Books (in PDF format)</span></a>
+                    </div>
                 </asp:Panel>
                 <asp:Panel ID="pnlMenu" runat="server"></asp:Panel>
 

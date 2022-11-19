@@ -3,6 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script type="text/javascript">
         $(document).ready(function () {
+
             $("#seemorelinks").click(function () {
                 $("#morequick-link").toggle(900);
             });
@@ -12,6 +13,15 @@
         $(window).on('load', function () {
             $('#costumModal4').modal('show');
         });
+        function TakeAction_old(T_URL, ID) {
+            //var t_URL = ResolveUrl(p_URL);
+            var t_URL = "/WebApp/Kiosk/MigrationSU/MigrationSU.aspx";
+            t_URL = t_URL + "?UID=" + ID;
+            //window.open(t_URL, 'ViewDoc', 'height=500px,width=700px,titlebar=no,menubar=no,status=yes,toolbar=no,scrollbars=yes,resizable=yes');
+            //return false;
+            window.location.href = t_URL;
+        }
+
         function TakeAction(T_URL, ID) {
             //var t_URL = ResolveUrl(p_URL);
             alert('Student must create their own Login Id & Password before Applying. Please click on Create Login Id & Password to genreate your Login Id and Password. If they already have login Id then Use Student Login to Apply ');
@@ -106,9 +116,9 @@
             <div class="col-xs-12 col-sm-12 col-lg-4" style="float:right;display:none">
                 <div class="techcallno">
                     <h4 style="margin-top: 0; margin-bottom: 5px;">Support Desk Details </h4>
-                    Email ID : csvtu[dot]helpdesk[at]gmail[dot]com
+                    Email ID : csvtu[dot]digivarsity[at]gmail[dot]com
                 <br />
-                    Mobile No.: 88171 19597
+                    Mobile No.: 87704 84845
                <%-- Email ID : sambhalpur[dot]university[at]gmail[dot]com
                 <br />
                 Mobile No.: 7000745655 / 9078570345<br>--%><br />
@@ -117,35 +127,10 @@
                 
             </div>
         </div>
-        <div class="row">
+		<div class="row">
             <!-------+ DTE Councelling Enrollment Form Link--------->
             <div class="col-xs-12 col-sm-12 col-lg-4">
-
-                <div class="admission-txt" style="display:none">
-                    <%--<a href="/WebApp/Entrance/PhD/CSVTUPage.aspx">--%>
-                    <a href="/WebApp/Citizen/Forms/Geustuser.aspx?SvcID=1469">
-                        <div style="right: 35px; bottom: -43%; width: 450px;">
-                            <div style="float: left; background-color: #e8e8e8; min-height: 70px; padding: 5px;">
-                                <img src="/Sambalpur/img/DigiVarsity.png" width="70" alt="DigiVarsity Logo" class="pright5" />
-                            </div>
-                            <div style="background-color: #FFFF4D; color: #C44A2D; text-align: center; padding: 9px; line-height: 19px; border-radius: 10px;">
-                                <b style="font-size: 15px; font-family: 'OpenSans-Bold', Helvetica, Arial, sans-serif;">Enrollment for Part time & Diploma/UTD Student 
-                                </b>
-                                <br />
-                                <span style="font-size: 12px; color: darkblue">(Application for admission into CSVTU though Part Time Diploma/UTD, 2021-2022)</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-        <div class="row" style="margin-top:85px">
-            
-
-            <div class="col-xs-12 col-sm-12 col-lg-4">
-
-                <div class="admission-txt" style="display:none">
+				<div class="admission-txt" style="display:none">
                     <%--<a href="/WebApp/Entrance/PhD/CSVTUPage.aspx">--%>
                     <a href="/WebApp/Enrollment/SearchForm.aspx">
                         <div style="right: 35px; bottom: -43%; width: 450px;">
@@ -161,46 +146,101 @@
                         </div>
                     </a>
                 </div>
+			</div>
+			
+        </div>
+        
 
-            </div>
-            <!--blank-->
-           <!-------+ DTE Councelling Enrollment Form Link--------->
-            <div class="col-xs-12 col-sm-12 col-lg-4">
 
-                <div class="admission-txt" style="display:none">
+
+        
+    </section>
+	<div style="margin-top:-50px">
+            <!-------+ DTE Councelling Enrollment Form Link--------->
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="display:none">
+                <div>
                     <%--<a href="/WebApp/Entrance/PhD/CSVTUPage.aspx">--%>
                     <a href="/WebApp/Citizen/Forms/Geustuser.aspx?SvcID=1469">
-                        <div style="right: 35px; bottom: -43%; width: 450px;">
-                            <div style="float: left; background-color: #e8e8e8; min-height: 70px; padding: 5px;">
-                                <img src="/Sambalpur/img/DigiVarsity.png" width="70" alt="DigiVarsity Logo" class="pright5" />
-                            </div>
+                        <div style="right: 35px; bottom: -43%;">                            
                             <div style="background-color: #FFFF4D; color: #C44A2D; text-align: center; padding: 9px; line-height: 19px; border-radius: 10px;">
-                                <b style="font-size: 15px; font-family: 'OpenSans-Bold', Helvetica, Arial, sans-serif;">Enrollment for Part time & Diploma/UTD Student 
+                                <b style="font-size: 15px; font-family: 'OpenSans-Bold', Helvetica, Arial, sans-serif;">Ph.D Enrollment Form 2021-2022 
                                 </b>
                                 <br />
-                                <span style="font-size: 12px; color: darkblue">(Application for admission into CSVTU though Part Time Diploma/UTD, 2021-2022)</span>
+                                <span style="font-size: 12px; color: darkblue">(For Ph.D Student) <br/> Application for admission into CSVTU, 2021-2022</span>
                             </div>
                         </div>
                     </a>
                 </div>
 
             </div>
-            <!-------+ Link to rest the Password for Existing CSVTU Student--------->
-            <div class="col-xs-12 col-sm-12 col-lg-4">
+			
+			<!-------+ PhD Entrance Exam Form --------->
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="">
+                <div>
+                    <a href="/WebApp/Entrance/PhD/CSVTUPage.aspx">
+                    <%--<a href="/WebApp/Citizen/Forms/Geustuser.aspx?SvcID=1469">--%>
+                        <div style="right: 35px; bottom: -43%;">                            
+                            <div style="background-color: #FFFF4D; color: #C44A2D; text-align: center; padding: 9px; line-height: 19px; border-radius: 10px;">
+                                <b style="font-size: 15px; font-family: 'OpenSans-Bold', Helvetica, Arial, sans-serif;">Ph.D Entrance Form 2022-2023 
+                                </b>
+                                <br />
+                                <span style="font-size: 12px; color: darkblue">Application for Ph.D admission into CSVTU, 2022-2023</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
-                <div class="admission-txt" style="left: 2.5em;">
+            </div>
+			
+			<!-------+ Semester Result +--------->
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="display:none">
+				<div>
+                    <%--<a href="/WebApp/Entrance/PhD/CSVTUPage.aspx">--%>
+                    <a href="/WebApp/Result/SearchResult.aspx">
+                        <div style="right: 35px; bottom: -43%;">                            
+                            <div style="background-color: #FFFF4D; color: #C44A2D; text-align: center; padding: 9px; line-height: 19px; border-radius: 10px;">
+                                <b style="font-size: 15px; font-family: 'OpenSans-Bold', Helvetica, Arial, sans-serif;">Semester Result Nov-Dec 2021 
+                                </b>
+                                <br />
+								<br />
+                                <span style="font-size: 12px; color: darkblue">(Student Semester Result)</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+				
+            </div>
+			
+            <!--blank-->
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+				<div>
+                    <%--<a href="/WebApp/Entrance/PhD/CSVTUPage.aspx">--%>
+                    <a href="/Account/Login">
+                        <div style="right: 35px; bottom: -43%;">
+                            <div style="background-color: #FFFF4D; color: #C44A2D; text-align: center; padding: 9px; line-height: 19px; border-radius: 10px;">
+                                <b style="font-size: 15px; font-family: 'OpenSans-Bold', Helvetica, Arial, sans-serif;">
+								Login to Fill SEM Exam Form 
+                                </b>
+                                <br />
+                                <span style="font-size: 12px; color: darkblue">(Login into Digivarsity Portal)</span><br />
+                                <span style="font-size: 12px; color: darkblue">for Student who has already reset Password</span>
+                            </div>                            
+                        </div>
+                    </a>
+                </div>
+			</div>
+            <!-------+ Link to rest the Password for Existing CSVTU Student--------->
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+                <div>
                     <%--<a href="/WebApp/Entrance/PhD/CSVTUPage.aspx">--%>
                     <a href="/WebApp/Examination/SearchStudent.aspx">
-                        <div style="right: 35px; bottom: -43%; width: 450px;">
-                            <div style="background-color: #FFFF4D; color: #C44A2D; text-align: center; padding: 9px; line-height: 19px; border-radius: 10px;float:left;margin-right: -5px;">
-                                <b style="font-size: 15px; font-family: 'OpenSans-Bold', Helvetica, Arial, sans-serif;">Reset Password for Exisitng CSVTU Student 
+                        <div style="right: 35px; bottom: -43%;">
+                            <div style="background-color: #FFFF4D; color: #C44A2D; text-align: center; padding: 9px; line-height: 19px; border-radius: 10px;">
+                                <b style="font-size: 15px; font-family: 'OpenSans-Bold', Helvetica, Arial, sans-serif;">Reset Password (Exisitng Student)
                                 </b>
                                 <br />
                                 <span style="font-size: 12px; color: darkblue">(Reset Password for accessing Digivarsity Portal)</span><br />
                                 <span style="font-size: 12px; color: darkblue">for Student Enrolled before 2021</span>
-                            </div>
-                            <div style="float: left; background-color: #e8e8e8; min-height: 70px; padding: 5px;">
-                                <img src="/Sambalpur/img/DigiVarsity.png" width="70" alt="DigiVarsity Logo" class="pright5" />
                             </div>
                         </div>
                     </a>
@@ -208,11 +248,6 @@
 
             </div>
         </div>
-
-
-
-        
-    </section>
     <section id="#wrapper">
         <div class="container-fluid">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="morequick-link">
@@ -251,7 +286,7 @@
             </div>
             <div class="clearfix"></div>
 
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mtop20 pleft0 pright0">
+             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <ul class="nav nav-tabs">
                     <li style="active"><a data-toggle="tab" href="#counterbaseapp">Counterbase Application</a>
                     <li class=""><a data-toggle="tab" href="#newsupadate">University Profile</a>

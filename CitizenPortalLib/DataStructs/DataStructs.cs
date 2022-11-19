@@ -3375,7 +3375,7 @@ Subject1, Subject2, Subject3, Subject4, Reason;
         , PresentAddressline1, PresentAddressline2, PreRoadstreet, PreLandmark, PreLocality, PreState, PreDistrict, PreBlock, PreVillage, PrePincode
         , NRIAddressline1, NRIAddressline2, NRICountry, NRICityTown, NRIPincode, AnyOtherCourse, CourseDetail, DisciplinaryAction, DisciplinaryDetail
         , ResearchPublished, PublishedDetail, ResearchPresented, PresentedDetail
-        , ProfileID, CreatedOn, CreatedBy;
+        , ProfileID, CreatedOn, CreatedBy, IndExp;
 
         public string Photograph, Signature;
 
@@ -3494,7 +3494,8 @@ Subject1, Subject2, Subject3, Subject4, Reason;
         public DateTime CreatedOn;
     }
 
-    public class UpdateStudentPassword_DT {
+    public class UpdateStudentPassword_DT
+    {
         public string EnrollmentNo, RollNo, LoginID, Password, MobileNo, EmailID;
         public string CreatedBy, ClientIP, JSONData;
         public string Photograph, Signature;
@@ -3503,7 +3504,7 @@ Subject1, Subject2, Subject3, Subject4, Reason;
 
     public class ElectiveSubject_TB
     {
-        public string RowID, EnrollmentNo, RollNo, Semester, ExamYear, ExamType, SubjectCode, SubjectCode2, SubjectCode3, SubjectCode4, LastExamType, CreatedBy, Remarks, SubjectType, CourseCode, ProgramCode, CollegeCode;
+        public string RowID, EnrollmentNo, RollNo, Semester, ExamYear, ExamType, SubjectCode, SubjectCode2, SubjectCode3, SubjectCode4, LastExamType, CreatedBy, Remarks, SubjectType, CourseCode, ProgramCode, CollegeCode, ElectiveType;
     }
 
     public class CSVTUMarkEntry_DT
@@ -3522,14 +3523,14 @@ Subject1, Subject2, Subject3, Subject4, Reason;
 
     }
 
-    public class CBACSVTU_DT 
+    public class CBACSVTU_DT
     {
-        public string AppID, ProfileId, ServiceId, FatherName, StudentNameEnglish, StudentNameHindi,EmailID, MobileNo, DeliverMode, DeliverType;
+        public string AppID, ProfileId, ServiceId, FatherName, StudentNameEnglish, StudentNameHindi, EmailID, MobileNo, DeliverMode, DeliverType;
         public string EnrollmentNo, RollNo, AdmissionYear, PassingYear, CollegeCode, CourseCode, ProgramCode, Remark;
         public string AddressLine1, AddressLine2, StateCode, DistrictCode, SubDistrictCode, VillageCode, PinCode;
 
         public DateTime CreatedOn, ModifiedOn;
-        public string CreatedBy, ModifiedBy, ClientIP, JSONData, TransferCertificateNo, TCIssueDate, ApplyingFor,Semester, SemesterCount,DOB, Coppies;
+        public string CreatedBy, ModifiedBy, ClientIP, JSONData, TransferCertificateNo, TCIssueDate, ApplyingFor, Semester, SemesterCount, DOB, Coppies;
         public string SemesterInfo;
     }
 
@@ -3551,7 +3552,123 @@ Subject1, Subject2, Subject3, Subject4, Reason;
 , CreatedBy
 , ModifiedOn
 , ModifiedBy
-, Remarks;
+, Remarks
+, RTRVStartDate
+, RTRVEndDate;
+    }
+
+
+    /**MPSS DataStructure***/
+
+    public class SchoolDetail_DT
+    {
+        public string SchoolCode,
+                        SchoolEnglish,
+                        SchoolHindi,
+                        MobileNo,
+                        PhoneNo,
+                        EmailID,
+                        District,
+                        DistrictCode,
+                        CollegeType,
+                        Address,
+                        CreatedBy;
+        public string Remarks, KeyField, FileName, FilePath;
+    }
+    public class Studentdata_DT
+    {
+        public long StudentID, MobieNo, SamagraNo;
+
+        public bool IsPassOtherBoard, IsMPNative, IsDeclare;
+
+        public DateTime TBirthdate;
+
+        public string StudentName;
+        public string Birthdate;
+        public string Gender;
+        public string Class;
+        public string Section;
+        public string Subject;
+        public string School;
+        public string FatherName;
+        public string MotherName;
+        public string Category;
+        public string SubCaste;
+        public string Regilion;
+      
+        public string Block;
+        public string District, City;
+        public string Colony;
+        public string HouseNo;
+        public string pincode;
+        public string Img;
+        public string ImgTC;
+      
+
+
+
+    }
+    public class Scholardata_DT
+    {
+        public int NoOfSibling, PreAttDays;
+        public long StudentID, MobieNoParent;
+        public decimal FamilyIncome, MonthlyFee, JobSalary;
+
+        public string StudentName
+
+     , Gender
+     , Class
+     , Section
+     , Birthdate
+     , Subject
+     , School
+     , BankAccountNo
+     , BankAccountIFSCCode
+     , FatherName
+     , FatherOcc
+     , MotherName
+     , MotherOcc
+
+     , Caste
+     , SubCaste
+     , CasteCertNo
+     , Regilion
+     , ExamBoardName
+
+     , DateAdmisCurrSch
+     , DateAdmisCurrClass
+
+     , AdmissionNo
+     , CurrentCls
+     , LastCls
+     , Mediums
+     , Disability
+
+     , EquipDisability
+     , FreeUniform
+
+     , YrLastExam
+     , LastAnnualResult
+     , PassPercentage
+     , LastClsInt
+     , StudentStatus
+     , CodeFacultySt
+     , CodeTradeVocationalPrg
+     , TypeJobRoleVocationalPrg
+     , LvlNSFQ
+     , ObjVocationalPrg
+     , JobStaus
+
+     , LadliLaxmiNo;
+
+        public bool IsFatherDead, IsMPOrigin, IsParentIcomeTaxPayer, IsHosteller, IsDGSCaste, IsFamilyBPL
+     , IsDisadvantagedgroup, IsClsFirstEnrollStatus, IsFreeTextbooks, IsResidingHostel
+     , IsRecSpecialTraining, IsRegVocationalPrg, Ishomeless, IsFreeTransport, IsFreeEscortDis
+     , IsRTE, IsAnyHaveScholarShip, FreeBicycle;
+
+        public DateTime TBirthdate, TDateAdmisCurrSch, TDateAdmisCurrClass;
+
+
     }
 
 }

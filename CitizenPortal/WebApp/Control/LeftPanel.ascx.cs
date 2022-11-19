@@ -104,7 +104,7 @@ namespace CitizenPortal.WebApp.Control
                         //pnlMenu.Controls.Add(new LiteralControl("</li>"));
                         pnlMenu.Controls.Add(new LiteralControl("<li>"));
                         pnlMenu.Controls.Add(new LiteralControl("<a href = '/Default.aspx'><i class='fa fa-sign-out'></i> Logout</a>"));
-                        pnlMenu.Controls.Add(new LiteralControl("</li>"));
+                        pnlMenu.Controls.Add(new LiteralControl("</li>"));                        
                     }
 
 
@@ -158,11 +158,11 @@ namespace CitizenPortal.WebApp.Control
                     pnlMenu.Controls.Add(new LiteralControl("</div>"));
                     pnlMenu.Controls.Add(new LiteralControl("</div>"));
                     pnlMenu.Controls.Add(new LiteralControl("<div class='UserDetail'>"));
-                    pnlMenu.Controls.Add(new LiteralControl("<p><i class='fa fa-user'></i> <span class='fntsize13' id='lblUser' runat ='server'> " + Session["LoginID"].ToString() + "</span></p>"));
+                    pnlMenu.Controls.Add(new LiteralControl("<p><i class='fa fa-key'></i> <span class='fntsize13' id='lblUser' runat ='server'> " + Session["LoginID"].ToString() + "</span></p>"));
                     pnlMenu.Controls.Add(new LiteralControl("<p><i class='fa fa-mobile-phone' ></i> <span class='fntsize13' id='lblMobile' runat='server'> " + dtApp.Rows[0]["MobileNo"].ToString() + "</span></p>"));
                     pnlMenu.Controls.Add(new LiteralControl("<p><i class='fa fa-envelope'></i> <span class='fntsize13' id='lblEmail' runat ='server'>" + dtApp.Rows[0]["EmailID"].ToString() + "</span></p>"));
-                    pnlMenu.Controls.Add(new LiteralControl("<p><i class='fa fa-map-marker'></i> <span class='fntsize13'><b>Full Name :</b> " + dtApp.Rows[0]["FirstName"].ToString() + "</span></p>"));
-                    pnlMenu.Controls.Add(new LiteralControl("<p><i class='fa fa-map-marker'></i> <span class='fntsize13'><b>Designation : </b> " + dtApp.Rows[0]["Designation"].ToString() + "</span></p>"));
+                    pnlMenu.Controls.Add(new LiteralControl("<p><i class='fa fa-user'></i> <span class='fntsize13'><b>Name :</b> " + dtApp.Rows[0]["FirstName"].ToString() + "</span></p>"));
+                    pnlMenu.Controls.Add(new LiteralControl("<p><i class='fa fa-pencil'></i> <span class='fntsize13'><b>Designation : </b> " + dtApp.Rows[0]["Designation"].ToString() + "</span></p>"));
                     pnlMenu.Controls.Add(new LiteralControl("</div>"));
                     pnlMenu.Controls.Add(new LiteralControl("</li>"));
 
@@ -175,6 +175,19 @@ namespace CitizenPortal.WebApp.Control
 
                     pnlMenu.Controls.Add(new LiteralControl("<li>"));
                     pnlMenu.Controls.Add(new LiteralControl("<a id='lpEditProfile'  href ='/WebApp/G2G/DeptProfile.aspx' ><i class='fa fa-edit fa-fw'></i> Edit Profile </ a > "));
+                    pnlMenu.Controls.Add(new LiteralControl("</li>"));
+
+
+                    pnlMenu.Controls.Add(new LiteralControl("<li>"));
+                    pnlMenu.Controls.Add(new LiteralControl("<a id='lpNewRegistration'  href ='/WebApp/Kiosk/MPSS/NewRegistration.aspx' ><i class='fa fa-edit fa-fw'></i> New Registration of Student </ a > "));
+                    pnlMenu.Controls.Add(new LiteralControl("</li>"));
+
+                    pnlMenu.Controls.Add(new LiteralControl("<li>"));
+                    pnlMenu.Controls.Add(new LiteralControl("<a id='lpScholarShip'  href ='/WebApp/Kiosk/MPSS/ScholarShip.aspx' ><i class='fa fa-edit fa-fw'></i> ScholarShip </ a > "));
+                    pnlMenu.Controls.Add(new LiteralControl("</li>"));
+
+                    pnlMenu.Controls.Add(new LiteralControl("<li>"));
+                    pnlMenu.Controls.Add(new LiteralControl("<a id='lpMPSSReports'  href ='/WebApp/Kiosk/MPSS/MPSSReports.aspx' ><i class='fa fa-edit fa-fw'></i> MPSS Reports </ a > "));
                     pnlMenu.Controls.Add(new LiteralControl("</li>"));
 
                     pnlMenu.Controls.Add(new LiteralControl("<li>"));

@@ -162,7 +162,7 @@ namespace CitizenPortal.WebApp.Migration
             DataSet ds = m_MigrationBLLL.GetMigrationCertificate(m_ServiceID, m_AppID, RegNo);
             DataTable dt = ds.Tables[0];
             DataTable dtResult = ds.Tables[1];
-            //DataTable dtExamSession = ds.Tables[2];
+            DataTable dtSemester = ds.Tables[3];
             if (dtResult.Rows.Count == 0)
             {
             }
@@ -188,13 +188,40 @@ namespace CitizenPortal.WebApp.Migration
                     lblResult.Text = dtResult.Rows[0]["Result"].ToString();
                     lblSemester.Text = dtResult.Rows[0]["Semester"].ToString();
                 }
+                else {
+                    lblInstitute.Text = dt.Rows[0]["CollegeName"].ToString();
+                    lblBranch.Text = dt.Rows[0]["Course"].ToString();
+
+                    lblExamYear.Text = dt.Rows[0]["AdmissionYear"].ToString();
+                    
+                    lblResult.Text = "Fail";
+                    if(dtSemester.Rows.Count != 0) { 
+                    lblSemester.Text = dtSemester.Rows[0]["CurrentSemester"].ToString();
+                    }
+                }
                 //lblSession.Text = l_dt.Rows[0]["Session"].ToString() + " - " + t_Year;
             }
             
 
             try
             {
-                QRCode1.GenerateQRCodePayment(m_ServiceID, m_AppID);
+                string QRText = "";
+                QRText = "CSVTU - MIGRATION CERTIFICATE" +
+                " \n Enrollment No:" + lblReg.Text +
+                " \n Roll No: " + lblRollNo.Text +
+                " \n Name: " + lblName.Text +
+                " \n Father's Name: " + dt.Rows[0]["FatherName"].ToString() +
+                " \n Institute Name: " + dt.Rows[0]["CollegeName"].ToString() +
+                " \n Course: " + dt.Rows[0]["CourseName"].ToString() +
+                " \n Program: " + dt.Rows[0]["ProgramName"].ToString() +
+                " \n Exam Session: " + lblExamYear.Text +
+                " \n TC Number: " + dt.Rows[0]["TCNo"].ToString() +
+                " \n TC Date: " + dt.Rows[0]["TCDate"].ToString() +
+                " \n Certificate No.:" + lblSlNo.Text +
+                " \n Result: " + lblResult.Text +
+                " \n Date: " + lblDate.Text;
+
+                QRCode1.GenerateQRCode(QRText);
             }
             catch { }
 

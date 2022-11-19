@@ -66,6 +66,12 @@ namespace CitizenPortalLib.BLL
             return t_DT;
         }
 
+        public DataTable GetSchoolProfile(string LoginID)
+        {
+            DataTable t_DT = null;
+            t_DT = m_CBCSAdmissionFormDAL.GetSchoolProfile(LoginID);
+            return t_DT;
+        }
         public DataSet GetRelationList()
         {
             DataSet t_RelationDS = null;
@@ -710,6 +716,10 @@ namespace CitizenPortalLib.BLL
         {
             return m_CBCSAdmissionFormDAL.InsertActivityCSVTU(t_Activity_DT, aFields);
         }
+
+        /**MPSS BLL Detail*****/
+
+        
 
     }
 }

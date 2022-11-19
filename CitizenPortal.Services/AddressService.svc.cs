@@ -17010,6 +17010,7 @@ namespace CitizenPortal.Services
                 ,"CourseCollege"
                 ,"CourseUniversity"
                 ,"CourseRollNo"
+                ,"IndExp"
             };
 
             System.Data.DataTable result = null;

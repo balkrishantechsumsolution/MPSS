@@ -11,8 +11,8 @@
 
 <link href="../Styles/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />--%>
 
-<link href="../Common/Styles/style.admin.css" rel="stylesheet" />
-<%--<script src="../../Scripts/angular.min.js"></script>--%>
+<%--<link href="../Common/Styles/style.admin.css" rel="stylesheet" />
+<script src="../../Scripts/angular.min.js"></script>--%>
 <script src="/PortalScripts/Wallet.js"></script>
 <style type="text/css">
     .navbar-collapse {
@@ -204,7 +204,7 @@
             </li>
         </ul>
         <%--<asp:Panel ID="divLogger" runat="server"></asp:Panel>--%>
-        <asp:Panel ID="pnlMenu" runat="server"></asp:Panel>
+        <asp:Panel ID="pnlMenu" runat="server"></asp:Panel>        
     </div>
 </div>
 

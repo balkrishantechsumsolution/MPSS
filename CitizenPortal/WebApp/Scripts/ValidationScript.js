@@ -268,7 +268,7 @@ function ValidateNumbers(p_Control) {
 
 
 function validateValues() {
-    debugger;
+   
     if (document.getElementById('CPH_HV1').value == 'Eng') {
 
         if (document.getElementById('CPH_FullName').value == '') {
@@ -785,7 +785,7 @@ function ValidateDate(ctrl) {
 
 
 function CheckAgeNew() {
-    debugger;
+   
     if (document.getElementById('CPH_DOB').value == "" || document.getElementById('CPH_DOB').value == "dd/mm/yyyy") {
         document.getElementById("CPH_age").disabled = false;
         document.getElementById('CPH_age').value = '';
@@ -983,7 +983,7 @@ debugger;
 }
 
 function CheckAttendance(sender, args) {
-    debugger;
+   
     //alert(sender, args);
     var ctrlID = sender.id.split('_');
     var i = ctrlID[3];
@@ -1039,7 +1039,7 @@ function CheckAttendance(sender, args) {
 
 
 function CheckMarksEnter(sender, args) {
-    debugger;
+   
     //alert(sender, args);
     var ctrlID = sender.id.split('_');
     var i = ctrlID[3];
@@ -1094,7 +1094,7 @@ function CheckMarksEnter(sender, args) {
 
 
 function CheckMarksEnter2(sender, args) {
-    debugger;
+   
     //alert(sender, args);
     var ctrlID = sender.id.split('_');
     var i = ctrlID[3];
@@ -1173,7 +1173,7 @@ function CheckMarksEnter2(sender, args) {
 }
 
 function CheckMarksEnter2_old(sender, args) {
-    debugger;
+   
     //alert(sender, args);
     var ctrlID = sender.id.split('_');
     var i = ctrlID[3];
@@ -1227,7 +1227,7 @@ function CheckMarksEnter2_old(sender, args) {
 }
 
 function CheckMarksEnter3(sender, args) {
-    debugger;
+   
     //alert(sender, args);
     var ctrlID = sender.id.split('_');
     var i = ctrlID[3];
@@ -1281,7 +1281,7 @@ function CheckMarksEnter3(sender, args) {
 }
 
 function CheckMarksEnter4(sender, args) {
-    debugger;
+   
     //alert(sender, args);
     var ctrlID = sender.id.split('_');
     var i = ctrlID[3];
@@ -1335,7 +1335,7 @@ function CheckMarksEnter4(sender, args) {
 }
 
 function CheckMarksEnter5(sender, args) {
-    debugger;
+   
     //alert(sender, args);
     var ctrlID = sender.id.split('_');
     var i = ctrlID[3];
@@ -1410,3 +1410,494 @@ SetFocusOnError="True"></asp:RangeValidator>
                                                 </asp:TemplateField>
 
 */
+
+
+
+
+
+
+
+
+function CheckSession() {
+    var session = '<%=Session["State_Code"] != null%>';
+    if (session == false) {
+        alert("Your Session has expired");
+        window.location = "../Home/Index.aspx";
+    }
+}
+
+//$(document).ajaxError(function (event, jqxhr, settings, thrownError) {
+//    
+//    alert("Your Form has error");
+//   // window.location = "/customError.aspx";
+//});
+
+function ValidateAlpha(evt) {
+
+    //var Name = $('#AccountHolder').val();
+    //var charCode;
+    var e = evt; // for trans-browser compatibility
+    Name = (e.which) ? e.which : event.keyCode;
+
+    //charCode = (evt.which) ? evt.which : event.keyCode;
+    if (Name >= 97 && Name <= 122 || Name >= 65 && Name <= 90 || Name == 8 || Name == 32) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+//function AllowOnlyNumeric(e) {
+//   
+//    if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110]) !== -1 ||
+//        (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) ||
+//        (e.keyCode >= 35 && e.keyCode <= 40)
+//        || e.keyCode === 96) {
+//        return;
+//    }
+//    if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 97 || e.keyCode > 105 || e.key.length === 0) && e.which === 48) {
+//        e.preventDefault();
+//    }
+//}
+function AllowOnlyNumeric(e) {
+   
+    if (isNaN(e.key))
+        return false; else return true;
+}
+function numericspecialchar(e) {
+    //debugger;
+    var regex = new RegExp("[0-9:/-]");
+    var key = e.keyCode || e.which;
+    key = String.fromCharCode(key);
+
+    if (!regex.test(key)) {
+        e.returnValue = false;
+        if (e.preventDefault) {
+            e.preventDefault();
+        }
+    }
+
+}
+
+function Alphanumericspecialchar(e) {
+    //debugger;
+    var regex = new RegExp("[ A-Za-z0-9./-]");
+    var key = e.keyCode || e.which;
+    key = String.fromCharCode(key);
+
+    if (!regex.test(key)) {
+        e.returnValue = false;
+        if (e.preventDefault) {
+            e.preventDefault();
+        }
+    }
+}
+
+function Alphanumericspecialchar1(e) {
+    //debugger;
+    var regex = new RegExp(/^[a-zA-Z0-9 \\,#().-]+$/);
+    var key = e.keyCode || e.which;
+    key = String.fromCharCode(key);
+
+    if (!regex.test(key)) {
+        e.returnValue = false;
+        if (e.preventDefault) {
+            e.preventDefault();
+        }
+    }
+}
+
+function isNumberKey(evt) {
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode != 46 && charCode > 31
+        && (charCode < 48 || charCode > 57))
+        return false;
+
+    return true;
+}
+
+//This is used for Alphabets with special character (.) and (space)
+function AlphaSpecialchar(e) {
+   
+    var regex = new RegExp("[ A-Za-z. ]");
+    var key = e.keyCode || e.which;
+    key = String.fromCharCode(key);
+
+    if (!regex.test(key)) {
+        e.returnValue = false;
+        if (e.preventDefault) {
+            e.preventDefault();
+        }
+    }
+
+}
+
+function decimalent(e) {
+   
+    var regex = new RegExp("[\d{0,2}(\.\d{1,2})?]");
+    var key = e.keyCode || e.which;
+    key = String.fromCharCode(key);
+
+    if (!regex.test(key)) {
+        e.returnValue = false;
+        if (e.preventDefault) {
+            e.preventDefault();
+        }
+    }
+
+}
+
+
+
+
+
+
+
+//Accept alphanumeric value only
+
+function AlphaNumeric(e) {
+   
+    var regex = new RegExp("[ A-Za-z0-9 ]");
+    var key = e.keyCode || e.which;
+    key = String.fromCharCode(key);
+
+    if (!regex.test(key)) {
+        e.returnValue = false;
+        if (e.preventDefault) {
+            e.preventDefault();
+        }
+    }
+
+}
+
+
+function AlphaNumSpecialCharRemarkMotherPNC(e) {
+    //var regex = new RegExp("[ A-Za-z0-9./#,-()]");
+    var regex = new RegExp(/^[a-zA-Z0-9 ",'*#<>()_+=/\\@!?.-]+$/);
+    var key = e.keyCode || e.which;
+    key = String.fromCharCode(key);
+    if (!regex.test(key)) {
+        e.returnValue = false;
+        if (e.preventDefault) {
+            e.preventDefault();
+        }
+    }
+}
+
+
+
+function AlphaNumSpecialChar(e) {
+    //var regex = new RegExp("[ A-Za-z0-9./#,-()]");
+    var regex = new RegExp(/^[a-zA-Z0-9 "!?.-]+$/);
+    var key = e.keyCode || e.which;
+    key = String.fromCharCode(key);
+    if (!regex.test(key)) {
+        e.returnValue = false;
+        if (e.preventDefault) {
+            e.preventDefault();
+        }
+    }
+}
+
+function AlphaNumSpecialCharAddress(e) {
+    var regex = new RegExp(/^[A-Za-z0-9 "/#,-,(),.,\\]+$/);
+    var key = e.keyCode || e.which;
+    key = String.fromCharCode(key);
+
+    if (!regex.test(key)) {
+        e.returnValue = false;
+        if (e.preventDefault) {
+            e.preventDefault();
+        }
+    }
+}
+
+
+function getQueryStrings() {
+    var assoc = {};
+    var decode = function (s) { return decodeURIComponent(s.replace(/\+/g, " ")); };
+    var queryString = location.search.substring(1);
+    var keyValues = queryString.split('&');
+
+    for (var i in keyValues) {
+        var key = keyValues[i].split('=');
+        if (key.length > 1) {
+            assoc[decode(key[0])] = decode(key[1]);
+        }
+    }
+
+    return assoc;
+}
+
+
+function Getdate(t_DOB, days) {
+    t_DOB = t_DOB.replace("-", "/");
+    var S_date = new Date(t_DOB.substr(6, 4), t_DOB.substr(3, 2) - 1, t_DOB.substr(0, 2));
+    //get current date
+    var someDate = new Date(S_date);
+
+    someDate.setDate(someDate.getDate() + parseInt(days));
+
+    //var dd = someDate.getDate();
+    //var mm = someDate.getMonth() + 1;
+    //var y = someDate.getFullYear();
+
+    //var someFormattedDate = dd + '/' + mm + '/' + y;
+    ////get current date
+
+    return someDate;
+}
+function GetSubtractdate(t_DOB, days) {
+    t_DOB = t_DOB.replace("-", "/");
+    var S_date = new Date(t_DOB.substr(6, 4), t_DOB.substr(3, 2), t_DOB.substr(0, 2));
+    //get current date
+    var someDate = new Date(S_date);
+
+    someDate.setDate(someDate.getDate() - parseInt(days));
+
+    //var dd = someDate.getDate();
+    //var mm = someDate.getMonth() + 1;
+    //var y = someDate.getFullYear();
+
+    //var someFormattedDate = dd + '/' + mm + '/' + y;
+    ////get current date
+
+    return someDate;
+}
+
+function ActualDateFormat(t_DOB) {
+
+    t_DOB = t_DOB.replace("-", "/");
+    var S_date = new Date(t_DOB.substr(6, 4), t_DOB.substr(3, 2) - 1, t_DOB.substr(0, 2));
+    //get current date
+    var someDate = new Date(S_date);
+    //var dd = someDate.getDate();
+    //var mm = someDate.getMonth() + 1;
+    //var y = someDate.getFullYear();
+    //var someFormattedDate = dd + '/' + mm + '/' + y;
+    //get current date
+    return someDate;
+}
+
+function AddDateONCurrentDate1(t_DOB, days) {
+
+    t_DOB = t_DOB.replace("-", "/");
+    var S_date = new Date(t_DOB.substr(6, 4), t_DOB.substr(3, 2), t_DOB.substr(0, 2));
+    //get current date
+    var someDate = new Date(S_date);
+
+    return someDate;
+
+}
+
+
+//Date Validation Added
+function AddDateONCurrentDate(t_DOB, days) {
+   
+    t_DOB = t_DOB.replace("-", "/");
+    var S_date = new Date(t_DOB.substr(6, 4), t_DOB.substr(3, 2) - 1, t_DOB.substr(0, 2));
+    //get current date
+    var someDate = new Date(S_date);
+    someDate.setDate(someDate.getDate() + parseInt(days));
+
+    var dd = someDate.getDate();
+    var mm = someDate.getMonth();
+    var y = someDate.getFullYear();
+
+    if (dd < 10) {
+        dd = '0' + dd;
+    }
+    if (mm < 10) {
+        mm = '0' + mm;
+    }
+    var someFormattedDate = y + '-' + mm + '-' + dd;
+    //var someFormattedDate2 = dd + '/' + mm + '/' + y;
+    //get current date
+    //return someFormattedDate;
+
+    return someDate;
+    //return new Date(someFormattedDate);
+
+}
+
+function DateRange(t_DOB) {
+    t_DOB = t_DOB.replace("-", "/");
+    var S_date = new Date(t_DOB.substr(6, 4), t_DOB.substr(3, 2) - 1, t_DOB.substr(0, 2));
+    //get current date
+    var someDate = new Date(S_date);
+    var dd = someDate.getDate();
+    var mm = someDate.getMonth();
+    var y = someDate.getFullYear();
+
+    if (dd < 10) {
+        dd = '0' + dd;
+    }
+    if (mm < 10) {
+        mm = '0' + mm;
+    }
+    var someFormattedDate = y + '-' + mm + '-' + dd;
+    //get current date
+    return someFormattedDate;
+}
+
+function GetMaxToday() {
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1; //January is 0!
+    var yyyy = today.getFullYear();
+    if (dd < 10) {
+        dd = '0' + dd;
+    }
+    if (mm < 10) {
+        mm = '0' + mm;
+    }
+    var someFormattedDate = yyyy + '-' + mm + '-' + dd;
+    //get current date
+    return someFormattedDate;
+}
+
+
+function SubtractDateONCurrentDate(t_DOB, days) {
+    t_DOB = t_DOB.replace("-", "/");
+    var S_date = new Date(t_DOB.substr(6, 4), t_DOB.substr(3, 2) - 1, t_DOB.substr(0, 2));
+    //get current date
+    var someDate = new Date(S_date);
+    someDate.setDate(someDate.getDate() - parseInt(days));
+
+    var dd = someDate.getDate();
+    var mm = someDate.getMonth();
+    var y = someDate.getFullYear();
+
+    if (dd < 10) {
+        dd = '0' + dd;
+    }
+    if (mm < 10) {
+        mm = '0' + mm;
+    }
+    var someFormattedDate = y + '-' + mm + '-' + dd;
+    var someFormattedDate = y + '-' + mm + '-' + dd;
+    //get current date
+    return someFormattedDate;
+
+}
+function GetToday() {
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1; //January is 0!
+
+    var yyyy = today.getFullYear();
+    
+    return today;
+}
+
+//Date validation End
+
+//Logic By Gunwant 
+function getCurrentFiscalYear(t_DOB) {
+
+    var fiscalyear = "";
+    t_DOB = t_DOB.replace("-", "/");
+    var year = t_DOB.substr(6, 4);
+    var month = t_DOB.substr(3, 2);
+    var date = t_DOB.substr(0, 2);
+    var t_NewDate = year.toString() + '-' + month.toString() + '-' + date.toString();
+    var today = new Date(t_NewDate);
+    //today = new Date('2019-04-01');
+    if ((today.getMonth() + 1) <= 3) {
+        fiscalyear = (today.getFullYear() - 1) + "-" + today.getFullYear()
+    } else {
+        fiscalyear = today.getFullYear() + "-" + (today.getFullYear() + 1)
+    }
+    return fiscalyear
+}
+
+
+//Logic By Meenakshi 
+function getCurrentFinancialYear(t_DOB) {
+
+   
+    var fiscalyear = "";
+    t_DOB = t_DOB.replace("-", "/");
+    var year = t_DOB.substr(6, 4);
+    var month = t_DOB.substr(3, 2);
+    var date = t_DOB.substr(0, 2);
+    var t_NewDate = year.toString() + '-' + month.toString() + '-' + date.toString();
+    var today = new Date(t_NewDate);
+    if ((today.getMonth() + 1) <= 3) {
+        fiscalyear = today.getFullYear().toString() - 1;
+    }
+    else {
+        fiscalyear = (today.getFullYear() - 1).toString();
+    }
+    return fiscalyear;
+}
+
+
+
+function diff_weeks(dt2, dt1) {
+
+    var diff = (dt2.getTime() - dt1.getTime()) / 1000;
+    diff /= (60 * 60 * 24 * 7);
+    return Math.abs(Math.round(diff));
+
+}
+
+//Alphabets,Numeric,Comma,Hyphen,Dot,Space 
+function AlphanumericspecialcharWithComma(e) {
+    var regex = new RegExp("[ A-Za-z0-9,.-]");
+    var key = e.keyCode || e.which;
+    key = String.fromCharCode(key);
+
+    if (!regex.test(key)) {
+        e.returnValue = false;
+        if (e.preventDefault) {
+            e.preventDefault();
+        }
+    }
+}
+
+
+//Alphabets,Comma,Hyphen,Dot,Space without Numeric value
+function AlphaspecialcharWithComma(e) {
+    var regex = new RegExp("[ A-Za-z,.-]");
+    var key = e.keyCode || e.which;
+    key = String.fromCharCode(key);
+
+    if (!regex.test(key)) {
+        e.returnValue = false;
+        if (e.preventDefault) {
+            e.preventDefault();
+        }
+    }
+}
+
+//Alphabets,Comma,Hyphen,Dot,Space without Numeric value
+function AlphaspecialcharWithComma(e) {
+    var regex = new RegExp("[ A-Za-z,.-]");
+    var key = e.keyCode || e.which;
+    key = String.fromCharCode(key);
+
+    if (!regex.test(key)) {
+        e.returnValue = false;
+        if (e.preventDefault) {
+            e.preventDefault();
+        }
+    }
+}
+
+//Alphabets with all characters
+function AlphaAllspecialchar(e) {
+    var regex = new RegExp("[ A-Za-z,.-/:';$~`%^&*(){}@#!]");
+    var key = e.keyCode || e.which;
+    key = String.fromCharCode(key);
+
+    if (!regex.test(key)) {
+        e.returnValue = false;
+        if (e.preventDefault) {
+            e.preventDefault();
+        }
+    }
+}
+
+

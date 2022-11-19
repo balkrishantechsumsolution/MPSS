@@ -56,6 +56,12 @@
                 $('#ContentPlaceHolder1_DataGridView_txtResultDate_' + i).datetimepicker({
                     format: 'DD/MM/YYYY HH:mm:ss', minDate: '0'
                 });
+                $('#ContentPlaceHolder1_DataGridView_txtRTRVStartDate_' + i).datetimepicker({
+                    format: 'DD/MM/YYYY HH:mm:ss', minDate: '0'
+                });
+                $('#ContentPlaceHolder1_DataGridView_txtRTRVEndDate_' + i).datetimepicker({
+                    format: 'DD/MM/YYYY HH:mm:ss', minDate: '0'
+                });
             }
 
             var table = $("table[id$='DataGridView']").prepend($("<thead></thead>").append($(this).find("tr:first"))).DataTable
@@ -101,6 +107,9 @@
                 document.getElementById("ContentPlaceHolder1_DataGridView_txtMarkEntryEndDate_" + p_ID).disabled = false;
                 document.getElementById("ContentPlaceHolder1_DataGridView_txtOfflineEndDate_" + p_ID).disabled = false;
                 document.getElementById("ContentPlaceHolder1_DataGridView_txtResultDate_" + p_ID).disabled = false;
+
+                document.getElementById("ContentPlaceHolder1_DataGridView_txtRTRVStartDate_" + p_ID).disabled = false;
+                document.getElementById("ContentPlaceHolder1_DataGridView_txtRTRVEndDate_" + p_ID).disabled = false;
             }
             else {
                 document.getElementById("ContentPlaceHolder1_DataGridView_ExamSemester_" + p_ID).disabled = true;
@@ -114,6 +123,9 @@
                 document.getElementById("ContentPlaceHolder1_DataGridView_txtMarkEntryEndDate_" + p_ID).disabled = true;
                 document.getElementById("ContentPlaceHolder1_DataGridView_txtOfflineEndDate_" + p_ID).disabled = true;
                 document.getElementById("ContentPlaceHolder1_DataGridView_txtResultDate_" + p_ID).disabled = true;
+
+                document.getElementById("ContentPlaceHolder1_DataGridView_txtRTRVStartDate_" + p_ID).disabled = true;
+                document.getElementById("ContentPlaceHolder1_DataGridView_txtRTRVEndDate_" + p_ID).disabled = true;
 
             }
 
@@ -383,9 +395,10 @@
                                                         <asp:ListItem Value="8 SEMESTER" Text="8 Semester"></asp:ListItem>
                                                         <asp:ListItem Value="9 SEMESTER" Text="9 Semester"></asp:ListItem>
                                                         <asp:ListItem Value="10 SEMESTER" Text="10 Semester"></asp:ListItem>
-                                                        <asp:ListItem Value="1 Year" Text="1 Year"></asp:ListItem>
-                                                        <asp:ListItem Value="2 Year" Text="2 Year"></asp:ListItem>
-                                                        <asp:ListItem Value="Session 1" Text="Session 1"></asp:ListItem>
+                                                        <asp:ListItem Value="1 YEAR" Text="1 Year"></asp:ListItem>
+                                                        <asp:ListItem Value="2 YEAR" Text="2 Year"></asp:ListItem>
+                                                        <asp:ListItem Value="SESSION 1" Text="Session 1"></asp:ListItem>
+                                                        <asp:ListItem Value="LEVEL 7-SEMESTER 1" Text="LEVEL 7-SEMESTER 1"></asp:ListItem>
                                                     </asp:DropDownList>
                                                 </ItemTemplate>
                                             </asp:TemplateField>
@@ -431,6 +444,16 @@
                                             <asp:TemplateField HeaderText="Result Date">
                                                 <ItemTemplate>
                                                     <asp:TextBox ID="txtResultDate" runat="server" Text='<%# Bind("ResultDate") %>' Width="120px" CssClass="datePicker form-control" ></asp:TextBox>
+                                                </ItemTemplate>
+                                            </asp:TemplateField>
+                                            <asp:TemplateField HeaderText="RT/RV Start Date">
+                                                <ItemTemplate>
+                                                    <asp:TextBox ID="txtRTRVStartDate" runat="server" Text='<%# Bind("RTRVStartDate") %>' Width="120px" CssClass="datePicker form-control" ></asp:TextBox>
+                                                </ItemTemplate>
+                                            </asp:TemplateField>
+                                            <asp:TemplateField HeaderText="RT/RV End Date">
+                                                <ItemTemplate>
+                                                    <asp:TextBox ID="txtRTRVEndDate" runat="server" Text='<%# Bind("RTRVEndDate") %>' Width="120px" CssClass="datePicker form-control" ></asp:TextBox>
                                                 </ItemTemplate>
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Created On">

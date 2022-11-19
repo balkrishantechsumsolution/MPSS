@@ -304,12 +304,12 @@
                                                 <div class="col-xs-12 pleft0 pright0">
                                                     <asp:DropDownList ID="ddlElective" runat="server" CssClass="form-control">
                                                         <asp:ListItem Value="0">--Select Elective--</asp:ListItem>
-                                                        <asp:ListItem Value="ES01">1st Elective Subject</asp:ListItem>
-                                                        <asp:ListItem Value="ES02">2nd Elective Subject</asp:ListItem>
-                                                        <asp:ListItem Value="ES03">3rd Elective Subject</asp:ListItem>
-                                                        <asp:ListItem Value="ES04">4th Elective Subject</asp:ListItem>
-                                                        <asp:ListItem Value="ES05">5th Elective Subject</asp:ListItem>
-                                                        <asp:ListItem Value="ES06">6th Elective Subject</asp:ListItem>
+                                                        <asp:ListItem Value="Elective Subject-I">1st Elective Subject</asp:ListItem>
+                                                        <asp:ListItem Value="Elective Subject-II">2nd Elective Subject</asp:ListItem>
+                                                        <asp:ListItem Value="Elective Subject-III">3rd Elective Subject</asp:ListItem>
+                                                        <asp:ListItem Value="Elective Subject-IV">4th Elective Subject</asp:ListItem>
+                                                        <asp:ListItem Value="Elective Subject-V">5th Elective Subject</asp:ListItem>
+                                                        <asp:ListItem Value="Elective Subject-VI">6th Elective Subject</asp:ListItem>
                                                         
                                                     </asp:DropDownList>
                                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ddlElective" InitialValue="0" Display="Dynamic"
@@ -412,7 +412,8 @@
                                             <asp:BoundField DataField="2" HeaderText="Elective Subject-II" />
                                             <asp:BoundField DataField="3" HeaderText="Elective Subject-III" />
                                             <asp:BoundField DataField="4" HeaderText="Elective Subject-IV" />
-
+                                            <asp:BoundField DataField="5" HeaderText="Elective Subject-V" />
+                                            <asp:BoundField DataField="6" HeaderText="Elective Subject-VI" />
                                         </Columns>
                                     </asp:GridView>
                                 </div>

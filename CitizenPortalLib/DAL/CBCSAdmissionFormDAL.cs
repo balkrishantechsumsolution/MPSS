@@ -67,6 +67,31 @@ namespace CitizenPortalLib.DAL
             return oDataTable;
         }
 
+        internal DataTable GetSchoolProfile(string loginID)
+        {
+            DataTable oDataTable = new DataTable();
+            IDataReader Reader = null;
+            m_DataBase = Factory.Create(this.ConnectionString);
+
+            try
+            {
+                DbCommand selectCommand;
+                selectCommand = m_DataBase.GetStoredProcCommand("GetSchoolProfileSP");
+                m_DataBase.AddInParameter(selectCommand, "@LoginID", DbType.AnsiString, loginID);
+
+                Reader = m_DataBase.ExecuteReader(selectCommand);
+                if (Reader != null)
+                    oDataTable.Load(Reader);
+                return oDataTable;
+            }
+            finally
+            {
+                if (Reader != null)
+                {
+                    Reader.Close();
+                }
+            }
+        }
         internal DataTable GetCollegeProfile(string loginID)
         {
             DataTable oDataTable = new DataTable();
@@ -2393,6 +2418,9 @@ namespace CitizenPortalLib.DAL
 
             return oDataTable;
         }
+
+    /**MPSS DAL Detail*****/
+
 
     }
 }

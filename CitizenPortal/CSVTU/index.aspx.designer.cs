@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CitizenPortal.CSVTU {
-    
-    
-    public partial class index {
-        
+namespace CitizenPortal.CSVTU
+{
+
+
+    public partial class index
+    {
+
         /// <summary>
         /// grdView1 control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace CitizenPortal.CSVTU {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView grdView1;
-        
+
         /// <summary>
         /// grdExam control.
         /// </summary>

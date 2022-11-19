@@ -449,7 +449,11 @@
                                     <asp:ListItem Value="7 Semester" Text="7 Semester"></asp:ListItem>
                                     <asp:ListItem Value="8 Semester" Text="8 Semester"></asp:ListItem>
                                     <asp:ListItem Value="9 Semester" Text="9 Semester"></asp:ListItem>
-                                    <asp:ListItem Value="10 Semester" Text="10 Semester"></asp:ListItem>                                  
+                                    <asp:ListItem Value="10 Semester" Text="10 Semester"></asp:ListItem>     
+                                    <asp:ListItem Value="1 YEAR" Text="1 Year"></asp:ListItem>
+									<asp:ListItem Value="2 YEAR" Text="2 Year"></asp:ListItem>
+									<asp:ListItem Value="SESSION 1" Text="Session 1"></asp:ListItem>
+									<asp:ListItem Value="LEVEL 7-SEMESTER 1" Text="LEVEL 7-SEMESTER 1"></asp:ListItem>
                                 </asp:DropDownList>
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" InitialValue="0" ControlToValidate="ddlSemester" Display="Dynamic" Style="white-space: nowrap"
                                     ErrorMessage="Please select Semester" ValidationGroup="A" ForeColor="Red" SetFocusOnError="true" EnableClientScript="true" />

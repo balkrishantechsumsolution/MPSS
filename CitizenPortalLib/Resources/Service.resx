@@ -870,4 +870,298 @@ orders issued thereunder and agree to abide by them.</value>
   <data name="statusservice" xml:space="preserve">
     <value>Status of Service</value>
   </data>
+  <data name="lblInstruction" xml:space="preserve">
+    <value>Please enter the data in English Language only</value>
+  </data>
+  <data name="lblLanguage" xml:space="preserve">
+    <value>Choose Language :</value>
+  </data>
+  <data name="lblClass" xml:space="preserve">
+    <value>Select Class</value>
+  </data>
+  <data name="lblCode" xml:space="preserve">
+    <value>School Code</value>
+  </data>
+  <data name="lblFatherFullName" xml:space="preserve">
+    <value>Father's Full name</value>
+  </data>
+  <data name="lblFullName" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="lblMotherFullName" xml:space="preserve">
+    <value>Mother's Full Name</value>
+  </data>
+  <data name="lblPassExam" xml:space="preserve">
+    <value>Have passed the qualifying exam from other board?</value>
+  </data>
+  <data name="lblSchool" xml:space="preserve">
+    <value>Select School</value>
+  </data>
+  <data name="lblSchoolClassDtl" xml:space="preserve">
+    <value>Selected school and class details</value>
+  </data>
+  <data name="lblScName" xml:space="preserve">
+    <value>ScholarShip Form</value>
+  </data>
+  <data name="lblScSIsFreeEscortDis" xml:space="preserve">
+    <value>Free escort facility is being given to the student in case of disability.</value>
+  </data>
+  <data name="lblScStAdmissionNo" xml:space="preserve">
+    <value>Student's School admission number</value>
+  </data>
+  <data name="lblScStBankAccount" xml:space="preserve">
+    <value>Bank Account No.</value>
+  </data>
+  <data name="lblScStBankInfo" xml:space="preserve">
+    <value>Bank Information</value>
+  </data>
+  <data name="lblScStCaste" xml:space="preserve">
+    <value>Caste</value>
+  </data>
+  <data name="lblScStCBankAccount" xml:space="preserve">
+    <value>Confirm Bank Account No.</value>
+  </data>
+  <data name="lblScStCBankIFSC" xml:space="preserve">
+    <value>Bank IFSC Code</value>
+  </data>
+  <data name="lblScStClass" xml:space="preserve">
+    <value>Class</value>
+  </data>
+  <data name="lblScStCodeFacultySt" xml:space="preserve">
+    <value>Code of Faculty/Stream</value>
+  </data>
+  <data name="lblScStCodeTradeVocationalPrg" xml:space="preserve">
+    <value>Code of trade taken by the student in vocational education</value>
+  </data>
+  <data name="lblScStCurrentCls" xml:space="preserve">
+    <value>Current Class</value>
+  </data>
+  <data name="lblScStDateAdmisCurrClass" xml:space="preserve">
+    <value>Date of Admission to class (DD/MM/YYYY)</value>
+  </data>
+  <data name="lblScStDateAdmisCurrSch" xml:space="preserve">
+    <value>Date of admission in current school</value>
+  </data>
+  <data name="lblScStDigitalCasteNo" xml:space="preserve">
+    <value>Digital Caste Cetrtificate Number</value>
+  </data>
+  <data name="lblScStDisability" xml:space="preserve">
+    <value>Type of disability</value>
+  </data>
+  <data name="lblScStDtls" xml:space="preserve">
+    <value>Personal Information</value>
+  </data>
+  <data name="lblScStEquipDisability" xml:space="preserve">
+    <value>Equipment given to students with disabilities</value>
+  </data>
+  <data name="lblScStExamBoardName" xml:space="preserve">
+    <value>Exam Board Name</value>
+  </data>
+  <data name="lblScStFather" xml:space="preserve">
+    <value>Father's Name</value>
+  </data>
+  <data name="lblScStFatherOcc" xml:space="preserve">
+    <value>Father's Occupation</value>
+  </data>
+  <data name="lblScStFIncome" xml:space="preserve">
+    <value>Family Income</value>
+  </data>
+  <data name="lblScStFreeBicycle" xml:space="preserve">
+    <value>Free Bicycle</value>
+  </data>
+  <data name="lblScStFreeUniform" xml:space="preserve">
+    <value>Free Uniform</value>
+  </data>
+  <data name="lblScStID" xml:space="preserve">
+    <value>Student ID</value>
+  </data>
+  <data name="lblScStIsAnyHaveScholarShip" xml:space="preserve">
+    <value>Is the scholarship being taken by only two students from the family? (certificate attached)</value>
+  </data>
+  <data name="lblScStIsClsFirstEnrollStatus" xml:space="preserve">
+    <value>If the student is taking admission in class 1, then the enrollment status in the previous year</value>
+  </data>
+  <data name="lblScStIsDGSCaste" xml:space="preserve">
+    <value>Whether it is a Denotified / Ghumkkad / Semi-nomadic caste</value>
+  </data>
+  <data name="lblScStIsDisadvantagedgroup" xml:space="preserve">
+    <value>Belongs to the disadvantaged group?</value>
+  </data>
+  <data name="lblScStIsFamilyBPL" xml:space="preserve">
+    <value>Family b. P. L. Cardholder?</value>
+  </data>
+  <data name="lblScStIsFreeTextbooks" xml:space="preserve">
+    <value>Receive a complete set of free textbooks?</value>
+  </data>
+  <data name="lblScStIsFreeTransport" xml:space="preserve">
+    <value>Taking free transport facility</value>
+  </data>
+  <data name="lblScStIshomeless" xml:space="preserve">
+    <value>Is the student homeless</value>
+  </data>
+  <data name="lblScStIsHosteller" xml:space="preserve">
+    <value>Is Hosteller?</value>
+  </data>
+  <data name="lblScStIsRecSpecialTraining" xml:space="preserve">
+    <value>Whether the student is receiving special training</value>
+  </data>
+  <data name="lblScStIsRegVocationalPrg" xml:space="preserve">
+    <value>Is the student registered in the new vocational education program</value>
+  </data>
+  <data name="lblScStIsResidingHostel" xml:space="preserve">
+    <value>Whether the student is residing in the hostel</value>
+  </data>
+  <data name="lblScStIsRTE" xml:space="preserve">
+    <value>Whether the student has been admitted under RTE?</value>
+  </data>
+  <data name="lblScStJobSalary" xml:space="preserve">
+    <value>Job Salary</value>
+  </data>
+  <data name="lblScStJobStaus" xml:space="preserve">
+    <value>Job / Placement Status</value>
+  </data>
+  <data name="lblScStLadliLaxmiNo" xml:space="preserve">
+    <value>Ladli Laxmi No. (For students studying in primary / secondary school)</value>
+  </data>
+  <data name="lblScStLastAnnualResult" xml:space="preserve">
+    <value>last annual result</value>
+  </data>
+  <data name="lblScStLastCls" xml:space="preserve">
+    <value>Last year's class</value>
+  </data>
+  <data name="lblScStLastClsInt" xml:space="preserve">
+    <value>Name of last class institution</value>
+  </data>
+  <data name="lblScStLvlNSFQ" xml:space="preserve">
+    <value>Which level of NSFQ has been completed by the student?</value>
+  </data>
+  <data name="lblScStMediums" xml:space="preserve">
+    <value>Student's medium of instruction</value>
+  </data>
+  <data name="lblScStMobieNoParent" xml:space="preserve">
+    <value>Mobile number of student / foster parent</value>
+  </data>
+  <data name="lblScStMonthlyFee" xml:space="preserve">
+    <value>Monthly fee</value>
+  </data>
+  <data name="lblScStMother" xml:space="preserve">
+    <value>Mother's Name</value>
+  </data>
+  <data name="lblScStMotherOcc" xml:space="preserve">
+    <value>Mother's Occupation</value>
+  </data>
+  <data name="lblScStName" xml:space="preserve">
+    <value>Student Name (English)</value>
+  </data>
+  <data name="lblScStNative" xml:space="preserve">
+    <value>Is a native of Madhya Pradesh</value>
+  </data>
+  <data name="lblScStNoOfSibling" xml:space="preserve">
+    <value>How many brothers/sisters</value>
+  </data>
+  <data name="lblScStObjVocationalPrg" xml:space="preserve">
+    <value>Objectives of student to take vocational education</value>
+  </data>
+  <data name="lblScStParentIcomeTaxPayer" xml:space="preserve">
+    <value>Whether father or guardian is income tax payer or has more than 10 acres of land? (certificate attached)</value>
+  </data>
+  <data name="lblScStPassPercentage" xml:space="preserve">
+    <value>Pass percentage</value>
+  </data>
+  <data name="lblScStPreAttDays" xml:space="preserve">
+    <value>Student's attendance day in the previous year</value>
+  </data>
+  <data name="lblScStReligion" xml:space="preserve">
+    <value>Religion</value>
+  </data>
+  <data name="lblScStSchool" xml:space="preserve">
+    <value>Student School</value>
+  </data>
+  <data name="lblScStSection" xml:space="preserve">
+    <value>Student Section</value>
+  </data>
+  <data name="lblScStStudentStatus" xml:space="preserve">
+    <value>Student Status</value>
+  </data>
+  <data name="lblScStSubCaste" xml:space="preserve">
+    <value>Sub Caste</value>
+  </data>
+  <data name="lblScStSubject" xml:space="preserve">
+    <value>Student Subject</value>
+  </data>
+  <data name="lblScStTypeJobRoleVocationalPrg" xml:space="preserve">
+    <value>What type of job roles are expected in vocational education</value>
+  </data>
+  <data name="lblScStYrLastExam" xml:space="preserve">
+    <value>Year of last class exam</value>
+  </data>
+  <data name="lblStAge" xml:space="preserve">
+    <value>(Age upto 01/08/2021)</value>
+  </data>
+  <data name="lblStApplicantAddress" xml:space="preserve">
+    <value>Applicant Address</value>
+  </data>
+  <data name="lblStBlock" xml:space="preserve">
+    <value>Block</value>
+  </data>
+  <data name="lblStCategory" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="lblStCity" xml:space="preserve">
+    <value>City/Village</value>
+  </data>
+  <data name="lblStColony" xml:space="preserve">
+    <value>Colony</value>
+  </data>
+  <data name="lblStDeclaration" xml:space="preserve">
+    <value>Declaration* I hereby declare that the entries made by me in this application are true and correct. If any type of error or wrong information is found, the admission will be canceled for which the entire responsibility will be with itself.</value>
+  </data>
+  <data name="lblStDistrict" xml:space="preserve">
+    <value>District</value>
+  </data>
+  <data name="lblStDOB" xml:space="preserve">
+    <value>Date of Birth (dd/mm/yyyy)</value>
+  </data>
+  <data name="lblStEnroll" xml:space="preserve">
+    <value>Enrollment Form Session</value>
+  </data>
+  <data name="lblStFilter" xml:space="preserve">
+    <value>Student Details Filter</value>
+  </data>
+  <data name="lblStGender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="lblStHouseNo" xml:space="preserve">
+    <value>House No.</value>
+  </data>
+  <data name="lblStMoblie" xml:space="preserve">
+    <value>Moblie</value>
+  </data>
+  <data name="lblStNative" xml:space="preserve">
+    <value>Are you a native of Madhya Pradesh?</value>
+  </data>
+  <data name="lblStPinCode" xml:space="preserve">
+    <value>Pin Code</value>
+  </data>
+  <data name="lblStSamagraID" xml:space="preserve">
+    <value>Samagra ID</value>
+  </data>
+  <data name="lblStTCUpload" xml:space="preserve">
+    <value>TC to upload:</value>
+  </data>
+  <data name="lblStudentProfile" xml:space="preserve">
+    <value>Student Profile Details</value>
+  </data>
+  <data name="lblStUpload" xml:space="preserve">
+    <value>Upload's</value>
+  </data>
+  <data name="lblScStFatherDead" xml:space="preserve">
+    <value>Is Father Dead</value>
+  </data>
+  <data name="lblScStInform" xml:space="preserve">
+    <value>Student Information</value>
+  </data>
+  <data name="lblScStInformation" xml:space="preserve">
+    <value>Other Information</value>
+  </data>
 </root>

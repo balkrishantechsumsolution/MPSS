@@ -490,7 +490,8 @@ namespace CitizenPortal.WebApp.Faculty
                                     //,"SubjectCode4"
                                     ,"CreatedBy"
                                     ,"ExamType"
-                                    
+                                    ,"ElectiveType"
+
                                 };
 
                                 ElectiveSubject_TB objTB = new ElectiveSubject_TB();
@@ -509,12 +510,13 @@ namespace CitizenPortal.WebApp.Faculty
                                 objTB.CollegeCode = ddlCollege.SelectedValue;
                                 objTB.ExamYear = ddlSession.SelectedValue;
                                 objTB.ExamType = ddlExamType.SelectedValue;
+                                objTB.ElectiveType = ddlElective.SelectedValue;
 
                                 FacultyModuleBLL m_FacultyModuleBLL = new FacultyModuleBLL();                                
                                 string UID = "";
 
                                 
-                                result = m_FacultyModuleBLL.InsertElectiveSubjectSelect(objTB, AFields);
+                                result = m_FacultyModuleBLL.InsertElectiveSubjectSelectNew(objTB, AFields);
                                 if (result != null && result.Rows.Count > 0)
                                 {
                                     if (result.Rows[0]["Result"].ToString() == "1")

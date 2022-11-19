@@ -361,27 +361,11 @@ namespace CitizenPortalLib.DAL
             DataTable oDataTable = new DataTable();
             IDataReader Reader = null;
             m_DataBase = Factory.Create(m_AddressConnectionString);
-            //try
-            //{
-            //    DbCommand selectCommand;
-            //    String SQLCommand = "SELECT [Districtname], [Districtcode] FROM [mstDistrict] Where StateCode = '" + StateCode + "' And LangId = " + m_LangId + " ORDER BY Districtname";
-            //    selectCommand = m_DataBase.GetSqlStringCommand(SQLCommand);
-            //    Reader = m_DataBase.ExecuteReader(selectCommand);
-            //    if (Reader != null)
-            //        oDataTable.Load(Reader);
-            //    return oDataTable;
-            //}
-            //finally
-            //{
-            //    if (Reader != null)
-            //    {
-            //        Reader.Close();
-            //    }
-            //}
+            
             try
             {
                 DbCommand selectCommand;
-                selectCommand = m_DataBase.GetStoredProcCommand("GetDistrict_OUATSP");
+                selectCommand = m_DataBase.GetStoredProcCommand("GetDistrictSP");
                 m_DataBase.AddInParameter(selectCommand, "@StateCode", DbType.AnsiString, StateCode);
                 m_DataBase.AddInParameter(selectCommand, "@LangID", DbType.AnsiString, 1);
                 Reader = m_DataBase.ExecuteReader(selectCommand);

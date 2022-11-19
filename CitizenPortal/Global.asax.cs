@@ -18,8 +18,8 @@ using CitizenPortalLib.BLL;
 using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
-using CitizenPortal.WebApp.Kiosk.CCTNS;
-using System.Collections.Specialized;
+//using CitizenPortal.WebApp.Kiosk.CCTNS;
+//using System.Collections.Specialized;
 
 namespace CitizenPortal
 {

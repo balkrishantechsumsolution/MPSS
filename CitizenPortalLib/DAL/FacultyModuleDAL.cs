@@ -959,6 +959,24 @@ namespace CitizenPortalLib.DAL
             return oDataTable;
         }
 
+        internal DataTable InsertElectiveSubjectSelectNew(ElectiveSubject_TB obj_DT, string[] AFields)
+        {
+            DbCommand cmdInsert;
+
+            QueryBuilder qb = new QueryBuilder();
+
+            m_DataBase = Factory.Create(this.ConnectionString);
+
+            cmdInsert = qb.GetInsertCommandV3(obj_DT, "InsertElectiveSubjectSelectNewSP", AFields);
+
+            DataTable oDataTable = new DataTable();
+            IDataReader Reader = null;
+            Reader = m_DataBase.ExecuteReader(cmdInsert);
+            if (Reader != null)
+                oDataTable.Load(Reader);
+
+            return oDataTable;
+        }
         internal DataTable GetOfflineExamData(string LoginID, string College, string ExamType, string ExamSession, string Course, string Program, string paymentStatus, string RollNo, string Semester)
         {
             DataTable oDataTable = new DataTable();

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebApp/Kiosk/Master/KioskMaster.Master" AutoEventWireup="true" CodeBehind="ConfirmPayment.aspx.cs" Inherits="CitizenPortal.WebApp.Kiosk.Forms.ConfirmPayment" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebApp/Kiosk/Master/MPSSMaster.Master" AutoEventWireup="true" CodeBehind="ConfirmPayment.aspx.cs" Inherits="CitizenPortal.WebApp.Kiosk.Forms.ConfirmPayment" %>
 
 <%@ Register Src="~/WebApp/Control/Infomation.ascx" TagPrefix="uc1" TagName="Infomation" %>
 <%@ Register Src="~/WebApp/Control/FormTitle.ascx" TagPrefix="uc1" TagName="FormTitle" %>   

@@ -13,7 +13,7 @@ namespace CitizenPortal
         {
             //D:\1\visual studio 2015\Projects\CitizenPortal\CitizenPortal\Areas\Portal\Views\Home\Index.cshtml
             //Response.Redirect("/Portal/Home/Index");
-            Response.Redirect("/CSVTU/index.aspx");
+            Response.Redirect("/mpss/mpss/index.html");
         }
     }
 }

@@ -27,7 +27,7 @@
     var cntAdmission = [];
 
     $(document).ready(function () {        
-        GetStudentCount(t_LoginID,t_AdmissionYear,t_College,t_BranchCode,t_HonsCode, t_ReportType);
+       /* GetStudentCount(t_LoginID,t_AdmissionYear,t_College,t_BranchCode,t_HonsCode, t_ReportType);*/
         //GetStudentChart(Slevel);
     });    
 
@@ -48,7 +48,7 @@
                 //Blockdata = eval(jsonData.list);
             },
             error: function (a, b, c) {
-                alert("2." + a.responseText);
+               /* alert("2." + a.responseText);*/
             }
         });
     }
@@ -233,7 +233,7 @@
 
                 },
                 error: function (a, b, c) {
-                    alert("1." + a.responseText);
+                  /*  alert("1." + a.responseText);*/
                 }
             })
         )

@@ -41,7 +41,7 @@
                                             <tr>
                                                 <td style="height: 38px;vertical-align:middle">
                                                     <div style="height: 38px; width: 100%;">
-                                                        <asp:Label ID="lblCertificateHindi" runat="server" Font-Bold="true" Font-Names="Arial Unicode MS" Font-Size="25px" Text="इंजीनिरिंग में पत्रोपाधि"></asp:Label>
+                                                        <asp:Label ID="lblCertificateHindi" runat="server" Font-Bold="true" Font-Names="Arial" Font-Size="25px" Text="इंजीनिरिंग में पत्रोपाधि"></asp:Label>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -121,7 +121,7 @@
                                             </tr>
                                             <tr>
                                                 <td style="height: 35px">
-                                                    <div style="margin-top: -4px; text-align: right; width: 660px; height: 35px">
+                                                    <div style="margin-top: -4px;text-align: left;width: 182px;height: 35px;float: right;">
                                                         <asp:Label ID="lblSession" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="20px"></asp:Label>
                                                     </div>
                                                 </td>

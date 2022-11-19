@@ -72,7 +72,23 @@ namespace CitizenPortal.WebApp.Provisional
 
             try
             {
-                QRCode1.GenerateQRCodePayment(m_ServiceID, m_AppID);
+                string QRText = "";
+                QRText = "CSVTU - PROVISIONAL CERTIFICATE" +
+                " \n Enrollment No:" + lblEnrollmentNo.Text +
+                " \n Roll No: " + lblRollNo.Text +
+                " \n Name: " + lblName.Text +
+                " \n Father's Name: " + dt.Rows[0]["FatherName"].ToString() +
+                " \n Institute Name: " + dt.Rows[0]["CollegeName"].ToString() +
+                " \n Course: " + dt.Rows[0]["CourseName"].ToString() +
+                " \n Program: " + dt.Rows[0]["ProgramName"].ToString() +
+                " \n Exam Session: " + lblSession.Text +
+                " \n Percentage: " + lblPercentage.Text +
+                " \n Division:" + lblDivision.Text +
+                " \n CPI: " + lblCPI.Text +
+                " \n Certificate No.:" + lblSerilNo.Text +                
+                " \n Date: " + lblDate.Text;
+
+                QRCode1.GenerateQRCode(QRText);
             }
             catch { }
 

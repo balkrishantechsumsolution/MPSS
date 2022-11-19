@@ -13,7 +13,7 @@ namespace CitizenPortalLib.DAL
     internal class ExamFormDAL : DALBase
     {
         Database m_DataBase;
-
+        int m_TimeOut = 20000;
         internal DataTable GetBranchList()
         {
             DataTable oDataTable = new DataTable();
@@ -526,6 +526,7 @@ namespace CitizenPortalLib.DAL
             {
                 DbCommand selectCommand;
                 selectCommand = m_DataBase.GetStoredProcCommand("InsertSemesterDataSP");
+                selectCommand.CommandTimeout = m_TimeOut;
                 m_DataBase.AddInParameter(selectCommand, "@Data", DbType.AnsiString, Data);
                 m_DataBase.AddInParameter(selectCommand, "@ServiceId", DbType.AnsiString, ServiceID);
                 m_DataBase.AddInParameter(selectCommand, "@CreatedBy", DbType.AnsiString, CreatedBy);

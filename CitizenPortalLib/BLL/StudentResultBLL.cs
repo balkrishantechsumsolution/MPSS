@@ -127,5 +127,56 @@ namespace CitizenPortalLib.BLL
             return t_DS;
 
         }
+
+        public DataTable GetCollegeCSVTU()
+        {
+            DataTable t_CollegeDT = null;
+
+            t_CollegeDT = m_StudentResultDAL.GetCollegeCSVTU();
+
+            return t_CollegeDT;
+        }
+
+        public DataTable GetCourseCSVTU()
+        {
+            DataTable t_DT = null;
+            t_DT = m_StudentResultDAL.GetCourseCSVTU();
+            return t_DT;
+        }
+
+        public DataSet GetAttendentSheetDetails(string m_coursecode, string m_CollegeCode, string m_Semester, string m_ExamType, string m_ExamYear, string Range, string m_RollNo, string nextset)
+        {
+            DataSet t_AppDS = null;
+            t_AppDS = m_StudentResultDAL.GetAttendentSheetDetails(m_coursecode, m_CollegeCode, m_Semester, m_ExamYear, m_ExamType, Range, m_RollNo, nextset);
+            return t_AppDS;
+        }
+
+        public DataSet GetResultData(string m_Rollno, string m_Semester, string m_ExamType, string m_ExamYear)
+        {
+            DataSet t_AppDS = null;
+            t_AppDS = m_StudentResultDAL.GetResultData(m_Rollno, m_Semester, m_ExamYear, m_ExamType);
+            return t_AppDS;
+        }
+
+        public DataSet GetAggregareDetetails(string m_Rollno, string m_Semester, string m_ExamYear, string m_ExamType)
+        {
+            DataSet t_AppDS = null;
+            t_AppDS = m_StudentResultDAL.GetAggregareDetetails(m_Rollno, m_Semester, m_ExamYear, m_ExamType);
+            return t_AppDS;
+        }
+
+        public DataSet GetQRCode(string m_Rollno, string m_Semester, string Examtype, string m_ExamYear)
+        {
+            DataSet t_AppDS = null;
+            t_AppDS = m_StudentResultDAL.GetQRCode(m_Rollno, m_Semester, Examtype, m_ExamYear);
+            return t_AppDS;
+        }
+
+        public DataSet GetTotalBox(string m_Rollno)
+        {
+            DataSet t_AppDS = null;
+            t_AppDS = m_StudentResultDAL.GetTotalBox(m_Rollno);
+            return t_AppDS;
+        }
     }
 }

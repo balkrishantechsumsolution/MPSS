@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CitizenPortal.WebApp.Control {
-    
-    
-    public partial class LeftPanel {
-        
+namespace CitizenPortal.WebApp.Control
+{
+
+
+    public partial class LeftPanel
+    {
+
         /// <summary>
         /// ProfileImg control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace CitizenPortal.WebApp.Control {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlImage ProfileImg;
-        
+
         /// <summary>
         /// lblUser control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace CitizenPortal.WebApp.Control {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblUser;
-        
+
         /// <summary>
         /// pMobile control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace CitizenPortal.WebApp.Control {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl pMobile;
-        
+
         /// <summary>
         /// lblMobile control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace CitizenPortal.WebApp.Control {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblMobile;
-        
+
         /// <summary>
         /// pEmail control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace CitizenPortal.WebApp.Control {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl pEmail;
-        
+
         /// <summary>
         /// lblEmail control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace CitizenPortal.WebApp.Control {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblEmail;
-        
+
         /// <summary>
         /// Span1 control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace CitizenPortal.WebApp.Control {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Span1;
-        
+
         /// <summary>
         /// lblDate control.
         /// </summary>
@@ -83,7 +85,7 @@ namespace CitizenPortal.WebApp.Control {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl lblDate;
-        
+
         /// <summary>
         /// pnlMenu control.
         /// </summary>

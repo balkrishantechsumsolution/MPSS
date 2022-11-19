@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{77284134-7192-4AE0-B444-4A492C179898}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CitizenPortalLib</RootNamespace>
+    <AssemblyName>CitizenPortalLib</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="APICommon.cs" />
+    <Compile Include="BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BLL\AcknowledgementBLL.cs" />
+    <Compile Include="BLL\ActionDetailsBLL.cs" />
+    <Compile Include="BLL\AdminLoginBLL.cs" />
+    <Compile Include="BLL\AdmitCardBLL.cs" />
+    <Compile Include="BLL\ApplicationStatusBLL.cs" />
+    <Compile Include="BLL\AttendentSheetBLL.cs" />
+    <Compile Include="BLL\AutoDrCrBLL.cs" />
+    <Compile Include="BLL\BackExamBLL.cs" />
+    <Compile Include="BLL\BanishreeBLL.cs" />
+    <Compile Include="BLL\MPSSBLL.cs" />
+    <Compile Include="BLL\StudentResultBLL.cs" />
+    <Compile Include="BLL\ExamFormtBLL.cs" />
+    <Compile Include="BLL\EnrollmentBLL.cs" />
+    <Compile Include="BLL\FacultyModuleBLL.cs" />
+    <Compile Include="BLL\CBCSAdmissionFormBLL.cs" />
+    <Compile Include="BLL\CharacterCertificateBAL.cs" />
+    <Compile Include="BLL\CitizenBasicDetailsBLL.cs" />
+    <Compile Include="BLL\CitizenDashboardBLL.cs" />
+    <Compile Include="BLL\ComplaintRegBAL.cs" />
+    <Compile Include="BLL\CRAFTBLL.cs" />
+    <Compile Include="BLL\DivisionalMarksheetBLL.cs" />
+    <Compile Include="BLL\DivisionalMarksheettable2BLL.cs" />
+    <Compile Include="BLL\EnrolementBLL.cs" />
+    <Compile Include="BLL\RegistrationReceiptSUBLL.cs" />
+    <Compile Include="BLL\ProvisionalSUBLL.cs" />
+    <Compile Include="BLL\DuplicateMigrationCertificateBLL.cs" />
+    <Compile Include="BLL\DuplicateSemesterMarksheetBLL.cs" />
+    <Compile Include="BLL\DuplicateSemesterMarksheettb2BLL.cs" />
+    <Compile Include="BLL\FarmerRegistrationBLL.cs" />
+    <Compile Include="BLL\FinancialAssistanceBLL .cs" />
+    <Compile Include="BLL\FisheriesBLL.cs" />
+    <Compile Include="BLL\FisheriesRegistrationBLL.cs" />
+    <Compile Include="BLL\MenialStaffBLL.cs" />
+    <Compile Include="BLL\MigrationCertificatetable2BLL.cs" />
+    <Compile Include="BLL\DuplicateDegreeSUBLL.cs" />
+    <Compile Include="BLL\DocumentVerificationBLL.cs" />
+    <Compile Include="BLL\TransferSUBLL.cs" />
+    <Compile Include="BLL\MigrationSUBLL.cs" />
+    <Compile Include="BLL\OISFBLL.cs" />
+    <Compile Include="BLL\CreateProfileBLL.cs" />
+    <Compile Include="BLL\CSCConnectBLL.cs" />
+    <Compile Include="BLL\CitizenProfileBLL.cs" />
+    <Compile Include="BLL\DivisionalCertificateBLL.cs" />
+    <Compile Include="BLL\ComplaintRegistrationBLL.cs" />
+    <Compile Include="BLL\GetCountBLL.cs" />
+    <Compile Include="BLL\HSBTBLL.cs" />
+    <Compile Include="BLL\OnilineVisitorsBLL.cs" />
+    <Compile Include="BLL\OTPBLL.cs" />
+    <Compile Include="BLL\OUATBLL.cs" />
+    <Compile Include="BLL\RatingFeedBackBLL.cs" />
+    <Compile Include="BLL\ResidenceBAL.cs" />
+    <Compile Include="BLL\RoadTaxBLL.cs" />
+    <Compile Include="BLL\ServiceFeedBackBLL.cs" />
+    <Compile Include="BLL\TranscriptBLL.cs" />
+    <Compile Include="BLL\FIRRegistrationBLL.cs" />
+    <Compile Include="BLL\BirthRegistrationBLL.cs" />
+    <Compile Include="BLL\ConversionBLL.cs" />
+    <Compile Include="BLL\DuplicateDiplomaBLL.cs" />
+    <Compile Include="BLL\MigrationBLL.cs" />
+    <Compile Include="BLL\CMRFBLL.cs" />
+    <Compile Include="BLL\ServicesBLL.cs" />
+    <Compile Include="BLL\BasicDetailsBLL.cs" />
+    <Compile Include="BLL\IGNDPBLL.cs" />
+    <Compile Include="BLL\IGNOAPBLL.cs" />
+    <Compile Include="BLL\IGNWPBLL.cs" />
+    <Compile Include="BLL\UGMarksEntryBLL.cs" />
+    <Compile Include="BLL\WaterConnectionBLL.cs" />
+    <Compile Include="BLL\MBPYBLL.cs" />
+    <Compile Include="BLL\NFBSBLL.cs" />
+    <Compile Include="BLL\SPVRequestBLL.cs" />
+    <Compile Include="BLL\DeathCertificateBLL.cs" />
+    <Compile Include="BLL\BLLBase.cs" />
+    <Compile Include="BLL\ChangePasswordBLL.cs" />
+    <Compile Include="BLL\CitizenLoginBLL.cs" />
+    <Compile Include="BLL\CitizenRegistrationBLL.cs" />
+    <Compile Include="BLL\CommissionCreditBLL.cs" />
+    <Compile Include="BLL\CommonBLL.cs" />
+    <Compile Include="BLL\ConfirmPaymentBLL.cs" />
+    <Compile Include="BLL\DBQueryBLL.cs" />
+    <Compile Include="BLL\DocumentBriefcaseBLL.cs" />
+    <Compile Include="BLL\FinancialApprovalBLL.cs" />
+    <Compile Include="BLL\ServiceDetailBLL.cs" />
+    <Compile Include="BLL\G2GDashboardBLL.cs" />
+    <Compile Include="BLL\KIOSKDetailsBLL.cs" />
+    <Compile Include="BLL\KIOSKLoginBLL.cs" />
+    <Compile Include="BLL\KioskRegistrationBLL.cs" />
+    <Compile Include="BLL\KioskRegistrationStepIIBLL.cs" />
+    <Compile Include="BLL\LoginBLL.cs" />
+    <Compile Include="BLL\MenuBLL.cs" />
+    <Compile Include="BLL\NationalParkBLL.cs" />
+    <Compile Include="BLL\OperatorLoginBLL.cs" />
+    <Compile Include="BLL\OperatorRegistrationBLL.cs" />
+    <Compile Include="BLL\PaymentReceiptBLL.cs" />
+    <Compile Include="BLL\PoliceRecruitmentBLL.cs" />
+    <Compile Include="BLL\QuickKIOSKBLL.cs" />
+    <Compile Include="BLL\RecordTopUpBLL.cs" />
+    <Compile Include="BLL\ReversalBLL.cs" />
+    <Compile Include="BLL\SaatBaraBLL.cs" />
+    <Compile Include="BLL\SCARegistrationBLL.cs" />
+    <Compile Include="BLL\SeedBLL.cs" />
+    <Compile Include="BLL\BirthCertificateBLL.cs" />
+    <Compile Include="BLL\SeniorCitizenBLL.cs" />
+    <Compile Include="BLL\SigningAuthorityBLL.cs" />
+    <Compile Include="BLL\SMSBLL.cs" />
+    <Compile Include="BLL\SPVReceiveBLL.cs" />
+    <Compile Include="BLL\SuggestionDetailBLL.cs" />
+    <Compile Include="BLL\SupervisorBLL.cs" />
+    <Compile Include="BLL\TopUpApprovalBLL.cs" />
+    <Compile Include="BLL\TopupWalletBLL.cs" />
+    <Compile Include="BLL\TransactionSummaryBLL.cs" />
+    <Compile Include="BLL\VLEKIOSKBLL.cs" />
+    <Compile Include="BLL\VLEMISBLL.cs" />
+    <Compile Include="BLL\VLEUIDBLL.cs" />
+    <Compile Include="BLL\WorkFlowBLL.cs" />
+    <Compile Include="CaptchaImage.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="CommonBasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonFunction.cs" />
+    <Compile Include="CommonUtility.cs" />
+    <Compile Include="CommonUtility1.cs" />
+    <Compile Include="DAL\AcknowledgementDAL.cs" />
+    <Compile Include="DAL\ActionDetailsDLL.cs" />
+    <Compile Include="DAL\AdminLoginDAL.cs" />
+    <Compile Include="DAL\AdmitCardDAL.cs" />
+    <Compile Include="DAL\ApplicationStatusDAL.cs" />
+    <Compile Include="DAL\AttendentSheetDAL.cs" />
+    <Compile Include="DAL\AutoDrCrDAL.cs" />
+    <Compile Include="DAL\BackExamDAL.cs" />
+    <Compile Include="DAL\BanishreeDAL.cs" />
+    <Compile Include="DAL\MPSSDAL.cs" />
+    <Compile Include="DAL\StudentResultDAL.cs" />
+    <Compile Include="DAL\ExamFormDAL.cs" />
+    <Compile Include="DAL\EnrollmentDAL.cs" />
+    <Compile Include="DAL\FacultyModuleDAL.cs" />
+    <Compile Include="DAL\CBCSAdmissionFormDAL.cs" />
+    <Compile Include="DAL\CharacterCertificateDAL.cs" />
+    <Compile Include="DAL\CitizenBasicDetailsDAL.cs" />
+    <Compile Include="DAL\CitizenDashboradDAL.cs" />
+    <Compile Include="DAL\ComplaintRegDAL.cs" />
+    <Compile Include="DAL\CRAFTDAL.cs" />
+    <Compile Include="DAL\DivisionalMarksheetDAL.cs" />
+    <Compile Include="DAL\DivisionalMarksheettable2DAL.cs" />
+    <Compile Include="DAL\EnrolementDAL.cs" />
+    <Compile Include="DAL\RegistrationReceiptSUDAL.cs" />
+    <Compile Include="DAL\ProvisionalSUDAL.cs" />
+    <Compile Include="DAL\DuplicateMigrationCertificateDAL.cs" />
+    <Compile Include="DAL\DuplicateSemesterMarksheetDAL.cs" />
+    <Compile Include="DAL\DuplicateSemesterMarksheettb2DAL.cs" />
+    <Compile Include="DAL\Encryption.cs" />
+    <Compile Include="DAL\FarmerRegistrationDAL.cs" />
+    <Compile Include="DAL\FinancialAssistanceDAL.cs" />
+    <Compile Include="DAL\FisheriesDAL.cs" />
+    <Compile Include="DAL\FisheriesRegistrationDAL.cs" />
+    <Compile Include="DAL\MenialStaffDAL.cs" />
+    <Compile Include="DAL\MigrationCertificatetable2DAL.cs" />
+    <Compile Include="DAL\DuplicateDegreeSUDAL.cs" />
+    <Compile Include="DAL\DocumentVerificationDAL.cs" />
+    <Compile Include="DAL\TransferSUDAL.cs" />
+    <Compile Include="DAL\MigrationSUDAL.cs" />
+    <Compile Include="DAL\OISFDAL.cs" />
+    <Compile Include="DAL\CreateProfileDAL.cs" />
+    <Compile Include="DAL\CSCConnectDAL.cs" />
+    <Compile Include="DAL\CitizenProfileDAL.cs" />
+    <Compile Include="DAL\DivisionalCertificateDAL.cs" />
+    <Compile Include="DAL\ComplaintRegistrationDAL.cs" />
+    <Compile Include="DAL\GetcountDAL.cs" />
+    <Compile Include="DAL\HSBTDAL.cs" />
+    <Compile Include="DAL\OISFDALReport.cs" />
+    <Compile Include="DAL\OTPDAL.cs" />
+    <Compile Include="DAL\OUATDAL.cs" />
+    <Compile Include="DAL\RatingFeedBackDAL.cs" />
+    <Compile Include="DAL\ResidenceDAL.cs" />
+    <Compile Include="DAL\RoadTaxDAL.cs" />
+    <Compile Include="DAL\ServiceFeedBackDAL.cs" />
+    <Compile Include="DAL\TranscriptDAL.cs" />
+    <Compile Include="DAL\FIRRegistrationDAL.cs" />
+    <Compile Include="DAL\BirthRegistrationDAL.cs" />
+    <Compile Include="DAL\ConversionDAL.cs" />
+    <Compile Include="DAL\DuplicateDiplomaDAL.cs" />
+    <Compile Include="DAL\MigrationDAL.cs" />
+    <Compile Include="DAL\CMRFDAL.cs" />
+    <Compile Include="DAL\ServicesDAL.cs" />
+    <Compile Include="DAL\BasicDetailsDAL.cs" />
+    <Compile Include="DAL\IGNDPDAL.cs" />
+    <Compile Include="DAL\IGNOAPDAL.cs" />
+    <Compile Include="DAL\IGNWPDAL.cs" />
+    <Compile Include="DAL\UGMarksEntryDAL.cs" />
+    <Compile Include="DAL\VisitorsCountDAL.cs" />
+    <Compile Include="DAL\WaterConnectionDAL.cs" />
+    <Compile Include="DAL\MBPYDAL.cs" />
+    <Compile Include="DAL\NFBSDAL.cs" />
+    <Compile Include="DAL\SPVRequestDAL.cs" />
+    <Compile Include="DAL\DeathCertificateDAL.cs" />
+    <Compile Include="DAL\ChangePasswordDAL.cs" />
+    <Compile Include="DAL\CitizenLoginDAL.cs" />
+    <Compile Include="DAL\CitizenRegistrationDAL.cs" />
+    <Compile Include="DAL\CommissionCreditDAL.cs" />
+    <Compile Include="DAL\CommonDAL.cs" />
+    <Compile Include="DAL\ConfirmPaymentDAL.cs" />
+    <Compile Include="DAL\DALBase.cs" />
+    <Compile Include="DAL\DBQueryDAL.cs" />
+    <Compile Include="DAL\DocumentBriefcaseDAL.cs" />
+    <Compile Include="DAL\FinancialApprovalDAL.cs" />
+    <Compile Include="DAL\ServiceDetailDAL.cs" />
+    <Compile Include="DAL\G2GDashboardDAL.cs" />
+    <Compile Include="DAL\KIOSKDetailsDAL.cs" />
+    <Compile Include="DAL\KIOSKLoginDAL.cs" />
+    <Compile Include="DAL\KioskRegistrationDAL.cs" />
+    <Compile Include="DAL\KiosRegistrationStepIIDAL.cs" />
+    <Compile Include="DAL\LoginDAL.cs" />
+    <Compile Include="DAL\MenuDAL.cs" />
+    <Compile Include="DAL\NationalParkDAL.cs" />
+    <Compile Include="DAL\OperatorLoginDAL.cs" />
+    <Compile Include="DAL\OperatorRegistrationDAL.cs" />
+    <Compile Include="DAL\PaymentReceiptDAL.cs" />
+    <Compile Include="DAL\PoliceRecruitmentDAL.cs" />
+    <Compile Include="DAL\QuickKIOSKDAL.cs" />
+    <Compile Include="DAL\RecordTopUpDAL.cs" />
+    <Compile Include="DAL\ReversalDAL.cs" />
+    <Compile Include="DAL\SaatBaraDAL.cs" />
+    <Compile Include="DAL\SCARegistrationDAL.cs" />
+    <Compile Include="DAL\SeedDAL.cs" />
+    <Compile Include="DAL\BirthCertificateDAL.cs" />
+    <Compile Include="DAL\SeniorCitizenDAL.cs" />
+    <Compile Include="DAL\SigningAuthorityDAL.cs" />
+    <Compile Include="DAL\SMSDAL.cs" />
+    <Compile Include="DAL\SPVReceiveDAL.cs" />
+    <Compile Include="DAL\SuggestionDetailDAL.cs" />
+    <Compile Include="DAL\SupervisorDAL.cs" />
+    <Compile Include="DAL\TopUpApprovalDAL.cs" />
+    <Compile Include="DAL\TopupWalletDAL.cs" />
+    <Compile Include="DAL\TransactionSummaryDAL.cs" />
+    <Compile Include="DAL\VLEKIOSKDAL.cs" />
+    <Compile Include="DAL\VLEMISDAL.cs" />
+    <Compile Include="DAL\VLEUIDDAL.cs" />
+    <Compile Include="DAL\WorkFlowDAL.cs" />
+    <Compile Include="DataStructs\DataStructs.cs" />
+    <Compile Include="EmailHelper.cs" />
+    <Compile Include="EMailSMS.cs" />
+    <Compile Include="ExceptionHandler.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="Num2Wrd.cs" />
+    <Compile Include="PortalViewModel\BaseModel.cs" />
+    <Compile Include="PortalViewModel\MenuDataModel.cs" />
+    <Compile Include="PortalViewModel\PortalViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryBuilder.cs" />
+    <Compile Include="QueryStringEncryptDecrypt.cs" />
+    <Compile Include="RandomPasswordGenerator.cs" />
+    <Compile Include="Resources\EmployeeInfo.de.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeInfo.de.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\EmployeeInfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeInfo.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Global.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Service.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Service.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Service.hi-IN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Service.hi-IN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Security.cs" />
+    <Compile Include="Service References\SMSServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceInterface\IAddressService.cs" />
+    <Compile Include="ServiceInterface\IFisheriesService.cs" />
+    <Compile Include="SessionHelper.cs" />
+    <Compile Include="SqlHelper.cs" />
+    <Compile Include="UID\AuthRes.cs" />
+    <Compile Include="UID\Helper.cs" />
+    <Compile Include="UID\KuaKsaRes.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\EmployeeInfo.de.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EmployeeInfo.de.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\EmployeeInfo.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>EmployeeInfo.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Global.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Global.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Service.hi-IN.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Service.hi-IN.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Service.or-IN.resx" />
+    <EmbeddedResource Include="Resources\Service.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Service.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Service References\SMSServiceReference\PushService.svc.wsdl" />
+    <None Include="Service References\SMSServiceReference\service.wsdl" />
+    <None Include="Service References\SMSServiceReference\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SMSServiceReference\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SMSServiceReference\SMSGateway.Contracts.Data.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SMSServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SMSServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SMSServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\SMSServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
