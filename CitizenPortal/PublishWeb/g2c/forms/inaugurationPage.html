@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
+    <script src="../js/curtain.jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            start();
+        });
+        function open_curtain() {
+            $("#curtain1").animate({ width: 20 }, 1000);
+            $("#curtain2").animate({ width: 20 }, 1000);
+        }
+        function close_curtain() {
+            $("#curtain1").animate({ width: 496 }, 1000);
+            $("#curtain2").animate({ width: 499 }, 1000);
+        }
+        function start() {
+            $("#curtain1").animate({ width: 500 }, 1000);
+            $("#curtain2").animate({ width: 500 }, 1000);
+        }
+    </script>
+    <script>
+        setInterval("$('.blink').fadeOut(250).fadeIn(250);", 2000);
+    </script>
+
+    <style>
+        body {
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0px;
+            font-family: helvetica;
+            background-color: #610B0B;
+        }
+
+        #wrapper {
+            text-align: center;
+            margin: 0 auto;
+            padding: 0px;
+            width: 995px;
+        }
+
+        #effect {
+            background-color: #fff;
+            position: relative;
+            /* width: 380px; */
+            height: 550px;
+             margin-top: 20px; 
+            box-shadow: 0px 0px 10px 0px #610B0B;
+        }
+
+            #effect p {
+                padding-top: 100px;
+                margin-top: 10px;
+                font-size: 30px;
+                color: #610B0B;
+            }
+
+        #curtain1 {
+            top: 0px;
+            position: absolute;
+            left: 0px;
+            height: 550px;
+        }
+
+        #curtain2 {
+            top: 0px;
+            position: absolute;
+            height: 550px;
+            right: 0px;
+        }
+
+        #curtain_buttons input[type="button"] {
+            margin-top: 20px;
+            width: 150px;
+            height: 45px;
+            border-radius: 2px;
+            color: white;
+            background-color: #B43104;
+            border: none;
+            border-bottom: 6px solid #8A2908;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="wrapper">
+
+        <div id="effect">
+            <div style="padding-top:100px;">
+                <img src="../img/lokaseba_logo.png" />
+                <img src="../img/odisha_logo_inaugrationpage.png" /><br />
+                <span style="font-size:30px; color:#610B0B;">Welcome to</span>
+                <div>
+                    <span style="color:#FF5113; font-size:45px;">LOKASEBA ADHIKARA</span><br />
+                    <span style="font-size:18px; color:#000; letter-spacing:0.26em; display:block;">COMMON APPLICATION PORTAL (CAP)</span>
+                    <span style="font-size:14px; color:#000; letter-spacing:0.43em;">AN INITIATIVE OF ODISHA GOVERNMENT</span><br /><br />
+                </div>
+                <a href="https://lokaseba-odisha.in/g2c/forms/index_odia.aspx" class="blink" style="background-color:#610B0B; padding:10px; margin-top:10px; font-size:14px !important; color:#fff; letter-spacing:0.1em; text-decoration:none; font-weight:bold; border:1px solid #fff;">Continue <i class="fa fa-angle-double-right"></i></a>
+                <!--<input type="button" value="Go to Website" style="background-color:yellow; padding:10px; margin-top:10px; font-weight:bold; border:1px solid #fff;">-->
+            </div>
+            <img src="../img/curtain1.jpg" id="curtain1">
+            <img src="../img/curtain2.jpg" id="curtain2">
+        </div>
+
+        <div id="curtain_buttons">
+            <input type="button" value="OPEN CURTAIN" onclick="open_curtain();">
+            <!--<input type="button" value="CLOSE CURTAIN" onclick="close_curtain();">-->
+        </div>
+
+    </div>
+</body>
+</html>

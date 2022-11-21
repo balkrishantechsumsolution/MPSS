@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="CitizenPortal.Sambalpur.master.Home" %>
+
+<%@ Register Src="~/Sambalpur/controls/Header.ascx" TagPrefix="uc1" TagName="Header" %>
+<%--<%@ Register Src="~/Sambalpur/controls/Footer.ascx" TagPrefix="uc1" TagName="Footer" %>--%>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Chhattisgarh Swami Vivekanad Technical University, Raipur, Chhattisgarh.</title>
+    <link href="/Sambalpur/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="/Sambalpur/css/font-awesome.min.css" type="text/css" rel="stylesheet" />
+    <link href="/Sambalpur/css/homestyle.css" type="text/css" rel="stylesheet" />
+    <link href="/Sambalpur/css/normalize.min.css" rel="stylesheet" />
+
+    <script src="/Sambalpur/js/jquery-2.2.3.min.js" type="text/javascript"></script>
+    
+    <!-- IE10 viewport hack START for Surface/desktop Windows 8 bug -->
+    <link href="/Sambalpur/css/ie10-viewport-bug-workaround.css" type="text/css" rel="stylesheet" />
+    <script src="/Sambalpur/js/ie-emulation-modes-warning.js" type="text/javascript"></script>
+    <!-- IE10 viewport hack END for Surface/desktop Windows 8 bug -->
+    <script src="../../WebApp/Scripts/DisableBackButton.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="/Sambalpur/js/html5shiv.js" type="text/javascript"></script>
+        <script src="/Sambalpur/js/respond.min.js" type="text/javascript"></script>
+    <![endif]-->
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <uc1:Header runat="server" id="Header" />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <%--<uc1:Footer runat="server" id="Footer" />--%>
+        </div>
+    </form>
+     <script src="/Sambalpur/js/bootstrap.min.js" type="text/javascript"></script>
+     <%--Modal JS START HERE--%>
+    <script src="/Sambalpur/js/velocity.min.js" type="text/javascript"></script>
+    <script src="/Sambalpur/js/velocity.ui.min.js" type="text/javascript"></script>
+    <script src="/Sambalpur/js/modaleffect.js" type="text/javascript"></script>
+    <%--Modal JS ENd HERE--%>
+</body>
+</html>

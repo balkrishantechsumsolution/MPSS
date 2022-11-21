@@ -1,0 +1,2368 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from kodeforest.net/html/uoe/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Sep 2022 08:23:51 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maharshi Patanjali Sanskrit Sansthan Bhopal</title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Full Calender CSS -->
+    <link href="assets/css/fullcalendar.css" rel="stylesheet">
+    <!-- Owl Carousel CSS -->
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <!-- Pretty Photo CSS -->
+    <link href="assets/css/prettyPhoto.css" rel="stylesheet">
+    <!-- Bx-Slider StyleSheet CSS -->
+    <link href="assets/css/jquery.bxslider.css" rel="stylesheet">
+    <!-- Font Awesome StyleSheet CSS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <!-- DL Menu CSS -->
+    <link href="assets/js/dl-menu/component.css" rel="stylesheet">
+    <link href="assets/svg/style.css" rel="stylesheet">
+    <!-- Widget CSS -->
+    <link href="assets/css/widget.css" rel="stylesheet">
+    <!-- Typography CSS -->
+    <link href="assets/css/typography.css" rel="stylesheet">
+    <!-- Shortcodes CSS -->
+    <link href="assets/css/shortcodes.css" rel="stylesheet">
+    <!-- Custom Main StyleSheet CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Color CSS -->
+    <link href="assets/css/color.css" rel="stylesheet">
+    <!-- Responsive CSS -->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <!-- SELECT MENU -->
+    <link href="assets/css/selectric.css" rel="stylesheet">
+    <!-- SIDE MENU -->
+    <link rel="stylesheet" href="assets/css/jquery.sidr.dark.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+    <style>
+        @media only screen and (max-width: 1300px) {
+            .container {
+                width: 1206px;
+            }
+        }
+
+        .dl-menuwrapper button {
+            border: none;
+            width: 40px;
+            height: 40px;
+            text-indent: -900em;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            outline: none;
+            background: #333;
+            padding: 0px;
+            border-radius: 0;
+            margin-top: -65px;
+        }
+
+        h1, h2, h3, h4, h5, h6, p li, a {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .logo {
+            margin: 10px 0px;
+            width: 375px;
+        }
+
+        .chipguste {
+            height: 100px;
+            border-radius: 100px;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        tr:hover {
+            background: #f35300;
+            color: #fff;
+        }
+
+        tr a:hover {
+            color: #fff;
+        }
+
+        #scolling {
+            background-color: #333;
+            position: fixed;
+            top: -50px;
+            width: 100%;
+            display: block;
+            transition: top 0.3s;
+        }
+
+            #scolling a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 15px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+                #scolling a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+        .domine_name {
+            font-size: 32px;
+            font-weight: 800;
+            color: #000;
+        }
+
+        .sub_domine_name {
+            font-size: 20px;
+            font-weight: 650;
+            color: #000;
+        }
+
+        .slider {
+            width: 300%;
+            transition: all .5s;
+        }
+
+            .slider li {
+                display: inline-block;
+                width: 200px;
+                margin: 0 1%;
+                padding-bottom: 2em;
+            }
+
+                .slider li:first-child {
+                    margin-left: 0;
+                }
+                /*Content*/
+                .slider li > * {
+                    max-width: 100%;
+                }
+                /*Cover*/
+                .slider li .cover {
+                    position: relative;
+                    display: inline-block;
+                    border-radius: 6px;
+                    b ox-sizing: border-box;
+                    overflow: hidden;
+                    margin-bottom: 1em;
+                }
+
+                    .slider li .cover img {
+                        display: block;
+                        width: 100%;
+                    }
+
+                    .slider li .cover:before {
+                        display: block;
+                        content: ' ';
+                        background: rgba(247, 247, 247, 0);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .slider li .cover:hover:before {
+                        background: rgba(247, 247, 247, .5);
+                        transition: all .2s;
+                    }
+                /*Informations*/
+                .slider li p {
+                    line-height: 1.3;
+                    color: #38373a;
+                }
+
+                    .slider li p a {
+                        color: #ff8f00;
+                    }
+        /*Buttons*/
+        /*
+         The transition, added in CSS, will do the 'fadeIn' and the 'fadeOut' we can do in jQuery.
+         */
+        .sliderComplete button {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            padding: 1em 2em;
+            border: none;
+            background: #f0f0f0;
+            transition: all ease-in-out .5s;
+        }
+
+            .sliderComplete button[title="before"] {
+                left: 0;
+            }
+
+            .sliderComplete button[title="after"] {
+                right: 0;
+            }
+
+            .sliderComplete button.close {
+                opacity: 0;
+            }
+
+            .sliderComplete button.open {
+                opacity: .8;
+            }
+        /*Onclick*/
+        /*The transition will allow the smooth animation of the slider.*/
+        .turn {
+            margin-left: -75%;
+            transition: all .5s;
+        }
+
+        @media screen and (max-width:800px) {
+            /*
+         This prevents a potential overflow on the height and overflow allows the width for responsive. The scroll bar is not visible in any way on mobile.
+         */
+            .sliderComplete .wrapper {
+                overflow-x: scroll;
+                overflow-y: hidden;
+            }
+
+            .slider {
+                width: 200%;
+            }
+
+                .slider li {
+                    width: 14%;
+                }
+
+                    .slider li .cover {
+                        width: 100%;
+                    }
+        }
+
+        @media screen and (orientation:portrait) {
+            .sliderComplete .wrapper {
+                overflow-x: scroll;
+                overflow-y: hidden;
+            }
+
+            .slider {
+                width: 200%;
+            }
+
+                .slider li {
+                    width: 14%;
+                }
+
+                    .slider li .cover {
+                        width: 100%;
+                    }
+
+            .sliderComplete button,
+            .sliderComplete button.close,
+            .sliderComplete button.open {
+                display: none;
+                opacity: 0;
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            .chipguste {
+                display: none;
+            }
+        }
+
+        #mixedSlider {
+            position: relative;
+        }
+
+            #mixedSlider .MS-content {
+                white-space: nowrap;
+                overflow: hidden;
+                margin: 0 5%;
+            }
+
+                #mixedSlider .MS-content .item {
+                    display: inline-block;
+                    width: 33.3333%;
+                    position: relative;
+                    vertical-align: top;
+                    overflow: hidden;
+                    height: 100%;
+                    white-space: normal;
+                    padding: 0 10px;
+                }
+
+        @media (max-width: 991px) {
+            #mixedSlider .MS-content .item {
+                width: 50%;
+            }
+        }
+
+        @media (max-width: 767px) {
+            #mixedSlider .MS-content .item {
+                width: 100%;
+            }
+        }
+
+        #mixedSlider .MS-content .item .imgTitle {
+            position: relative;
+        }
+
+            #mixedSlider .MS-content .item .imgTitle .blogTitle {
+                margin: 0;
+                text-align: left;
+                letter-spacing: 2px;
+                color: #252525;
+                font-style: italic;
+                position: absolute;
+                background-color: rgba(255, 255, 255, 0.5);
+                width: 100%;
+                bottom: 0;
+                font-weight: bold;
+                padding: 0 0 2px 10px;
+            }
+
+            #mixedSlider .MS-content .item .imgTitle img {
+                height: auto;
+                width: 100%;
+            }
+
+        #mixedSlider .MS-content .item p {
+            font-size: 16px;
+            margin: 2px 10px 0 5px;
+            text-indent: 15px;
+        }
+
+        #mixedSlider .MS-content .item a {
+            float: right;
+            margin: 0 20px 0 0;
+            font-size: 16px;
+            font-style: italic;
+            color: rgba(173, 0, 0, 0.82);
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: linear 0.1s;
+        }
+
+            #mixedSlider .MS-content .item a:hover {
+                text-shadow: 0 0 1px grey;
+            }
+
+        #mixedSlider .MS-controls button {
+            position: absolute;
+            border: none;
+            background-color: transparent;
+            outline: 0;
+            font-size: 50px;
+            top: 33px;
+            color: rgba(0, 0, 0, 0.4);
+            transition: 0.15s linear;
+        }
+
+            #mixedSlider .MS-controls button:hover {
+                color: rgba(0, 0, 0, 0.8);
+            }
+
+        @media (max-width: 992px) {
+            #mixedSlider .MS-controls button {
+                font-size: 30px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            #mixedSlider .MS-controls button {
+                font-size: 20px;
+            }
+        }
+
+        #mixedSlider .MS-controls .MS-left {
+            left: 0px;
+        }
+
+        @media (max-width: 767px) {
+            #mixedSlider .MS-controls .MS-left {
+                left: -10px;
+            }
+        }
+
+        #mixedSlider .MS-controls .MS-right {
+            right: 0px;
+        }
+
+        @media (max-width: 767px) {
+            #mixedSlider .MS-controls .MS-right {
+                right: -10px;
+            }
+        }
+
+        #basicSlider {
+            position: relative;
+        }
+
+            #basicSlider .MS-content {
+                white-space: nowrap;
+                overflow: hidden;
+                margin: 0 2%;
+                height: 50px;
+            }
+
+                #basicSlider .MS-content .item {
+                    display: inline-block;
+                    width: 20%;
+                    position: relative;
+                    vertical-align: top;
+                    overflow: hidden;
+                    height: 100%;
+                    white-space: normal;
+                    line-height: 50px;
+                    vertical-align: middle;
+                }
+
+        @media (max-width: 991px) {
+
+            #basicSlider .MS-content .item {
+                width: 25%;
+            }
+        }
+
+        @media (max-width: 767px) {
+
+            #basicSlider .MS-content .item {
+                width: 35%;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            #basicSlider .MS-content .item {
+                width: 50%;
+            }
+        }
+
+        #basicSlider .MS-content .item a {
+            line-height: 50px;
+            vertical-align: middle;
+        }
+
+        #basicSlider .MS-controls button {
+            position: absolute;
+        }
+
+        #basicSlider .MS-controls .MS-left {
+            top: 35px;
+            left: 10px;
+        }
+
+        #basicSlider .MS-controls .MS-right {
+            top: 35px;
+            right: 10px;
+        }
+    </style>
+    <script src="../../../Scripts/jquery-2.2.3.min.js"></script>
+    <script type='text/javascript'>
+
+        function check() {
+            var url = "/Account/Login";
+            window.location.href = url;
+            window.location.assign(url);
+            window.location = url;
+            window.location.replace = url;
+            return false;
+        }
+
+
+
+        //function check() {
+        //    alert(1);
+        //    ////var url = '@Url.Content("~/")' + "/Account/Login";
+        //    //var url = "/Account/Login";
+        //    //window.location.href = url;
+        //    //window.location.assign(url);
+        //    //window.location = url;
+        //    //window.location.replace = url;
+        //}
+
+
+
+    </script>
+</head>
+<body>
+    <header id="header_2">
+        <!--kode top bar start-->
+        <div class="top_bar_2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="pull-left">
+                            <em class="contct_2"><i class="fa fa-phone"></i> Call Us  on 0800 123 46 4747</em>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="lng_wrap">
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <i class="fa fa-globe"></i>Language
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#"><i><img src="images/english.jpg" alt=""></i>English</a></li>
+                                    <li><a href="#"><i><img src="images/german.jpg" alt=""></i>German</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="login_wrap">
+                            <li><a href="#" data-toggle="modal" data-target="#reg-box"><i class="fa fa-user"></i>Register</a></li>
+                            <li><a href="#" onclick='return check()' data-toggle="modal" data-target="#signin-box"><i class="fa fa-sign-in"></i>Sign In</a></li>
+                        </ul>
+                        <ul class="top_nav">
+                            <li><a href="blog-detail.html">News</a></li>
+                            <li><a href="event-detail.html">Event</a></li>
+                            <li><a href="our-courses.html">Giving</a></li>
+                            <li><a href="contactus.html">contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--kode top bar end-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <img src="assets/images/logo/mpss-logo.png" class="logo">
+                </div>
+                <div class="col-md-5 chipguste-img">
+                    <div class="col-md-4">
+                        <div class="">
+                            <img src="assets/images/header/CM-SSC.jpg" class="chipguste">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/images/header/download.jpg" class="chipguste">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/images/header/chairman.jpg" class="chipguste">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--kode navigation start-->
+        <div class="kode_navigation" style="background:#ff9154">
+            <div id="mobile-header">
+                <a id="responsive-menu-button" href="#sidr-main"><i class="fa fa-bars"></i></a>
+            </div>
+            <div class="container ">
+                <div class="">
+                    <div class="col-md-12">
+                        <div class="nav_2 " id="navigation">
+                            <ul class="nav justify-content-center">
+
+                                <li><a href=""> होम</a></li>
+                                <li>
+                                    <a href="">संस्था के बारे में</a>
+                                    <ul>
+                                        <li>
+                                            <a href="">अधिनियम</a>
+                                            <ul>
+                                                <li><a href="">अधिसूचना / समकक्ष</a></li>
+                                                <li><a href="">संस्थान की उपलब्धिाँ</a></li>
+                                                <li><a href="">महर्षि पतंजलि संस्कृत संस्था भोपाल</a></li>
+                                                <li><a href="">शासकीय योग प्रशिक्षण केंद्र भोपाल</a></li>
+                                                <li><a href="">शासकीय जीवाजी वेधशाला उज्जैन</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href=""> परिषद/समितिया</a>
+                                            <ul>
+                                                <li><a href="">साधारण परिषद</a></li>
+                                                <li><a href="">कार्य परिषद</a></li>
+                                                <li><a href="">विद्या परिषद</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href=""></a>
+                                            <ul>
+                                                <li><a href="">वित्त समिति</a></li>
+                                                <li><a href="">परीक्षा समिति</a></li>
+                                                <li><a href="">पाठयक्रम समिति</a></li>
+                                                <li><a href="">विषय समिति</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="">संबद्ध विद्यालय</a>
+                                    <ul>
+                                        <li><a href="">नवीन सम्बद्धता/सम्बद्वता नवीनीकरण की वार्षिक कार्ययोजना/आवेदन पत्र</a></li>
+                                        <li>
+                                            <a href="">शासकीय संबद्ध विद्यालयम</a>
+                                            <ul>
+                                                <li><a href="">2018-2019</a></li>
+                                                <li><a href="">2017-2018</a></li>
+                                                <li><a href="">2016-2018</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">अशासकीय संबद्ध विद्यालय </a>
+                                            <ul>
+                                                <li><a href="">2018-2019</a></li>
+                                                <li><a href="">2017-2018</a></li>
+                                                <li><a href="">2016-2018</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">वर्ष 2020-21 में सम्बद्धता प्राप्त संस्कृत विद्यालयों की सूची</a></li>
+                                        <li><a href="">सत्र 2019-20 में सम्बद्धता नवीनीेेकरण/नवीन सम्बद्धता प्राप्त संस्कृत विद्यालयों के पूर्ण पते सहित सूची </a></li>
+                                        <li><a href="">शासकीय/अशासकीय संस्कृत विद्यालयों को सत्र २०२१-२२ के लिए नवीन सम्बद्धता /सम्बद्धता नवीनीकरण किये जाने के आदेश की सूची</a></li>
+                                        <li><a href="">शासकीय/अशासकीय संस्कृत विद्यालयों को सत्र २०१९-२० के लिए नवीन सम्बद्धता /सम्बद्धता नवीनीकरण किये जाने के आदेश की सूची(१११०-११११/२६-०६-२०१९ ) </a></li>
+                                        <li><a href="">सत्र २०१८-१९ के सम्बद्धता प्राप्त नवीन एवं नवीनीकरण विधालयों की विस्तृत जानकारी  </a></li>
+                                        <li><a href="">सत्र २०१९-२० में सम्बद्धता प्राप्त नवीनीकरण एवं नवीन विद्यालयों की सूची  </a></li>
+                                        <li><a href="">सत्र २०१८-१९ में सम्बद्ध विद्यालयों की छात्र सूची</a></li>
+                                        <li><a href=""></a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#" class="test" tabindex="-1">अकादमी<span class="caret"></span> </a>
+                                    <ul>
+                                        <li><a href="#">डिप्लोमा</a></li>
+                                        <li><a href="">मॉडल स्कूल</a></li>
+                                        <li><a href="">शासकीय आवासीय कन्या संस्कृत विधालय </a></li>
+                                        <li><a href="">ग्रन्थ</a></li>
+                                        <li><a href="">कार्यशाला</a></li>
+                                        <li><a href="">सम्मेलन</a></li>
+                                        <li><a href="">प्रशिक्षण</a></li>
+                                        <li><a href="">पाठ्य पुस्तके</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="test" tabindex="-1" href="#">परीक्षा <span class="caret"></span></a>
+                                    <ul>
+                                        <li class="dropdown-submenu">
+                                            <a class="test" tabindex="-1" href="#">समय सारणी<span class="caret"></span></a>
+                                            <ul>
+                                                <li><a href="">5,6,7,8,9,10,11,12</a></li>
+                                                <li><a href="#">डिप्लोमा</a></li>
+                                            </ul>
+                                        <li><a href="">परीक्षा परिणाम</a></li>
+                                        <li><a href=""> माइग्रेशन</a></li>
+                                </li>
+                            </ul>
+                            </li>
+                            <li class="">
+                                <a class="test" tabindex="-1" href="#">पाठ्यक्रम <span class="caret"></span></a>
+                                <ul>
+                                    <li class="dropdown-submenu">
+                                        <a class="test" tabindex="-1" href="#">नर्सरी से 12 तक<span class="caret"></span></a>
+                                        <ul>
+                                            <li><a href="#">नर्सरी से 12 तक</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="test" tabindex="-1" href="#">डिप्लोमा पाठ्यक्रम<span class="caret"></span></a>
+                                        <ul>
+                                            <li><a href="#">ज्योतिष्य</a></li>
+                                            <li><a href="#">व्यावहारिक ज्योतिष विज्ञान</a></li>
+                                            <li><a href="#">वास्तुशास्त्र</a></li>
+                                            <li><a href="#">वास्तुशास्त्र प्रथम प्रश्न पत्र</a></li>
+                                            <li><a href="#">पौरोहित कर्मकांड</a></li>
+                                            <li><a href="#">पौरोहित पाठ्यक्रम कालखण्डवार विभाजन</a></li>
+                                            <li><a href="#">योग पाठ्यक्रम</a></li>
+                                            <li><a href="#">पाठ्यक्रम डिप्लोमा इन अप्लाइड योग साइंस</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href=""> चित्रदीर्घा </a></li>
+                            <li><a href="">परिपत्र / आदेश </a></li>
+                            <!--  <li><a href="">पंचांग</a></li> -->
+                            <li class="dropdown-submenu">
+                                <a class="test" tabindex="-1" href="#">पंचांग <span class="caret"></span></a>
+                                <ul>
+                                    <li>शैक्षणिक पञ्चांग २०१९-२०२०</li>
+                                    <li class="dropdown-submenu">
+                                        <a class="test" tabindex="-1" href="#">पंचांग - 2019<span class="caret"></span></a>
+                                        <ul>
+                                            <li><a href="">जून - 2019</a></li>
+                                            <li><a href="">जुलाई - 2019</a></li>
+                                            <li><a href="">अगस्त - 2019</a></li>
+                                            <li><a href="">सितम्बर - 2019</a></li>
+                                            <li><a href="">अक्टूबर - 2019</a></li>
+                                            <li><a href="">नवम्बर - 2019</a></li>
+                                            <li><a href="">दिसम्बर - 2019</a></li>
+                                            <li><a href="">जनवरी - 2020</a></li>
+                                            <li><a href="">फरवरी - 2020</a></li>
+                                            <li><a href="">मार्च - 2020</a></li>
+                                            <li><a href="">अप्रैल - 2020</a></li>
+                                            <li><a href="">मई - 2020</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            </li>
+                            <li><a href="">टुटोरिअल</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="test" tabindex="-1" href="#">संपर्क<span class="caret"></span></a>
+                                <ul>
+                                    <li><a href="">महर्षि पतंजलि संस्कृत संस्था भोपाल</a></li>
+                                    <li><a href="">शासकीय योग प्रशिक्षण केंद्र भोपाल</a></li>
+                                    <li><a href="">शासकीय जीवाजी  वेधशाला उज्जैन</a></li>
+                                </ul>
+                            </li>
+                            </ul>
+
+
+
+                        </div>
+                        <!--kode nav_2 end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--kode navigation end-->
+    </header>
+    <div class="edu2_main_bn_wrap">
+        <div id="owl-demo-main" class="owl-carousel owl-theme">
+            <div class="item">
+                <figure>
+                    <img src="assets/extra-images/slider1.jpg" alt="" />
+                </figure>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="assets/extra-images/slider2.jpg" alt="" />
+                </figure>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="assets/extra-images/slider3.jpg" alt="" />
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div class="kf_content_wrap">
+        <div class="kf_course_outerwrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="row">
+                            <!--COURSE CATEGORIES WRAP START-->
+                            <div class="kf_cur_catg_wrap">
+                                <!--COURSE CATEGORIES WRAP HEADING START-->
+                                <div class="col-md-12">
+                                    <div class="kf_edu2_heading1">
+                                        <h3>महत्वपूर्ण सूचना</h3>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <p><i class="fa fa-star" aria-hidden="true"></i> सत्र 2022-23 के नवीन सम्बद्धता एवं सम्बद्धता नवीनीकरण के जारी आदेश।</p>
+                                    <p><i class="fa fa-star" aria-hidden="true"></i> नवीन सम्बद्धता एवं सम्बद्धता नवीनीकरण के आवेदन की तिथि में वृद्धि करने एवं जिन विद्यालयों की विभागीय अनुमति जिला शिक्षा अधिकारी से अप्राप्त है उन्हें बुलवाये जाने हेतु आदेश</p>
+                                    <p><i class="fa fa-star" aria-hidden="true"></i> नवीन सम्बद्धता एवं सम्बद्धता नवीनीकरण के आवेदन की तिथि में वृद्धि करने एवं जिन विद्यालयों की विभागीय अनुमति</p>
+                                    <p><i class="fa fa-star" aria-hidden="true"></i> सत्र 2022-23 के नवीन सम्बद्धता एवं सम्बद्धता नवीनीकरण के जारी आदेश।</p>
+                                    <p><i class="fa fa-star" aria-hidden="true"></i> ई.एफ.ए विद्यालयों में एल.के.जी से कक्षा 12वीं तक की सम्बद्धता प्रदान करने के संबंध में दिशा निर्देशा (सम्बद्धता प्रदान करने हेतु तिथि आगे बढ़ाने)</p>
+                                    <p><i class="fa fa-star" aria-hidden="true"></i> सत्र 2022-23 हेतु नवीन सम्बद्वता/सम्बद्वता नवीनीकरण जारी करने विषयक।</p>
+                                    <p><i class="fa fa-star" aria-hidden="true"></i>शैक्षणिक सत्र 2022-23 हेतु निर्देश।</p>
+                                    <p><i class="fa fa-star" aria-hidden="true"></i> पूर्वमध्यमा प्रथमखण्ड एवं पूर्वमध्यमा द्वितीयखण्ड (कक्षा 9वीं एवं 10वीं) में विहित नवीन पाठ्यक्रम 2021-22 पर आधारित परीक्षा में वेस्ट ऑफ सिक्स के संबंध में स्पष्टीकरण।</p>
+                                    <p><i class="fa fa-star" aria-hidden="true"></i> उत्तरमध्यमा प्रथमखण्ड एवं उत्तरमध्यमा द्वितीयखण्ड (कक्षा 11वीं एवं 12वीं) में विहित नवीन पाठ्यक्रम 2021-22 पर आधारित परीक्षा में वेस्ट ऑफ फाइव (5) के संबंध में स्पष्टीकरण।</p>
+                                    <p><i class="fa fa-star" aria-hidden="true"></i> संस्थान से सम्बद्धता प्राप्त संस्कृत विद्यालयों में शैक्षणिक सत्र 2022-23 के प्रारंभ होने संबंधी आदेश</p>
+                                    <p><i class="fa fa-star" aria-hidden="true"></i>  महर्षि पतंजलि संस्कृत संस्थान से ईएफए स्कूलों को सत्र 2022-23 हेतु नवीन सम्बद्धता प्राप्त आदेश</p>
+                                    <p><i class="fa fa-star" aria-hidden="true"></i>  EFA योजनान्तर्गत अरूण (LKG) एवं उदय (UKG) कक्षाओं में प्रवेश एवं कक्षा संचालन की कार्ययोजना।</p>
+                                    <p><i class="fa fa-star" aria-hidden="true"></i> शासकीय आवासीय कन्या संस्कृत विद्यालय (गार्गी) भोपाल सत्र 2022-23 में कक्षा 7वीं से 11वीं प्रवेश हेतु विज्ञापन</p>
+                                    <p><i class="fa fa-star" aria-hidden="true"></i> म.प्र. शासन, स्कूल शिक्षा विभाग द्वारा योग आयोग गठन का आदेश</p>
+                                    <p><i class="fa fa-star" aria-hidden="true"></i> म.प्र. शासन, स्कूल शिक्षा विभाग द्वारा महर्षि पतंजलि संस्कृत संस्थान से सम्बद्ध प्राच्य गुरूकुल (अशासकीय छात्रावास युक्त) विद्यालयों को आर्थिक सहायता प्रदान किये जाने का स्वीकृति आदेश</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <!-- EDU2 SEARCH WRAP START -->
+                        <div class="kf_edu2_search_wrap">
+                            <div class="kf_edu2_heading1">
+                                <h3>QUESTION BANK</h3>
+                            </div>
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item ">
+                                    <a class="nav-link active" id="pills-nine-tab" data-toggle="pill" href="#pills-nine" role="tab" aria-controls="pills-nine" aria-selected="true">9th  <i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-ten-tab" data-toggle="pill" href="#pills-ten" role="tab" aria-controls="pills-ten" aria-selected="false">10th <i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-eleven-tab" data-toggle="pill" href="#pills-eleven" role="tab" aria-controls="pills-eleven" aria-selected="false">11th <i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-twelve-tab" data-toggle="pill" href="#pills-twelve" role="tab" aria-controls="pills-twelve" aria-selected="false">12th <i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                            <!--  <div class="tab-content" id="pills-tabContent">
+                               <div class="tab-pane fade show active" id="pills-nine" role="tabpanel" aria-labelledby="pills-nine-tab"> -->
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade in active " id="pills-nine" role="tabpanel" aria-labelledby="pills-nine-tab">
+                                    <h4 class="my-3">प्रश्न बैंक : पूर्वमध्यमा प्रथमखंड (9)</h4>
+                                    <table class="table mt-2">
+                                        <thead class="thead-dark" style="background:#dd5d10; color:#fff;">
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Subject</th>
+                                                <th scope="col">Remedial Module</th>
+                                                <th scope="col">Question Bank</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>अंग्रेजी</td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/9th%20english%20remedial%20module.pdf">Click to View</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/9th%20english%20question%20bank.pdf">Click to View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>हिंदी</td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/9th%20hindi%20remedial%20module.pdf">Click to View</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/9th%20hindi%20question%20bank.pdf">Click to View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>गणित</td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/9th%20math%20remedial%20module.pdf">Click to View</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/9th%20maths%20question%20bank.pdf">Click to View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td>विज्ञान</td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/9th%20science%20remedial%20module.pdf">Click to View</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/9th%20%20science%20question%20bank.pdf">Click to View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>सामाजिक विज्ञान</td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/9th%20social%20science%20remedial%20module.pdf">Click to View</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/9th%20social%20science%20question%20bank.pdf">Click to View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td>संस्कृत व्याकरणम्</td>
+                                                <td><a href="">-</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/sanskrut-9class22.pdf">Click to View</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p><a href="http://www.mpssbhopal.org/maharshi-patanjali-sanskritsasthan-9question-answer.php" style="color: #ff843a;">More Information</a></p>
+                                </div>
+                                <div class="tab-pane fade" id="pills-ten" role="tabpanel" aria-labelledby="pills-ten-tab">
+                                    <h4 class="my-3">प्रश्न बैंक : पूर्व मध्यमा द्वितीय खंड (10)</h4>
+                                    <table class="table">
+                                        <thead style="background:#dd5d10; color:#fff;">
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Subject</th>
+                                                <th scope="col">Remedial Module</th>
+                                                <th scope="col">Question Bank</th>
+                                                <th scope="col">Blue Print</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Subject</th>
+                                                <th scope="col">Remedial Module</th>
+                                                <th scope="col">Question Bank</th>
+                                                <th scope="col">Blue Print</th>
+                                            </tr>
+                                            </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>अंग्रेजी</td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/English%20Remedial%2010th.pdf">Click to View</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/English%20question%20bank%2010.pdf">Click to View</a></td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>हिंदी</td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/Hindi%20Remedial%2010th.pdf">Click to View</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/Hindi%20question%20print%2010.pdf">Click to View</a></td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>गणित</td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/maths%20Remedial%2010th.pdf">Click to View</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/math%20question%20bank%2010th.pdf">Click to View</a></td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td>विज्ञान</td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/science%20remedial%2010th.pdf">Click to View</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/science%20quesion%20bank%2010th.pdf">Click to View</a></td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>सामाजिक<br> विज्ञान</td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/social%20science%20Remedial%2010th.pdf">Click to View</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/social%20science%20question%20bank%2010th.pdf">Click to View</a></td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td>ज्योतिषम्-<br>1013</td>
+                                                <td><a href="">-</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/prashna%20bank%20%20jyotisham%20%201013%2010th.pdf">Click to View</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/blu%20print%20jyotisham%201013%2010th.pdf">Click to View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">7</th>
+                                                <td>दर्शनम्-<br>1015</td>
+                                                <td><a href="">-</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/pdf/10-2022/DARSHNAM%201015%20QUESTION%20BANK.pdf">Click to View</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/pdf/10-2022/DARSHNAM%201015%20BLUEPRINT.pdf">Click to View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">8</th>
+                                                <td>योगविज्ञानम्-<br>1016</td>
+                                                <td><a href="">-</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/pdf/10-2022/1016%20yogvigyanam.pdf">Click to View</a></td>
+                                                <td><a href="">-</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">9</th>
+                                                <td>पुराणेतिहास-<br>1019</td>
+                                                <td><a href="">-</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/pdf/10-2022/Blue%20Print%20Sub%20Code-%201019.PDF">Click to View</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/pdf/10-2022/BLUEPRINT-PUROHIT-10.pdf">Click to View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">10</th>
+                                                <td>व्याकरणम्-<br>1001</td>
+                                                <td><a href="">-</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/pdf/10-2022/Sub%20Code-1001-10th.pdf">Click to View</a></td>
+                                                <td><a href="">-</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">11</th>
+                                                <td>साहित्यम् -<br>1004</td>
+                                                <td><a href="">-</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/pdf/10-2022/Sub%20Code-1004_10th.pdf">Click to View</a></td>
+                                                <td><a href="">-</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">12</th>
+                                                <td>दर्शनम्-1010</td>
+                                                <td><a href="">-</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/pdf/10-2022/Sub%20Code-1010_10th.PDF">Click to View</a></td>
+                                                <td><a href="">-</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">13</th>
+                                                <td>नव्य व्याकरण- 1003</td>
+                                                <td><a href="">-</a></td>
+                                                <td><a href="">-</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/pdf/10-2022/10th%20%E0%A4%A8%E0%A4%B5%E0%A5%8D%E0%A4%AF%20%E0%A4%B5%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%95%E0%A4%B0%E0%A4%A3%201003.pdf">Click to View</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- <table class="table mt-2">
+                                       <thead class="thead-dark" style="background:#dd5d10; color:#fff;">
+                                          <tr>
+                                             <th scope="col">#</th>
+                                             <th scope="col">Subject</th>
+                                             <th scope="col">Remedial Module</th>
+                                             <th scope="col">Question Bank</th>
+                                             <th scope="col">Blue Print</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                             <th scope="row">1</th>
+                                             <td>अंग्रेजी</td>
+                                             <td><a href="http://www.mpssbhopal.org/vimarsh/English%20Remedial%2010th.pdf">Click to View</a></td>
+                                             <td><a href="http://www.mpssbhopal.org/vimarsh/English%20question%20bank%2010.pdf">Click to View</a></td>
+                                             <td>-</td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">2</th>
+                                             <td>हिंदी</td>
+                                             <td><a href="http://www.mpssbhopal.org/vimarsh/Hindi%20Remedial%2010th.pdf">Click to View</a></td>
+                                             <td><a href="http://www.mpssbhopal.org/vimarsh/Hindi%20question%20print%2010.pdf">Click to View</a></td>
+                                             <td>-</td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">3</th>
+                                             <td>गणित</td>
+                                             <td><a href="http://www.mpssbhopal.org/vimarsh/maths%20Remedial%2010th.pdf">Click to View</a></td>
+                                             <td><a href="http://www.mpssbhopal.org/vimarsh/math%20question%20bank%2010th.pdf">Click to View</a></td>
+                                             <td>-</td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">4</th>
+                                             <td>विज्ञान</td>
+                                             <td><a href="http://www.mpssbhopal.org/vimarsh/science%20remedial%2010th.pdf">Click to View</a></td>
+                                             <td><a href="http://www.mpssbhopal.org/vimarsh/science%20quesion%20bank%2010th.pdf">Click to View</a></td>
+                                             <td>-</td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">5</th>
+                                             <td>सामाजिक विज्ञान</td>
+                                             <td><a href="http://www.mpssbhopal.org/vimarsh/social%20science%20Remedial%2010th.pdf">Click to View</a></td>
+                                             <td><a href="http://www.mpssbhopal.org/vimarsh/social%20science%20question%20bank%2010th.pdf">Click to View</a></td>
+                                             <td>-</td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">6</th>
+                                             <td>ज्योतिषम्-1013</td>
+                                             <td><a href="">-</a></td>
+                                             <td><a href="http://www.mpssbhopal.org/vimarsh/prashna%20bank%20%20jyotisham%20%201013%2010th.pdf">Click to View</a></td>
+                                             <td><a href="http://www.mpssbhopal.org/vimarsh/blu%20print%20jyotisham%201013%2010th.pdf">Click to View</a></td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">7</th>
+                                             <td>दर्शनम्-1015</td>
+                                             <td><a href="">-</a></td>
+                                             <td><a href="http://www.mpssbhopal.org/pdf/10-2022/DARSHNAM%201015%20QUESTION%20BANK.pdf">Click to View</a></td>
+                                             <td><a href="http://www.mpssbhopal.org/pdf/10-2022/DARSHNAM%201015%20BLUEPRINT.pdf">Click to View</a></td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">8</th>
+                                             <td>योगविज्ञानम्-1016</td>
+                                             <td><a href="">-</a></td>
+                                             <td><a href="http://www.mpssbhopal.org/pdf/10-2022/1016%20yogvigyanam.pdf">Click to View</a></td>
+                                             <td><a href="">-</a></td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">9</th>
+                                             <td>पुराणेतिहासः-1019</td>
+                                             <td><a href="">-</a></td>
+                                             <td><a href="http://www.mpssbhopal.org/pdf/10-2022/Blue%20Print%20Sub%20Code-%201019.PDF">Click to View</a></td>
+                                             <td><a href="http://www.mpssbhopal.org/pdf/10-2022/BLUEPRINT-PUROHIT-10.pdf">Click to View</a></td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">10</th>
+                                             <td>व्याकरणम्-1001</td>
+                                             <td><a href="">-</a></td>
+                                             <td><a href="http://www.mpssbhopal.org/pdf/10-2022/Sub%20Code-1001-10th.pdf">Click to View</a></td>
+                                             <td><a href="">-</a></td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">11</th>
+                                             <td>साहित्यम्् -1004</td>
+                                             <td><a href="">-</a></td>
+                                             <td><a href="http://www.mpssbhopal.org/pdf/10-2022/Sub%20Code-1004_10th.pdf">Click to View</a></td>
+                                             <td><a href="">-</a></td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">12</th>
+                                             <td>दर्शनम्-1010</td>
+                                             <td><a href="">-</a></td>
+                                             <td><a href="http://www.mpssbhopal.org/pdf/10-2022/Sub%20Code-1010_10th.PDF">Click to View</a></td>
+                                             <td><a href="">-</a></td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">13</th>
+                                             <td>नव्य व्याकरण- 1003</td>
+                                             <td><a href="">-</a></td>
+                                             <td><a href="">-</a></td>
+                                             <td><a href="http://www.mpssbhopal.org/pdf/10-2022/10th%20%E0%A4%A8%E0%A4%B5%E0%A5%8D%E0%A4%AF%20%E0%A4%B5%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%95%E0%A4%B0%E0%A4%A3%201003.pdf">Click to View</a></td>
+                                          </tr>
+                                       </tbody>
+                                       </table>
+                                       <p><a href="http://www.mpssbhopal.org/maharshipatanjalisanskritsasthan-question-answer.php" style="color: #ff843a;">More Information</a></p>
+                                       </div>
+                                       <div class="tab-pane fade" id="pills-eleven" role="tabpanel" aria-labelledby="pills-eleven-tab">
+                                       <h4 class="my-3">प्रश्न बैंक : उत्तर मध्यमा प्रथमखंड (11th)</h4>
+                                       <table class="table mt-2">
+                                       <thead class="thead-dark" style="background:#dd5d10; color:#fff;">
+                                          <tr>
+                                             <th scope="col">#</th>
+                                             <th scope="col">Subject</th>
+                                             <th scope="col">Question Bank</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                             <th scope="row">1</th>
+                                             <td>अंग्रेजी</td>
+                                             <td><a href="http://www.mpssbhopal.org/vimarsh/11%20english%20question%20bank.pdf">Click to View</a></td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">2</th>
+                                             <td>गणित</td>
+                                             <td><a href="http://www.mpssbhopal.org/vimarsh/11th%20math%20question%20bank.pdf">Click to View</a></td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">3</th>
+                                             <td>पुस्तपालन एवं लेखाकर्म</td>
+                                             <td><a href="http://www.mpssbhopal.org/vimarsh/11th%20book%20keeping%20&%20accountancy.pdf">Click to View</a></td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">4</th>
+                                             <td>व्यवसायिक अध्ययन</td>
+                                             <td><a href="http://www.mpssbhopal.org/vimarsh/11th%20business%20studies%20question%20bank.pdf">Click to View</a></td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">5</th>
+                                             <td>रसायन</td>
+                                             <td><a href="http://www.mpssbhopal.org/vimarsh/11th%20chemistry%20question%20bank.pdf">Click to View</a></td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">6</th>
+                                             <td>भौतिक शास्त्र</td>
+                                             <td><a href="http://www.mpssbhopal.org/vimarsh/11th%20physics%20question%20bank.pdf">Click to View</a></td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">7</th>
+                                             <td>भूगोल</td>
+                                             <td><a href="http://www.mpssbhopal.org/vimarsh/11th%20geography%20question%20bank.pdf">Click to View</a></td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">8</th>
+                                             <td>इतिहास</td>
+                                             <td><a href="http://www.mpssbhopal.org/vimarsh/11th%20history%20question%20bank.pdf">Click to View</a></td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">9</th>
+                                             <td>राजनीति शास्त्र</td>
+                                             <td><a href="http://www.mpssbhopal.org/vimarsh/11th%20political%20science%20question%20bank.pdf">Click to View</a></td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">10</th>
+                                             <td>अर्थशास्त्र</td>
+                                             <td><a href="http://www.mpssbhopal.org/vimarsh/11th%20economics%20question%20bank.pdf">Click to View</a></td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">11</th>
+                                             <td>जीव विज्ञान</td>
+                                             <td><a href="http://www.mpssbhopal.org/vimarsh/11th%20biology%20question%20bank.pdf">Click to View</a></td>
+                                          </tr>
+                                          <tr>
+                                             <th scope="row">12</th>
+                                             <td>संस्कृत व्याकरण - 1101</td>
+                                             <td><a href="http://www.mpssbhopal.org/vimarsh/%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B6%E0%A5%8D%E0%A4%A8%20%E0%A4%AC%E0%A5%88%E0%A4%82%E0%A4%95%20%E0%A4%B8%E0%A4%82%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A5%83%E0%A4%A4%20%E0%A4%B5%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%95%E0%A4%B0%E0%A4%A3%20(1101),%E0%A4%89.%E0%A4%AE%E0%A4%BE.%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A5%E0%A4%AE%20%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%B7%202021-22.pdf">Click to View</a></td>
+                                          </tr> -->
+                                    </tbody>
+                                    </table>
+                                    <p><a href="http://www.mpssbhopal.org/maharshipatanjalisanskritsasthan-question-answer-11.php" style="color: #ff843a;">More Information</a></p>
+                                </div>
+                                <div class="tab-pane fade" id="pills-twelve" role="tabpanel" aria-labelledby="pills-twelve-tab">
+                                    <h4 class="my-3">प्रश्न बैंक : उत्तर मध्यमा प्रथमखंड (12th)</h4>
+                                    <table class="table mt-2">
+                                        <thead class="thead-dark" style="background:#dd5d10; color:#fff;">
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Subject</th>
+                                                <th scope="col">Question Bank</th>
+                                                <th scope="col">Blue Print</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>हिंदी</td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/hindi%2012th%20question%20bank.pdf">Click to View</a></td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>संस्कृत</td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/SANSKRIT%20VYAKRAN%201201%20QUESTION%20BANK.pdf">Click to View</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/blue%20print%201201sanskrit%20vyakaran.pdf">Click to View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>अंग्रेजी</td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/english%2012th%20question%20bank.pdf">Click to View</a></td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td>गणित</td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/12th%20maths%20question%20bank.pdf">Click to View</a></td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>पुस्तपालन एवं लेखाकर्म</td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/12th%20book%20keeping%20&%20accountancy.pdf">Click to View</a></td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td>व्यवसायिक अध्ययन</td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/12th%20business%20study%20question%20bank.pdf">Click to View</a></td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">7</th>
+                                                <td>रसायन</td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/12th%20chemistry%20question%20bank.pdf">Click to View</a></td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">8</th>
+                                                <td>भौतिक शास्त्र</td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/12th%20physics%20question%20bank.pdf">Click to View</a></td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">9</th>
+                                                <td>भूगोल</td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/12th%20geography%20question%20bank.pdf">Click to View</a></td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">10</th>
+                                                <td>इतिहास</td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/12th%20history%20question%20bank.pdf">Click to View</a></td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">11</th>
+                                                <td>राजनीति शास्त्र</td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/12th%20political%20science%20question%20bank.pdf">Click to View</a></td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">12</th>
+                                                <td>अर्थशास्त्र</td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/12th%20economics%20question%20bank.pdf">Click to View</a></td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">13</th>
+                                                <td>दर्शनम् -1221</td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/DARSHNAM%201221%20QUESTION%20BANK.pdf">Click to View</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/vimarsh/blue%20print%201221%20darshnam.pdf">Click to View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">14</th>
+                                                <td>नव्यव्याकरणम्- 1203</td>
+                                                <td><a href="http://www.mpssbhopal.org/pdf/12-2022/Sub%20Code-1203_12th.PDF">Click to View</a></td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">15</th>
+                                                <td>पुराणेतिहासः - 1223</td>
+                                                <td><a href="http://www.mpssbhopal.org/pdf/12-2022/Sub%20Code-1223_12th.pdf">Click to View</a></td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">16</th>
+                                                <td>ज्योतिषम् - 1224</td>
+                                                <td><a href="http://www.mpssbhopal.org/pdf/12-2022/Sub%20Code-1224_12th.PDF">Click to View</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/pdf/12-2022/1224-blueprint.pdf">Click to View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">17</th>
+                                                <td>योगविज्ञानम्- 1226</td>
+                                                <td><a href="http://www.mpssbhopal.org/pdf/12-2022/Sub%20Code-1226_12th.PDF">Click to View</a></td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">18</th>
+                                                <td>वैद- 1219</td>
+                                                <td><a href="http://www.mpssbhopal.org/pdf/12-2022/S.No-_01.PDF">Click to View</a></td>
+                                                <td><a href="http://www.mpssbhopal.org/pdf/12-2022/1219-blueprint.pdf">Click to View</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">19</th>
+                                                <td>प्राचीननव्याकरण</td>
+                                                <td><a href="http://www.mpssbhopal.org/pdf/12-2022/150%20Qustion%2012th%20Prachya%20vyakaran.pdf">Click to View</a></td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">20</th>
+                                                <td>पौरोहित्यम्</td>
+                                                <td><a href="http://www.mpssbhopal.org/pdf/12-2022/Code%201225_12th.PDF">Click to View</a></td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">21</th>
+                                                <td>संस्कृत साहित्यम्(1-7)</td>
+                                                <td><a href="">-</a></td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">22</th>
+                                                <td>संस्कृत साहित्यम्(1-18)</td>
+                                                <td><a href="">-</a></td>
+                                                <td>-</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p><a href="http://www.mpssbhopal.org/maharshipatanjalisanskritsasthan-question-answer-12.php" style="color: #ff843a;">More Information</a></p>
+                                </div>
+                            </div>
+                            <!-- FORM END -->
+                        </div>
+                        <!-- EDU2 SEARCH WRAP END -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section>
+            <section class="kf_edu2_intro_wrap">
+                <div class="kf_intro_des_wrap">
+                    <!-- HEADING 2 START-->
+                    <div class="col-md-12">
+                        <div class="kf_edu2_heading2">
+                            <h3>Welcome To Maharishi Patanjali Sanskrit Sansthan</h3>
+                        </div>
+                    </div>
+                    <!-- HEADING 2 END-->
+                    <!-- INTERO DES START-->
+                    <div class="kf_intro_des">
+                        <div class="kf_intro_des_caption">
+                            <span><i class="icon-earth132"></i></span>
+                            <h6>BOOKS & LIBRARY</h6>
+                            <p>World Largest books and library center is here where you can study the latest trends of the education.</p>
+                            <a href="#">view more</a>
+                        </div>
+                        <figure>
+                            <a href="http://www.mpssbhopal.org/pdf/yoga-club-2021.pdf"><img src="assets/images/yogclub.jpg" alt="" / style="    height: 73px;"></a>
+                            <!--  <figcaption><a href="">Learn Courses Online</a></figcaption> -->
+                        </figure>
+                    </div>
+                    <!-- INTERO DES END-->
+                    <!-- INTERO DES START-->
+                    <div class="kf_intro_des">
+                        <div class="kf_intro_des_caption">
+                            <span><i class="icon-educational18"></i></span>
+                            <h6>Learn Courses Online</h6>
+                            <p>World Largest books and library center is here where you can study the latest trends of the education.</p>
+                            <a href="#">view more</a>
+                        </div>
+                        <figure>
+                            <a href="http://www.mpssbhopal.org/images/Learn-Sanskrit-BeModern.jpg"><img src="assets/images/Learn-Sanskrit-BeModern.jpg" alt="" /></a>
+                            <!--   <figcaption><a href="#">Learn Courses Online</a></figcaption> -->
+                        </figure>
+                    </div>
+                    <!-- INTERO DES END-->
+                    <!-- INTERO DES START-->
+                    <div class="kf_intro_des">
+                        <div class="kf_intro_des_caption">
+                            <span><i class="icon-teacher4"></i></span>
+                            <h6>Become a Instructor</h6>
+                            <p>World Largest books and library center is here where you can study the latest trends of the education.</p>
+                            <a href="#">view more</a>
+                        </div>
+                        <figure>
+                            <a href="http://www.mpssbhopal.org/Sanskrit-Language-Teaching.php"></a><img src="assets/images/Sanskrit-Language-Teaching.jpg" alt="" />
+                            <!--  <figcaption><a href="#">Learn Courses Online</a></figcaption> -->
+                        </figure>
+                    </div>
+                    <!-- INTERO DES END-->
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <!-- HEADING 1 START-->
+                        <div class="col-md-4">
+                            <div class="kf_edu2_heading1">
+                                <h3>परिपत्र / आदेश डाउनलोड</h3>
+                            </div>
+                        </div>
+                        <!-- HEADING 1 END-->
+                        <!--EDU2 COURSES TAB WRAP START-->
+                        <div class="col-md-8">
+                            <div class="kf_edu2_tab_wrap">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <!-- <li role="presentation" class="active"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">All</a></li> -->
+                                    <li role="presentation"><a href="#accounting" aria-controls="accounting" role="tab" data-toggle="tab">महर्षि पतंजलि संस्कृत संस्था भोपाल</a></li>
+                                    <li role="presentation"><a href="#economics" aria-controls="economics" role="tab" data-toggle="tab">शासकीय योग प्रशिक्षण केंद्र भोपाल</a></li>
+                                    <li role="presentation"><a href="#finance" aria-controls="finance" role="tab" data-toggle="tab">शासकीय जीवाजी  वेधशाला उज्जैन</a></li>
+                                    <!-- <li role="presentation"><a href="#technologies" aria-controls="technologies" role="tab" data-toggle="tab">Technologies</a></li>
+                                       <li role="presentation"><a href="#management" aria-controls="management" role="tab" data-toggle="tab">Management </a></li>
+                                       <li role="presentation"><a href="#other" aria-controls="other" role="tab" data-toggle="tab">Other</a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="kf_edu2_tab_des">
+                            <div class="col-md-12">
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade " id="accounting" style="height:400px">
+                                        <div class="row margin-bottom">
+                                            <div class="col-md-12">
+                                                <div class="edu2_cur_wrap">
+                                                    <div class="edu2_cur_des_ft">
+                                                        <h4>महर्षि पतंजलि संस्कृत संस्था भोपाल :-</h4>
+                                                    </div>
+                                                    <div style="font-size:33px;  text-align: justify;">
+                                                        <p>1. सत्र 2022-23 के नवीन सम्बद्धता एवं सम्बद्धता नवीनीकरण के जारी आदेश।:सत्र 2022-23 के नवीन सम्बद्धता एवं सम्बद्धता नवीनीकरण के जारी आदेश।</p>
+                                                        <p>2. नवीन सम्बद्धता एवं सम्बद्धता नवीनीकरण के आवेदन की तिथि में वृद्धि करने एवं जिन विद्यालयों की विभागीय अनुमति जिला शिक्षा अधिकारी से अप्राप्त है उन्हें बुलवाये जाने हेतु आदेश:नवीन सम्बद्धता एवं सम्बद्धता नवीनीकरण के आवेदन की तिथि में वृद्धि करने एवं जिन विद्यालयों की विभागीय अनुमति जिला शिक्षा अधिकारी से अप्राप्त है उन्हें बुलवाये जाने हेतु आदेश</p>
+                                                        <p>3. सत्र 2022-23 के नवीन सम्बद्धता एवं सम्बद्धता नवीनीकरण के जारी आदेश।:सत्र 2022-23 के नवीन सम्बद्धता एवं सम्बद्धता नवीनीकरण के जारी आदेश।</p>
+                                                        <p>4. ई.एफ.ए विद्यालयों में एल.के.जी से कक्षा 12वीं तक की सम्बद्धता प्रदान करने के संबंध में दिशा निर्देशा (सम्बद्धता प्रदान करने हेतु तिथि आगे बढ़ाने):ई.एफ.ए विद्यालयों में एल.के.जी से कक्षा 12वीं तक की सम्बद्धता प्रदान करने के संबंध में दिशा निर्देशा (सम्बद्धता प्रदान करने हेतु तिथि आगे बढ़ाने)</p>
+                                                        <p>5. सत्र 2022-23 हेतु नवीन सम्बद्वता/सम्बद्वता नवीनीकरण जारी करने विषयक।:सत्र 2022-23 हेतु नवीन सम्बद्वता/सम्बद्वता नवीनीकरण जारी करने विषयक।</p>
+                                                        <p>6. शैक्षणिक सत्र 2022-23 हेतु निर्देश।:शैक्षणिक सत्र 2022-23 हेतु निर्देश।</p>
+                                                        <p>7. पूर्वमध्यमा प्रथमखण्ड एवं पूर्वमध्यमा द्वितीयखण्ड (कक्षा 9वीं एवं 10वीं) में विहित नवीन पाठ्यक्रम 2021-22 पर आधारित परीक्षा में वेस्ट ऑफ सिक्स के संबंध में स्पष्टीकरण।:पूर्वमध्यमा प्रथमखण्ड एवं पूर्वमध्यमा द्वितीयखण्ड (कक्षा 9वीं एवं 10वीं) में विहित नवीन पाठ्यक्रम 2021-22 पर आधारित परीक्षा में वेस्ट ऑफ सिक्स के संबंध में स्पष्टीकरण।</p>
+                                                        <p>8. उत्तरमध्यमा प्रथमखण्ड एवं उत्तरमध्यमा द्वितीयखण्ड (कक्षा 11वीं एवं 12वीं) में विहित नवीन पाठ्यक्रम 2021-22 पर आधारित परीक्षा में वेस्ट ऑफ फाइव (5) के संबंध में स्पष्टीकरण।:उत्तरमध्यमा प्रथमखण्ड एवं उत्तरमध्यमा द्वितीयखण्ड (कक्षा 11वीं एवं 12वीं) में विहित नवीन पाठ्यक्रम 2021-22 पर आधारित परीक्षा में वेस्ट ऑफ फाइव (5) के संबंध में स्पष्टीकरण।</p>
+                                                        <p>9. संस्थान से सम्बद्धता प्राप्त संस्कृत विद्यालयों में शैक्षणिक सत्र 2022-23 के प्रारंभ होने संबंधी आदेश:संस्थान से सम्बद्धता प्राप्त संस्कृत विद्यालयों में शैक्षणिक सत्र 2022-23 के प्रारंभ होने संबंधी आदेश</p>
+                                                        <p>10. महर्षि पतंजलि संस्कृत संस्थान से ईएफए स्कूलों को सत्र 2022-23 हेतु नवीन सम्बद्धता प्राप्त आदेश:महर्षि पतंजलि संस्कृत संस्थान से ईएफए स्कूलों को सत्र 2022-23 हेतु नवीन सम्बद्धता प्राप्त आदेश</p>
+                                                        <span id="dots">...</span>
+                                                        <span id="more">
+                                                            <p>11. EFA योजनान्तर्गत अरूण (LKG) एवं उदय (UKG) कक्षाओं में प्रवेश एवं कक्षा संचालन की कार्ययोजना।:EFA योजनान्तर्गत अरूण (LKG) एवं उदय (UKG) कक्षाओं में प्रवेश एवं कक्षा संचालन की कार्ययोजना।</p>
+                                                            <p>12. शासकीय आवासीय कन्या संस्कृत विद्यालय (गार्गी) भोपाल सत्र 2022-23 में कक्षा 7वीं से 11वीं प्रवेश हेतु विज्ञापन:शासकीय आवासीय कन्या संस्कृत विद्यालय (गार्गी) भोपाल सत्र 2022-23 में कक्षा 7वीं से 11वीं प्रवेश हेतु विज्ञापन</p>
+                                                            <p>13. म.प्र. शासन, स्कूल शिक्षा विभाग द्वारा योग आयोग गठन का आदेश:म.प्र. शासन, स्कूल शिक्षा विभाग द्वारा योग आयोग गठन का आदेश</p>
+                                                            <p>14. म.प्र. शासन, स्कूल शिक्षा विभाग द्वारा महर्षि पतंजलि संस्कृत संस्थान से सम्बद्ध प्राच्य गुरूकुल (अशासकीय छात्रावास युक्त) विद्यालयों को आर्थिक सहायता प्रदान किये जाने का स्वीकृति आदेश:म.प्र. शासन, स्कूल शिक्षा विभाग द्वारा महर्षि पतंजलि संस्कृत संस्थान से सम्बद्ध प्राच्य गुरूकुल (अशासकीय छात्रावास युक्त) विद्यालयों को आर्थिक सहायता प्रदान किये जाने का स्वीकृति आदेश</p>
+                                                            <p>15. LKG (अरूण) एवं UKG (उदय) योजना:LKG (अरूण) एवं UKG (उदय) योजना</p>
+                                                            <p>16. संस्थान से सम्बद्धता प्राप्त संस्कृत विद्यालयों में शैक्षणिक सत्र 2022-23 के प्रारंभ होने विषयक।:संस्थान से सम्बद्धता प्राप्त संस्कृत विद्यालयों में शैक्षणिक सत्र 2022-23 के प्रारंभ होने विषयक।</p>
+                                                            <p>17. शासकीय योग प्रशिक्षण केन्द्र भोपाल से प्रशिक्षित योग शिक्षकों की सूची:शासकीय योग प्रशिक्षण केन्द्र भोपाल से प्रशिक्षित योग शिक्षकों की सूची</p>
+                                                            <p>18. योग क्लव प्रभारियों की सूची :योग क्लव प्रभारियों की सूची </p>
+                                                            <p>19. अन्तर्राष्ट्रीय योग दिवस की तैयारियों हेतु जिला योग प्रभारी एवं विकासखण्ड योग प्रभारियों की बीसी का आयोजन विषयक।:अन्तर्राष्ट्रीय योग दिवस की तैयारियों हेतु जिला योग प्रभारी एवं विकासखण्ड योग प्रभारियों की बीसी का आयोजन विषयक।</p>
+                                                            <p>20. जिला योग प्रभारियों की सूची :जिला योग प्रभारियों की सूची </p>
+                                                            <p>21. सत्र 2022-23 हेतु नवीन सम्बद्वता/सम्बद्वता नवीनीकरण जारी करने विषयक।:सत्र 2022-23 हेतु नवीन सम्बद्वता/सम्बद्वता नवीनीकरण जारी करने विषयक।</p>
+                                                            <p>22. वार्षिक परीक्षा समय-सारणी 2022.pdf : वार्षिक परीक्षा समय-सारणी 2022.pdf </p>
+                                                            <p>23. ई.एफ.ए. विद्यालयों में एल.के.जी. से कक्षा 12वीं तक की सम्बद्धता प्रदान करने हेतु आवेदन लिंक:ई.एफ.ए. विद्यालयों में एल.के.जी. से कक्षा 12वीं तक की सम्बद्धता प्रदान करने हेतु आवेदन लिंक/</p>
+                                                            <p>24. संस्कृत से सम्बद्ध संस्कृत विद्यालयों में स्काउट/गाइड प्रारंभ करने विषयक।:संस्कृत से सम्बद्ध संस्कृत विद्यालयों में स्काउट/गाइड प्रारंभ करने विषयक।</p>
+                                                            <p>25. शासकीय आवासीय बालक संस्कृत विद्यालय डिण्डोरी सत्र 2022-23 हेतु नवीन सम्बद्वता जारी करने विषयक।:शासकीय आवासीय बालक संस्कृत विद्यालय डिण्डोरी सत्र 2022-23 हेतु नवीन सम्बद्वता जारी करने विषयक।</p>
+                                                            <p>26. सत्र 2022-23 हेतु नवीन सम्बद्वता/सम्बद्वता नवीनीकरण जारी करने विषयक।:सत्र 2022-23 हेतु नवीन सम्बद्वता/सम्बद्वता नवीनीकरण जारी करने विषयक।</p>
+                                                            <p>27. शासकीय बालक आवासीय संस्कृत विद्यालय डिण्डोरी में कक्षा 6टी में प्रवेष हेतु एम.पी.ऑनलाइन आवेदन की अंतिम तिथि में वृद्धि हेतु सूचना:शासकीय बालक आवासीय संस्कृत विद्यालय डिण्डोरी में कक्षा 6टी में प्रवेष हेतु एम.पी.ऑनलाइन आवेदन की अंतिम तिथि में वृद्धि हेतु सूचना</p>
+                                                            <p>28. शासकीय बालक आवासीय संस्कृत विद्यालय डिण्डोरी में कक्षा 6टी में प्रवेष हेतु विज्ञापन:शासकीय बालक आवासीय संस्कृत विद्यालय डिण्डोरी में कक्षा 6टी में प्रवेष हेतु विज्ञापन</p>
+                                                            <p>29. अर्धवार्षिक परीक्षा परिणाम भेजने विषयक। :अर्धवार्षिक परीक्षा परिणाम भेजने विषयक। </p>
+                                                            <p>30. सत्र 2022-23 हेतु नवीन सम्बद्वता/सम्बद्वता नवीनीकरण जारी किये जाने का आदेष।:सत्र 2022-23 हेतु नवीन सम्बद्वता/सम्बद्वता नवीनीकरण जारी किये जाने का आदेष।</p>
+                                                            <p>31. संस्कृत शालाओं के षिक्षकों हेतु संस्कृत षिक्षा षिक्षण एवं प्राचार्यों हेतु शाला प्रबंधन एवं कौषल विकास संबंधी प्रषिक्षण आयोजित करने विषयक।:संस्कृत शालाओं के षिक्षकों हेतु संस्कृत षिक्षा षिक्षण एवं प्राचार्यों हेतु शाला प्रबंधन एवं कौषल विकास संबंधी प्रषिक्षण आयोजित करने विषयक।</p>
+                                                            <p>32. परीक्षा उपयोगी अध्ययन सामग्री विद्यार्थियों को उपलब्ध कराने बावत्।:परीक्षा उपयोगी अध्ययन सामग्री विद्यार्थियों को उपलब्ध कराने बावत्।</p>
+                                                            <p>33. सत्र 2022-23 सम्बद्वता नवीनीकरण एवं नवीन सम्बद्धता जारी आदेष। :सत्र 2022-23 सम्बद्वता नवीनीकरण एवं नवीन सम्बद्धता जारी आदेष। </p>
+                                                            <p>34. महर्षि पतंजलि संस्कृत संस्थान की सत्र 2021-22 की मुख्यपरीक्षा के आवेदन पत्र एम.पी.आॅनलाइन के माध्यम स:महर्षि पतंजलि संस्कृत संस्थान की सत्र 2021-22 की मुख्यपरीक्षा के आवेदन पत्र एम.पी.आॅनलाइन के माध्यम से जमा कराने विषयक।</p>
+                                                            <p>35. डिप्लोमा इन एप्लाइड योग साइंस में ऑनलाइन प्रवेश की अंतिम तिथि में परिवर्तन विषयक।:</p>
+                                                            <p>36. संस्थान से सम्बद्ध संस्कृत विद्यालयों में एन.सी.सी. यूनिट प्रारंभ करने विषयक।:संस्थान से सम्बद्ध संस्कृत विद्यालयों में एन.सी.सी. यूनिट प्रारंभ करने विषयक।</p>
+                                                            <p>37. संस्थान से सम्बद्ध संस्कृत विद्यालयों में स्काउट गाइड प्रारंभ करने विषयक।:संस्थान से सम्बद्ध संस्कृत विद्यालयों में स्काउट गाइड प्रारंभ करने विषयक।</p>
+                                                            <p>38. संस्थान का नवीन पाठ्यक्रम विहित करने विषयक I:संस्थान का नवीन पाठ्यक्रम विहित करने विषयक </p>
+                                                            <p>39. महर्षि पतञ्जलि संस्कृत संस्थान से संबद्ध संस्कृत विद्यालयों हेतु नर्सरी से उत्तरमध्यमा द्विती:महर्षि पतञ्जलि संस्कृत संस्थान से संबद्ध संस्कृत विद्यालयों हेतु नर्सरी से उत्तरमध्यमा द्वितीयखंड तक सत्र 2021- 22 का पाठ्यक्रम।</p>
+                                                            <p>40. कक्षा 10वीं एवं 12वीं हेतु शैक्षणिक सत्र 2021-22 से हिन्दी एवं अंग्रेजी की पुस्तकों में परिवर्तन संबंधी:</p>
+                                                            <p>41. कक्षा 6 से 12वीं तक विद्यालय संचालन संबंधी आदेश।:</p>
+                                                            <p>42. संस्कृत सप्ताह के समापन एवं योग प्रशिक्षणार्थियों हेतु *माननीय मुख्यमंत्री जी* का सन्देश </p>
+                                                            <p>43. संस्कृत सप्ताह वर्ष 2021-22 के आयोजन हेतु निर्धारित रूपरेखा।:संस्कृत सप्ताह वर्ष 2021-22 के आयोजन हेतु निर्धारित रूपरेखा।</p>
+                                                            <p>44. योग की गतिविधियों के प्रचार-प्रसार व मॉनिटरिंग एवं सफल संचालन हेतु जिला योग कक्ष प्रभारी को प्रभ योग की गतिविधियों के प्रचार-प्रसार व मॉनिटरिंग एवं सफल संचालन हेतु जिला योग कक्ष प्रभारी को प्रभार सौपने विषयक।</p>
+                                                            <p>45. प्रदेश के प्रत्येक शासकीय उ.मा.वि./शासकीय हाई स्कूल में योग क्लब गठित करने विषयक।:प्रदेश के प्रत्येक शासकीय उ.मा.वि./शासकीय हाई स्कूल में योग क्लब गठित करने विषयक।</p>
+                                                            <p>46. शासकीय योग प्रशिक्षण केन्द्र म.प्र. भोपाल में योग प्रशिक्षण कार्यक्रम आयोजित करने हेतु वार्षिक  शासकीय योग प्रशिक्षण केन्द्र म.प्र. भोपाल में योग प्रशिक्षण कार्यक्रम आयोजित करने हेतु वार्षिक योग पंचांग वर्ष 2021-22</p>
+                                                            <p>47. शिक्षण सत्र 2021-22 के लिए शासकीय एवं अशासकीय विद्यालयों में कक्षाएं प्रारंभ एवं संचालित करने विषयक शिक्षण सत्र 2021-22 के लिए शासकीय एवं अशासकीय विद्यालयों में कक्षाएं प्रारंभ एवं संचालित करने विषयक।</p>
+                                                            <p>48. नवीन सम्बद्धता/सम्बद्वता नवीनीकरण की वार्षिक कार्ययोजना/आवेदन पत्र:नवीन सम्बद्धता/सम्बद्वता नवीनीकरण की वार्षिक कार्ययोजना/आवेदन पत्र</p>
+                                                            <p>49. महर्षि पतंजलि संस्कृत संस्थान की सत्र 2021-22 की मुख्य/पूरक परीक्षा कक्षा 5वीं, 9वीं से 12वीं तक प्रवेशि महर्षि पतंजलि संस्कृत संस्थान की सत्र 2021-22 की मुख्य/पूरक परीक्षा कक्षा 5वीं, 9वीं से 12वीं तक प्रवेशित विद्यार्थियों के नामांकन एवं सूची की प्रविष्टी विषयक।</p>
+                                                            <p>50. ऑनलाइन खगोल विज्ञान कार्यशाला में सहभागिता करने विषयक।:ऑनलाइन खगोल विज्ञान कार्यशाला में सहभागिता करने विषयक।</p>
+                                                            <p>51. विद्यालय में खगोलिय क्लब का गठन एवं शासकीय जीवाजी वेधशाला उज्जैन के अवलोकन विषयक।:विद्यालय में खगोलिय क्लब का गठन एवं शासकीय जीवाजी वेधशाला उज्जैन के अवलोकन विषयक।</p>
+                                                            <p>52. सत्र 2021-22 के शैक्षणिक पंचाग के निर्माण हेतु सुझाव प्रेषित करने विषयक।:सत्र 2021-22 के शैक्षणिक पंचाग के निर्माण हेतु सुझाव प्रेषित करने विषयक।</p>
+                                                            <p>53. विद्यालय संचालन एवं प्रवेश प्रक्रिया संबंधी आदेश।:विद्यालय संचालन एवं प्रवेश प्रक्रिया संबंधी आदेश।</p>
+                                                            <p>54. योग की गतिविधियों के प्रचार-प्रसार व माॅनिटरिंग एवं सफल संचालन हेतु जिला योग कक्ष प्रभारी को प्र योग की गतिविधियों के प्रचार-प्रसार व माॅनिटरिंग एवं सफल संचालन हेतु जिला योग कक्ष प्रभारी को प्रभार सौपने विषयक।</p>
+                                                            <p>55. आॅनलाइन नाट्यशास्त्र कार्यशाला का आयोजन विषयक।:सप्त दिवसीय आॅनलाइन संस्कृतनाट्यकौशल विकास कार्यशाला  का आयोजन विषयक।</p>
+                                                            <p>56. गार्गी विद्यालय के माध्यमिक विभाग की कक्षाएं एवं छात्रावास रशीदिया परिसर में स्थित स्टीम लैब मे:गार्गी विद्यालय के माध्यमिक विभाग की कक्षाएं एवं छात्रावास रशीदिया परिसर में स्थित स्टीम लैब में शिफ्ट कराने का आदेश।</p>
+                                                            <p>57. सत्र 2021-22 के लिए संस्कृत शिक्षण हेतु वित्तीय सहायता अनुदान विषयक।:सत्र 2021-22 के लिए संस्कृत शिक्षण हेतु वित्तीय सहायता अनुदान विषयक।</p>
+                                                            <p>58. संस्थान के अन्तर्गत आयोजित होने वाली कक्षा 9वीं से 12वीं के प्रश्नबैंक संस्थान की वेबसाइट पर उपलब संस्थान के अन्तर्गत आयोजित होने वाली कक्षा 9वीं से 12वीं के प्रश्नबैंक संस्थान की वेबसाइट पर उपलब्ध होने विषयक।</p>
+                                                            <p>59. वर्ष 2020-21 की प्रथमा (प्रथम एवं द्वितीय) की मुख्यपरीक्षा आयोजित करने विषयक।:वर्ष 2020-21 की प्रथमा (प्रथम एवं द्वितीय) की मुख्यपरीक्षा आयोजित करने विषयक।</p>
+                                                            <p>60. सत्र 2021-22 के लिए संस्कृत शिक्षण हेतु वित्तीय सहायता अनुदान विषयक।:सत्र 2021-22 के लिए संस्कृत शिक्षण हेतु वित्तीय सहायता अनुदान विषयक।</p>
+                                                            <p>61. शासकीय एवं अशासकीय विद्यालयों में कोविड - 19 गाइड लाइन का पालन कड़ाई से करने विषयक।:शासकीय एवं अशासकीय विद्यालयों में कोविड - 19 गाइड लाइन का पालन कड़ाई से करने विषयक।</p>
+                                                            <p>62. महर्षि पतंजलि संस्कृत संस्थान की सत्र 2020-21 की अर्द्धवार्षिक परीक्षा आयोजित करने की समय सारणी:महर्षि पतंजलि संस्कृत संस्थान की सत्र 2020-21 की अर्द्धवार्षिक परीक्षा आयोजित करने की समय सारणी</p>
+                                                            <p>63. महर्षि पतंजलि संस्कृत संस्थान का सम्पूर्ण पाठ्यक्रम आधार पर मुख्यपरीक्षा 2021 आयोजन विषयक।:महर्षि पतंजलि संस्कृत संस्थान का सम्पूर्ण पाठ्यक्रम आधार पर मुख्यपरीक्षा 2021 आयोजन विषयक।</p>
+                                                            <p>64. महर्षि पतंजलि संस्कृत संस्थान, भोपाल के चेयरमेन महोदय का प्रवास कार्यक्रम (22-02-2021):महर्षि पतंजलि संस्कृत संस्थान, भोपाल के चेयरमेन महोदय का प्रवास कार्यक्रम (22-02-2021)</p>
+                                                            <p>65. Digi LEP (DIGITAL LEARNING ENHANCEMENT PROGRAMME) के क्रियान्वयन हेतु संस्कृत की ई-पाठ्यसामग्री विडियों/आॅडियों/पी.पी.टी/विकसि:Digi LEP (DIGITAL LEARNING ENHANCEMENT PROGRAMME)  के क्रियान्वयन हेतु संस्कृत की ई-पाठ्यसामग्री विडियों/आॅडियों/पी.पी.टी/विकसित करने संबंधी।</p>
+                                                            <p>66. शासकीय कन्या आवासीय संस्कृत विद्यालय बरखेड़ी जहांगीराबाद भोपाल की प्रवेश परीक्षा हेतु आॅनलाइन  शासकीय कन्या आवासीय संस्कृत विद्यालय बरखेड़ी जहांगीराबाद भोपाल की प्रवेश परीक्षा हेतु आॅनलाइन आवेदन की तिथि में वृद्धि बाबत् सूचना।</p>
+                                                            <p>67. पूर्वमध्यमाप्रथमखण्ड से उत्तरमध्यमाद्वितीयखण्ड (कक्षा 9वीं से कक्षा 12वीं) के अनिवार्य विषय के प पूर्वमध्यमाप्रथमखण्ड से उत्तरमध्यमाद्वितीयखण्ड (कक्षा 9वीं से कक्षा 12वीं) के अनिवार्य विषय के प्रश्न बैंक (प्रश्न एवं माॅडल उत्तर) बनाये जाने हेतु आॅनलाइन प्रशिक्षण एवं कार्यशाला विषयक।</p>
+                                                            <p>68. संस्थान के अन्तर्गत आयोजित होने वाली कक्षा 9वीं से 12वीं के प्रश्न बैंक संस्थान वेबसाइड पर उपलब्ध संस्थान के अन्तर्गत आयोजित होने वाली कक्षा 9वीं से 12वीं के प्रश्न बैंक संस्थान वेबसाइड पर उपलब्ध होने बावत्।</p>
+                                                            <p>69. एक दिवसीय आॅनलाईन प्रश्नोत्तर निर्माण प्रशिक्षण कार्यक्रम में सहभगिता बावत्। एक दिवसीय आॅनलाईन प्रश्नोत्तर निर्माण प्रशिक्षण कार्यक्रम में सहभगिता बावत्।</p>
+                                                            <p>70. वर्ष 2020-21 में सम्बद्धता प्राप्त संस्कृत विद्यालयों की सूची:वर्ष 2020-21 में सम्बद्धता प्राप्त संस्कृत विद्यालयों की सूची</p>
+                                                            <p>71. महर्षि पतंजलि संस्कृत संस्थान की सत्र 2020-21 की मुख्यपरीक्षा कक्षा 10वीं, कक्षा 11वीं एवं कक्षा 12वीं मे:महर्षि पतंजलि संस्कृत संस्थान की सत्र 2020-21 की मुख्यपरीक्षा कक्षा 10वीं, कक्षा 11वीं एवं कक्षा 12वीं में संलग्न कक्षा 10वीं में उत्तीर्ण/अनुत्तीर्ण के अंकसूची के सत्यापन कक्षा 10वीं विषयक।</p>
+                                                            <p>72. महर्षि पतंजलि संस्कृत संस्थान संचालित शासकीय आदर्श कन्या आवासीय संस्कृत विद्यालय बरखेड़ी जहांग: महर्षि पतंजलि संस्कृत संस्थान संचालित शासकीय आदर्श कन्या आवासीय संस्कृत विद्यालय बरखेड़ी जहांगीराबाद भोपाल विज्ञापन 2021-22</p>
+                                                            <p>73. शासकीय/अशासकीय/परम्परागत आवासीय संस्कृत विद्यालयों/महाविद्यालयों को सत्र 2021-22 के लिये नवीन सम्ब शासकीय/अशासकीय/परम्परागत आवासीय संस्कृत विद्यालयों/महाविद्यालयों को सत्र 2021-22 के लिये नवीन सम्बद्धता एवं सम्बद्धता नवीनीकरण की सूची</p>
+                                                            <p>74. प्राचार्यों शिक्षकों एवं विद्यार्थियों के लिये आॅनलाइन योग प्रशिक्षण विषयक।:प्राचार्यों शिक्षकों एवं विद्यार्थियों के लिये आॅनलाइन योग प्रशिक्षण विषयक।</p>
+                                                            <p>75. अधिसूचना - वर्ष 2019 एवं 2020 कक्षा 12वीं परीक्षा परिणाम निरस्त।:अधिसूचना - वर्ष 2019 एवं 2020 कक्षा 12वीं परीक्षा परिणाम निरस्त।</p>
+                                                            <p>76. स्थानान्तरण प्रमाण पत्र (टी.सी) के बिना प्रवेश नहीं दिये जाने विषयक।:स्थानान्तरण प्रमाण पत्र (टी.सी) के बिना प्रवेश नहीं दिये जाने विषयक।</p>
+                                                            <p>77. मध्यप्रदेश शासन का आदेश दिनांक 26 दिसम्बर 2020 से 31 दिसम्बर 2020 तक की शीतकालीन अवकाश तत्काल प्रभाव से न मध्यप्रदेश शासन का आदेश दिनांक 26 दिसम्बर 2020 से 31 दिसम्बर 2020 तक की शीतकालीन अवकाश तत्काल प्रभाव से निरस्त करने विषयक।</p>
+                                                            <p>78. माननीय इन्दर सिंह परमार, राज्यमंत्री (स्वतंत्र प्रभार), सामान्य प्रषासन एवं स्कूल षिक्षा विभाग, म:माननीय इन्दर सिंह परमार, राज्यमंत्री (स्वतंत्र प्रभार), सामान्य प्रषासन एवं स्कूल षिक्षा विभाग, म.प्र. शासन एवं चेयरमेन, महर्षि पतंजलि संस्कृत संस्थान, भोपाल के कार्यभार ग्रहण करने की सूचना।</p>
+                                                            <p>79. शिक्षण सत्र 2020-21 के लिए शासकीय एवं अशासकीय विद्यालयों के प्रारंभ एवं संचालन करने बाबत्।:शिक्षण सत्र 2020-21 के लिए शासकीय एवं अशासकीय विद्यालयों के प्रारंभ एवं संचालन करने बाबत्।</p>
+                                                            <p>80. राज्य स्तरीय आॅनलाइन शास्त्रीय संस्कृत महाविद्यालय/विद्यालय परम्परागत संस्कृत विद्यालय मध्य राज्य स्तरीय आॅनलाइन शास्त्रीय संस्कृत महाविद्यालय/विद्यालय परम्परागत संस्कृत विद्यालय मध्यप्रदेश।</p>
+                                                            <p>81. शासकीय स्कूलां हतु स्कूल रि-ओेपनिंग क लिए स्टैण्डर्ड आॅपरेटिंग प्रोसीजर विषयक।:शासकीय स्कूलां हतु स्कूल रि-ओेपनिंग क लिए स्टैण्डर्ड आॅपरेटिंग प्रोसीजर विषयक।</p>
+                                                            <p>82. महर्षि पतंजलि संस्कृत संस्थान, भोपाल की सत्र 2019-20 की मुख्यपरीक्षा कक्षा 10वीं पूर्वमध्यमाद्वितीय महर्षि पतंजलि संस्कृत संस्थान, भोपाल की सत्र 2019-20 की मुख्यपरीक्षा कक्षा 10वीं पूर्वमध्यमाद्वितीयखण्ड की विशेष परीक्षा में नियमित विद्यार्थियों के आवेदन पत्र भरवाये जाने विषयक।</p>
+                                                            <p>83. CM Rise डिजिटल शिक्षक प्रशिक्षण कार्यक्रम के अन्तर्गत आयोजित निष्ठा प्रशिक्षण में सम्मिलित होने वि CM Rise डिजिटल शिक्षक प्रशिक्षण कार्यक्रम के अन्तर्गत आयोजित निष्ठा प्रशिक्षण में सम्मिलित होने विषयक।</p>
+                                                            <p>84. शासकीय संस्कृत महाविद्यालयों/विद्यालयों में प्रचलित पाठ्यक्रमों की कक्षावार जानकारी विषयक।:शासकीय संस्कृत महाविद्यालयों/विद्यालयों में प्रचलित पाठ्यक्रमों की कक्षावार जानकारी विषयक।</p>
+                                                            <p>85. शासन की निःशुल्क पाठ्यपुस्तक योजनान्तर्गत प्रदेश अन्तर्गत जिलों में शासकीय संस्कृत विद्यालयो शासन की निःशुल्क पाठ्यपुस्तक योजनान्तर्गत प्रदेश अन्तर्गत जिलों में शासकीय संस्कृत विद्यालयों को आधुनिक विषयों की पाठ्यपुस्तकें प्रदाय करने बावत।</p>
+                                                            <p>86. सत्र 2021-22 हेतु नवीन सम्बद्धता एवं सम्बद्धता नवीनीकरण आवेदन करने की निर्धारित तिथि में वृद्धि करन सत्र 2021-22 हेतु नवीन सम्बद्धता एवं सम्बद्धता नवीनीकरण आवेदन करने की निर्धारित तिथि में वृद्धि करने विषयक।</p>
+                                                            <p>87. महर्षि पतंजलि संस्कृत संस्थान, भोपाल एवं संस्कृतभारती मध्यभारतप्रान्त के संयुक्त तत्वाधान में:महर्षि पतंजलि संस्कृत संस्थान, भोपाल एवं संस्कृतभारती मध्यभारतप्रान्त के संयुक्त तत्वाधान में संस्कृत शिक्षक प्रशिक्षण अन्तर्जालीय द्विदिवसीय प्रशिक्षण कार्यक्रम दिनांक 12 एवं 13 सितम्बर 2020, समय - अपरान्हः 2.30 बजे से 5.30 बजे तक आॅनलाइन व्याख्यान (वेबीनार) दिया जावेगा। समस्त संस्कृत प्रभारी एवं संस्कृत विद्यालयों के प्राचार्य एवं शिक्षक अपनी सहभागिता सुनिश्चित करें।</p>
+                                                            <p>88. सूर्यनमस्कार 12 जनवरी 2021 आडियों:</p>
+                                                            <p>89. सूर्यनमस्कार वीडियो:</p>
+                                                            <p>90. जिला संस्कृत प्रभारियों की आयोजित आॅनलाइन बैठक दिनांक 29.08.2020 के संबंध में।:जिला संस्कृत प्रभारियों की आयोजित आॅनलाइन बैठक दिनांक 29.08.2020 के संबंध में।</p>
+                                                            <p>91. C.M. Rise डिजिटल शिक्षक प्रशिक्षण कार्यक्रम में सम्मिलित होने विषयक।:C.M. Rise डिजिटल शिक्षक प्रशिक्षण कार्यक्रम में सम्मिलित होने विषयक।</p>
+                                                            <p>92. Digi-LEP (Digital Learning Enhancement Program) के क्रियान्वयन हेतु संस्कृत की पाठ्य सामग्री विकसित करने संबंधी।: Digi-LEP (Digital Learning Enhancement Program) के क्रियान्वयन हेतु संस्कृत की पाठ्य सामग्री विकसित करने संबंधी।</p>
+                                                            <p>93. जिला संस्कृत प्रभारी की आॅनलाइन बैठक (बेवीनार) आयोजन दिनांक 29.08.2020 विषयक।:जिला संस्कृत प्रभारी की आॅनलाइन बैठक (बेवीनार) आयोजन दिनांक 29.08.2020 विषयक।</p>
+                                                            <p>94. शासकीय जीवाजी वेधशाला उज्जैन से खगोलीय जानकारी के लिये WhatsApp ग्रुप हेतु नाम प्रस्तावित करने विषयक शासकीय जीवाजी वेधशाला उज्जैन से खगोलीय जानकारी के लिये WhatsApp ग्रुप हेतु नाम प्रस्तावित करने विषयक।</p>
+                                                            <p>95. सत्र 2020-21 के लिये संस्कृत शिक्षण हेतु वित्तीय सहायता अनुदान विषयक।:सत्र 2020-21 के लिये संस्कृत शिक्षण हेतु वित्तीय सहायता अनुदान विषयक।</p>
+                                                            <p>96. राज्य स्तरीय शासकीय योग प्रशिक्षण केन्द्र मध्यप्रदेश भोपाल में आॅनलाइन योग प्रशिक्षण कार्यक्र:राज्य स्तरीय शासकीय योग प्रशिक्षण केन्द्र मध्यप्रदेश भोपाल में आॅनलाइन योग प्रशिक्षण कार्यक्रम आयोजित करने हेतु।</p>
+                                                            <p>97. नोवेल कोरौना वायरस (COVID-19)के संक्रमण से बचाव हेतु संस्थान द्वारा पूर्वमध्यमा द्वितीयखण्ड (कक्षा 10व नोवेल कोरौना वायरस (COVID-19)के संक्रमण से बचाव हेतु संस्थान द्वारा पूर्वमध्यमा द्वितीयखण्ड (कक्षा 10वीं) की मुख्यपरीक्षा 2020 स्थागित करने के संबंध में।</p>
+                                                            <p>98. सत्र 2020-21 हेतु नवीन सम्बद्धता/सम्बद्धता नवीनीकरण हेतु शासकीय/अशासकीय संस्क़़़त विद्यालयों के जा सत्र 2020-21 हेतु नवीन सम्बद्धता/सम्बद्धता नवीनीकरण हेतु शासकीय/अशासकीय संस्क़़़त विद्यालयों के जारी आदेशों की सूची</p>
+                                                            <p>99. सत्र 2020-21 हेतु नवीन सम्बद्धता/सम्बद्धता नवीनीकरण हेतु शासकीय/अशासकीय संस्क़़़त विद्यालयों के जा सत्र 2020-21 हेतु नवीन सम्बद्धता/सम्बद्धता नवीनीकरण हेतु शासकीय/अशासकीय संस्क़़़त विद्यालयों के जारी आदेशों की सूची</p>
+                                                            <p>100. सत्र 2020-21 हेतु नवीन सम्बद्धता/सम्बद्धता नवीनीकरण हेतु निरीक्षण प्रतिवेदन /विभागीय अनुमति जारी कर:सत्र 2020-21 हेतु नवीन सम्बद्धता/सम्बद्धता नवीनीकरण हेतु निरीक्षण प्रतिवेदन /विभागीय अनुमति जारी करने के संबध में</p>
+                                                            <p>101. पूर्वमध्यमाप्रथमखण्ड (9वीं) से उत्तरमध्यमाद्वितीयखण्ड (12वीं) तके के प्रष्नपत्र एवं आदर्ष उत्तर क:पूर्वमध्यमाप्रथमखण्ड (9वीं) से उत्तरमध्यमाद्वितीयखण्ड (12वीं) तके के प्रष्नपत्र एवं आदर्ष उत्तर का वेबसाइट पर अवलोकन करने विषयक।</p>
+                                                            <p>102. वर्ष २०१९-20 की प्रथमा (प्रथमखंड एवं दितीयखंड) की वार्षिक परीक्षा आयोजित करने विषयक (५३५-३६ / ०२-०३- वर्ष २०१९-20 की प्रथमा (प्रथमखंड एवं दितीयखंड)  की वार्षिक परीक्षा आयोजित करने विषयक   (५३५-३६ / ०२-०३-२०२०  )</p>
+                                                            <p>103. महर्षि पतंजलि संस्कृत संस्थान की मुख्य बोर्ड एवं स्थानीय परीक्षा 2019-20 की समय सारणी:महर्षि पतंजलि संस्कृत संस्थान की मुख्य बोर्ड एवं स्थानीय परीक्षा 2019-20 की समय सारणी</p>
+                                                            <p>104. प्रवेशिका कक्षा 5वी, प्रथमा कक्षा 8वीं वार्षिक परीक्षा निर्देशिका। प्रवेशिका कक्षा 5वी, प्रथमा कक्षा 8वीं वार्षिक परीक्षा निर्देशिका।</p>
+                                                            <p>105. राज्य शासन स्कूल विभाग द्वारा एक शाला योजना आदेश:राज्य शासन स्कूल विभाग द्वारा एक शाला योजना आदेश</p>
+                                                            <p>106. सत्र 2020-21 हेतु नवीन सम्बद्धता/सम्बद्धता नवीनीकरण हेतु निरीक्षण प्रतिवेदन /विभागीय अनुमति जारी कर:सत्र 2020-21 हेतु नवीन सम्बद्धता/सम्बद्धता नवीनीकरण हेतु निरीक्षण प्रतिवेदन /विभागीय अनुमति जारी करने के संबध में (172-73/01-02-2020)</p>
+                                                            <p>107. सत्र २०१९-२० में सम्बद्धता प्राप्त नवीनीकरण एवं नवीन विद्यालयों की सूची :सत्र २०१९-२० में सम्बद्धता प्राप्त नवीनीकरण एवं नवीन विद्यालयों की सूची </p>
+                                                            <p>108. प्रवेशिका (५वीं ) एवं प्रथमा अंतिम खंड (८वीं) की वार्षिक परीक्षा वर्ष २०१९-20 के आयोजन संबंधी (५८-५९/१:प्रवेशिका (५वीं ) एवं प्रथमा अंतिम खंड (८वीं) की वार्षिक परीक्षा वर्ष २०१९-20 के आयोजन संबंधी  (५८-५९/१३-1-२०२० )</p>
+                                                            <p>109. महर्षि पतंजलि संस्कृत संस्थान की सत्र २०20-२1 हेतु नवीन सम्बद्धता एवं सम्बद्धता नवीनीकरण आवेदन की:महर्षि पतंजलि संस्कृत संस्थान की सत्र २०20-२1 हेतु नवीन सम्बद्धता एवं सम्बद्धता नवीनीकरण आवेदन की निर्धारित तिथि में वृद्धि  विषयक(४३-४४/१०-०१-२०२० </p>
+                                                            <p>110. एल.के.जी एवं यू.के.जी हेतु पाठ्यक्रम आधारित प्रशिक्षण बाबत (२१३५/३६- ०४-12-२०१९ ):एल.के.जी  एवं यू.के.जी हेतु पाठ्यक्रम आधारित प्रशिक्षण बाबत (२१३५/३६- ०४-12-२०१९ )</p>
+                                                            <p>111. जिला संस्कृत प्रभारियों की बैठक दिनांक ०३-०१-२०२० के संबंध में (2083-84/26-11-2019):जिला संस्कृत प्रभारियों की बैठक दिनांक ०३-०१-२०२० के संबंध में (2083-84/26-11-2019)</p>
+                                                            <p>112. महर्षि पतंजलि संस्कृत संस्थान की सत्र २०१९-२० की मुख्य परीक्षा के आवेदन पत्र में वृद्धि विषयक(२०:महर्षि पतंजलि संस्कृत संस्थान की सत्र २०१९-२० की मुख्य परीक्षा के आवेदन पत्र में वृद्धि  विषयक(२०78 -79/25-११-२०१९)</p>
+                                                            <p>113. महर्षि पतंजलि संस्कृत संस्थान की सत्र २०१९-२० की मुख्य परीक्षा के आवेदन पत्र में वृद्धि विषयक(२०:महर्षि पतंजलि संस्कृत संस्थान की सत्र २०१९-२० की मुख्य परीक्षा के आवेदन पत्र में वृद्धि  विषयक(२०२७ -२८/१४-११-२०१९)  </p>
+                                                            <p>114. राज्य स्तरीय शास्त्रीय स्पर्धा वर्ष २०19-20 में भाग लेने हेतु आमन्त्रण :राज्य स्तरीय शास्त्रीय स्पर्धा वर्ष २०19-20 में भाग लेने हेतु आमन्त्रण </p>
+                                                            <p>
+                                                                115. राज्य स्तरीय शास्त्रीय स्पर्धा वर्ष २०19-20 में भाग लेने हेतु नियमावली :
+                                                                राज्य स्तरीय शास्त्रीय स्पर्धा वर्ष २०19-20 में भाग लेने हेतु  नियमावली
+                                                            </p>
+                                                            <p>116. राज्य स्तरीय शास्त्रीय स्पर्धा २०१९-20 के परिणाम :राज्य स्तरीय शास्त्रीय स्पर्धा २०१९-20 के परिणाम </p>
+                                                            <p>117. जिला संस्कृत प्रभारियों की नियुक्ति के संबंध में आदेश l (1880-81/16-10-2019):जिला संस्कृत प्रभारियों की नियुक्ति के संबंध में आदेश l (1880-81/16-10-2019)</p>
+                                                            <p>118. महर्षि पतंजलि संस्कृत संस्थान की सत्र २०१९-२० की मुख्य परीक्षा के आवेदन पत्र एम पी ऑनलाइन के माध्:महर्षि पतंजलि संस्कृत संस्थान की सत्र २०१९-२० की मुख्य परीक्षा के आवेदन पत्र एम पी ऑनलाइन के माध्यम से जमा कराने विषयक(१८८२-८३/16-१०-२०१९) </p>
+                                                            <p>119. वर्ष २०२०-२०२१ हेतु प्रेस विज्ञप्ति एवं सम्बद्धता की कार्ययोजना: वर्ष २०२०-२०२१ हेतु प्रेस विज्ञप्ति एवं सम्बद्धता की कार्ययोजना (05-10-2019)</p>
+                                                            <p>120. राज्य स्तरीय शास्त्रीय प्रतिभा खोज चयन स्पर्धा वर्ष २०19-20 (1695-96/20-09-2019):राज्य स्तरीय शास्त्रीय प्रतिभा खोज चयन स्पर्धा वर्ष २०19-20 (1695-96/20-09-2019)</p>
+                                                            <p>121. अशासकीय संस्कृत विद्यालयों को सत्र २०१९-२० के लिए नवीन सम्बद्धता /सम्बद्धता नवीनीकरण किये जाने  अशासकीय संस्कृत विद्यालयों को सत्र २०१९-२० के लिए नवीन सम्बद्धता /सम्बद्धता नवीनीकरण किये जाने के आदेश की सूची(१589-99/31-08-१९)</p>
+                                                            <p>122. संस्कृत सप्ताह २०१9 के आयोजन हेतु निर्धारित रूपरेखा का विवरण (1444-45/05-08-2019): संस्कृत सप्ताह २०१9 के आयोजन हेतु निर्धारित रूपरेखा  का विवरण (1444-45/05-08-2019)</p>
+                                                            <p>123. खगोलीय क्लब का गठन एवं शासकीय जीवाजी वेधशाला उज्जैन के अवलोकन विषयक (१२९७-९८/16-०७-२०१९ ):खगोलीय क्लब का गठन एवं शासकीय जीवाजी वेधशाला उज्जैन के अवलोकन विषयक (१२९७-९८/16-०७-२०१९ )</p>
+                                                            <p>124. महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की पूरक परीक्षा सत महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की पूरक परीक्षा  सत्र २०१8-19 हेतु केंद्र निर्धारण </p>
+                                                            <p>125. शासकीय/अशासकीय संस्कृत विद्यालयों को सत्र २०१९-२० के लिए नवीन सम्बद्धता /सम्बद्धता नवीनीकरण किय:शासकीय/अशासकीय संस्कृत विद्यालयों को सत्र २०१९-२० के लिए नवीन सम्बद्धता /सम्बद्धता नवीनीकरण किये जाने के आदेश की सूची(१११०-११११/२६-०६-२०१९)</p>
+                                                            <p>126. महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की पूरक परीक्षा सत महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की पूरक परीक्षा  सत्र २०१८-१९ के परीक्षा आवेदन भरवाये जाने विषयक </p>
+                                                            <p>127. महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की मुख्या परीक्षा  महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की मुख्या परीक्षा  का परिणाम की प्रेस विज्ञप्ति </p>
+                                                            <p>128. महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की मुख्य परीक्षा स महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की मुख्य परीक्षा  सत्र २०१8-१9 के  पुनर्गणना एवं उत्तरपुस्तिका की  छायाप्रति के आवेदन प्राप्त करने हेतु  अंतिम दिनांक 20-०६-2019 </p>
+                                                            <p>129. शासकीय कन्या आवासीय संस्कृत उ. मा. वि. टी.टी. नगर भोपाल की प्रवेश परीक्षा हेतु परीक्षा केंद्र निर् शासकीय कन्या आवासीय  संस्कृत उ. मा. वि. टी.टी. नगर भोपाल की प्रवेश परीक्षा हेतु परीक्षा केंद्र निर्धारण के संबंध में (१९५०-५१/२४-०५-२०१९ )</p>
+                                                            <p>130. महर्षि पतंजलि संस्कृत संस्थान से सम्बद्धता प्राप्त संस्कृत विद्यालयों/आदर्श विद्यालयों की बैठ:महर्षि पतंजलि संस्कृत संस्थान से सम्बद्धता प्राप्त संस्कृत विद्यालयों/आदर्श विद्यालयों की बैठक आयोजन संबंधी (९०२-०३/२४-०५-२०१९ )</p>
+                                                            <p>131. १० दिवसीय (प्रारंभिक स्तरीय) योग प्रशिक्षण हेतु विभागीय अधिकरी /प्राचार्यो को कार्यमुक्त करने व १० दिवसीय (प्रारंभिक स्तरीय) योग प्रशिक्षण हेतु विभागीय अधिकरी /प्राचार्यो को कार्यमुक्त करने विषयक (३५८-५९ /20-०५-२०१९ )</p>
+                                                            <p>132. शासकीय कन्या आवासीय संस्कृत उ. मा. वि. टी.टी. नगर भोपाल में कक्षा ६वीं एवं ९ वी (सत्र २०१९-२०) में प् शासकीय कन्या आवासीय  संस्कृत उ. मा. वि. टी.टी. नगर भोपाल  में  कक्षा ६वीं एवं ९ वी  (सत्र २०१९-२०) में प्रवेश हेतु ऑनलाइन आवेदन का विज्ञापन, निर्देश एवं आवेदन भरने की अंतिम तिथि १५ मई २०१९ (२९-०४-२०१९)</p>
+                                                            <p>133. सत्र२०१9-20 हेतु नवीन सम्बद्धता/सम्बद्धता नवीनीकरण हेतु निरीक्षण प्रतिवेदन /विभागीय अनुमति जारी  सत्र२०१9-20 हेतु नवीन सम्बद्धता/सम्बद्धता नवीनीकरण हेतु निरीक्षण प्रतिवेदन /विभागीय अनुमति जारी करने के संबध में (६२९-६३०/२९-०३-२०१९)</p>
+                                                            <p>134. प्रमुख सचिव स्कूल शिक्षा विभाग को महर्षि पतंजलि संस्कृत संस्थान के अध्यक्ष पद का कार्यभार सोंपे:प्रमुख सचिव स्कूल शिक्षा विभाग को महर्षि पतंजलि संस्कृत संस्थान के अध्यक्ष पद का कार्यभार सोंपे जाने विषयक</p>
+                                                            <p>135. महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की मुख्य परीक्षा स महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की मुख्य परीक्षा  सत्र २०१8-19 हेतु केंद्र निर्धारण (610-11/26-03-2019)</p>
+                                                            <p>136. सत्र २०१९ - २० हेतु ऑनलाइन आवेदन करने की तिथि में वृद्धि विषयक (५२४/१४-०५-२०१९ ):सत्र २०१९ - २०  हेतु  ऑनलाइन आवेदन करने की तिथि में वृद्धि विषयक (५२४/१४-०५-२०१९ )</p>
+                                                            <p>137. सस्थान की परीक्षाओ के मूल्यांकन कार्य हेतु पारिश्रमिक (१५-०२-2019):सस्थान की परीक्षाओ के  मूल्यांकन कार्य हेतु पारिश्रमिक (१५-०२-2019)</p>
+                                                            <p>138. महिला वार्डन पद पर प्रतिनियुक्ति हेतु विज्ञापन प्रकाशित करने हेतु (३९२/20-०२-२०१९ ):महिला वार्डन पद पर प्रतिनियुक्ति हेतु विज्ञापन प्रकाशित करने हेतु (३९२/20-०२-२०१९ )</p>
+                                                            <p>139. एक शाला एक परिसर योजना परिपत्र से शासकीय संस्कृत विद्यालय को मुक्त रखे जाने विषयक (३७७-७८/०६-०२-२० एक शाला एक परिसर योजना परिपत्र से शासकीय संस्कृत विद्यालय को मुक्त रखे जाने विषयक (३७७-७८/०६-०२-२०१९ )</p>
+                                                            <p>140. व्यावहारिक ज्योतिष विज्ञान, व्यावहारिक वास्तुशास्त्र एवं पौरोहित्यम के डिप्लोमा पाठ्यक्रम के :व्यावहारिक ज्योतिष विज्ञान, व्यावहारिक वास्तुशास्त्र एवं पौरोहित्यम के डिप्लोमा पाठ्यक्रम के निर्देश (1-5-२०१८)</p>
+                                                            <p>141. वर्ष २०१८-१९ की प्रवेशिका एवं प्रथमा (प्रथम, द्वितीय एवं तृतीय खंड ) की मुख्य परीक्षा आयोजित करने व:वर्ष २०१८-१९ की प्रवेशिका एवं प्रथमा (प्रथम, द्वितीय एवं तृतीय खंड ) की मुख्य परीक्षा आयोजित करने विषयक (२८५-८६/2-2-19 )</p>
+                                                            <p>142. महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की मुख्य परीक्षा स महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की मुख्य परीक्षा  सत्र २०१8-19 हेतु केंद्र निर्धारण (237/01-02-19)</p>
+                                                            <p>143. महर्षि पतंजलि संस्कृत संस्थान की मुख्य बोर्ड एवं स्थानीय परीक्षा 2018-१९ की समय सारणी :महर्षि पतंजलि संस्कृत संस्थान की मुख्य बोर्ड एवं स्थानीय परीक्षा 2018-१९ की समय सारणी (18-01-2019)</p>
+                                                            <p>144. संस्कृत विद्यालय अधोसंरचना हेतु वर्ष २०१९-20 वित्तीय सहायता संसोधित आवेदन पत्र एवं कार्ययोजना (16-1:संस्कृत विद्यालय अधोसंरचना हेतु वर्ष २०१९-20 वित्तीय सहायता संसोधित आवेदन पत्र एवं कार्ययोजना </p>
+                                                            <p>145. महर्षि पतंजलि संस्कृत संस्थान हेतु जिला संस्कृत प्रभारियों की व्यवस्था विषयक (४३२७-२८/१३-12-२०१८):महर्षि पतंजलि संस्कृत संस्थान हेतु जिला संस्कृत प्रभारियों की व्यवस्था विषयक (४३२७-२८/१३-12-२०१८)</p>
+                                                            <p>146. महर्षि पतंजलि संस्कृत संस्थान से सम्बद्ध मान्यता प्राप्त संस्कृत शालाओ में डाइस कोड उपलब्ध करा महर्षि पतंजलि संस्कृत संस्थान से सम्बद्ध मान्यता प्राप्त संस्कृत शालाओ में डाइस कोड उपलब्ध कराने विषयक (३८५९-६०/०४-12-२०१८ )</p>
+                                                            <p>147. सत्र२०१८-१९ हेतु नवीन सम्बद्धता/सम्बद्धता नवीनीकरण के आदेश किये गये (3800-23/26-11-2018):सत्र२०१८-१९ हेतु नवीन सम्बद्धता/सम्बद्धता नवीनीकरण के आदेश किये गये (3800-23/26-11-2018)</p>
+                                                            <p>148. महर्षि पतंजलि संस्कृत संस्थान के राजपत्र अधिनियम २००७ की धारा 3-(1) के प्रभावशील का आदेश 23-8-२००८ (२४- महर्षि पतंजलि संस्कृत संस्थान के राजपत्र अधिनियम २००७ की धारा 3-(1) के प्रभावशील का आदेश  23-8-२००८ (२४-११-२०१८)</p>
+                                                            <p>149. सत्र२०१८-१९ हेतु नवीन सम्बद्धता/सम्बद्धता नवीनीकरण के आदेश किये गये (3736-37/19-11-2018):सत्र२०१८-१९ हेतु नवीन सम्बद्धता/सम्बद्धता नवीनीकरण के आदेश किये गये (3736-37/19-11-2018)</p>
+                                                            <p>150. महर्षि पतंजलि संस्कृत संस्थान की सत्र २०१8-१9 की मुख्य परीक्षा के आवेदन पत्र एम पी ऑनलाइन के माध्य महर्षि पतंजलि संस्कृत संस्थान की सत्र २०१8-१9 की मुख्य परीक्षा के आवेदन पत्र एम पी ऑनलाइन के माध्यम से जमा कराने विषयक (3724-25/15-11-2018)</p>
+                                                            <p>151. राज्य स्तरीय शास्त्रीय स्पर्धा के नियमावली (१४-११-२०१८ ):राज्य स्तरीय शास्त्रीय स्पर्धा के नियमावली (१४-११-२०१८ )</p>
+                                                            <p>152. सत्र२०१८-१९ हेतु नवीन सम्बद्धता/सम्बद्धता नवीनीकरण के आदेश किये गये (3722-23/14-11-2018):सत्र२०१८-१९ हेतु नवीन सम्बद्धता/सम्बद्धता नवीनीकरण के आदेश किये गये (3722-23/14-11-2018)</p>
+                                                            <p>153. महर्षि पतंजलि संस्कृत संस्थान की सत्र २०१8-१9 की मुख्य परीक्षा के आवेदन पत्र एम पी ऑनलाइन के माध्य महर्षि पतंजलि संस्कृत संस्थान की सत्र २०१8-१9 की मुख्य परीक्षा के आवेदन पत्र एम पी ऑनलाइन के माध्यम से जमा कराने विषयक (3688/05-11-2018)</p>
+                                                            <p>154. राष्ट्रीय संस्कृत संस्थान की शासकीय हाई स्कूल एवं हायरसेकण्ड्री स्कूलों के संस्कृत शिक्षकों क राष्ट्रीय संस्कृत संस्थान की शासकीय हाई स्कूल एवं हायरसेकण्ड्री स्कूलों के संस्कृत शिक्षकों के वेतन हेतु वित्तीय सहायता का आदेश (४०२८/११-१०-२०१८ )(१८-१०-२०१८))</p>
+                                                            <p>155. शासकीय कन्या आवासीय संस्कृत उ. मा. वि. टी.टी. नगर भोपाल का हायरसेकण्ड्री में उन्नयन का शासन आदेश (16-१:शासकीय कन्या आवासीय  संस्कृत उ. मा. वि. टी.टी. नगर भोपाल का हायरसेकण्ड्री में उन्नयन का शासन आदेश (16-१०-२०१८)</p>
+                                                            <p>156. महर्षि पतंजलि संस्कृत संस्थान द्वारा आयोजित बैठक/कार्यशाला /सेमिनार/महोत्सव/प्रशिक्षण हेतु मा महर्षि पतंजलि संस्कृत संस्थान  द्वारा आयोजित बैठक/कार्यशाला /सेमिनार/महोत्सव/प्रशिक्षण हेतु मानदेय एवं यात्रा भत्ते संबंधी आदेश (16-१०-2018)</p>
+                                                            <p>157. महर्षि पतंजलि संस्कृत संस्थान की सत्र २०१8-१9 की मुख्य परीक्षा के आवेदन पत्र एम पी ऑनलाइन के माध्य महर्षि पतंजलि संस्कृत संस्थान की सत्र २०१8-१9 की मुख्य परीक्षा के आवेदन पत्र एम पी ऑनलाइन के माध्यम से जमा कराने विषयक(३५४०/१०-१०-२०१८)(16-१०-2018)</p>
+                                                            <p>158. शासकीय कन्या आवासीय संस्कृत उ. मा. वि. टी.टी. नगर भोपाल के कक्षा ९वीं के आवेदन ऍम पी ऑनलाइन से भरने  शासकीय कन्या आवासीय  संस्कृत उ. मा. वि. टी.टी. नगर भोपाल  के  कक्षा ९वीं के आवेदन ऍम पी ऑनलाइन से भरने विषयक (16-१०-2018)</p>
+                                                            <p>159. सत्र२०१८-१९ हेतु नवीन सम्बद्धता/सम्बद्धता नवीनीकरण के आदेश किये गये(3506/10-10-2018):सत्र२०१८-१९ हेतु नवीन सम्बद्धता/सम्बद्धता नवीनीकरण के आदेश किये गये(3506/10-10-2018)</p>
+                                                            <p>160. राज्य स्तरीय शास्त्रीय प्रतिभा खोज चयन स्पर्धा वर्ष २०१8-19 (2271-72/19-09-18):राज्य स्तरीय शास्त्रीय प्रतिभा खोज चयन स्पर्धा वर्ष २०१8-19 (2271-72/19-09-18)</p>
+                                                            <p>161. सत्र२०१८-१९ हेतु नवीन सम्बद्धता के आदेश किये गये (2252-53/17-09-18):सत्र२०१८-१९ हेतु नवीन सम्बद्धता के आदेश किये गये (2252-53/17-09-18)</p>
+                                                            <p>162. शासकीय कन्या आवासीय माध्यमिक संस्कृत उ. मा. वि. टी.टी. नगर भोपाल को नवीन सम्बद्धता का आदेश (२२५०-५१ / शासकीय कन्या आवासीय माध्यमिक संस्कृत उ. मा. वि. टी.टी. नगर भोपाल को नवीन सम्बद्धता का आदेश (२२५०-५१ /१७-०९-२०१८ )</p>
+                                                            <p>163. महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की पूरक परीक्षा का  महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की पूरक परीक्षा  का परिणाम की प्रेस विज्ञप्ति २०६५/ ०१-०९-2018</p>
+                                                            <p>164. समन्वय समिति का गठन का आदेश (०७-०३-२०१७ ):समन्वय समिति का गठन का आदेश (०७-०३-२०१७ )</p>
+                                                            <p>165. ऍम पी ऑनलाइन का नया पता एवं दूरभाष :ऍम पी ऑनलाइन का नया पता एवं दूरभाष </p>
+                                                            <p>166. शासकीय कन्या आवासीय माध्यमिक संस्कृत उ. मा. वि. टी.टी. नगर भोपाल हेतु पाठ्यक्रम एवं पाठ्यपुस्तकों :शासकीय कन्या आवासीय माध्यमिक संस्कृत उ. मा. वि. टी.टी. नगर भोपाल हेतु पाठ्यक्रम एवं पाठ्यपुस्तकों  का अनुमोदन (१५७६/ १९-०७-२०१८)</p>
+                                                            <p>167. शासकीय कन्या आवासीय माध्यमिक संस्कृत उ. मा. वि. टी.टी. नगर भोपाल में पद स्वीकृति का आदेश :शासकीय कन्या आवासीय माध्यमिक संस्कृत उ. मा. वि. टी.टी. नगर भोपाल में पद स्वीकृति का आदेश </p>
+                                                            <p>168. महर्षि पतंजलि संस्कृत संस्थान के सम्बद्ध विद्यालय पाठ्यकर्म पर आधारित प्रश्न बैक निर्माण कार् महर्षि पतंजलि संस्कृत संस्थान के सम्बद्ध विद्यालय पाठ्यकर्म पर आधारित प्रश्न बैक निर्माण कार्यशाला </p>
+                                                            <p>169. शासकीय कन्या आवासीय माध्यमिक संस्कृत उ. मा. वि. टी.टी. नगर भोपाल के सुचारू संचालन एवं प्रबंधन हेतु  शासकीय कन्या आवासीय माध्यमिक संस्कृत उ. मा. वि. टी.टी. नगर भोपाल के सुचारू संचालन एवं प्रबंधन हेतु निर्देश </p>
+                                                            <p>172. सत्र २०१८-१९ हेतु ऍम पी ऑनलाइन से L.K.G, U.K.G एवं कक्षा 1 से 4थी तक कक्षाये प्रारंभ करने हेतु सम्बद्धता वि सत्र २०१८-१९ हेतु ऍम पी ऑनलाइन से L.K.G, U.K.G एवं कक्षा 1 से 4थी तक कक्षाये प्रारंभ करने हेतु सम्बद्धता विषयक </p>
+                                                            <p>173. महर्षि पतंजलि संस्कृत संस्थान का LKG से कक्षा 4 का पाठ्यक्रम :महर्षि पतंजलि संस्कृत संस्थान का LKG से कक्षा 4 का पाठ्यक्रम </p>
+                                                            <p>174. महर्षि पतंजलि संस्कृत संस्थान भोपाल की पाठ्यपुस्तके अवलोकन विषयक:महर्षि पतंजलि संस्कृत संस्थान भोपाल की पाठ्यपुस्तके अवलोकन विषयक</p>
+                                                            <p>175. महर्षि पतंजलि संस्कृत संस्थान से सम्बद्धता प्राप्त सस्थाओ वित्तीय अनुदान हेतु मापदंड एवं आवेद महर्षि पतंजलि संस्कृत संस्थान से सम्बद्धता प्राप्त सस्थाओ वित्तीय अनुदान हेतु मापदंड एवं आवेदन </p>
+                                                            <p>176. महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की पूरक परीक्षा सत महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की पूरक परीक्षा  सत्र २०१७-१८ हेतु  केंद्र निर्धारण विषयक (संशोधित)</p>
+                                                            <p>177. संस्कृत सप्ताह २०१8 के आयोजन हेतु निर्धारित रूपरेखा एवं स्वीकृत राशि का विवरण:- संस्कृत सप्ताह २०१8 के आयोजन हेतु निर्धारित रूपरेखा एवं स्वीकृत राशि का विवरण</p>
+                                                            <p>178. महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की पूरक परीक्षा सत महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की पूरक परीक्षा  सत्र २०१७-१८ हेतु  केंद्र निर्धारण विषयक </p>
+                                                            <p>179. शासकीय कन्या आवासीय माध्यमिक संस्कृत उ. मा. वि. टी.टी. नगर भोपाल में प्रारंभ किये जाने की प्रवेश स  शासकीय कन्या आवासीय माध्यमिक संस्कृत उ. मा. वि. टी.टी. नगर भोपाल में  प्रारंभ किये जाने  की प्रवेश सुचना वावत</p>
+                                                            <p>180. l.K.G, U.K.G एवं कक्षा 4थी की नवीन सम्बद्धता की विज्ञप्ति एवं मापदंड (निर्देश ):L.K.G, U.K.G एवं कक्षा 4थी की नवीन सम्बद्धता की विज्ञप्ति एवं मापदंड (निर्देश )</p>
+                                                            <p>181. महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की पूरक परीक्षा सत महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की पूरक परीक्षा  सत्र २०१७-१८ के परीक्षा आवेदन भरवाये जाने विषयक </p>
+                                                            <p>182. महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की मुख्य परीक्षा स महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की मुख्य परीक्षा  सत्र २०१७-१८ के  पुनर्गणना एवं उत्तरपुस्तिका की  छायाप्रति के आवेदन प्राप्त करने हेतु  अंतिम दिनांक १०-०७-२०१८ </p>
+                                                            <p>183. सत्र२०१८-१९ हेतु नवीन सम्बद्धता/सम्बद्धता नवीनीकरण के आदेश किये गये:सत्र२०१८-१९ हेतु नवीन सम्बद्धता/सम्बद्धता नवीनीकरण के आदेश किये गये</p>
+                                                            <p>184. महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की मुख्य परीक्षा स महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की मुख्य परीक्षा  सत्र २०१७-१८ का  परीक्षा परिणाम </p>
+                                                            <p>185. महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की मुख्य परीक्षा स महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की मुख्य परीक्षा  सत्र २०१७-१८ का  परीक्षा परिणाम </p>
+                                                            <p>186. महर्षि पतंजलि संस्कृत संस्थान की वेबसाइट पर माडल प्रश्न एवं उत्तर उपलब्ध कराये जाने बावत:महर्षि पतंजलि संस्कृत संस्थान की वेबसाइट पर माडल प्रश्न एवं उत्तर उपलब्ध कराये जाने बावत</p>
+                                                            <p>187. उपमहानिदेशक प्रादेशिक मोसम केंद्र नागपुर द्वारा जीवाजी वेधशाला उज्जैन को जारी सराहना परिपत्र :उपमहानिदेशक प्रादेशिक मोसम केंद्र नागपुर द्वारा जीवाजी वेधशाला उज्जैन को जारी सराहना परिपत्र </p>
+                                                            <p>188. प्रदेश का पहला शासकीय कन्या आवासीय माध्यमिक संस्कृत उ. मा. वि. टी.टी. नगर भोपाल में प्रारंभ किये जा प्रदेश का पहला शासकीय कन्या आवासीय माध्यमिक संस्कृत उ. मा. वि. टी.टी. नगर भोपाल में  प्रारंभ किये जाने  वावत</p>
+                                                            <p>189. शासकीय कन्या आवासीय माध्यमिक संस्कृत उ. मा. वि. टी.टी. नगर भोपाल में सत्र २०१८-१९ में प्रवेश वावत:शासकीय कन्या आवासीय माध्यमिक संस्कृत उ. मा. वि. टी.टी. नगर भोपाल में सत्र २०१८-१९ में प्रवेश वावत</p>
+                                                            <p>190. शासकीय कन्या आवासीय माध्यमिक संस्कृत उ. मा. वि. टी.टी. नगर भोपाल में सत्र २०१८-१९ में प्रवेश वावत:शासकीय कन्या आवासीय माध्यमिक संस्कृत उ. मा. वि. टी.टी. नगर भोपाल में सत्र २०१८-१९ में प्रवेश वावत</p>
+                                                            <p>191. सत्र२०१८-१९ हेतु नवीन सम्बद्धता/सम्बद्धता नवीनीकरण के आदेश किये गये:सत्र२०१८-१९ हेतु नवीन सम्बद्धता/सम्बद्धता नवीनीकरण के आदेश किये गये</p>
+                                                            <p>192. व्यावहारिक ज्योतिष विज्ञान, व्यावहारिक वास्तुशास्त्र एवं पौरोहित्यम के डिप्लोमा पाठ्यक्रम के :व्यावहारिक ज्योतिष विज्ञान, व्यावहारिक वास्तुशास्त्र एवं पौरोहित्यम के डिप्लोमा पाठ्यक्रम के परीक्षा एवं मूल्यांकन के संबध के आदेश</p>
+                                                            <p>193. राज्य स्तरीय शा. योग केन्द्र भोपाल में योग प्रशिक्षण कार्यक्रम आयोजित करने हेतुवार्षिक योग पंचा:राज्य स्तरीय शा. योग केन्द्र भोपाल में योग प्रशिक्षण कार्यक्रम आयोजित करने हेतुवार्षिक योग पंचांग वर्ष २०१८-१९ </p>
+                                                            <p>194. महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की मुख्य परीक्षा स महर्षि पतंजलि संस्कृत संस्थान की पूर्व मध्यमा (१०वीं) एवं उत्तरमध्यमा (१२वीं) की मुख्य परीक्षा  सत्र २०१७-१८ हेतु केंद्र निर्धारण </p>
+                                                            <p>195. महर्षि पतंजलि संस्कृत संस्थान की मुख्य परीक्षा सत्र २०१७-१८ के लिए विशेष निर्देश विषयक:महर्षि पतंजलि संस्कृत संस्थान की  मुख्य परीक्षा  सत्र २०१७-१८ के लिए विशेष निर्देश विषयक</p>
+                                                            <p>196. महर्षि पतंजलि संस्कृत संस्थान हेतु जिला संस्कृत शिक्षा प्रभारियों की व्यवस्था विषयक:महर्षि पतंजलि संस्कृत संस्थान हेतु जिला संस्कृत शिक्षा प्रभारियों की व्यवस्था विषयक</p>
+                                                            <p>197. महर्षि पतंजलि संस्कृत संस्थान की स्थानीय परीक्षा (कक्षा ९वीं एवं ११वीं) विषयक :महर्षि पतंजलि संस्कृत संस्थान की  स्थानीय परीक्षा  (कक्षा ९वीं एवं ११वीं) विषयक </p>
+                                                            <p>198. महर्षि पतंजलि संस्कृत संस्थान की मुख्य परीक्षा सत्र २०१७-१८ के प्रवेशपत्र विषयक :महर्षि पतंजलि संस्कृत संस्थान की  मुख्य परीक्षा  सत्र २०१७-१८  के प्रवेशपत्र विषयक </p>
+                                                            <p>199. जिला संस्कृत प्रभारी बैठक आयोजन दिनांक १४-०४-२०१८ विषयक:जिला संस्कृत प्रभारी बैठक आयोजन दिनांक १४-०४-२०१८ विषयक</p>
+                                                            <p>200. महर्षि पतंजलि संस्कृत संस्थान की मुख्य परीक्षा सत्र २०१७-१८ विषयक :महर्षि पतंजलि संस्कृत संस्थान की  मुख्य परीक्षा  सत्र २०१७-१८ विषयक </p>
+                                                            <p>201. नवीन सम्बद्धता/सम्बद्धता नवीनीकरण आवेदन करने विषयक:नवीन सम्बद्धता/सम्बद्धता नवीनीकरण आवेदन करने विषयक</p>
+                                                            <p>202. नवीन सम्बद्धता/सम्बद्धता नवीनीकरण आवेदन करने विषयक:नवीन सम्बद्धता/सम्बद्धता नवीनीकरण आवेदन करने विषयक</p>
+                                                            <p>203. नवीन सम्बद्धता/सम्बद्धता नवीनीकरण आवेदन करने विषयक:नवीन सम्बद्धता/सम्बद्धता नवीनीकरण आवेदन करने विषयक</p>
+                                                            <p>204. सत्र२०१८-१९ हेतु नवीन सम्बद्धता/सम्बद्धता नवीनीकरण हेतु प्रतिवेदन/विभागीय अनुमति जारी करने के  सत्र२०१८-१९ हेतु नवीन सम्बद्धता/सम्बद्धता नवीनीकरण हेतु प्रतिवेदन/विभागीय अनुमति जारी करने के संबध में </p>
+                                                            <p>205. संस्कृत शिक्षण हेतु वित्तीय सहायता अनुदान २०१८-१९:संस्कृत शिक्षण हेतु वित्तीय सहायता अनुदान २०१८-१९</p>
+                                                            <p>206. अखिलभारतीय संस्कृत सम्मलेन एवं नवसंवत्सर महोत्सव - १८-०३-२०१८:अखिलभारतीय संस्कृत सम्मलेन एवं नवसंवत्सर महोत्सव - १८-०३-२०१८</p>
+                                                            <p>207. एमपीएसएस से सम्बद्यता प्राप्त संस्कृत विद्यालय के शिक्षकों एवं सामान्य विद्यालयों में योग शिक एमपीएसएस से सम्बद्यता प्राप्त संस्कृत विद्यालय के शिक्षकों एवं सामान्य विद्यालयों में योग शिक्षकों  के लिए राज्य स्तरीय पुरस्कार वर्ष २०१७-१८ हेतु नामाकन प्रक्रिया चयन प्रक्रिया  मापदंड एवम दिशा निर्देश (स्मरण-पत्र)</p>
+                                                            <p>208. संस्कृत शालाओं के शिक्षकों एवं प्राचार्यों को शिक्षण कौशल विकास एवम शाला प्रबंधन पर प्रशिक्षण:संस्कृत शालाओं के शिक्षकों एवं प्राचार्यों को शिक्षण कौशल विकास एवम शाला प्रबंधन पर </p>
+                                                            <p>209. वार्षिक परीक्षा २०१७-१८ की समय-सारणी कक्षा 9वी से12वीं तक:वार्षिक परीक्षा २०१७-१८ की समय-सारणी कक्षा 9वी से12वीं तक</p>
+                                                            <p>210. 16 Sanskar - निर्देशकीय :16 Sanskar - निर्देशकीय </p>
+                                                            <p>211. संस्कृत के व्यापक प्रचार-प्रसार हेतु संस्कृत नाटक/नृत्य नाटिका/गीत संबधित कार्यक्रम आयोजित विष संस्कृत के व्यापक प्रचार-प्रसार हेतु संस्कृत नाटक/नृत्य नाटिका/गीत संबधित कार्यक्रम आयोजित विषयक.</p>
+                                                            <p>212. राष्ट्रिय ज्योतिष कार्यशाला २८ एवं २९ नवम्बर 2017:राष्ट्रिय ज्योतिष कार्यशाला २८ एवं २९ नवम्बर 2017</p>
+                                                            <p>213. एमपीएसएस से सम्बद्यता प्राप्त संस्कृत विद्यालय के शिक्षकों एवं सामान्य विद्यालयों में योग शिक एमपीएसएस से सम्बद्यता प्राप्त संस्कृत विद्यालय के शिक्षकों एवं सामान्य विद्यालयों में योग शिक्षकों  के लिए राज्य स्तरीय पुरस्कार वर्ष २०१७-१८ हेतु नामाकन प्रक्रिया चयन प्रक्रिया  मापदंड एवम दिशा निर्देश</p>
+                                                            <p>214. व्यावहारिक ज्योतिष विज्ञान डिप्लोमा पाठ्यक्रम कक्षा का शेड्यूल माह जनवरी:व्यावहारिक ज्योतिष विज्ञान डिप्लोमा पाठ्यक्रम कक्षा का शेड्यूल माह जनवरी</p>
+                                                            <p>215. शासकीय कन्या आवासीय माध्यमिक संस्कृत उ. मा. वि. टी.टी. नगर भोपाल में प्रारंभ करने वावत:शासकीय कन्या आवासीय माध्यमिक संस्कृत उ. मा. वि. टी.टी. नगर भोपाल में प्रारंभ करने वावत</p>
+                                                            <p>216. महर्षि पतंजलि संस्कृत संस्थान का नवीन पता एवम् दूरभाष क्रमांक:महर्षि पतंजलि संस्कृत संस्थान का नवीन पता एवम् दूरभाष क्रमांक</p>
+                                                            <p>217. अर्धवार्षिक परीक्षा २०१७-१८ की समय-सारणी कक्षा 10वीं:अर्धवार्षिक परीक्षा २०१७-१८ की समय-सारणी कक्षा 10वीं</p>
+                                                            <p>218. अर्धवार्षिक परीक्षा २०१७-१८ की समय-सारणी कक्षा 11वीं:अर्धवार्षिक परीक्षा २०१७-१८ की समय-सारणी कक्षा 11वीं</p>
+                                                            <p>219. अर्धवार्षिक परीक्षा २०१७-१८ की समय-सारणी कक्षा 12वीं:अर्धवार्षिक परीक्षा २०१७-१८ की समय-सारणी कक्षा 12वीं</p>
+                                                            <p>220. महर्षि पतंजलि संस्कृत संस्थान की सत्र २०१७-१८ की मुख्य परीक्षा के आवेदन पत्र एम पी ऑनलाइन के माध्:महर्षि पतंजलि संस्कृत संस्थान की सत्र २०१७-१८ की मुख्य परीक्षा के आवेदन पत्र एम पी ऑनलाइन के माध्यम से जमा कराने विषयक</p>
+                                                            <p>221. महर्षि पतंजलि संस्कृत संस्थान की सत्र २०१७-१८ की मुख्य परीक्षा के आवेदन पत्र एम पी ऑनलाइन के माध्:महर्षि पतंजलि संस्कृत संस्थान की सत्र २०१७-१८ की मुख्य परीक्षा के आवेदन पत्र एम पी ऑनलाइन के माध्यम से जमा कराने विषयक</p>
+                                                            <p>222. अर्धवार्षिक परीक्षा २०१७-१८ की समय-सारणी कक्षा ९वीं:अर्धवार्षिक परीक्षा २०१७-१८ की समय-सारणी कक्षा ९वीं</p>
+                                                            <p>223. महर्षि पतंजलि संस्कृत संस्थान की सत्र २०१७-१८ की मुख्य परीक्षा के आवेदन पत्र एम पी ऑनलाइन के माध्:महर्षि पतंजलि संस्कृत संस्थान की सत्र २०१७-१८ की मुख्य परीक्षा के आवेदन पत्र एम पी ऑनलाइन के माध्यम से जमा कराने विषयक</p>
+                                                            <p>224. राज्य स्तरीय शास्त्रीय प्रतिभा खोज चयन स्पर्धा वर्ष २०१७-18:राज्य स्तरीय शास्त्रीय प्रतिभा खोज चयन स्पर्धा वर्ष २०१७-18</p>
+                                                            <p>225. आवासीय संस्कृत विद्यालय पाठ्यचर्या की रुपरेखा सम्बन्धी कार्यशाला दिनांक ०९-१०-२०१७ एवं १०-१०-२०:आवासीय संस्कृत विद्यालय पाठ्यचर्या की रुपरेखा सम्बन्धी कार्यशाला दिनांक ०९-१०-२०१७ एवं १०-१०-२०१७</p>
+                                                            <p>226. शासकीय/अशासकीय संस्कृत विद्यालयों को सत्र २०१७-१८ के लिए नवीन सम्बद्धता /सम्बद्धता नवीनीकरण किय:शासकीय/अशासकीय संस्कृत विद्यालयों को सत्र २०१७-१८ के लिए नवीन सम्बद्धता /सम्बद्धता नवीनीकरण किये जाने के आदेश की सूची</p>
+                                                            <p>227. डिप्लोमा पाठ्यक्रम प्रारम्भ करने की स्वकृति बाबत :डिप्लोमा पाठ्यक्रम प्रारम्भ करने की  स्वकृति बाबत</p>
+                                                            <p>228. विभिन्न मंचीय कार्यक्रम आयोजित करने हेतु आवेदन प्रारूप:विभिन्न मंचीय कार्यक्रम आयोजित करने हेतु आवेदन प्रारूप</p>
+                                                            <p>229. विभिन्न मंचीय कार्यक्रम आयोजित करने हेतु विज्ञापन:विभिन्न मंचीय कार्यक्रम आयोजित करने हेतु विज्ञापन</p>
+                                                            <p>230. महर्षि पतंजलि संस्कृत संस्थान की पाठ्यपुस्तक लेखन कार्यशाला का आयोजन दिनांक ११ से १५ सितम्बर वि:महर्षि पतंजलि संस्कृत संस्थान की पाठ्यपुस्तक लेखन कार्यशाला का आयोजन दिनांक ११ से १५ सितम्बर विषयक</p>
+                                                            <p>231. त्रेमासिक परीक्षा २०१७ आयोजित करने विषयक : त्रेमासिक परीक्षा २०१७ आयोजित करने विषयक </p>
+                                                            <p>232. त्रेमासिक परीक्षा २०१७ - १८ उत्तरमध्यमा (१२वीं) समय सारणी: त्रेमासिक परीक्षा २०१७ - १८ उत्तरमध्यमा (१२वीं) समय सारणी</p>
+                                                            <p>233. त्रेमासिक परीक्षा २०१७ - १८ उत्तरमध्यमा प्रथमखंड (११वीं) समय सारणी: त्रेमासिक परीक्षा २०१७ - १८ उत्तरमध्यमा प्रथमखंड (११वीं) समय सारणी</p>
+                                                            <p>234. त्रेमासिक परीक्षा २०१७ - १८ पूर्वमध्यमा दिव्तीयखंड (१०वीं) समय सारणी: त्रेमासिक परीक्षा २०१७ - १८ पूर्वमध्यमा दिव्तीयखंड (१०वीं) समय सारणी</p>
+                                                            <p>235. संस्थान की वेबसाइट प्रारम्भ करने विषयक:</p>
+                                                            <p>236. वर्ष २०१६-१७ के ई-माइग्रेशन के संबध में:</p>
+                                                            <p>237. संस्कृत सप्ताह- २०१७:- संस्कृत सप्ताह २०१७ के आयोजन हेतु निर्धारित रूपरेखा एवं स्वीकृत राशि का विवरण</p>
+                                                            <p>238. प्रेस नोट :वर्ष २०१७-१८ की वित्तीय सहायता हेतु आवेदन जमा कराने की तिथि में वृद्धि बावत् |</p>
+                                                            <p>239. विज्ञापन -:शासकीय कन्या आवासीय संस्कृत उ. मा. वि. टी.टी. नगर भोपाल में शिक्षक / अध्यापक / सहायक शिक्षक / सहायक अध्यापक  के पद पर प्रतिनियुक्ति हेतु आवेदन का प्रारूप </p>
+                                                            <p>240. TIME TABLE CLASS 10TH:</p>
+                                                            <p>241. TIME TABLE CLASS 12TH:</p>
+                                                            <p>242. प्रवेश निति:</p>
+                                                            <p>243. समकक्षता :महर्षि पतंजलि संस्कृत संस्थान, मध्यप्रदेश भोपाल को प्रभावशील किये जाने की अधिसूचना।</p>
+                                                            <p>244. समकक्षता:माध्यमिक शिक्षा बोर्ड राजस्थान, अजमेर द्वारा महर्षि पतंजलि संस्कृत संस्थान, मध्यप्रदेश भोपाल की परीक्षा हेतु समकक्षता का आदेश।. म.प्र. शासन, स्कूल शिक्षा विभाग द्वारा उत्तरमध्यमा तक परीक्षा लिये जाने की अनुमति बाबत्।</p>
+                                                            <p>245. समकक्षता ::म.प्र. शासन, स्कूल शिक्षा विभाग द्वारा उत्तरमध्यमा तक परीक्षा लिये जाने की अनुमति बाबत्।</p>
+                                                            <p>246. समकक्षता ::भारतीय विद्यालय शिक्षा बोर्ड मण्डल COBSE द्वारा महर्षि पतंजलि संस्कृत संस्थान, मध्यप्रदेष भोपाल को सदस्यता प्रदान किये जाने विषयक।</p>
+                                                            <p>247. समकक्षता ::महर्षि पतंजलि संस्कृत संस्थान, मध्यप्रदेष भोपाल की पूर्वमध्यमा तथा उत्तरमध्यमा की परीक्षाओं की समकक्षता बाबत्। </p>
+                                                            <p>248. समकक्षता ::महर्षि पतंजलि संस्कृत संस्थान, मध्यप्रदेश भोपाल द्वारा आयोजित होने वाले पूर्व मध्यमा तथा उत्तरमध्यमा की परीक्षाओं की समकक्षता ।</p>
+                                                            <p>249. म.प.स.स.की पूरक परीक्षा 2016 - 2017 के परीक्षा आवेदन जमा करने की अंतिम तिथि 10-07-2017 विषयक :</p>
+                                                            <p>
+                                                                251. 50 लाख की वित्तीय सहायता हेतु मापदण्ड: महर्षि पतंजलि संस्कृत संस्थान से सम्बद्धता प्राप्त संस्थाओं को 50 लाख की वित्तीय सहायता हेतु मापदण्ड।
+                                                            </p>
+                                                        </span>
+                                                        <button class="btn-1" onclick="myFunction()" id="myBtn">Read more</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade in active" id="economics">
+                                        <div class="row margin-bottom">
+                                            <div class="col-md-12">
+                                                <div class="edu2_cur_wrap">
+                                                    <div class="edu2_cur_des_ft">
+                                                        <h4>शासकीय योग प्रशिक्षण केंद्र भोपाल :-</h4>
+                                                    </div>
+                                                    <p style="padding" 15px;>1. योग की गतिविधियों के प्रचार-प्रसार व मॉनिटरिंग एवं सफल संचालन हेतु जिला योग कक्ष प्रभारी को प्रभ योग की गतिविधियों के प्रचार-प्रसार व मॉनिटरिंग एवं सफल संचालन हेतु जिला योग कक्ष प्रभारी को प्रभार सौपने विषयक।</p>
+                                                    <p style="padding" 15px;>2. लोक शिक्षण संचनालय द्वारा जारी विश्व योग दिवस(21-06-2018) हेतु अभ्यास क्रम / सामान्य योग अभ्यास क्रम </p>
+                                                    <p style="padding" 15px;>3. राज्य स्तरीय शासकीय योग प्रशिक्षण केन्द्र मध्यप्रदेश भोपाल में आॅनलाइन योग प्रशिक्षण कार्यक्र:राज्य स्तरीय शासकीय योग प्रशिक्षण केन्द्र मध्यप्रदेश भोपाल में आॅनलाइन योग प्रशिक्षण कार्यक्रम आयोजित करने हेतु।</p>
+                                                    <p style="padding" 15px;>4. व्यावहारिक ज्योतिष विज्ञान, व्यावहारिक वास्तुशास्त्र एवं पौरोहित्यम के डिप्लोमा पाठ्यक्रम के :व्यावहारिक ज्योतिष विज्ञान, व्यावहारिक वास्तुशास्त्र एवं पौरोहित्यम के डिप्लोमा पाठ्यक्रम के परीक्षा एवं मूल्यांकन के संबध के आदेश</p>
+                                                    <p style="padding" 15px;>5. राज्य स्तरीय शा. योग केन्द्र भोपाल में योग प्रशिक्षण कार्यक्रम आयोजित करने हेतुवार्षिक योग पंचा:राज्य स्तरीय शा. योग केन्द्र भोपाल में योग प्रशिक्षण कार्यक्रम आयोजित करने हेतुवार्षिक योग पंचांग वर्ष २०१८-१९ </p>
+                                                    <p style="padding" 15px;>6. व्यावहारिक ज्योतिष विज्ञान डिप्लोमा पाठ्यक्रम कक्षा का शेड्यूल माह फरवरी:व्यावहारिक ज्योतिष विज्ञान डिप्लोमा पाठ्यक्रम कक्षा का शेड्यूल माह फरवरी</p>
+                                                    <p style="margin" 15px;>7. पंचांग वर्ष 2017-2018:राज्य स्तरीय शासकीय योग प्रशिक्षण केंद्र मध्य प्रदेश भोपाल में योग प्रशिक्षण कार्यक्रम आयोजित करने हेतु वार्षिक योग पंचांग वर्ष  2017-2018</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="finance">
+                                        <div class="row margin-bottom">
+                                            <div class="col-md-12">
+                                                <div class="edu2_cur_wrap">
+                                                    <div class="edu2_cur_des_ft">
+                                                        <h4>शासकीय जीवाजी वेधशाला उज्जैन :</h4>
+                                                    </div>
+                                                    <p style="margin:15px">1. उपमहानिदेशक प्रादेशिक मोसम केंद्र नागपुर द्वारा जीवाजी वेधशाला उज्जैन को जारी सराहना परिपत्र :उपमहानिदेशक प्रादेशिक मोसम केंद्र नागपुर द्वारा जीवाजी वेधशाला उज्जैन को जारी सराहना परिपत्र </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="technologies">
+                                        <div class="row margin-bottom">
+                                            <!-- EDU COURSES WRAP START -->
+                                            <div class="col-md-4">
+                                                <div class="edu2_cur_wrap">
+                                                    <figure>
+                                                        <img src="assets/extra-images/cur-wrap-2.jpg" alt="">
+                                                        <figcaption><a href="courses-detail.html">See More</a></figcaption>
+                                                    </figure>
+                                                    <div class="edu2_cur_des">
+                                                        <span>$20</span>
+                                                        <h5><a href="#">Real Estate Law</a></h5>
+                                                        <strong>
+                                                            <span>Dec 27, 2015</span>
+                                                            <small>Jan 27, 2016</small>
+                                                        </strong>
+                                                        <p>If you want to build a successful business online, watch the promo video to see why 13,000+ students are using this online entrepreneurship course to learn.</p>
+                                                    </div>
+                                                    <div class="edu2_cur_des_ft">
+                                                        <figure>
+                                                            <img src="assets/extra-images/cur_ft.jpg" alt="" />
+                                                        </figure>
+                                                        <div class="edu2_cur_ftr_strip">
+                                                            <h6>Sara Johnson</h6>
+                                                            <div class="rating">
+                                                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- EDU COURSES WRAP END -->
+                                            <!-- EDU COURSES WRAP START -->
+                                            <div class="col-md-4">
+                                                <div class="edu2_cur_wrap">
+                                                    <figure>
+                                                        <img src="assets/extra-images/cur-wrap.jpg" alt="">
+                                                        <figcaption><a href="courses-detail.html">See More</a></figcaption>
+                                                    </figure>
+                                                    <div class="edu2_cur_des">
+                                                        <span>$20</span>
+                                                        <h5><a href="#">The Secrets of Economic</a></h5>
+                                                        <strong>
+                                                            <span>Dec 27, 2015</span>
+                                                            <small>Jan 27, 2016</small>
+                                                        </strong>
+                                                        <p>Personal time management skills are essential for professional & personal success in any area of life. Those able to successfully implement time management strategies</p>
+                                                    </div>
+                                                    <div class="edu2_cur_des_ft">
+                                                        <figure>
+                                                            <img src="assets/extra-images/cur_ft.jpg" alt="" />
+                                                        </figure>
+                                                        <div class="edu2_cur_ftr_strip">
+                                                            <h6>Johny Fisher</h6>
+                                                            <div class="rating">
+                                                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- EDU COURSES WRAP END -->
+                                            <!-- EDU COURSES WRAP START -->
+                                            <div class="col-md-4">
+                                                <div class="edu2_cur_wrap">
+                                                    <figure>
+                                                        <img src="assets/extra-images/cur-wrap-3.jpg" alt="">
+                                                        <figcaption><a href="courses-detail.html">See More</a></figcaption>
+                                                    </figure>
+                                                    <div class="edu2_cur_des">
+                                                        <span>$20</span>
+                                                        <h5><a href="#">Networking Management</a></h5>
+                                                        <strong>
+                                                            <span>Dec 27, 2015</span>
+                                                            <small>Jan 27, 2016</small>
+                                                        </strong>
+                                                        <p>Welcome to Logo Design fundamentals of building a great brand Logo. Our course teacher Lauren, walks you through his process of logo design.</p>
+                                                    </div>
+                                                    <div class="edu2_cur_des_ft">
+                                                        <figure>
+                                                            <img src="assets/extra-images/cur_ft.jpg" alt="" />
+                                                        </figure>
+                                                        <div class="edu2_cur_ftr_strip">
+                                                            <h6>Peter Parker</h6>
+                                                            <div class="rating">
+                                                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- EDU COURSES WRAP END -->
+                                        </div>
+                                        <div class="view-all">
+                                            <a class="btn-3" href="#">View All Cources</a>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="management">
+                                        <div class="row margin-bottom">
+                                            <!-- EDU COURSES WRAP START -->
+                                            <div class="col-md-4">
+                                                <div class="edu2_cur_wrap">
+                                                    <figure>
+                                                        <img src="assets/extra-images/cur-wrap.jpg" alt="">
+                                                        <figcaption><a href="courses-detail.html">See More</a></figcaption>
+                                                    </figure>
+                                                    <div class="edu2_cur_des">
+                                                        <span>$20</span>
+                                                        <h5><a href="#">The Secrets of Economic</a></h5>
+                                                        <strong>
+                                                            <span>Dec 27, 2015</span>
+                                                            <small>Jan 27, 2016</small>
+                                                        </strong>
+                                                        <p>Personal time management skills are essential for professional & personal success in any area of life. Those able to successfully implement time management strategies</p>
+                                                    </div>
+                                                    <div class="edu2_cur_des_ft">
+                                                        <figure>
+                                                            <img src="assets/extra-images/cur_ft.jpg" alt="" />
+                                                        </figure>
+                                                        <div class="edu2_cur_ftr_strip">
+                                                            <h6>Johny Fisher</h6>
+                                                            <div class="rating">
+                                                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- EDU COURSES WRAP END -->
+                                            <!-- EDU COURSES WRAP START -->
+                                            <div class="col-md-4">
+                                                <div class="edu2_cur_wrap">
+                                                    <figure>
+                                                        <img src="assets/extra-images/cur-wrap-3.jpg" alt="">
+                                                        <figcaption><a href="courses-detail.html">See More</a></figcaption>
+                                                    </figure>
+                                                    <div class="edu2_cur_des">
+                                                        <span>$20</span>
+                                                        <h5><a href="#">Networking Management</a></h5>
+                                                        <strong>
+                                                            <span>Dec 27, 2015</span>
+                                                            <small>Jan 27, 2016</small>
+                                                        </strong>
+                                                        <p>Welcome to Logo Design fundamentals of building a great brand Logo. Our course teacher Lauren, walks you through his process of logo design.</p>
+                                                    </div>
+                                                    <div class="edu2_cur_des_ft">
+                                                        <figure>
+                                                            <img src="assets/extra-images/cur_ft.jpg" alt="" />
+                                                        </figure>
+                                                        <div class="edu2_cur_ftr_strip">
+                                                            <h6>Peter Parker</h6>
+                                                            <div class="rating">
+                                                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- EDU COURSES WRAP END -->
+                                            <!-- EDU COURSES WRAP START -->
+                                            <div class="col-md-4">
+                                                <div class="edu2_cur_wrap">
+                                                    <figure>
+                                                        <img src="assets/extra-images/cur-wrap-2.jpg" alt="">
+                                                        <figcaption><a href="courses-detail.html">See More</a></figcaption>
+                                                    </figure>
+                                                    <div class="edu2_cur_des">
+                                                        <span>$20</span>
+                                                        <h5><a href="#">Real Estate Law</a></h5>
+                                                        <strong>
+                                                            <span>Dec 27, 2015</span>
+                                                            <small>Jan 27, 2016</small>
+                                                        </strong>
+                                                        <p>If you want to build a successful business online, watch the promo video to see why 13,000+ students are using this online entrepreneurship course to learn.</p>
+                                                    </div>
+                                                    <div class="edu2_cur_des_ft">
+                                                        <figure>
+                                                            <img src="assets/extra-images/cur_ft.jpg" alt="" />
+                                                        </figure>
+                                                        <div class="edu2_cur_ftr_strip">
+                                                            <h6>Sara Johnson</h6>
+                                                            <div class="rating">
+                                                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- EDU COURSES WRAP END -->
+                                        </div>
+                                        <div class="view-all">
+                                            <a class="btn-3" href="#">View All Cources</a>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="other">
+                                        <div class="row margin-bottom">
+                                            <!-- EDU COURSES WRAP START -->
+                                            <div class="col-md-4">
+                                                <div class="edu2_cur_wrap">
+                                                    <figure>
+                                                        <img src="assets/extra-images/cur-wrap-2.jpg" alt="">
+                                                        <figcaption><a href="courses-detail.html">See More</a></figcaption>
+                                                    </figure>
+                                                    <div class="edu2_cur_des">
+                                                        <span>$20</span>
+                                                        <h5><a href="#">Real Estate Law</a></h5>
+                                                        <strong>
+                                                            <span>Dec 27, 2015</span>
+                                                            <small>Jan 27, 2016</small>
+                                                        </strong>
+                                                        <p>If you want to build a successful business online, watch the promo video to see why 13,000+ students are using this online entrepreneurship course to learn.</p>
+                                                    </div>
+                                                    <div class="edu2_cur_des_ft">
+                                                        <figure>
+                                                            <img src="assets/extra-images/cur_ft.jpg" alt="" />
+                                                        </figure>
+                                                        <div class="edu2_cur_ftr_strip">
+                                                            <h6>Sara Johnson</h6>
+                                                            <div class="rating">
+                                                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- EDU COURSES WRAP END -->
+                                            <!-- EDU COURSES WRAP START -->
+                                            <div class="col-md-4">
+                                                <div class="edu2_cur_wrap">
+                                                    <figure>
+                                                        <img src="assets/extra-images/cur-wrap-3.jpg" alt="">
+                                                        <figcaption><a href="courses-detail.html">See More</a></figcaption>
+                                                    </figure>
+                                                    <div class="edu2_cur_des">
+                                                        <span>$20</span>
+                                                        <h5><a href="#">Networking Management</a></h5>
+                                                        <strong>
+                                                            <span>Dec 27, 2015</span>
+                                                            <small>Jan 27, 2016</small>
+                                                        </strong>
+                                                        <p>Welcome to Logo Design fundamentals of building a great brand Logo. Our course teacher Lauren, walks you through his process of logo design.</p>
+                                                    </div>
+                                                    <div class="edu2_cur_des_ft">
+                                                        <figure>
+                                                            <img src="assets/extra-images/cur_ft.jpg" alt="" />
+                                                        </figure>
+                                                        <div class="edu2_cur_ftr_strip">
+                                                            <h6>Peter Parker</h6>
+                                                            <div class="rating">
+                                                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- EDU COURSES WRAP END -->
+                                            <!-- EDU COURSES WRAP START -->
+                                            <div class="col-md-4">
+                                                <div class="edu2_cur_wrap">
+                                                    <figure>
+                                                        <img src="assets/extra-images/cur-wrap.jpg" alt="">
+                                                        <figcaption><a href="courses-detail.html">See More</a></figcaption>
+                                                    </figure>
+                                                    <div class="edu2_cur_des">
+                                                        <span>$20</span>
+                                                        <h5><a href="#">The Secrets of Economic</a></h5>
+                                                        <strong>
+                                                            <span>Dec 27, 2015</span>
+                                                            <small>Jan 27, 2016</small>
+                                                        </strong>
+                                                        <p>Personal time management skills are essential for professional & personal success in any area of life. Those able to successfully implement time management strategies</p>
+                                                    </div>
+                                                    <div class="edu2_cur_des_ft">
+                                                        <figure>
+                                                            <img src="assets/extra-images/cur_ft.jpg" alt="" />
+                                                        </figure>
+                                                        <div class="edu2_cur_ftr_strip">
+                                                            <h6>Johny Fisher</h6>
+                                                            <div class="rating">
+                                                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- EDU COURSES WRAP END -->
+                                        </div>
+                                        <div class="view-all">
+                                            <a class="btn-3" href="#">View All Cources</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--EDU2 COURSES TAB WRAP END-->
+                    </div>
+            </section>
+            <section class="kode-gallery-section">
+                <div class="col-md-12">
+                    <div class="kf_edu2_heading2">
+                        <h3>Our Gallery</h3>
+                        <p>Student gallery of the year </p>
+                    </div>
+                </div>
+                <div class="edu2_gallery_wrap gallery">
+                    <div class="gallery3">
+                        <div class="container">
+                            <div id="mixedSlider">
+                                <div class="MS-content">
+                                    <div class="item">
+                                        <div class="imgTitle">
+                                            <h2 class="blogTitle"></h2>
+                                            <img src="assets/images/gallery/gallery1.jpeg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="imgTitle">
+                                            <h2 class="blogTitle"></h2>
+                                            <img src="assets/images/gallery/gallery4.jpeg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="imgTitle">
+                                            <h2 class="blogTitle"></h2>
+                                            <img src="assets/images/gallery/gallery3.jpeg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="MS-controls">
+                                    <button class="MS-left"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                                    <button class="MS-right"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="edu2_tarining_bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="kf_edu2_training_des">
+                                <figure>
+                                    <img src="assets/extra-images/training-thumb.png" alt="" />
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="edu2_training_wrap">
+                                <h2 style="font-size:30px;">Get The MAHARISHI PATANJALI SANSKRIT SANSTHAN</h2>
+                                <ul class="countdown">
+                                    <li>
+                                        <span class="days ">
+                                            <h3 class="counter">165</h3>
+                                        </span>
+                                        <p class="days_ref">days</p>
+                                    </li>
+                                    <li>
+                                        <span class="hours">
+                                            <h3 class="counter">20</h3>
+                                        </span>
+                                        <p class="hours_ref">hours</p>
+                                    </li>
+                                    <li>
+                                        <span class="minutes">
+                                            <h3 class="counter">37</h3>
+                                        </span>
+                                        <p class="minutes_ref">minutes</p>
+                                    </li>
+                                    <li>
+                                        <span class="seconds last">
+                                            <h3 class="counter">17</h3>
+                                        </span>
+                                        <p class="seconds_ref">seconds</p>
+                                    </li>
+                                </ul>
+                                <!--COUNTDOWN END-->
+                                <strong>It’s limited Seating! Hurry up</strong>
+                                <a href="#" class="btn-1">REGISTER NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="container">
+                <div class="row">
+                    <!-- HEADING 2 START-->
+                    <div class="col-md-12">
+                        <div class="kf_edu2_heading2 ">
+                            <br><br><br>
+                            <h3 class="mt-5">Our Testimonial</h3>
+                        </div>
+                    </div>
+                    <!-- HEADING 2 END-->
+                    <!-- TESTEMONIAL SLIDER WRAP START-->
+                    <div class="edu2_testemonial_slider_wrap">
+                        <div id="owl-demo-9">
+                            <div class="item">
+                                <!-- TESTEMONIAL SLIDER WRAP START-->
+                                <div class="edu_testemonial_wrap">
+                                    <figure><img src="assets/extra-images/Shivraj_Singh_Chauhan.jpg" alt="" /></figure>
+                                    <div class="kode-text">
+                                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.aenean sollicitudin, lorem quis bibendum auctor...</p>
+                                        <a href="#">शिवराज सिंह चौहान</a>
+                                    </div>
+                                </div>
+                                <!-- TESTEMONIAL SLIDER WRAP END-->
+                            </div>
+                            <div class="item">
+                                <!-- TESTEMONIAL SLIDER WRAP START-->
+                                <div class="edu_testemonial_wrap">
+                                    <figure><img src="assets/extra-images/83973715.webp" alt="" /></figure>
+                                    <div class="kode-text">
+                                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.aenean sollicitudin, lorem quis bibendum auctor...</p>
+                                        <a href="#">श्री धर्मेंद्र प्रधान</span></a>
+                                    </div>
+                                </div>
+                                <!-- TESTEMONIAL SLIDER WRAP END-->
+                            </div>
+                            <div class="item">
+                                <!-- TESTEMONIAL SLIDER WRAP START-->
+                                <div class="edu_testemonial_wrap">
+                                    <figure><img src="assets/extra-images/Shivraj_Singh_Chauhan.jpg" alt="" /></figure>
+                                    <div class="kode-text">
+                                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.aenean sollicitudin, lorem quis bibendum auctor...</p>
+                                        <a href="#">शिवराज सिंह चौहान</span></a>
+                                    </div>
+                                </div>
+                                <!-- TESTEMONIAL SLIDER WRAP END-->
+                            </div>
+                            <div class="item">
+                                <!-- TESTEMONIAL SLIDER WRAP START-->
+                                <div class="edu_testemonial_wrap">
+                                    <figure><img src="assets/extra-images/83973715.webp" alt="" /></figure>
+                                    <div class="kode-text">
+                                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.aenean sollicitudin, lorem quis bibendum auctor...</p>
+                                        <a href="#">श्री धर्मेंद्र प्रधान</a>
+                                    </div>
+                                </div>
+                                <!-- TESTEMONIAL SLIDER WRAP END-->
+                            </div>
+                            <div class="item">
+                                <!-- TESTEMONIAL SLIDER WRAP START-->
+                                <div class="edu_testemonial_wrap">
+                                    <figure><img src="assets/extra-images/Shivraj_Singh_Chauhan.jpg" alt="" /></figure>
+                                    <div class="kode-text">
+                                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.aenean sollicitudin, lorem quis bibendum auctor...</p>
+                                        <a href="#">शिवराज सिंह चौहान</a>
+                                    </div>
+                                </div>
+                                <!-- TESTEMONIAL SLIDER WRAP END-->
+                            </div>
+                            <div class="item">
+                                <!-- TESTEMONIAL SLIDER WRAP START-->
+                                <div class="edu_testemonial_wrap">
+                                    <figure><img src="assets/extra-images/83973715.webp" alt="" /></figure>
+                                    <div class="kode-text">
+                                        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.aenean sollicitudin, lorem quis bibendum auctor...</p>
+                                        <a href="#">श्री धर्मेंद्र प्रधान</a>
+                                    </div>
+                                </div>
+                                <!-- TESTEMONIAL SLIDER WRAP END-->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TESTEMONIAL SLIDER WRAP END-->
+                </div>
+            </div>
+        </section>
+        <!--OUR TESTEMONIAL WRAP END-->
+    </div>
+    <!-- <div class="edu2_ft_topbar_wrap">
+       <div class="container">
+          <div class="row">
+             <div class="col-md-6">
+                <div class="edu2_ft_topbar_des">
+                   <h5>Subcribe weekly newsletter</h5>
+                </div>
+             </div>
+             <div class="col-md-6">
+                <div class="edu2_ft_topbar_des">
+                   <form>
+                      <input type="email" placeholder="Enter Valid Email Address">
+                      <button><i class="fa fa-paper-plane"></i>Submit</button>
+                   </form>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div> -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!--EDU2 FOOTER CONTANT DES START-->
+                <div class="col-md-3">
+                    <div class="widget widget-links">
+                        <h5>Information</h5>
+                        <ul>
+                            <li><a href="#">संस्था के बारे में</a></li>
+                            <li><a href="">संबद्ध विद्यालय</a></li>
+                            <li><a href="#">टुटोरिअल</a></li>
+                            <li><a href="#">पाठ्यक्रम</a></li>
+                            <li><a href="#">अकादमी</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="widget widget-links">
+                        <h5>Student Help</h5>
+                        <ul>
+                            <li><a href="#">परीक्षा</a></li>
+                            <li><a href="#">चित्रदीर्घा</a></li>
+                            <li><a href="#">परिपत्र / आदेश </a></li>
+                            <li><a href="#">पंचांग</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--EDU2 FOOTER CONTANT DES END-->
+                <!--EDU2 FOOTER CONTANT DES START-->
+                <div class="col-md-3">
+                    <div class="widget wiget-instagram">
+                        <h5>Gallery</h5>
+                        <ul>
+                            <li><a href="#"><img src="assets/images/gallery/gallery1.jpeg" alt="" /></a></li>
+                            <li><a href="#"><img src="assets/images/gallery/gallery4.jpeg" alt="" /></a></li>
+                            <li><a href="#"><img src="assets/images/gallery/gallery3.jpeg" alt="" /></a></li>
+                            <li><a href="#"><img src="assets/images/gallery/gallery4.jpeg" alt="" /></a></li>
+                            <li><a href="#"><img src="assets/images/gallery/gallery5.jpeg" alt="" /></a></li>
+                            <li><a href="#"><img src="assets/images/gallery/gallery6.jpg" alt="" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--EDU2 FOOTER CONTANT DES END-->
+                <!--EDU2 FOOTER CONTANT DES START-->
+                <div class="col-md-3">
+                    <div class="widget widget-contact">
+                        <h5>Contact</h5>
+                        <ul>
+                            <li>PO Box UN152468, 1 Street North, New Towm, California, USA</li>
+                            <li>Phone : <a href="#"> 5 (012) 4565 789</a></li>
+                            <li>Fax : <a href="#"> 5 (012) 4565 789</a></li>
+                            <li>Email : <a href="#"> Info@info.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--EDU2 FOOTER CONTANT DES END-->
+            </div>
+        </div>
+    </footer>
+    <div class="edu2_copyright_wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright_des">
+                        <span>&copy; All Rights reserved. Powered By <a href="https://techsumitsolutions.com/">TechSum IT Solutions</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+    </div>
+    <!-- class -->
+    <script>
+        var stateObject = {
+            "India": {
+                "Delhi": ["new Delhi", "North Delhi"],
+                "Kerala": ["Thiruvananthapuram", "Palakkad"],
+                "Goa": ["North Goa", "South Goa"],
+            },
+            "Australia": {
+                "South Australia": ["Dunstan", "Mitchell"],
+                "Victoria": ["Altona", "Euroa"]
+            }, "Canada": {
+                "Alberta": ["Acadia", "Bighorn"],
+                "Columbia": ["Washington", ""]
+            },
+        }
+        window.onload = function () {
+            var countySel = document.getElementById("countySel"),
+                stateSel = document.getElementById("stateSel"),
+                districtSel = document.getElementById("districtSel");
+            for (var country in stateObject) {
+                countySel.options[countySel.options.length] = new Option(country, country);
+            }
+            countySel.onchange = function () {
+                stateSel.length = 1; // remove all options bar first
+                districtSel.length = 1; // remove all options bar first
+                if (this.selectedIndex < 1) return; // done
+                for (var state in stateObject[this.value]) {
+                    stateSel.options[stateSel.options.length] = new Option(state, state);
+                }
+            }
+            countySel.onchange(); // reset in case page is reloaded
+            stateSel.onchange = function () {
+                districtSel.length = 1; // remove all options bar first
+                if (this.selectedIndex < 1) return; // done
+                var district = stateObject[countySel.value][this.value];
+                for (var i = 0; i < district.length; i++) {
+                    districtSel.options[districtSel.options.length] = new Option(district[i], district[i]);
+                }
+            }
+        }
+    </script>
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('button').click(function () {
+                $(this).parents('.sliderComplete').children('button').removeClass('close').fadeIn(300);
+
+                // The button, that was visible, goes on display none.
+                $(this).addClass('close').fadeOut(300);
+
+                // We do a fluid slider with the class '.turn'.
+                $(this).parents('.sliderComplete').children('.wrapper').children('.slider').toggleClass('turn');
+            });
+        });
+    </script>
+    <!--KF KODE WRAPPER WRAP END-->
+    <!--Bootstrap core JavaScript-->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--Bx-Slider JavaScript-->
+    <script src="assets/js/jquery.bxslider.min.js"></script>
+    <!--Owl Carousel JavaScript-->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!--Pretty Photo JavaScript-->
+    <script src="assets/js/jquery.prettyPhoto.js"></script>
+    <!--Dl Menu Script-->
+    <script src="assets/js/dl-menu/modernizr.custom.js"></script>
+    <!--Dl Menu Script-->
+    <script src="assets/js/dl-menu/jquery.dlmenu.js"></script>
+    <!--Dl Menu Script-->
+    <script src="assets/js/dl-menu/modernizr.custom.js"></script>
+    <!--Dl Menu Script-->
+    <script src="assets/js/dl-menu/jquery.dlmenu.js"></script>
+    <!--Full Calender JavaScript-->
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/fullcalendar.min.js"></script>
+    <script src="assets/js/jquery.downCount.js"></script>
+    <!--Image Filterable JavaScript-->
+    <script src="assets/js/jquery-filterable.js"></script>
+    <!--Accordian JavaScript-->
+    <script src="assets/js/jquery.accordion.js"></script>
+    <!--Number Count (Waypoints) JavaScript-->
+    <script src="assets/js/waypoints-min.js"></script>
+    <!--v ticker-->
+    <script src="assets/js/jquery.vticker.min.js"></script>
+    <!--select menu-->
+    <script src="assets/js/jquery.selectric.min.js"></script>
+    <!--Side Menu-->
+    <script src="assets/js/jquery.sidr.min.js"></script>
+    <!--Custom JavaScript-->
+    <script src="assets/js/custom.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

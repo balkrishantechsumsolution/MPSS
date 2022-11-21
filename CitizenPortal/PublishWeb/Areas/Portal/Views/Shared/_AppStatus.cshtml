@@ -1,0 +1,27 @@
+﻿<!-- Track Application Status -->
+
+<div id="AppStatus" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="width: 92% !important;">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button>
+                <h4 class="modal-title"><span class="fa fa-user"></span> &nbsp; Track Application</h4>
+            </div>
+            <div id="appDiv" class="modal-body">
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        //$("#AppStatus").on("click", function () {
+        $("#appDiv").html('<object data="/WebApp/Kiosk/Forms/ApplicationStatus.aspx" style="width: 100%; height: 450px;"/>');
+        //});
+    });
+</script>
+<script src="~/PortalScripts/PortalCommon.js"></script>

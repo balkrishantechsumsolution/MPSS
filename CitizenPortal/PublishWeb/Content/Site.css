@@ -1,0 +1,138 @@
+﻿/* Set padding to keep content from hitting the edges */
+.body-content {
+    /*padding-left: 20px;
+    padding-right: 20px;*/
+    padding: 0px !important;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    /*max-width: 280px;*/
+}
+.header {overflow: hidden; clear: both; height: 103px; border-bottom: 5px solid #013e5f; padding: 0px 20px;
+         background: rgba(255,255,255,1);
+        background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(248,248,248,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(248,248,248,1)));
+        background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(248,248,248,1) 100%);
+        background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(248,248,248,1) 100%);
+        background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(248,248,248,1) 100%);
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(248,248,248,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f8f8f8', GradientType=0 );
+}
+.depName {overflow: hidden}
+.depName span{font-size:3.5em; margin-right: 5px; color: #1a2732;}
+.depName i{display: block; font-size: 14px; font-weight: 300; color: #808080; margin-top:-10px;}
+.nav > li > a {padding: 7px !important; color: #c8c8c8; font-size: 15px;}
+.nav > li > a .fa {margin-right: 8px;}
+.menuNav { height: 60px; background-color: #f7dd54; margin-top: 38px; border-radius: 12px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border: 1px solid #bfa100; border-bottom: 0px;}
+.menuNav ul {margin:0px 20px; padding: 0px;}
+.menuNav ul li {list-style: none; float: left; line-height: 60px; padding: 0px 18px; background: url(../PortalImages/NavSep.png) no-repeat right top;}
+.menuNav ul li:first-child{padding-left: 0px;}
+.menuNav ul li:last-child {margin-right:0px; background: none !important;}
+.menuNav ul li > a { font-size: 1.2em !important; color: #010101; cursor: pointer;}
+.menuNav ul li > a:hover {text-decoration: none; color: #FFF; text-shadow: 1px 1px 0.1px #5c5c5c;}
+.menuNav ul li > a span {margin-right: 15px;}
+.floatLeft {float: left;}
+.floatRight {float: right;}
+.floatNone {float: none;}
+
+footer {
+    clear: both;
+    background-color: #262626;
+    font-size: .8em;
+    height: auto;
+    overflow: hidden;
+    padding: 20px 10px 0px;
+    border-top: 5px solid #000;
+    color: #706f6f;
+}
+footer a {margin-right: 24px; color: #a9a9a9; font-size: 1.2em;}
+footer a:hover {color:#FFF; text-decoration: none;}
+.divRight {
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.doubleBorder {
+    height: 5px;
+    display: block;
+    max-height:5px;
+    background: rgba(241,107,105,1);
+    background: -moz-linear-gradient(left, rgba(241,107,105,1) 0%, rgba(241,107,105,1) 28%, rgba(229,229,229,1) 28%, rgba(229,229,229,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(241,107,105,1)), color-stop(28%, rgba(241,107,105,1)), color-stop(28%, rgba(229,229,229,1)), color-stop(100%, rgba(229,229,229,1)));
+    background: -webkit-linear-gradient(left, rgba(241,107,105,1) 0%, rgba(241,107,105,1) 28%, rgba(229,229,229,1) 28%, rgba(229,229,229,1) 100%);
+    background: -o-linear-gradient(left, rgba(241,107,105,1) 0%, rgba(241,107,105,1) 28%, rgba(229,229,229,1) 28%, rgba(229,229,229,1) 100%);
+    background: -ms-linear-gradient(left, rgba(241,107,105,1) 0%, rgba(241,107,105,1) 28%, rgba(229,229,229,1) 28%, rgba(229,229,229,1) 100%);
+    background: linear-gradient(to right, rgba(241,107,105,1) 0%, rgba(241,107,105,1) 28%, rgba(229,229,229,1) 28%, rgba(229,229,229,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f16b69', endColorstr='#e5e5e5', GradientType=1 );
+}
+.panelHeading {height: auto; margin-bottom: 10px; padding-bottom: 11px; background: url(../PortalImages/iconSortDesc.png) no-repeat 15px bottom}
+.panelHeading h2{font-size: 1.3em; font-weight: 500; text-transform:uppercase; padding-left: 15px;}
+.barHeading { padding-bottom: 13px; background: url(../PortalImages/iconBarHeading.png) no-repeat 20px bottom}
+.barHeading h2 {font-size: 24px; font-weight: 500; background: #f3f3f3; margin: 0px; padding-left: 20px; height: 44px; line-height: 44px;}
+
+.gradientBorderbottom {
+    border-width: 1px;
+    border-style: solid;
+    border-image: rgba(255,255,255,1);
+    -moz-border-image: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(0,0,0,0.49) 51%, rgba(255,255,255,0) 100%);
+    -webkit-border-image: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(51%, rgba(0,0,0,0.49)), color-stop(100%, rgba(255,255,255,0)));
+    -webkit-border-image: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(0,0,0,0.49) 51%, rgba(255,255,255,0) 100%);
+    -o-border-image: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(0,0,0,0.49) 51%, rgba(255,255,255,0) 100%);
+}
+
+.newsNav{padding-bottom:0px !important;float:right; font-size: 14px !important;}
+.newsNav .fa {margin-left: 5px;}
+.search {background: #FFF; border-radius: 9px; margin-top: 5px; border:1px solid #a9a9a9; padding-left: 30px;}
+.search:focus { border-radius:9px;}
+.iconSearch {color:#56AEFF; left:25px; position: relative;}
+
+/* FOrm Elements CSS*/
+input {background: #FFF; line-height: 32px !important; border:1px solid #c4c4c4; padding: 0px 7px;
+       padding: 0px 8px 0px 8px; 
+        border-radius: 4px; 
+    -moz-border-radius: 4px; 
+    -webkit-border-radius: 4px; 
+    /*box-shadow: 0px 0px 6px #d9d9d9 ; 
+    -moz-box-shadow: 0px 0px 6px #d9d9d9; 
+    -webkit-box-shadow: 0px 0px 6px #d9d9d9;*/ 
+}
+.modal-body .fa {left: 20px; position: relative;}
+
+#CitizenReg .modal-dialog { width: 600px;}
+#CitizenReg input {width: 100%;}
+#CitizenReg .row { margin-bottom: 20px;}
+.modal-header {background-color: #f7dd54; color:#010101; border-radius: 6px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border: 1px solid #bfa100; border-bottom: 3px solid #bfa100 !important;}
+#imgCaptcha a {background: url(../PortalImages/iconRefresh.png) no-repeat left top; float: left; text-indent: 4000px; height: 70px; width: 75px; display: inline-block;}
+#CaptchaImage { float: left; margin-right: 10px;}
+#imgCaptcha br {display: none;}
+#imgCaptcha input {float: left; width: 263px;}
+h5 { margin: 0px; padding:0px; padding-bottom: 10px; margin-bottom: 20px !important; border-bottom: 3px solid #1AA296; font-size: 15px !important; color:#770101 !important; font-weight: 500}
+.input-validation-error {border: 1px solid red;}
+.modal-body .col-md-6, .modal-body .col-md-12 { padding-left: 0px !important; padding-right: 20px; }
+#UserID {width: 262px !important; margin-right: 15px}
+
+@media (max-width: 768px) {
+    .header {padding:0 10px; height: 80px}
+    .depName i {font-size:12px;}
+    .depName span img {height: 55px;}
+    .depName span { font-size: 2.2em;}
+    #CitizenReg .modal-dialog {width: 93%;}
+    #CitizenReg .row {
+        margin-bottom: 2px;
+    }
+    .navbar .container { padding-left: 0px; padding-right: 0px}
+    .row .col-md-6 input {margin-bottom: 10px;}
+    .mHide {display: none !important;}
+    .navbar-nav {margin: 7.5px 0px 0px !important;}
+    .depName i {margin-top: 0px;}
+}

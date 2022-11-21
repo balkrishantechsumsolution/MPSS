@@ -1,0 +1,100 @@
+﻿<!-- Citizen Registration -->
+<div id="CitizenReg" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button>
+                <h4 class="modal-title"><span class="fa fa-user"></span> &nbsp; Register as Citizen</h4>
+            </div>
+            <div class="modal-body">
+
+                <h5>Basic Info</h5>
+                <div id="ctzDetails">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" class="mandatory" id="FirstName" name="FirstName" data-val="true" data-val-required="" data-val-regex="Enter Only Alphabvates Value" placeholder="First Name" data-val-regex-pattern="^[A-Za-z\s]*$" />
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" name="LastName" id="LastName" class="mandatory" data-val="true" data-val-required="" data-val-regex="Enter Only Alphabvates Value" placeholder="Last Name" data-val-regex-pattern="^[A-Za-z\s]*$" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="tel" name="MobileNo" id="MobileNo" data-val="true" placeholder="Mobile Number" data-val-number="Only Numbers" maxlength="10" data-val-regex="Enter Only Numeric Value" data-val-regex-pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d+)?$" data-val-required=" " />
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" name="eMailID" id="eMailID" placeholder="e-Mail ID" pattern="[A-Za-z]" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" name="AadharNo" id="AadharNo" placeholder="Aadhar Number" data-val="true" data-val-regex="Enter Only Numeric Value" data-val-regex-pattern="^[0-9]*$" maxlength="16" />
+                        </div>
+                    </div>
+
+                    <h5>User Credentials</h5>
+                    <div class="userReg">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="text" name="UserID" id="UserID" data-val="true" data-val-required="" data-val-regex="" placeholder="Check User ID" data-val-regex-pattern="^[A-Za-z0-9\s]*$" />
+                                <a href="#" id="checkUserID">Check Availability</a> <label id="lblUserStatus" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input type="password" name="password" id="Password" data-val="true" data-required="" data-val-required="" data-val-regex="" placeholder="Enter Password" data-val-regex-pattern="^[A-Za-z0-9\!\#\$\%\^\&\*\(\)\_\-\+\=\\\/@@\s]*$" />
+                            </div>
+                            <div class="col-md-6">
+                                <input type="password" name="confirmPassword" id="confirmPassword" data-rule-equalTo="#Password" data-val="true" data-required=" " data-val-required="" data-val-regex="" placeholder="Confirm Password" data-val-regex-pattern="^[A-Za-z0-9\!\#\$\%\^\&\*\(\)\_\-\+\=\\\/@@\s]*$" required />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-12">
+                            <label class="manadatory" for="Village">
+                                Verification Code <span class="error"> *</span>
+                            </label>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                            <div>
+                                <img src='/Account/GetCaptcha' alt="verification code" class=".gov.inform-control" />
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                            <div>
+                                <input type="text" class="form-control" placeholder="Enter verification code" name="captcha" id="captcha" required />
+                            </div>
+                        </div>
+                    </div>
+
+                    @*<div class="row" id="imgCaptcha">
+                            @Html.Partial("_PortalCaptcha")
+                        </div>*@
+
+                    <div class="row">
+                        <button type="button" id="btnCitizenReg" class="btn btn-primary">Register</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="OTP" class="row">
+                <div class="col-md-6">
+                    <input type="tel" name="txtOTP" id="txtOTP" class="mandatory" data-val="true" placeholder="Enter OTP Number" data-val-number="Only Numbers" data-val-regex="Enter Only Numeric Value" data-val-regex-pattern="^-?(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d+)?$" data-val-required="" />
+                </div>
+                <div class="col-md-6">
+                    <button type="button" id="btnSubmitOTP" class="btn btn-primary">Verify OTP</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="~/PortalScripts/PortalCommon.js"></script>

@@ -1,0 +1,42 @@
+﻿/* Accordian Styling */
+
+
+.accordion {
+	overflow:hidden;	
+}
+.accordion-section{
+border-top:1px solid #e0e0e0;
+}
+
+/*----- Section Titles -----*/
+.accordion-section-title {	
+	display:block;
+	transition:all linear 0.15s;
+	color:#777;
+	background:url(../PortalImages/accordion-expand.png) right center no-repeat;
+}
+
+.accordion-section-title:hover {
+	color:#f2635f;
+	text-decoration:none;
+	padding-left:15px;
+	background:url(../PortalImages/accordion-expand.png) right center no-repeat #f5f5f5;
+}
+.accordion-section-title.active{	
+color:#f2635f;
+	padding-left:15px;	
+background:url(../PortalImages/accordion-collapse.png) right center no-repeat #f5f5f5;
+}
+
+.accordion-section:last-child .accordion-section-title {
+	border-bottom:none;
+}
+
+/*----- Section Content -----*/
+.accordion-section-content {
+	padding:15px;
+	display:none;
+}
+.accordion p{
+margin:0;
+}

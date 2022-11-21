@@ -1,0 +1,42 @@
+body {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    font-family: Verdana;
+    font-size: 11px;
+}
+
+#CropOutrtBox {
+    width: 100%!important;
+    margin-top: 5%!important;
+    position: absolute!important;
+    z-index: 999!important;
+    margin: 0px auto!important;
+}
+
+#CropTable {
+    padding: 10px!important;
+    margin: 0px auto!important;
+    color: #000!important;
+    float: left!important;
+ box-shadow: 10px 10px 72px rgb(170, 170, 170)!important;
+}
+
+    #CropTable ul li {
+        line-height: 22px!important;
+        text-align: justify!important;
+    }
+
+    #CropTable h3 {
+        margin: 0px 0px!important;
+        padding: 0px 0px 5px 0px!important;
+        color: #d3f771!important;
+        border-bottom: dotted 1px #cdcdcd!important;
+        font-size: 15px!important;
+    }
+
+#close a {
+    float: right;
+    color: yellow!important;
+    margin-top: -24px!important;
+    margin-right: -24px!important;
+}
