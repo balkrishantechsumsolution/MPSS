@@ -24,6 +24,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
         static data sqlhelper = new data();
         protected void Page_Load(object sender, EventArgs e)
         {
+
           
         }
 
