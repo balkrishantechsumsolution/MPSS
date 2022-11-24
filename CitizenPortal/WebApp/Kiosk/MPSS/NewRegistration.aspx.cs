@@ -24,13 +24,91 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
         static data sqlhelper = new data();
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                BindClassDropDown();
+                BindSchoolDropDown();
+                BindGenderDropDown();
+                BindCasteDropDown();
+            }
 
-          
+        }
+
+       
+        public void BindSchoolDropDown()
+        {
+            DataTable dt = new DataTable();
+
+            dt = sqlhelper.ExecuteDataTable("GetSchoolSP");
+
+            if (dt.Rows.Count > 0)
+            {
+                ddlSchool.DataTextField = dt.Columns["Name"].ToString(); // text field name of table dispalyed in dropdown       
+                ddlSchool.DataValueField = dt.Columns["ID"].ToString();
+                // to retrive specific  textfield name   
+                ddlSchool.DataSource = dt;      //assigning datasource to the dropdownlist  
+                ddlSchool.DataBind();
+
+            }
+            ddlSchool.Items.Insert(0, new ListItem("Please select", ""));
+
+        }
+        public void BindClassDropDown()
+        {
+            DataTable dt = new DataTable();
+
+            dt = sqlhelper.ExecuteDataTable("ClassSP");
+
+            if (dt.Rows.Count > 0)
+            {
+                ddlClass.DataTextField = dt.Columns["Name"].ToString(); // text field name of table dispalyed in dropdown       
+                ddlClass.DataValueField = dt.Columns["ID"].ToString();
+                // to retrive specific  textfield name   
+                ddlClass.DataSource = dt;      //assigning datasource to the dropdownlist  
+                ddlClass.DataBind();
+
+            }
+            ddlClass.Items.Insert(0, new ListItem("Please select", ""));
+
+        }
+        public void BindGenderDropDown()
+        {
+            DataTable dt = new DataTable();
+
+            dt = sqlhelper.ExecuteDataTable("GetGenderSP");
+
+            if (dt.Rows.Count > 0)
+            {
+                ddlGender.DataTextField = dt.Columns["Name"].ToString(); // text field name of table dispalyed in dropdown       
+                ddlGender.DataValueField = dt.Columns["ID"].ToString();
+                // to retrive specific  textfield name   
+                ddlGender.DataSource = dt;      //assigning datasource to the dropdownlist  
+                ddlGender.DataBind();
+
+            }
+            ddlGender.Items.Insert(0, new ListItem("Please select", ""));
+
+        }
+        public void BindCasteDropDown()
+        {
+            DataTable dt = new DataTable();
+
+            dt = sqlhelper.ExecuteDataTable("GetCasteSP");
+
+            if (dt.Rows.Count > 0)
+            {
+                ddlCaste.DataTextField = dt.Columns["Name"].ToString(); // text field name of table dispalyed in dropdown       
+                ddlCaste.DataValueField = dt.Columns["ID"].ToString();
+                // to retrive specific  textfield name   
+                ddlCaste.DataSource = dt;      //assigning datasource to the dropdownlist  
+                ddlCaste.DataBind();
+
+            }
+            ddlCaste.Items.Insert(0, new ListItem("Please select", ""));
+
         }
 
 
-    
-       
 
         protected void btnUpload_Click(object sender, EventArgs e)
         {
@@ -154,6 +232,8 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
         protected void btnShow_Click(object sender, EventArgs e)
         {
             divSTUDENT.Visible = true;
+            lblSchool.InnerText = ddlSchool.Text;
+            lblClass.InnerText = ddlClass.Text;
 
         }
 
@@ -177,18 +257,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
                 }
 
 
-                var chkGender = "Male";
-
-                if (rbnGender1.Checked)
-                {
-                    chkGender = "Male";
-                }
-                else
-                {
-                    chkGender = "Female";
-                }
-
-
+             
                 var chkNative = false;
 
                 if (rbnNative1.Checked)
@@ -208,11 +277,12 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
                 t_ObjDT.FatherName = txtFatherName.Text.Trim();
                 t_ObjDT.MotherName = txtMotherName.Text.Trim();
                 t_ObjDT.Birthdate = txtBirthdate.Text.Trim();
-                t_ObjDT.Gender = chkGender.Trim();
+                t_ObjDT.Gender = ddlGender.SelectedValue.Trim();
                 t_ObjDT.Class = ddlClass.SelectedValue;
                 t_ObjDT.School = ddlSchool.SelectedValue;
                 t_ObjDT.Img = hdnImage.Value;
                 t_ObjDT.ImgTC = hdnTC.Value;
+                t_ObjDT.Category = ddlCaste.SelectedValue.Trim();
 
                 t_ObjDT.City = txtCity.Text.Trim();
                 t_ObjDT.Block = txtBlock.Text.Trim();

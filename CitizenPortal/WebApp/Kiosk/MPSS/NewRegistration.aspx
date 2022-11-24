@@ -18,7 +18,7 @@
     <script src="/WebApp/Scripts/CommonScript.js?v=<%=CitizenPortal.Common.GlobalValues.JSVersion%>"></script>
     <script src="/WebApp/Scripts/ValidationScript.js?v=<%=CitizenPortal.Common.GlobalValues.JSVersion%>"></script>
     <link href="/g2c/css/hmepge.bootstrap.css" rel="stylesheet" />
-       
+
 
     <%--<link href="bootstrap-datetimepicker.css" rel="stylesheet" />
     <link href="bootstrap-datetimepicker.min.css" rel="stylesheet" />--%>
@@ -115,31 +115,31 @@
                 }
             }
         }
-       
+
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container-fluid p0" id="intrnlContent" ng-app="appmodule">
         <div ng-controller="ctrl">
             <div id="page-wrapper" style="min-height: 500px !important;">
-          <div class="row">
-                            <div class="col-md-12 box-container" runat="server" id="div5">
+                <div class="row">
+                    <div class="col-md-12 box-container" runat="server" id="div5">
 
-                                <div class="box-heading form_hd">
-                                    <h2>{{resourcesData.lblStEnroll}} 2022-23</h2>
-
-                                </div>
-                               
-
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="alert alert-success">
-                                    <p><b>{{resourcesData.lblInstruction}}</b></p>
-
-                                </div>
-                            </div>
+                        <div class="box-heading form_hd">
+                            <h2>{{resourcesData.lblStEnroll}} 2022-23</h2>
 
                         </div>
+
+
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="alert alert-success">
+                            <p><b>{{resourcesData.lblInstruction}}</b></p>
+
+                        </div>
+                    </div>
+
+                </div>
                 <div class="row">
 
                     <div class="col-md-12 box-container" runat="server" id="div1">
@@ -153,8 +153,7 @@
                                     <div class="form-group">
                                         <label class="manadatory">{{resourcesData.lblSchool}}</label>
                                         <asp:DropDownList ID="ddlSchool" runat="server" CssClass="form-control">
-                                            <asp:ListItem Value="0">--Select--</asp:ListItem>
-                                            <asp:ListItem Value="2311">Government Residential Girls Sanskrit School TT Nagar (Nutan Subhash School) 2311</asp:ListItem>
+                                            <asp:ListItem Value="0">--Select--</asp:ListItem>                                            
                                         </asp:DropDownList>
 
 
@@ -203,7 +202,7 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
-                                            <label class="manadatory">Government Residential Girls Sanskrit School TT Nagar (Nutan Subhash School) 2311</label>
+                                            <label class="manadatory" id="lblSchool" runat="server"></label>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
@@ -213,7 +212,7 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
-                                            <label class="manadatory">8<sup>th</sup></label>
+                                            <label class="manadatory"  id="lblClass" runat="server"></label>
                                         </div>
                                     </div>
                                 </div>
@@ -253,8 +252,8 @@
                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                     <div class="form-group">
                                         <label class="manadatory" for="ddlFullName">
-                                             {{resourcesData.lblFullName}}
-                                           </label>
+                                            {{resourcesData.lblFullName}}
+                                        </label>
 
 
                                     </div>
@@ -271,8 +270,8 @@
                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                     <div class="form-group">
                                         <label class="manadatory" for="ddlFullName">
-                                               {{resourcesData.lblFatherFullName}}
-                                            </label>
+                                            {{resourcesData.lblFatherFullName}}
+                                        </label>
 
 
                                     </div>
@@ -289,8 +288,8 @@
                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                     <div class="form-group">
                                         <label class="manadatory" for="ddlFullName">
-                                             {{resourcesData.lblMotherFullName}}
-                                           </label>
+                                            {{resourcesData.lblMotherFullName}}
+                                        </label>
 
 
                                     </div>
@@ -308,9 +307,9 @@
                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                     <div class="form-group">
                                         <label class="manadatory" for="ddlFullName">
-                                             {{resourcesData.lblStDOB}}
+                                            {{resourcesData.lblStDOB}}
                                               {{resourcesData.lblStAge}}                                            
-                               </label>
+                                        </label>
 
 
                                     </div>
@@ -329,103 +328,76 @@
                                 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                     <div class="form-group">
                                         <label class="manadatory">
-                                             {{resourcesData.lblStCategory}}
+                                            {{resourcesData.lblStCategory}}
                                             
                                         </label>
 
+                                        <asp:DropDownList ID="ddlCaste" runat="server" CssClass="form-control">
+                                            <asp:ListItem Value="0">--Select--</asp:ListItem>
+                                        </asp:DropDownList>
 
+
+                                        <div class="col-xs-12 pleft0 p5">
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ddlCaste" InitialValue="0" Display="Dynamic"
+                                                ErrorMessage="Please select Category." ValidationGroup="G" ForeColor="Red" />
+
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                                    <div class="form-group">
-                                        <asp:RadioButton ID="RadioButton4" runat="server" Text="SC" GroupName="category" />
-
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                                    <div class="form-group">
-
-                                        <asp:RadioButton ID="RadioButton5" runat="server" Text="ST" GroupName="category" />
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                                    <div class="form-group">
-                                        <asp:RadioButton ID="RadioButton6" runat="server" Text="OBC" GroupName="category" />
-
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                                    <div class="form-group">
-
-                                        <asp:RadioButton ID="RadioButton7" runat="server" Text="UR" GroupName="category" />
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                                    <div class="form-group">
-                                        <asp:RadioButton ID="RadioButton8" runat="server" Text="EWS" GroupName="category" />
-
-                                    </div>
-                                </div>
+                               
 
 
 
                                 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
                                     <div class="form-group">
                                         <label class="manadatory">
-                                              {{resourcesData.lblStGender}}
-                                            
+                                            {{resourcesData.lblStGender}}                                            
                                         </label>
+                                        <asp:DropDownList ID="ddlGender" runat="server" CssClass="form-control">
+                                            <asp:ListItem Value="0">--Select--</asp:ListItem>
+                                        </asp:DropDownList>
 
 
+                                        <div class="col-xs-12 pleft0 p5">
+                                            <asp:RequiredFieldValidator ID="rfv" runat="server" ControlToValidate="ddlGender" InitialValue="0" Display="Dynamic"
+                                                ErrorMessage="Please select Gender." ValidationGroup="G" ForeColor="Red" />
+
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                                    <div class="form-group">
-                                        <asp:RadioButton ID="rbnGender1" runat="server" Text="Male" GroupName="gender" />
-
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                                    <div class="form-group">
-
-                                        <asp:RadioButton ID="rbnGender2" runat="server" Text="Female" GroupName="gender" />
-                                    </div>
-                                </div>
 
 
-                                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                                    <div class="form-group">
-                                        <label class="manadatory">
-                                             {{resourcesData.lblStNative}}
+
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                        <div class="form-group">
+                                            <label class="manadatory">
+                                                {{resourcesData.lblStNative}}
                                            
-                                        </label>
+                                            </label>
 
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                                    <div class="form-group">
-                                        <asp:RadioButton ID="rbnNative1" runat="server" Text="Yes" GroupName="native" />
+                                    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                        <div class="form-group">
+                                            <asp:RadioButton ID="rbnNative1" runat="server" Text="Yes" GroupName="native" />
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                                    <div class="form-group">
+                                    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                        <div class="form-group">
 
-                                        <asp:RadioButton ID="rbnNative2" runat="server" Text="No" GroupName="native" />
+                                            <asp:RadioButton ID="rbnNative2" runat="server" Text="No" GroupName="native" />
+                                        </div>
                                     </div>
+
+                                    <div class="clearfix"></div>
                                 </div>
-
-                                <div class="clearfix"></div>
-                            </div>
-
                         </div>
 
                         <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 pleft0 pright0">
                             <div id="divPhoto" class="col-md-12 box-container">
                                 <div class="box-heading">
-                                    <h4 class="box-title manadatory">
-                                           {{resourcesData.lblStUpload}}
+                                    <h4 class="box-title manadatory">{{resourcesData.lblStUpload}}
                                       
                                     </h4>
                                 </div>
@@ -449,7 +421,7 @@
                                 </div>
                                 <div class="box-body box-body-open p0">
                                     <div class="col-lg-12">
-                                         {{resourcesData.lblStTCUpload}}
+                                        {{resourcesData.lblStTCUpload}}
                                         
                                 <asp:Image runat="server" class="form-control" name="ProfilePhoto" ID="ImageTC" />
                                         <input id="oFile" type="file" runat="server" name="oFile" />
@@ -467,8 +439,7 @@
                         <div class="row">
                             <div class="col-md-12 box-container" runat="server" id="div3">
                                 <div class="box-heading">
-                                    <h4 class="box-title register-num">
-                                         {{resourcesData.lblStApplicantAddress}}
+                                    <h4 class="box-title register-num">{{resourcesData.lblStApplicantAddress}}
                                         
                                     </h4>
                                 </div>
@@ -479,8 +450,8 @@
                                         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlFullName">
-                                                     {{resourcesData.lblStHouseNo}}
-                                                    </label>
+                                                    {{resourcesData.lblStHouseNo}}
+                                                </label>
 
 
                                             </div>
@@ -498,7 +469,7 @@
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlFullName">
                                                     {{resourcesData.lblStColony}}
-                                                    </label>
+                                                </label>
 
 
                                             </div>
@@ -516,8 +487,8 @@
                                         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlFullName">
-                                                       {{resourcesData.lblStCity}}
-                                                    </label>
+                                                    {{resourcesData.lblStCity}}
+                                                </label>
 
 
                                             </div>
@@ -534,8 +505,8 @@
                                         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlFullName">
-                                                     {{resourcesData.lblStBlock}}
-                                                    </label>
+                                                    {{resourcesData.lblStBlock}}
+                                                </label>
 
 
                                             </div>
@@ -553,8 +524,8 @@
                                         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                     {{resourcesData.lblStDistrict}}
-                                                    </label>
+                                                    {{resourcesData.lblStDistrict}}
+                                                </label>
 
 
                                             </div>
@@ -571,8 +542,8 @@
                                         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlFullName">
-                                                     {{resourcesData.lblStPinCode}}
-                                                    </label>
+                                                    {{resourcesData.lblStPinCode}}
+                                                </label>
 
 
                                             </div>
@@ -592,7 +563,7 @@
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
                                                     {{resourcesData.lblStSamagraID}}
-                                                    </label>
+                                                </label>
 
 
                                             </div>
@@ -610,7 +581,7 @@
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlFullName">
                                                     {{resourcesData.lblStMoblie}}
-                                                    </label>
+                                                </label>
 
 
                                             </div>
@@ -660,7 +631,7 @@
         </div>
         <asp:HiddenField ID="hdnImage" runat="server" />
         <asp:HiddenField ID="hdnTC" runat="server" />
-     
+
     </div>
 
 </asp:Content>

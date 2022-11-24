@@ -36,7 +36,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\</OutputPath>
+    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>TRACE;DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -47,7 +47,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\</OutputPath>
+    <OutputPath>bin\Release</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -3395,7 +3395,6 @@
     <Content Include="Areas\Kiosk\Scripts\pTemplate.html" />
     <Content Include="bin\agAes.dll" />
     <Content Include="bin\DocumentFormat.OpenXml.dll" />
-    <Content Include="bin\DTKBarReader5.dll" />
     <Content Include="bin\IKVM.AWT.WinForms.dll" />
     <Content Include="bin\IKVM.OpenJDK.Beans.dll" />
     <Content Include="bin\IKVM.OpenJDK.Charsets.dll" />
@@ -5559,10 +5558,6 @@
     <Content Include="mpss\mpss\slider\src\css\themes\sea-green\object\objects\root.scss" />
     <Content Include="mpss\mpss\slider\src\css\themes\skyblue\index.scss" />
     <Content Include="mpss\mpss\slider\tsconfig.json" />
-    <None Include="Properties\PublishProfiles\citizenportal.menetech.com - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\democitizenportal - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\GoDaddy.pubxml" />
-    <None Include="Properties\PublishProfiles\LocalPublish.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -7315,6 +7310,7 @@
     <Folder Include="Areas\Kiosk\Models\" />
     <Folder Include="Areas\Portal\Models\" />
     <Folder Include="Logs\" />
+    <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="Views\Base\" />
     <Folder Include="Views\Kiosk\" />
     <Folder Include="Views\Services\" />
@@ -7628,6 +7624,10 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
   <!-- <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild"> -->
   <!-- <PropertyGroup> -->
   <!-- <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText> -->

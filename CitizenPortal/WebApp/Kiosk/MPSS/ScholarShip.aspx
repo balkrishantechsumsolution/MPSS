@@ -135,7 +135,7 @@
             var text = "";
             text = "";
 
-           
+
 
             var txtIFSC = $('#ContentPlaceHolder1_txtBankIFSCCode');
             var reg = /[A-Z|a-z]{4}[0][a-zA-Z0-9]{6}$/;
@@ -146,7 +146,7 @@
                     txtIFSC.css({ "background-color": "#ffffff" });
                 }
                 else {
-                    
+
                     text += "\n -IFSC code should be count 11.";
                     text += "\n -Starting 4 should be only alphabets[A-Z].";
                     text += "\n -Remaining 7 should be accepting only alphanumeric.";
@@ -157,7 +157,7 @@
                 }
             }
 
-         
+
 
             if (opt == "1") {
                 alert(text);
@@ -241,27 +241,27 @@
 
 
 
-            
-
-                    <div class="box-body box-body-open">
 
 
-                        <div id="smartwizard">
-                            <ul>
-                                <li><a href="#step-1">Step 1<br />
-                                    <small id="lblsearch">{{resourcesData.lblScStDtls}}</small></a></li>
-                                <li><a href="#step-2">Step 2<br />
-                                    <small>{{resourcesData.lblScStInform}}</small></a></li>
-                                <li><a href="#step-3">Step 3<br />
-                                    <small>{{resourcesData.lblScStInformation}}</small></a></li>
-                                <li><a href="#step-4">Step 4<br />
-                                    <small>{{resourcesData.lblScStBankInfo}}</small></a></li>
+                <div class="box-body box-body-open">
 
-                            </ul>
-                            <div class="mt-4">
-                                <div id="step-1">
-                                    <div class="row">
-                                        <fieldset id="divStudentInnfo" style="width: 100%; margin-bottom: 15px;">
+
+                    <div id="smartwizard">
+                        <ul>
+                            <li><a href="#step-1">Step 1<br />
+                                <small id="lblsearch">{{resourcesData.lblScStDtls}}</small></a></li>
+                            <li><a href="#step-2">Step 2<br />
+                                <small>{{resourcesData.lblScStInform}}</small></a></li>
+                            <li><a href="#step-3">Step 3<br />
+                                <small>{{resourcesData.lblScStInformation}}</small></a></li>
+                            <li><a href="#step-4">Step 4<br />
+                                <small>{{resourcesData.lblScStBankInfo}}</small></a></li>
+
+                        </ul>
+                        <div class="mt-4">
+                            <div id="step-1">
+                                <div class="row">
+                                    <fieldset id="divStudentInnfo" style="width: 100%; margin-bottom: 15px;">
                                         <legend>&nbsp {{resourcesData.lblScStDtls}}</legend>
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                             <div class="form-group">
@@ -306,9 +306,7 @@
                                             <div class="form-group">
                                                 <label class="manadatory">{{resourcesData.lblStGender}}</label>
                                                 <asp:DropDownList ID="ddlGender" runat="server" CssClass="form-control">
-                                                    <asp:ListItem Value="0">--Select--</asp:ListItem>
-                                                    <asp:ListItem Value="M">Male</asp:ListItem>
-                                                    <asp:ListItem Value="F">Female</asp:ListItem>
+                                                    <asp:ListItem Value="0">--Select--</asp:ListItem>                                                   
                                                 </asp:DropDownList>
 
 
@@ -334,10 +332,13 @@
                                         <div class="col-xs-12  col-sm-8 col-md-8 col-lg-3">
                                             <div class="form-group">
                                                 <label class="manadatory">{{resourcesData.lblScStClass}}</label>
-                                                <asp:TextBox ID="txtClass" CssClass="form-control" runat="server" MaxLength="10" placeholder="Enter Class"></asp:TextBox>
+                                                <asp:DropDownList ID="ddlClass" runat="server" CssClass="form-control">
+                                                    <asp:ListItem Value="0">--Select--</asp:ListItem>
+                                                    <asp:ListItem Value="8">8</asp:ListItem>
+                                                </asp:DropDownList>
 
                                                 <div class="col-xs-12 pleft0 p5">
-                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtClass" Display="Dynamic"
+                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ddlClass" Display="Dynamic"
                                                         ErrorMessage="Please Enter Class" ValidationGroup="G" ForeColor="Red" />
                                                 </div>
                                             </div>
@@ -350,10 +351,13 @@
                                             <div class="form-group">
                                                 <label class="manadatory">{{resourcesData.lblScStSection}} </label>
 
-                                                <asp:TextBox ID="txtSection" CssClass="form-control" runat="server" MaxLength="100" onkeypress="return ValidateAlpha(event);" placeholder="Section"></asp:TextBox>
+                                                 <asp:DropDownList ID="ddlSection" runat="server" CssClass="form-control">
+                                                    <asp:ListItem Value="0">--Select--</asp:ListItem>
+                                                    <asp:ListItem Value="8">8</asp:ListItem>
+                                                </asp:DropDownList>
 
                                                 <div class="col-xs-12 pleft0 p5">
-                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtSection" Display="Dynamic"
+                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="ddlSection" Display="Dynamic"
                                                         ErrorMessage="Please College Section." ValidationGroup="G" ForeColor="Red" />
                                                 </div>
 
@@ -438,601 +442,604 @@
                             </div>--%>
                                             </div>
                                         </div>
-                                            </fieldset>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                    <%-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center ptop20" id="divRow1">
+                                    </fieldset>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <%-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center ptop20" id="divRow1">
                                             <input type="button" id="btnSaveDraft1" class="save_btn btn-lg" value="Save Draft" onclick="getDataStep(1);" />
                                         </div>--%>
-                                </div>
-                                
-                                <div id="step-2">
-                                    <fieldset id="divStudentIfo" style="width: 100%; margin-bottom: 15px;">
-                                        <legend>&nbsp {{resourcesData.lblScStInform}}</legend>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label class="manadatory">{{resourcesData.lblScStFIncome}}</label>
-                                                <asp:TextBox ID="txtFamiyIncome" CssClass="form-control" runat="server" MaxLength="8" onkeypress="return isNumberKey(event)"></asp:TextBox>
+                            </div>
 
-                                                <div class="col-xs-12 pleft0">
-                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtFamiyIncome" Display="Dynamic"
-                                                        ErrorMessage="Please enter Family Income." ValidationGroup="G" ForeColor="Red" />
-                                                </div>
+                            <div id="step-2">
+                                <fieldset id="divStudentIfo" style="width: 100%; margin-bottom: 15px;">
+                                    <legend>&nbsp {{resourcesData.lblScStInform}}</legend>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label class="manadatory">{{resourcesData.lblScStFIncome}}</label>
+                                            <asp:TextBox ID="txtFamiyIncome" CssClass="form-control" runat="server" MaxLength="8" onkeypress="return isNumberKey(event)"></asp:TextBox>
+
+                                            <div class="col-xs-12 pleft0">
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtFamiyIncome" Display="Dynamic"
+                                                    ErrorMessage="Please enter Family Income." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label class="manadatory">{{resourcesData.lblScStCaste}}</label>
-                                                <asp:TextBox ID="txtCaste" CssClass="form-control" runat="server" MaxLength="100" onkeypress="return ValidateAlpha(event);"></asp:TextBox>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label class="manadatory">{{resourcesData.lblScStCaste}}</label>
+                                            <asp:TextBox ID="txtCaste" CssClass="form-control" runat="server" MaxLength="100" onkeypress="return ValidateAlpha(event);"></asp:TextBox>
 
-                                                <div class="col-xs-12 pleft0">
-                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="txtCaste" Display="Dynamic"
-                                                        ErrorMessage="Please enter Cast." ValidationGroup="G" ForeColor="Red" />
-                                                </div>
+                                            <div class="col-xs-12 pleft0">
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="txtCaste" Display="Dynamic"
+                                                    ErrorMessage="Please enter Cast." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStSubCaste}}</label>
-                                                <asp:TextBox ID="txtSubCaste" CssClass="form-control" runat="server" MaxLength="100" onkeypress="return ValidateAlpha(event);"></asp:TextBox>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStSubCaste}}</label>
+                                            <asp:TextBox ID="txtSubCaste" CssClass="form-control" runat="server" MaxLength="100" onkeypress="return ValidateAlpha(event);"></asp:TextBox>
 
-                                                <%--  <div class="col-xs-12 pleft0">
+                                            <%--  <div class="col-xs-12 pleft0">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="txtSubCaste" Display="Dynamic"
                                     ErrorMessage="Please enter Sub Cast." ValidationGroup="G" ForeColor="Red" />
                             </div>--%>
-                                            </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStDigitalCasteNo}}</label>
-                                                <asp:TextBox ID="txtDigitalCasteNo" CssClass="form-control" runat="server"></asp:TextBox>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStDigitalCasteNo}}</label>
+                                            <asp:TextBox ID="txtDigitalCasteNo" CssClass="form-control" runat="server"></asp:TextBox>
 
-                                                <%--   <div class="col-xs-12 pleft0">
+                                            <%--   <div class="col-xs-12 pleft0">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="txtDigitalCasteNo" Display="Dynamic"
                                     ErrorMessage="Please enter Digital Caste Cetrtificate Number." ValidationGroup="G" ForeColor="Red" />
                             </div>--%>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label class="manadatory">{{resourcesData.lblScStReligion}}</label>
+                                            <asp:DropDownList ID="ddlReligion" runat="server" CssClass="form-control">
+                                                <asp:ListItem Value="0">--Select--</asp:ListItem>
+                                                <asp:ListItem Value="1">Hindu</asp:ListItem>
+                                                <asp:ListItem Value="2">Muslim</asp:ListItem>
+                                                <asp:ListItem Value="3">Sikh</asp:ListItem>
+                                                <asp:ListItem Value="4">Christian</asp:ListItem>
+                                                <asp:ListItem Value="999 Private">Traditional Private</asp:ListItem>
+                                            </asp:DropDownList>
+
+
+                                            <div class="col-xs-12 pleft0">
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="ddlReligion" Display="Dynamic"
+                                                    ErrorMessage="Please enter Regilion." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
-                                        <div class="clearfix"></div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label class="manadatory">{{resourcesData.lblScStReligion}}</label>
-                                                <asp:DropDownList ID="ddlReligion" runat="server" CssClass="form-control">
-                                                    <asp:ListItem Value="0">--Select--</asp:ListItem>
-                                                    <asp:ListItem Value="1">Hindu</asp:ListItem>
-                                                    <asp:ListItem Value="2">Muslim</asp:ListItem>
-                                                    <asp:ListItem Value="3">Sikh</asp:ListItem>
-                                                    <asp:ListItem Value="4">Christian</asp:ListItem>
-                                                    <asp:ListItem Value="999 Private">Traditional Private</asp:ListItem>
-                                                </asp:DropDownList>
+                                    </div>
 
-
-                                                <div class="col-xs-12 pleft0">
-                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="ddlReligion" Display="Dynamic"
-                                                        ErrorMessage="Please enter Regilion." ValidationGroup="G" ForeColor="Red" />
-                                                </div>
-                                            </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStNative}}</label>
+                                            <asp:CheckBox ID="IsMPOrigin" runat="server" />
                                         </div>
-
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStNative}}</label>
-                                                <asp:CheckBox ID="IsMPOrigin" runat="server" />
-                                            </div>
-                                        </div>
+                                    </div>
 
 
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStExamBoardName}}</label>
-                                                <asp:TextBox ID="txtExamBoardName" CssClass="form-control" runat="server" MaxLength="100" onkeypress="return ValidateAlpha(event);"></asp:TextBox>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStExamBoardName}}</label>
+                                            <asp:TextBox ID="txtExamBoardName" CssClass="form-control" runat="server" MaxLength="100" onkeypress="return ValidateAlpha(event);"></asp:TextBox>
 
-                                                <%--<div class="col-xs-12 pleft0">
+                                            <%--<div class="col-xs-12 pleft0">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator16" runat="server" ControlToValidate="txtExamBoardName" Display="Dynamic"
                                     ErrorMessage="Please enter Exam Board Name." ValidationGroup="G" ForeColor="Red" />
                             </div>--%>
-                                            </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStMonthlyFee}}</label>
-                                                <asp:TextBox ID="txtMonthlyFee" CssClass="form-control" runat="server" onkeypress="return isNumberKey(event)"></asp:TextBox>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStMonthlyFee}}</label>
+                                            <asp:TextBox ID="txtMonthlyFee" CssClass="form-control" runat="server" onkeypress="return isNumberKey(event)"></asp:TextBox>
 
-                                                <%--   <div class="col-xs-12 pleft0">
+                                            <%--   <div class="col-xs-12 pleft0">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator17" runat="server" ControlToValidate="txtMonthlyFee" Display="Dynamic"
                                     ErrorMessage="Please enter MonthlyFee." ValidationGroup="G" ForeColor="Red" />
                             </div>--%>
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label class="manadatory">{{resourcesData.lblScStDateAdmisCurrSch}}</label>
+                                            <asp:TextBox ID="txtDateAdmisCurrSch" CssClass="form-control" runat="server"></asp:TextBox>
+
+                                            <div class="col-xs-12 pleft0">
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator19" runat="server" ControlToValidate="txtDateAdmisCurrSch" Display="Dynamic"
+                                                    ErrorMessage="Please enter Date of admission in current school." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label class="manadatory">{{resourcesData.lblScStDateAdmisCurrClass}}</label>
+                                            <asp:TextBox ID="txtDateAdmisCurrClass" CssClass="form-control" runat="server"></asp:TextBox>
 
-
-
-
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label class="manadatory">{{resourcesData.lblScStDateAdmisCurrSch}}</label>
-                                                <asp:TextBox ID="txtDateAdmisCurrSch" CssClass="form-control" runat="server"></asp:TextBox>
-
-                                                <div class="col-xs-12 pleft0">
-                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator19" runat="server" ControlToValidate="txtDateAdmisCurrSch" Display="Dynamic"
-                                                        ErrorMessage="Please enter Date of admission in current school." ValidationGroup="G" ForeColor="Red" />
-                                                </div>
+                                            <div class="col-xs-12 pleft0">
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator27" runat="server" ControlToValidate="txtDateAdmisCurrClass" Display="Dynamic"
+                                                    ErrorMessage="Please enter Date of Admission to class (DD/MM/YYYY)." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label class="manadatory">{{resourcesData.lblScStDateAdmisCurrClass}}</label>
-                                                <asp:TextBox ID="txtDateAdmisCurrClass" CssClass="form-control" runat="server"></asp:TextBox>
+                                    </div>
 
-                                                <div class="col-xs-12 pleft0">
-                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator27" runat="server" ControlToValidate="txtDateAdmisCurrClass" Display="Dynamic"
-                                                        ErrorMessage="Please enter Date of Admission to class (DD/MM/YYYY)." ValidationGroup="G" ForeColor="Red" />
-                                                </div>
+
+
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label class="manadatory">{{resourcesData.lblScStNoOfSibling}}</label>
+                                            <asp:TextBox ID="txtNoOfSibling" CssClass="form-control" runat="server" onkeydown="return AllowOnlyNumeric(event);"></asp:TextBox>
+
+                                            <div class="col-xs-12 pleft0">
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator29" runat="server" ControlToValidate="txtNoOfSibling" Display="Dynamic"
+                                                    ErrorMessage="Please enter How many brothers/sisters." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
+                                    </div>
 
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label class="manadatory">{{resourcesData.lblScStAdmissionNo}}</label>
+                                            <asp:TextBox ID="txtAdmissionNo" CssClass="form-control" runat="server"></asp:TextBox>
 
-
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label class="manadatory">{{resourcesData.lblScStNoOfSibling}}</label>
-                                                <asp:TextBox ID="txtNoOfSibling" CssClass="form-control" runat="server" onkeydown="return AllowOnlyNumeric(event);"></asp:TextBox>
-
-                                                <div class="col-xs-12 pleft0">
-                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator29" runat="server" ControlToValidate="txtNoOfSibling" Display="Dynamic"
-                                                        ErrorMessage="Please enter How many brothers/sisters." ValidationGroup="G" ForeColor="Red" />
-                                                </div>
+                                            <div class="col-xs-12 pleft0">
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator30" runat="server" ControlToValidate="txtAdmissionNo" Display="Dynamic"
+                                                    ErrorMessage="Please enter Student's School admission number." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStCurrentCls}}</label>
+                                            <asp:TextBox ID="txtCurrentCls" CssClass="form-control" runat="server"></asp:TextBox>
 
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label class="manadatory">{{resourcesData.lblScStAdmissionNo}}</label>
-                                                <asp:TextBox ID="txtAdmissionNo" CssClass="form-control" runat="server"></asp:TextBox>
-
-                                                <div class="col-xs-12 pleft0">
-                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator30" runat="server" ControlToValidate="txtAdmissionNo" Display="Dynamic"
-                                                        ErrorMessage="Please enter Student's School admission number." ValidationGroup="G" ForeColor="Red" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStCurrentCls}}</label>
-                                                <asp:TextBox ID="txtCurrentCls" CssClass="form-control" runat="server"></asp:TextBox>
-
-                                                <%--<div class="col-xs-12 pleft0">
+                                            <%--<div class="col-xs-12 pleft0">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator34" runat="server" ControlToValidate="txtCurrentCls" Display="Dynamic"
                                     ErrorMessage="Please enter Current Class." ValidationGroup="G" ForeColor="Red" />
                             </div>--%>
-                                            </div>
                                         </div>
+                                    </div>
 
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStLastCls}}</label>
-                                                <asp:TextBox ID="txtLastCls" CssClass="form-control" runat="server"></asp:TextBox>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStLastCls}}</label>
+                                            <asp:TextBox ID="txtLastCls" CssClass="form-control" runat="server"></asp:TextBox>
 
-                                                <%--  <div class="col-xs-12 pleft0">
+                                            <%--  <div class="col-xs-12 pleft0">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator35" runat="server" ControlToValidate="txtLastCls" Display="Dynamic"
                                     ErrorMessage="Please enter Last year's class." ValidationGroup="G" ForeColor="Red" />
                             </div>--%>
-                                            </div>
                                         </div>
+                                    </div>
 
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStPreAttDays}}</label>
-                                                <asp:TextBox ID="txtPreAttDays" CssClass="form-control" runat="server" onkeydown="return AllowOnlyNumeric(event);"></asp:TextBox>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStPreAttDays}}</label>
+                                            <asp:TextBox ID="txtPreAttDays" CssClass="form-control" runat="server" onkeydown="return AllowOnlyNumeric(event);"></asp:TextBox>
 
-                                                <%-- <div class="col-xs-12 pleft0">
+                                            <%-- <div class="col-xs-12 pleft0">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator37" runat="server" ControlToValidate="txtPreAttDays" Display="Dynamic"
                                     ErrorMessage="Please enter Student's attendance day in the previous year." ValidationGroup="G" ForeColor="Red" />
                             </div>--%>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label class="manadatory">{{resourcesData.lblScStMediums}}</label>
+                                            <asp:TextBox ID="txtMediums" CssClass="form-control" runat="server"></asp:TextBox>
+
+                                            <div class="col-xs-12 pleft0">
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator38" runat="server" ControlToValidate="txtMediums" Display="Dynamic"
+                                                    ErrorMessage="Please enter Student's medium of instruction." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label class="manadatory">{{resourcesData.lblScStMediums}}</label>
-                                                <asp:TextBox ID="txtMediums" CssClass="form-control" runat="server"></asp:TextBox>
-
-                                                <div class="col-xs-12 pleft0">
-                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator38" runat="server" ControlToValidate="txtMediums" Display="Dynamic"
-                                                        ErrorMessage="Please enter Student's medium of instruction." ValidationGroup="G" ForeColor="Red" />
-                                                </div>
-                                            </div>
-                                        </div>
+                                    </div>
 
 
-                                        <div class="clearfix"></div>
+                                    <div class="clearfix"></div>
 
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStDisability}}</label>
-                                                <asp:TextBox ID="txtDisability" CssClass="form-control" runat="server"></asp:TextBox>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStDisability}}</label>
+                                            <asp:TextBox ID="txtDisability" CssClass="form-control" runat="server"></asp:TextBox>
 
-                                                <%--  <div class="col-xs-12 pleft0">
+                                            <%--  <div class="col-xs-12 pleft0">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator39" runat="server" ControlToValidate="txtDisability" Display="Dynamic"
                                     ErrorMessage="Please enter Type of disability." ValidationGroup="G" ForeColor="Red" />
                             </div>--%>
-                                            </div>
                                         </div>
+                                    </div>
 
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStEquipDisability}}</label>
-                                                <asp:TextBox ID="txtEquipDisability" CssClass="form-control" runat="server"></asp:TextBox>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStEquipDisability}}</label>
+                                            <asp:TextBox ID="txtEquipDisability" CssClass="form-control" runat="server"></asp:TextBox>
 
-                                                <%-- <div class="col-xs-12 pleft0">
+                                            <%-- <div class="col-xs-12 pleft0">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator40" runat="server" ControlToValidate="txtEquipDisability" Display="Dynamic"
                                     ErrorMessage="Please enter Equipment given to students with disabilities." ValidationGroup="G" ForeColor="Red" />
                             </div>--%>
-                                            </div>
                                         </div>
+                                    </div>
 
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStFreeUniform}}</label>
-                                                <asp:TextBox ID="txtFreeUniform" CssClass="form-control" runat="server"></asp:TextBox>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStFreeUniform}}</label>
+                                            <asp:TextBox ID="txtFreeUniform" CssClass="form-control" runat="server"></asp:TextBox>
 
-                                                <%--<div class="col-xs-12 pleft0">
+                                            <%--<div class="col-xs-12 pleft0">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator41" runat="server" ControlToValidate="txtFreeUniform" Display="Dynamic"
                                     ErrorMessage="Please enter FreeUniform." ValidationGroup="G" ForeColor="Red" />
                             </div>--%>
-                                            </div>
                                         </div>
+                                    </div>
 
 
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStYrLastExam}}</label>
-                                                <asp:TextBox ID="txtYrLastExam" CssClass="form-control" runat="server"></asp:TextBox>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStYrLastExam}}</label>
+                                            <asp:TextBox ID="txtYrLastExam" CssClass="form-control" runat="server"></asp:TextBox>
 
-                                                <%-- <div class="col-xs-12 pleft0">
+                                            <%-- <div class="col-xs-12 pleft0">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator49" runat="server" ControlToValidate="txtYrLastExam" Display="Dynamic"
                                     ErrorMessage="Please enter Year of last class exam." ValidationGroup="G" ForeColor="Red" />
                             </div>--%>
-                                            </div>
                                         </div>
-                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="clearfix"></div>
 
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStLastAnnualResult}}</label>
-                                                <asp:TextBox ID="txtLastAnnualResult" CssClass="form-control" runat="server"></asp:TextBox>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStLastAnnualResult}}</label>
+                                            <asp:TextBox ID="txtLastAnnualResult" CssClass="form-control" runat="server"></asp:TextBox>
 
-                                                <%--  <div class="col-xs-12 pleft0">
+                                            <%--  <div class="col-xs-12 pleft0">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator50" runat="server" ControlToValidate="txtLastAnnualResult" Display="Dynamic"
                                     ErrorMessage="Please enter last annual result." ValidationGroup="G" ForeColor="Red" />
                             </div>--%>
-                                            </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStPassPercentage}}</label>
-                                                <asp:TextBox ID="txtPassPercentage" CssClass="form-control" runat="server"></asp:TextBox>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStPassPercentage}}</label>
+                                            <asp:TextBox ID="txtPassPercentage" CssClass="form-control" runat="server"></asp:TextBox>
 
-                                                <%-- <div class="col-xs-12 pleft0">
+                                            <%-- <div class="col-xs-12 pleft0">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator51" runat="server" ControlToValidate="txtPassPercentage" Display="Dynamic"
                                     ErrorMessage="Please enter Pass Percentage." ValidationGroup="G" ForeColor="Red" />
                             </div>--%>
-                                            </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStLastClsInt}}</label>
-                                                <asp:TextBox ID="txtLastClsInt" CssClass="form-control" runat="server"></asp:TextBox>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStLastClsInt}}</label>
+                                            <asp:TextBox ID="txtLastClsInt" CssClass="form-control" runat="server"></asp:TextBox>
 
-                                                <%-- <div class="col-xs-12 pleft0">
+                                            <%-- <div class="col-xs-12 pleft0">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator52" runat="server" ControlToValidate="txtLastClsInt" Display="Dynamic"
                                     ErrorMessage="Please enter Name of last class institution." ValidationGroup="G" ForeColor="Red" />
                             </div>--%>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label class="manadatory">{{resourcesData.lblScStStudentStatus}}</label>
+                                           <asp:DropDownList ID="ddlStatus" runat="server" CssClass="form-control">
+                                                    <asp:ListItem Value="0">--Select--</asp:ListItem>
+                                                    <asp:ListItem Value="8">8</asp:ListItem>
+                                                </asp:DropDownList>
+
+                                            <div class="col-xs-12 pleft0">
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator53" runat="server" ControlToValidate="ddlStatus" Display="Dynamic"
+                                                    ErrorMessage="Please enter StudentStatus." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label class="manadatory">{{resourcesData.lblScStStudentStatus}}</label>
-                                                <asp:TextBox ID="txtStudentStatus" CssClass="form-control" runat="server"></asp:TextBox>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStCodeFacultySt}}</label>
+                                            <asp:TextBox ID="txtCodeFacultySt" CssClass="form-control" runat="server"></asp:TextBox>
 
-                                                <div class="col-xs-12 pleft0">
-                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator53" runat="server" ControlToValidate="txtStudentStatus" Display="Dynamic"
-                                                        ErrorMessage="Please enter StudentStatus." ValidationGroup="G" ForeColor="Red" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStCodeFacultySt}}</label>
-                                                <asp:TextBox ID="txtCodeFacultySt" CssClass="form-control" runat="server"></asp:TextBox>
-
-                                                <%-- <div class="col-xs-12 pleft0">
+                                            <%-- <div class="col-xs-12 pleft0">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator54" runat="server" ControlToValidate="txtCodeFacultySt" Display="Dynamic"
                                     ErrorMessage="Please enter >Code of Faculty/Stream." ValidationGroup="G" ForeColor="Red" />
                             </div>--%>
-                                            </div>
                                         </div>
+                                    </div>
 
 
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStCodeTradeVocationalPrg}}</label>
-                                                <asp:TextBox ID="txtCodeTradeVocationalPrg" CssClass="form-control" runat="server"></asp:TextBox>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStCodeTradeVocationalPrg}}</label>
+                                            <asp:TextBox ID="txtCodeTradeVocationalPrg" CssClass="form-control" runat="server"></asp:TextBox>
 
-                                                <%-- <div class="col-xs-12 pleft0">
+                                            <%-- <div class="col-xs-12 pleft0">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator56" runat="server" ControlToValidate="txtCodeTradeVocationalPrg" Display="Dynamic"
                                     ErrorMessage="Please enter Code of trade taken by the student in vocational education." ValidationGroup="G" ForeColor="Red" />
                             </div>--%>
-                                            </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStTypeJobRoleVocationalPrg}}</label>
-                                                <asp:TextBox ID="txtTypeJobRoleVocationalPrg" CssClass="form-control" runat="server"></asp:TextBox>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStTypeJobRoleVocationalPrg}}</label>
+                                            <asp:TextBox ID="txtTypeJobRoleVocationalPrg" CssClass="form-control" runat="server"></asp:TextBox>
 
-                                                <%-- <div class="col-xs-12 pleft0">
+                                            <%-- <div class="col-xs-12 pleft0">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator57" runat="server" ControlToValidate="txtTypeJobRoleVocationalPrg" Display="Dynamic"
                                     ErrorMessage="Please enter What type of job roles are expected in vocational education." ValidationGroup="G" ForeColor="Red" />
                             </div>--%>
-                                            </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStLvlNSFQ}}</label>
-                                                <asp:TextBox ID="txtLvlNSFQ" CssClass="form-control" runat="server"></asp:TextBox>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStLvlNSFQ}}</label>
+                                            <asp:TextBox ID="txtLvlNSFQ" CssClass="form-control" runat="server"></asp:TextBox>
 
-                                                <%-- <div class="col-xs-12 pleft0">
+                                            <%-- <div class="col-xs-12 pleft0">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator58" runat="server" ControlToValidate="txtLvlNSFQ" Display="Dynamic"
                                     ErrorMessage="Please enter >Which level of NSFQ has been completed by the student?." ValidationGroup="G" ForeColor="Red" />
                             </div>--%>
-                                            </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStObjVocationalPrg}}</label>
-                                                <asp:TextBox ID="txtObjVocationalPrg" CssClass="form-control" runat="server"></asp:TextBox>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStObjVocationalPrg}}</label>
+                                            <asp:TextBox ID="txtObjVocationalPrg" CssClass="form-control" runat="server"></asp:TextBox>
 
-                                                <%--<div class="col-xs-12 pleft0">
+                                            <%--<div class="col-xs-12 pleft0">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ControlToValidate="txtObjVocationalPrg" Display="Dynamic"
                                     ErrorMessage="Please enter Objectives of student to take vocational education." ValidationGroup="G" ForeColor="Red" />
                             </div>--%>
-                                            </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStJobStaus}}</label>
-                                                <asp:TextBox ID="txtJobStaus" CssClass="form-control" runat="server"></asp:TextBox>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStJobStaus}}</label>
+                                            <asp:TextBox ID="txtJobStaus" CssClass="form-control" runat="server"></asp:TextBox>
 
-                                                <%-- <div class="col-xs-12 pleft0">
+                                            <%-- <div class="col-xs-12 pleft0">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" ControlToValidate="txtJobStaus" Display="Dynamic"
                                     ErrorMessage="Please enter Job / Placement Status." ValidationGroup="G" ForeColor="Red" />
                             </div>--%>
-                                            </div>
                                         </div>
+                                    </div>
 
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStJobSalary}}</label>
-                                                <asp:TextBox ID="txtJobSalary" CssClass="form-control" runat="server" onkeypress="return isNumberKey(event)"></asp:TextBox>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStJobSalary}}</label>
+                                            <asp:TextBox ID="txtJobSalary" CssClass="form-control" runat="server" onkeypress="return isNumberKey(event)"></asp:TextBox>
 
-                                                <%-- <div class="col-xs-12 pleft0">
+                                            <%-- <div class="col-xs-12 pleft0">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ControlToValidate="txtJobSalary" Display="Dynamic"
                                     ErrorMessage="Please enter JobSalary." ValidationGroup="G" ForeColor="Red" />
                             </div>--%>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label class="manadatory">{{resourcesData.lblScStMobieNoParent}}</label>
+                                            <asp:TextBox ID="txtMobieNoParent" CssClass="form-control" runat="server" onkeydown="return AllowOnlyNumeric(event);" onChange="ValidateMobile();" MaxLength="10"></asp:TextBox>
+
+                                            <div class="col-xs-12 pleft0">
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator18" runat="server" ControlToValidate="txtMobieNoParent" Display="Dynamic"
+                                                    ErrorMessage="Please enter MobieNo Parent." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label class="manadatory">{{resourcesData.lblScStMobieNoParent}}</label>
-                                                <asp:TextBox ID="txtMobieNoParent" CssClass="form-control" runat="server" onkeydown="return AllowOnlyNumeric(event);" onChange="ValidateMobile();" MaxLength="10"></asp:TextBox>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStLadliLaxmiNo}}</label>
+                                            <asp:TextBox ID="txtLadliLaxmiNo" CssClass="form-control" runat="server"></asp:TextBox>
 
-                                                <div class="col-xs-12 pleft0">
-                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator18" runat="server" ControlToValidate="txtMobieNoParent" Display="Dynamic"
-                                                        ErrorMessage="Please enter MobieNo Parent." ValidationGroup="G" ForeColor="Red" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStLadliLaxmiNo}}</label>
-                                                <asp:TextBox ID="txtLadliLaxmiNo" CssClass="form-control" runat="server"></asp:TextBox>
-
-                                                <%--  <div class="col-xs-12 pleft0">
+                                            <%--  <div class="col-xs-12 pleft0">
                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator28" runat="server" ControlToValidate="txtLadliLaxmiNo" Display="Dynamic"
                                     ErrorMessage="Please enter Ladli Laxmi No." ValidationGroup="G" ForeColor="Red" />
                             </div>--%>
-                                            </div>
                                         </div>
-                                    </fieldset>
-                                    <div class="clearfix"></div>
-                                    <%-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center ptop20" id="divRow1">
+                                    </div>
+                                </fieldset>
+                                <div class="clearfix"></div>
+                                <%-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center ptop20" id="divRow1">
                                             <input type="button" id="btnSaveDraft1" class="save_btn btn-lg" value="Save Draft" onclick="getDataStep(1);" />
                                         </div>--%>
-                                </div>
-                                <div id="step-3">
-                                    <fieldset id="divStudentOther" style="width: 100%; margin-bottom: 15px;">
-                                        <legend>&nbsp {{resourcesData.lblScStInformation}}</legend>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStParentIcomeTaxPayer}}</label>
-                                                <asp:CheckBox ID="IsParentIcomeTaxPayer" runat="server" />
-                                            </div>
+                            </div>
+                            <div id="step-3">
+                                <fieldset id="divStudentOther" style="width: 100%; margin-bottom: 15px;">
+                                    <legend>&nbsp {{resourcesData.lblScStInformation}}</legend>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStParentIcomeTaxPayer}}</label>
+                                            <asp:CheckBox ID="IsParentIcomeTaxPayer" runat="server" />
                                         </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStIsAnyHaveScholarShip}}</label>
-                                                <asp:CheckBox ID="IsAnyHaveScholarShip" runat="server" />
-                                            </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStIsAnyHaveScholarShip}}</label>
+                                            <asp:CheckBox ID="IsAnyHaveScholarShip" runat="server" />
                                         </div>
+                                    </div>
 
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStIsHosteller}}</label>
-                                                <asp:CheckBox ID="IsHosteller" runat="server" />
-                                            </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStIsHosteller}}</label>
+                                            <asp:CheckBox ID="IsHosteller" runat="server" />
                                         </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStIsFamilyBPL}}</label>
-                                                <asp:CheckBox ID="IsFamilyBPL" runat="server" />
-                                            </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStIsFamilyBPL}}</label>
+                                            <asp:CheckBox ID="IsFamilyBPL" runat="server" />
                                         </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStIsDisadvantagedgroup}}</label>
-                                                <asp:CheckBox ID="IsDisadvantagedgroup" runat="server" />
-                                            </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStIsDisadvantagedgroup}}</label>
+                                            <asp:CheckBox ID="IsDisadvantagedgroup" runat="server" />
                                         </div>
-
-
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStIsRTE}}</label>
-                                                <asp:CheckBox ID="IsRTE" runat="server" />
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStIsClsFirstEnrollStatus}}</label>
-                                                <asp:CheckBox ID="IsClsFirstEnrollStatus" runat="server" />
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStIsDGSCaste}}</label>
-                                                <asp:CheckBox ID="IsDGSCaste" runat="server" />
-                                            </div>
-                                        </div>
-
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStIsFreeTextbooks}}</label>
-                                                <asp:CheckBox ID="IsFreeTextbooks" runat="server" />
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStIsFreeTransport}}</label>
-                                                <asp:CheckBox ID="IsFreeTransport" runat="server" />
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScSIsFreeEscortDis}}</label>
+                                    </div>
 
 
-                                                <asp:CheckBox ID="IsFreeEscortDis" runat="server" />
-                                            </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStIsRTE}}</label>
+                                            <asp:CheckBox ID="IsRTE" runat="server" />
                                         </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStIsClsFirstEnrollStatus}}</label>
+                                            <asp:CheckBox ID="IsClsFirstEnrollStatus" runat="server" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStIsDGSCaste}}</label>
+                                            <asp:CheckBox ID="IsDGSCaste" runat="server" />
+                                        </div>
+                                    </div>
 
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStFreeBicycle}}</label>
-                                                <asp:CheckBox ID="FreeBicycle" runat="server" />
-                                            </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStIsFreeTextbooks}}</label>
+                                            <asp:CheckBox ID="IsFreeTextbooks" runat="server" />
                                         </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStIsResidingHostel}}</label>
-                                                <asp:CheckBox ID="IsResidingHostel" runat="server" />
-                                            </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStIsFreeTransport}}</label>
+                                            <asp:CheckBox ID="IsFreeTransport" runat="server" />
                                         </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStIsRecSpecialTraining}}</label>
-                                                <asp:CheckBox ID="IsRecSpecialTraining" runat="server" />
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStIshomeless}}</label>
-                                                <asp:CheckBox ID="Ishomeless" runat="server" />
-                                            </div>
-                                        </div>
-                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScSIsFreeEscortDis}}</label>
 
-                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
-                                            <div class="form-group">
-                                                <label>{{resourcesData.lblScStIsRegVocationalPrg}}</label>
-                                                <asp:CheckBox ID="IsRegVocationalPrg" runat="server" />
-                                            </div>
-                                        </div>
 
-                                    </fieldset>
-                                    <%--<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center ptop20" id="divRow1">
+                                            <asp:CheckBox ID="IsFreeEscortDis" runat="server" />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStFreeBicycle}}</label>
+                                            <asp:CheckBox ID="FreeBicycle" runat="server" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStIsResidingHostel}}</label>
+                                            <asp:CheckBox ID="IsResidingHostel" runat="server" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStIsRecSpecialTraining}}</label>
+                                            <asp:CheckBox ID="IsRecSpecialTraining" runat="server" />
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStIshomeless}}</label>
+                                            <asp:CheckBox ID="Ishomeless" runat="server" />
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                        <div class="form-group">
+                                            <label>{{resourcesData.lblScStIsRegVocationalPrg}}</label>
+                                            <asp:CheckBox ID="IsRegVocationalPrg" runat="server" />
+                                        </div>
+                                    </div>
+
+                                </fieldset>
+                                <%--<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center ptop20" id="divRow1">
                                             <input type="button" id="btnSaveDraft1" class="save_btn btn-lg" value="Save Draft" onclick="getDataStep(1);" />
                                         </div>--%>
 
-                                    <div class="clearfix"></div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div id="step-4">
+
+                                <legend>&nbsp {{resourcesData.lblScStBankInfo}}</legend>
+                                <div class="col-xs-12  col-sm-4 col-md-4 col-lg-4">
+                                    <div class="form-group">
+                                        <label>{{resourcesData.lblScStBankAccount}}</label>
+                                        <asp:TextBox ID="txtBankAccNo" CssClass="form-control" runat="server" MaxLength="20" onkeydown="return AllowOnlyNumeric(event);" placeholder="Bank Account No"></asp:TextBox>
+
+                                        <div class="col-xs-12 pleft0 p5">
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator20" runat="server" ControlToValidate="txtBankAccNo" Display="Dynamic"
+                                                ErrorMessage="Please enter Bank Account No." ValidationGroup="G" ForeColor="Red" />
+                                        </div>
+                                    </div>
                                 </div>
-                                <div id="step-4">
 
-                                    <legend>&nbsp {{resourcesData.lblScStBankInfo}}</legend>
-                                    <div class="col-xs-12  col-sm-4 col-md-4 col-lg-4">
-                                        <div class="form-group">
-                                            <label>{{resourcesData.lblScStBankAccount}}</label>
-                                            <asp:TextBox ID="txtBankAccNo" CssClass="form-control" runat="server" maxlength="20" onkeydown="return AllowOnlyNumeric(event);"  placeholder="Bank Account No"></asp:TextBox>
+                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                    <div class="form-group">
+                                        <label>{{resourcesData.lblScStCBankAccount}}</label>
+                                        <%--<label >Weight of Child(kg)</label>--%>
+                                        <asp:TextBox ID="txtConfirmBankAccNo" CssClass="form-control" runat="server" placeholder="Confirm Bank Account No." MaxLength="20" onkeydown="return AllowOnlyNumeric(event);" onchange="Validate();"></asp:TextBox>
 
-                                            <div class="col-xs-12 pleft0 p5">
-                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator20" runat="server" ControlToValidate="txtBankAccNo" Display="Dynamic"
-                                                    ErrorMessage="Please enter Bank Account No." ValidationGroup="G" ForeColor="Red" />
-                                            </div>
+                                        <div class="col-xs-12 pleft0 p5">
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator21" runat="server" ControlToValidate="txtConfirmBankAccNo" Display="Dynamic"
+                                                ErrorMessage="Please enter Bank Account No." ValidationGroup="G" ForeColor="Red" />
                                         </div>
+
                                     </div>
-
-                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                        <div class="form-group">
-                                            <label>{{resourcesData.lblScStCBankAccount}}</label>
-                                            <%--<label >Weight of Child(kg)</label>--%>
-                                            <asp:TextBox ID="txtConfirmBankAccNo" CssClass="form-control" runat="server"  placeholder="Confirm Bank Account No."  maxlength="20" onkeydown="return AllowOnlyNumeric(event);" onchange="Validate();"></asp:TextBox>
-
-                                            <div class="col-xs-12 pleft0 p5">
-                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator21" runat="server" ControlToValidate="txtConfirmBankAccNo" Display="Dynamic"
-                                                    ErrorMessage="Please enter Bank Account No." ValidationGroup="G" ForeColor="Red" />
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xs-12  col-sm-4 col-md-4 col-lg-4">
-                                        <div class="form-group">
-                                            <label>{{resourcesData.lblScStCBankIFSC}}</label>
-                                            <%--<label >Weight of Child(kg)</label>--%>
-                                            <asp:TextBox ID="txtBankIFSCCode" CssClass="form-control" runat="server" MaxLength="11" placeholder="Bank IFSC Code" onchange="CheckIFSC();"></asp:TextBox>
-
-                                            <div class="col-xs-12 pleft0 p5">
-                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator22" runat="server" ControlToValidate="txtBankIFSCCode" Display="Dynamic"
-                                                    ErrorMessage="Please enter Bank IFSC Code." ValidationGroup="G" ForeColor="Red" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <%---Start of Button----%>
-                                   
-                                        <div class="box-body box-body-open" style="text-align: center;">
-                                            <asp:Button ID="btnSubmit" runat="server" CausesValidation="True" ToolTip=" Proceed to Payment"
-                                                CssClass="btn btn-success" Text="Submit" ValidationGroup="G" OnClick="btnSubmit_Click" />
-                                            <asp:Button ID="btnCancel" runat="server" CausesValidation="True" CommandName="Cancel" ToolTip="Refresh the page"
-                                                CssClass="btn btn-danger" PostBackSection=""
-                                                Text="Cancel" />
-                                        </div>
-                                 
-
-                                    <asp:ValidationSummary runat="server" ID="ValidationSummary1"
-                                        DisplayMode="BulletList"
-                                        ShowMessageBox="False" ValidationGroup="G" ShowSummary="True" CssClass="alert alert-danger" />
-
-
-
-
-
                                 </div>
+
+                                <div class="col-xs-12  col-sm-4 col-md-4 col-lg-4">
+                                    <div class="form-group">
+                                        <label>{{resourcesData.lblScStCBankIFSC}}</label>
+                                        <%--<label >Weight of Child(kg)</label>--%>
+                                        <asp:TextBox ID="txtBankIFSCCode" CssClass="form-control" runat="server" MaxLength="11" placeholder="Bank IFSC Code" onchange="CheckIFSC();"></asp:TextBox>
+
+                                        <div class="col-xs-12 pleft0 p5">
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator22" runat="server" ControlToValidate="txtBankIFSCCode" Display="Dynamic"
+                                                ErrorMessage="Please enter Bank IFSC Code." ValidationGroup="G" ForeColor="Red" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <%---Start of Button----%>
+
+                                <div class="box-body box-body-open" style="text-align: center;">
+                                    <asp:Button ID="btnSubmit" runat="server" CausesValidation="True" ToolTip=" Proceed to Payment"
+                                        CssClass="btn btn-success" Text="Submit" ValidationGroup="G" OnClick="btnSubmit_Click" />
+                                    <asp:Button ID="btnCancel" runat="server" CausesValidation="True" CommandName="Cancel" ToolTip="Refresh the page"
+                                        CssClass="btn btn-danger" PostBackSection=""
+                                        Text="Cancel" />
+                                </div>
+
+
+                                <asp:ValidationSummary runat="server" ID="ValidationSummary1"
+                                    DisplayMode="BulletList"
+                                    ShowMessageBox="False" ValidationGroup="G" ShowSummary="True" CssClass="alert alert-danger" />
+
+
+
+
+
                             </div>
                         </div>
-
-
                     </div>
-              
+
+
+                </div>
+
             </div>
         </div>
     </div>

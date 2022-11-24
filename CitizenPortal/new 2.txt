@@ -1,0 +1,79 @@
+dotnet publish
+cd D:\PublishWeb
+set Domain={yourOktaDomain}
+set ClientId={yourClientId}
+set ClientSecret={yourClientSecret}
+set CallbackPath=/okta/callback
+dotnet Okta_Jenkins.dll
+
+
+<Target Name="AfterBuild">
+   <Message Text="Copying to Deployment Dir:" />
+   <Copy SourceFiles="@(Content)" DestinationFolder="..\XXX\%(Content.RelativeDir)" />
+      <CreateItem Include="$(OutputPath)\*">
+        <Output TaskParameter="Include" ItemName="Binaries"/>
+      </CreateItem>
+   <Copy SourceFiles="@(Binaries)" DestinationFolder="..\XXX\bin" />
+</Target>
+
+
+msbuild "D:\GITProjects\MPSS\MPSSPortal.sln"   /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
+msbuild "D:\GITProjects\MPSS\CitizenPortal\MPSSPortal.csproj"   -p:DeployOnBuild=true -p:PublishProfile=FolderProfile
+msbuild D:\\GITProjects\\MPSS\\CitizenPortal\\MPSSPortal.csproj -p:DeployOnBuild=true -p:PublishProfile=FolderProfile
+
+
+
+
+
+/Kaynak kodun adresi
+String githubUrl = "https://github.com/balkrishantechsumsolution/MPSSMain.git"
+
+//Kaynak kodun içerisindeki projenin ismi
+String projectName = "D:\GITProjects\MPSS\MPSSPortal.sln"
+
+//Kaynak kodun publish edileceği dizin
+String publishedPath = "D:\PublishWeb"
+
+//Hedef makinesindeki IIS'de tanımlı olan sitenizin ismi
+String iisApplicationName = "ciMPSS"
+
+//Hedef makinesindeki IIS'de tanımlı olan sitenizin dizini
+String iisApplicationPath = "D:\PublishWeb"
+
+//Hedef makinesinin IP'si
+String targetServerIP = "0.0.0.0"
+
+node () {
+    stage('Checkout') {
+        checkout([
+            $class: 'GitSCM', 
+            branches: [[name: 'master']], 
+            doGenerateSubmoduleConfigurations: false, 
+            extensions: [], 
+            submoduleCfg: [], 
+            userRemoteConfigs: [[url: """ "${githubUrl}" """]]])
+    }
+    stage('Build') {
+        bat """
+        cd ${projectName}
+        dotnet build -c Release /p:Version=${BUILD_NUMBER}
+        dotnet publish -c Release --no-build
+        """
+    }
+    stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+}
+
+
+cd /d "D:\GITProjects\MPSS\"
+"MPSSPortal.sln"   /p:DeployOnBuild=true /p:PublishProfile=FolderProfile
+dotnet publish -c Release --no-build
+
+
+
+	
+	
+	dotnet publish "D:\GITProjects\MPSS\MPSSPortal.sln" -p:PublishProfile="D:\GITProjects\MPSS\CitizenPortal\Properties\PublishProfiles\FolderProfile.pubxml

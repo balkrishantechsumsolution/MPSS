@@ -26,8 +26,88 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
             if (!IsPostBack)
             {
                 BindDropDown();
+                BindClassDropDown();
+                BindSectionDropDown();
+                BindGenderDropDown();
+                BindStatusDropDown();
             }
         }
+
+        public void BindClassDropDown()
+        {
+            DataTable dt = new DataTable();
+
+            dt = sqlhelper.ExecuteDataTable("ClassSP");
+
+            if (dt.Rows.Count > 0)
+            {
+                ddlClass.DataTextField = dt.Columns["Name"].ToString(); // text field name of table dispalyed in dropdown       
+                ddlClass.DataValueField = dt.Columns["ID"].ToString();
+                // to retrive specific  textfield name   
+                ddlClass.DataSource = dt;      //assigning datasource to the dropdownlist  
+                ddlClass.DataBind();
+
+            }
+            ddlClass.Items.Insert(0, new ListItem("Please select", ""));
+
+        }
+
+        public void BindSectionDropDown()
+        {
+            DataTable dt = new DataTable();
+
+            dt = sqlhelper.ExecuteDataTable("GetSectionSP");
+
+            if (dt.Rows.Count > 0)
+            {
+                ddlSection.DataTextField = dt.Columns["Name"].ToString(); // text field name of table dispalyed in dropdown       
+                ddlSection.DataValueField = dt.Columns["ID"].ToString();
+                // to retrive specific  textfield name   
+                ddlSection.DataSource = dt;      //assigning datasource to the dropdownlist  
+                ddlSection.DataBind();
+
+            }
+            ddlSection.Items.Insert(0, new ListItem("Please select", ""));
+
+        }
+        public void BindGenderDropDown()
+        {
+            DataTable dt = new DataTable();
+
+            dt = sqlhelper.ExecuteDataTable("GetGenderSP");
+
+            if (dt.Rows.Count > 0)
+            {
+                ddlGender.DataTextField = dt.Columns["Name"].ToString(); // text field name of table dispalyed in dropdown       
+                ddlGender.DataValueField = dt.Columns["ID"].ToString();
+                // to retrive specific  textfield name   
+                ddlGender.DataSource = dt;      //assigning datasource to the dropdownlist  
+                ddlGender.DataBind();
+
+            }
+            ddlGender.Items.Insert(0, new ListItem("Please select", ""));
+
+        }
+
+        public void BindStatusDropDown()
+        {
+            DataTable dt = new DataTable();
+
+            dt = sqlhelper.ExecuteDataTable("GetStatusSP");
+
+            if (dt.Rows.Count > 0)
+            {
+                ddlStatus.DataTextField = dt.Columns["Name"].ToString(); // text field name of table dispalyed in dropdown       
+                ddlStatus.DataValueField = dt.Columns["ID"].ToString();
+                // to retrive specific  textfield name   
+                ddlStatus.DataSource = dt;      //assigning datasource to the dropdownlist  
+                ddlStatus.DataBind();
+
+            }
+            ddlStatus.Items.Insert(0, new ListItem("Please select", ""));
+
+        }
+
         public void BindDropDown()
         {
             DataTable dt = new DataTable();
@@ -57,8 +137,6 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
 
 
 
-
-
                 Scholardata_DT t_ObjDT = new Scholardata_DT();
 
                 t_ObjDT.StudentName = txtStudentName.Text.Trim();
@@ -66,8 +144,8 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
 
                 t_ObjDT.Birthdate = txtBirthdate.Text.Trim();
                 t_ObjDT.Gender = ddlGender.SelectedValue.Trim();
-                t_ObjDT.Class = txtClass.Text.Trim();
-                t_ObjDT.Section = txtSection.Text.Trim();
+                t_ObjDT.Class = ddlClass.SelectedValue.Trim();
+                t_ObjDT.Section = ddlSection.SelectedValue.Trim();
                 t_ObjDT.Subject = txtSubject.Text.Trim();
                 t_ObjDT.School = txtSchool.Text.Trim();
                 t_ObjDT.BankAccountNo = txtBankAccNo.Text.Trim();
@@ -123,7 +201,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
                 t_ObjDT.LastAnnualResult = txtLastAnnualResult.Text.Trim();
                 t_ObjDT.PassPercentage = txtPassPercentage.Text.Trim();
                 t_ObjDT.LastClsInt = txtLastClsInt.Text.Trim();
-                t_ObjDT.StudentStatus = txtStudentStatus.Text.Trim();
+                t_ObjDT.StudentStatus = ddlStatus.SelectedValue.Trim();
                 t_ObjDT.CodeFacultySt = txtCodeFacultySt.Text.Trim();
                 t_ObjDT.IsRegVocationalPrg = IsHosteller.Checked;
                 t_ObjDT.CodeTradeVocationalPrg = txtCodeTradeVocationalPrg.Text.Trim();
