@@ -364,7 +364,7 @@
                                     </table>
 
                                 </td>
-                                <td style="text-align: left;">
+                                <td style="text-align: left;display:none;">
                                     <table id="PreAddress" runat="server" width="600" cellpadding="5" cellspacing="0" class="table-bordered" style="width: 98%; border: 1px solid #999; margin: 0 auto;">
                                         <tr>
                                             <td colspan="2" style="padding: 8px; border-left: 1px solid #fff; border-right: 1px solid #999; color: #fff; font-size: 14px; text-align: left; background-color: #383E4B; -webkit-print-color-adjust: exact;"><b>Present Address</b></td>
@@ -662,7 +662,7 @@
                         </table>
 
                      
-                        <table cellpadding="0" cellspacing="0" width="600" style="margin: 0 auto; width: 98%;">
+                        <table cellpadding="0" cellspacing="0" width="600" style="margin: 0 auto; width: 98%;display:none;">
                             <tbody>
                                 <tr>
                                     <td colspan="4" class="hdbg" style="padding: 5px; text-align: left; font-size: 14px; border-right: 1px solid #999; border-left: 1px solid #999; -webkit-print-color-adjust: exact;"><b>Application History</b></td>

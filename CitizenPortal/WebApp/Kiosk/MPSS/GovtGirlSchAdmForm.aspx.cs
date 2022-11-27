@@ -30,7 +30,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
     {
         static data sqlhelper = new data();
         protected void Page_Load(object sender, EventArgs e)
-        {            
+        {
 
             if (!IsPostBack)
             {
@@ -47,8 +47,8 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
                 BindPreviousSchoolDistrictDropDown();
                 ClearData();
             }
-            
-           
+
+
 
         }
 
@@ -363,9 +363,42 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
 
                 var chkNative = false;
 
+                var disDropDown = ddlDisAbility.SelectedItem.Value;
+
+                if (hdnImageName.Value == "")
+                {
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Image could not be Attached.');", true);
+                    return;
+                }
+
+
+
+                if (disDropDown == "Y")
+                {
+                    if (hdnFileDisAbilityName.Value == "")
+                    {
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Disable Certificate could not be Attached.');", true);
+                        return;
+                    }
+                }
+                else
+                {
+
+                    txtDisAbilityNo.Text = "";
+                    ddlDisAbilityType.SelectedItem.Value = "0";
+
+                }
+
+
                 if (rbnNative1.Checked)
                 {
                     chkNative = true;
+
+                    if (hdnFileNativeCertName.Value == "")
+                    {
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Domicile Certificate could not be Attached.');", true);
+                        return;
+                    }
                 }
                 else
                 {
@@ -375,14 +408,43 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
 
                 var chkIsMarksheetSub = false;
 
+                if (RadioButton2.Checked)
+                {                   
+
+                    if (hdnFile5MShName.Value == "")
+                    {
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Previous Marksheet could not be Attached.');", true);
+                        return;
+                    }
+                }
+
                 if (RadioButton1.Checked)
                 {
                     chkIsMarksheetSub = true;
+                   
                 }
                 else
                 {
                     chkIsMarksheetSub = false;
                 }
+
+               
+                if (txtCastCertNo.Text != "")
+                {
+                    if (hdnFileCasteName.Value == "")
+                    {
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Caste Certificate could not be Attached.');", true);
+                        return;
+                    }
+
+                }
+
+
+
+
+
+
+
 
 
 
@@ -604,7 +666,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
             }
             // Display the result of the upload.
             Panel5MSh.Visible = true;
-            
+
 
         }
 
@@ -654,7 +716,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
             }
             // Display the result of the upload.
             PanelDisAbility.Visible = true;
-            
+
 
         }
 
@@ -704,7 +766,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
             }
             // Display the result of the upload.
             PanelCaste.Visible = true;
-            
+
 
         }
 
@@ -746,7 +808,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
                     LabelNativeCert.Text = strFileName + " has been successfully uploaded.";
                 }
                 ButtonNativeCert.Visible = false;
-                FileNativeCert.Visible= false;
+                FileNativeCert.Visible = false;
             }
             else
             {
@@ -830,7 +892,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
 
                     txtFatherName.Text = hdnCardHolderName.Value;
                     txtSamagraNo.Text = hdnSamagraMemberID.Value;
-                    txtRegNo.ReadOnly=true;
+                    txtRegNo.ReadOnly = true;
                 }
                 else
                 {
@@ -877,9 +939,9 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
                                     Dictionary<string, string> parameters,
                                     out string responseText)
         {
-            
-                const string soapTemplate =
-            @"<?xml version=""1.0"" encoding=""utf-8""?>
+
+            const string soapTemplate =
+        @"<?xml version=""1.0"" encoding=""utf-8""?>
 <soap12:Envelope xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:soap12=""http://www.w3.org/2003/05/soap-envelope"">
   <soap12:Body>
     <{0} xmlns=""{1}"">
@@ -887,81 +949,81 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
   </soap12:Body>
 </soap12:Envelope>";
 
-                var req = (HttpWebRequest)WebRequest.Create(webWebServiceUrl);
-                req.Headers.Add("SOAPAction", "\"http://tempuri.org/GetCardHoderDetailsByUniqueCode\"");
-                req.ContentType = "application/soap+xml;charset=\"utf-8\"";
-                req.Accept = "text/xml";
-                req.Method = "POST";
+            var req = (HttpWebRequest)WebRequest.Create(webWebServiceUrl);
+            req.Headers.Add("SOAPAction", "\"http://tempuri.org/GetCardHoderDetailsByUniqueCode\"");
+            req.ContentType = "application/soap+xml;charset=\"utf-8\"";
+            req.Accept = "text/xml";
+            req.Method = "POST";
 
-                string parametersText;
+            string parametersText;
 
-                if (parameters != null && parameters.Count > 0)
+            if (parameters != null && parameters.Count > 0)
+            {
+                var sb = new System.Text.StringBuilder();
+                foreach (var oneParameter in parameters)
+                    sb.AppendFormat("  <{0}>{1}</{0}>\r\n", oneParameter.Key, System.Security.SecurityElement.Escape(oneParameter.Value));
+
+                parametersText = sb.ToString();
+            }
+            else
+            {
+                parametersText = "";
+            }
+
+            string soapText = string.Format(soapTemplate, methodName, webServiceNamespace, parametersText);
+
+
+            using (Stream stm = req.GetRequestStream())
+            {
+                using (var stmw = new StreamWriter(stm))
                 {
-                    var sb = new System.Text.StringBuilder();
-                    foreach (var oneParameter in parameters)
-                        sb.AppendFormat("  <{0}>{1}</{0}>\r\n", oneParameter.Key, System.Security.SecurityElement.Escape(oneParameter.Value));
-
-                    parametersText = sb.ToString();
+                    stmw.Write(soapText);
                 }
-                else
+            }
+
+            var responseHttpStatusCode = HttpStatusCode.Unused;
+            responseText = null;
+
+            using (var response = (HttpWebResponse)req.GetResponse())
+            {
+                responseHttpStatusCode = response.StatusCode;
+
+                if (responseHttpStatusCode == HttpStatusCode.OK)
                 {
-                    parametersText = "";
-                }
+                    int contentLength = (int)response.ContentLength;
 
-                string soapText = string.Format(soapTemplate, methodName, webServiceNamespace, parametersText);
-
-
-                using (Stream stm = req.GetRequestStream())
-                {
-                    using (var stmw = new StreamWriter(stm))
+                    if (contentLength > 0)
                     {
-                        stmw.Write(soapText);
-                    }
-                }
+                        int readBytes = 0;
+                        int bytesToRead = contentLength;
+                        byte[] resultBytes = new byte[contentLength];
 
-                var responseHttpStatusCode = HttpStatusCode.Unused;
-                responseText = null;
-
-                using (var response = (HttpWebResponse)req.GetResponse())
-                {
-                    responseHttpStatusCode = response.StatusCode;
-
-                    if (responseHttpStatusCode == HttpStatusCode.OK)
-                    {
-                        int contentLength = (int)response.ContentLength;
-
-                        if (contentLength > 0)
+                        using (var responseStream = response.GetResponseStream())
                         {
-                            int readBytes = 0;
-                            int bytesToRead = contentLength;
-                            byte[] resultBytes = new byte[contentLength];
-
-                            using (var responseStream = response.GetResponseStream())
+                            while (bytesToRead > 0)
                             {
-                                while (bytesToRead > 0)
-                                {
-                                    // Read may return anything from 0 to 10. 
-                                    int actualBytesRead = responseStream.Read(resultBytes, readBytes, bytesToRead);
+                                // Read may return anything from 0 to 10. 
+                                int actualBytesRead = responseStream.Read(resultBytes, readBytes, bytesToRead);
 
-                                    // The end of the file is reached. 
-                                    if (actualBytesRead == 0)
-                                        break;
+                                // The end of the file is reached. 
+                                if (actualBytesRead == 0)
+                                    break;
 
-                                    readBytes += actualBytesRead;
-                                    bytesToRead -= actualBytesRead;
-                                }
-
-                                responseText = Encoding.UTF8.GetString(resultBytes);
-                                //responseText = Encoding.ASCII.GetString(resultBytes);
+                                readBytes += actualBytesRead;
+                                bytesToRead -= actualBytesRead;
                             }
+
+                            responseText = Encoding.UTF8.GetString(resultBytes);
+                            //responseText = Encoding.ASCII.GetString(resultBytes);
                         }
                     }
                 }
-
-
-
-                return responseHttpStatusCode;
             }
+
+
+
+            return responseHttpStatusCode;
+        }
 
 
         public void ClearData()
@@ -1023,7 +1085,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
 
             txtPreviousSchoolName.Text = "";
             pnlDetails.Visible = false;
-            
+
 
         }
 
