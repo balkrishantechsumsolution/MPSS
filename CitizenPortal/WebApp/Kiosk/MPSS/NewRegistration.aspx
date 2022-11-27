@@ -153,7 +153,7 @@
                                     <div class="form-group">
                                         <label class="manadatory">{{resourcesData.lblSchool}}</label>
                                         <asp:DropDownList ID="ddlSchool" runat="server" CssClass="form-control">
-                                            <asp:ListItem Value="0">--Select--</asp:ListItem>                                            
+                                            <asp:ListItem Value="0">--Select--</asp:ListItem>
                                         </asp:DropDownList>
 
 
@@ -212,7 +212,7 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
-                                            <label class="manadatory"  id="lblClass" runat="server"></label>
+                                            <label class="manadatory" id="lblClass" runat="server"></label>
                                         </div>
                                     </div>
                                 </div>
@@ -221,117 +221,122 @@
                     </div>
                     <div class="row">
 
-                        <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9 box-container">
+                        <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9 box-container row">
                             <div class="box-heading">
                                 <h4 class="box-title register-num" style="padding-top: 8px;">{{resourcesData.lblStudentProfile}}
                                 </h4>
                             </div>
 
                             <div class="box-body box-body-open">
-                                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                                    <div class="form-group">
-                                        <label class="manadatory">
-                                            {{resourcesData.lblPassExam}}
-                                        </label>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                        <div class="form-group">
+                                            <label class="manadatory">
+                                                {{resourcesData.lblPassExam}}
+                                            </label>
 
 
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                                    <div class="form-group">
-                                        <asp:RadioButton ID="rbnpass1" runat="server" Text="Yes" GroupName="pass" />
-
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                                    <div class="form-group">
-
-                                        <asp:RadioButton ID="rbnpass2" runat="server" Text="No" GroupName="pass" Checked="true" />
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                    <div class="form-group">
-                                        <label class="manadatory" for="ddlFullName">
-                                            {{resourcesData.lblFullName}}
-                                        </label>
-
-
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                    <div class="form-group">
-                                        <asp:TextBox ID="txtFullName" runat="server" ToolTip="Full Name" CssClass="form-control" MaxLength="100" onkeypress="return ValidateAlpha(event);"></asp:TextBox>
-                                        <div class="col-xs-12 pleft0">
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtFullName" Display="Dynamic"
-                                                ErrorMessage="Please enter Student Name" ValidationGroup="G" ForeColor="Red" />
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                    <div class="form-group">
-                                        <label class="manadatory" for="ddlFullName">
-                                            {{resourcesData.lblFatherFullName}}
-                                        </label>
+                                    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                        <div class="form-group">
+                                            <asp:RadioButton ID="rbnpass1" runat="server" Text="Yes" GroupName="pass" />
 
-
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                    <div class="form-group">
-                                        <asp:TextBox ID="txtFatherName" runat="server" ToolTip="Father Full Name" CssClass="form-control" MaxLength="100" onkeypress="return ValidateAlpha(event);"></asp:TextBox>
-                                        <div class="col-xs-12 pleft0">
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtFatherName" Display="Dynamic"
-                                                ErrorMessage="Please enter Father Name" ValidationGroup="G" ForeColor="Red" />
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                    <div class="form-group">
-                                        <label class="manadatory" for="ddlFullName">
-                                            {{resourcesData.lblMotherFullName}}
-                                        </label>
+                                    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                        <div class="form-group">
 
-
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                    <div class="form-group">
-                                        <asp:TextBox ID="txtMotherName" runat="server" ToolTip="Mother Name" CssClass="form-control" MaxLength="100" onkeypress="return ValidateAlpha(event);"></asp:TextBox>
-                                        <div class="col-xs-12 pleft0">
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtMotherName" Display="Dynamic"
-                                                ErrorMessage="Please enter Mother Name" ValidationGroup="G" ForeColor="Red" />
+                                            <asp:RadioButton ID="rbnpass2" runat="server" Text="No" GroupName="pass" Checked="true" />
                                         </div>
                                     </div>
-                                </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="manadatory" for="ddlFullName">
+                                                {{resourcesData.lblFullName}}
+                                            </label>
 
-                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                    <div class="form-group">
-                                        <label class="manadatory" for="ddlFullName">
-                                            {{resourcesData.lblStDOB}}
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                        <div class="form-group">
+                                           + <asp:TextBox ID="txtFullName" runat="server" ToolTip="Full Name" CssClass="form-control" MaxLength="100" onkeypress="return ValidateAlpha(event);"></asp:TextBox>
+                                            <div class="col-xs-12 pleft0">
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtFullName" Display="Dynamic"
+                                                    ErrorMessage="Please enter Student Name" ValidationGroup="G" ForeColor="Red" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="manadatory" for="ddlFullName">
+                                                {{resourcesData.lblFatherFullName}}
+                                            </label>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                        <div class="form-group">
+                                            <asp:TextBox ID="txtFatherName" runat="server" ToolTip="Father Full Name" CssClass="form-control" MaxLength="100" onkeypress="return ValidateAlpha(event);"></asp:TextBox>
+                                            <div class="col-xs-12 pleft0">
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtFatherName" Display="Dynamic"
+                                                    ErrorMessage="Please enter Father Name" ValidationGroup="G" ForeColor="Red" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="manadatory" for="ddlFullName">
+                                                {{resourcesData.lblMotherFullName}}
+                                            </label>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                        <div class="form-group">
+                                            <asp:TextBox ID="txtMotherName" runat="server" ToolTip="Mother Name" CssClass="form-control" MaxLength="100" onkeypress="return ValidateAlpha(event);"></asp:TextBox>
+                                            <div class="col-xs-12 pleft0">
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtMotherName" Display="Dynamic"
+                                                    ErrorMessage="Please enter Mother Name" ValidationGroup="G" ForeColor="Red" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                        <div class="form-group">
+                                            <label class="manadatory" for="ddlFullName">
+                                                {{resourcesData.lblStDOB}}
                                               {{resourcesData.lblStAge}}                                            
-                                        </label>
+                                            </label>
 
 
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                    <div class="form-group">
-                                        <asp:TextBox ID="txtBirthdate" runat="server" ToolTip="dd/mm/yyyy" CssClass="form-control"></asp:TextBox>
-                                        <div class="col-xs-12 pleft0">
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtBirthdate" Display="Dynamic"
-                                                ErrorMessage="Please enter Date of Birth" ValidationGroup="G" ForeColor="Red" />
                                         </div>
                                     </div>
-                                </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                        <div class="form-group">
+                                            <asp:TextBox ID="txtBirthdate" runat="server" ToolTip="dd/mm/yyyy" CssClass="form-control"></asp:TextBox>
+                                            <div class="col-xs-12 pleft0">
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtBirthdate" Display="Dynamic"
+                                                    ErrorMessage="Please enter Date of Birth" ValidationGroup="G" ForeColor="Red" />
+                                            </div>
+                                        </div>
+                                    </div>
 
 
-                                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-                                    <div class="form-group">
-                                        <label class="manadatory">
-                                            {{resourcesData.lblStCategory}}
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                        <div class="form-group">
+                                            <label class="manadatory">
+                                                {{resourcesData.lblStCategory}}
                                             
-                                        </label>
+                                            </label>
 
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <asp:DropDownList ID="ddlCaste" runat="server" CssClass="form-control">
                                             <asp:ListItem Value="0">--Select--</asp:ListItem>
                                         </asp:DropDownList>
@@ -342,30 +347,36 @@
                                                 ErrorMessage="Please select Category." ValidationGroup="G" ForeColor="Red" />
 
                                         </div>
+
                                     </div>
-                                </div>
-                               
 
 
 
-                                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-                                    <div class="form-group">
-                                        <label class="manadatory">
-                                            {{resourcesData.lblStGender}}                                            
-                                        </label>
-                                        <asp:DropDownList ID="ddlGender" runat="server" CssClass="form-control">
-                                            <asp:ListItem Value="0">--Select--</asp:ListItem>
-                                        </asp:DropDownList>
 
 
-                                        <div class="col-xs-12 pleft0 p5">
-                                            <asp:RequiredFieldValidator ID="rfv" runat="server" ControlToValidate="ddlGender" InitialValue="0" Display="Dynamic"
-                                                ErrorMessage="Please select Gender." ValidationGroup="G" ForeColor="Red" />
+                                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                        <div class="form-group">
+                                            <label class="manadatory">
+                                                {{resourcesData.lblStGender}}                                            
+                                            </label>
 
                                         </div>
                                     </div>
+                                    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                        <div class="form-group">
+                                            <asp:DropDownList ID="ddlGender" runat="server" CssClass="form-control">
+                                                <asp:ListItem Value="0">--Select--</asp:ListItem>
+                                            </asp:DropDownList>
 
 
+                                            <div class="col-xs-12 pleft0 p5">
+                                                <asp:RequiredFieldValidator ID="rfv" runat="server" ControlToValidate="ddlGender" InitialValue="0" Display="Dynamic"
+                                                    ErrorMessage="Please select Gender." ValidationGroup="G" ForeColor="Red" />
+
+                                            </div>
+
+                                        </div>
+                                    </div>
 
                                     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
                                         <div class="form-group">
@@ -389,10 +400,12 @@
                                             <asp:RadioButton ID="rbnNative2" runat="server" Text="No" GroupName="native" />
                                         </div>
                                     </div>
-
-                                    <div class="clearfix"></div>
                                 </div>
+
+                            </div>
+                            <div class="clearfix"></div>
                         </div>
+
 
                         <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 pleft0 pright0">
                             <div id="divPhoto" class="col-md-12 box-container">
@@ -626,12 +639,11 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
+            <asp:HiddenField ID="hdnImage" runat="server" />
+            <asp:HiddenField ID="hdnTC" runat="server" />
+
         </div>
-        <asp:HiddenField ID="hdnImage" runat="server" />
-        <asp:HiddenField ID="hdnTC" runat="server" />
-
-    </div>
-
 </asp:Content>

@@ -232,8 +232,8 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
         protected void btnShow_Click(object sender, EventArgs e)
         {
             divSTUDENT.Visible = true;
-            lblSchool.InnerText = ddlSchool.Text;
-            lblClass.InnerText = ddlClass.Text;
+            lblSchool.InnerText = ddlSchool.SelectedItem.Text;
+            lblClass.InnerText = ddlClass.SelectedItem.Text;
 
         }
 

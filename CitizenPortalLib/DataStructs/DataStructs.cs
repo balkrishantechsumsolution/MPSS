@@ -3670,5 +3670,70 @@ Subject1, Subject2, Subject3, Subject4, Reason;
 
 
     }
+    public class MPBOCStudentdata_DT
+    {
+        public long  MobieNo, SamagraNo ;
+        public decimal MarksPercentage, TotalMarks, MarksObtain;
 
+        public bool IsPassOtherBoard, IsMPNative, IsDeclare, IsMarksheetSub;
+
+        public DateTime TBirthdate;
+        public DateTime? TCertIssueDate;
+
+        public string StudentID;
+        public string StudentName;
+        public string Birthdate;
+        public string Gender;
+        public string Class;
+        public string Section;
+        public string Subject;
+        public string School;
+        public string FatherName;
+        public string MotherName;
+        public string Category;
+        public string SubCaste;
+        public string Regilion;
+
+
+        public string CastCertNo;
+        public string RegDistrict;
+        public string PassingYear;
+        public string ScClass;
+        public string SchoolVikaskhand;
+        public string SchoolDistrict;
+        public string SchoolType;
+        public string Grade;
+
+        public string CertIssueDate;
+
+        public string DisAbility;
+        public string DisAbilityType;
+        public string DisAbilityNo;
+      
+
+        public string Block;
+        public string District, City;
+        public string Colony;
+        public string HouseNo;
+        public string pincode;
+        public string Img;
+        public string File5MSh;
+        public string FileDisAbility;
+        public string FileCaste;
+        public string FileNativeCert;
+        public string PreviousSchoolName;
+        public string PreviousSchoolDistrict;
+
+
+        public string NImg;
+        public string NFile5MSh;
+        public string NFileDisAbility;
+        public string NFileCaste;
+        public string NFileNativeCert;
+
+
+
+
+
+    }
 }

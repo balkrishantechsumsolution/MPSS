@@ -36,7 +36,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>bin\</OutputPath>
     <DefineConstants>TRACE;DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -2542,6 +2542,20 @@
     <Compile Include="WebApp\Kiosk\Forms\OfficeOfficer.aspx.designer.cs">
       <DependentUpon>OfficeOfficer.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\MPSOSPage.aspx.cs">
+      <DependentUpon>MPSOSPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\MPSOSPage.aspx.designer.cs">
+      <DependentUpon>MPSOSPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\PaymentConfirm.aspx.cs">
+      <DependentUpon>PaymentConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\PaymentConfirm.aspx.designer.cs">
+      <DependentUpon>PaymentConfirm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebApp\Kiosk\Forms\PaymentReceipt.aspx.cs">
       <DependentUpon>PaymentReceipt.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2695,6 +2709,13 @@
     <Compile Include="WebApp\Kiosk\Master\Vendor.Master.designer.cs">
       <DependentUpon>Vendor.Master</DependentUpon>
     </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\AcknowledgementMPBOC.aspx.cs">
+      <DependentUpon>AcknowledgementMPBOC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\AcknowledgementMPBOC.aspx.designer.cs">
+      <DependentUpon>AcknowledgementMPBOC.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebApp\Kiosk\MPSS\AcknowledgementEnroll.aspx.cs">
       <DependentUpon>AcknowledgementEnroll.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2730,12 +2751,19 @@
     <Compile Include="WebApp\Kiosk\MPSS\ScholarShip.aspx.designer.cs">
       <DependentUpon>ScholarShip.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebApp\Kiosk\MPSS\Test1.aspx.cs">
-      <DependentUpon>Test1.aspx</DependentUpon>
+    <Compile Include="WebApp\Kiosk\MPSS\GovtGirlSchAdmForm.aspx.cs">
+      <DependentUpon>GovtGirlSchAdmForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebApp\Kiosk\MPSS\Test1.aspx.designer.cs">
-      <DependentUpon>Test1.aspx</DependentUpon>
+    <Compile Include="WebApp\Kiosk\MPSS\GovtGirlSchAdmForm.aspx.designer.cs">
+      <DependentUpon>GovtGirlSchAdmForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebApp\Kiosk\OUAT\AccessFormB.aspx.cs">
       <DependentUpon>AccessFormB.aspx</DependentUpon>
@@ -6817,6 +6845,8 @@
     <Content Include="WebApp\Kiosk\Forms\KioskApproval.aspx" />
     <Content Include="WebApp\Kiosk\Forms\MakePayment.aspx" />
     <Content Include="WebApp\Kiosk\Forms\OfficeOfficer.aspx" />
+    <Content Include="WebApp\Kiosk\MPSS\MPSOSPage.aspx" />
+    <Content Include="WebApp\Kiosk\MPSS\PaymentConfirm.aspx" />
     <Content Include="WebApp\Kiosk\Forms\PaymentReceipt.aspx" />
     <Content Include="WebApp\Kiosk\Forms\RechargeWallet.aspx" />
     <Content Include="WebApp\Kiosk\Forms\ResidenceForm.aspx" />
@@ -6883,6 +6913,7 @@
     <Content Include="WebApp\Kiosk\Images\upload.png" />
     <Content Include="WebApp\Kiosk\Images\user_1.png" />
     <Content Include="WebApp\Kiosk\Images\waiting.gif" />
+    <Content Include="WebApp\Kiosk\MPSS\AcknowledgementMPBOC.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\AcknowledgementEnroll.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\Acknowledgement.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\canvasImages\Afraz.jpg" />
@@ -6897,7 +6928,8 @@
     <Content Include="WebApp\Kiosk\MPSS\MPSSReports.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\NewRegistration.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\ScholarShip.aspx" />
-    <Content Include="WebApp\Kiosk\MPSS\Test1.aspx" />
+    <Content Include="WebApp\Kiosk\MPSS\GovtGirlSchAdmForm.aspx" />
+    <Content Include="WebApp\Kiosk\MPSS\WebForm1.aspx" />
     <Content Include="WebApp\Kiosk\OUAT\AccessFormB.aspx" />
     <Content Include="WebApp\Kiosk\OUAT\Acknowledgement.aspx" />
     <Content Include="WebApp\Kiosk\OUAT\AcknowledgementForDoctoralMaster.aspx" />

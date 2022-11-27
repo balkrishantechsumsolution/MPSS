@@ -348,7 +348,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
                 txtStudentName.Text = dtApp.Rows[0]["StudentName"].ToString();
                 var strDate = DateTime.ParseExact(dtApp.Rows[0]["Birthdate"].ToString(), "dd/MM/yyyy HH:mm:ss", null);
                 txtBirthdate.Text = strDate.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture); 
-                ddlGender.SelectedValue = dtApp.Rows[0]["Gender"].ToString()== "Male" ? "M":"F";
+                ddlGender.SelectedValue = dtApp.Rows[0]["Gender"].ToString();
                 txtFatherName.Text = dtApp.Rows[0]["FatherName"].ToString();
                 txtMotherName.Text = dtApp.Rows[0]["MotherName"].ToString();
                 IsMPOrigin.Checked= bool.Parse(dtApp.Rows[0]["IsMPNative"].ToString());

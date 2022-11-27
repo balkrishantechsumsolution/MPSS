@@ -603,7 +603,7 @@
   <data name="lblStBlock" xml:space="preserve">
     <value>ब्लॉक</value>
   </data>
-  <data name="lblStCategory" xml:space="preserve">
+  <data name="lblStGender" xml:space="preserve">
     <value>लिंग</value>
   </data>
   <data name="lblStCity" xml:space="preserve">
@@ -627,7 +627,7 @@
   <data name="lblStFilter" xml:space="preserve">
     <value>छात्र विवरण फ़िल्टर</value>
   </data>
-  <data name="lblStGender" xml:space="preserve">
+  <data name="lblStCategory" xml:space="preserve">
     <value>श्रेणी</value>
   </data>
   <data name="lblStHouseNo" xml:space="preserve">

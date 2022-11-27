@@ -1,21 +1,17 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-using sun.swing;
-
-namespace CitizenPortal.WebApp.Kiosk.MPSS
+namespace CitizenPortal.WebApp.Entrance.PhD
 {
-    public partial class Test1 : System.Web.UI.Page
+    public partial class MPSOSPage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-          
+
         }
     }
 }
