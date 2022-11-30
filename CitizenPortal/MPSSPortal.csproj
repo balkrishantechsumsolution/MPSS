@@ -2542,6 +2542,13 @@
     <Compile Include="WebApp\Kiosk\Forms\OfficeOfficer.aspx.designer.cs">
       <DependentUpon>OfficeOfficer.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\MISReports.aspx.cs">
+      <DependentUpon>MISReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\MISReports.aspx.designer.cs">
+      <DependentUpon>MISReports.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebApp\Kiosk\MPSS\MPSOSPage.aspx.cs">
       <DependentUpon>MPSOSPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2757,6 +2764,13 @@
     </Compile>
     <Compile Include="WebApp\Kiosk\MPSS\GovtGirlSchAdmForm.aspx.designer.cs">
       <DependentUpon>GovtGirlSchAdmForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\SharmodayaExam.aspx.cs">
+      <DependentUpon>SharmodayaExam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\SharmodayaExam.aspx.designer.cs">
+      <DependentUpon>SharmodayaExam.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebApp\Kiosk\MPSS\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
@@ -6845,6 +6859,7 @@
     <Content Include="WebApp\Kiosk\Forms\KioskApproval.aspx" />
     <Content Include="WebApp\Kiosk\Forms\MakePayment.aspx" />
     <Content Include="WebApp\Kiosk\Forms\OfficeOfficer.aspx" />
+    <Content Include="WebApp\Kiosk\MPSS\MISReports.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\MPSOSPage.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\PaymentConfirm.aspx" />
     <Content Include="WebApp\Kiosk\Forms\PaymentReceipt.aspx" />
@@ -6929,6 +6944,7 @@
     <Content Include="WebApp\Kiosk\MPSS\NewRegistration.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\ScholarShip.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\GovtGirlSchAdmForm.aspx" />
+    <Content Include="WebApp\Kiosk\MPSS\SharmodayaExam.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\WebForm1.aspx" />
     <Content Include="WebApp\Kiosk\OUAT\AccessFormB.aspx" />
     <Content Include="WebApp\Kiosk\OUAT\Acknowledgement.aspx" />

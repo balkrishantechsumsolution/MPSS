@@ -3731,6 +3731,10 @@ Subject1, Subject2, Subject3, Subject4, Reason;
         public string NFileCaste;
         public string NFileNativeCert;
 
+        public string SamagraFamilyID;
+        public string UniqueCode;
+        public string CardHolderName;
+
 
 
 

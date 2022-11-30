@@ -206,18 +206,18 @@
                                         <a href="/WebApp/Citizen/Forms/Geustuser.aspx?SvcID=1466">
                                             <img src="/Sambalpur/img/DigiVarsity.png" alt="" align="left" style="height: 60px; margin-top: 5px;" />
                                         </a>
-                                        <a href="GovtGirlSchAdmForm.aspx" onclick="javascript:return RedirectToService('/WebApp/Kiosk/MPSS/GovtGirlSchAdmForm.aspx');">Application form for appearing in the Entrance Examination</a>
+                                        <a href="SharmodayaExam.aspx" onclick="javascript:return RedirectToService('/WebApp/Kiosk/MPSS/SharmodayaExam.aspx');">Application form for appearing in the Entrance Examination</a>
                                         <br />
                                         <span style="font-size: 12px !important; font-weight: bold !important; color: black !important;">(SHARMODAYA EXAM 2023-24)</span><br />
                                         <span>Click to Fill Application</span>
                                     </div>
-                                    <div style="min-height: 4.66em; z-index: -760; display:none;" class="SrvDiv" id="102">
-                                        <a href="/Account/Login" onclick="javascript:return RedirectToService('/WebApp/Entrance/Login/Login.aspx');">
+                                    <div style="min-height: 4.66em; z-index: -760; display:block;" class="SrvDiv" id="102">
+                                        <a href="MISReports.aspx" onclick="javascript:return RedirectToService('/WebApp/Kiosk/MPSS/MISReports.aspx');">
                                             <img src="/Sambalpur/img/DigiVarsity.png" alt="" align="left" style="height: 60px; margin-top: 5px;" />
-                                        </a><a href="/WebApp/Entrance/Login/Login.aspx">Acknowledgement of Filled Application</a>
+                                        </a><a href="MISReports.aspx">Report of Filled Application</a>
                                         <br />
                                         <span style="font-size: 12px !important; font-weight: bold !important; color: black !important;">Click to Print Filled Application</span><br />
-                                        <span>Click to Print Acknowledgement</span>
+                                        <span>Click to Print Report</span>
                                     </div>
 
 

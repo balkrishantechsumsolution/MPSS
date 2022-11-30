@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>D:\PublishWeb</_PublishTargetUrl>
-    <History>True|2022-11-26T20:40:50.3694534Z;True|2022-11-26T20:30:55.2381562+05:30;True|2022-11-25T02:40:13.3612115+05:30;False|2022-11-22T12:56:30.6035488+05:30;False|2022-11-22T12:55:37.7278665+05:30;False|2022-11-22T12:53:41.3674395+05:30;False|2022-11-12T20:09:36.2742474+05:30;True|2022-11-12T19:04:47.3950193+05:30;True|2022-11-12T08:18:56.9295517+05:30;True|2022-11-12T08:11:46.6954783+05:30;True|2022-11-10T18:16:41.8692988+05:30;True|2022-11-08T14:52:07.0951660+05:30;True|2022-11-05T19:05:29.1540746+05:30;</History>
+    <History>True|2022-11-30T07:03:15.3956919Z;True|2022-11-27T02:10:50.3694534+05:30;True|2022-11-26T20:30:55.2381562+05:30;True|2022-11-25T02:40:13.3612115+05:30;False|2022-11-22T12:56:30.6035488+05:30;False|2022-11-22T12:55:37.7278665+05:30;False|2022-11-22T12:53:41.3674395+05:30;False|2022-11-12T20:09:36.2742474+05:30;True|2022-11-12T19:04:47.3950193+05:30;True|2022-11-12T08:18:56.9295517+05:30;True|2022-11-12T08:11:46.6954783+05:30;True|2022-11-10T18:16:41.8692988+05:30;True|2022-11-08T14:52:07.0951660+05:30;True|2022-11-05T19:05:29.1540746+05:30;</History>
     <LastFailureDetails />
   </PropertyGroup>
   <ItemGroup>
@@ -145,31 +145,31 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/04/2013 10:29:00</publishTime>
     </File>
     <File Include="bin/CitizenPortal.dll">
-      <publishTime>11/27/2022 02:10:35</publishTime>
+      <publishTime>11/30/2022 12:32:58</publishTime>
     </File>
     <File Include="bin/CitizenPortal.pdb">
-      <publishTime>11/27/2022 02:10:35</publishTime>
+      <publishTime>11/30/2022 12:32:58</publishTime>
     </File>
     <File Include="bin/CitizenPortal.Services.dll">
-      <publishTime>11/27/2022 02:10:27</publishTime>
+      <publishTime>11/30/2022 12:32:50</publishTime>
     </File>
     <File Include="bin/CitizenPortal.Services.dll.config">
       <publishTime>11/20/2022 23:29:00</publishTime>
     </File>
     <File Include="bin/CitizenPortal.Services.pdb">
-      <publishTime>11/27/2022 02:10:27</publishTime>
+      <publishTime>11/30/2022 12:32:50</publishTime>
     </File>
     <File Include="bin/CitizenPortal.XmlSerializers.dll">
-      <publishTime>11/27/2022 02:10:37</publishTime>
+      <publishTime>11/30/2022 12:33:00</publishTime>
     </File>
     <File Include="bin/CitizenPortalLib.dll">
-      <publishTime>11/26/2022 20:30:15</publishTime>
+      <publishTime>11/30/2022 12:32:47</publishTime>
     </File>
     <File Include="bin/CitizenPortalLib.dll.config">
       <publishTime>11/20/2022 23:29:05</publishTime>
     </File>
     <File Include="bin/CitizenPortalLib.pdb">
-      <publishTime>11/26/2022 20:30:15</publishTime>
+      <publishTime>11/30/2022 12:32:47</publishTime>
     </File>
     <File Include="bin/ClosedXML.dll">
       <publishTime>04/03/2017 10:10:06</publishTime>
@@ -178,7 +178,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>02/03/2016 16:08:32</publishTime>
     </File>
     <File Include="bin/de/CitizenPortalLib.resources.dll">
-      <publishTime>11/26/2022 20:30:16</publishTime>
+      <publishTime>11/30/2022 12:32:49</publishTime>
     </File>
     <File Include="bin/DevExpress.Charts.v16.1.Core.dll">
       <publishTime>11/14/2016 21:53:04</publishTime>
@@ -232,7 +232,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/18/2015 16:23:26</publishTime>
     </File>
     <File Include="bin/hi-IN/CitizenPortalLib.resources.dll">
-      <publishTime>11/26/2022 20:30:16</publishTime>
+      <publishTime>11/30/2022 12:32:49</publishTime>
     </File>
     <File Include="bin/HtmlSanitizer.dll">
       <publishTime>06/02/2019 19:06:56</publishTime>
@@ -388,7 +388,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>06/14/2016 04:36:14</publishTime>
     </File>
     <File Include="bin/or-IN/CitizenPortalLib.resources.dll">
-      <publishTime>11/26/2022 20:30:16</publishTime>
+      <publishTime>11/30/2022 12:32:49</publishTime>
     </File>
     <File Include="bin/Owin.dll">
       <publishTime>11/13/2012 17:49:34</publishTime>
@@ -9805,7 +9805,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>06/11/2018 15:32:32</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>11/24/2022 12:24:37</publishTime>
+      <publishTime>11/30/2022 12:33:04</publishTime>
     </File>
     <File Include="WebApp/Activity/ActivityConfiguration.aspx">
       <publishTime>09/02/2022 23:14:38</publishTime>
@@ -11467,7 +11467,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/27/2022 00:33:18</publishTime>
     </File>
     <File Include="WebApp/Kiosk/MPSS/AcknowledgementMPBOC.aspx">
-      <publishTime>11/27/2022 00:26:00</publishTime>
+      <publishTime>11/27/2022 08:27:37</publishTime>
     </File>
     <File Include="WebApp/Kiosk/MPSS/canvasImages/Afraz.jpg">
       <publishTime>11/10/2022 12:16:02</publishTime>
@@ -11500,10 +11500,13 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/10/2022 12:16:02</publishTime>
     </File>
     <File Include="WebApp/Kiosk/MPSS/GovtGirlSchAdmForm.aspx">
-      <publishTime>11/27/2022 02:01:32</publishTime>
+      <publishTime>11/27/2022 07:58:13</publishTime>
+    </File>
+    <File Include="WebApp/Kiosk/MPSS/MISReports.aspx">
+      <publishTime>11/30/2022 11:24:56</publishTime>
     </File>
     <File Include="WebApp/Kiosk/MPSS/MPSOSPage.aspx">
-      <publishTime>11/27/2022 02:04:46</publishTime>
+      <publishTime>11/30/2022 07:25:59</publishTime>
     </File>
     <File Include="WebApp/Kiosk/MPSS/MPSSReports.aspx">
       <publishTime>11/15/2022 20:10:30</publishTime>
@@ -11516,6 +11519,9 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     </File>
     <File Include="WebApp/Kiosk/MPSS/ScholarShip.aspx">
       <publishTime>11/24/2022 12:02:31</publishTime>
+    </File>
+    <File Include="WebApp/Kiosk/MPSS/SharmodayaExam.aspx">
+      <publishTime>11/30/2022 06:05:42</publishTime>
     </File>
     <File Include="WebApp/Kiosk/MPSS/Test1.aspx">
       <publishTime>11/16/2022 06:56:56</publishTime>

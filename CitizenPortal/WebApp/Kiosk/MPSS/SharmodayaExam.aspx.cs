@@ -18,15 +18,15 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Web;
-using System.Web.Script.Serialization;
+
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml;
 using Exception = System.Exception;
 
-namespace CitizenPortal.WebApp.Kiosk.MPSS
+namespace CitizenPortal.WebApp.Kiosk.MPSOS
 {
-    public partial class GovtGirlSchAdmForm : System.Web.UI.Page
+    public partial class SharmodayaExam : System.Web.UI.Page
     {
         static data sqlhelper = new data();
         protected void Page_Load(object sender, EventArgs e)
@@ -409,7 +409,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
                 var chkIsMarksheetSub = false;
 
                 if (RadioButton2.Checked)
-                {                   
+                {
 
                     if (hdnFile5MShName.Value == "")
                     {
@@ -421,14 +421,14 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
                 if (RadioButton1.Checked)
                 {
                     chkIsMarksheetSub = true;
-                   
+
                 }
                 else
                 {
                     chkIsMarksheetSub = false;
                 }
 
-               
+
                 if (txtCastCertNo.Text != "")
                 {
                     if (hdnFileCasteName.Value == "")
@@ -527,7 +527,9 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
                 t_ObjDT.CertIssueDate = txtCertIssueDate.Text.Trim();
 
                 t_ObjDT.PreviousSchoolName = txtPreviousSchoolName.Text.Trim();
-
+                t_ObjDT.SamagraFamilyID = hdnSamagraFamilyID.Value;
+                t_ObjDT.UniqueCode = hdnUniqueCode.Value;
+                t_ObjDT.CardHolderName = hdnCardHolderName.Value;
 
                 if (t_ObjDT.Birthdate != "")
                 {
@@ -601,7 +603,10 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
                         new SqlParameter("@NFileCaste", t_ObjDT.NFileCaste),
                         new SqlParameter("@NFileNativeCert", t_ObjDT.NFileNativeCert),
                        new SqlParameter("@PreviousSchoolName", t_ObjDT.PreviousSchoolName),
-                       new SqlParameter("@PreviousSchoolDistrict", t_ObjDT.PreviousSchoolDistrict)
+                       new SqlParameter("@PreviousSchoolDistrict", t_ObjDT.PreviousSchoolDistrict),
+                         new SqlParameter("@SamagraFamilyID", t_ObjDT.SamagraFamilyID),
+                           new SqlParameter("@UniqueCode", t_ObjDT.UniqueCode),
+                             new SqlParameter("@CardHolderName", t_ObjDT.CardHolderName)
             };
 
 
@@ -884,14 +889,17 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
                 if (SamagraMemberID != "")
                 {
                     pnlDetails.Visible = true;
-
+                    pnlPhoto.Visible = true;
                     hdnSamagraFamilyID.Value = SamagraFamilyID;
                     hdnSamagraMemberID.Value = SamagraMemberID;
                     hdnCardHolderName.Value = CardHolderName;
                     hdnUniqueCode.Value = UniqueCode;
 
                     txtFatherName.Text = hdnCardHolderName.Value;
-                    txtSamagraNo.Text = hdnSamagraMemberID.Value;
+                    txtSamagraNo.Text = hdnSamagraFamilyID.Value;
+                    txtSamagraMemberID.Text = hdnSamagraMemberID.Value;
+                    UniqueID.Text = hdnUniqueCode.Value;
+                    CardHolder.Text = hdnCardHolderName.Value;
                     txtRegNo.ReadOnly = true;
                 }
                 else
@@ -1085,7 +1093,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
 
             txtPreviousSchoolName.Text = "";
             pnlDetails.Visible = false;
-
+            pnlPhoto.Visible = false;
 
         }
 
