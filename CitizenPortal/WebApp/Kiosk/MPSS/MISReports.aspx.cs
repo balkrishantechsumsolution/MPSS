@@ -34,19 +34,30 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
             gv.Columns.Add(new TemplateField());
             gv.RowCreated += gv_RowCreated;
             gv.RowDataBound += gv_RowDataBound;
+            gv.PageIndexChanging += gv_PageIndexChanged;
             gv.AllowPaging = true;
             gv.PageSize= 50;
+           
+
 
 
             pnl.Controls.Add(gv);
         }
+
+        protected void gv_PageIndexChanged(object sender, GridViewPageEventArgs e)
+        {
+            gv.PageIndex = e.NewPageIndex;
+            gv.DataSource = ViewState["Paging"];
+            gv.DataBind();
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
+            if (Session["LoginID"].ToString() == null)
             {
-                
-            };
-               
+                return;
+            }
+
         }
 
         void gv_RowDataBound(object sender, GridViewRowEventArgs e)
@@ -88,18 +99,23 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
             DataTable dt = (DataTable)ViewState["CurrentTable"];
 
             var lb = (LinkButton)sender;
-                var i = int.Parse(lb.CommandArgument);
-                string appID = dt.Rows[i]["APPID"].ToString(); ;
+            var i = int.Parse(lb.CommandArgument);
+            if (i >=0)
+            {
+                string appID = dt.Rows[i]["APPID"].ToString(); 
                 string newWin = "";
                 newWin = "window.open(\"AcknowledgementMPBOC.aspx?AppID=" + appID + "&SvcID=2465\", \"_blank\", \"WIDTH=1080,HEIGHT=790,scrollbars=no, menubar=no,resizable=yes,directories=no,location=no\");";
 
                 Page.ClientScript.RegisterStartupScript(this.GetType(), "pop", newWin, true);
+            }
           
         }
         protected DataTable ShowData()
         {
             DataTable dt = new DataTable();
             SqlParameter[] parameter = {
+                 new SqlParameter("@Fromdate", txtFromdate.Text),
+                  new SqlParameter("@Todate", txtTodate.Text),
                  new SqlParameter("@AppID", txtApplicationID.Text),
                   new SqlParameter("@RegNo", txtRegNo.Text),
                  new SqlParameter("@SvcID", "2465")
@@ -116,9 +132,11 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
             {
                 DataTable dt = new DataTable();
                 dt = ShowData();
-                 ViewState["CurrentTable"] = dt;  
+                 ViewState["CurrentTable"] = dt;
+                ViewState["Paging"] = dt;
                 gv.DataSource = dt;
                 gv.DataBind();
+                lblTotal.Text = "Total Rows: " + dt.Rows.Count;
             }
 
             catch (Exception ex)

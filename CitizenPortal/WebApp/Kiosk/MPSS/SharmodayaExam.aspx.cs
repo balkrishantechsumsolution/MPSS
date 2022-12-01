@@ -580,7 +580,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS
                         ,new SqlParameter("@DisAbilityNo", t_ObjDT.DisAbilityNo)
                         ,new SqlParameter("@IsMarksheetSub", t_ObjDT.IsMarksheetSub)
 
-                        ,new SqlParameter("@SchoolType", t_ObjDT.School)
+                        ,new SqlParameter("@SchoolType", t_ObjDT.SchoolType)
                         ,new SqlParameter("@SchoolDistrict", t_ObjDT.SchoolDistrict)
                         ,new SqlParameter("@SchoolVikaskhand", t_ObjDT.SchoolVikaskhand)
                         ,new SqlParameter("@ScClass", t_ObjDT.ScClass)

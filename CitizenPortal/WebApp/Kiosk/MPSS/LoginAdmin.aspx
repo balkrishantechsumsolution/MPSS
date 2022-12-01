@@ -1,7 +1,4 @@
-﻿<%@ Page Title="" Language="C#" AutoEventWireup="true" CodeBehind="MPSOSPage.aspx.cs" Inherits="CitizenPortal.WebApp.Entrance.PhD.CSVTUPage" %>
-
-
-<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoginAdmin.aspx.cs" Inherits="CitizenPortal.WebApp.Kiosk.MPSS.LoginAdmin" %>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -12,7 +9,7 @@
     <link href="/Sambalpur/css/normalize.min.css" rel="stylesheet" />
 
     <script src="/Sambalpur/js/jquery-2.2.3.min.js" type="text/javascript"></script>
-    
+
     <!-- IE10 viewport hack START for Surface/desktop Windows 8 bug -->
     <link href="/Sambalpur/css/ie10-viewport-bug-workaround.css" type="text/css" rel="stylesheet" />
     <script src="/Sambalpur/js/ie-emulation-modes-warning.js" type="text/javascript"></script>
@@ -142,26 +139,44 @@
             border-top-left-radius: 2px;
             font-weight: bold;
         }
+
+        #divElement {
+            position: absolute;
+            left: 70px;
+            width: 96%;
+            margin-left: -50px;
+            background-color: #E3EAEB;
+            color: #820000;
+        }
+
+            #divElement label {
+                font-size: 22px;
+                font-weight: bolder;
+                font-family: 'Arial Unicode MS';
+            }
+
+        ​
     </style>
     <script>
         $(document).ready(function () {
             $('#divLogin').hide();
         });
     </script>
+    
 </head>
-<body style="background-color:#fdfdfd">
+<body style="background-color: #fdfdfd">
     <form id="form1" runat="server">
         <div>
 
 
 
             <header>
-                <div class="container-fluid" style="display:none">
+                <div class="container-fluid" style="display: none">
                     <div class="row" style="background-color: #fd3535; clear: both; color: #fff;">
                         <div class="col-lg-12" style="padding-top: 7px; font-weight: bold">
                             <marquee>
-                        " Unregister Existing Student : Candidate who has not created thier Login ID & Passowrd, please click to generate Login Id & Password <b><a href ="/WebApp/Examination/SearchStudent.aspx#!" style="color:yellow">GENERATE LOGIN ID & PASSWORD</a></b> "
-                    </marquee>
+                                " Unregister Existing Student : Candidate who has not created thier Login ID & Passowrd, please click to generate Login Id & Password <b><a href="/WebApp/Examination/SearchStudent.aspx#!" style="color: yellow">GENERATE LOGIN ID & PASSWORD</a></b> "
+                            </marquee>
                         </div>
                     </div>
                 </div>
@@ -179,7 +194,6 @@
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 common-nav pull-right">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-5 col-md-5 col-lg-3 text-right pull-right">
-                                    
                                 </div>
 
                             </div>
@@ -196,46 +210,97 @@
                     <div class="col-lg-12">
                         <%--<div id="page-wrapper" style="min-height: 311px;">--%>
                         <h2 class="form-heading">
-                            <span class="col-lg-12 p0" style="font-family: 'Arial Unicode MS'; font-size: 32px;"><i class="fa fa-pencil-square-o"></i>श्रमोदय (आवासीय) विद्यालय प्रवेश परीक्षा 2023-24 की आवेदन फ़ार्म</span>
+                            <span class="col-lg-12 p0" style="font-family: 'Arial Unicode MS'; font-size: 32px;"><i class="fa fa-pencil-square-o"></i>श्रमोदय (आवासीय) विद्यालय प्रवेश परीक्षा 2023-24</span>
                             <span class="clearfix"></span>
                         </h2>
                         <div class="">
                             <div class="resp-tabs-container ver_1">
                                 <div style="margin-top: 10px;">
-                                    <div style="min-height: 4.66em; z-index: -760;" class="SrvDiv" id="101">
-                                        <a href="/WebApp/Citizen/Forms/Geustuser.aspx?SvcID=1466">
-                                            <img src="../Images/MPSOSLogo.jpg" alt="" align="left" style="height: 93px; margin-top: 5px;" />
-                                        </a>
-                                        <a href="SharmodayaExam.aspx" onclick="javascript:return RedirectToService('/WebApp/Kiosk/MPSS/SharmodayaExam.aspx');">Application form for appearing in the Entrance Examination</a>
-                                        <br />
-                                        <span style="font-size: 12px !important; font-weight: bold !important; color: black !important;">(SHARMODAYA EXAM 2023-24)</span><br />
-                                        <span>Click to Fill Application</span>
-                                    </div>
-                                    <div style="min-height: 4.66em; z-index: -760; display:block;" class="SrvDiv" id="102">
-                                        <a href="LoginAdmin.aspx" onclick="javascript:return RedirectToService('LoginAdmin.aspx');">
-                                            <img src="../Images/MPSOSLogo.jpg" alt="" align="left" style="height: 93px; margin-top: 5px;" />
-                                        </a><a href="LoginAdmin.aspx">Report of Filled Application</a>
-                                        <br />
-                                        <span style="font-size: 12px !important; font-weight: bold !important; color: black !important;">Click to Print Filled Application</span><br />
-                                        <span>Click to Print Report</span>
-                                    </div>
+                                    <div>
+                                        <div class="rows">
+
+                                            <h2 class="form-heading">
+                                                <span class="col-lg-12 p0" style="font-family: 'Arial Unicode MS'; font-size: 32px;"><i class="fa fa-pencil-square-o"></i>Login Form</span>
+                                                <span class="clearfix"></span>
+                                            </h2>
+                                            <div class="clearfix"></div>
+
+                                            <div id="divElement">
+                                                <div class="clearfix"></div>
+                                                <div class="clearfix"></div>
+                                                <br />
+                                                <br />
+                                                <br />
+                                                <br />
+
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="form-group">
+                                                        <label class="">
+                                                            Username
+                                                        </label>
+                                                        <asp:TextBox placeholder="User Name" CssClass="form-control" ID="txtUserName" runat="server"></asp:TextBox>
+                                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server"
+                                                            ControlToValidate="txtUserName" ErrorMessage="Please Enter Your Username"
+                                                            ForeColor="Red"></asp:RequiredFieldValidator>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="form-group">
+                                                        <label class="">
+                                                            Password
+                                                        </label>
+                                                        <asp:TextBox ID="txtPassword"  placeholder="Password" CssClass="form-control" TextMode="password" runat="server"></asp:TextBox>
+                                                        &nbsp;<i id="togglePassword" class="fa fa-eye"></i>
+                                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server"
+                                                            ControlToValidate="txtPassword" ErrorMessage="Please Enter Your Password"
+                                                            ForeColor="Red"></asp:RequiredFieldValidator>
+                                                    </div>
+                                                </div>
 
 
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="form-group">
+                                                        <asp:Button ID="Button1" CssClass="btn btn-success" runat="server" Text="Log In" OnClick="Button1_Click" />
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="form-group">
+
+                                                        <asp:Label ID="Label1" runat="server"></asp:Label>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-
                             </div>
 
                         </div>
+
                     </div>
                 </div>
             </div>
-
         </div>
+
+
         <script src="/Sambalpur/js/bootstrap.min.js" type="text/javascript"></script>
         <%--Modal JS START HERE--%>
         <script src="/Sambalpur/js/velocity.min.js" type="text/javascript"></script>
         <script src="/Sambalpur/js/velocity.ui.min.js" type="text/javascript"></script>
         <script src="/Sambalpur/js/modaleffect.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            var togglePassword = document.querySelector('#togglePassword');
+            var password = document.querySelector('#txtPassword');
+            togglePassword.addEventListener('click', function (e) {
+                const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+                password.setAttribute('type', type);
+                this.classList.toggle('fa-eye-slash');
+            });
+        </script>
     </form>
 </body>
 </html>

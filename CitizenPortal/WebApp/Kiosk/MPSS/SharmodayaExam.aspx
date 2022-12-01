@@ -163,121 +163,38 @@
         });
     </script>
     <script type="text/javascript">
-    $(document).ready(function () {
+        $(document).ready(function () {
 
 
 
 
-        $('#txtBirthdate').datepicker({
-            dateFormat: "dd/mm/yy",
-            changeMonth: true,
-            changeYear: true,
-            minDate: new Date('2014/03/14'),
-            yearRange: "-100:+0",
-            maxDate: '0',
+            $('#txtBirthdate').datepicker({
+                dateFormat: "dd/mm/yy",
+                changeMonth: true,
+                changeYear: true,
+                minDate: new Date('2014/03/14'),
+                yearRange: "-100:+0",
+                maxDate: '0',
 
-        });
+            });
 
-        $('#txtCertIssueDate').datepicker({
-            dateFormat: "dd/mm/yy",
-            changeMonth: true,
-            changeYear: true,
-            yearRange: "-100:+0",
-            maxDate: '0',
+            $('#txtCertIssueDate').datepicker({
+                dateFormat: "dd/mm/yy",
+                changeMonth: true,
+                changeYear: true,
+                yearRange: "-100:+0",
+                maxDate: '0',
 
-        });
-
-
-
-        var dtVal = document.getElementById("hdnClass").value;
-
-        var sdt = document.getElementById("hdnBirthDate").value;
-
-        $('#txtBirthdate').val(sdt);
+            });
 
 
 
-        if (dtVal == "6") {
+            var dtVal = document.getElementById("hdnClass").value;
 
-            var maxDate = "";
-            var minDate = "";
+            var sdt = document.getElementById("hdnBirthDate").value;
 
-            minDate = new Date('2010/01/04');
-            maxDate = new Date('2015/03/31');
+            $('#txtBirthdate').val(sdt);
 
-            $('#txtBirthdate').datepicker('option', 'minDate', minDate);
-            $('#txtBirthdate').datepicker('option', 'maxDate', maxDate);
-
-        }
-        if (dtVal == "7") {
-            var maxDate = "";
-            var minDate = "";
-
-            minDate = new Date('2009/01/04');
-            maxDate = new Date('2013/03/31');
-
-            $('#txtBirthdate').datepicker('option', 'minDate', minDate);
-            $('#txtBirthdate').datepicker('option', 'maxDate', maxDate);
-        }
-        if (dtVal == "8") {
-            var maxDate = "";
-            var minDate = "";
-
-            minDate = new Date('2008/01/04');
-            maxDate = new Date('2012/03/31');
-
-
-            $('#txtBirthdate').datepicker('option', 'minDate', minDate);
-            $('#txtBirthdate').datepicker('option', 'maxDate', maxDate);
-        }
-
-        if (dtVal == "9") {
-            var maxDate = "";
-            var minDate = "";
-
-            minDate = new Date('2007/01/04');
-            maxDate = new Date('2011/03/31');
-
-
-            $('#txtBirthdate').datepicker('option', 'minDate', minDate);
-            $('#txtBirthdate').datepicker('option', 'maxDate', maxDate);
-        }
-        if (document.getElementById('chkDecl').checked == true) {
-            $('#btnSubMain').removeAttr("disabled");
-        }
-        else {
-
-            $('#btnSubMain').attr("disabled", "disabled");
-        }
-
-        $('#txtTotalMarks').change(function () {
-
-            GradeAndPercent();
-        });
-
-        $('#txtMarksObtain').change(function () {
-
-            GradeAndPercent();
-        });
-
-        $('#txtBirthdate').change(function () {
-            var dtVal = $('#txtBirthdate').val();
-            document.getElementById("hdnBirthDate").value = dtVal;
-        });
-        $('#ddlDisAbility').change(function () {
-            var dtVal = $('#ddlDisAbility').val();
-            if (dtVal == "Y") {
-                $('#divDisAble').show();
-            }
-            else {
-                $('#divDisAble').hide();
-            }
-        });
-
-
-        $('#ddlClass').change(function () {
-            var dtVal = $('#ddlClass option:selected').val();
-            document.getElementById("hdnClass").value = dtVal;
 
 
             if (dtVal == "6") {
@@ -325,124 +242,207 @@
                 $('#txtBirthdate').datepicker('option', 'minDate', minDate);
                 $('#txtBirthdate').datepicker('option', 'maxDate', maxDate);
             }
+            if (document.getElementById('chkDecl').checked == true) {
+                $('#btnSubMain').removeAttr("disabled");
+            }
+            else {
+
+                $('#btnSubMain').attr("disabled", "disabled");
+            }
+
+            $('#txtTotalMarks').change(function () {
+
+                GradeAndPercent();
+            });
+
+            $('#txtMarksObtain').change(function () {
+
+                GradeAndPercent();
+            });
+
+            $('#txtBirthdate').change(function () {
+                var dtVal = $('#txtBirthdate').val();
+                document.getElementById("hdnBirthDate").value = dtVal;
+            });
+            $('#ddlDisAbility').change(function () {
+                var dtVal = $('#ddlDisAbility').val();
+                if (dtVal == "Y") {
+                    $('#divDisAble').show();
+                }
+                else {
+                    $('#divDisAble').hide();
+                }
+            });
 
 
+            $('#ddlClass').change(function () {
+                var dtVal = $('#ddlClass option:selected').val();
+                document.getElementById("hdnClass").value = dtVal;
+
+
+                if (dtVal == "6") {
+
+                    var maxDate = "";
+                    var minDate = "";
+
+                    minDate = new Date('2010/01/04');
+                    maxDate = new Date('2015/03/31');
+
+                    $('#txtBirthdate').datepicker('option', 'minDate', minDate);
+                    $('#txtBirthdate').datepicker('option', 'maxDate', maxDate);
+
+                }
+                if (dtVal == "7") {
+                    var maxDate = "";
+                    var minDate = "";
+
+                    minDate = new Date('2009/01/04');
+                    maxDate = new Date('2013/03/31');
+
+                    $('#txtBirthdate').datepicker('option', 'minDate', minDate);
+                    $('#txtBirthdate').datepicker('option', 'maxDate', maxDate);
+                }
+                if (dtVal == "8") {
+                    var maxDate = "";
+                    var minDate = "";
+
+                    minDate = new Date('2008/01/04');
+                    maxDate = new Date('2012/03/31');
+
+
+                    $('#txtBirthdate').datepicker('option', 'minDate', minDate);
+                    $('#txtBirthdate').datepicker('option', 'maxDate', maxDate);
+                }
+
+                if (dtVal == "9") {
+                    var maxDate = "";
+                    var minDate = "";
+
+                    minDate = new Date('2007/01/04');
+                    maxDate = new Date('2011/03/31');
+
+
+                    $('#txtBirthdate').datepicker('option', 'minDate', minDate);
+                    $('#txtBirthdate').datepicker('option', 'maxDate', maxDate);
+                }
+
+
+            });
+
+
+
+            //$("#btnShow").click(function () {
+            //    $('#divSTUDENT').show();
+            //});
         });
 
 
 
-        //$("#btnShow").click(function () {
-        //    $('#divSTUDENT').show();
-        //});
-    });
+        function GradeAndPercent() {
+            var dTotalVal = $('#txtTotalMarks').val();
+            var dMarksObtain = $('#txtMarksObtain').val();
 
+            var per = (parseInt(dMarksObtain) / parseInt(dTotalVal)) * 100;
+            $('#txtMarksPercentage').val(per);
 
+            var rw = $('#txtMarksPercentage').val();
+            var grade = "";
 
-    function GradeAndPercent() {
-        var dTotalVal = $('#txtTotalMarks').val();
-        var dMarksObtain = $('#txtMarksObtain').val();
+            if (rw >= 80.00 && rw <= 100) { grade = 'A'; }
+            else if (rw >= 70.00 && rw <= 79.99) { grade = 'B'; }
+            else if (rw >= 60.00 && rw <= 69.99) { grade = 'C'; }
+            else if (rw >= 50.00 && rw <= 59.99) { grade = 'D'; }
+            else if (rw >= 40.00 && rw <= 49.99) { grade = 'E'; }
+            else if (rw >= 0.00 && rw <= 39.99) { grade = 'F'; }
 
-        var per = (parseInt(dMarksObtain) / parseInt(dTotalVal)) * 100;
-        $('#txtMarksPercentage').val(per);
-
-        var rw = $('#txtMarksPercentage').val();
-        var grade = "";
-
-        if (rw >= 80.00 && rw <= 100) { grade = 'A'; }
-        else if (rw >= 70.00 && rw <= 79.99) { grade = 'B'; }
-        else if (rw >= 60.00 && rw <= 69.99) { grade = 'C'; }
-        else if (rw >= 50.00 && rw <= 59.99) { grade = 'D'; }
-        else if (rw >= 40.00 && rw <= 49.99) { grade = 'E'; }
-        else if (rw >= 0.00 && rw <= 39.99) { grade = 'F'; }
-
-        $('#txtGrade').val(grade);
-    }
-    function GetApplicable() {
-        if (document.getElementById('chkDecl').checked == true) {
-            $('#btnSubMain').removeAttr("disabled");
+            $('#txtGrade').val(grade);
         }
-        else {
-
-            $('#btnSubMain').attr("disabled", "disabled");
-        }
-    }
-
-    function ValidateMobile() {
-        var opt = "";
-        var text = "";
-
-
-        var txtMobie = $('#txtMobie').val();
-        if (txtMobie == null || txtMobie == "") {
-            //text += "<br />" + " \u002A" + " Please Enter Mobile No.";
-            text += "<br /> -Please Enter Mobile No. ";
-            $('#txtMobie').attr('style', 'border:1px solid #d03100 !important;');
-            $('#txtMobie').css({ "background-color": "#fff2ee" });
-            opt = 1;
-        } else if (txtMobie != null) {
-            $('#txtMobie').attr('style', 'border:1px solid #cdcdcd !important;');
-            $('#txtMobie').css({ "background-color": "#ffffff" });
-
-            if (txtMobie != '' || txtMobie != null) {
-                var mobmatch1 = /^[6789]\d{9}$/;
-                if (!mobmatch1.test(txtMobie)) {
-                    text += "<br />" + " \u002A" + " Please Enter Valid Mobile Number.";
-                    $("#txtMobie").attr('style', 'border:1px solid #d03100 !important;');
-                    $("#txtMobie").css({ "background-color": "#fff2ee" });
-                    opt = 1;
-                }
-            }
-        }
-        if (opt == "1") {
-            //alert("Please fill following information."+text);              
-            alertPopup("Please fill following information.", text);
-            return false;
-        }
-        return true;
-    }
-
-    function ValidateDate(p_Date) {
-
-        var inputText = p_Date;
-        if (inputText != null && inputText != '') {
-            var dateformat = /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
-            // Match the date format through regular expression  
-            if (dateformat.test(inputText)) {
-                var DOB = inputText.split('/');
-                var Y = DOB[2];
-                var M = DOB[1];
-                var D = DOB[0];
-                if (M < 10) {
-                    if (M.length == 1) {
-                        M = '0' + M;
-                    }
-                    else
-                        M = M;
-                }
-                if (D < 10) {
-                    if (D.length == 1) {
-                        D = '0' + D;
-                    }
-                    else
-                        D = D;
-                }
-
-                var NewDOB = D + '/' + M + '/' + Y;
-                $('#txtIssueDate').val(NewDOB);
-
-                return true;
+        function GetApplicable() {
+            if (document.getElementById('chkDecl').checked == true) {
+                $('#btnSubMain').removeAttr("disabled");
             }
             else {
-                alert("Invalid date format!");
-                //document.form1.text1.focus();
-                $('#txtIssueDate').val('');
-                return false;
+
+                $('#btnSubMain').attr("disabled", "disabled");
             }
         }
-    }
+
+        function ValidateMobile() {
+            var opt = "";
+            var text = "";
 
 
-</script>
+            var txtMobie = $('#txtMobie').val();
+            if (txtMobie == null || txtMobie == "") {
+                //text += "<br />" + " \u002A" + " Please Enter Mobile No.";
+                text += "<br /> -Please Enter Mobile No. ";
+                $('#txtMobie').attr('style', 'border:1px solid #d03100 !important;');
+                $('#txtMobie').css({ "background-color": "#fff2ee" });
+                opt = 1;
+            } else if (txtMobie != null) {
+                $('#txtMobie').attr('style', 'border:1px solid #cdcdcd !important;');
+                $('#txtMobie').css({ "background-color": "#ffffff" });
+
+                if (txtMobie != '' || txtMobie != null) {
+                    var mobmatch1 = /^[6789]\d{9}$/;
+                    if (!mobmatch1.test(txtMobie)) {
+                        text += "<br />" + " \u002A" + " Please Enter Valid Mobile Number.";
+                        $("#txtMobie").attr('style', 'border:1px solid #d03100 !important;');
+                        $("#txtMobie").css({ "background-color": "#fff2ee" });
+                        opt = 1;
+                    }
+                }
+            }
+            if (opt == "1") {
+                //alert("Please fill following information."+text);              
+                alertPopup("Please fill following information.", text);
+                return false;
+            }
+            return true;
+        }
+
+        function ValidateDate(p_Date) {
+
+            var inputText = p_Date;
+            if (inputText != null && inputText != '') {
+                var dateformat = /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
+                // Match the date format through regular expression  
+                if (dateformat.test(inputText)) {
+                    var DOB = inputText.split('/');
+                    var Y = DOB[2];
+                    var M = DOB[1];
+                    var D = DOB[0];
+                    if (M < 10) {
+                        if (M.length == 1) {
+                            M = '0' + M;
+                        }
+                        else
+                            M = M;
+                    }
+                    if (D < 10) {
+                        if (D.length == 1) {
+                            D = '0' + D;
+                        }
+                        else
+                            D = D;
+                    }
+
+                    var NewDOB = D + '/' + M + '/' + Y;
+                    $('#txtIssueDate').val(NewDOB);
+
+                    return true;
+                }
+                else {
+                    alert("Invalid date format!");
+                    //document.form1.text1.focus();
+                    $('#txtIssueDate').val('');
+                    return false;
+                }
+            }
+        }
+
+
+    </script>
 </head>
 <body>
     <form id="form1" runat="server" enctype="multipart/form-data">
@@ -456,21 +456,11 @@
                             <a href="../../../Default.aspx">
                                 <img src="../Images/MPSOSLogo.jpg" class="img-responsive small-view" style="width: 80px !important; text-align: left" alt="Madhya Pradesh State Open School, Bhopal" /></a>
                         </div>
-                        <div class="col-xs-12 col-sm-9 col-md-5 col-lg-7">
-                            <h1>MADHYA PRADESH STATE OPEN SCHOOL EDUCATION BOARD BHOPAL</h1>
+                        <div class="col-xs-12 col-sm-10 col-md-9 col-lg-9">
+                            <h3 style="margin: 0">MADHYA PRADESH STATE OPEN SCHOOL EDUCATION BOARD BHOPAL</h3>
 
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 common-nav pull-right">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-5 col-md-5 col-lg-3 text-right pull-right">
-                                    <%--<img src="/Sambalpur/img/DigiVarsity.png" class="img-responsive small-view" style="width: 80px !important; text-align: right" alt="DigiUarsity (A complete University Module)" />--%>
-                                </div>
-
-                            </div>
-                            <div class="clearfix"></div>
-
-                        </div>
-                    </div>
+                        
 
                 </div>
             </header>
@@ -520,7 +510,7 @@
                                                 &nbsp;
                                             </label>
                                             <label class="manadatory">
-                                               श्रमकों का पोर्टल कोड़ क्रमांक</label>
+                                            श्रमिकों का पोर्टल कोड़ क्रमांक </label>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">

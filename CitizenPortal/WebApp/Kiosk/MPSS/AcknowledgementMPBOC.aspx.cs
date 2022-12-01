@@ -16,13 +16,13 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
 {
     public partial class AcknowledgementMPBOC : System.Web.UI.Page
     {
-      
+
         string m_AppID, m_ServiceID;
         static data sqlhelper = new data();
 
-      
+
         protected void Page_Load(object sender, EventArgs e)
-         {
+        {
             if (Request.QueryString["AppID"] == null) return;
             if (Request.QueryString["SvcID"] != null) { m_ServiceID = Request.QueryString["SvcID"].ToString(); }
 
@@ -36,12 +36,17 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
             };
 
             dtApp = sqlhelper.ExecuteDataTable("GetMPBOCStudentFormDataSP", parameter);
-           
+
 
             if (dtApp.Rows.Count != 0)
             {
                 if (dtApp.Rows[0]["StudentName"].ToString() != "")
                 {
+                    txtSamagraPortalNo.Text = dtApp.Rows[0]["RollNo"].ToString();
+                    txtFamilyID.Text = dtApp.Rows[0]["SamagraFamilyID"].ToString();
+                    txtUniqueCode.Text = dtApp.Rows[0]["UniqueCode"].ToString();
+                    txtCardHolder.Text = dtApp.Rows[0]["CardHolderName"].ToString();
+
                     AppID.Text = m_AppID;
                     lblRollNo.Text = dtApp.Rows[0]["RollNo"].ToString();
                     lblEnrollmentNo.Text = dtApp.Rows[0]["StudentID"].ToString();
@@ -51,54 +56,145 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
                     FatherName.Text = dtApp.Rows[0]["FatherName"].ToString();
                     MotherName.Text = dtApp.Rows[0]["MotherName"].ToString();
                     DOBConverted.Text = dtApp.Rows[0]["Birthdate"].ToString();
-                   
+
                     Category.Text = dtApp.Rows[0]["Category"].ToString();
                     IsMPNative.Text = dtApp.Rows[0]["IsMPNative"].ToString();
                     MobileNo.Text = dtApp.Rows[0]["MobieNo"].ToString();
-                    Subject.Text = dtApp.Rows[0]["Subject"].ToString();
+                    
                     School.Text = dtApp.Rows[0]["School"].ToString();
-                    Section.Text = dtApp.Rows[0]["Section"].ToString();
+
                     Class.Text = dtApp.Rows[0]["Class"].ToString();
                     lblAdmissionDate.Text = dtApp.Rows[0]["CreatedOn"].ToString();
-                    AdmissionNo.Text = dtApp.Rows[0]["StudentName"].ToString();
+                    
+                    AdmissionDistrict.Text = dtApp.Rows[0]["DISTRICT"].ToString();
+                    EntranceExamDist.Text = dtApp.Rows[0]["EntranceExamDistrict"].ToString();
                     StudentID.Text = dtApp.Rows[0]["StudentID"].ToString();
+                    lblStudentID.Text = dtApp.Rows[0]["StudentID"].ToString();
                     SamagraNo.Text = dtApp.Rows[0]["SamagraNo"].ToString();
-                    Nationality.Text ="Indian";
+                    lblSamagra.Text = dtApp.Rows[0]["SamagraNo"].ToString();
+                    
                     var val = dtApp.Rows[0]["Img"].ToString();
 
                     PAddressLine1.Text = dtApp.Rows[0]["HouseNo"].ToString();
                     PRoadStreetName.Text = dtApp.Rows[0]["Colony"].ToString();
                     PLandMark.Text = dtApp.Rows[0]["Colony"].ToString();
-                    PLocality.Text = dtApp.Rows[0]["City"].ToString();                   
-                    PddlDistrict.Text = dtApp.Rows[0]["District"].ToString();
-                    PddlState.Text = dtApp.Rows[0]["District"].ToString();
+                    PLocality.Text = dtApp.Rows[0]["City"].ToString();
+                    PddlDistrict.Text = dtApp.Rows[0]["AddressDISTRICT"].ToString();
+                    PddlState.Text = dtApp.Rows[0]["StateName"].ToString();
                     PPinCode.Text = dtApp.Rows[0]["pincode"].ToString();
 
                     CAddressLine1.Text = dtApp.Rows[0]["HouseNo"].ToString();
                     CRoadStreetName.Text = dtApp.Rows[0]["Colony"].ToString();
                     CLandMark.Text = dtApp.Rows[0]["Colony"].ToString();
                     CLocality.Text = dtApp.Rows[0]["City"].ToString();
-                    CddlDistrict.Text = dtApp.Rows[0]["District"].ToString();
-                    CddlState.Text = dtApp.Rows[0]["District"].ToString();
+                    CddlDistrict.Text = dtApp.Rows[0]["AddressDISTRICT"].ToString();
+                    CddlState.Text = dtApp.Rows[0]["StateName"].ToString();
                     CPinCode.Text = dtApp.Rows[0]["pincode"].ToString();
 
 
                     ProfilePhoto.Attributes.Add("src", val);
-                   
+
                     ProfilePhoto.DataBind();
 
+
+                    var val1 = dtApp.Rows[0]["FileCaste"].ToString();
+                    var val2 = dtApp.Rows[0]["File5MSh"].ToString();
+                    var val3 = dtApp.Rows[0]["FileDisAbility"].ToString();
+                    var val4 = dtApp.Rows[0]["FileNativeCert"].ToString();
+
+
+
+
+                    if (val1 != "")
+                    {
+                        Label34.Text = "Yes";
+                        tblCaste.Visible = true;
+                        lblCasteDate.Text = dtApp.Rows[0]["CertIssueDate"].ToString();
+                        lblCasteNo.Text = dtApp.Rows[0]["CastCertNo"].ToString();
+                        lblCaste.Text = "Yes";
+                    }
+                    else
+                    {
+                        Label34.Text = "No";
+                    }
+                    if (val2 != "")
+                    {
+                        Label7.Text = "Yes";
+                    }
+                    else
+                    {
+                        Label7.Text = "No";
+                    }
+                    if (val3 != "")
+                    {
+                        Label33.Text = "Yes";
+                    }
+                    else
+                    {
+                        Label33.Text = "No";
+                    }
+                    if (val4 != "")
+                    {
+                        Label35.Text = "Yes";
+                    }
+                    else
+                    {
+                        Label35.Text = "No";
+                    }
+
+                    var iBoolHandi = dtApp.Rows[0]["DisAbility"].ToString();
+                    if (iBoolHandi == "Y")
+                    {
+                        div1.Visible = true;
+
+                        lblHani.Text = dtApp.Rows[0]["DisAbility"].ToString();
+                        lblHaniCert.Text = dtApp.Rows[0]["DisAbilityNo"].ToString();
+                        lblHaniType.Text = dtApp.Rows[0]["DisAbilityType"].ToString();
+                    }
+
+                    PreviousSchoolName.Text = dtApp.Rows[0]["PreviousSchoolName"].ToString();
+                    lblSchoolType.Text = dtApp.Rows[0]["SchoolType"].ToString();
+                    lblSchoolPreDist.Text = dtApp.Rows[0]["PreviousSchoolDistrict"].ToString();
+                    lblSchoolClass.Text = dtApp.Rows[0]["ScClass"].ToString();
+                    txtTotalMarks.Text = dtApp.Rows[0]["TotalMarks"].ToString();
+                    txtMarksObtain.Text = dtApp.Rows[0]["MarksObtain"].ToString();
+                    txtMarksPercentage.Text = dtApp.Rows[0]["MarksPercentage"].ToString();
+                    txtGrade.Text = dtApp.Rows[0]["Grade"].ToString();
+                    lblSchoolYear.Text = dtApp.Rows[0]["PassingYear"].ToString();
+
+                    
+
+                    Grade();
+
                 }
-               
+
                 try
                 {
-                   //QRCode.GenerateQRCodeApplication(m_ServiceID, m_AppID);
-                   
+                    //QRCode.GenerateQRCodeApplication(m_ServiceID, m_AppID);
+
                 }
 
                 catch
                 {
 
                 }
+            }
+        }
+        public void Grade()
+        {
+            if (txtMarksPercentage.Text != "")
+            {
+                var rw = decimal.Parse(txtMarksPercentage.Text);
+                var grade = "";
+
+                if (rw >= 80.00M && rw <= 100M){grade = "A";}
+                else if (rw >= 70.00M && rw <= 79.99M) { grade = "B"; }
+                else if (rw >= 60.00M && rw <= 69.99M) { grade = "C"; }
+                else if (rw >= 50.00M && rw <= 59.99M) { grade = "D"; }
+                else if (rw >= 40.00M && rw <= 49.99M) { grade = "E"; }
+                else if (rw >= 0.00M && rw <= 39.99M) { grade = "F"; }
+
+                txtGrade.Text = grade;
             }
         }
         protected void grdView_RowDataBound(object sender, GridViewRowEventArgs e)
