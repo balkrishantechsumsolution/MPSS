@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
-    <%--For Datepicker Js & Css--%>    
+    <%--For Datepicker Js & Css--%>
     <script src="/Scripts/jquery-ui-1.11.4.min.js"></script>
     <script src="/Scripts/jquery.msgBox.js"></script>
     <link href="/PortalStyles/msgBoxLight.css" rel="stylesheet" />
@@ -107,7 +107,7 @@
     <div id="page-wrapper" style="min-height: 500px !important;">
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="form-heading mtop5" style="text-transform:none;"><i class="fa fa-pencil-square-o fa-fw pright10"></i>User Profile
+                <h2 class="form-heading mtop5" style="text-transform: none;"><i class="fa fa-pencil-square-o fa-fw pright10"></i>User Profile
                 </h2>
             </div>
             <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9 box-container">
@@ -115,14 +115,14 @@
                     <h4 class="box-title register-num" style="padding-top: 8px;">Profile Details
                     </h4>
                 </div>
-               
+
                 <div class="box-body box-body-open">
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-5">
                         <div class="form-group">
                             <label class="manadatory">
                                 Full Name
                             </label>
-                            <input name="" type="text" id="Name" class="form-control" placeholder="Type Your Full Name" onkeypress="return ValidateAlpha(event, this);" maxlength="25"/>
+                            <input name="" type="text" id="Name" class="form-control" placeholder="Type Your Full Name" onkeypress="return ValidateAlpha(event, this);" maxlength="25" />
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-5">
@@ -130,21 +130,21 @@
                             <label class="manadatory">
                                 Designation
                             </label>
-                            <input name="" type="text" id="Designation" class="form-control" placeholder="Your Designation" onchange="return isAlphabet();" onkeypress="return ValidateAlpha()" maxlength="25" oncopy="return false" onpaste="return false" oncut="return false"/>
+                            <input name="" type="text" id="Designation" class="form-control" placeholder="Your Designation" onchange="return isAlphabet();" onkeypress="return ValidateAlpha()" maxlength="25" oncopy="return false" onpaste="return false" oncut="return false" />
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
                         <div class="form-group">
-                                <label class="manadatory" for="ddlGender">
-                                    Gender</label>
-                            <select class="form-control" data-val="true" data-val-number="Gender" data-val-required="Please select gender." id="ddlGender" name="Gender" >
-                                    <option value="">-Select-</option>
-                                    <option value="M">Male</option>
-                                    <option value="F">Female</option>
-                                    <option value="T">Transgender</option>
-                                </select>
+                            <label class="manadatory" for="ddlGender">
+                                Gender</label>
+                            <select class="form-control" data-val="true" data-val-number="Gender" data-val-required="Please select gender." id="ddlGender" name="Gender">
+                                <option value="">-Select-</option>
+                                <option value="M">Male</option>
+                                <option value="F">Female</option>
+                                <option value="T">Transgender</option>
+                            </select>
 
-                            </div>
+                        </div>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
                         <div class="form-group">
@@ -170,8 +170,8 @@
                             <input name="" type="text" id="MailID" class="form-control" placeholder="Type Your Email" maxlength="30" onchange="EmailValidation();" />
                         </div>
                     </div>
-              
-                    
+
+
                     <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
                         <div class="form-group">
                             <label class="manadatory">
@@ -188,20 +188,20 @@
                             <input name="" type="text" id="EmpCode" class="form-control" placeholder="Employee Code" />
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" style="display:none">
+                    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3" style="display: none">
                         <div class="form-group">
                             <label class="">
-                               Aadhaar No
+                                Aadhaar No
                             </label>
-                            <input name="" type="text" id="AadhaarNo" class="form-control" placeholder="Aadhaar No" maxlength="12" onkeypress="return isNumber(event);"/>
+                            <input name="" type="text" id="AadhaarNo" class="form-control" placeholder="Aadhaar No" maxlength="12" onkeypress="return isNumber(event);" />
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-7 col-lg-7 text-right">
-                        <p style="padding-top:25px;">(<span style="color:red; font-weight:bold;">*</span> Marked as Mandatory Fields)</p>
-                        </div>
+                        <p style="padding-top: 25px;">(<span style="color: red; font-weight: bold;">*</span> Marked as Mandatory Fields)</p>
+                    </div>
                     <div class="clearfix"></div>
                 </div>
-                
+
             </div>
 
             <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 pleft0 pright0">
@@ -212,29 +212,141 @@
                     </div>
                     <div class="box-body box-body-open p0">
                         <div class="col-lg-12">
-                            <img class="form-control" src="/webApp/kiosk/Images/photo.png" name="ProfilePhoto" style="height:180px" id="myImg"/>
-                            <input class="camera" id="File1" name="Photoupload" type="file"/>
-                            <img class="form-control" src="/WebApp/Kiosk/OISF/img/signature.png" name="signaturecustomer" style="height: 110px" id="mySign"/>
-                            <input class="camera" id="File2" name="Photoupload" type="file"/>
+                            <img class="form-control" src="/webApp/kiosk/Images/photo.png" name="ProfilePhoto" style="height: 180px" id="myImg" />
+                            <input class="camera" id="File1" name="Photoupload" type="file" />
+                            <img class="form-control" src="/webApp/kiosk/Images/signature.png" name="signaturecustomer" style="height: 110px" id="mySign" />
+                            <input class="camera" id="File2" name="Photoupload" type="file" />
                         </div>
                         <div class="clearfix"></div>
                     </div>
                 </div>
+            </div>
+            <div class="clearfix"></div>
+              <div>
+                    <fieldset id="divStudentOther" style="width: 100%; margin-bottom: 15px;">
+                        <legend>&nbsp Other Information</legend>
+                        <div class="col-lg-12">
+                            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                <div class="form-group">
+                                    <label>Is Hostel Available</label>
+
+
+                                    <asp:RadioButton ID="RadioButton29" runat="server" Text="Yes" GroupName="IsParentIcomeTaxPayer" />
+
+
+                                    <asp:RadioButton ID="RadioButton30" runat="server" Text="No" GroupName="IsParentIcomeTaxPayer" />
+                                </div>
+
+                            </div>
+                            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                <div class="form-group">
+                                    <label>Is Mess Available</label>
+
+                                    <asp:RadioButton ID="RadioButton27" runat="server" Text="Yes" GroupName="IsAnyHaveScholarShip" />
+
+                                    <asp:RadioButton ID="RadioButton3" runat="server" Text="No" GroupName="IsAnyHaveScholarShip" />
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                <div class="form-group">
+                                    <label>Is Kitchen Available</label>
+
+                                    <asp:RadioButton ID="RadioButton25" runat="server" Text="Yes" GroupName="IsHosteller" />
+
+
+                                    <asp:RadioButton ID="RadioButton26" runat="server" Text="No" GroupName="IsHosteller" />
+
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                <div class="form-group">
+                                    <label>Is Library Available</label>
+
+                                    <asp:RadioButton ID="IsFamilyBPLY" runat="server" Text="Yes" GroupName="IsFamilyBPL" />
+
+
+                                    <asp:RadioButton ID="IsFamilyBPLN" runat="server" Text="No" GroupName="IsFamilyBPL" />
+
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
+                                <div class="form-group">
+                                    <label>Is Playground Available</label>
+
+                                    <asp:RadioButton ID="RadioButton1" runat="server" Text="Yes" GroupName="IsDisadvantagedgroup" />
+
+
+                                    <asp:RadioButton ID="RadioButton2" runat="server" Text="No" GroupName="IsDisadvantagedgroup" />
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </fieldset>
                 </div>
-            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-lg-push-1 text-center">
-                 <input type="button" id="btnSubmit" class="btn btn-verify" value="SUBMIT" style="min-width:180px;" />
-                 </div>
+            <div>
+                <div class="clearfix"></div>
+                <div class="row">
+                    <fieldset id="divAttachment" style="width: 100%; margin-bottom: 15px;">
+                        <legend>&nbsp Attachment Document</legend>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div id="divCheque" class="col-md-12 box-container">
+                                <div class="box-heading">
+                                    <h4 class="box-title manadatory">Copy of Cancel Cheque 
+                                      
+                                    </h4>
+                                </div>
+                                <div class="box-body box-body-open p0">
+                                    <div class="col-lg-12">
+                                        <asp:Image runat="server" class="form-control" src="/webApp/kiosk/Images/cheque.jpg" name="ProfileCheque" Style="height: 180px" ID="imgCheque" />
+                                        <input class="camera" id="Chequeupload" name="Chequeupload" type="file" runat="server" />
+                                        <asp:Button ID="btnCheque" type="submit" Text="Upload" runat="server"></asp:Button>
+                                        <asp:Panel ID="Panel1" Visible="False" runat="server">
+                                            <asp:Label ID="lblResultCheque" runat="server"></asp:Label>
+                                        </asp:Panel>
+
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div id="divPassbook" class="col-md-12 box-container">
+                                <div class="box-heading">
+                                    <h4 class="box-title manadatory">Copy of Passbook
+                                      
+                                    </h4>
+                                </div>
+                                <div class="box-body box-body-open p0">
+                                    <div class="col-lg-12">
+                                        <asp:Image runat="server" class="form-control" src="/webApp/kiosk/Images/Passbook.jpg" name="ProfilePassbook" Style="height: 180px" ID="imgPassbook" />
+                                        <input class="camera" id="Passbookupload" name="Passbookupload" type="file" runat="server" />
+                                        <asp:Button ID="btnPassbook" type="submit" Text="Upload" runat="server"></asp:Button>
+                                        <asp:Panel ID="Panel2" Visible="False" runat="server">
+                                            <asp:Label ID="lblResultPassbook" runat="server"></asp:Label>
+                                        </asp:Panel>
+
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="clearfix"></div>
+                </div>
+              
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-lg-push-1 text-center">
+                    <input type="button" id="btnSubmit" class="btn btn-verify" value="SUBMIT" style="min-width: 180px;" />
+                </div>
+            </div>
         </div>
+
+        <asp:HiddenField ID="HFServiceID" runat="server" Value="" />
+        <asp:HiddenField ID="HFb64" runat="server" />
+        <asp:HiddenField ID="HFSizeOfPhoto" runat="server" ClientIDMode="Static" />
+        <asp:HiddenField ID="HFUIDData" runat="server" />
+        <asp:HiddenField ID="HFb64Sign" runat="server" />
+        <asp:HiddenField ID="HFSizeOfSign" runat="server" ClientIDMode="Static" />
+        <asp:HiddenField ID="HFCurrentLang" runat="server" ClientIDMode="Static" />
+        <asp:HiddenField ID="HFLID" runat="server" ClientIDMode="Static" />
     </div>
-    
-    <asp:HiddenField ID="HFServiceID" runat="server" Value="" />
-    <asp:HiddenField ID="HFb64" runat="server" />
-    <asp:HiddenField ID="HFSizeOfPhoto" runat="server" ClientIDMode="Static" />
-    <asp:HiddenField ID="HFUIDData" runat="server" />
-    <asp:HiddenField ID="HFb64Sign" runat="server" />
-    <asp:HiddenField ID="HFSizeOfSign" runat="server" ClientIDMode="Static" />
-    <asp:HiddenField ID="HFCurrentLang" runat="server" ClientIDMode="Static" />
-    <asp:HiddenField ID="HFLID" runat="server" ClientIDMode="Static" />
-
-
 </asp:Content>

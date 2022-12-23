@@ -384,11 +384,13 @@
     <EmbeddedResource Include="Resources\Service.hi-IN.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Service.hi-IN.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Service.or-IN.resx" />
     <EmbeddedResource Include="Resources\Service.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Service.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

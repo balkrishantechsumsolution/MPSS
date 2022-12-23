@@ -278,6 +278,9 @@
                                         <asp:Button ID="btnSubmit" runat="server" CausesValidation="True" ToolTip="Show Data"
                                             CssClass="btn btn-success" Text="Show Data" ValidationGroup="G" OnClick="btnSubmit_Click" />
 
+                                         <asp:Button ID="btnHome" runat="server" CausesValidation="True" ToolTip="Home"
+                                            CssClass="btn btn-success" Text="Home" ValidationGroup="G" OnClick="btnHome_Click"/>
+
                                     </div>
                                 </div>
                                 <div class="clearfix"></div>

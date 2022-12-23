@@ -281,9 +281,9 @@ namespace SqlHelper
             return dt;
         }
         // Return Stored Procedure return 
-        public int ReturnValue(string query, params SqlParameter[] parameters)
+        public Int32 ReturnValue(string query, params SqlParameter[] parameters)
         {
-            int retval = -101;
+            Int32 retval = -101;
             SqlConnection cnn = new SqlConnection(_conString);
             SqlCommand cmd = new SqlCommand(query, cnn);
             cmd.CommandTimeout = 300;
@@ -309,7 +309,7 @@ namespace SqlHelper
             {
                 cnn.Open();
                 cmd.ExecuteNonQuery();
-                retval = (int)cmd.Parameters["@return_value"].Value;
+                retval = (Int32)cmd.Parameters["@return_value"].Value;
             }
             catch (Exception exp)
             {
@@ -327,7 +327,7 @@ namespace SqlHelper
             return retval;
         }
 
-        public DataTable ExecuteDataTableNon(string query, params SqlParameter[] parameters)
+        public DataSet ExecuteDataTableNon(string query, params SqlParameter[] parameters)
         {
             SqlConnection cnn = new SqlConnection(_conString);
             SqlCommand cmd = new SqlCommand(query, cnn);
@@ -347,10 +347,13 @@ namespace SqlHelper
                 }
                 cnn.Open();
                 cmd.CommandTimeout = 300;
-                var retval = cmd.ExecuteReader();
+                DataSet ds = new DataSet();
 
-                var dataTable = new DataTable();
-                dataTable.Load(retval);
+                SqlDataAdapter adap = new SqlDataAdapter(cmd);
+                adap.Fill(ds, "MasterTable");
+                return ds;
+
+               
 
                 cnn.Close();
 
@@ -359,15 +362,17 @@ namespace SqlHelper
                     cmd.Parameters.Clear();
                 }
 
-                return dataTable;
+                return ds;
             }
             catch (Exception e)
             {
+                DataSet ds = new DataSet();
                 DataTable dte = new DataTable();
                 dte.Columns.Add("ErrorMessage");
                 object[] o = { e.Message };
                 dte.Rows.Add(o);
-                return dte;
+                ds.Tables.Add(dte);
+                return ds;
             }
 
         }

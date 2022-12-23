@@ -817,6 +817,15 @@ namespace CitizenPortalLib.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Current All Subject.
+        /// </summary>
+        public static string lblAllSub {
+            get {
+                return ResourceManager.GetString("lblAllSub", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Address Line-1 (Care of).
         /// </summary>
         public static string lblAppAddress {
@@ -1033,6 +1042,33 @@ namespace CitizenPortalLib.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Attachments doc.
+        /// </summary>
+        public static string lblAttach {
+            get {
+                return ResourceManager.GetString("lblAttach", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bank Name.
+        /// </summary>
+        public static string lblBankName {
+            get {
+                return ResourceManager.GetString("lblBankName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy of Cancelled Cheque.
+        /// </summary>
+        public static string lblCheque {
+            get {
+                return ResourceManager.GetString("lblCheque", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Select Class.
         /// </summary>
         public static string lblClass {
@@ -1074,6 +1110,60 @@ namespace CitizenPortalLib.Resources {
         public static string lblDeclarationTextCraft {
             get {
                 return ResourceManager.GetString("lblDeclarationTextCraft", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disabilities.
+        /// </summary>
+        public static string lblDetached {
+            get {
+                return ResourceManager.GetString("lblDetached", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disabilities Percentage.
+        /// </summary>
+        public static string lblDetachedPercentage {
+            get {
+                return ResourceManager.GetString("lblDetachedPercentage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Students with disabilities provide equipment.
+        /// </summary>
+        public static string lblDetachedPercentageEqp {
+            get {
+                return ResourceManager.GetString("lblDetachedPercentageEqp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disabilities student Fee Escort Facility.
+        /// </summary>
+        public static string lblDetachedPercentageEscort {
+            get {
+                return ResourceManager.GetString("lblDetachedPercentageEscort", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maharishi Patanjali Sanskrit Sansthan dwaraa jaari Vidyalay ka Dice Code.
+        /// </summary>
+        public static string lblDiceCode {
+            get {
+                return ResourceManager.GetString("lblDiceCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If disabled, type.
+        /// </summary>
+        public static string lblDisavbiType {
+            get {
+                return ResourceManager.GetString("lblDisavbiType", resourceCulture);
             }
         }
         
@@ -1128,6 +1218,15 @@ namespace CitizenPortalLib.Resources {
         public static string lblDOD {
             get {
                 return ResourceManager.GetString("lblDOD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Family Samagra No.
+        /// </summary>
+        public static string lblFamilySamagra {
+            get {
+                return ResourceManager.GetString("lblFamilySamagra", resourceCulture);
             }
         }
         
@@ -1252,6 +1351,24 @@ namespace CitizenPortalLib.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Mobile No.
+        /// </summary>
+        public static string lblParentMobileNo {
+            get {
+                return ResourceManager.GetString("lblParentMobileNo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy of Passbook.
+        /// </summary>
+        public static string lblPassbook {
+            get {
+                return ResourceManager.GetString("lblPassbook", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Have passed the qualifying exam from other board?.
         /// </summary>
         public static string lblPassExam {
@@ -1275,6 +1392,33 @@ namespace CitizenPortalLib.Resources {
         public static string lblPostalAddress {
             get {
                 return ResourceManager.GetString("lblPostalAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Previous Class All Subject.
+        /// </summary>
+        public static string lblPreAllSub {
+            get {
+                return ResourceManager.GetString("lblPreAllSub", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Previous Study Class.
+        /// </summary>
+        public static string lblPreStudyClass {
+            get {
+                return ResourceManager.GetString("lblPreStudyClass", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Principal Mobile No.
+        /// </summary>
+        public static string lblPrincipalBankAccActive {
+            get {
+                return ResourceManager.GetString("lblPrincipalBankAccActive", resourceCulture);
             }
         }
         
@@ -1306,11 +1450,38 @@ namespace CitizenPortalLib.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Affiliation code of the school issued by Maharishi Patanjali Sanskrit Sansthan.
+        /// </summary>
+        public static string lblSambathaCode {
+            get {
+                return ResourceManager.GetString("lblSambathaCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to School Name in Which Account is Active.
+        /// </summary>
+        public static string lblScBankAccActive {
+            get {
+                return ResourceManager.GetString("lblScBankAccActive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Select School.
         /// </summary>
         public static string lblSchool {
             get {
                 return ResourceManager.GetString("lblSchool", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to School Bank Details.
+        /// </summary>
+        public static string lblSchoolBankInfo {
+            get {
+                return ResourceManager.GetString("lblSchoolBankInfo", resourceCulture);
             }
         }
         
@@ -1324,7 +1495,7 @@ namespace CitizenPortalLib.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ScholarShip Form.
+        ///   Looks up a localized string similar to Registration/ScholarShip Form.
         /// </summary>
         public static string lblScName {
             get {
@@ -1361,6 +1532,15 @@ namespace CitizenPortalLib.Resources {
         
         /// <summary>
         ///   Looks up a localized string similar to Bank Information.
+        /// </summary>
+        public static string lblScStBankDetails {
+            get {
+                return ResourceManager.GetString("lblScStBankDetails", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Student/Parents Bank Details.
         /// </summary>
         public static string lblScStBankInfo {
             get {
@@ -1450,7 +1630,7 @@ namespace CitizenPortalLib.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Digital Caste Cetrtificate Number.
+        ///   Looks up a localized string similar to Digital Caste Certificate Number(Lok Shewa Kendra Dwara Pradaya).
         /// </summary>
         public static string lblScStDigitalCasteNo {
             get {
@@ -1810,6 +1990,15 @@ namespace CitizenPortalLib.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Student Name (Hindi).
+        /// </summary>
+        public static string lblScStNameHindi {
+            get {
+                return ResourceManager.GetString("lblScStNameHindi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Is a native of Madhya Pradesh.
         /// </summary>
         public static string lblScStNative {
@@ -2008,6 +2197,15 @@ namespace CitizenPortalLib.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Current Study School Name.
+        /// </summary>
+        public static string lblStCurrSchCls {
+            get {
+                return ResourceManager.GetString("lblStCurrSchCls", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Declaration* I hereby declare that the entries made by me in this application are true and correct. If any type of error or wrong information is found, the admission will be canceled for which the entire responsibility will be with itself..
         /// </summary>
         public static string lblStDeclaration {
@@ -2058,6 +2256,15 @@ namespace CitizenPortalLib.Resources {
         public static string lblStGender {
             get {
                 return ResourceManager.GetString("lblStGender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hostel Name in which student lives.
+        /// </summary>
+        public static string lblStHostelName {
+            get {
+                return ResourceManager.GetString("lblStHostelName", resourceCulture);
             }
         }
         
@@ -2116,11 +2323,29 @@ namespace CitizenPortalLib.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Name of the locality in which the student resides.
+        /// </summary>
+        public static string lblStudentLive {
+            get {
+                return ResourceManager.GetString("lblStudentLive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Student Profile Details.
         /// </summary>
         public static string lblStudentProfile {
             get {
                 return ResourceManager.GetString("lblStudentProfile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Current Study Class.
+        /// </summary>
+        public static string lblStudyClass {
+            get {
+                return ResourceManager.GetString("lblStudyClass", resourceCulture);
             }
         }
         

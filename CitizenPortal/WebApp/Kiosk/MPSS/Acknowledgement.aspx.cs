@@ -61,8 +61,44 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
                     LadliLaxmiNo.Text = dtApp.Rows[0]["LadliLaxmiNo"].ToString();
                     Nationality.Text ="Indian";
 
+                    PAddressLine1.Text = dtApp.Rows[0]["HouseNo"].ToString();
+                    PRoadStreetName.Text = dtApp.Rows[0]["Colony"].ToString();
+                    PLandMark.Text = dtApp.Rows[0]["Colony"].ToString();
+                    PLocality.Text = dtApp.Rows[0]["City"].ToString();
+                    PddlDistrict.Text = dtApp.Rows[0]["AddressDISTRICT"].ToString();
+                    PddlState.Text = dtApp.Rows[0]["StateName"].ToString();
+                    PPinCode.Text = dtApp.Rows[0]["pincode"].ToString();
+
+                    CAddressLine1.Text = dtApp.Rows[0]["HouseNo"].ToString();
+                    CRoadStreetName.Text = dtApp.Rows[0]["Colony"].ToString();
+                    CLandMark.Text = dtApp.Rows[0]["Colony"].ToString();
+                    CLocality.Text = dtApp.Rows[0]["City"].ToString();
+                    CddlDistrict.Text = dtApp.Rows[0]["AddressDISTRICT"].ToString();
+                    CddlState.Text = dtApp.Rows[0]["StateName"].ToString();
+                    CPinCode.Text = dtApp.Rows[0]["pincode"].ToString();
+
+                    var val = dtApp.Rows[0]["Img"].ToString();
+                    var valTC = dtApp.Rows[0]["ImgTC"].ToString();
+                    
+                    ProfilePhoto.Attributes.Add("src", val);
+                    ProfilePhoto.DataBind();
+
+                    ProfileTC.Attributes.Add("src", valTC);
+                    ProfileTC.DataBind();
+
+                    txtAadharNo.Text = dtApp.Rows[0]["Aadhar"].ToString();
+                    txtFamilyID.Text = dtApp.Rows[0]["FamilySamagraID"].ToString();
+                    SamagraNo.Text = dtApp.Rows[0]["SamagraID"].ToString();
+                    txtAppID.Text = m_AppID;
+                    lblDiceCode.Text = dtApp.Rows[0]["DiceCode"].ToString();
+                    lblAffiliationCode.Text = dtApp.Rows[0]["SambathaCode"].ToString();
+
+                    lblSchoolName.Text = dtApp.Rows[0]["SchoolName"].ToString();
+                    lblNative.Text = dtApp.Rows[0]["IsMPOrigin"].ToString();
+                    lblPassExam.Text = dtApp.Rows[0]["IsPassOtherBoard"].ToString();
+
                 }
-               
+
                 try
                 {
                     QRCode.GenerateQRCodeApplication(m_ServiceID, m_AppID);

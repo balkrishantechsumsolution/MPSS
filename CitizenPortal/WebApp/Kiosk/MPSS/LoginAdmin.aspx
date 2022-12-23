@@ -13,6 +13,8 @@
     <!-- IE10 viewport hack START for Surface/desktop Windows 8 bug -->
     <link href="/Sambalpur/css/ie10-viewport-bug-workaround.css" type="text/css" rel="stylesheet" />
     <script src="/Sambalpur/js/ie-emulation-modes-warning.js" type="text/javascript"></script>
+    <script src="/Sambalpur/js/SHA256.js"></script>
+    <script src="../../Scripts/sha512.js"
     <!-- IE10 viewport hack END for Surface/desktop Windows 8 bug -->
     <script src="../../WebApp/Scripts/DisableBackButton.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -157,10 +159,41 @@
 
         ​
     </style>
+      <script type="text/javascript">           
+          var salt = '<%= Session["SaltKey"] == null ? "":Session["SaltKey"].ToString() %>';
+      </script>
     <script>
         $(document).ready(function () {
             $('#divLogin').hide();
         });
+        function calcHash(variant) {
+            var tmp = document.getElementById("ascii-comp");
+            var shaObj = new jsSHA(document.getElementById("ascii-input").value, "ASCII");
+            document.getElementById("ascii-result").value = shaObj.getHash(variant, "HEX");
+            document.getElementById("ascii-result").select();
+        }
+        function submitForm() {
+            debugger;
+            //var vsalt = $('#HDNSaltKey').val();
+            var shaObj = new jsSHA(salt, "ASCII");
+            var strhiden = shaObj.getHash("SHA-512", "HEX");
+
+            //var strhiden = sha256_digest(salt);
+            var pwd1 = $('#txtPassword').val();
+            var pwd1 = pwd1;
+            /* pwd1 = sha256_digest(pwd1);*/
+
+            var shaObj1 = new jsSHA(pwd1, "ASCII");
+            var pwd1 = shaObj1.getHash("SHA-512", "HEX");
+
+            var shaObj2 = new jsSHA(pwd1.toLowerCase() + strhiden.toLowerCase(), "ASCII");
+            var encipt1 = shaObj2.getHash("SHA-512", "HEX");
+            //var encipt1 = sha256_digest(pwd1.toLowerCase() + strhiden.toLowerCase());
+            $('#txtPassword').val(encipt1);
+           
+        }
+      
+
     </script>
     
 </head>
@@ -260,7 +293,7 @@
 
                                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                                     <div class="form-group">
-                                                        <asp:Button ID="Button1" CssClass="btn btn-success" runat="server" Text="Log In" OnClick="Button1_Click" />
+                                                        <asp:Button ID="Button1" CssClass="btn btn-success" runat="server" Text="Log In" OnClick="Button1_Click" OnClientClick="javascript: return submitForm()" />
 
                                                     </div>
                                                 </div>
@@ -285,7 +318,10 @@
                 </div>
             </div>
         </div>
-
+         <asp:HiddenField ID="HdnField" runat="server" />
+                      <asp:HiddenField ID="hdnRandomNo" runat="server" />
+                      <asp:HiddenField ID="hdnfldPass" runat="server" />
+                      <asp:HiddenField ID="hdnfldPass1" runat="server" />
 
         <script src="/Sambalpur/js/bootstrap.min.js" type="text/javascript"></script>
         <%--Modal JS START HERE--%>

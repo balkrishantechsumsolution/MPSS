@@ -22,6 +22,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml;
+using static CitizenPortalLib.CommonFunction;
 using Exception = System.Exception;
 
 namespace CitizenPortal.WebApp.Kiosk.MPSOS
@@ -375,6 +376,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS
 
                 if (disDropDown == "Y")
                 {
+                    tdDisAbility.Visible = true;
                     if (hdnFileDisAbilityName.Value == "")
                     {
                         ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Disable Certificate could not be Attached.');", true);
@@ -383,7 +385,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS
                 }
                 else
                 {
-
+                    tdDisAbility.Visible = false;
                     txtDisAbilityNo.Text = "";
                     ddlDisAbilityType.SelectedItem.Value = "0";
 
@@ -411,6 +413,8 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS
                 if (RadioButton2.Checked)
                 {
 
+                    div3.Visible= true;
+
                     if (hdnFile5MShName.Value == "")
                     {
                         ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Previous Marksheet could not be Attached.');", true);
@@ -420,12 +424,33 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS
 
                 if (RadioButton1.Checked)
                 {
+                    div3.Visible = false;
                     chkIsMarksheetSub = true;
+                    RequiredFieldValidator20.Enabled = false;
+                    RequiredFieldValidator15.Enabled = false;
+                    RequiredFieldValidator18.Enabled = false;
+                
 
                 }
                 else
                 {
                     chkIsMarksheetSub = false;
+
+                    if (hdnFile5MShName.Value == "")
+                    {
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Previous Marksheet could not be Attached.');", true);
+                        return;
+                    }
+
+                }
+
+                if (ddlCaste.SelectedItem.Value != "1")
+                {
+                    div4.Visible = true;
+                }
+                else
+                {
+                    div4.Visible = false;
                 }
 
 
@@ -433,14 +458,16 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS
                 {
                     if (hdnFileCasteName.Value == "")
                     {
-                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Caste Certificate could not be Attached.');", true);
-                        return;
+                        if (ddlCaste.SelectedItem.Value != "1")
+                        {
+                            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Caste Certificate could not be Attached.');", true);
+                            return;
+                        }
                     }
 
                 }
 
-
-
+                
 
 
 
@@ -847,67 +874,86 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS
         {
             try
             {
-                string url = "http://labour.mp.gov.in/WebServices/MPBOC.asmx";
-                string method = "";
-                string responseText = "";
-
-                var Id = txtRegNo.Text.Trim();
-
-                var param = new Dictionary<string, string>();
-                param.Add("UniquePortalCode", Id);
-                param.Add("SCode", "$MPBOC$^%&@123");
-
-
-
-                //string responseText;
-                method = "GetCardHoderDetailsByUniqueCode";
-
-                var responseStatusCode = CallWebService(url, "http://tempuri.org/", method, param, out responseText);
-
-                string jsonData = responseText;
-                char[] delimiterChars = { '<' };
-                string[] sList = jsonData.Split(delimiterChars);
-
-
-                string data = sList[0];
-
-
-
-                dynamic stuff = JObject.Parse(data);
-
-
-                var SUCCESS = JTokenToArray<string>(stuff.Value<JToken>("SUCCESS"));
-
-
-
-                var st = JsonConvert.DeserializeObject<SuccessData>(Convert.ToString(SUCCESS));
-
-                string SamagraFamilyID = st.SamagraFamilyID;
-                string SamagraMemberID = st.SamagraMemberID;
-                string CardHolderName = st.CardHolderName;
-                string UniqueCode = st.UniqueCode;
-                if (SamagraMemberID != "")
+                string captcha = Session["LoginCaptchaTest"].ToString();
+                string strCaptcha = txtCaptcha.Text.Trim();
+                if (Session["LoginCaptchaTest"] == null)
                 {
-                    pnlDetails.Visible = true;
-                    pnlPhoto.Visible = true;
-                    hdnSamagraFamilyID.Value = SamagraFamilyID;
-                    hdnSamagraMemberID.Value = SamagraMemberID;
-                    hdnCardHolderName.Value = CardHolderName;
-                    hdnUniqueCode.Value = UniqueCode;
+                    lblCaptcha.Text = "Captcha Expired. Please re-load the Page.";
+                    return;
 
-                    txtFatherName.Text = hdnCardHolderName.Value;
-                    txtSamagraNo.Text = hdnSamagraFamilyID.Value;
-                    txtSamagraMemberID.Text = hdnSamagraMemberID.Value;
-                    UniqueID.Text = hdnUniqueCode.Value;
-                    CardHolder.Text = hdnCardHolderName.Value;
-                    txtRegNo.ReadOnly = true;
                 }
+                else if (captcha == strCaptcha)
+                {
+                    lblCaptcha.Text = "";
+
+
+                   string url = "http://labour.mp.gov.in/WebServices/MPBOC.asmx";
+                    string method = "";
+                    string responseText = "";
+
+                    var Id = txtRegNo.Text.Trim();
+
+                    var param = new Dictionary<string, string>();
+                    param.Add("UniquePortalCode", Id);
+                    param.Add("SCode", "$MPBOC$^%&@123");
+
+
+
+                    //string responseText;
+                    method = "GetCardHoderDetailsByUniqueCode";
+
+                    var responseStatusCode = CallWebService(url, "http://tempuri.org/", method, param, out responseText);
+
+                    string jsonData = responseText;
+                    char[] delimiterChars = { '<' };
+                    string[] sList = jsonData.Split(delimiterChars);
+
+
+                    string data = sList[0];
+
+
+
+                    dynamic stuff = JObject.Parse(data);
+
+
+                    var SUCCESS = JTokenToArray<string>(stuff.Value<JToken>("SUCCESS"));
+
+
+
+                    var st = JsonConvert.DeserializeObject<SuccessData>(Convert.ToString(SUCCESS));
+
+                    string SamagraFamilyID = st.SamagraFamilyID;
+                    string SamagraMemberID = st.SamagraMemberID;
+                    string CardHolderName = st.CardHolderName;
+                    string UniqueCode = st.UniqueCode;
+                    if (SamagraMemberID != "")
+                    {
+                        pnlDetails.Visible = true;
+                        pnlPhoto.Visible = true;
+                        hdnSamagraFamilyID.Value = SamagraFamilyID;
+                        hdnSamagraMemberID.Value = SamagraMemberID;
+                        hdnCardHolderName.Value = CardHolderName;
+                        hdnUniqueCode.Value = UniqueCode;
+
+                        //txtFatherName.Text = hdnCardHolderName.Value;
+                        txtSamagraNo.Text = hdnSamagraFamilyID.Value;
+                        txtSamagraMemberID.Text = hdnSamagraMemberID.Value;
+                        UniqueID.Text = hdnUniqueCode.Value;
+                        CardHolder.Text = hdnCardHolderName.Value;
+                        txtRegNo.ReadOnly = true;
+                    }
+                    else
+                    {
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('No Record Founds.');", true);
+                    }
+                }
+
                 else
                 {
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('No Record Founds.');", true);
+                    lblCaptcha.Text = "Wrong Captcha Entered. Please re-enter Captcha.";
+                    return;
                 }
             }
-
             catch (Exception ex)
             {
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('No Record Found.');", true);

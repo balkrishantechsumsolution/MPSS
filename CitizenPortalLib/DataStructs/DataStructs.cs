@@ -3614,6 +3614,12 @@ Subject1, Subject2, Subject3, Subject4, Reason;
         public long StudentID, MobieNoParent;
         public decimal FamilyIncome, MonthlyFee, JobSalary;
 
+        public string Block;
+        public string District, City, DisAbilityType,HostelName, SambathaCode, CuurentSchoolName;
+        public string Colony;
+        public string HouseNo;
+        public string pincode;
+
         public string StudentName
 
      , Gender
@@ -3664,9 +3670,40 @@ Subject1, Subject2, Subject3, Subject4, Reason;
         public bool IsFatherDead, IsMPOrigin, IsParentIcomeTaxPayer, IsHosteller, IsDGSCaste, IsFamilyBPL
      , IsDisadvantagedgroup, IsClsFirstEnrollStatus, IsFreeTextbooks, IsResidingHostel
      , IsRecSpecialTraining, IsRegVocationalPrg, Ishomeless, IsFreeTransport, IsFreeEscortDis
-     , IsRTE, IsAnyHaveScholarShip, FreeBicycle;
+     , IsRTE, IsAnyHaveScholarShip, FreeBicycle, IsPassOtherBoard;
 
         public DateTime TBirthdate, TDateAdmisCurrSch, TDateAdmisCurrClass;
+
+
+        public long PrincipalMoNo;
+        public string PrincipalBankIFSC;
+        public string PrincipalConfirmBankNo;
+        public string PrincipalBankNo;
+        public string ScBankName;
+        public string ScActive;
+        public long UserMoNo;
+        public string StudentBankName;
+        public string SchoolEntryCls;
+        public string DiceCode;
+        public string StudyCls;
+        public string PrestudyCls;
+        public string AllSubject;
+        public string PreAllSubject;
+        public string Detached;
+        public string DetachedPer;
+        public string DetachedPerEqp;
+        public string DetachedPerEscort, NameInHindi, UserID;
+
+        public string Img, Passbook;
+        public string ImgTC, Cheque;
+
+        public string ImgPath, PassbookPath;
+        public string ImgTCPath, ChequePath;
+
+        public long SamagraID;
+        public long FamilySamagraID;
+        public long Aadhar;
+        
 
 
     }

@@ -52,7 +52,7 @@
                             <ul class="nav navbar-nav navbar-right">
                                 <li class="dropdown">
 
-                                    <span style="font-weight: bold; color: #B65838;"><span id="lblUser" runat="server"></span></span><%--<b class="caret"></b></a>--%>
+                                    <span style="font-weight: bold; color: #B65838;"><span id="lblUser" runat="server" style="display:none;"></span></span><%--<b class="caret"></b></a>--%>
 
 
                                 </li>

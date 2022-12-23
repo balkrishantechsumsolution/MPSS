@@ -467,6 +467,25 @@
         }
     </style>
     <script src="../../../Scripts/jquery-2.2.3.min.js"></script>
+    <script language="javascript">
+        var counter = 0;
+        var images = ["images/w1 (2).png", "images/909088DSC_2130.jpg", "images/maharshi-patanjali-sanskrit-sansthan-10.jpg"];
+      
+        function myTimerFunction() {
+            counter++;
+            if (counter > 2) {
+                counter = 0
+            }
+            target = document.getElementById("target").src = images[counter];
+            setTimeout(myTimerFunction, 2000) // 3sec
+
+        }
+
+        $(document).ready(function () {
+            myTimerFunction();
+            
+        });
+    </script>
     <script type='text/javascript'>
 
         function check() {
@@ -478,6 +497,22 @@
             return false;
         }
 
+        function ScholarFormLogin() {
+            var url = "/WebApp/Kiosk/MPSS/MPSSLogin.aspx";
+            window.location.href = url;
+            window.location.assign(url);
+            window.location = url;
+            window.location.replace = url;
+            return false;
+        }
+        function AllPhotoShows() {
+            var url = "/WebApp/Kiosk/MPSS/AllPhotosWeb.aspx";
+            window.location.href = url;
+            window.location.assign(url);
+            window.location = url;
+            window.location.replace = url;
+            return false;
+        }
 
 
         //function check() {
@@ -548,7 +583,7 @@
                         <img src="assets/images/header/download.jpg" class="chipguste">
                     </div>
                     <div class="col-md-4">
-                        <img src="assets/images/header/chairman.jpg" class="chipguste">
+                        <img src="assets/images/header/chairman1.jpg" class="chipguste">
                     </div>
                 </div>
             </div>
@@ -678,7 +713,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href=""> चित्रदीर्घा </a></li>
+                            <li><a href="" onclick='return AllPhotoShows()' > चित्रदीर्घा </a></li>
                             <li><a href="">परिपत्र / आदेश </a></li>
                             <!--  <li><a href="">पंचांग</a></li> -->
                             <li class="dropdown-submenu">
@@ -705,7 +740,7 @@
                                 </ul>
                             </li>
                             </li>
-                            <li><a href="">टुटोरिअल</a></li>
+                            <li><a href=""  onclick='return ScholarFormLogin()' >पंजीकरण/स्कॉलरशिप फॉर्म</a></li>
                             <li class="dropdown-submenu">
                                 <a class="test" tabindex="-1" href="#">संपर्क<span class="caret"></span></a>
                                 <ul>
@@ -729,19 +764,20 @@
     <div class="edu2_main_bn_wrap">
         <div id="owl-demo-main" class="owl-carousel owl-theme">
             <div class="item">
-                <figure>
-                    <img src="assets/extra-images/slider1.jpg" alt="" />
-                </figure>
-            </div>
-            <div class="item">
-                <figure>
-                    <img src="assets/extra-images/slider2.jpg" alt="" />
-                </figure>
-            </div>
-            <div class="item">
-                <figure>
-                    <img src="assets/extra-images/slider3.jpg" alt="" />
-                </figure>
+                <!--<figure>
+            <img src="images/w1 (2).png" alt="" style="height: 450px"/>
+        </figure>
+    </div>
+    <div class="item">
+        <figure>
+            <img src="images/909088DSC_2130.jpg"alt="" style="height: 450px"/>
+        </figure>
+    </div>
+    <div class="item">
+        <figure>
+            <img src="images/maharshi-patanjali-sanskrit-sansthan-10.jpg" alt="" style="height:450px" />
+        </figure>-->
+                <img id="target" alt=""  style="height:450px; width:1400px!important" />
             </div>
         </div>
     </div>
@@ -2270,29 +2306,29 @@
             },
         }
         window.onload = function () {
-            var countySel = document.getElementById("countySel"),
-                stateSel = document.getElementById("stateSel"),
-                districtSel = document.getElementById("districtSel");
-            for (var country in stateObject) {
-                countySel.options[countySel.options.length] = new Option(country, country);
-            }
-            countySel.onchange = function () {
-                stateSel.length = 1; // remove all options bar first
-                districtSel.length = 1; // remove all options bar first
-                if (this.selectedIndex < 1) return; // done
-                for (var state in stateObject[this.value]) {
-                    stateSel.options[stateSel.options.length] = new Option(state, state);
-                }
-            }
-            countySel.onchange(); // reset in case page is reloaded
-            stateSel.onchange = function () {
-                districtSel.length = 1; // remove all options bar first
-                if (this.selectedIndex < 1) return; // done
-                var district = stateObject[countySel.value][this.value];
-                for (var i = 0; i < district.length; i++) {
-                    districtSel.options[districtSel.options.length] = new Option(district[i], district[i]);
-                }
-            }
+            //var countySel = document.getElementById("countySel"),
+            //    stateSel = document.getElementById("stateSel"),
+            //    districtSel = document.getElementById("districtSel");
+            //for (var country in stateObject) {
+            //    countySel.options[countySel.options.length] = new Option(country, country);
+            //}
+            //countySel.onchange = function () {
+            //    stateSel.length = 1; // remove all options bar first
+            //    districtSel.length = 1; // remove all options bar first
+            //    if (this.selectedIndex < 1) return; // done
+            //    for (var state in stateObject[this.value]) {
+            //        stateSel.options[stateSel.options.length] = new Option(state, state);
+            //    }
+            //}
+            //countySel.onchange(); // reset in case page is reloaded
+            //stateSel.onchange = function () {
+            //    districtSel.length = 1; // remove all options bar first
+            //    if (this.selectedIndex < 1) return; // done
+            //    var district = stateObject[countySel.value][this.value];
+            //    for (var i = 0; i < district.length; i++) {
+            //        districtSel.options[districtSel.options.length] = new Option(district[i], district[i]);
+            //    }
+            //}
         }
     </script>
     <script>

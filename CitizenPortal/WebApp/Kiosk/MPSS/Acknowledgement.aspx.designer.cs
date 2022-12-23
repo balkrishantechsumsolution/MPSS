@@ -96,6 +96,78 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
         protected global::System.Web.UI.WebControls.Label lblRollNo;
 
         /// <summary>
+        /// divENT control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divENT;
+
+        /// <summary>
+        /// txtAadharNo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label txtAadharNo;
+
+        /// <summary>
+        /// txtFamilyID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label txtFamilyID;
+
+        /// <summary>
+        /// txtSamagraID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label txtSamagraID;
+
+        /// <summary>
+        /// SamagraNo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label SamagraNo;
+
+        /// <summary>
+        /// txtAppID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label txtAppID;
+
+        /// <summary>
+        /// Label2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label2;
+
+        /// <summary>
+        /// txtCardHolder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label txtCardHolder;
+
+        /// <summary>
         /// lblCourse control.
         /// </summary>
         /// <remarks>
@@ -132,13 +204,13 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
         protected global::System.Web.UI.HtmlControls.HtmlImage ProfilePhoto;
 
         /// <summary>
-        /// ProfileSignature control.
+        /// ProfileTC control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlImage ProfileSignature;
+        protected global::System.Web.UI.HtmlControls.HtmlImage ProfileTC;
 
         /// <summary>
         /// FullName control.
@@ -348,6 +420,60 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
         protected global::System.Web.UI.WebControls.Label lblDTERollNo;
 
         /// <summary>
+        /// lblDiceCode control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDiceCode;
+
+        /// <summary>
+        /// lblAffiliationCode control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblAffiliationCode;
+
+        /// <summary>
+        /// lblSchoolName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSchoolName;
+
+        /// <summary>
+        /// lblNative control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNative;
+
+        /// <summary>
+        /// lblPassExam control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPassExam;
+
+        /// <summary>
+        /// Label5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label5;
+
+        /// <summary>
         /// Label1 control.
         /// </summary>
         /// <remarks>
@@ -501,24 +627,6 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
         protected global::System.Web.UI.WebControls.Label PLocality;
 
         /// <summary>
-        /// PddlVillage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label PddlVillage;
-
-        /// <summary>
-        /// PBlock control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label PBlock;
-
-        /// <summary>
         /// PddlDistrict control.
         /// </summary>
         /// <remarks>
@@ -598,24 +706,6 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label CLocality;
-
-        /// <summary>
-        /// CddlVillage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label CddlVillage;
-
-        /// <summary>
-        /// CBlock control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label CBlock;
 
         /// <summary>
         /// CddlDistrict control.

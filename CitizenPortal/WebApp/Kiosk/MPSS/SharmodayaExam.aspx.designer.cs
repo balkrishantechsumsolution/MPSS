@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CitizenPortal.WebApp.Kiosk.MPSOS {
-    
-    
-    public partial class SharmodayaExam {
-        
+namespace CitizenPortal.WebApp.Kiosk.MPSOS
+{
+
+
+    public partial class SharmodayaExam
+    {
+
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
         /// ValidationSummary1 control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
-        
+
         /// <summary>
         /// divSearch control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divSearch;
-        
+
         /// <summary>
         /// txtRegNo control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtRegNo;
-        
+
         /// <summary>
         /// RequiredFieldValidator22 control.
         /// </summary>
@@ -56,7 +58,25 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator22;
-        
+
+        /// <summary>
+        /// txtCaptcha control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCaptcha;
+
+        /// <summary>
+        /// lblCaptcha control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCaptcha;
+
         /// <summary>
         /// btnShow control.
         /// </summary>
@@ -65,7 +85,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnShow;
-        
+
         /// <summary>
         /// txtSamagraNo control.
         /// </summary>
@@ -74,7 +94,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtSamagraNo;
-        
+
         /// <summary>
         /// txtSamagraMemberID control.
         /// </summary>
@@ -83,7 +103,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtSamagraMemberID;
-        
+
         /// <summary>
         /// UniqueID control.
         /// </summary>
@@ -92,7 +112,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox UniqueID;
-        
+
         /// <summary>
         /// CardHolder control.
         /// </summary>
@@ -101,7 +121,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox CardHolder;
-        
+
         /// <summary>
         /// pnlPhoto control.
         /// </summary>
@@ -110,7 +130,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel pnlPhoto;
-        
+
         /// <summary>
         /// myImg control.
         /// </summary>
@@ -119,7 +139,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image myImg;
-        
+
         /// <summary>
         /// File1 control.
         /// </summary>
@@ -128,7 +148,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputFile File1;
-        
+
         /// <summary>
         /// btnPhoto control.
         /// </summary>
@@ -137,7 +157,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnPhoto;
-        
+
         /// <summary>
         /// frmConfirmationPhoto control.
         /// </summary>
@@ -146,7 +166,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel frmConfirmationPhoto;
-        
+
         /// <summary>
         /// lblUploadResultPhoto control.
         /// </summary>
@@ -155,7 +175,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblUploadResultPhoto;
-        
+
         /// <summary>
         /// pnlDetails control.
         /// </summary>
@@ -164,7 +184,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel pnlDetails;
-        
+
         /// <summary>
         /// divSTUDENT control.
         /// </summary>
@@ -173,7 +193,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divSTUDENT;
-        
+
         /// <summary>
         /// ddlClass control.
         /// </summary>
@@ -182,7 +202,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlClass;
-        
+
         /// <summary>
         /// ddlSchoolDistrict control.
         /// </summary>
@@ -191,7 +211,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlSchoolDistrict;
-        
+
         /// <summary>
         /// RequiredFieldValidator5 control.
         /// </summary>
@@ -200,7 +220,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
-        
+
         /// <summary>
         /// ddlSchool control.
         /// </summary>
@@ -209,7 +229,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlSchool;
-        
+
         /// <summary>
         /// RequiredFieldValidator21 control.
         /// </summary>
@@ -218,7 +238,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator21;
-        
+
         /// <summary>
         /// txtFullName control.
         /// </summary>
@@ -227,7 +247,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtFullName;
-        
+
         /// <summary>
         /// RequiredFieldValidator19 control.
         /// </summary>
@@ -236,7 +256,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator19;
-        
+
         /// <summary>
         /// txtFatherName control.
         /// </summary>
@@ -245,7 +265,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtFatherName;
-        
+
         /// <summary>
         /// RequiredFieldValidator2 control.
         /// </summary>
@@ -254,7 +274,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
-        
+
         /// <summary>
         /// txtMotherName control.
         /// </summary>
@@ -263,7 +283,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtMotherName;
-        
+
         /// <summary>
         /// RequiredFieldValidator3 control.
         /// </summary>
@@ -272,7 +292,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
-        
+
         /// <summary>
         /// txtMobie control.
         /// </summary>
@@ -281,7 +301,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtMobie;
-        
+
         /// <summary>
         /// RequiredFieldValidator13 control.
         /// </summary>
@@ -290,7 +310,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator13;
-        
+
         /// <summary>
         /// txtBirthdate control.
         /// </summary>
@@ -299,7 +319,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtBirthdate;
-        
+
         /// <summary>
         /// RequiredFieldValidator4 control.
         /// </summary>
@@ -308,7 +328,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
-        
+
         /// <summary>
         /// ddlGender control.
         /// </summary>
@@ -317,7 +337,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlGender;
-        
+
         /// <summary>
         /// RequiredFieldValidator17 control.
         /// </summary>
@@ -326,7 +346,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator17;
-        
+
         /// <summary>
         /// ddlCaste control.
         /// </summary>
@@ -335,7 +355,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlCaste;
-        
+
         /// <summary>
         /// RequiredFieldValidator1 control.
         /// </summary>
@@ -344,7 +364,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
-        
+
         /// <summary>
         /// ddlDisAbility control.
         /// </summary>
@@ -353,7 +373,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlDisAbility;
-        
+
         /// <summary>
         /// rfv control.
         /// </summary>
@@ -362,7 +382,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfv;
-        
+
         /// <summary>
         /// ddlDisAbilityType control.
         /// </summary>
@@ -371,7 +391,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlDisAbilityType;
-        
+
         /// <summary>
         /// txtDisAbilityNo control.
         /// </summary>
@@ -380,7 +400,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDisAbilityNo;
-        
+
         /// <summary>
         /// RequiredFieldValidator16 control.
         /// </summary>
@@ -389,7 +409,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator16;
-        
+
         /// <summary>
         /// RadioButton1 control.
         /// </summary>
@@ -398,7 +418,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButton RadioButton1;
-        
+
         /// <summary>
         /// RadioButton2 control.
         /// </summary>
@@ -407,7 +427,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButton RadioButton2;
-        
+
         /// <summary>
         /// rbnNative1 control.
         /// </summary>
@@ -416,7 +436,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButton rbnNative1;
-        
+
         /// <summary>
         /// rbnNative2 control.
         /// </summary>
@@ -425,7 +445,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButton rbnNative2;
-        
+
         /// <summary>
         /// div2 control.
         /// </summary>
@@ -434,7 +454,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl div2;
-        
+
         /// <summary>
         /// txtHouse control.
         /// </summary>
@@ -443,7 +463,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtHouse;
-        
+
         /// <summary>
         /// RequiredFieldValidator6 control.
         /// </summary>
@@ -452,7 +472,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator6;
-        
+
         /// <summary>
         /// txtColony control.
         /// </summary>
@@ -461,7 +481,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtColony;
-        
+
         /// <summary>
         /// RequiredFieldValidator7 control.
         /// </summary>
@@ -470,7 +490,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator7;
-        
+
         /// <summary>
         /// txtCity control.
         /// </summary>
@@ -479,7 +499,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCity;
-        
+
         /// <summary>
         /// RequiredFieldValidator8 control.
         /// </summary>
@@ -488,7 +508,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator8;
-        
+
         /// <summary>
         /// txtBlock control.
         /// </summary>
@@ -497,7 +517,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtBlock;
-        
+
         /// <summary>
         /// RequiredFieldValidator9 control.
         /// </summary>
@@ -506,7 +526,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator9;
-        
+
         /// <summary>
         /// ddlAddDistrict control.
         /// </summary>
@@ -515,7 +535,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlAddDistrict;
-        
+
         /// <summary>
         /// RequiredFieldValidator10 control.
         /// </summary>
@@ -524,7 +544,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator10;
-        
+
         /// <summary>
         /// txtPinCode control.
         /// </summary>
@@ -533,7 +553,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPinCode;
-        
+
         /// <summary>
         /// RequiredFieldValidator11 control.
         /// </summary>
@@ -542,7 +562,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator11;
-        
+
         /// <summary>
         /// div4 control.
         /// </summary>
@@ -551,7 +571,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl div4;
-        
+
         /// <summary>
         /// ddlRegDistrict control.
         /// </summary>
@@ -560,7 +580,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlRegDistrict;
-        
+
         /// <summary>
         /// RequiredFieldValidator14 control.
         /// </summary>
@@ -569,7 +589,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator14;
-        
+
         /// <summary>
         /// txtCertIssueDate control.
         /// </summary>
@@ -578,7 +598,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCertIssueDate;
-        
+
         /// <summary>
         /// txtCastCertNo control.
         /// </summary>
@@ -587,7 +607,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCastCertNo;
-        
+
         /// <summary>
         /// div3 control.
         /// </summary>
@@ -596,7 +616,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl div3;
-        
+
         /// <summary>
         /// txtPreviousSchoolName control.
         /// </summary>
@@ -605,7 +625,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPreviousSchoolName;
-        
+
         /// <summary>
         /// RequiredFieldValidator20 control.
         /// </summary>
@@ -614,7 +634,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator20;
-        
+
         /// <summary>
         /// ddlSchoolType control.
         /// </summary>
@@ -623,7 +643,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlSchoolType;
-        
+
         /// <summary>
         /// ddlPreviousSchoolDistrict control.
         /// </summary>
@@ -632,7 +652,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlPreviousSchoolDistrict;
-        
+
         /// <summary>
         /// ddlSchoolVikaskhand control.
         /// </summary>
@@ -641,7 +661,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlSchoolVikaskhand;
-        
+
         /// <summary>
         /// ddlScClass control.
         /// </summary>
@@ -650,7 +670,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlScClass;
-        
+
         /// <summary>
         /// ddlPassYear control.
         /// </summary>
@@ -659,7 +679,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddlPassYear;
-        
+
         /// <summary>
         /// txtMarksObtain control.
         /// </summary>
@@ -668,7 +688,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtMarksObtain;
-        
+
         /// <summary>
         /// RequiredFieldValidator15 control.
         /// </summary>
@@ -677,7 +697,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator15;
-        
+
         /// <summary>
         /// txtTotalMarks control.
         /// </summary>
@@ -686,7 +706,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtTotalMarks;
-        
+
         /// <summary>
         /// RequiredFieldValidator18 control.
         /// </summary>
@@ -695,7 +715,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator18;
-        
+
         /// <summary>
         /// txtMarksPercentage control.
         /// </summary>
@@ -704,7 +724,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtMarksPercentage;
-        
+
         /// <summary>
         /// txtGrade control.
         /// </summary>
@@ -713,7 +733,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtGrade;
-        
+
         /// <summary>
         /// div5 control.
         /// </summary>
@@ -722,7 +742,16 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl div5;
-        
+
+        /// <summary>
+        /// tdMarksheet control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow tdMarksheet;
+
         /// <summary>
         /// File5MSh control.
         /// </summary>
@@ -731,7 +760,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputFile File5MSh;
-        
+
         /// <summary>
         /// Button5MSh control.
         /// </summary>
@@ -740,7 +769,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button5MSh;
-        
+
         /// <summary>
         /// Panel5MSh control.
         /// </summary>
@@ -749,7 +778,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel Panel5MSh;
-        
+
         /// <summary>
         /// Label5MSh control.
         /// </summary>
@@ -758,7 +787,16 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label5MSh;
-        
+
+        /// <summary>
+        /// tdDisAbility control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow tdDisAbility;
+
         /// <summary>
         /// FileDisAbility control.
         /// </summary>
@@ -767,7 +805,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputFile FileDisAbility;
-        
+
         /// <summary>
         /// ButtonDisAbility control.
         /// </summary>
@@ -776,7 +814,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ButtonDisAbility;
-        
+
         /// <summary>
         /// PanelDisAbility control.
         /// </summary>
@@ -785,7 +823,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel PanelDisAbility;
-        
+
         /// <summary>
         /// LabelDisAbility control.
         /// </summary>
@@ -794,7 +832,16 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelDisAbility;
-        
+
+        /// <summary>
+        /// tdCaste control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow tdCaste;
+
         /// <summary>
         /// FileCaste control.
         /// </summary>
@@ -803,7 +850,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputFile FileCaste;
-        
+
         /// <summary>
         /// ButtonCaste control.
         /// </summary>
@@ -812,7 +859,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ButtonCaste;
-        
+
         /// <summary>
         /// PanelCaste control.
         /// </summary>
@@ -821,7 +868,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel PanelCaste;
-        
+
         /// <summary>
         /// LabelCaste control.
         /// </summary>
@@ -830,7 +877,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelCaste;
-        
+
         /// <summary>
         /// FileNativeCert control.
         /// </summary>
@@ -839,7 +886,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputFile FileNativeCert;
-        
+
         /// <summary>
         /// ButtonNativeCert control.
         /// </summary>
@@ -848,7 +895,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ButtonNativeCert;
-        
+
         /// <summary>
         /// PanelNativeCert control.
         /// </summary>
@@ -857,7 +904,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel PanelNativeCert;
-        
+
         /// <summary>
         /// LabelNativeCert control.
         /// </summary>
@@ -866,7 +913,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelNativeCert;
-        
+
         /// <summary>
         /// div6 control.
         /// </summary>
@@ -875,7 +922,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl div6;
-        
+
         /// <summary>
         /// chkDecl control.
         /// </summary>
@@ -884,7 +931,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox chkDecl;
-        
+
         /// <summary>
         /// btnHome control.
         /// </summary>
@@ -893,7 +940,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnHome;
-        
+
         /// <summary>
         /// btnCancel control.
         /// </summary>
@@ -902,7 +949,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnCancel;
-        
+
         /// <summary>
         /// btnSubMain control.
         /// </summary>
@@ -911,7 +958,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSubMain;
-        
+
         /// <summary>
         /// hdnImage control.
         /// </summary>
@@ -920,7 +967,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnImage;
-        
+
         /// <summary>
         /// hdnFile5MSh control.
         /// </summary>
@@ -929,7 +976,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnFile5MSh;
-        
+
         /// <summary>
         /// hdnFileDisAbility control.
         /// </summary>
@@ -938,7 +985,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnFileDisAbility;
-        
+
         /// <summary>
         /// hdnFileCaste control.
         /// </summary>
@@ -947,7 +994,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnFileCaste;
-        
+
         /// <summary>
         /// hdnFileNativeCert control.
         /// </summary>
@@ -956,7 +1003,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnFileNativeCert;
-        
+
         /// <summary>
         /// hdnImageName control.
         /// </summary>
@@ -965,7 +1012,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnImageName;
-        
+
         /// <summary>
         /// hdnFile5MShName control.
         /// </summary>
@@ -974,7 +1021,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnFile5MShName;
-        
+
         /// <summary>
         /// hdnFileDisAbilityName control.
         /// </summary>
@@ -983,7 +1030,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnFileDisAbilityName;
-        
+
         /// <summary>
         /// hdnFileCasteName control.
         /// </summary>
@@ -992,7 +1039,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnFileCasteName;
-        
+
         /// <summary>
         /// hdnFileNativeCertName control.
         /// </summary>
@@ -1001,7 +1048,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnFileNativeCertName;
-        
+
         /// <summary>
         /// hdnClass control.
         /// </summary>
@@ -1010,7 +1057,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnClass;
-        
+
         /// <summary>
         /// hdnBirthDate control.
         /// </summary>
@@ -1019,7 +1066,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnBirthDate;
-        
+
         /// <summary>
         /// hdnSamagraFamilyID control.
         /// </summary>
@@ -1028,7 +1075,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnSamagraFamilyID;
-        
+
         /// <summary>
         /// hdnSamagraMemberID control.
         /// </summary>
@@ -1037,7 +1084,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnSamagraMemberID;
-        
+
         /// <summary>
         /// hdnCardHolderName control.
         /// </summary>
@@ -1046,7 +1093,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HiddenField hdnCardHolderName;
-        
+
         /// <summary>
         /// hdnUniqueCode control.
         /// </summary>

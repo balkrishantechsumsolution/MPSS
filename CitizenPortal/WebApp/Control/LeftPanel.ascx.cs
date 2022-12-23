@@ -89,7 +89,7 @@ namespace CitizenPortal.WebApp.Control
                         pnlMenu.Controls.Add(new LiteralControl("</div>"));
                         pnlMenu.Controls.Add(new LiteralControl("</li>"));
                         pnlMenu.Controls.Add(new LiteralControl("<li>"));
-                        pnlMenu.Controls.Add(new LiteralControl("<a href='"+Session["HomePage"].ToString()+"'?UID=" + dtApp.Rows[0]["OriginalProfileID"].ToString() + "'><i class='fa fa-dashboard fa-fw'></i> Dashboard</a>"));
+                        pnlMenu.Controls.Add(new LiteralControl("<a href='" + Session["HomePage"].ToString() + "'?UID=" + dtApp.Rows[0]["OriginalProfileID"].ToString() + "'><i class='fa fa-dashboard fa-fw'></i> Dashboard</a>"));
                         pnlMenu.Controls.Add(new LiteralControl("</li>"));
                         //pnlMenu.Controls.Add(new LiteralControl("<li id='lpProfile'>"));
                         //pnlMenu.Controls.Add(new LiteralControl("<a href='#'><i class='fa fa-bar-chart-o fa-fw'></i> Profile<span class='fa arrow'></span></a>"));
@@ -104,7 +104,7 @@ namespace CitizenPortal.WebApp.Control
                         //pnlMenu.Controls.Add(new LiteralControl("</li>"));
                         pnlMenu.Controls.Add(new LiteralControl("<li>"));
                         pnlMenu.Controls.Add(new LiteralControl("<a href = '/Default.aspx'><i class='fa fa-sign-out'></i> Logout</a>"));
-                        pnlMenu.Controls.Add(new LiteralControl("</li>"));                        
+                        pnlMenu.Controls.Add(new LiteralControl("</li>"));
                     }
 
 
@@ -125,31 +125,31 @@ namespace CitizenPortal.WebApp.Control
                     if (dtApp.Rows.Count != 0)
                     {
 
-/*
-                        pnlMenu.Controls.Add(new LiteralControl("<li>"));
-                        pnlMenu.Controls.Add(new LiteralControl("<a href='/WebApp/G2G/G2GDashBoard.aspx'><i class='fa fa-dashboard fa-fw'></i> Dashboard</a>")); pnlMenu.Controls.Add(new LiteralControl("</li>"));
-                        pnlMenu.Controls.Add(new LiteralControl("<li id='lpProfile'>"));
-                        pnlMenu.Controls.Add(new LiteralControl("<a href='#'><i class='fa fa-bar-chart-o fa-fw'></i> Profile<span class='fa arrow'></span></a>"));
-                        pnlMenu.Controls.Add(new LiteralControl("<ul class='nav nav-second-level'>"));
+                        /*
+                                                pnlMenu.Controls.Add(new LiteralControl("<li>"));
+                                                pnlMenu.Controls.Add(new LiteralControl("<a href='/WebApp/G2G/G2GDashBoard.aspx'><i class='fa fa-dashboard fa-fw'></i> Dashboard</a>")); pnlMenu.Controls.Add(new LiteralControl("</li>"));
+                                                pnlMenu.Controls.Add(new LiteralControl("<li id='lpProfile'>"));
+                                                pnlMenu.Controls.Add(new LiteralControl("<a href='#'><i class='fa fa-bar-chart-o fa-fw'></i> Profile<span class='fa arrow'></span></a>"));
+                                                pnlMenu.Controls.Add(new LiteralControl("<ul class='nav nav-second-level'>"));
 
-                        pnlMenu.Controls.Add(new LiteralControl("<li>"));
-                        pnlMenu.Controls.Add(new LiteralControl("<a id='lpEditProfile'  href ='/WebApp/G2G/DeptProfile.aspx' ><i class='fa fa-edit fa-fw'></i> Edit Profile </ a > "));
-                        pnlMenu.Controls.Add(new LiteralControl("</li>"));
+                                                pnlMenu.Controls.Add(new LiteralControl("<li>"));
+                                                pnlMenu.Controls.Add(new LiteralControl("<a id='lpEditProfile'  href ='/WebApp/G2G/DeptProfile.aspx' ><i class='fa fa-edit fa-fw'></i> Edit Profile </ a > "));
+                                                pnlMenu.Controls.Add(new LiteralControl("</li>"));
 
-                        pnlMenu.Controls.Add(new LiteralControl("<li>"));
-                        pnlMenu.Controls.Add(new LiteralControl("<a id='lpChangePassword'  href ='/WebApp/G2G/ChangePassword.aspx' ><i class='fa fa-eye fa-fw'></i> Change Password </ a > "));
-                        pnlMenu.Controls.Add(new LiteralControl("</li>"));
+                                                pnlMenu.Controls.Add(new LiteralControl("<li>"));
+                                                pnlMenu.Controls.Add(new LiteralControl("<a id='lpChangePassword'  href ='/WebApp/G2G/ChangePassword.aspx' ><i class='fa fa-eye fa-fw'></i> Change Password </ a > "));
+                                                pnlMenu.Controls.Add(new LiteralControl("</li>"));
 
-                        pnlMenu.Controls.Add(new LiteralControl("</ul>"));
-                        pnlMenu.Controls.Add(new LiteralControl("</li>"));
+                                                pnlMenu.Controls.Add(new LiteralControl("</ul>"));
+                                                pnlMenu.Controls.Add(new LiteralControl("</li>"));
 
-                        pnlMenu.Controls.Add(new LiteralControl("<li>"));
-                        pnlMenu.Controls.Add(new LiteralControl("<a href = '/Account/LogOff'> Logout</a>"));
-                        pnlMenu.Controls.Add(new LiteralControl("</li>"));
-                   */
+                                                pnlMenu.Controls.Add(new LiteralControl("<li>"));
+                                                pnlMenu.Controls.Add(new LiteralControl("<a href = '/Account/LogOff'> Logout</a>"));
+                                                pnlMenu.Controls.Add(new LiteralControl("</li>"));
+                                           */
                     }
 
-                    
+
 
                     pnlMenu.Controls.Add(new LiteralControl("<li class='pleft0 pright0'>"));
                     pnlMenu.Controls.Add(new LiteralControl("<div class='profile_bg'>"));
@@ -178,12 +178,12 @@ namespace CitizenPortal.WebApp.Control
                     pnlMenu.Controls.Add(new LiteralControl("</li>"));
 
 
-                    pnlMenu.Controls.Add(new LiteralControl("<li>"));
-                    pnlMenu.Controls.Add(new LiteralControl("<a id='lpNewRegistration'  href ='/WebApp/Kiosk/MPSS/NewRegistration.aspx' ><i class='fa fa-edit fa-fw'></i> New Registration of Student </ a > "));
-                    pnlMenu.Controls.Add(new LiteralControl("</li>"));
+                    //pnlMenu.Controls.Add(new LiteralControl("<li>"));
+                    //pnlMenu.Controls.Add(new LiteralControl("<a id='lpNewRegistration'  href ='/WebApp/Kiosk/MPSS/NewRegistration.aspx' ><i class='fa fa-edit fa-fw'></i> New Registration of Student </ a > "));
+                    //pnlMenu.Controls.Add(new LiteralControl("</li>"));
 
                     pnlMenu.Controls.Add(new LiteralControl("<li>"));
-                    pnlMenu.Controls.Add(new LiteralControl("<a id='lpScholarShip'  href ='/WebApp/Kiosk/MPSS/ScholarShip.aspx' ><i class='fa fa-edit fa-fw'></i> ScholarShip </ a > "));
+                    pnlMenu.Controls.Add(new LiteralControl("<a id='lpScholarShip'  href ='/WebApp/Kiosk/MPSS/ScholarShip.aspx' ><i class='fa fa-edit fa-fw'></i> Registration/Scholar Ship </ a > "));
                     pnlMenu.Controls.Add(new LiteralControl("</li>"));
 
                     pnlMenu.Controls.Add(new LiteralControl("<li>"));
@@ -199,7 +199,7 @@ namespace CitizenPortal.WebApp.Control
                     pnlMenu.Controls.Add(new LiteralControl("<a href = '/Account/LogOff'><i class='fa fa-lock fa-fw'></i> Logout</a>"));
                     pnlMenu.Controls.Add(new LiteralControl("</li>"));
 
-                    
+
 
                 }
                 else if (sessionUserType.ToUpper() == "KIOSK")
@@ -241,7 +241,7 @@ namespace CitizenPortal.WebApp.Control
                         pnlMenu.Controls.Add(new LiteralControl("<p><i class='fa fa-user'></i> <span class='fntsize13' id='lblUser' runat ='server'> " + Session["LoginID"].ToString() + "</span></p>"));
                         pnlMenu.Controls.Add(new LiteralControl("</div>"));
                         pnlMenu.Controls.Add(new LiteralControl("</li>"));
-                        
+
                         //pnlMenu.Attributes.Add("style","display:none");
 
                     }

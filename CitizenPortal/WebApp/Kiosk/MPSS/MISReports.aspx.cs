@@ -183,6 +183,9 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
             Response.End();
         }
 
-        
+        protected void btnHome_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/WebApp/Kiosk/MPSS/MPSOSPage.aspx");
+        }
     }
 }

@@ -397,7 +397,7 @@
     <value>चुनें गए विद्यालय एवं कक्षा का विवरण</value>
   </data>
   <data name="lblScName" xml:space="preserve">
-    <value>स्कॉलरशिप फॉर्म </value>
+    <value>पंजीकरण/स्कॉलरशिप फॉर्म </value>
   </data>
   <data name="lblScSIsFreeEscortDis" xml:space="preserve">
     <value>विकलांगता की स्थिति में विद्यार्थी को निशुल्क अनुरक्षण सुविधा दी जा रही है।</value>
@@ -409,7 +409,7 @@
     <value>बैंक खाता नं.</value>
   </data>
   <data name="lblScStBankInfo" xml:space="preserve">
-    <value>बैंक का विवरण</value>
+    <value>छात्र/अभिभावकों का बैंक विवरण</value>
   </data>
   <data name="lblScStCaste" xml:space="preserve">
     <value>जाति</value>
@@ -439,7 +439,7 @@
     <value>वर्तमान विद्यालय में प्रवेश की तिथि</value>
   </data>
   <data name="lblScStDigitalCasteNo" xml:space="preserve">
-    <value>डिजिटल जाति सेटिफिकेट नंबर </value>
+    <value>डिजिटल जाति प्रमाण पत्र संख्या (लोक सेवा केंद्र द्वारा प्रदाय)</value>
   </data>
   <data name="lblScStDisability" xml:space="preserve">
     <value>विकलांगता का प्रकार</value>
@@ -490,10 +490,10 @@
     <value>परिवार बी. पी. एल. कार्डधारक?</value>
   </data>
   <data name="lblScStIsFreeTextbooks" xml:space="preserve">
-    <value>मुफ्त पाठ्यपुस्तकों का एक पूरा सेट प्राप्त करें?</value>
+    <value>नि: शुल्क पाठ्यपुस्तकों का एक पूरा सेट प्राप्त करें?</value>
   </data>
   <data name="lblScStIsFreeTransport" xml:space="preserve">
-    <value>मुफ्त परिवहन सुविधा लेना</value>
+    <value>नि: शुल्क परिवहन सुविधा लेना</value>
   </data>
   <data name="lblScStIshomeless" xml:space="preserve">
     <value>क्या विद्यार्थी बेघर है</value>
@@ -659,5 +659,80 @@
   </data>
   <data name="lblScStInformation" xml:space="preserve">
     <value>अन्य विवरण</value>
+  </data>
+  <data name="lblFamilySamagra" xml:space="preserve">
+    <value>परिवार समग्र संख्या</value>
+  </data>
+  <data name="lblSchoolBankInfo" xml:space="preserve">
+    <value>स्कूल बैंक विवरण</value>
+  </data>
+  <data name="lblAllSub" xml:space="preserve">
+    <value>वर्तमान सभी विषय</value>
+  </data>
+  <data name="lblBankName" xml:space="preserve">
+    <value>बैंक का नाम</value>
+  </data>
+  <data name="lblDetached" xml:space="preserve">
+    <value>निःशक्त </value>
+  </data>
+  <data name="lblDetachedPercentage" xml:space="preserve">
+    <value>निःशक्त प्रतिशत</value>
+  </data>
+  <data name="lblDetachedPercentageEqp" xml:space="preserve">
+    <value>निःशक्त  छात्र उपकरण प्रदान करते हैं</value>
+  </data>
+  <data name="lblDetachedPercentageEscort" xml:space="preserve">
+    <value>निःशक्त छात्र शुल्क एस्कॉर्ट सुविधा</value>
+  </data>
+  <data name="lblDiceCode" xml:space="preserve">
+    <value>महर्षि पतंजलि संस्कृत संस्थान द्वारा जारी विद्यालय का डाइस कोड</value>
+  </data>
+  <data name="lblParentMobileNo" xml:space="preserve">
+    <value>मोबाइल नंबर</value>
+  </data>
+  <data name="lblPreAllSub" xml:space="preserve">
+    <value>पिछली कक्षा सभी विषय</value>
+  </data>
+  <data name="lblPreStudyClass" xml:space="preserve">
+    <value>पिछला अध्ययन कक्षा</value>
+  </data>
+  <data name="lblPrincipalBankAccActive" xml:space="preserve">
+    <value>प्राचार्य मोबाइल नं</value>
+  </data>
+  <data name="lblScBankAccActive" xml:space="preserve">
+    <value>स्कूल का नाम जिसमें खाता सक्रिय है</value>
+  </data>
+  <data name="lblStCurrSchCls" xml:space="preserve">
+    <value>वर्तमान अध्ययनरत स्कूल का नाम</value>
+  </data>
+  <data name="lblStudentLive" xml:space="preserve">
+    <value>उस इलाके का नाम जहां छात्र रहता है</value>
+  </data>
+  <data name="lblStudyClass" xml:space="preserve">
+    <value>वर्तमान अध्ययन कक्षा</value>
+  </data>
+  <data name="lblScStBankDetails" xml:space="preserve">
+    <value>बैंक विवरण</value>
+  </data>
+  <data name="lblScStNameHindi" xml:space="preserve">
+    <value>छात्र का नाम (हिंदी)</value>
+  </data>
+  <data name="lblDisavbiType" xml:space="preserve">
+    <value>यदि दिव्यांग हैं तो प्रकार</value>
+  </data>
+  <data name="lblSambathaCode" xml:space="preserve">
+    <value>महर्षि पतंजलि संस्कृत संस्थान द्वारा जारी विद्यालय का सम्बद्धता कोड</value>
+  </data>
+  <data name="lblStHostelName" xml:space="preserve">
+    <value>छात्रावास का नाम जिसमें छात्र रहता है</value>
+  </data>
+  <data name="lblAttach" xml:space="preserve">
+    <value>संलग्नक दस्तावेज़</value>
+  </data>
+  <data name="lblCheque" xml:space="preserve">
+    <value>रद्द किए गए चेक की प्रति</value>
+  </data>
+  <data name="lblPassbook" xml:space="preserve">
+    <value>पासबुक की प्रति</value>
   </data>
 </root>

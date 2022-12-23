@@ -212,12 +212,12 @@
                                         <span>Click to Fill Application</span>
                                     </div>
                                     <div style="min-height: 4.66em; z-index: -760; display:block;" class="SrvDiv" id="102">
-                                        <a href="LoginAdmin.aspx" onclick="javascript:return RedirectToService('LoginAdmin.aspx');">
+                                        <a href="ViewAcknowledgementMPBO.aspx" onclick="javascript:return RedirectToService('ViewAcknowledgementMPBO.aspx');">
                                             <img src="../Images/MPSOSLogo.jpg" alt="" align="left" style="height: 93px; margin-top: 5px;" />
-                                        </a><a href="LoginAdmin.aspx">Report of Filled Application</a>
+                                        </a><a href="ViewAcknowledgementMPBO.aspx">Acknowledgement of Filled Application</a>
                                         <br />
                                         <span style="font-size: 12px !important; font-weight: bold !important; color: black !important;">Click to Print Filled Application</span><br />
-                                        <span>Click to Print Report</span>
+                                        <span>Click to Print Acknowledgement</span>
                                     </div>
 
 

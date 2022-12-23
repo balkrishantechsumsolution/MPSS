@@ -1461,7 +1461,8 @@ function ValidateAlpha(evt) {
 //    }
 //}
 function AllowOnlyNumeric(e) {
-   
+    if (char == 8) return true;
+
     if (isNaN(e.key))
         return false; else return true;
 }

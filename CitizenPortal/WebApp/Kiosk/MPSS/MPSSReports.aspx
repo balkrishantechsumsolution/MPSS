@@ -60,9 +60,7 @@
 
                                     <asp:DropDownList ID="ddlReportType" runat="server" CssClass="form-control">
                                         <asp:ListItem Value="0">--Select--</asp:ListItem>
-                                        <asp:ListItem Value="1">ScholarShip</asp:ListItem>
-                                        <asp:ListItem Value="2">Student Enroll</asp:ListItem>
-
+                                        <asp:ListItem Value="1">ScholarShip?registration</asp:ListItem>
                                     </asp:DropDownList>
 
 

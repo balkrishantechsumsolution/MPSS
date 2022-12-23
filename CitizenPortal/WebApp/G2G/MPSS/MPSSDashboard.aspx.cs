@@ -224,9 +224,9 @@ namespace CitizenPortal.WebApp.G2G.MPSS
             {
                 if (DT.Rows[0]["IsProfileverified"].ToString() == "0")
                 {
-                    ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Message",
-                        "alert('" + DT.Rows[0]["Alertmag"].ToString() + "');window.location.href = '" + DT.Rows[0]["ReturnURL"].ToString() + "';", true);
-                    //Response.Redirect("/WebApp/G2G/DeptProfile.aspx");
+                    //ScriptManager.RegisterClientScriptBlock(this.Page, this.GetType(), "Message",
+                    //    "alert('" + DT.Rows[0]["Alertmag"].ToString() + "');window.location.href = '" + DT.Rows[0]["ReturnURL"].ToString() + "';", true);
+                    Response.Redirect("/WebApp/G2G/DeptProfile.aspx");
                 }
             }
         }

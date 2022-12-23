@@ -901,7 +901,7 @@ orders issued thereunder and agree to abide by them.</value>
     <value>Selected school and class details</value>
   </data>
   <data name="lblScName" xml:space="preserve">
-    <value>ScholarShip Form</value>
+    <value>Registration/ScholarShip Form</value>
   </data>
   <data name="lblScSIsFreeEscortDis" xml:space="preserve">
     <value>Free escort facility is being given to the student in case of disability.</value>
@@ -913,7 +913,7 @@ orders issued thereunder and agree to abide by them.</value>
     <value>Bank Account No.</value>
   </data>
   <data name="lblScStBankInfo" xml:space="preserve">
-    <value>Bank Information</value>
+    <value>Student/Parents Bank Details</value>
   </data>
   <data name="lblScStCaste" xml:space="preserve">
     <value>Caste</value>
@@ -943,7 +943,7 @@ orders issued thereunder and agree to abide by them.</value>
     <value>Date of admission in current school</value>
   </data>
   <data name="lblScStDigitalCasteNo" xml:space="preserve">
-    <value>Digital Caste Cetrtificate Number</value>
+    <value>Digital Caste Certificate Number(Lok Shewa Kendra Dwara Pradaya)</value>
   </data>
   <data name="lblScStDisability" xml:space="preserve">
     <value>Type of disability</value>
@@ -1163,5 +1163,80 @@ orders issued thereunder and agree to abide by them.</value>
   </data>
   <data name="lblScStInformation" xml:space="preserve">
     <value>Other Information</value>
+  </data>
+  <data name="lblFamilySamagra" xml:space="preserve">
+    <value>Family Samagra No</value>
+  </data>
+  <data name="lblSchoolBankInfo" xml:space="preserve">
+    <value>School Bank Details</value>
+  </data>
+  <data name="lblAllSub" xml:space="preserve">
+    <value>Current All Subject</value>
+  </data>
+  <data name="lblBankName" xml:space="preserve">
+    <value>Bank Name</value>
+  </data>
+  <data name="lblDetached" xml:space="preserve">
+    <value>Disabilities</value>
+  </data>
+  <data name="lblDetachedPercentage" xml:space="preserve">
+    <value>Disabilities Percentage</value>
+  </data>
+  <data name="lblDetachedPercentageEqp" xml:space="preserve">
+    <value>Students with disabilities provide equipment</value>
+  </data>
+  <data name="lblDetachedPercentageEscort" xml:space="preserve">
+    <value>Disabilities student Fee Escort Facility</value>
+  </data>
+  <data name="lblDiceCode" xml:space="preserve">
+    <value>Maharishi Patanjali Sanskrit Sansthan dwaraa jaari Vidyalay ka Dice Code</value>
+  </data>
+  <data name="lblParentMobileNo" xml:space="preserve">
+    <value>Mobile No</value>
+  </data>
+  <data name="lblPreAllSub" xml:space="preserve">
+    <value>Previous Class All Subject</value>
+  </data>
+  <data name="lblPreStudyClass" xml:space="preserve">
+    <value>Previous Study Class</value>
+  </data>
+  <data name="lblPrincipalBankAccActive" xml:space="preserve">
+    <value>Principal Mobile No</value>
+  </data>
+  <data name="lblScBankAccActive" xml:space="preserve">
+    <value>School Name in Which Account is Active</value>
+  </data>
+  <data name="lblStCurrSchCls" xml:space="preserve">
+    <value>Current Study School Name</value>
+  </data>
+  <data name="lblStudentLive" xml:space="preserve">
+    <value>Name of the locality in which the student resides</value>
+  </data>
+  <data name="lblStudyClass" xml:space="preserve">
+    <value>Current Study Class</value>
+  </data>
+  <data name="lblScStBankDetails" xml:space="preserve">
+    <value>Bank Information</value>
+  </data>
+  <data name="lblScStNameHindi" xml:space="preserve">
+    <value>Student Name (Hindi)</value>
+  </data>
+  <data name="lblDisavbiType" xml:space="preserve">
+    <value>If disabled, type</value>
+  </data>
+  <data name="lblSambathaCode" xml:space="preserve">
+    <value>Affiliation code of the school issued by Maharishi Patanjali Sanskrit Sansthan</value>
+  </data>
+  <data name="lblStHostelName" xml:space="preserve">
+    <value>Hostel Name in which student lives</value>
+  </data>
+  <data name="lblAttach" xml:space="preserve">
+    <value>Attachments doc</value>
+  </data>
+  <data name="lblCheque" xml:space="preserve">
+    <value>Copy of Cancelled Cheque</value>
+  </data>
+  <data name="lblPassbook" xml:space="preserve">
+    <value>Copy of Passbook</value>
   </data>
 </root>

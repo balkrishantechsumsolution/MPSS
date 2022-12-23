@@ -17,26 +17,26 @@
     <script src="/Sambalpur/js/ie-emulation-modes-warning.js" type="text/javascript"></script>
     <!-- IE10 viewport hack END for Surface/desktop Windows 8 bug -->
     <script src="../../WebApp/Scripts/DisableBackButton.js"></script>
-  
+
     <script src="/WebApp/Scripts/CommonScript.js?v=<%=CitizenPortal.Common.GlobalValues.JSVersion%>"></script>
     <script src="/WebApp/Scripts/ValidationScript.js?v=<%=CitizenPortal.Common.GlobalValues.JSVersion%>"></script>
     <script src="/WebApp/Login/js/jquery-1.12.3.js"></script>
-<script src="/Scripts/jquery-ui-1.11.4.min.js"></script>
-<script src="/Scripts/jquery.msgBox.js"></script>
+    <script src="/Scripts/jquery-ui-1.11.4.min.js"></script>
+    <script src="/Scripts/jquery.msgBox.js"></script>
 
-<%--<script src="bootstrap-datetimepicker.min.js"></script>--%>
-<link href="/PortalStyles/msgBoxLight.css" rel="stylesheet" />
-<script src="/WebApp/Login/js/jquery.dataTables.min.js"></script>
-<script src="/WebApp/Citizen/Forms/Js/jqueryDataTableButtons-1.2.4.js"></script>
+    <%--<script src="bootstrap-datetimepicker.min.js"></script>--%>
+    <link href="/PortalStyles/msgBoxLight.css" rel="stylesheet" />
+    <script src="/WebApp/Login/js/jquery.dataTables.min.js"></script>
+    <script src="/WebApp/Citizen/Forms/Js/jqueryDataTableButtons-1.2.4.js"></script>
 
-<link href="/PortalStyles/jquery-ui.min.css" rel="stylesheet" />
-<link href="/WebApp/Login/css/bootstrap.css" rel="stylesheet" />
+    <link href="/PortalStyles/jquery-ui.min.css" rel="stylesheet" />
+    <link href="/WebApp/Login/css/bootstrap.css" rel="stylesheet" />
 
-<link href="/WebApp/Citizen/Forms/Css/jQueryDataTableButtons.css" rel="stylesheet" />
+    <link href="/WebApp/Citizen/Forms/Css/jQueryDataTableButtons.css" rel="stylesheet" />
 
-<script src="/WebApp/Scripts/CommonScript.js?v=<%=CitizenPortal.Common.GlobalValues.JSVersion%>"></script>
-<script src="/WebApp/Scripts/ValidationScript.js?v=<%=CitizenPortal.Common.GlobalValues.JSVersion%>"></script>
-<link href="/g2c/css/hmepge.bootstrap.css" rel="stylesheet" />
+    <script src="/WebApp/Scripts/CommonScript.js?v=<%=CitizenPortal.Common.GlobalValues.JSVersion%>"></script>
+    <script src="/WebApp/Scripts/ValidationScript.js?v=1.26"></script>
+    <link href="/g2c/css/hmepge.bootstrap.css" rel="stylesheet" />
 
     <style>
         .form-heading {
@@ -165,8 +165,7 @@
     <script type="text/javascript">
         $(document).ready(function () {
 
-
-
+          
 
             $('#txtBirthdate').datepicker({
                 dateFormat: "dd/mm/yy",
@@ -188,12 +187,65 @@
             });
 
 
+            var dtValDisAbility = $('#ddlDisAbility').val();
+            if (dtValDisAbility == "Y") {
+                $('#divDisAble').show();
+                $('#tdDisAbility').show();
+
+            }
+            else {
+                $('#divDisAble').hide();
+                $('#tdDisAbility').hide();
+            }
+
+
+            var dtValCaste = $('#ddlCaste').val();
+            if (dtValCaste == "1") {
+                $('#div4').hide();
+                $('#tdCaste').hide();
+
+
+            }
+            else {
+                $('#div4').show();
+                $('#tdCaste').show();
+
+            }
+
+        
+
+            var dtValYesMatt = $('input:radio[name="chkYesMatt"]:checked').val();
+
+            if (dtValYesMatt == 'Yes') {
+                $('#div3').hide();
+                $('#tdMarksheet').hide();
+                ValidatorEnable($("[id$='RequiredFieldValidator20']")[0], false);
+                ValidatorEnable($("[id$='RequiredFieldValidator15']")[0], false);
+                ValidatorEnable($("[id$='RequiredFieldValidator18']")[0], false);
+            }
+            else {
+                $('#div3').show();
+                $('#tdMarksheet').show();
+                ValidatorEnable($("[id$='RequiredFieldValidator20']")[0], true);
+                ValidatorEnable($("[id$='RequiredFieldValidator15']")[0], true);
+                ValidatorEnable($("[id$='RequiredFieldValidator18']")[0], true);
+            }
+
 
             var dtVal = document.getElementById("hdnClass").value;
 
             var sdt = document.getElementById("hdnBirthDate").value;
-
             $('#txtBirthdate').val(sdt);
+
+            
+            //if (sdt != '') {
+            //    ValidatorEnable($("[id$='RequiredFieldValidator4']")[0], false);
+            //    $('#txtBirthdate').val(sdt);
+            //}
+            //else
+            //{
+            //    ValidatorEnable($("[id$='RequiredFieldValidator4']")[0], true);
+            //}
 
 
 
@@ -268,11 +320,48 @@
                 var dtVal = $('#ddlDisAbility').val();
                 if (dtVal == "Y") {
                     $('#divDisAble').show();
+                    $('#tdDisAbility').show();
+
                 }
                 else {
                     $('#divDisAble').hide();
+                    $('#tdDisAbility').hide();
                 }
             });
+
+
+            $('#ddlCaste').change(function () {
+                var dtVal = $('#ddlCaste').val();
+                if (dtVal == "1") {
+                    $('#div4').hide();
+                    $('#tdCaste').hide();
+                    
+
+                }
+                else {
+                    $('#div4').show();
+                    $('#tdCaste').show();
+                    
+                }
+            });
+
+            $('input:radio[name="chkYesMatt"]').change(
+                function () {
+                    if (this.checked && this.value == 'Yes') {
+                        $('#div3').hide();
+                        $('#tdMarksheet').hide();
+                        ValidatorEnable($("[id$='RequiredFieldValidator20']")[0], false);
+                        ValidatorEnable($("[id$='RequiredFieldValidator15']")[0], false);
+                        ValidatorEnable($("[id$='RequiredFieldValidator18']")[0], false);
+                    }
+                    else {
+                        $('#div3').show();
+                        $('#tdMarksheet').show();
+                        ValidatorEnable($("[id$='RequiredFieldValidator20']")[0], true);
+                        ValidatorEnable($("[id$='RequiredFieldValidator15']")[0], true);
+                        ValidatorEnable($("[id$='RequiredFieldValidator18']")[0], true);
+                    }
+                });
 
 
             $('#ddlClass').change(function () {
@@ -336,6 +425,9 @@
             //});
         });
 
+        function checkValidation() {
+            ValidatorEnable($("[id$='RequiredFieldValidator4']")[0], false);
+        }
 
 
         function GradeAndPercent() {
@@ -440,7 +532,29 @@
                 }
             }
         }
+        function GenerateCaptcha() {
 
+            var locs1 = 'http://localhost:53056';
+            var locs2 = 'http://mpsos.digivarsity.online';
+
+            var URL = "";
+            if (location.href.indexOf(locs2, -1)) {
+                URL = locs1;
+            }
+            else {
+                URL = locs2;
+            }
+
+
+            var _randomNumber = randomNumber(100000, 999999);
+            $("#captchaImage").attr("src", URL + "/Account/GetCaptcha?ver=" + parseInt(_randomNumber));
+
+        }
+
+
+        function randomNumber(min, max) {
+            return Math.random() * (max - min) + min;
+        }
 
     </script>
 </head>
@@ -460,9 +574,9 @@
                             <h3 style="margin: 0">MADHYA PRADESH STATE OPEN SCHOOL EDUCATION BOARD BHOPAL</h3>
 
                         </div>
-                        
 
-                </div>
+
+                    </div>
             </header>
 
 
@@ -477,17 +591,17 @@
                     </h2>
                     <div class="alert-info col-sm-6 col-md-6 col-lg-12 padding10 mb10" id="divCredential">
                         <span style="font-weight: bold; margin-bottom: 5px">निर्देश:</span><br />
-                        <span>कृपया अंग्रेजी भाषा में ही डेटा दर्ज करें</span>    
+                        <span>कृपया अंग्रेजी भाषा में ही डेटा दर्ज करें</span>
                     </div>
                     <div class="clearfix"></div>
-                    
-                      
-                        <div class="text-justify">
-                            <asp:ValidationSummary runat="server" ID="ValidationSummary1"
-                                DisplayMode="BulletList"
-                                ShowMessageBox="False" ValidationGroup="G" ShowSummary="True" CssClass="alert alert-danger" />
-                        </div>                        
-                    
+
+
+                    <div class="text-justify">
+                        <asp:ValidationSummary runat="server" ID="ValidationSummary1"
+                            DisplayMode="BulletList"
+                            ShowMessageBox="False" ValidationGroup="G" ShowSummary="True" CssClass="alert alert-danger" />
+                    </div>
+
                 </div>
 
 
@@ -504,16 +618,17 @@
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-12">
 
                                 <div class="row">
-                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="">
                                                 &nbsp;
                                             </label>
                                             <label class="manadatory">
-                                            श्रमिकों का पोर्टल कोड़ क्रमांक </label>
+                                                श्रमिकों का पोर्टल कोड़ क्रमांक
+                                            </label>
                                         </div>
                                     </div>
-                                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                         <div class="form-group">
                                             <label class="">
                                                 &nbsp;
@@ -523,17 +638,52 @@
                                                 ErrorMessage="श्रमकों का पोर्टल कोड़ क्रमांक डाले" ValidationGroup="G" ForeColor="Red" />
                                         </div>
                                     </div>
-                                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                                        <div class="form-group text-right">
-                                            <label class="">
-                                                &nbsp;
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                            <label class="manadatory" for="Village">
+                                                Verification Code
                                             </label>
+
+                                        </div>
+
+
+                                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+
+                                            <img src="/Account/GetCaptcha" alt="verification code" class=".gov.inform-control" id="captchaImage" />
+                                            <a id="btnrefresh" onclick="GenerateCaptcha();">
+                                                <i class="fa fa-refresh"></i>
+                                            </a>
+                                        </div>
+
+
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                            <div>
+                                                <asp:TextBox type="text" class="form-control" placeholder="Verification Code" name="txtCaptcha" id="txtCaptcha" maxlength="6" runat="server"/>
+                                            </div>
+                                            <div>
+                                                <asp:Label   name="lblCaptcha" id="lblCaptcha" runat="server" style="color:Red;"/>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-12">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                        <div class="form-group">
+                                            
                                             <asp:Button ID="btnShow" runat="server" CausesValidation="True" ToolTip="तलाशी"
-                                                CssClass="btn btn-success" Text="Show Data" ValidationGroup="G" OnClick="btnShow_Click1" />                                            
+                                                CssClass="btn btn-success" Text="Show Data" ValidationGroup="G" OnClick="btnShow_Click1" onClientClick="return checkValidation()"/>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                             <div class="clearfix">&nbsp;</div>
                             <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
@@ -546,7 +696,7 @@
                             </div>
                             <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                 <div class="form-group">
-                                    <label class="manadatory" for="SamagraMemberID">समग्र आईडी</label>                                    
+                                    <label class="manadatory" for="SamagraMemberID">समग्र आईडी</label>
                                     <asp:TextBox ID="txtSamagraMemberID" runat="server" ToolTip="Samagra No" onkeydown="return AllowOnlyNumeric(event);" ReadOnly="true" MaxLength="9" CssClass="form-control"></asp:TextBox>
                                 </div>
                             </div>
@@ -554,13 +704,13 @@
                                 <div class="form-group">
                                     <label class="manadatory" for="UniqueID">यूनीककोड</label>
                                     <asp:TextBox ID="UniqueID" runat="server" ToolTip="Samagra No" onkeydown="return AllowOnlyNumeric(event);" ReadOnly="true" MaxLength="9" CssClass="form-control"></asp:TextBox>
-                                    
+
                                 </div>
                             </div>
                             <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                 <div class="form-group">
                                     <label class="manadatory" for="CardHolder">कार्डधारक का नाम</label>
-                                    <asp:TextBox ID="CardHolder" runat="server" ToolTip="Samagra No" onkeydown="return AllowOnlyNumeric(event);" ReadOnly="true" MaxLength="9" CssClass="form-control"></asp:TextBox>                                    
+                                    <asp:TextBox ID="CardHolder" runat="server" ToolTip="Samagra No" onkeydown="return AllowOnlyNumeric(event);" ReadOnly="true" MaxLength="9" CssClass="form-control"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="clearfix">
@@ -648,7 +798,7 @@
                                 <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                     <div class="form-group">
                                         <label class="manadatory" for="txtFatherName">पिता का नाम </label>
-                                        <asp:TextBox ID="txtFatherName" runat="server" ToolTip="Father Full Name" CssClass="form-control" MaxLength="100" ReadOnly="true" onkeypress="return ValidateAlpha(event);"></asp:TextBox>
+                                        <asp:TextBox ID="txtFatherName" runat="server" ToolTip="Father Full Name" CssClass="form-control" MaxLength="100" onkeypress="return ValidateAlpha(event);"></asp:TextBox>
                                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtFatherName" Display="Dynamic"
                                             ErrorMessage="Please enter Father Name" ValidationGroup="G" ForeColor="Red" />
                                     </div>
@@ -740,20 +890,20 @@
                                         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
                                             <div class="form-group">
                                                 <label class="manadatory">
-                                                    क्या आपका परीक्षा परिणाम प्रतीक्षा मे है यदि परिणाम प्रतीक्षित मार्कशीट अटैचमेंट की आवश्यकता नहीं है                                           
+                                                    क्या आपका परीक्षा परिणाम प्रतीक्षा मे है यदि हां  परिणाम प्रतीक्षित है , मार्कशीट अटैचमेंट की आवश्यकता नहीं है                                         
                                                 </label>
 
                                             </div>
                                         </div>
                                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                             <div class="form-group">
-                                                <asp:RadioButton ID="RadioButton1" runat="server" Text="Yes" GroupName="chkYesMatt" />
+                                                <asp:RadioButton ID="RadioButton1" runat="server" Text="Yes" Value="Yes" GroupName="chkYesMatt" />
 
                                             </div>
                                         </div>
                                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                             <div class="form-group">
-                                                <asp:RadioButton ID="RadioButton2" runat="server" Text="No" GroupName="chkYesMatt" />
+                                                <asp:RadioButton ID="RadioButton2" runat="server" Text="No" Value="No" GroupName="chkYesMatt" />
 
                                             </div>
                                         </div>
@@ -1012,7 +1162,7 @@
                                                 <td style="white-space: nowrap">Upload file</td>
                                                 <td>&nbsp;</td>
                                             </tr>
-                                            <tr>
+                                            <tr id="tdMarksheet" runat="server">
                                                 <td>1.</td>
                                                 <td>
                                                     <label class="manadatory" for="MotherName">पूर्व कक्षा की अंक सूची स्कैन कापी संलग्न ( केवल .jpg फ़ाइल अधिकतम 200 केबी । ) यदि परिणाम प्रतीक्षित मार्कशीट अटैचमेंट की आवश्यकता नहीं है  </label>
@@ -1028,7 +1178,7 @@
                                                     </asp:Panel>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr id="tdDisAbility" runat="server">
                                                 <td>2.</td>
                                                 <td>विकलांगता प्रमाणपत्र की स्कैन कापी संलग्न ( केवल .jpg फ़ाइल अधिकतम 200 केबी । ) </td>
                                                 <td>
@@ -1043,7 +1193,7 @@
                                                     </asp:Panel>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr id="tdCaste" runat="server">
                                                 <td>3.</td>
                                                 <td>जाति प्रमाणपत्र की स्कैन कापी संलग्न ( केवल .jpg फ़ाइल अधिकतम 200 केबी । ) </td>
                                                 <td>

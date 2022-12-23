@@ -124,7 +124,7 @@
                                 <td style="text-align: center">
                                     &nbsp;</td>
                                 <td style="text-align: center"></td>
-                                <td style="text-align: center" colspan="5">Application No. <b>
+                                <td style="text-align: center" colspan="5"> <b>
                                     <asp:Label ID="AppID" runat="server"></asp:Label></b>&nbsp;</td>
                                 <td style="text-align: center">&nbsp;</td>
                                 <td style="text-align: center">&nbsp;</td>
@@ -137,13 +137,13 @@
                                 <td style="text-align: center">
                                     &nbsp;</td>
                                 <td style="text-align: center"></td>
-                                <td style="text-align: center"> Enrollment No.:
+                                <td style="text-align: center"> 
                                     <asp:Label ID="lblEnrollmentNo" runat="server" Font-Bold="true"></asp:Label></td>
                                 <td style="text-align: center"></td>
                                 <td style="text-align: center"></td>
                                 <td style="text-align: center"></td>
                                 <td style="text-align: center">
-                                     RollNo.: <asp:Label ID="lblRollNo" runat="server" Font-Bold="true"></asp:Label></td>
+                                      <asp:Label ID="lblRollNo" runat="server" Font-Bold="true"></asp:Label></td>
                                 <td style="text-align: center"></td>
                                 <td style="text-align: center"></td>
                             </tr>
@@ -153,7 +153,52 @@
                             </tr>
                         </table>
                         <%--Programme Table--%>
-                        <table style="width: 98%; margin: 0 auto;">
+
+                          <div id="divENT" runat="server" class="table-responsive">
+                            <table width="600" cellpadding="5" cellspacing="0" class="table-bordered" style="width: 98%; border: 1px solid #999; margin: 0 auto;">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="5" style="padding: 8px; color: #fff; font-size: 14px; border-right: 1px solid #999; border-left: 1px solid #999; text-align: left; background-color: #383E4B; -webkit-print-color-adjust: exact;"><b>Samagra Details</b></td>
+                                    </tr>
+                                </tbody>
+                                <tbody>
+                                    <tr>
+                                        <th style="padding: 5px; border: 1px solid #999; background-color: #F8F8F8; color: #383E4B; text-align: left;" class="manadatory">Aadhar Number.</th>
+                                        <th style="padding: 5px; border: 1px solid #999; background-color: #F8F8F8; color: #383E4B; text-align: left;" class="manadatory">Samagra Family ID
+                                        </th>
+
+                                        <th style="padding: 5px; border: 1px solid #999; background-color: #F8F8F8; color: #383E4B; text-align: left;" class="manadatory">Samagra ID
+                                        </th>
+                                        <th style="padding: 5px; border: 1px solid #999; background-color: #F8F8F8; text-align: left;" class="auto-style1">Application Number</th>
+                                        <th style="padding: 5px; border: 1px solid #999; background-color: #F8F8F8; color: #383E4B; text-align: left;"
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Label ID="txtAadharNo" runat="server"></asp:Label>
+                                        </td>
+                                        <td>
+                                            <asp:Label ID="txtFamilyID" runat="server"></asp:Label>
+                                        </td>
+                                        <td>
+                                            <asp:Label ID="txtSamagraID" runat="server"></asp:Label>
+
+                                            <asp:Label ID="SamagraNo" runat="server"></asp:Label>
+
+                                        </td>
+                                        <td>
+                                            <asp:Label ID="txtAppID" runat="server"></asp:Label>
+
+                                            <asp:Label ID="Label2" runat="server"></asp:Label>
+                                        </td>
+                                        <td>
+                                            <asp:Label ID="txtCardHolder" runat="server"></asp:Label>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <table style="width: 98%; margin: 0 auto;display:none;">
                             <tbody>
                                 <tr>
                                     <td colspan="2" style="padding: 8px; color: #fff; font-size: 14px; border-right: 1px solid #999; border-left: 1px solid #999; text-align: left; background-color: #383E4B; -webkit-print-color-adjust: exact;"><b>Programme Details</b></td>
@@ -196,15 +241,15 @@
                                 <td style="vertical-align: top;">
                                     <table border="0" cellspacing="0" cellpadding="0">
                                         <tr>
-                                            <td style="padding: 5px; border: 1px solid #999; font-size: 11px; text-align: center; width: 155px; vertical-align: top;">
-                                                <img runat="server" src="/webApp/kiosk/Images/photo.png" style="margin: 1px; width: 145px;" id="ProfilePhoto" />
+                                            <td style="padding: 5px; border: 1px solid #999; font-size: 11px; text-align: center; width: 145px; vertical-align: top;">
+                                                <img runat="server" src="/webApp/kiosk/Images/photo.png" style="margin: 1px; width: 135px;" id="ProfilePhoto" />
                                                 <b>Student Photo</b>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td style="padding: 5px; border-top: 1px solid #999; font-size: 11px; text-align: center; width: 155px;">
-                                                <img runat="server" src="img/signature.png" id="ProfileSignature" style="width: 145px; height: 50px;" />
-                                                <b>Student Sign.</b>
+                                            <td style="padding: 5px; border-top: 1px solid #999; font-size: 11px; text-align: center; width: 145px;">
+                                                <img runat="server"  src="/webApp/kiosk/Images/tc.bmp" id="ProfileTC" style="width: 135px; height: 150px;" />
+                                                <b>Student TC.</b>
                                             </td>
                                         </tr>
                                     </table>
@@ -330,6 +375,68 @@
 
                                             </td>
                                         </tr>
+                                         <tr >
+
+                                              <td style="padding: 5px; border: 1px solid #999; background-color: #F8F8F8; color: #383E4B; text-align: left;">
+                                                <b>Maharishi Patanjali Sanskrit Sansthan dwaraa jaari Vidyalay ka Dice Code</b></td>
+                                            <td style="padding: 5px; border: 1px solid #999; text-align: left;">
+
+                                                <asp:Label ID="lblDiceCode" runat="server"></asp:Label>
+
+                                            </td>
+                                            <td style="padding: 5px; border: 1px solid #999; background-color: #F8F8F8; color: #383E4B; text-align: left;">
+                                                <b>Affiliation code of the school issued by Maharishi Patanjali Sanskrit Sansthan</b></td>
+                                            <td style="padding: 5px; border: 1px solid #999; color: #383E4B; text-align: left;">
+
+                                                <asp:Label ID="lblAffiliationCode" runat="server"></asp:Label>
+
+                                            </td>
+
+
+                                           
+                                        </tr>
+                                         <tr >
+
+                                              <td style="padding: 5px; border: 1px solid #999; background-color: #F8F8F8; color: #383E4B; text-align: left; white-space: nowrap">
+                                                <b>School Name</b></td>
+                                            <td style="padding: 5px; border: 1px solid #999; text-align: left;">
+
+                                                <asp:Label ID="lblSchoolName" runat="server"></asp:Label>
+
+                                            </td>
+                                            <td style="padding: 5px; border: 1px solid #999; background-color: #F8F8F8; color: #383E4B; text-align: left;">
+                                                <b>Is a native of Madhya Pradesh</b></td>
+                                            <td style="padding: 5px; border: 1px solid #999; color: #383E4B; text-align: left;">
+
+                                                <asp:Label ID="lblNative" runat="server"></asp:Label>
+
+                                            </td>
+
+
+                                           
+                                        </tr>
+
+                                          <tr >
+
+                                              <td style="padding: 5px; border: 1px solid #999; background-color: #F8F8F8; color: #383E4B; text-align: left; white-space: nowrap">
+                                                <b>Have passed the qualifying exam from other board</b></td>
+                                            <td style="padding: 5px; border: 1px solid #999; text-align: left;">
+
+                                                <asp:Label ID="lblPassExam" runat="server"></asp:Label>
+
+                                            </td>
+                                            <td style="padding: 5px; border: 1px solid #999; background-color: #F8F8F8; color: #383E4B; text-align: left;">
+                                                <b></b></td>
+                                            <td style="padding: 5px; border: 1px solid #999; color: #383E4B; text-align: left;">
+
+                                                <asp:Label ID="Label5" runat="server"></asp:Label>
+
+                                            </td>
+
+
+                                           
+                                        </tr>
+
                                     </table>
                                 </td>
                             </tr>
@@ -402,7 +509,7 @@
                         </table>
                         <br />
                         <%--Applicant Address Table--%>
-                        <table width="600" style="width: 100%">
+                       <table width="600" style="width: 100%">
                             <tr>
                                 <td style="text-align: left; vertical-align: top">
                                     <table id="PerAddress" runat="server" width="600" cellpadding="5" cellspacing="0" class="table-bordered" style="width: 98%; border: 1px solid #999; margin: 0 auto;">
@@ -414,36 +521,10 @@
                                                 <b>Address</b>
                                             </td>
                                             <td style="padding: 5px; border: 1px solid #999; color: #383E4B; text-align: left; width: 135px;">
-                                                <asp:Label ID="PAddressLine1" runat="server"></asp:Label>&nbsp;<asp:Label ID="PAddressLine2" runat="server"></asp:Label></td>
+                                                <asp:Label ID="PAddressLine1" runat="server"></asp:Label>&nbsp;<asp:Label ID="PAddressLine2" runat="server"></asp:Label>&nbsp;<asp:Label ID="PRoadStreetName" runat="server"></asp:Label>&nbsp;<asp:Label ID="PLandMark" runat="server"></asp:Label>
+                                                &nbsp;<asp:Label ID="PLocality" runat="server"></asp:Label></td>
                                         </tr>
-                                        <tr>
-                                            <td width="146" style="padding: 5px; border: 1px solid #999; background-color: #F8F8F8; color: #383E4B; text-align: left; width: 135px;"><b>Road/Street Name</b></td>
-                                            <td width="339" style="padding: 5px; border: 1px solid #999; color: #383E4B; text-align: left; width: 190px;">
-                                                <asp:Label ID="PRoadStreetName" runat="server"></asp:Label></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="padding: 5px; border: 1px solid #999; background-color: #F8F8F8; color: #383E4B; text-align: left; width: 190px;">
-                                                <b>Landmark</b>
-                                            </td>
-                                            <td style="padding: 5px; border: 1px solid #999; text-align: left;">
-                                                <asp:Label ID="PLandMark" runat="server"></asp:Label>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style="padding: 5px; border: 1px solid #999; background-color: #F8F8F8; color: #383E4B; text-align: left;"><b>Locality</b></td>
-                                            <td style="padding: 5px; border: 1px solid #999; color: #383E4B; text-align: left;">
-                                                <asp:Label ID="PLocality" runat="server"></asp:Label></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="padding: 5px; border: 1px solid #999; background-color: #F8F8F8; color: #383E4B; text-align: left;"><b>Panchayat/Village/City</b></td>
-                                            <td style="padding: 5px; border: 1px solid #999; color: #383E4B; text-align: left;">
-                                                <asp:Label ID="PddlVillage" runat="server"></asp:Label></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="padding: 5px; border: 1px solid #999; background-color: #F8F8F8; color: #383E4B; text-align: left;"><b>Block/Taluka</b></td>
-                                            <td style="padding: 5px; border: 1px solid #999; color: #383E4B; text-align: left;">
-                                                <asp:Label ID="PBlock" runat="server"></asp:Label></td>
-                                        </tr>
+
                                         <tr>
                                             <td style="padding: 5px; border: 1px solid #999; background-color: #F8F8F8; color: #383E4B; text-align: left;"><b>District</b></td>
                                             <td style="padding: 5px; border: 1px solid #999; color: #383E4B; text-align: left;">
@@ -465,7 +546,7 @@
                                     </table>
 
                                 </td>
-                                <td style="text-align: left;">
+                                <td style="text-align: left; display: none;">
                                     <table id="PreAddress" runat="server" width="600" cellpadding="5" cellspacing="0" class="table-bordered" style="width: 98%; border: 1px solid #999; margin: 0 auto;">
                                         <tr>
                                             <td colspan="2" style="padding: 8px; border-left: 1px solid #fff; border-right: 1px solid #999; color: #fff; font-size: 14px; text-align: left; background-color: #383E4B; -webkit-print-color-adjust: exact;"><b>Present Address</b></td>
@@ -495,16 +576,7 @@
                                             <td style="padding: 5px; border: 1px solid #999; color: #383E4B; text-align: left;">
                                                 <asp:Label ID="CLocality" runat="server"></asp:Label></td>
                                         </tr>
-                                        <tr>
-                                            <td style="padding: 5px; border: 1px solid #999; background-color: #F8F8F8; color: #383E4B; text-align: left;"><b>Panchayat/Village/City</b></td>
-                                            <td style="padding: 5px; border: 1px solid #999; color: #383E4B; text-align: left;">
-                                                <asp:Label ID="CddlVillage" runat="server"></asp:Label></td>
-                                        </tr>
-                                        <tr>
-                                            <td style="padding: 5px; border: 1px solid #999; background-color: #F8F8F8; color: #383E4B; text-align: left;"><b>Block/Taluka</b></td>
-                                            <td style="padding: 5px; border: 1px solid #999; color: #383E4B; text-align: left;">
-                                                <asp:Label ID="CBlock" runat="server"></asp:Label></td>
-                                        </tr>
+
                                         <tr>
                                             <td style="padding: 5px; border: 1px solid #999; background-color: #F8F8F8; color: #383E4B; text-align: left;"><b>District</b></td>
                                             <td style="padding: 5px; border: 1px solid #999; color: #383E4B; text-align: left;">

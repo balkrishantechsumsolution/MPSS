@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.Master.cs" Inherits="CitizenPortal.WebApp.Kiosk.Master.AdminMaster" %>
+
+<%@ Register Src="~/WebApp/Control/AdminLeftPanel.ascx" TagPrefix="uc1" TagName="AdminLeftPanel" %>
+<%@ Register Src="~/Sambalpur/controls/AdminHeader.ascx" TagPrefix="uc1" TagName="AdminHeader" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="PRAGMA" content="NO-CACHE" />
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
+    <title></title>
+    <script src="../../../Scripts/jquery-2.2.3.js"></script>
+    <script src="../../../Scripts/angular.min.js"></script>
+    <link href="../../../Sambalpur/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../Sambalpur/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../../../Sambalpur/css/homestyle.css" rel="stylesheet" />
+    <link href="../../Styles/StyleSheet1.css" type="text/css" rel="stylesheet" />
+    <%--   --%> <link href="../../Styles/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Styles/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/style.admin.css" rel="stylesheet" />
+    <%-- <link href="../../bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Styles/StyleSheet1.css" rel="stylesheet" />
+    <link href="../../Styles/timeline.css" rel="stylesheet" />
+    <link href="../../Styles/StyleSheet1.css" rel="stylesheet" />
+    <link href="../../Styles/StyleSheet3.css" rel="stylesheet" />
+    <link href="../../Styles/StyleSheet4.css" rel="stylesheet" />--%>
+    <%----%><link href="/WebApp/Common/Styles/style.admin.css" rel="stylesheet" />
+
+      <link href="../../Styles/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Styles/sb-admin-2.css" rel="stylesheet" />
+    <script src="../../Scripts/DisableBackButton.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" asp-antiforgery="false">
+        <asp:HiddenField ID="HFLang" runat="server" />
+        <uc1:AdminHeader runat="server" ID="AdminHeader" />        
+        <uc1:AdminLeftPanel runat="server" ID="AdminLeftPanel" />
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <script src="../../../Sambalpur/js/bootstrap.min.js"></script>
+            <%--<script src="../../Common/Scripts/bootstrap.min.js"></script>--%>
+            <script src="../../Common/Scripts/metisMenu.js"></script>
+            <%--<script src="../../Common/Scripts/raphael.js"></script>
+            <script src="../../Common/Scripts/morris.js"></script>--%>
+            <script src="../../Common/Scripts/sb-admin-2.js"></script>
+
+            <script>
+                if (document.getElementById("intrnlContent") != null) {
+                    angular.bootstrap(document.getElementById("intrnlContent"), ['appmodule']);
+                }
+            </script>
+            <script src="../../Scripts/modaleffect.js"></script>
+            <script src="../../Scripts/velocity.min.js"></script>
+            <script src="../../Scripts/velocity.ui.min.js"></script>
+            
+        </div>
+        <asp:HiddenField ID="antiforgery" runat="server" />
+    </form>
+</body>
+</html>

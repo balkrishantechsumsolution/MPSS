@@ -1553,6 +1553,13 @@
     <Compile Include="WebApp\Control\EventDate.ascx.designer.cs">
       <DependentUpon>EventDate.ascx</DependentUpon>
     </Compile>
+    <Compile Include="WebApp\Control\AdminLeftPanel.ascx.cs">
+      <DependentUpon>AdminLeftPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Control\AdminLeftPanel.ascx.designer.cs">
+      <DependentUpon>AdminLeftPanel.ascx</DependentUpon>
+    </Compile>
     <Compile Include="WebApp\Control\LeftPanel.ascx.cs">
       <DependentUpon>LeftPanel.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2001,6 +2008,13 @@
     <Compile Include="WebApp\G2G\DBQuery.aspx.designer.cs">
       <DependentUpon>DBQuery.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebApp\G2G\AdminDeptPage.aspx.cs">
+      <DependentUpon>AdminDeptPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\G2G\AdminDeptPage.aspx.designer.cs">
+      <DependentUpon>AdminDeptPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebApp\G2G\DeptProfile.aspx.cs">
       <DependentUpon>DeptProfile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2325,6 +2339,13 @@
     <Compile Include="WebApp\G2G\TransactionDetail.aspx.designer.cs">
       <DependentUpon>TransactionDetail.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebApp\Kiosk\ADMIN\AdminDashboard.aspx.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\ADMIN\AdminDashboard.aspx.designer.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebApp\Kiosk\CBCS\Acknowledgement.aspx.cs">
       <DependentUpon>Acknowledgement.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2415,6 +2436,13 @@
     </Compile>
     <Compile Include="WebApp\Kiosk\CBCS\StudentForm.aspx.designer.cs">
       <DependentUpon>StudentForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\DEOE\DashBoard.aspx.cs">
+      <DependentUpon>DashBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\DEOE\DashBoard.aspx.designer.cs">
+      <DependentUpon>DashBoard.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebApp\Kiosk\Forms\Certificate.aspx.cs">
       <DependentUpon>Certificate.aspx</DependentUpon>
@@ -2542,6 +2570,34 @@
     <Compile Include="WebApp\Kiosk\Forms\OfficeOfficer.aspx.designer.cs">
       <DependentUpon>OfficeOfficer.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebApp\Kiosk\Master\AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\Master\AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\AllPhotosWeb.aspx.cs">
+      <DependentUpon>AllPhotosWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\AllPhotosWeb.aspx.designer.cs">
+      <DependentUpon>AllPhotosWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\ApprovalList.aspx.cs">
+      <DependentUpon>ApprovalList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\ApprovalList.aspx.designer.cs">
+      <DependentUpon>ApprovalList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\MPSSLogin.aspx.cs">
+      <DependentUpon>MPSSLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\MPSSLogin.aspx.designer.cs">
+      <DependentUpon>MPSSLogin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebApp\Kiosk\MPSS\LoginAdmin.aspx.cs">
       <DependentUpon>LoginAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2562,6 +2618,13 @@
     </Compile>
     <Compile Include="WebApp\Kiosk\MPSS\MPSOSPage.aspx.designer.cs">
       <DependentUpon>MPSOSPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\MPSSStudentDetails.aspx.cs">
+      <DependentUpon>MPSSStudentDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\MPSSStudentDetails.aspx.designer.cs">
+      <DependentUpon>MPSSStudentDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebApp\Kiosk\MPSS\PaymentConfirm.aspx.cs">
       <DependentUpon>PaymentConfirm.aspx</DependentUpon>
@@ -2778,6 +2841,13 @@
     </Compile>
     <Compile Include="WebApp\Kiosk\MPSS\SharmodayaExam.aspx.designer.cs">
       <DependentUpon>SharmodayaExam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\ViewAcknowledgementMPBO.aspx.cs">
+      <DependentUpon>ViewAcknowledgementMPBO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\ViewAcknowledgementMPBO.aspx.designer.cs">
+      <DependentUpon>ViewAcknowledgementMPBO.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebApp\Kiosk\MPSS\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
@@ -4935,6 +5005,125 @@
     <Content Include="mpss\mpss\assets\logo\25012018103229logo.png" />
     <Content Include="mpss\mpss\assets\svg\fonts\icomoon64f7.svg" />
     <Content Include="mpss\mpss\assets\svg\style.css" />
+    <Content Include="mpss\mpss\images\10-602.png" />
+    <Content Include="mpss\mpss\images\118867DSC_2055.JPG" />
+    <Content Include="mpss\mpss\images\12-801.png" />
+    <Content Include="mpss\mpss\images\12-802.png" />
+    <Content Include="mpss\mpss\images\208646DSC_2137.JPG" />
+    <Content Include="mpss\mpss\images\215604DSC_2148.JPG" />
+    <Content Include="mpss\mpss\images\281439DSC_2120.JPG" />
+    <Content Include="mpss\mpss\images\290962DSC_2133.JPG" />
+    <Content Include="mpss\mpss\images\324434DSC_2148.JPG" />
+    <Content Include="mpss\mpss\images\356961DSC_2135.JPG" />
+    <Content Include="mpss\mpss\images\410769DSC_2112.JPG" />
+    <Content Include="mpss\mpss\images\443056DSC_2116.JPG" />
+    <Content Include="mpss\mpss\images\473004DSC_2139.JPG" />
+    <Content Include="mpss\mpss\images\602.jpg" />
+    <Content Include="mpss\mpss\images\602.png" />
+    <Content Include="mpss\mpss\images\801.png" />
+    <Content Include="mpss\mpss\images\802.png" />
+    <Content Include="mpss\mpss\images\909088DSC_2130.JPG" />
+    <Content Include="mpss\mpss\images\aawasiya.jpg" />
+    <Content Include="mpss\mpss\images\aruna.png" />
+    <Content Include="mpss\mpss\images\ayanam.png" />
+    <Content Include="mpss\mpss\images\blink.gif" />
+    <Content Include="mpss\mpss\images\deepakjoshi.jpg" />
+    <Content Include="mpss\mpss\images\devkshara.png" />
+    <Content Include="mpss\mpss\images\DFC_82066298-student-exchange-409x258.jpg" />
+    <Content Include="mpss\mpss\images\DFC_82066298-student-exchange-80x80.jpg" />
+    <Content Include="mpss\mpss\images\download.png" />
+    <Content Include="mpss\mpss\images\dr-kuwar-vijay-shah.jpg" />
+    <Content Include="mpss\mpss\images\grade1.png" />
+    <Content Include="mpss\mpss\images\IMG_9205.JPG" />
+    <Content Include="mpss\mpss\images\iStock_000027500935_Large-80x80.jpg" />
+    <Content Include="mpss\mpss\images\jiwaji.jpg" />
+    <Content Include="mpss\mpss\images\kishore-kumar-soni.jpg" />
+    <Content Include="mpss\mpss\images\kriti-shrivastva.jpg" />
+    <Content Include="mpss\mpss\images\kshtraveersinghratore.jpg" />
+    <Content Include="mpss\mpss\images\kubarvijayshah.jpg" />
+    <Content Include="mpss\mpss\images\Learn-Sanskrit-BeModern.jpg" />
+    <Content Include="mpss\mpss\images\lkg.png" />
+    <Content Include="mpss\mpss\images\maharshi-patanjali-sanskrit-sansthan-1.jpg" />
+    <Content Include="mpss\mpss\images\maharshi-patanjali-sanskrit-sansthan-10.jpg" />
+    <Content Include="mpss\mpss\images\maharshi-patanjali-sanskrit-sansthan-11.jpg" />
+    <Content Include="mpss\mpss\images\maharshi-patanjali-sanskrit-sansthan-12.jpg" />
+    <Content Include="mpss\mpss\images\maharshi-patanjali-sanskrit-sansthan-13.jpg" />
+    <Content Include="mpss\mpss\images\maharshi-patanjali-sanskrit-sansthan-14.jpg" />
+    <Content Include="mpss\mpss\images\maharshi-patanjali-sanskrit-sansthan-15.jpg" />
+    <Content Include="mpss\mpss\images\maharshi-patanjali-sanskrit-sansthan-16.jpg" />
+    <Content Include="mpss\mpss\images\maharshi-patanjali-sanskrit-sansthan-17.jpg" />
+    <Content Include="mpss\mpss\images\maharshi-patanjali-sanskrit-sansthan-2.jpg" />
+    <Content Include="mpss\mpss\images\maharshi-patanjali-sanskrit-sansthan-3.jpg" />
+    <Content Include="mpss\mpss\images\maharshi-patanjali-sanskrit-sansthan-4.jpg" />
+    <Content Include="mpss\mpss\images\maharshi-patanjali-sanskrit-sansthan-5.jpg" />
+    <Content Include="mpss\mpss\images\maharshi-patanjali-sanskrit-sansthan-6.jpg" />
+    <Content Include="mpss\mpss\images\maharshi-patanjali-sanskrit-sansthan-7.jpg" />
+    <Content Include="mpss\mpss\images\maharshi-patanjali-sanskrit-sansthan-8.jpg" />
+    <Content Include="mpss\mpss\images\maharshi-patanjali-sanskrit-sansthan-9.jpg" />
+    <Content Include="mpss\mpss\images\maharshi-patanjali-sanskrit-sansthan.jpg" />
+    <Content Include="mpss\mpss\images\maharshipatanjalisanskritsasthan-question-answer.php" />
+    <Content Include="mpss\mpss\images\maharshipatanjalisanskrtisansthan-bopal.jpg" />
+    <Content Include="mpss\mpss\images\maharshipatanjalisansthan.png" />
+    <Content Include="mpss\mpss\images\mp-sanskritschool-1.jpg" />
+    <Content Include="mpss\mpss\images\mp-sanskritschool-2.jpg" />
+    <Content Include="mpss\mpss\images\mp-sanskritschool-3.jpg" />
+    <Content Include="mpss\mpss\images\mp-sanskritschool-4.jpg" />
+    <Content Include="mpss\mpss\images\mp-sanskritschool-5.jpg" />
+    <Content Include="mpss\mpss\images\mp-sanskritschool-6.jpg" />
+    <Content Include="mpss\mpss\images\mp-sanskritschool.jpg" />
+    <Content Include="mpss\mpss\images\mpsanskritsansthan-1.jpg" />
+    <Content Include="mpss\mpss\images\mpsanskritsansthan-10.jpg" />
+    <Content Include="mpss\mpss\images\mpsanskritsansthan-11.jpg" />
+    <Content Include="mpss\mpss\images\mpsanskritsansthan-12.jpg" />
+    <Content Include="mpss\mpss\images\mpsanskritsansthan-13.jpg" />
+    <Content Include="mpss\mpss\images\mpsanskritsansthan-2.jpg" />
+    <Content Include="mpss\mpss\images\mpsanskritsansthan-3.jpg" />
+    <Content Include="mpss\mpss\images\mpsanskritsansthan-4.jpg" />
+    <Content Include="mpss\mpss\images\mpsanskritsansthan-5.jpg" />
+    <Content Include="mpss\mpss\images\mpsanskritsansthan-6.jpg" />
+    <Content Include="mpss\mpss\images\mpsanskritsansthan-7.jpg" />
+    <Content Include="mpss\mpss\images\mpsanskritsansthan-8.jpg" />
+    <Content Include="mpss\mpss\images\mpsanskritsansthan-9.jpg" />
+    <Content Include="mpss\mpss\images\mpssbhopal-1.jpg" />
+    <Content Include="mpss\mpss\images\mpssbhopal-2.jpg" />
+    <Content Include="mpss\mpss\images\mpssbhopal-3.jpg" />
+    <Content Include="mpss\mpss\images\mpssbhopal-4.jpg" />
+    <Content Include="mpss\mpss\images\mpssbhopal-5.jpg" />
+    <Content Include="mpss\mpss\images\mpssbhopal-6.jpg" />
+    <Content Include="mpss\mpss\images\mpssbhopal-7.jpg" />
+    <Content Include="mpss\mpss\images\mpssbhopal-8.jpg" />
+    <Content Include="mpss\mpss\images\mpssbhopal-9.jpg" />
+    <Content Include="mpss\mpss\images\new_animated.gif" />
+    <Content Include="mpss\mpss\images\prabhatrajtiwari.jpg" />
+    <Content Include="mpss\mpss\images\prapdha.png" />
+    <Content Include="mpss\mpss\images\prashant-dolash.jpg" />
+    <Content Include="mpss\mpss\images\praveenkumarjain.jpg" />
+    <Content Include="mpss\mpss\images\question-answer.jpg" />
+    <Content Include="mpss\mpss\images\rastriya-samskritamsammelan.jpg" />
+    <Content Include="mpss\mpss\images\reshmalala.jpg" />
+    <Content Include="mpss\mpss\images\saarinee.png" />
+    <Content Include="mpss\mpss\images\samskrittutorial.jpg" />
+    <Content Include="mpss\mpss\images\sanjay-kumar-sharma.jpg" />
+    <Content Include="mpss\mpss\images\sanskrit-book.jpg" />
+    <Content Include="mpss\mpss\images\Sanskrit-Language-Teaching.jpg" />
+    <Content Include="mpss\mpss\images\sarojpandey.jpg" />
+    <Content Include="mpss\mpss\images\satyajeet-gour.jpg" />
+    <Content Include="mpss\mpss\images\shivrajsinghchouhan.jpg" />
+    <Content Include="mpss\mpss\images\shodash-sanskaram.png" />
+    <Content Include="mpss\mpss\images\shreevani-lkg.jpg" />
+    <Content Include="mpss\mpss\images\shreevani-ukg.jpg" />
+    <Content Include="mpss\mpss\images\supada.png" />
+    <Content Include="mpss\mpss\images\timetable.png" />
+    <Content Include="mpss\mpss\images\uday.png" />
+    <Content Include="mpss\mpss\images\vibhagour.jpg" />
+    <Content Include="mpss\mpss\images\video-play.jpg" />
+    <Content Include="mpss\mpss\images\vinodvaryani.jpg" />
+    <Content Include="mpss\mpss\images\w1 %282%29.png" />
+    <Content Include="mpss\mpss\images\w1 %283%29.png" />
+    <Content Include="mpss\mpss\images\w1 %284%29.png" />
+    <Content Include="mpss\mpss\images\w1.jpg.jpeg" />
+    <Content Include="mpss\mpss\images\yogclub.jpg" />
+    <Content Include="mpss\mpss\images\you-tube.jpg" />
     <Content Include="mpss\mpss\index.html" />
     <Content Include="mpss\mpss\slider\dist\css\splide-core.min.css" />
     <Content Include="mpss\mpss\slider\dist\css\splide.min.css" />
@@ -6697,6 +6886,7 @@
     <Content Include="WebApp\Control\Instructions.ascx" />
     <Content Include="WebApp\Control\LandRecord.ascx" />
     <Content Include="WebApp\Control\EventDate.ascx" />
+    <Content Include="WebApp\Control\AdminLeftPanel.ascx" />
     <Content Include="WebApp\Control\LeftPanel.ascx" />
     <Content Include="WebApp\Common\PhotoCapture\CapturePhoto.aspx" />
     <Content Include="WebApp\Common\PhotoCapture\ChangePhoto.aspx" />
@@ -6777,6 +6967,7 @@
     <Content Include="WebApp\G2G\ChangePassword.aspx" />
     <Content Include="WebApp\G2G\ChangePassword.js" />
     <Content Include="WebApp\G2G\DBQuery.aspx" />
+    <Content Include="WebApp\G2G\AdminDeptPage.aspx" />
     <Content Include="WebApp\G2G\DeptProfile.aspx" />
     <Content Include="WebApp\G2G\DeptProfile.js" />
     <Content Include="WebApp\G2G\G2GAccept.aspx" />
@@ -6829,6 +7020,7 @@
     <Content Include="WebApp\G2G\ShowPDF.aspx" />
     <Content Include="WebApp\G2G\Tasklist.aspx" />
     <Content Include="WebApp\G2G\TransactionDetail.aspx" />
+    <Content Include="WebApp\Kiosk\ADMIN\AdminDashboard.aspx" />
     <Content Include="WebApp\Kiosk\CBCS\Acknowledgement.aspx" />
     <Content Include="WebApp\Kiosk\CBCS\Admission.js" />
     <Content Include="WebApp\Kiosk\CBCS\AdmissionForm.aspx" />
@@ -6847,6 +7039,7 @@
     <Content Include="WebApp\Kiosk\CBCS\SearchForm.aspx" />
     <Content Include="WebApp\Kiosk\CBCS\StudentForm.aspx" />
     <Content Include="WebApp\Kiosk\CBCS\TeacherDetails.js" />
+    <Content Include="WebApp\Kiosk\DEOE\DashBoard.aspx" />
     <Content Include="WebApp\Kiosk\Forms\AadhaarBasicDetail.js" />
     <Content Include="WebApp\Kiosk\Forms\Certificate.aspx" />
     <Content Include="WebApp\Kiosk\Forms\Acknowledgement.aspx" />
@@ -6866,9 +7059,13 @@
     <Content Include="WebApp\Kiosk\Forms\KioskApproval.aspx" />
     <Content Include="WebApp\Kiosk\Forms\MakePayment.aspx" />
     <Content Include="WebApp\Kiosk\Forms\OfficeOfficer.aspx" />
+    <Content Include="WebApp\Kiosk\MPSS\AllPhotosWeb.aspx" />
+    <Content Include="WebApp\Kiosk\MPSS\ApprovalList.aspx" />
+    <Content Include="WebApp\Kiosk\MPSS\MPSSLogin.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\LoginAdmin.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\MISReports.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\MPSOSPage.aspx" />
+    <Content Include="WebApp\Kiosk\MPSS\MPSSStudentDetails.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\PaymentConfirm.aspx" />
     <Content Include="WebApp\Kiosk\Forms\PaymentReceipt.aspx" />
     <Content Include="WebApp\Kiosk\Forms\RechargeWallet.aspx" />
@@ -6953,6 +7150,7 @@
     <Content Include="WebApp\Kiosk\MPSS\ScholarShip.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\GovtGirlSchAdmForm.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\SharmodayaExam.aspx" />
+    <Content Include="WebApp\Kiosk\MPSS\ViewAcknowledgementMPBO.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\WebForm1.aspx" />
     <Content Include="WebApp\Kiosk\OUAT\AccessFormB.aspx" />
     <Content Include="WebApp\Kiosk\OUAT\Acknowledgement.aspx" />
@@ -7077,6 +7275,7 @@
     <Content Include="WebApp\Scripts\pdfjs-3.0.279-dist\build\pdf.sandbox.js" />
     <Content Include="WebApp\Scripts\pdfjs-3.0.279-dist\build\pdf.worker.js" />
     <Content Include="WebApp\Scripts\ServiceLanguage.js" />
+    <Content Include="WebApp\Scripts\sha512.js" />
     <Content Include="WebApp\Styles\smart_wizard.min.css" />
     <Content Include="WebApp\Styles\smart_wizard_theme_arrows.min.css" />
     <Content Include="WebApp\Styles\style.admin.css" />
@@ -7357,6 +7556,7 @@
     <Content Include="WebApp\Scripts\pdfjs-3.0.279-dist\build\pdf.sandbox.js.map" />
     <Content Include="WebApp\Scripts\pdfjs-3.0.279-dist\build\pdf.worker.js.map" />
     <Content Include="WebApp\Kiosk\Master\MPSSMaster.Master" />
+    <Content Include="WebApp\Kiosk\Master\AdminMaster.Master" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\Application\Models\" />
@@ -7365,7 +7565,7 @@
     <Folder Include="Areas\Citizen\Models\" />
     <Folder Include="Areas\Kiosk\Models\" />
     <Folder Include="Areas\Portal\Models\" />
-    <Folder Include="Logs\" />
+    <Folder Include="mpss\mpss\images\images\" />
     <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="Views\Base\" />
     <Folder Include="Views\Kiosk\" />
