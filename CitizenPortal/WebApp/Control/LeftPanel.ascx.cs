@@ -187,6 +187,10 @@ namespace CitizenPortal.WebApp.Control
                     pnlMenu.Controls.Add(new LiteralControl("</li>"));
 
                     pnlMenu.Controls.Add(new LiteralControl("<li>"));
+                    pnlMenu.Controls.Add(new LiteralControl("<a id='lpCorrespondentRenewal'  href ='/WebApp/Kiosk/MPSS/CorrespondentRenewal.aspx' ><i class='fa fa-edit fa-fw'></i> Correspondent Renewal </ a > "));
+                    pnlMenu.Controls.Add(new LiteralControl("</li>"));
+
+                    pnlMenu.Controls.Add(new LiteralControl("<li>"));
                     pnlMenu.Controls.Add(new LiteralControl("<a id='lpMPSSReports'  href ='/WebApp/Kiosk/MPSS/MPSSReports.aspx' ><i class='fa fa-edit fa-fw'></i> MPSS Reports </ a > "));
                     pnlMenu.Controls.Add(new LiteralControl("</li>"));
 

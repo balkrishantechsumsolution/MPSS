@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -83,11 +84,30 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
 
         void gv_RowDataBound(object sender, GridViewRowEventArgs e)
         {
-            if (e.Row.DataItem != null)
+
+            if (e.Row.RowType == DataControlRowType.DataRow && e.Row.RowType != DataControlRowType.Header && e.Row.RowType != DataControlRowType.Footer)
             {
+                TableCell cell = e.Row.Cells[e.Row.Cells.Count - 1];
 
+                string PaymentMode = cell.Text;
+                if (PaymentMode == "Unpaid")
+                {
+                    cell.BackColor = Color.Red;
+                }
+
+                LinkButton lb = new LinkButton();
+                lb.ID = "Attachment";
+                lb.Text = "Attachment";
+                lb.Command += lb_Command;
+
+                lb.ToolTip = "Attachment";
+                lb.CssClass = "tagBubbleAttachment";
+                lb.CommandName = "Attachment";
+                lb.CommandArgument = e.Row.RowIndex.ToString();
+
+                //e.Row.Cells[e.Row.Cells.Count - 1].Controls.Add(lb);
+                e.Row.Cells[1].Controls.Add(lb);
             }
-
 
 
 
@@ -95,40 +115,31 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
 
         void gv_RowCreated(object sender, GridViewRowEventArgs e)
         {
-
-
-            //LinkButton lb = new LinkButton();
-            //lb.ID = "View";
-            //lb.Text = "View";
-            //lb.Click += lb_Click;
-
-            //lb.ToolTip = "View";
-            //lb.CssClass = "tagBubbleView";
-            //lb.CommandName = "View";
-            //lb.CommandArgument = e.Row.RowIndex.ToString();
-
-            ////e.Row.Cells[e.Row.Cells.Count - 1].Controls.Add(lb);
-            //e.Row.Cells[0].Controls.Add(lb);
+            
 
 
         }
 
 
 
-        void lb_Click(object sender, EventArgs e)
+        void lb_Command(object sender, CommandEventArgs e)
         {
-            //DataTable dt = (DataTable)ViewState["CurrentTable"];
+            if (e.CommandName == "Attachment")
+            {
+                DataTable dt = (DataTable)ViewState["CurrentTable"];
 
-            //var lb = (LinkButton)sender;
-            //var i = int.Parse(lb.CommandArgument);
-            //if (i >= 0)
-            //{
-            //    string SchoolID = dt.Rows[i]["SchoolID"].ToString();
-            //    string newWin = "";
-            //    newWin = "window.open(\"MPSSStudentDetails.aspx?SchoolID=" + SchoolID + "&SvcID=1466\", \"_blank\", \"WIDTH=1080,HEIGHT=790,scrollbars=no, menubar=no,resizable=yes,directories=no,location=no\");";
+                var lb = (LinkButton)sender;
+                var i = int.Parse(lb.CommandArgument);
+                if (i >= 0)
+                {
+                    string ID = dt.Rows[i]["StudentID"].ToString();
+                    string AppID = dt.Rows[i]["AppID"].ToString();
+                    string newWin = "";
+                    newWin = "window.open(\"MPSSAttachmentShows.aspx?ID=" + ID + "&AppID=" + AppID + "&SvcID=1466&TypeID=2\", \"_blank\", \"WIDTH=1080,HEIGHT=790,scrollbars=no, menubar=no,resizable=yes,directories=no,location=no\");";
 
-            //    Page.ClientScript.RegisterStartupScript(this.GetType(), "pop", newWin, true);
-            //}
+                    Page.ClientScript.RegisterStartupScript(this.GetType(), "pop", newWin, true);
+                }
+            }
 
         }
         protected DataTable ShowData()
@@ -155,7 +166,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
 
-           
+
 
 
         }

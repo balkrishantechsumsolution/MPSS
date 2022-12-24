@@ -2577,6 +2577,20 @@
     <Compile Include="WebApp\Kiosk\Master\AdminMaster.Master.designer.cs">
       <DependentUpon>AdminMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\CorrespondentRenewal.aspx.cs">
+      <DependentUpon>CorrespondentRenewal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\CorrespondentRenewal.aspx.designer.cs">
+      <DependentUpon>CorrespondentRenewal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\MPSSAttachmentShows.aspx.cs">
+      <DependentUpon>MPSSAttachmentShows.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\MPSSAttachmentShows.aspx.designer.cs">
+      <DependentUpon>MPSSAttachmentShows.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebApp\Kiosk\MPSS\AllPhotosWeb.aspx.cs">
       <DependentUpon>AllPhotosWeb.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -7059,6 +7073,8 @@
     <Content Include="WebApp\Kiosk\Forms\KioskApproval.aspx" />
     <Content Include="WebApp\Kiosk\Forms\MakePayment.aspx" />
     <Content Include="WebApp\Kiosk\Forms\OfficeOfficer.aspx" />
+    <Content Include="WebApp\Kiosk\MPSS\CorrespondentRenewal.aspx" />
+    <Content Include="WebApp\Kiosk\MPSS\MPSSAttachmentShows.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\AllPhotosWeb.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\ApprovalList.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\MPSSLogin.aspx" />
