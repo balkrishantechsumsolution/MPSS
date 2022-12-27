@@ -3180,7 +3180,15 @@ Subject1, Subject2, Subject3, Subject4, Reason;
             , AadhaarNo
             , Photo
             , Sign
-            , CreatedBy;
+            , CreatedBy
+                ,IsParentIcomeTaxPayer
+                ,IsMessAvailable
+                ,IsKitchenAvailable
+                ,IsLibraryAvailable
+                ,IsPlaygroundAvailable      
+                ,Cheque
+                ,Passbook
+            ;
 
         public DateTime CreatedOn;
     }
@@ -3776,5 +3784,174 @@ Subject1, Subject2, Subject3, Subject4, Reason;
 
 
 
+    }
+    public class Correspondends_DT
+    {
+        public string SocietyName;
+        public string SchoolName;
+        public string SchoolAddress;
+        public string House;
+        public string Colony;
+        public string City;
+        public string Block;
+        public string District;
+        public string PinCode;
+        public string SchoolMobile;
+        public string SoceityRegNo;
+        public string SoceityRegDate;
+        public string SoceityValDate;
+        public string PANNO;
+        public string SoceityNoOfMember;
+        public string SocietyDirectorName;
+        public string SocietyCity;
+        public string SocietyPost;
+        public string SocietyDistrict;
+        public string SocietyPinCode;
+        public string SocietyMobileNo;
+        public string SocietyOtherOperated;
+        public string MunicipalCorp;
+        public string DisSchoolHeadQuater;
+        public string NrPoliceSt;
+        public string NrPoliceStDistance;
+        public string NrPoliceStDivision;
+        public string NrPolicePhNo;
+        public string NrGovtHighSch;
+        public string NrGovtHighSchAdd;
+        public string NrGovtHighSchDistance;
+        public string NrGovtHigherSch;
+        public string NrGovtHigherSchAdd;
+        public string NrGovtHigherSchDist;
+        public string NrPvtHighSch;
+        public string NrPvtHighSchAdd;
+        public string NrPvtHigherSch;
+        public string NrPvtHigherSchAdd;
+        public string NrPvtHigherSchDist;
+        public string BrdUni;
+        public string FromDate;
+        public string RegNo;
+        public string RegDate;
+        public string RunCommitteeSch;
+        public string SchPraveshika;
+        public string SankiyadetLKG;
+        public string SankiyadetUKG;
+        public string SankiyadetCls14;
+        public string SankiyadetClsPrav;
+        public string SankiyadetClsPrathma;
+        public string SankiyadetClsDuti;
+        public string SankiyadetClsAnti;
+        public string SankiyadetClsPoravePth;
+        public string SankiyadetClsPoraveAnti;
+        public string SankiyadetClsPoraveUtt;
+        public string SankiyadetClsPoraveUttAnti;
+        public string HeadMist;
+        public string HeadMistQual;
+        public string PrinMist;
+        public string PrinMistQual;
+        public string SQTDED;
+        public string SQTBTI;
+        public string SQTMED;
+        public string SQTBED;
+        public string SQTShikSha;
+        public string PQTDED;
+        public string PQTBTI;
+        public string PQTMED;
+        public string PQTBED;
+        public string PQTShikshaSha;
+        public string PQTPQTDED;
+        public string PQTPQTBTI;
+        public string PQTPQTMED;
+        public string PQTPQTBED;
+        public string PQTPQTShikshaSha;
+        public string HCQTMED;
+        public string HCQTBED;
+        public string HCQTShikshaSha;
+        public string HCQTDED;
+        public string HCQTBTI;
+        public string AQTMED;
+        public string AQTBED;
+        public string AQTShikshaSha;
+        public string AQTDED;
+        public string AQTBTI;
+        public string AQTPTI;
+        public string AssitTeachSci;
+        public string StudMed;
+        public string FeesPrathama;
+        public string FeesPurvamadiyma;
+        public string FeesUttarmadiyma;
+        public string Ledger;
+        public string AssistantOff;
+        public string FourthGrade;
+        public string MorgFT;
+        public string MorgFC;
+        public string MorgTT;
+        public string MorgTC;
+        public string AFTMorgFT;
+        public string AFTMorgFC;
+        public string AFTMorgTT;
+        public string AFTMorgTC;
+        public string Khasra;
+        public string Area;
+        public string RentAdd;
+        public string RentOwnerAdd;
+        public string AreaSchLand;
+        public string AreaSchBuildLand;
+        public string TotalAreaSchBuild;
+        public string TotalAreaSchBuildEmty;
+        public string NoOFClsStudy;
+        public string FDArea;
+        public string FDSqFT;
+        public string NoOFRoomsTEACH;
+        public string NoOFRoomsTEACHArea;
+        public string NoOFRoomsTEACHSqFT;
+        public string NoOFRoomsLabLib;
+        public string NoOFRoomsLabLibArea;
+        public string NoOFRoomsLabLibSqFT;
+        public string PlayArea;
+        public string PlaySqFT;
+        public string TotalNoToil;
+        public string TotalNoToilGl;
+        public string TotalNoToilBY;
+        public string EqipWater;
+        public string SubLabNum;
+        public string SubLabArea;
+        public string SubLabSqFT;
+        public string NoBooks;
+        public string AreaLib;
+        public string SqFTLib;
+        public string TotFurt;
+        public string TotFurtGB;
+        public string TotChaires;
+        public string TotBenches;
+        public string TotFurtStaff;
+        public string TotChairStaff;
+        public string TotAlmariresStaff;
+        public string TotComp;
+        public string TotPrinter;
+        public string TotFaxes;
+        public string TotOther;
+        public string TotFireExt;
+        public string SummittedAmt;
+        public string PhyHandStudFact;
+
+        public string PhyHandStudAdPrv;
+        public string CRCS1;
+        public string Electric;
+        public string SchoolType;
+        public string SocietyBrd1;
+        public string OAreaSchoolOperated;
+
+        public string LabEqip;
+        public string RentAgree;
+        public string FileKhasra;
+        public string AttTime;
+        public string TeachSht;
+        public string SocietyMembersReg;
+
+        public string fileLabEqip;
+        public string fileRentAgree;
+        public string fileKhasra;
+        public string fileAttTime;
+        public string fileTeachSht;
+        public string fileSocietyMembersReg;
     }
 }

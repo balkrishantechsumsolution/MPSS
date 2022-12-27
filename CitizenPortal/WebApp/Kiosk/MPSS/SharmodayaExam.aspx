@@ -578,9 +578,16 @@
 
                     </div>
             </header>
-
-
+            <div class="clearfix"></div>
+            <br />
+            <br />
+            <br />
+            <br />
             <div>
+               <h4> Application form for appearing in the Entrance Examination ( SHARMODAYA EXAM 2023-24 ) is now closed</h4>
+            </div>
+
+            <div style="display:none;">
 
 
                 <div class="rows">

@@ -887,7 +887,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSOS
                     lblCaptcha.Text = "";
 
 
-                   string url = "http://labour.mp.gov.in/WebServices/MPBOC.asmx";
+                   string url = "https://labour.mp.gov.in/WebServices/MPBOC.asmx";
                     string method = "";
                     string responseText = "";
 

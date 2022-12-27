@@ -3,8 +3,86 @@ $(document).ready(function () {
     $("#btnSubmit").bind("click", function (e) { return SubmitData(); });
     EL("File1").addEventListener("change", readFile, false);
     EL("File2").addEventListener("change", readFile2, false);
+    EL("Passbookupload").addEventListener("change", PassbookuploadFile, false);
+    EL("Chequeupload").addEventListener("change", ChequeuploadFile, false);
     EditProfile();
 });
+
+
+function ChequeuploadFile() {
+    if (this.files && this.files[0]) {
+        var imgsizee = this.files[0].size;
+        var sizekb = imgsizee / 1024;
+        sizekb = sizekb.toFixed(0);
+
+        $('#HiddenField3').val(sizekb);
+        //if (sizekb < 10 || sizekb > 50) {
+        //    alert('The size of the Cheque should fall between 20KB to 50KB. Your Photo Size is ' + sizekb + 'kb.');
+        //    return false;
+        //}
+        var ftype = this;
+        var fileupload = ftype.value;
+        if (fileupload == '') {
+            alert("Copy of Cheque only allows file types of PNG, JPG, JPEG. ");
+            return;
+        }
+        else {
+            var Extension = fileupload.substring(fileupload.indexOf('.') + 1);
+            if (Extension == "png" || Extension == "jpeg" || Extension == "jpg") {
+            }
+            else {
+                alert("Copy of Cheque only allows file types of PNG, JPG, JPEG. ");
+                return;
+            }
+        }
+        var FR = new FileReader();
+        FR.onload = function (e) {
+            EL("imgCheque").src = e.target.result;
+            EL("HiddenField4").value = e.target.result;
+        };
+        FR.readAsDataURL(this.files[0]);
+    }
+}
+
+
+function PassbookuploadFile() {
+    if (this.files && this.files[0]) {
+        var imgsizee = this.files[0].size;
+        var sizekb = imgsizee / 1024;
+        sizekb = sizekb.toFixed(0);
+
+        $('#HiddenField1').val(sizekb);
+        //if (sizekb < 10 || sizekb > 50) {
+        //    alert('The size of the Passbook should fall between 20KB to 50KB. Your Photo Size is ' + sizekb + 'kb.');
+        //    return false;
+        //}
+        var ftype = this;
+        var fileupload = ftype.value;
+        if (fileupload == '') {
+            alert("Copy of Passbook only allows file types of PNG, JPG, JPEG. ");
+            return;
+        }
+        else {
+            var Extension = fileupload.substring(fileupload.indexOf('.') + 1);
+            if (Extension == "png" || Extension == "jpeg" || Extension == "jpg") {
+            }
+            else {
+                alert("Copy of Passbook only allows file types of PNG, JPG, JPEG. ");
+                return;
+            }
+        }
+        var FR = new FileReader();
+        FR.onload = function (e) {
+            EL("imgPassbook").src = e.target.result;
+            EL("HiddenField2").value = e.target.result;
+        };
+        FR.readAsDataURL(this.files[0]);
+    }
+}
+
+
+
+
 function getQueryStrings() {
     var assoc = {};
     var decode = function (s) { return decodeURIComponent(s.replace(/\+/g, " ")); };
@@ -40,7 +118,25 @@ function EditProfile()
                 $('#JoiningDate').val(data["JoiningDate"]);
                 $('#MailID').val(data["MailID"]);
                 $('#ddlGender').val(data["Gender"]);
-                $('#AadhaarNo').val(data["AadhaarNo"]);
+               
+
+                document.getElementById('RadioButton29').checked = data["IsParentIcomeTaxPayer"] == "true" ? true : '';
+                document.getElementById('RadioButton30').checked = data["IsParentIcomeTaxPayer"] == "false" ? true : '';
+
+                document.getElementById('RadioButton27').checked = data["IsMessAvailable"] == "true" ? true : '';
+                document.getElementById('RadioButton3').checked = data["IsMessAvailable"]  == "false" ? true : '';
+
+                document.getElementById('RadioButton25').checked = data["IsKitchenAvailable"] == "true" ? true : '';
+                document.getElementById('RadioButton26').checked = data["IsKitchenAvailable"] == "false" ? true : '';
+
+                document.getElementById('RadioButton29').checked = data["IsParentIcomeTaxPayer"] == "true" ? true : '';
+                document.getElementById('RadioButton30').checked = data["IsParentIcomeTaxPayer"] == "false" ? true : '';
+
+                document.getElementById('IsLibraryAvailable1').checked = data["IsLibraryAvailable"] == "true" ? true : '';
+                document.getElementById('IsLibraryAvailable2').checked = data["IsLibraryAvailable"] == "false" ? true : '';
+
+                document.getElementById('IsPlaygroundAvailable1').checked = data["IsPlaygroundAvailable"] == "true" ? true : '';
+                document.getElementById('IsPlaygroundAvailable2').checked = data["IsPlaygroundAvailable"] == "false" ? true : '';
 
                 if (data["Sign"] != null && data["Sign"] != "") {
                     if (data["Sign"].indexOf('data:image/jpeg;base64,') !== -1 || data["Sign"].indexOf('data:image/png;base64,') !== -1) {
@@ -60,6 +156,27 @@ function EditProfile()
                     }
                     EL("myImg").src = data["Photo"];
                     EL("HFb64").value = data["Photo"];
+                }
+
+                if (data["Cheque"] != null && data["Cheque"] != "") {
+                    if (data["Cheque"].indexOf('data:image/jpeg;base64,') !== -1 || data["Cheque"].indexOf('data:image/png;base64,') !== -1) {
+                        document.getElementById('imgCheque').setAttribute('src', data["Cheque"]);
+                    } else {
+                        document.getElementById('imgCheque').setAttribute('src', 'data:image/jpeg;base64,' + data["Cheque"]);
+                    }
+                    EL("imgCheque").src = data["Cheque"];
+                    EL("HiddenField4").value = data["Cheque"];
+                }
+
+
+                if (data["Passbook"] != null && data["Passbook"] != "") {
+                    if (data["Passbook"].indexOf('data:image/jpeg;base64,') !== -1 || data["Passbook"].indexOf('data:image/png;base64,') !== -1) {
+                        document.getElementById('imgPassbook').setAttribute('src', data["Passbook"]);
+                    } else {
+                        document.getElementById('imgPassbook').setAttribute('src', 'data:image/jpeg;base64,' + data["Passbook"]);
+                    }
+                    EL("imgPassbook").src = data["Passbook"];
+                    EL("HiddenField4").value = data["Passbook"];
                 }
             }
         },
@@ -91,6 +208,53 @@ function SubmitData() {
     var MailID = $('#MailID').val();
     var JoiningDate = $('#JoiningDate').val();
 
+    var IsParentIcomeTaxPayer = false;
+
+    if (document.getElementById('RadioButton29').checked) {
+        IsParentIcomeTaxPayer = true;
+    }
+    else if (document.getElementById('RadioButton30').checked)
+    {
+        IsParentIcomeTaxPayer = false;
+    }
+
+    var IsMessAvailable = false;
+
+    if (document.getElementById('RadioButton27').checked) {
+        IsMessAvailable = true;
+    }
+    else if (document.getElementById('RadioButton3').checked) {
+        IsMessAvailable = false;
+    }
+
+    var IsKitchenAvailable = false;
+
+    if (document.getElementById('RadioButton25').checked) {
+        IsKitchenAvailable = true;
+    }
+    else if (document.getElementById('RadioButton26').checked) {
+        IsKitchenAvailable = false;
+    }
+
+    var IsLibraryAvailable = false;
+
+    if (document.getElementById('IsLibraryAvailable1').checked) {
+        IsLibraryAvailable = true;
+    }
+    else if (document.getElementById('IsLibraryAvailable2').checked) {
+        IsLibraryAvailable = false;
+    }
+
+    var IsPlaygroundAvailable = false;
+
+    if (document.getElementById('IsPlaygroundAvailable1').checked) {
+        IsPlaygroundAvailable = true;
+    }
+    else if (document.getElementById('IsPlaygroundAvailable2').checked) {
+        IsPlaygroundAvailable = false;
+    }
+   
+
     JoiningDate = $('#JoiningDate').val().split("/");
     JoiningDate = JoiningDate[2] + "-" + JoiningDate[1] + "-" + JoiningDate[0];
 
@@ -114,6 +278,14 @@ function SubmitData() {
         'AadhaarNo': AadhaarNo,
         'Photo': $('#HFb64').val(),
         'Sign': $('#HFb64Sign').val(),
+
+        'IsParentIcomeTaxPayer': IsParentIcomeTaxPayer,
+        'IsMessAvailable': IsMessAvailable,
+        'IsKitchenAvailable': IsKitchenAvailable,
+        'IsLibraryAvailable': IsLibraryAvailable,
+        'IsPlaygroundAvailable': IsPlaygroundAvailable,        
+        'Cheque': $('#HiddenField4').val(),
+        'Passbook': $('#HiddenField2').val(),
     };
 
     var obj = {

@@ -40,7 +40,7 @@ namespace CitizenPortal.SCTEVTITI {
         
         /// <remarks/>
         public MigrationCertITI() {
-            this.Url = global::CitizenPortal.Properties.Settings.Default.CitizenPortal_SCTEVTITI_MigrationCertITI;
+            this.Url = global::CitizenPortal.Properties.Settings.Default.AddressService;
             if ((this.IsLocalFileSystemWebService(this.Url) == true)) {
                 this.UseDefaultCredentials = true;
                 this.useDefaultCredentialsSetExplicitly = false;

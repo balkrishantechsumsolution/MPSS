@@ -680,17 +680,17 @@
 
                     <div id="smartwizard">
                         <ul>
-                            <li><a href="#step-1">Step 1<br />
+                            <li  class="done active"><a href="#step-1">Step 1<br />
                                 <small id="lblsearch">{{resourcesData.lblScStDtls}}</small></a></li>
-                            <li><a href="#step-2">Step 2<br />
+                            <li  class="done active"><a href="#step-2">Step 2<br />
                                 <small>{{resourcesData.lblStApplicantAddress}}</small></a></li>
-                            <li><a href="#step-3">Step 3<br />
+                            <li  class="done active"><a href="#step-3">Step 3<br />
                                 <small>{{resourcesData.lblScStInform}}</small></a></li>
-                            <li><a href="#step-4">Step 4<br />
+                            <li  class="done active"><a href="#step-4">Step 4<br />
                                 <small>{{resourcesData.lblScStInformation}}</small></a></li>
-                            <li><a href="#step-5">Step 5<br />
+                            <li class="done active"><a href="#step-5">Step 5<br />
                                 <small>{{resourcesData.lblScStBankDetails}}</small></a></li>
-                             <li><a href="#step-6">Step 6<br />
+                             <li class="done active"><a href="#step-6">Step 6<br />
                                 <small>{{resourcesData.lblAttach}}</small></a></li>
 
                         </ul>

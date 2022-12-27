@@ -14474,6 +14474,13 @@ namespace CitizenPortal.Services
                 , "AadhaarNo"
                 , "Photo"
                 , "Sign"
+                ,"IsParentIcomeTaxPayer"
+                ,"IsMessAvailable"
+                ,"IsKitchenAvailable"
+                ,"IsLibraryAvailable"
+                ,"IsPlaygroundAvailable"      
+                ,"Cheque"
+                ,"Passbook"
 
             };
 

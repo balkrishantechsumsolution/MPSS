@@ -20,6 +20,113 @@
                 border-width: 1px;
             }
     </style>
+      <style>
+        #ContentPlaceHolder1_gv {
+            margin: 25px auto 0 auto;
+        }
+
+            #ContentPlaceHolder1_gv tr th {
+                padding: 10px;
+            }
+
+            #ContentPlaceHolder1_gv tr td {
+                padding: 10px;
+            }
+
+            #ContentPlaceHolder1_gv > tbody > tr:nth-child(1) {
+                background-color: #006699;
+                font-weight: 10px;
+                color: White;
+                padding: 10px;
+            }
+
+            #ContentPlaceHolder1_gv > tbody > tr:not(:nth-child(1)) {
+                background-color: #E3EAEB;
+                padding: 10px;
+            }
+
+            #ContentPlaceHolder1_gv > tbody > tr.pagingDiv {
+                display: inline-block;
+                max-width: 100%;
+                margin-bottom: 5px;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+                #ContentPlaceHolder1_gv > tbody > tr.pagingDiv table {
+                    color: #000 !important;
+                    display: block !important;
+                    margin: 0 !important;
+                    padding: 10px;
+                }
+
+                    #ContentPlaceHolder1_gv > tbody > tr.pagingDiv table td {
+                        color: #000 !important;
+                        display: block !important;
+                        margin: 0 !important;
+                        padding: 10px;
+                    }
+
+        .pagingDiv a, .pagingDiv span {
+            display: inline-block;
+            padding: 0px 9px;
+            margin-right: 4px;
+            border-radius: 3px;
+            border: solid 1px #c0c0c0;
+            background: #e9e9e9;
+            box-shadow: inset 0px 1px 0px rgba(255,255,255, .8), 0px 1px 3px rgba(0,0,0, .1);
+            font-size: .875em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #717171;
+            text-shadow: 0px 1px 0px rgba(255,255,255, 1);
+        }
+
+            .pagingDiv a:hover {
+                background: #fefefe;
+                background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FEFEFE), to(#f0f0f0));
+                background: -moz-linear-gradient(0% 0% 270deg,#FEFEFE, #f0f0f0);
+            }
+
+            .pagingDiv a.active {
+                border: none;
+                background: #616161;
+                box-shadow: inset 0px 0px 8px rgba(0,0,0, .5), 0px 1px 0px rgba(255,255,255, .8);
+                color: #f0f0f0;
+                text-shadow: 0px 0px 3px rgba(0,0,0, .5);
+            }
+
+        .pagingDiv span {
+            color: #f0f0f0;
+            background: #616161;
+        }
+
+        #ContentPlaceHolder1_gv a, #ContentPlaceHolder1_gv span {
+            display: block;
+            padding: 5px 15px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        #ContentPlaceHolder1_gv a {
+            background-color: #f0f0f0;
+            color: #545454;
+            border: 1px solid #ddd;
+        }
+
+            #ContentPlaceHolder1_gv a:hover {
+                background-color: #37495f;
+                color: #fff;
+            }
+
+        #ContentPlaceHolder1_gv span {
+            background-color: #B65838;
+            color: #fff;
+            border: 1px solid #B65838;
+        }
+    </style>
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div id="page-wrapper" style="min-height: 500px !important;">
@@ -71,66 +178,35 @@
                                     <asp:Button ID="btnSubmit" runat="server" CausesValidation="True" ToolTip="Show Data"
                                         CssClass="btn btn-success" Text="Show Data" ValidationGroup="G" OnClick="btnSubmit_Click" />
 
+                                    <asp:Button ID="btnHome" runat="server" CausesValidation="True" ToolTip="Home"
+                                        CssClass="btn btn-success" Text="Home" ValidationGroup="G" OnClick="btnHome_Click" />
+
+
                                 </div>
+                                <div class="clearfix"></div>
+
                             </div>
+
                             <div class="clearfix"></div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="clearfix"></div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="box-container">
+             <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 box-container">
+
                     <div class="box-heading">
 
-                        <h4 class="box-title">MPSS Reports Data</h4>
+                        <h4 class="box-title">Reports Data</h4>
                     </div>
                     <div class="box-body box-body-open">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="table-responsive">
                                 <div class="demo-container">
-                                    <asp:GridView ID="GridView1" CssClass="GridClass" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px"
-                                        CellPadding="10"
-                                        CellSpacing="5" AutoGenerateColumns="False" OnRowCommand="GridView1_RowCommand">
-                                        <Columns>
-                                            <asp:BoundField DataField="StudentID" HeaderText="ID" />
-                                            <asp:BoundField DataField="StudentName" HeaderText="Student Name" />
-                                            <asp:BoundField DataField="FatherName" HeaderText="Father Name" />
-                                            <asp:BoundField DataField="MotherName" HeaderText="Mother Name" />
-                                            <asp:BoundField DataField="Birthdate" HeaderText="Birth date" ApplyFormatInEditMode="true" DataFormatString="{0:d}" />
-                                            <asp:BoundField DataField="Gender" HeaderText="Gender" />
-                                             <asp:BoundField DataField="RollNo" HeaderText="Roll No" />
-                                            <%--  <asp:BoundField DataField="BankAccountNo" HeaderText="Account No" />
-                                            <asp:BoundField DataField="BankAccountIFSCCode" HeaderText="IFSC Code" />--%>
-
-
-                                            <%--  <asp:TemplateField>
-                                                <ItemTemplate>
-                                                    <asp:Button runat="server" Text="View" CommandName="ViewAcknowledge" CommandArgument="<%# ((GridViewRow) Container).RowIndex %>" />
-                                                </ItemTemplate>
-                                            </asp:TemplateField>--%>
-                                            <asp:TemplateField ShowHeader="true" HeaderText="View">
-                                                <ItemTemplate>
-                                                    <%-- <asp:HyperLink ID="lb_View" runat="server" 
-                                                        CommandName="ViewAcknowledge" Text="View" CommandArgument='<%# ((GridViewRow) Container).RowIndex %>'></asp:HyperLink>--%>
-                                                    <asp:LinkButton ID="lb_View" runat="server" CommandName="ViewAcknowledge" Text="View" CommandArgument='<%# ((GridViewRow) Container).RowIndex %>'>  
-                                                    </asp:LinkButton>
-                                                </ItemTemplate>
-                                            </asp:TemplateField>
-                                        </Columns>
-                                        <HeaderStyle BackColor="#006699" Font-Bold="true" ForeColor="White" />
-                                        <RowStyle ForeColor="#000066" />
-
-                                        <FooterStyle BackColor="White" ForeColor="#000066" />
-                                        <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
-                                        <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
-                                        <RowStyle ForeColor="#000066" />
-                                        <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
-                                        <SortedAscendingCellStyle BackColor="#F1F1F1" />
-                                        <SortedAscendingHeaderStyle BackColor="#007DBB" />
-                                        <SortedDescendingCellStyle BackColor="#CAC9C9" />
-                                        <SortedDescendingHeaderStyle BackColor="#00547E" />
-                                    </asp:GridView>
+                                    <asp:Button ID="btnExcel" runat="server" Text="Excel" OnClick="btnExcel_Click" CssClass="btn btn-success" />
+                                    <asp:Label ID="lblTotal" runat="server" />
+                                    <asp:Panel ID="pnl" runat="server"></asp:Panel>
                                 </div>
                             </div>
                         </div>
@@ -140,6 +216,7 @@
                     </div>
 
                 </div>
+
             </div>
         </div>
     </div>

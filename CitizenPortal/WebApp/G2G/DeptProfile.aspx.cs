@@ -126,7 +126,54 @@ namespace CitizenPortal.WebApp.G2G
             //byte[] toBytes = System.Convert.FromBase64String(viewModel.Image);
             System.Drawing.Image newImage = ByteArrayToImage(toBytes);
 
-            if (newImage != null && iAlpha)
+
+
+
+            string signdata = viewModel.Sign;
+
+           
+
+            foreach (string curr in replaceThese)
+            {
+                signdata = data.Replace(curr, string.Empty);
+            }
+
+            byte[] tosignBytes = System.Convert.FromBase64String(data);
+
+            //byte[] toBytes = System.Convert.FromBase64String(viewModel.Image);
+            System.Drawing.Image newSignImage = ByteArrayToImage(tosignBytes);
+
+
+
+            string Chequedata = viewModel.Cheque;
+
+
+
+            foreach (string curr in replaceThese)
+            {
+                Chequedata = data.Replace(curr, string.Empty);
+            }
+
+            byte[] toChequeBytes = System.Convert.FromBase64String(data);
+
+            //byte[] toBytes = System.Convert.FromBase64String(viewModel.Image);
+            System.Drawing.Image newChequeImage = ByteArrayToImage(toChequeBytes);
+
+            string Passportdata = viewModel.Passbook;
+
+
+
+            foreach (string curr in replaceThese)
+            {
+                Passportdata = data.Replace(curr, string.Empty);
+            }
+
+            byte[] toPassportBytes = System.Convert.FromBase64String(data);
+
+            //byte[] toBytes = System.Convert.FromBase64String(viewModel.Image);
+            System.Drawing.Image newPassportImage = ByteArrayToImage(toPassportBytes);
+
+            if (newImage != null && iAlpha && newSignImage != null && newChequeImage != null && newPassportImage != null)
             {
                 using (ChannelFactory<IService1Channel> factory = new ChannelFactory<IService1Channel>(new BasicHttpBinding()))
                 {

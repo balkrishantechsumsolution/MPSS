@@ -3,6 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
     <%--For Datepicker Js & Css--%>
+       <script src="/WebApp/Login/js/jquery-1.12.3.js"></script>
     <script src="/Scripts/jquery-ui-1.11.4.min.js"></script>
     <script src="/Scripts/jquery.msgBox.js"></script>
     <link href="/PortalStyles/msgBoxLight.css" rel="stylesheet" />
@@ -13,6 +14,8 @@
     <link href="/PortalStyles/jquery-ui.min.css" rel="stylesheet" />
     <script src="/WebApp/Scripts/ValidationScript.js"></script>
     <script src="/WebApp/Scripts/CommonScript.js"></script>
+       <link href="/PortalStyles/jquery-ui.min.css" rel="stylesheet" />
+    <link href="/WebApp/Login/css/bootstrap.css" rel="stylesheet" />
     <script src="DeptProfile.js"></script>
 
     <%--For Datepicker Js & Css--%>
@@ -167,7 +170,7 @@
                             <label class="manadatory">
                                 Email Id
                             </label>
-                            <input name="" type="text" id="MailID" class="form-control" placeholder="Type Your Email" maxlength="30" onchange="EmailValidation();" />
+                            <input name="" type="text" id="MailID" class="form-control" placeholder="Type Your Email" maxlength="100" onchange="EmailValidation();" />
                         </div>
                     </div>
 
@@ -177,7 +180,7 @@
                             <label class="manadatory">
                                 Date of Incharge
                             </label>
-                            <input name="" id="JoiningDate" type="text" id="DOJ" class="form-control" placeholder="DD/MM/YYYY" />
+                            <input name="" id="JoiningDate" type="text" id="DOJ" class="form-control" placeholder="DD/MM/YYYY"  />
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2" style="display: none;">
@@ -242,9 +245,9 @@
                                 <div class="form-group">
                                     <label>Is Mess Available</label>
 
-                                    <asp:RadioButton ID="RadioButton27" runat="server" Text="Yes" GroupName="IsAnyHaveScholarShip" />
+                                    <asp:RadioButton ID="RadioButton27" runat="server" Text="Yes" GroupName="IsMessAvailable" />
 
-                                    <asp:RadioButton ID="RadioButton3" runat="server" Text="No" GroupName="IsAnyHaveScholarShip" />
+                                    <asp:RadioButton ID="RadioButton3" runat="server" Text="No" GroupName="IsMessAvailable" />
                                 </div>
                             </div>
 
@@ -252,10 +255,10 @@
                                 <div class="form-group">
                                     <label>Is Kitchen Available</label>
 
-                                    <asp:RadioButton ID="RadioButton25" runat="server" Text="Yes" GroupName="IsHosteller" />
+                                    <asp:RadioButton ID="RadioButton25" runat="server" Text="Yes" GroupName="IsKitchenAvailable" />
 
 
-                                    <asp:RadioButton ID="RadioButton26" runat="server" Text="No" GroupName="IsHosteller" />
+                                    <asp:RadioButton ID="RadioButton26" runat="server" Text="No" GroupName="IsKitchenAvailable" />
 
                                 </div>
                             </div>
@@ -263,10 +266,10 @@
                                 <div class="form-group">
                                     <label>Is Library Available</label>
 
-                                    <asp:RadioButton ID="IsFamilyBPLY" runat="server" Text="Yes" GroupName="IsFamilyBPL" />
+                                    <asp:RadioButton ID="IsLibraryAvailable1" runat="server" Text="Yes" GroupName="IsLibraryAvailable" />
 
 
-                                    <asp:RadioButton ID="IsFamilyBPLN" runat="server" Text="No" GroupName="IsFamilyBPL" />
+                                    <asp:RadioButton ID="IsLibraryAvailable2" runat="server" Text="No" GroupName="IsLibraryAvailable" />
 
                                 </div>
                             </div>
@@ -274,10 +277,10 @@
                                 <div class="form-group">
                                     <label>Is Playground Available</label>
 
-                                    <asp:RadioButton ID="RadioButton1" runat="server" Text="Yes" GroupName="IsDisadvantagedgroup" />
+                                    <asp:RadioButton ID="IsPlaygroundAvailable1" runat="server" Text="Yes" GroupName="IsPlaygroundAvailable" />
 
 
-                                    <asp:RadioButton ID="RadioButton2" runat="server" Text="No" GroupName="IsDisadvantagedgroup" />
+                                    <asp:RadioButton ID="IsPlaygroundAvailable2" runat="server" Text="No" GroupName="IsPlaygroundAvailable" />
 
                                 </div>
                             </div>
@@ -300,11 +303,7 @@
                                 <div class="box-body box-body-open p0">
                                     <div class="col-lg-12">
                                         <asp:Image runat="server" class="form-control" src="/webApp/kiosk/Images/cheque.jpg" name="ProfileCheque" Style="height: 180px" ID="imgCheque" />
-                                        <input class="camera" id="Chequeupload" name="Chequeupload" type="file" runat="server" />
-                                        <asp:Button ID="btnCheque" type="submit" Text="Upload" runat="server"></asp:Button>
-                                        <asp:Panel ID="Panel1" Visible="False" runat="server">
-                                            <asp:Label ID="lblResultCheque" runat="server"></asp:Label>
-                                        </asp:Panel>
+                                         <input class="camera" id="Chequeupload" name="Photoupload" type="file" />
 
                                     </div>
                                     <div class="clearfix"></div>
@@ -319,11 +318,7 @@
                                 <div class="box-body box-body-open p0">
                                     <div class="col-lg-12">
                                         <asp:Image runat="server" class="form-control" src="/webApp/kiosk/Images/Passbook.jpg" name="ProfilePassbook" Style="height: 180px" ID="imgPassbook" />
-                                        <input class="camera" id="Passbookupload" name="Passbookupload" type="file" runat="server" />
-                                        <asp:Button ID="btnPassbook" type="submit" Text="Upload" runat="server"></asp:Button>
-                                        <asp:Panel ID="Panel2" Visible="False" runat="server">
-                                            <asp:Label ID="lblResultPassbook" runat="server"></asp:Label>
-                                        </asp:Panel>
+                                        <input class="camera" id="Passbookupload" name="Photoupload" type="file" />
 
                                     </div>
                                     <div class="clearfix"></div>
@@ -348,5 +343,11 @@
         <asp:HiddenField ID="HFSizeOfSign" runat="server" ClientIDMode="Static" />
         <asp:HiddenField ID="HFCurrentLang" runat="server" ClientIDMode="Static" />
         <asp:HiddenField ID="HFLID" runat="server" ClientIDMode="Static" />
+
+         <asp:HiddenField ID="HiddenField1" runat="server" ClientIDMode="Static" />
+        <asp:HiddenField ID="HiddenField2" runat="server" ClientIDMode="Static" />
+
+         <asp:HiddenField ID="HiddenField3" runat="server" ClientIDMode="Static" />
+        <asp:HiddenField ID="HiddenField4" runat="server" ClientIDMode="Static" />
     </div>
 </asp:Content>

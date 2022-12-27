@@ -8,8 +8,8 @@
     <Setting Name="CitizenPortal_DocumentVerification_StudentDetailsWS" Type="(Web Service URL)" Scope="Application">
       <Value Profile="(Default)">http://sctevtodisha.nic.in/Diploma/StudentDetailsWS.asmx</Value>
     </Setting>
-    <Setting Name="CitizenPortal_SCTEVTITI_MigrationCertITI" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">http://sctevtodisha.nic.in/migrationcertiti.asmx</Value>
+    <Setting Name="AddressService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:63219/AddressService.svc</Value>
     </Setting>
   </Settings>
 </SettingsFile>
