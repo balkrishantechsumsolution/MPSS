@@ -82,7 +82,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
             {
                 LinkButton lb1 = new LinkButton();
                 lb1.ID = "Attachment";
-                lb1.Text = "Attachment";
+                lb1.Text = "View Acknowledgement";
                 lb1.Command += lb1_Command;
 
                 lb1.ToolTip = "Attachment";
@@ -96,7 +96,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
 
                 LinkButton lb = new LinkButton();
                 lb.ID = "View";
-                lb.Text = "ViewForm";
+                lb.Text = "View Form";
                 lb.Command += lb_Command;
 
                 lb.ToolTip = "View";

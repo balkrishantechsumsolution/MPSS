@@ -1149,13 +1149,13 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
         protected global::System.Web.UI.WebControls.TextBox txtSankiyadetClsPoraveUttAnti;
 
         /// <summary>
-        /// imgCheque control.
+        /// imgattchtime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgCheque;
+        protected global::System.Web.UI.WebControls.Image imgattchtime;
 
         /// <summary>
         /// fileAttTime control.
@@ -1194,13 +1194,13 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
         protected global::System.Web.UI.WebControls.Label lblResultCheque;
 
         /// <summary>
-        /// imgPassbook control.
+        /// imgattchsub control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgPassbook;
+        protected global::System.Web.UI.WebControls.Image imgattchsub;
 
         /// <summary>
         /// fileTeachSht control.

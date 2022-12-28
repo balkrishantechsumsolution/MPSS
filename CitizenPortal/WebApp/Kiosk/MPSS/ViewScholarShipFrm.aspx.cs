@@ -34,8 +34,8 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
 
                     if (HFCurrentLang.Value == "")
                     {
-                        HFCurrentLang.Value = "1";
-                        btnLang.Value = "हिन्दी";
+                        HFCurrentLang.Value = "2";
+                        btnLang.Value = "English";
 
                     }
 
@@ -165,26 +165,75 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
 
 
 
-                    //IsFatherDead.Checked = Convert.ToBoolean(dtApp.Rows[0]["IsFatherDead"].ToString());
-                    //IsMPOrigin.Checked = Convert.ToBoolean(dtApp.Rows[0]["IsMPOrigin"].ToString());
-                    //IsParentIcomeTaxPayer.Checked = Convert.ToBoolean(dtApp.Rows[0]["IsParentIcomeTaxPayer"].ToString());
-                    //IsHosteller.Checked = Convert.ToBoolean(dtApp.Rows[0]["IsHosteller"].ToString());
-                    //IsDGSCaste.Checked = Convert.ToBoolean(dtApp.Rows[0]["IsDGSCaste"].ToString());
-                    //IsFamilyBPL.Checked = Convert.ToBoolean(dtApp.Rows[0]["IsFamilyBPL"].ToString());
-                    //IsDisadvantagedgroup.Checked = Convert.ToBoolean(dtApp.Rows[0]["IsDisadvantagedgroup"].ToString());
-                    //IsClsFirstEnrollStatus.Checked = Convert.ToBoolean(dtApp.Rows[0]["IsClsFirstEnrollStatus"].ToString());
-                    //IsFreeTextbooks.Checked = Convert.ToBoolean(dtApp.Rows[0]["IsFreeTextbooks"].ToString());
-                    //IsResidingHostel.Checked = Convert.ToBoolean(dtApp.Rows[0]["IsResidingHostel"].ToString());
-                    //IsRecSpecialTraining.Checked = Convert.ToBoolean(dtApp.Rows[0]["IsRecSpecialTraining"].ToString());
-                    //IsRegVocationalPrg.Checked = Convert.ToBoolean(dtApp.Rows[0]["IsRegVocationalPrg"].ToString());
-                    //Ishomeless.Checked = Convert.ToBoolean(dtApp.Rows[0]["Ishomeless"].ToString());
-                    //IsFreeTransport.Checked = Convert.ToBoolean(dtApp.Rows[0]["IsFreeTransport"].ToString());
-                    //IsFreeEscortDis.Checked = Convert.ToBoolean(dtApp.Rows[0]["IsFreeEscortDis"].ToString());
-                    //IsRTE.Checked = Convert.ToBoolean(dtApp.Rows[0]["IsRTE"].ToString());
-                    //IsAnyHaveScholarShip.Checked = Convert.ToBoolean(dtApp.Rows[0]["IsAnyHaveScholarShip"].ToString());
-                    //FreeBicycle.Checked = Convert.ToBoolean(dtApp.Rows[0]["FreeBicycle"].ToString());
-                    //rbnpass1.Checked = Convert.ToBoolean(dtApp.Rows[0]["IsPassOtherBoard"].ToString());
-                    //rbnpass2.Checked = Convert.ToBoolean(dtApp.Rows[0]["IsPassOtherBoard"].ToString());
+                    IsFatherDead.Checked = Convert.ToBoolean(dtApp.Rows[0]["IsFatherDead"].ToString());
+
+                    rbnpass1.Checked = dtApp.Rows[0]["IsPassOtherBoard"].ToString() == "true" ? true : false;
+                    rbnpass2.Checked = dtApp.Rows[0]["IsPassOtherBoard"].ToString() == "false" ? true : false;
+
+                    RadioButton29.Checked = dtApp.Rows[0]["IsParentIcomeTaxPayer"].ToString() == "true" ? true : false;
+                    RadioButton30.Checked = dtApp.Rows[0]["IsParentIcomeTaxPayer"].ToString() == "false" ? true : false;
+
+                    RadioButton27.Checked = dtApp.Rows[0]["IsAnyHaveScholarShip"].ToString() == "true" ? true : false;
+                    RadioButton28.Checked = dtApp.Rows[0]["IsAnyHaveScholarShip"].ToString() == "false" ? true : false;
+
+
+                    RadioButton25.Checked = dtApp.Rows[0]["IsHosteller"].ToString() == "true" ? true : false;
+                    RadioButton26.Checked = dtApp.Rows[0]["IsHosteller"].ToString() == "false" ? true : false;
+
+                    IsFamilyBPLY.Checked = dtApp.Rows[0]["IsFamilyBPL"].ToString() == "true" ? true : false;
+                    IsFamilyBPLN.Checked = dtApp.Rows[0]["IsFamilyBPL"].ToString() == "false" ? true : false;
+
+
+                    RadioButton1.Checked = dtApp.Rows[0]["IsDisadvantagedgroup"].ToString() == "true" ? true : false;
+                    RadioButton2.Checked = dtApp.Rows[0]["IsDisadvantagedgroup"].ToString() == "false" ? true : false;
+
+
+                    RadioButton3.Checked = dtApp.Rows[0]["IsRTE"].ToString() == "true" ? true : false;
+                    RadioButton4.Checked = dtApp.Rows[0]["IsRTE"].ToString() == "false" ? true : false;
+
+
+                    RadioButton5.Checked = dtApp.Rows[0]["IsClsFirstEnrollStatus"].ToString() == "true" ? true : false;
+                    RadioButton6.Checked = dtApp.Rows[0]["IsClsFirstEnrollStatus"].ToString() == "false" ? true : false;
+
+
+                    RadioButton7.Checked = dtApp.Rows[0]["IsDGSCaste"].ToString() == "true" ? true : false;
+                    RadioButton8.Checked = dtApp.Rows[0]["IsDGSCaste"].ToString() == "false" ? true : false;
+
+                    RadioButton9.Checked = dtApp.Rows[0]["IsFreeTextbooks"].ToString() == "true" ? true : false;
+                    RadioButton10.Checked = dtApp.Rows[0]["IsFreeTextbooks"].ToString() == "false" ? true : false;
+
+                    RadioButton11.Checked = dtApp.Rows[0]["IsFreeTransport"].ToString() == "true" ? true : false;
+                    RadioButton12.Checked = dtApp.Rows[0]["IsFreeTransport"].ToString() == "false" ? true : false;
+
+                    RadioButton13.Checked = dtApp.Rows[0]["IsFreeEscortDis"].ToString() == "true" ? true : false;
+                    RadioButton14.Checked = dtApp.Rows[0]["IsFreeEscortDis"].ToString() == "false" ? true : false;
+
+
+                    RadioButton15.Checked = dtApp.Rows[0]["FreeBicycle"].ToString() == "true" ? true : false;
+                    RadioButton16.Checked = dtApp.Rows[0]["FreeBicycle"].ToString() == "false" ? true : false;
+
+                    RadioButton17.Checked = dtApp.Rows[0]["IsResidingHostel"].ToString() == "true" ? true : false;
+                    RadioButton18.Checked = dtApp.Rows[0]["IsResidingHostel"].ToString() == "false" ? true : false;
+
+
+                    RadioButton19.Checked = dtApp.Rows[0]["IsRecSpecialTraining"].ToString() == "true" ? true : false;
+                    RadioButton20.Checked = dtApp.Rows[0]["IsRecSpecialTraining"].ToString() == "false" ? true : false;
+
+
+                    RadioButton21.Checked = dtApp.Rows[0]["Ishomeless"].ToString() == "true" ? true : false;
+                    RadioButton22.Checked = dtApp.Rows[0]["Ishomeless"].ToString() == "false" ? true : false;
+
+
+                    RadioButton23.Checked = dtApp.Rows[0]["IsRegVocationalPrg"].ToString() == "true" ? true : false;
+                    RadioButton24.Checked = dtApp.Rows[0]["IsRegVocationalPrg"].ToString() == "false" ? true : false;
+
+
+                    IsMPOriginY.Checked = dtApp.Rows[0]["IsMPOrigin"].ToString() == "true" ? true : false;
+                    IsMPOriginN.Checked = dtApp.Rows[0]["IsMPOrigin"].ToString() == "false" ? true : false;
+                   
+
+
+                 
 
                 }
 

@@ -143,7 +143,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
             }
             catch (Exception ex)
             {
-                Label1.Text = "Your username and Password is incorrect";
+                Label1.Text = ex.Message;
                 Label1.ForeColor = System.Drawing.Color.Red;
 
             }

@@ -943,7 +943,7 @@ orders issued thereunder and agree to abide by them.</value>
     <value>Date of admission in current school</value>
   </data>
   <data name="lblScStDigitalCasteNo" xml:space="preserve">
-    <value>Digital Caste Certificate Number(Lok Shewa Kendra Dwara Pradaya)</value>
+    <value>Digital Caste Certificate Number(Lok sevakendra Dwara Pradaya)</value>
   </data>
   <data name="lblScStDisability" xml:space="preserve">
     <value>Type of disability</value>
@@ -1189,7 +1189,7 @@ orders issued thereunder and agree to abide by them.</value>
     <value>Disabilities student Fee Escort Facility</value>
   </data>
   <data name="lblDiceCode" xml:space="preserve">
-    <value>Maharishi Patanjali Sanskrit Sansthan dwaraa jaari Vidyalay ka Dice Code</value>
+    <value>Maharishi Patanjali Sanskrit Sansthan dwaraa jaari Vidhyalay ka Dice Code</value>
   </data>
   <data name="lblParentMobileNo" xml:space="preserve">
     <value>Mobile No</value>

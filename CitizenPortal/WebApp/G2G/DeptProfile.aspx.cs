@@ -16,11 +16,14 @@ using static CitizenPortal.Services.AddressService;
 using System.IO;
 using System.Text.RegularExpressions;
 using Ganss.XSS;
+using System.Data.SqlClient;
+using SqlHelper;
 
 namespace CitizenPortal.WebApp.G2G
 {
     public partial class DeptProfile : AdminBasePage
     {
+        static data sqlhelper = new data();
         protected void Page_Load(object sender, EventArgs e)
         {
             string culture = "en-GB";
@@ -93,118 +96,132 @@ namespace CitizenPortal.WebApp.G2G
         [WebMethod]
         public static string InsertDeptProfile(string prefix, string Data)
         {
-            string noNewLines = Data.Replace("\n", "");
-
-            var sanitizer = new HtmlSanitizer();
-            var html = noNewLines;
-            var sanitized = sanitizer.Sanitize(html);
-            noNewLines = sanitized;
-            DeptProfile_DT viewModel = ToObjectFromJSON<DeptProfile_DT>(noNewLines);
-
-            string URL = "";
-            URL = m_ServiceURL;
-            ServiceResult t_ServiceResult = new ServiceResult();
-
-            string text;
-            BasicHttpBinding binding = new BasicHttpBinding();
-            binding.MaxReceivedMessageSize = 10485760;
-            binding.MaxBufferSize = 10485760;
-            binding.MaxBufferPoolSize = 10485760;
-
-            string[] replaceThese = { "data:image/png;base64,", "data:image/jpeg;base64,", "data:image/jpg;base64," };
-            string data = viewModel.Photo;
-
-            bool iAlpha = IsAlphabets(viewModel.Name);
-
-            foreach (string curr in replaceThese)
+            string text = "";
+            try
             {
-                data = data.Replace(curr, string.Empty);
+                string noNewLines = Data.Replace("\n", "");
+                
+                var sanitizer = new HtmlSanitizer();
+                var html = noNewLines;
+                var sanitized = sanitizer.Sanitize(html);
+                noNewLines = sanitized;
+                DeptProfile_DT viewModel = ToObjectFromJSON<DeptProfile_DT>(noNewLines);
+
+                string URL = "";
+                URL = m_ServiceURL;
+                ServiceResult t_ServiceResult = new ServiceResult();
+
+
+
+                string[] replaceThese = { "data:image/png;base64,", "data:image/jpeg;base64,", "data:image/jpg;base64," };
+                string data = viewModel.Photo;
+
+                bool iAlpha = IsAlphabets(viewModel.Name);
+
+                foreach (string curr in replaceThese)
+                {
+                    data = data.Replace(curr, string.Empty);
+                }
+
+                byte[] toBytes = System.Convert.FromBase64String(data);
+
+                //byte[] toBytes = System.Convert.FromBase64String(viewModel.Image);
+                System.Drawing.Image newImage = ByteArrayToImage(toBytes);
+
+
+
+
+                string signdata = viewModel.Sign;
+
+
+
+                foreach (string curr in replaceThese)
+                {
+                    signdata = data.Replace(curr, string.Empty);
+                }
+
+                byte[] tosignBytes = System.Convert.FromBase64String(data);
+
+                //byte[] toBytes = System.Convert.FromBase64String(viewModel.Image);
+                System.Drawing.Image newSignImage = ByteArrayToImage(tosignBytes);
+
+
+
+                string Chequedata = viewModel.Cheque;
+
+
+
+                foreach (string curr in replaceThese)
+                {
+                    Chequedata = data.Replace(curr, string.Empty);
+                }
+
+                byte[] toChequeBytes = System.Convert.FromBase64String(data);
+
+                //byte[] toBytes = System.Convert.FromBase64String(viewModel.Image);
+                System.Drawing.Image newChequeImage = ByteArrayToImage(toChequeBytes);
+
+                string Passportdata = viewModel.Passbook;
+
+
+
+                foreach (string curr in replaceThese)
+                {
+                    Passportdata = data.Replace(curr, string.Empty);
+                }
+
+                byte[] toPassportBytes = System.Convert.FromBase64String(data);
+
+                //byte[] toBytes = System.Convert.FromBase64String(viewModel.Image);
+                System.Drawing.Image newPassportImage = ByteArrayToImage(toPassportBytes);
+
+                if (newImage != null && iAlpha && newSignImage != null && newChequeImage != null && newPassportImage != null)
+                {
+
+                    SqlParameter[] parameter = {
+
+                 new SqlParameter("@LoginID", viewModel.LoginID),
+                 new SqlParameter("@StudentName", viewModel.Name),
+                 new SqlParameter("@Name", viewModel.Name),
+                 new SqlParameter("@Designation", viewModel.Designation),
+                 new SqlParameter("@Gender", viewModel.Gender),
+                 new SqlParameter("@Mobile", viewModel.Mobile),
+                 new SqlParameter("@PhoneNo", viewModel.PhoneNo),
+                 new SqlParameter("@MailID", viewModel.MailID),
+                 new SqlParameter("@JoiningDate", viewModel.JoiningDate),
+                 new SqlParameter("@EmpCode", viewModel.EmpCode),
+                 new SqlParameter("@AadhaarNo", viewModel.AadhaarNo),
+                 new SqlParameter("@Photo", viewModel.Photo),
+                 new SqlParameter("@Sign", viewModel.Sign),
+                 new SqlParameter("@IsParentIcomeTaxPayer", viewModel.IsParentIcomeTaxPayer),
+                 new SqlParameter("@IsMessAvailable", viewModel.IsMessAvailable),
+                 new SqlParameter("@IsKitchenAvailable", viewModel.IsKitchenAvailable),
+                 new SqlParameter("@IsLibraryAvailable", viewModel.IsLibraryAvailable),
+                 new SqlParameter("@IsPlaygroundAvailable", viewModel.IsPlaygroundAvailable),
+                 new SqlParameter("@Cheque", viewModel.Cheque),
+                 new SqlParameter("@Passbook", viewModel.Passbook),
+            };
+
+
+
+                    //DataTable dtAll = sqlhelper.ExecuteDataTable("InsertScholarShipDetailsSP", parameter);
+                    DataSet result = sqlhelper.ExecuteDataTableNon("InsertDeptProfileSP", parameter);
+                    DataTable dt = result.Tables[0];
+
+                    text = "alert('Profile Updated Successfully.');";
+                    return text;
+
+                }
+
+
+                return text;
             }
-
-            byte[] toBytes = System.Convert.FromBase64String(data);
-
-            //byte[] toBytes = System.Convert.FromBase64String(viewModel.Image);
-            System.Drawing.Image newImage = ByteArrayToImage(toBytes);
-
-
-
-
-            string signdata = viewModel.Sign;
-
            
-
-            foreach (string curr in replaceThese)
+            catch (Exception ex)
             {
-                signdata = data.Replace(curr, string.Empty);
+                return ex.Message;
             }
-
-            byte[] tosignBytes = System.Convert.FromBase64String(data);
-
-            //byte[] toBytes = System.Convert.FromBase64String(viewModel.Image);
-            System.Drawing.Image newSignImage = ByteArrayToImage(tosignBytes);
-
-
-
-            string Chequedata = viewModel.Cheque;
-
-
-
-            foreach (string curr in replaceThese)
-            {
-                Chequedata = data.Replace(curr, string.Empty);
-            }
-
-            byte[] toChequeBytes = System.Convert.FromBase64String(data);
-
-            //byte[] toBytes = System.Convert.FromBase64String(viewModel.Image);
-            System.Drawing.Image newChequeImage = ByteArrayToImage(toChequeBytes);
-
-            string Passportdata = viewModel.Passbook;
-
-
-
-            foreach (string curr in replaceThese)
-            {
-                Passportdata = data.Replace(curr, string.Empty);
-            }
-
-            byte[] toPassportBytes = System.Convert.FromBase64String(data);
-
-            //byte[] toBytes = System.Convert.FromBase64String(viewModel.Image);
-            System.Drawing.Image newPassportImage = ByteArrayToImage(toPassportBytes);
-
-            if (newImage != null && iAlpha && newSignImage != null && newChequeImage != null && newPassportImage != null)
-            {
-                using (ChannelFactory<IService1Channel> factory = new ChannelFactory<IService1Channel>(new BasicHttpBinding()))
-                {
-                    IService1Channel proxy = factory.CreateChannel(new EndpointAddress(URL));
-                    using (OperationContextScope scope = new OperationContextScope(proxy))
-                    {
-                        List<Tuple<string, string>> nvc = GetSessionValues();
-                        MessageHeader<List<Tuple<string, string>>> mhg = new MessageHeader<List<Tuple<string, string>>>(nvc);
-                        System.ServiceModel.Channels.MessageHeader untyped = mhg.GetUntypedHeader("Session", "SessionTuple");
-                        OperationContext.Current.OutgoingMessageHeaders.Add(untyped);
-
-                        text = proxy.InsertDeptProfile(viewModel);
-                    }
-                }
-            }
-            else
-            {
-
-                t_ServiceResult.AppID = "";
-                if (!iAlpha)
-                {
-                    t_ServiceResult.Status = "Invaild Full Name!";
-                }
-                else
-                {
-                    t_ServiceResult.Status = "Invaild Image!";
-                }
-                t_ServiceResult.intStatus = 4;
-                text = (new JavaScriptSerializer().Serialize(t_ServiceResult));
-            }
-            return text;
+            
         }
         public static bool IsAlphabets(string inputString)
         {
@@ -266,6 +283,13 @@ namespace CitizenPortal.WebApp.G2G
                 if (DT.Rows[0]["JoiningDate"].ToString() == null || DT.Rows[0]["JoiningDate"].ToString() != "") {
                     m_DeptProfile_DT.JoiningDate = Convert.ToDateTime(DT.Rows[0]["JoiningDate"].ToString()).ToString("dd/MM/yyyy");
                 }
+                m_DeptProfile_DT.IsParentIcomeTaxPayer = DT.Rows[0]["IsParentIcomeTaxPayer"].ToString();
+                m_DeptProfile_DT.IsMessAvailable = DT.Rows[0]["IsMessAvailable"].ToString();
+                m_DeptProfile_DT.IsKitchenAvailable = DT.Rows[0]["IsKitchenAvailable"].ToString();
+                m_DeptProfile_DT.IsLibraryAvailable = DT.Rows[0]["IsLibraryAvailable"].ToString();
+                m_DeptProfile_DT.IsPlaygroundAvailable = DT.Rows[0]["IsPlaygroundAvailable"].ToString();
+                m_DeptProfile_DT.Cheque = DT.Rows[0]["Cheque"].ToString();
+                m_DeptProfile_DT.Passbook = DT.Rows[0]["Passbook"].ToString();
             }
             return (new JavaScriptSerializer().Serialize(m_DeptProfile_DT));
         }

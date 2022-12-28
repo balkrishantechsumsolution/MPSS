@@ -366,13 +366,13 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator9;
 
         /// <summary>
-        /// Image1 control.
+        /// imgAttachLstSocM control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.Image imgAttachLstSocM;
 
         /// <summary>
         /// fileSocietyMembersReg control.
@@ -1131,13 +1131,13 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
         protected global::System.Web.UI.WebControls.TextBox txtSankiyadetClsPoraveUttAnti;
 
         /// <summary>
-        /// imgCheque control.
+        /// imgAttachTime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgCheque;
+        protected global::System.Web.UI.WebControls.Image imgAttachTime;
 
         /// <summary>
         /// fileAttTime control.
@@ -1167,31 +1167,31 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
         protected global::System.Web.UI.WebControls.Panel Panel1;
 
         /// <summary>
-        /// lblResultCheque control.
+        /// lblAttTime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblResultCheque;
+        protected global::System.Web.UI.WebControls.Label lblAttTime;
 
         /// <summary>
-        /// imgPassbook control.
+        /// imgAttachedSubject control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgPassbook;
+        protected global::System.Web.UI.WebControls.Image imgAttachedSubject;
 
         /// <summary>
-        /// fileTeachSht control.
+        /// fileAttachedSubject control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputFile fileTeachSht;
+        protected global::System.Web.UI.HtmlControls.HtmlInputFile fileAttachedSubject;
 
         /// <summary>
         /// btnSubject control.
@@ -1212,13 +1212,13 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
         protected global::System.Web.UI.WebControls.Panel Panel2;
 
         /// <summary>
-        /// lblResultPassbook control.
+        /// lblAttachedSubject control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblResultPassbook;
+        protected global::System.Web.UI.WebControls.Label lblAttachedSubject;
 
         /// <summary>
         /// txtHeadMist control.
@@ -1716,22 +1716,22 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
         protected global::System.Web.UI.WebControls.TextBox txtArea;
 
         /// <summary>
-        /// Image2 control.
+        /// imgLandReg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image2;
+        protected global::System.Web.UI.WebControls.Image imgLandReg;
 
         /// <summary>
-        /// fileKhasra control.
+        /// fileLandReg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputFile fileKhasra;
+        protected global::System.Web.UI.HtmlControls.HtmlInputFile fileLandReg;
 
         /// <summary>
         /// Button2 control.
@@ -1752,13 +1752,13 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
         protected global::System.Web.UI.WebControls.Panel Panel4;
 
         /// <summary>
-        /// Label2 control.
+        /// lblLandReg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label lblLandReg;
 
         /// <summary>
         /// txtRentAdd control.
@@ -1779,22 +1779,22 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
         protected global::System.Web.UI.WebControls.TextBox txtRentOwnerAdd;
 
         /// <summary>
-        /// Image3 control.
+        /// imgRentAgreement control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image3;
+        protected global::System.Web.UI.WebControls.Image imgRentAgreement;
 
         /// <summary>
-        /// fileRentAgree control.
+        /// fileRentAgreement control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputFile fileRentAgree;
+        protected global::System.Web.UI.HtmlControls.HtmlInputFile fileRentAgreement;
 
         /// <summary>
         /// Button3 control.
@@ -1815,13 +1815,13 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
         protected global::System.Web.UI.WebControls.Panel Panel5;
 
         /// <summary>
-        /// Label3 control.
+        /// lblRentAgreement control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.Label lblRentAgreement;
 
         /// <summary>
         /// txtAreaSchLand control.
@@ -2022,22 +2022,22 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
         protected global::System.Web.UI.WebControls.TextBox txtSubLabSqFT;
 
         /// <summary>
-        /// Image4 control.
+        /// imgLabEquipments control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image4;
+        protected global::System.Web.UI.WebControls.Image imgLabEquipments;
 
         /// <summary>
-        /// fileLabEqip control.
+        /// fileLabEquipments control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputFile fileLabEqip;
+        protected global::System.Web.UI.HtmlControls.HtmlInputFile fileLabEquipments;
 
         /// <summary>
         /// Button4 control.
@@ -2058,13 +2058,13 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
         protected global::System.Web.UI.WebControls.Panel Panel6;
 
         /// <summary>
-        /// Label4 control.
+        /// lblLabEquipments control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label4;
+        protected global::System.Web.UI.WebControls.Label lblLabEquipments;
 
         /// <summary>
         /// txtNoBooks control.
@@ -2292,75 +2292,111 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
         protected global::System.Web.UI.WebControls.HiddenField HFCurrentLang;
 
         /// <summary>
-        /// hdnImage control.
+        /// hdnLandReg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hdnImage;
+        protected global::System.Web.UI.WebControls.HiddenField hdnLandReg;
 
         /// <summary>
-        /// hdnTC control.
+        /// hdnLandRegPath control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hdnTC;
+        protected global::System.Web.UI.WebControls.HiddenField hdnLandRegPath;
 
         /// <summary>
-        /// hdnImagePath control.
+        /// hdnAttachedSubjectPath control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hdnImagePath;
+        protected global::System.Web.UI.WebControls.HiddenField hdnAttachedSubjectPath;
 
         /// <summary>
-        /// hdnTCPath control.
+        /// hdnAttachedSubject control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hdnTCPath;
+        protected global::System.Web.UI.WebControls.HiddenField hdnAttachedSubject;
 
         /// <summary>
-        /// hdnCheque control.
+        /// hdnAttachLstSocM control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hdnCheque;
+        protected global::System.Web.UI.WebControls.HiddenField hdnAttachLstSocM;
 
         /// <summary>
-        /// hdnChequePath control.
+        /// hdnAttachLstSocMPath control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hdnChequePath;
+        protected global::System.Web.UI.WebControls.HiddenField hdnAttachLstSocMPath;
 
         /// <summary>
-        /// hdnPassbook control.
+        /// hdnAttachTime control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hdnPassbook;
+        protected global::System.Web.UI.WebControls.HiddenField hdnAttachTime;
 
         /// <summary>
-        /// hdnPassbookPath control.
+        /// hdnAttachTimePath control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hdnPassbookPath;
+        protected global::System.Web.UI.WebControls.HiddenField hdnAttachTimePath;
+
+        /// <summary>
+        /// hdnRentAgreement control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hdnRentAgreement;
+
+        /// <summary>
+        /// hdnRentAgreementPath control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hdnRentAgreementPath;
+
+        /// <summary>
+        /// hdnLabEquipments control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hdnLabEquipments;
+
+        /// <summary>
+        /// hdnLabEquipmentsPath control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField hdnLabEquipmentsPath;
     }
 }

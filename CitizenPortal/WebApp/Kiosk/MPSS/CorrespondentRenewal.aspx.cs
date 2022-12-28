@@ -275,12 +275,12 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
 
                 t_ObjDT.OAreaSchoolOperated = chkrbOAreaSchoolOperated.ToString();
 
-                //t_ObjDT.fileLabEqip = fileLabEqip;
-                //t_ObjDT.fileRentAgree = fileRentAgree;
-                //t_ObjDT.fileKhasra = fileKhasra;
-                //t_ObjDT.fileAttTime = fileAttTime;
-                //t_ObjDT.fileTeachSht = fileTeachSht;
-                //t_ObjDT.fileSocietyMembersReg = fileSocietyMembersReg;
+                t_ObjDT.fileLabEqip = hdnLabEquipments.Value;
+                t_ObjDT.fileRentAgree = hdnRentAgreement.Value;
+                t_ObjDT.fileKhasra = hdnLandReg.Value;
+                t_ObjDT.fileAttTime = hdnAttachTime.Value;
+                t_ObjDT.fileTeachSht = hdnAttachedSubject.Value;
+                t_ObjDT.fileSocietyMembersReg = hdnAttachLstSocM.Value;
 
                 SqlParameter[] parameter = {
             new SqlParameter("@SocietyName", t_ObjDT.SocietyName),
@@ -465,6 +465,340 @@ new SqlParameter("@UserID",m_UserID),
 
 
             }
+
+        }
+        
+
+      
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            string strFileName;
+            string strFilePath;
+            string strFolder;
+            string fileSTR = "images\\";
+            strFolder = Server.MapPath("./") + fileSTR;
+            // Get the name of the file that is posted.
+            strFileName = fileSocietyMembersReg.PostedFile.FileName;
+            strFileName = Path.GetFileName(strFileName);
+            if (fileSocietyMembersReg.Value != "")
+            {
+                // Create the directory if it does not exist.
+                if (!Directory.Exists(strFolder))
+                {
+                    Directory.CreateDirectory(strFolder);
+                }
+                // Save the uploaded file to the server.
+                strFilePath = strFolder + strFileName;
+                string strf = Guid.NewGuid().ToString();
+
+                string destFileName = Path.Combine(strFolder, strf + ".jpg");
+
+
+
+                if (File.Exists(destFileName))
+                {
+                    Label1.Text = strFileName + " already exists on the server!";
+                }
+                else
+                {
+                    fileSocietyMembersReg.PostedFile.SaveAs(strFilePath);
+                    File.Copy(strFilePath, destFileName);
+                    string imgPath = "~/images/" + strf + ".jpg";
+
+                    byte[] imageArray = System.IO.File.ReadAllBytes(destFileName);
+                    string base64ImageRepresentation = Convert.ToBase64String(imageArray);
+                    var val = $"data: image/png; base64,{base64ImageRepresentation}";
+                    hdnAttachLstSocM.Value = val;
+                    hdnAttachLstSocMPath.Value = destFileName;
+                    imgAttachLstSocM.Attributes.Add("src", val);
+                    imgAttachLstSocM.Width = Unit.Pixel(200);
+                    imgAttachLstSocM.Height = Unit.Pixel(150);
+                    imgAttachLstSocM.DataBind();
+
+                    Label1.Text = strFileName + " has been successfully uploaded.";
+                }
+            }
+            else
+            {
+                Label1.Text = "Click 'Browse' to select the file to upload.";
+            }
+
+        }
+
+        protected void btnTimetables_Click(object sender, EventArgs e)
+        {
+            string strFileName;
+            string strFilePath;
+            string strFolder;
+            string fileSTR = "images\\";
+            strFolder = Server.MapPath("./") + fileSTR;
+            // Get the name of the file that is posted.
+            strFileName = fileAttTime.PostedFile.FileName;
+            strFileName = Path.GetFileName(strFileName);
+            if (fileAttTime.Value != "")
+            {
+                // Create the directory if it does not exist.
+                if (!Directory.Exists(strFolder))
+                {
+                    Directory.CreateDirectory(strFolder);
+                }
+                // Save the uploaded file to the server.
+                strFilePath = strFolder + strFileName;
+                string strf = Guid.NewGuid().ToString();
+
+                string destFileName = Path.Combine(strFolder, strf + ".jpg");
+
+
+
+                if (File.Exists(destFileName))
+                {
+                    lblAttTime.Text = strFileName + " already exists on the server!";
+                }
+                else
+                {
+                    fileAttTime.PostedFile.SaveAs(strFilePath);
+                    File.Copy(strFilePath, destFileName);
+                    string imgPath = "~/images/" + strf + ".jpg";
+
+                    byte[] imageArray = System.IO.File.ReadAllBytes(destFileName);
+                    string base64ImageRepresentation = Convert.ToBase64String(imageArray);
+                    var val = $"data: image/png; base64,{base64ImageRepresentation}";
+                    hdnAttachTime.Value = val;
+                    hdnAttachTimePath.Value = destFileName;
+                    imgAttachTime.Attributes.Add("src", val);
+                    imgAttachTime.Width = Unit.Pixel(200);
+                    imgAttachTime.Height = Unit.Pixel(150);
+                    imgAttachTime.DataBind();
+
+                    lblAttTime.Text = strFileName + " has been successfully uploaded.";
+                }
+            }
+            else
+            {
+                lblAttTime.Text = "Click 'Browse' to select the file to upload.";
+            }
+
+        }
+
+        protected void btnSubject_Click(object sender, EventArgs e)
+        {
+            string strFileName;
+            string strFilePath;
+            string strFolder;
+            string fileSTR = "images\\";
+            strFolder = Server.MapPath("./") + fileSTR;
+            // Get the name of the file that is posted.
+            strFileName = fileAttachedSubject.PostedFile.FileName;
+            strFileName = Path.GetFileName(strFileName);
+            if (fileAttachedSubject.Value != "")
+            {
+                // Create the directory if it does not exist.
+                if (!Directory.Exists(strFolder))
+                {
+                    Directory.CreateDirectory(strFolder);
+                }
+                // Save the uploaded file to the server.
+                strFilePath = strFolder + strFileName;
+                string strf = Guid.NewGuid().ToString();
+
+                string destFileName = Path.Combine(strFolder, strf + ".jpg");
+
+
+
+                if (File.Exists(destFileName))
+                {
+                    lblAttachedSubject.Text = strFileName + " already exists on the server!";
+                }
+                else
+                {
+                    fileAttachedSubject.PostedFile.SaveAs(strFilePath);
+                    File.Copy(strFilePath, destFileName);
+                    string imgPath = "~/images/" + strf + ".jpg";
+
+                    byte[] imageArray = System.IO.File.ReadAllBytes(destFileName);
+                    string base64ImageRepresentation = Convert.ToBase64String(imageArray);
+                    var val = $"data: image/png; base64,{base64ImageRepresentation}";
+                    hdnAttachedSubject.Value = val;
+                    hdnAttachedSubjectPath.Value = destFileName;
+                    imgAttachedSubject.Attributes.Add("src", val);
+                    imgAttachedSubject.Width = Unit.Pixel(200);
+                    imgAttachedSubject.Height = Unit.Pixel(150);
+                    imgAttachedSubject.DataBind();
+
+                    lblAttachedSubject.Text = strFileName + " has been successfully uploaded.";
+                }
+            }
+            else
+            {
+                lblAttachedSubject.Text = "Click 'Browse' to select the file to upload.";
+            }
+
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            string strFileName;
+            string strFilePath;
+            string strFolder;
+            string fileSTR = "images\\";
+            strFolder = Server.MapPath("./") + fileSTR;
+            // Get the name of the file that is posted.
+            strFileName = fileLandReg.PostedFile.FileName;
+            strFileName = Path.GetFileName(strFileName);
+            if (fileLandReg.Value != "")
+            {
+                // Create the directory if it does not exist.
+                if (!Directory.Exists(strFolder))
+                {
+                    Directory.CreateDirectory(strFolder);
+                }
+                // Save the uploaded file to the server.
+                strFilePath = strFolder + strFileName;
+                string strf = Guid.NewGuid().ToString();
+
+                string destFileName = Path.Combine(strFolder, strf + ".jpg");
+
+
+
+                if (File.Exists(destFileName))
+                {
+                    lblLandReg.Text = strFileName + " already exists on the server!";
+                }
+                else
+                {
+                    fileLandReg.PostedFile.SaveAs(strFilePath);
+                    File.Copy(strFilePath, destFileName);
+                    string imgPath = "~/images/" + strf + ".jpg";
+
+                    byte[] imageArray = System.IO.File.ReadAllBytes(destFileName);
+                    string base64ImageRepresentation = Convert.ToBase64String(imageArray);
+                    var val = $"data: image/png; base64,{base64ImageRepresentation}";
+                    hdnLandReg.Value = val;
+                    hdnLandRegPath.Value = destFileName;
+                    imgLandReg.Attributes.Add("src", val);
+                    imgLandReg.Width = Unit.Pixel(200);
+                    imgLandReg.Height = Unit.Pixel(150);
+                    imgLandReg.DataBind();
+
+                    lblLandReg.Text = strFileName + " has been successfully uploaded.";
+                }
+            }
+            else
+            {
+                lblLandReg.Text = "Click 'Browse' to select the file to upload.";
+            }
+
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            string strFileName;
+            string strFilePath;
+            string strFolder;
+            string fileSTR = "images\\";
+            strFolder = Server.MapPath("./") + fileSTR;
+            // Get the name of the file that is posted.
+            strFileName = fileRentAgreement.PostedFile.FileName;
+            strFileName = Path.GetFileName(strFileName);
+            if (fileRentAgreement.Value != "")
+            {
+                // Create the directory if it does not exist.
+                if (!Directory.Exists(strFolder))
+                {
+                    Directory.CreateDirectory(strFolder);
+                }
+                // Save the uploaded file to the server.
+                strFilePath = strFolder + strFileName;
+                string strf = Guid.NewGuid().ToString();
+
+                string destFileName = Path.Combine(strFolder, strf + ".jpg");
+
+
+
+                if (File.Exists(destFileName))
+                {
+                    lblRentAgreement.Text = strFileName + " already exists on the server!";
+                }
+                else
+                {
+                    fileRentAgreement.PostedFile.SaveAs(strFilePath);
+                    File.Copy(strFilePath, destFileName);
+                    string imgPath = "~/images/" + strf + ".jpg";
+
+                    byte[] imageArray = System.IO.File.ReadAllBytes(destFileName);
+                    string base64ImageRepresentation = Convert.ToBase64String(imageArray);
+                    var val = $"data: image/png; base64,{base64ImageRepresentation}";
+                    hdnRentAgreement.Value = val;
+                    hdnRentAgreementPath.Value = destFileName;
+                    imgRentAgreement.Attributes.Add("src", val);
+                    imgRentAgreement.Width = Unit.Pixel(200);
+                    imgRentAgreement.Height = Unit.Pixel(150);
+                    imgRentAgreement.DataBind();
+
+                    lblRentAgreement.Text = strFileName + " has been successfully uploaded.";
+                }
+            }
+            else
+            {
+                lblRentAgreement.Text = "Click 'Browse' to select the file to upload.";
+            }
+
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            string strFileName;
+            string strFilePath;
+            string strFolder;
+            string fileSTR = "images\\";
+            strFolder = Server.MapPath("./") + fileSTR;
+            // Get the name of the file that is posted.
+            strFileName = fileLabEquipments.PostedFile.FileName;
+            strFileName = Path.GetFileName(strFileName);
+            if (fileLabEquipments.Value != "")
+            {
+                // Create the directory if it does not exist.
+                if (!Directory.Exists(strFolder))
+                {
+                    Directory.CreateDirectory(strFolder);
+                }
+                // Save the uploaded file to the server.
+                strFilePath = strFolder + strFileName;
+                string strf = Guid.NewGuid().ToString();
+
+                string destFileName = Path.Combine(strFolder, strf + ".jpg");
+
+
+
+                if (File.Exists(destFileName))
+                {
+                    lblLabEquipments.Text = strFileName + " already exists on the server!";
+                }
+                else
+                {
+                    fileLabEquipments.PostedFile.SaveAs(strFilePath);
+                    File.Copy(strFilePath, destFileName);
+                    string imgPath = "~/images/" + strf + ".jpg";
+
+                    byte[] imageArray = System.IO.File.ReadAllBytes(destFileName);
+                    string base64ImageRepresentation = Convert.ToBase64String(imageArray);
+                    var val = $"data: image/png; base64,{base64ImageRepresentation}";
+                    hdnLabEquipments.Value = val;
+                    hdnLabEquipmentsPath.Value = destFileName;
+                    imgLabEquipments.Attributes.Add("src", val);
+                    imgLabEquipments.Width = Unit.Pixel(200);
+                    imgLabEquipments.Height = Unit.Pixel(150);
+                    imgLabEquipments.DataBind();
+
+                    lblLabEquipments.Text = strFileName + " has been successfully uploaded.";
+                }
+            }
+            else
+            {
+                lblLabEquipments.Text = "Click 'Browse' to select the file to upload.";
+            }
+
 
         }
     }

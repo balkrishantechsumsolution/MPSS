@@ -134,7 +134,7 @@
 
 
 
-                <div class="box-body box-body-open">
+                <div>
 
 
                     <div id="smartwizard">
@@ -148,8 +148,17 @@
                             <li class="done active"><a href="#step-4">Step 4<br />
                                 <small>Land and TimeTable Information</small></a></li>
                             <li class="done active"><a href="#step-5">Step 5<br />
-                                <small>Facilities and Phiysical Handicapped Information</small></a></li>
-
+                                <small>Facilities and PHYSICAL Handicapped Information</small></a></li>
+                            <li class="done active"><a href="#step-6">Step 6<br />
+                                <small>Appendix 1</small></a></li>
+                            <li class="done active"><a href="#step-7">Step 7<br />
+                                <small>Appendix 2</small></a></li>
+                            <li class="done active"><a href="#step-8">Step 8<br />
+                                <small>Appendix 3</small></a></li>
+                            <li class="done active"><a href="#step-9">Step 9<br />
+                                <small>Appendix 4</small></a></li>
+                            <li class="done active"><a href="#step-10">Step 10<br />
+                                <small>Appendix 5</small></a></li>
 
                         </ul>
                         <div class="mt-4">
@@ -201,7 +210,7 @@
                                             <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                 <div class="form-group">
 
-                                                    <asp:RadioButton ID="rbCRCS6" runat="server" Text="Uttarmadhima" GroupName="CRCS"/>
+                                                    <asp:RadioButton ID="rbCRCS6" runat="server" Text="Uttarmadhima" GroupName="CRCS" />
                                                 </div>
                                             </div>
                                             <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
@@ -475,9 +484,9 @@
                                             </div>
                                             <div class="box-body box-body-open p0">
                                                 <div class="col-lg-12">
-                                                    <asp:Image runat="server" class="form-control" src="/webApp/kiosk/Images/AttachmentPic.jpg" name="ProfileCheque" Style="height: 180px" ID="Image1" />
-                                                    <input class="camera" id="fileSocietyMembersReg" name="Chequeupload" type="file" runat="server" />
-                                                    <asp:Button ID="Button1" type="submit" Text="Upload" runat="server"></asp:Button>
+                                                    <asp:Image runat="server" class="form-control" src="/webApp/kiosk/Images/AttachmentPic.jpg" name="ProfileCheque" Style="height: 180px" ID="imgAttachLstSocM" />
+                                                    <input class="camera" id="fileSocietyMembersReg" name="fileSocietyMembersReg" type="file" runat="server" />
+                                                    <asp:Button ID="Button1" type="submit" Text="Upload" runat="server" OnClick="Button1_Click"></asp:Button>
                                                     <asp:Panel ID="Panel3" Visible="False" runat="server">
                                                         <asp:Label ID="Label1" runat="server"></asp:Label>
                                                     </asp:Panel>
@@ -486,127 +495,127 @@
                                                 <div class="clearfix"></div>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                        <div class="form-group">
+                                            <label class="manadatory" for="ddlDistrict">
+                                                Soceity Director Name
+                                            </label>
+
+
                                         </div>
-                                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                                            <div class="form-group">
-                                                <label class="manadatory" for="ddlDistrict">
-                                                    Soceity Director Name
-                                                </label>
-
-
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                        <div class="form-group">
+                                            <asp:TextBox ID="txtSocietyDirectorName" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
+                                            <div class="col-xs-12 pleft0">
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="txtSocietyDirectorName" Display="Dynamic"
+                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                                            <div class="form-group">
-                                                <asp:TextBox ID="txtSocietyDirectorName" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
-                                                <div class="col-xs-12 pleft0">
-                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="txtSocietyDirectorName" Display="Dynamic"
-                                                        ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
-                                                </div>
+                                    </div>
+
+
+                                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                        <div class="form-group">
+                                            <label class="manadatory" for="ddlFullName">
+                                                City/Village
+                                            </label>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                        <div class="form-group">
+                                            <asp:TextBox ID="txtSocietyCity" runat="server" ToolTip="City" CssClass="form-control"></asp:TextBox>
+                                            <div class="col-xs-12 pleft0">
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ControlToValidate="txtSocietyCity" Display="Dynamic"
+                                                    ErrorMessage="Please enter City/Vilage." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                        <div class="form-group">
+                                            <label class="manadatory" for="ddlFullName">
+                                                Post
+                                            </label>
 
 
-                                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                                            <div class="form-group">
-                                                <label class="manadatory" for="ddlFullName">
-                                                    City/Village
-                                                </label>
-
-
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                        <div class="form-group">
+                                            <asp:TextBox ID="txtSocietyPost" runat="server" ToolTip="Block" CssClass="form-control"></asp:TextBox>
+                                            <div class="col-xs-12 pleft0">
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" ControlToValidate="txtSocietyPost" Display="Dynamic"
+                                                    ErrorMessage="Please enter Block." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                                            <div class="form-group">
-                                                <asp:TextBox ID="txtSocietyCity" runat="server" ToolTip="City" CssClass="form-control"></asp:TextBox>
-                                                <div class="col-xs-12 pleft0">
-                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ControlToValidate="txtSocietyCity" Display="Dynamic"
-                                                        ErrorMessage="Please enter City/Vilage." ValidationGroup="G" ForeColor="Red" />
-                                                </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                        <div class="form-group">
+                                            <label class="manadatory" for="ddlDistrict">
+                                                District
+                                            </label>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                        <div class="form-group">
+                                            <asp:TextBox ID="txtSocietyDistrict" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
+                                            <div class="col-xs-12 pleft0">
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ControlToValidate="txtSocietyDistrict" Display="Dynamic"
+                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                                            <div class="form-group">
-                                                <label class="manadatory" for="ddlFullName">
-                                                    Post
-                                                </label>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                        <div class="form-group">
+                                            <label class="manadatory" for="ddlFullName">
+                                                PinCode
+                                            </label>
 
 
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                        <div class="form-group">
+                                            <asp:TextBox ID="txtSocietyPinCode" runat="server" ToolTip="Pin Code" CssClass="form-control" onkeydown="return AllowOnlyNumeric(event);" MaxLength="6"></asp:TextBox>
+                                            <div class="col-xs-12 pleft0">
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator16" runat="server" ControlToValidate="txtSocietyPinCode" Display="Dynamic"
+                                                    ErrorMessage="Please enter Pin No." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                                            <div class="form-group">
-                                                <asp:TextBox ID="txtSocietyPost" runat="server" ToolTip="Block" CssClass="form-control"></asp:TextBox>
-                                                <div class="col-xs-12 pleft0">
-                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" ControlToValidate="txtSocietyPost" Display="Dynamic"
-                                                        ErrorMessage="Please enter Block." ValidationGroup="G" ForeColor="Red" />
-                                                </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                        <div class="form-group">
+                                            <label class="manadatory" for="ddlFullName">
+                                                Mobile No
+                                            </label>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                        <div class="form-group">
+                                            <asp:TextBox ID="txtSocietyMobileNo" runat="server" ToolTip="House No." CssClass="form-control"></asp:TextBox>
+                                            <div class="col-xs-12 pleft0">
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator17" runat="server" ControlToValidate="txtSocietyMobileNo" Display="Dynamic"
+                                                    ErrorMessage="Please enter SchoolMobile No." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
-                                        <div class="clearfix"></div>
-                                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                                            <div class="form-group">
-                                                <label class="manadatory" for="ddlDistrict">
-                                                    District
-                                                </label>
+                                    </div>
 
+                                    <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
+                                        <div class="form-group">
+                                            <label class="manadatory">Other Operated Society School Name and Address</label>
+                                            <asp:TextBox ID="txtSocietyOtherOperated" CssClass="form-control" TextMode="MultiLine" runat="server" MaxLength="100" onkeypress="return ValidateAlpha(event);" placeholder="Other operate Society School Name and Address"></asp:TextBox>
 
-                                            </div>
                                         </div>
-                                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                                            <div class="form-group">
-                                                <asp:TextBox ID="txtSocietyDistrict" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
-                                                <div class="col-xs-12 pleft0">
-                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ControlToValidate="txtSocietyDistrict" Display="Dynamic"
-                                                        ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                                            <div class="form-group">
-                                                <label class="manadatory" for="ddlFullName">
-                                                    PinCode
-                                                </label>
-
-
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                                            <div class="form-group">
-                                                <asp:TextBox ID="txtSocietyPinCode" runat="server" ToolTip="Pin Code" CssClass="form-control" onkeydown="return AllowOnlyNumeric(event);" MaxLength="6"></asp:TextBox>
-                                                <div class="col-xs-12 pleft0">
-                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator16" runat="server" ControlToValidate="txtSocietyPinCode" Display="Dynamic"
-                                                        ErrorMessage="Please enter Pin No." ValidationGroup="G" ForeColor="Red" />
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                                            <div class="form-group">
-                                                <label class="manadatory" for="ddlFullName">
-                                                    Mobile No
-                                                </label>
-
-
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                                            <div class="form-group">
-                                                <asp:TextBox ID="txtSocietyMobileNo" runat="server" ToolTip="House No." CssClass="form-control"></asp:TextBox>
-                                                <div class="col-xs-12 pleft0">
-                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator17" runat="server" ControlToValidate="txtSocietyMobileNo" Display="Dynamic"
-                                                        ErrorMessage="Please enter SchoolMobile No." ValidationGroup="G" ForeColor="Red" />
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
-                                            <div class="form-group">
-                                                <label class="manadatory">Other Operated Society School Name and Address</label>
-                                                <asp:TextBox ID="txtSocietyOtherOperated" CssClass="form-control" TextMode="MultiLine" runat="server" MaxLength="100" onkeypress="return ValidateAlpha(event);" placeholder="Other operate Society School Name and Address"></asp:TextBox>
-
-                                            </div>
-                                        </div>
+                                    </div>
                                 </fieldset>
                                 <fieldset>
                                     <legend>&nbsp Other Details</legend>
@@ -1151,7 +1160,7 @@
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Sankiya details of Sarup Awasi / Garwasi Hostel Boys and Girls of Sanskrit School par class
+                                                Sankiya details of SAROOP AVASI / GARVASI Hostel Boys and Girls of Sanskrit School par class
                                             </label>
 
 
@@ -1268,7 +1277,7 @@
                                     <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Porave Prathakhand
+                                                Porve Purvamadiyama
                                             </label>
 
 
@@ -1341,11 +1350,11 @@
                                                 </div>
                                                 <div class="box-body box-body-open p0">
                                                     <div class="col-lg-12">
-                                                        <asp:Image runat="server" class="form-control" src="/webApp/kiosk/Images/AttachmentPic.jpg" name="ProfileCheque" Style="height: 180px" ID="imgCheque" />
-                                                        <input class="camera" id="fileAttTime" name="Chequeupload" type="file" runat="server" />
-                                                        <asp:Button ID="btnTimetables" type="submit" Text="Upload" runat="server"></asp:Button>
+                                                        <asp:Image runat="server" class="form-control" src="/webApp/kiosk/Images/AttachmentPic.jpg" name="ProfileCheque" Style="height: 180px" ID="imgAttachTime" />
+                                                        <input class="camera" id="fileAttTime" name="fileAttTime" type="file" runat="server" />
+                                                        <asp:Button ID="btnTimetables" type="submit" Text="Upload" runat="server" OnClick="btnTimetables_Click"></asp:Button>
                                                         <asp:Panel ID="Panel1" Visible="False" runat="server">
-                                                            <asp:Label ID="lblResultCheque" runat="server"></asp:Label>
+                                                            <asp:Label ID="lblAttTime" runat="server"></asp:Label>
                                                         </asp:Panel>
 
                                                     </div>
@@ -1360,11 +1369,11 @@
                                                 </div>
                                                 <div class="box-body box-body-open p0">
                                                     <div class="col-lg-12">
-                                                        <asp:Image runat="server" class="form-control" src="/webApp/kiosk/Images/AttachmentPic.jpg" name="ProfilePassbook" Style="height: 180px" ID="imgPassbook" />
-                                                        <input class="camera" id="fileTeachSht" name="Passbookupload" type="file" runat="server" />
-                                                        <asp:Button ID="btnSubject" type="submit" Text="Upload" runat="server"></asp:Button>
+                                                        <asp:Image runat="server" class="form-control" src="/webApp/kiosk/Images/AttachmentPic.jpg" name="ProfilePassbook" Style="height: 180px" ID="imgAttachedSubject" />
+                                                        <input class="camera" id="fileAttachedSubject" name="fileAttachedSubject" type="file" runat="server" />
+                                                        <asp:Button ID="btnSubject" type="submit" Text="Upload" runat="server" OnClick="btnSubject_Click"></asp:Button>
                                                         <asp:Panel ID="Panel2" Visible="False" runat="server">
-                                                            <asp:Label ID="lblResultPassbook" runat="server"></asp:Label>
+                                                            <asp:Label ID="lblAttachedSubject" runat="server"></asp:Label>
                                                         </asp:Panel>
 
                                                     </div>
@@ -1402,7 +1411,7 @@
                                         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                     Head Mistress Qualification
+                                                    Head Mistress Qualification
                                                 </label>
 
 
@@ -1501,7 +1510,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Shiksha Sharstri
+                                                    SHIKSHA SHASTRI
                                                 </label>
 
 
@@ -1587,7 +1596,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Shiksha Sharstri
+                                                    SHIKSHA SHASTRI
                                                 </label>
 
 
@@ -1673,7 +1682,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Shiksha Sharstri
+                                                    SHIKSHA SHASTRI
                                                 </label>
 
 
@@ -1760,7 +1769,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Shiksha Sharstri
+                                                    SHIKSHA SHASTRI
                                                 </label>
 
 
@@ -1847,7 +1856,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Shiksha Sharstri
+                                                    SHIKSHA SHASTRI
                                                 </label>
 
 
@@ -2192,11 +2201,11 @@
                                             </div>
                                             <div class="box-body box-body-open p0">
                                                 <div class="col-lg-12">
-                                                    <asp:Image runat="server" class="form-control" src="/webApp/kiosk/Images/AttachmentPic.jpg" name="ProfileCheque" Style="height: 180px" ID="Image2" />
-                                                    <input class="camera" id="fileKhasra" name="Chequeupload" type="file" runat="server" />
-                                                    <asp:Button ID="Button2" type="submit" Text="Upload" runat="server"></asp:Button>
+                                                    <asp:Image runat="server" class="form-control" src="/webApp/kiosk/Images/AttachmentPic.jpg" name="ProfileCheque" Style="height: 180px" ID="imgLandReg" />
+                                                    <input class="camera" id="fileLandReg" name="fileLandReg" type="file" runat="server" />
+                                                    <asp:Button ID="Button2" type="submit" Text="Upload" runat="server" OnClick="Button2_Click"></asp:Button>
                                                     <asp:Panel ID="Panel4" Visible="False" runat="server">
-                                                        <asp:Label ID="Label2" runat="server"></asp:Label>
+                                                        <asp:Label ID="lblLandReg" runat="server"></asp:Label>
                                                     </asp:Panel>
 
                                                 </div>
@@ -2241,11 +2250,11 @@
                                                 </div>
                                                 <div class="box-body box-body-open p0">
                                                     <div class="col-lg-12">
-                                                        <asp:Image runat="server" class="form-control" src="/webApp/kiosk/Images/AttachmentPic.jpg" name="ProfileCheque" Style="height: 180px" ID="Image3" />
-                                                        <input class="camera" id="fileRentAgree" name="Chequeupload" type="file" runat="server" />
-                                                        <asp:Button ID="Button3" type="submit" Text="Upload" runat="server"></asp:Button>
+                                                        <asp:Image runat="server" class="form-control" src="/webApp/kiosk/Images/AttachmentPic.jpg" name="ProfileCheque" Style="height: 180px" ID="imgRentAgreement" />
+                                                        <input class="camera" id="fileRentAgreement" name="fileRentAgreement" type="file" runat="server" />
+                                                        <asp:Button ID="Button3" type="submit" Text="Upload" runat="server" OnClick="Button3_Click"></asp:Button>
                                                         <asp:Panel ID="Panel5" Visible="False" runat="server">
-                                                            <asp:Label ID="Label3" runat="server"></asp:Label>
+                                                            <asp:Label ID="lblRentAgreement" runat="server"></asp:Label>
                                                         </asp:Panel>
 
                                                     </div>
@@ -2341,7 +2350,7 @@
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Sqaure Feet
+                                                Square Feet
                                             </label>
 
                                         </div>
@@ -2381,7 +2390,7 @@
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Sqaure Feet
+                                                Square Feet
                                             </label>
 
                                         </div>
@@ -2422,7 +2431,7 @@
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Sqaure Feet
+                                                Square Feet
                                             </label>
 
                                         </div>
@@ -2451,7 +2460,7 @@
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Sqaure Feet of PlayGround 
+                                                Square Feet of PlayGround 
                                             </label>
 
                                         </div>
@@ -2554,7 +2563,7 @@
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Sqaure Feet of Subject wise laboratories 
+                                                Square Feet of Subject wise laboratories 
                                             </label>
 
                                         </div>
@@ -2574,11 +2583,11 @@
                                             </div>
                                             <div class="box-body box-body-open p0">
                                                 <div class="col-lg-12">
-                                                    <asp:Image runat="server" class="form-control" src="/webApp/kiosk/Images/AttachmentPic.jpg" name="ProfileCheque" Style="height: 180px" ID="Image4" />
-                                                    <input class="camera" id="fileLabEqip" name="Chequeupload" type="file" runat="server" />
-                                                    <asp:Button ID="Button4" type="submit" Text="Upload" runat="server"></asp:Button>
+                                                    <asp:Image runat="server" class="form-control" src="/webApp/kiosk/Images/AttachmentPic.jpg" name="ProfileCheque" Style="height: 180px" ID="imgLabEquipments" />
+                                                    <input class="camera" id="fileLabEquipments" name="fileLabEquipments" type="file" runat="server" />
+                                                    <asp:Button ID="Button4" type="submit" Text="Upload" runat="server" OnClick="Button4_Click"></asp:Button>
                                                     <asp:Panel ID="Panel6" Visible="False" runat="server">
-                                                        <asp:Label ID="Label4" runat="server"></asp:Label>
+                                                        <asp:Label ID="lblLabEquipments" runat="server"></asp:Label>
                                                     </asp:Panel>
 
                                                 </div>
@@ -2624,7 +2633,7 @@
                                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Sqaure Feet of Libraries 
+                                                    Square Feet of Libraries 
                                                 </label>
 
                                             </div>
@@ -2740,7 +2749,7 @@
                                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Eelectricity Provided
+                                                    Electricity Provided
                                                 </label>
 
                                             </div>
@@ -2851,11 +2860,11 @@
                                         <div class="clearfix"></div>
                                 </fieldset>
                                 <fieldset>
-                                    <legend>&nbsp Phisycial handicapped Details</legend>
+                                    <legend>&nbsp PHYSICAL handicapped Details</legend>
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Phisycial handicapped Students faciities
+                                                PHYSICAL handicapped Students faciities
                                             </label>
 
                                         </div>
@@ -2870,7 +2879,7 @@
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Phisycial handicapped Students Admission Provided
+                                                PHYSICAL handicapped Students Admission Provided
                                             </label>
 
                                         </div>
@@ -2888,24 +2897,605 @@
                                         </div>
                                     </div>
 
-                                    <div class="clearfix"></div>
+
 
                                 </fieldset>
+                                <div class="clearfix"></div>
                                 <fieldset>
-                                    <div class="box-body box-body-open" style="text-align: center;">
-                                        <asp:Button ID="btnSubmit" Enabled="true" runat="server" CausesValidation="True" ToolTip=" Proceed to Payment"
-                                            CssClass="btn btn-success" Text="Submit" ValidationGroup="G" OnClick="btnSubmit_Click"/>
-                                        <asp:Button ID="btnCancel" runat="server" CausesValidation="True" CommandName="Cancel" ToolTip="Refresh the page"
-                                            CssClass="btn btn-danger" PostBackSection=""
-                                            Text="Cancel" />
-                                    </div>
+                                    <legend>&nbsp Note & Signature</legend>
+                                    01. Incomplete application form will be rejected.<br />
+                                    02. Affiliation will not be provided if any information is found to be untrue and the offer received will also be terminated.
+                                        Will be given.<br />
+                                    sign<br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    Secretary / President
+                                    <br />
+                                    <br />
+                                    sign<br />
+                                    <br />
+                                    <br />
+                                    <br />
 
+                                    PrincipalName and term of the committee<br />
+                                    <br />
 
-                                    <asp:ValidationSummary runat="server" ID="ValidationSummary1"
-                                        DisplayMode="BulletList"
-                                        ShowMessageBox="False" ValidationGroup="G" ShowSummary="True" CssClass="alert alert-danger" />
+                                    School Name and Padmudra<br />
+                                    <br />
+
+                                    Date<br />
+                                    <br />
+                                    Name<br />
+                                    <br />
+                                    Full Address.<br />
+                                    <br />
+                                    <br />
+                                    <br />
+
+                                    Opinion of District Education Officer:-<br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+
+                                    Signature (with post seal)<br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    District Education Officer
                                 </fieldset>
+
                                 <%---Start of Button----%>
+                            </div>
+                           <div id="step-6">
+                                    <div class="row">
+                                          <fieldset id="divAppendix1" style="width: 100%; margin-bottom: 15px;">
+                                            <legend>&nbsp Appendix 1</legend>
+
+
+
+                                            <div style="text-align: center;">New affiliation of Maharishi Patanjali Sanskrit Sansthan Bhopal attached for the year 2022-23 Details of records to be sent</div>
+                                          
+                                           <br />
+                                            <br />
+
+                                            1. Adjournment motion of the committee.                                                            yes / no 
+                                            <br />
+                                            <br />
+
+                                            2. Registration of Society Copy of Certificate issued by Registrar and Firm Society
+                                                                                                                                        yes / no 
+                                            <br />
+                                            <br />
+
+                                            3.Certified Manual of the Society (Issued by Registrar and Firm Society)                           
+                                                                                                                                           yes no 
+                                            <br />
+                                            <br />
+
+                                            4.  Attested photocopy of the list of members of the managing committee (Section 27) which Be of study status.                                                                                                                         yes / no
+                                                                                                                                             
+
+                                          <br />
+                                            <br />
+ 5.Along with the qualification and date of appointment of teachers working for teaching, along with the following information (Sanskrit qualified,
+ including Shastri/Acharya) as mentioned in the application
+ Separately for each class and each subject in the applied Sanskrit school, teachers with desired educational qualification
+ It is mandatory to have  The desired educational qualification implies that L.K.G.  Related to (Arun) for Praveshika
+ Regarding H.S.  / Uttar Madhyamik and D. Ed.  / b.  T.I / B.T.C.  And in the subject related to the first to the middle
+ Shastri and B.Ed.  / Education Shastri and Acharya / M.A.  (Sanskrit) and B.  Ed / Education
+ Shastri is mandatory to be a qualified teacher.
+                                                                                                                                  yes / no 
+                                           
+                                            <br />
+                                            <br />
+
+                                            6.Registered photocopy of land/building ownership and photo of the entire building 
+                                          
+                                            yes / no 
+                                            <br />
+                                            <br />
+
+                                            7.Khasra copy map of ownership of land / building, urban body, village Certified by Panchayat 
+                                           
+                                            yes / no 
+                                           
+                                            <br />
+                                            <br />
+                                            8.  If the present school building is on rent, then registered or notarized copy of rent deed
+ yes / no 
+                                                                                      <br />
+                                            <br />
+                                          
+                                                                      
+ 9.  Attested photocopy of the map of the present school building Municipal Corporation, Municipality
+ Or by Gram Panchayat.
+ yes / no 
+                                            <br />
+                                            <br />
+   10.                                         Inspection report with opinion of District Education Officer
+                                                                                    
+ 
+ yes / no 
+                                            <br />
+                                            <br />
+                                          11.  Certified copy of the departmental permission payable by the District Education Officer
+
+ 
+ yes / no 
+                                            <br />
+                                            <br />
+                                            12.
+ Certified copy of equipment and materials available in the laboratory
+ yes / no 
+                                            <br />
+                                            <br />
+                                            13.
+ Attested photocopy of the last audit report (of the society)
+ yes / no 
+                                            <br />
+                                            <br />
+                                            14.
+ Certified records regarding the information about the playground of the school
+ yes / no 
+                                            <br />
+                                            <br />
+                                          15.   expected class wise student strength
+
+ yes / no 
+                                            <br />
+                                            <br />
+                                            16.
+ Possible Class wise Time Division Cycle yes/no 
+                                            <br />
+                                            <br />
+                                            17.
+ Expected teacher wise time department cycle 
+                                            <br />
+                                            <br />
+                                            18.
+ Institution's own certificate regarding desired facilities to the disabled
+ L.K.G.  (Arun) UK  Yes.  (Uday) and on the ground floor for the students of classes 1 to 4
+ yes no 
+                                            <br />
+                                            <br />
+                                            19.
+ There should be arrangement.
+ The building of the school should not be more than ground floor, first floor, second floor (three floors)
+ yes / no 
+                                            <br />
+                                            <br />
+                                            20.
+ Required (self certification). 
+                                            <br />
+                                            <br />
+                                            21.
+ Two color photographs of the postcard size of the building are attached.
+ yes no 
+                                            <br />
+                                            <br />
+                                            Note :- 
+                                            <br />
+                                            <br />
+                                            yes / no 
+                                            <br />
+                                            <br />
+                                            01. Whatever photocopies of the above records are attached, get them certified by self attestation. 
+                                            <br />
+                                            <br />
+                                            Institution Principal / Director 
+                                            <br />
+                                            <br />
+                                            signature and stamp 
+                                            <br />
+                                            <br />
+                                        </fieldset>
+
+                                    </div>
+                                </div>
+                                <div id="step-7">
+                                    <div class="row">
+                                        <fieldset id="divAppendix2" style="width: 100%; margin-bottom: 15px;">
+                                            <legend>&nbsp Appendix 2</legend>
+
+                                            <div style="text-align: center;">Appendix 2 7 A-3</div>
+                                            <br />
+                                            <br />
+                                            <div style="text-align: center;">"Affidavit"</div>
+                                            <br />
+                                            <br />
+                                            I _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _ _ _  _ father's name _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _ _ _  _
+ age _ _  _ _  _ _  _ _  _ _ _ _  _ 
+ Principal / Institution Head Secretary / Reserve _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _ _ _  _
+ resident _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _ _ _  _
+                                            <br />
+                                            <br />
+                                            Association Committee solemnly affirm that-<br />
+                                            <br />
+                                            1. That all the entries and records mentioned in the application form given for affiliation should be kept in the original of the institution.
+ Certified as per documents.  All these forms are correct and legal.<br />
+                                            <br />
+                                            2. That no material fact/entries have been suppressed in the application if any information/record or
+ I will be personally responsible if the entries are found to be incorrect.<br />
+                                            <br />
+                                            3. Chairman/Secretary and members of the Management Committee of the society and all working principals/principals and teachers in the institution
+ And the employees have no criminal background in the past and at present also there is no criminal case against them.
+ Case is not pending.<br />
+                                            <br />
+                                            4. I have read all the terms and conditions regarding affiliation of Maharishi Patanjali Sanskrit Sansthan and
+ Accepts all the conditions.<br />
+                                            <br />
+                                            5. The information given in the application form and affidavit is completely true, if any information is found false then
+ The institute will have the right to cancel the affiliation application of the school and terminate the affiliation received.
+                                            <br />
+                                            <br />
+                                            6. Students will be made to study only in the course prescribed by Maharishi Patanjali Sanskrit Sansthan.  Syllabus
+ In the event of not conducting the study, the affiliation of the institution will be deemed cancelled.
+                                            <br />
+                                            <br />
+                                            7. In case of any legal dispute, the jurisdiction will be Bhopal.
+                                            <br />
+                                            <br />
+                                            8. The institution fulfills the criteria prescribed for classes from Arun to Uttar Madhyamik last section as mentioned in Appendix-5.
+         Is.<br />
+                                            <br />
+                                            <br />
+                                            <br />
+                                            swearer<br />
+                                            <br />
+                                            Name<br />
+                                            <br />
+                                            President / Secretary<br />
+                                            <br />
+                                            <div style="align-items: center">"Verification"</div>
+                                            <br />
+                                            <br />
+
+                                           I  _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _ _ _  _ self  _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _ _ _  _   resident  _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _ _ _  _
+ Self _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _ _ _  _
+ Verified that in this affidavit, para no.  The information from 01 to 05 is correct and true.<br />
+                                            <br />
+                                            Location
+                                             <br />
+                                            <br />
+ swearer
+                                            <br />
+                                            <br />
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            <div id="step-8">
+                                <div class="row">
+                                    <fieldset id="divAppendix3" style="width: 100%; margin-bottom: 15px;">
+                                        <legend>&nbsp Appendix 3</legend>
+
+                                        <div style="text-align: center;">Appendix-3</div>
+                                        <br />
+                                        <br />
+                                        <div style="text-align: center;">73-4</div>
+                                        <br />
+                                        <br />
+                                        Important instructions for new affiliation 2023-24 from Maharishi Patanjali Sanskrit Sansthan Bhopal -<br />
+                                        <br />
+                                        1. Application for new affiliation M.P.  Last date for filling online 15 November 2022<br />
+                                        <br />
+                                        2. After filling the application, a hardcopy (in duplicate with complete records) will be sent to the District Education Officer
+ Date of submission in office 15 December 2022<br />
+                                        <br />
+                                        3. Application form (with complete records) in Maharishi Patanjali Sanskrit Sansthan, due date 30 December 20022
+ Submission will be mandatory.<br />
+                                        <br />
+                                        4. On the basis of prescribed criteria of the applications submitted by the concerned school to the District Education Office
+ For inspection, the inspection team of the school has been constituted by the District Education Officer and the departmental
+ By making sure to edit the report through MP online by the permission date 15 January 2023
+ Make sure to submit the office by 10 February 2023 15 Fees-<br />
+                                        <br />
+                                        <br />
+                                        <br />
+
+
+                                        5. Fee  details<br />
+                                        <br />
+
+                                       Fixed fee amount for new affiliation<br />
+                                            <br />
+                                           <br />
+                                            <br />
+                                           <div style="text-align:center;align-items:center;display: flex;justify-content: center;">
+                                            <table style="border:1px solid black;border-collapse:collapse;">
+                                                <thead style="border:1px solid black;border-collapse:collapse;">
+                                                     <th style="border:1px solid black;border-collapse:collapse;">Serial No</th>
+                                                     <th style="border:1px solid black;border-collapse:collapse;">Class level for the year</th>
+                                                     <th style="border:1px solid black;border-collapse:collapse;">Fixed fee amount for New affiliation(for one year)</th>
+                                                </thead>
+                                                <tr>
+                                                    <td style="border:1px solid black;border-collapse:collapse;">1</td>
+                                                    <td style="border:1px solid black;border-collapse:collapse;"> L.K.G.  (Arun) to class 04 </td>
+                                                    <td style="border:1px solid black;border-collapse:collapse;"> 1,000/-</td>
+                                                </tr>
+                                                 <tr style="border:1px solid black;border-collapse:collapse;">
+                                                    <td style="border:1px solid black;border-collapse:collapse;">2</td>
+                                                    <td style="border:1px solid black;border-collapse:collapse;">L.K.G.  (Arun) to Praveshika</td>
+                                                    <td style="border:1px solid black;border-collapse:collapse;">3,000/-</td>
+                                                </tr>
+                                                 <tr style="border:1px solid black;border-collapse:collapse;">
+                                                    <td style="border:1px solid black;border-collapse:collapse;">3</td>
+                                                    <td style="border:1px solid black;border-collapse:collapse;"> L.K.G.  (Arun) to Prathma</td>
+                                                    <td style="border:1px solid black;border-collapse:collapse;">2,000/-</td>
+                                                </tr>
+                                                 <tr style="border:1px solid black;border-collapse:collapse;">
+                                                    <td style="border:1px solid black;border-collapse:collapse;">4</td>
+                                                    <td style="border:1px solid black;border-collapse:collapse;"> L.K.G.  (Arun)  again one</td>
+                                                    <td style="border:1px solid black;border-collapse:collapse;">11,000/-</td>
+                                                </tr>
+                                                 <tr style="border:1px solid black;border-collapse:collapse;">
+                                                    <td style="border:1px solid black;border-collapse:collapse;">5</td>
+                                                    <td style="border:1px solid black;border-collapse:collapse;">(From L.K.G. (Assam) to his</td>
+                                                    <td style="border:1px solid black;border-collapse:collapse;">13,000/-</td>
+                                                </tr>
+                                            </table>
+                                           </div>
+  
+ 
+                                            <br />
+                                            <br />
+                                        6. Only for all levels for non-government oriental / traditional residential Sanskrit school (with hostel) seeking new affiliation
+ Application Form Fee Rs.  500/- is fixed.  Such schools are oriental / traditional residential Sanskrit schools (with hostel) category
+ apply for new affiliation in M.P.  While applying online only application fee of Rs.  500/- to be paid
+ Will happen.  On the basis of which, after getting the departmental permission/recommendation of the District Education Officer, the site test will be conducted by the institute and
+ The school will be recognized as a traditional residential Sanskrit school (with hostel).  Oriental / in the inspection conducted by the institute
+ In case of invalidation in the category of traditional residential Sanskrit school (with hostel), the concerned school will be treated as a normal non-government school.
+ Will be kept in category.  On the basis of which the fee amount prescribed for new affiliation to general non-government schools on paragraph 8 to the concerned school
+ DD  to be submitted to the Institute Office.  On the basis of which the students of these schools will be eligible to appear in the examination.
+                                        <br />
+                                        <br />
+                                        7.
+ Only the application form fee is fixed for government Sanskrit schools, the rest will be free from the fee.
+                                        <br />
+                                        <br />
+                                        8.
+ As per clause 2, application can be made with late fee up to 30 days.  The late fee will be double the amount as per clause 8.
+                                        <br />
+                                        <br />
+                                        9.
+ MP.  Where the school is being conducted, or to be conducted while applying online.  Full address of that Village / Town / Place Post Office
+ Enter the PIN code of
+                                        <br />
+                                        <br />
+                                        10.
+ ,  After applying from M. P. Online, if the hard copy along with supporting papers is sent to Maharishi Patanjali Sanskrit Sansthan, Sanskrit Bhavan by the stipulated time.
+ Tulsi Nagar, Second Stop, Bhopal, Madhya Pradesh, -462003, then the affiliation will not be considered, the institution itself will be responsible for this.
+                                        <br />
+                                        <br />
+                                        11. Affiliation will not be granted if the above mentioned information/certificates etc. are not attached and it appears suspicious.
+ The affiliation granted will be terminated without any prior notice.
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div id="step-9">
+                                <div class="row">
+                                    <fieldset id="divAppendix4" style="width: 100%; margin-bottom: 15px;">
+                                        <legend>&nbsp Appendix 4</legend>
+                                        <div style="text-align: center;">73-5</div>
+                                        <br />
+                                        <br />
+                                        <div style="text-align: center;">
+                                            Policy instructions for new affiliation year 2022-23 of Maharishi Patanjali Sanskrit Sansthan Bhopal
+ and criteria
+                                        </div>
+                                        <br />
+                                        <br />
+                                        <div style="text-align: center;">Appendix-4</div>
+                                        <br />
+                                        <br />
+                                        1. Adjournment Motion of the Committee.<br />
+                                        <br />
+                                        2. Registration of Society Copy of Certificate issued by Registrar and Firm Society<br />
+                                        <br />
+                                        3. Certified Manual of the Society (issued by Registrar and Firm Society)<br />
+                                        <br />
+                                        4. Attested photocopy of the list of members of the Management Committee (Section 27) which is of the latest status.<br />
+                                        <br />
+                                        5. Information as follows including qualification and appointment date of teachers working for teaching
+ including] (including Sanskrit qualified, Shastri / Acharya) as mentioned in the application
+ Separately for each class and each subject in the applied Sanskrit school, teachers with desired educational qualification
+ It is mandatory to have  The desired educational qualification implies that L.K.G.  Related to (Arun) for Praveshika
+ Regarding H.S.  / Uttar Madhyamik and D.Ed./B.  T.I / P.T.C.  And in the subject related to the first to the middle
+ Shastri and B.Ed.  / Education Shastri and Acharya / M.A.  (Sanskrit) and B.  Ed / Education
+ Shastri is mandatory to be a qualified teacher.<br />
+                                        <br />
+                                        6. Registered photocopy of land/building ownership/rent deed and photo of the entire building<br />
+                                        <br />
+                                        7. Measles copy map of ownership of land / building, certified by urban body, gram panchayat<br />
+                                        <br />
+                                        8. If the present school building is on rent, then the photocopy of the registered or notarized rent deed<br />
+                                        <br />
+                                        9. Attested photocopy of the map of the present school building, Municipal Corporation, Municipality or Village
+ By Panchayat.<br />
+                                        <br />
+                                        10. Inspection report of the District Education Officer with details<br />
+                                        <br />
+                                        11. Certified copy of the departmental permission payable by the District Education Officer<br />
+                                        <br />
+                                        12. Certified copy of equipment and materials available in the laboratory<br />
+                                        <br />
+                                        13 Attested photocopy of the last audit report (of the society)<br />
+                                        <br />
+                                        14. Certified records regarding the information about the playground of the school<br />
+                                        <br />
+                                        15. Potential class wise student strength<br />
+                                        <br />
+                                        16. Possible class wise time division circle<br />
+                                        <br />
+                                        17. Possible teacher wise time department cycle<br />
+                                        <br />
+                                        18. Institution's own certificate regarding the facilities tied to the disabled<br />
+                                        <br />
+                                        19. L.  Of.  Yes.  (Arun) UK  Yes.  (Uday) and for the students of class 1 to 4 there should be arrangement on the ground floor.<br />
+                                        <br />
+                                        20. The ground floor of the school building should not be more than the first floor and the second floor (three floors).
+ Need self certification.<br />
+                                        <br />
+                                        21. Two postcard size color photographs of the building are attached.<br />
+                                        <br />
+                                        22. There should not be any disparity in the number of students of both the blocks of Pre-Madhyamik.<br />
+                                        <br />
+                                        23. Maharishi Patanjali Sanskrit Sansthan, M.P.  In Arun, Uday for classes 1st to 4th
+ The prescribed norms should be fulfilled (Appendix-5).<br />
+                                        <br />
+                                        <br />
+                                        <br />
+                                        Note :- Whatever photocopies of the above records are attached, get them certified by the gazetted officer.
+
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div id="step-10">
+                                <div class="row">
+                                    <fieldset id="divAppendix5" style="width: 100%; margin-bottom: 15px;">
+                                        <legend>&nbsp Appendix 5</legend>
+                                        <div style="text-align: center;">Appendix-5</div>
+                                        <br />
+                                        <br />
+                                        <div style="text-align: center;">
+                                            Maharishi Patanjali Sanskrit Institute<br />
+                                            <br />
+                                            Madhya Pradesh Bhopal<br />
+                                            <br />
+                                            Arun / Uday / Norms set for classes 1 to 4
+                                        </div>
+                                        <br />
+                                        <br />
+                                        1. Staff<br />
+                                        <br />
+                                        (1) 1 for 20 children<br />
+                                        <br />
+                                        (2) 20 on 1 Co.<br />
+                                        <br />
+                                        (3) Publication will be of the staff.<br />
+                                        <br />
+                                        (4) Police is mandatory for the appointment of staff in the school.<br />
+                                        <br />
+                                        (5) or against any member of the Society JJ et al.<br />
+                                        <br />
+                                        There should not be any samadhi.<br />
+                                        <br />
+                                        2. BhaWan<br />
+                                        <br />
+                                        (1) Schedule building for living in each<br />
+                                        <br />
+                                        (2) The building should have a security wall.<br />
+                                        <br />
+                                        (3) Adequate ventilation (air and light) should be arranged in the building.<br />
+                                        <br />
+                                        (4) Seperate rest room.
+                                            <br />
+                                        <br />
+                                        (5) Bond free site.<br />
+                                        <br />
+                                        (6) Separate toilets for boys and girls with child friendly facilities.<br />
+                                        <br />
+                                        (7) clean clothes,towels soap should be kept below,and wash vasins etc.Shoud be installed below(not at a height).<br />
+                                        <br />
+                                        (8) Pantry for food etc.<br />
+                                        <br />
+                                        (9) There should be a field of play.<br />
+                                        <br />
+                                        (10) CCTV in the entire campus.  have cameras<br />
+                                        <br />
+                                        (11) There should also be a fire extinguisher.<br />
+                                        <br />
+                                        (12) The school building should be away from the road<br />
+                                        <br />
+                                        (13) The pond should not be open.<br />
+                                        <br />
+                                        3. Time-<br />
+                                        <br />
+                                        According to the National Child Protection and Education Policy 2013, 3 to 4 posts per day and
+ (None residencial)School<br />
+                                        <br />
+                                        4. Teaching material-<br />
+                                        <br />
+                                        Study material on the basis of student number for each story as prescribed by Maharishi Patjati Sanskrit Sansthan
+ be provided<br />
+                                        <br />
+                                        5. Library
+ The reading material should also be suitable for each small child<br />
+                                        <br />
+                                        6. Sporting goods-<br />
+                                        <br />
+                                        1. Sports material supplied by M.C.D.<br />
+                                        <br />
+                                        2. Children should have places to play near the school.<br />
+                                        <br />
+                                        7. Health-<br />
+                                        <br />
+                                        First aid material, medicine kit, ORSU etc. Time material<br />
+                                        <br />
+                                        Involved in treatment material by registered medical practitioner<br />
+                                        <br />
+                                        8.  Entry-<br />
+                                        <br />
+                                        Children below three years of age should not be given admission in Assam Udyas.<br />
+                                        <br />
+                                        9. Records -<br />
+                                        <br />
+                                        (A) Name of children<br />
+                                        <br />
+                                        (B) State and nomination whose name is also the day of parents
+ be marked<br />
+                                        <br />
+                                        (C) Attendance register also<br />
+                                        <br />
+                                        (D) All teachers / Kiti<br />
+                                        <br />
+                                        (E) Staff details register.<br />
+                                        <br />
+                                        (F) Karan also has all children<br />
+                                        <br />
+                                        (G) All the employees of the applicant institution Gazette et 2012 Junita Act<br />
+                                        <br />
+                                        According to 2015 Child Labor Act 1960 and Child Labor Rules 2016<br />
+                                        <br />
+                                        Responsibilities of School and Teachers<br />
+                                        <br />
+
+                                        1. P.T.A.  It should be formed every year with admission as well as within a month.
+ 75% of the parents will remain in the Guardian Teacher Association, of which 50% will be mothers, 25% will be fathers and 25% will be teachers.<br />
+                                        <br />
+                                        3. P.T.A.  The time period of P.T.A. will be of 2 years. Every year new P.T.A.  Will be formed<br />
+                                        <br />
+                                        4. There will be a meeting of Teacher-Parent Association every month, which will be included in the proceedings.
+ P.T.A.  The main task of the KVS is to provide security, protection and proper environment to the children.<br />
+                                        <br />
+                                        Making food arrangements for proper nutrition of food items.
+ 7. Regular health check-up should be done by a registered doctor.<br />
+                                        <br />
+                                        8. Arrangement of medicine kit for basic first aid should be ensured<br />
+                                        <br />
+
+                                    </fieldset>
+
+                                    <fieldset>
+
+                                        <div class="box-body box-body-open" style="text-align: center;">
+                                            <asp:Button ID="btnSubmit" Enabled="true" runat="server" CausesValidation="True" ToolTip=" Proceed to Payment"
+                                                CssClass="btn btn-success" Text="Submit" ValidationGroup="G" OnClick="btnSubmit_Click" />
+                                            <asp:Button ID="btnCancel" runat="server" CausesValidation="True" CommandName="Cancel" ToolTip="Refresh the page"
+                                                CssClass="btn btn-danger" PostBackSection=""
+                                                Text="Cancel" />
+                                        </div>
+
+
+                                        <asp:ValidationSummary runat="server" ID="ValidationSummary1"
+                                            DisplayMode="BulletList"
+                                            ShowMessageBox="False" ValidationGroup="G" ShowSummary="True" CssClass="alert alert-danger" />
+                                    </fieldset>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -2918,14 +3508,18 @@
     </div>
     <asp:HiddenField ID="HFCurrentLang" runat="server" ClientIDMode="Static" />
 
-    <asp:HiddenField ID="hdnImage" runat="server" />
-    <asp:HiddenField ID="hdnTC" runat="server" />
-    <asp:HiddenField ID="hdnImagePath" runat="server" />
-    <asp:HiddenField ID="hdnTCPath" runat="server" />
-    <asp:HiddenField ID="hdnCheque" runat="server" />
-    <asp:HiddenField ID="hdnChequePath" runat="server" />
-    <asp:HiddenField ID="hdnPassbook" runat="server" />
-    <asp:HiddenField ID="hdnPassbookPath" runat="server" />
+    <asp:HiddenField ID="hdnLandReg" runat="server" />
+    <asp:HiddenField ID="hdnLandRegPath" runat="server" />
+    <asp:HiddenField ID="hdnAttachedSubjectPath" runat="server" />
+    <asp:HiddenField ID="hdnAttachedSubject" runat="server" />
+    <asp:HiddenField ID="hdnAttachLstSocM" runat="server" />
+    <asp:HiddenField ID="hdnAttachLstSocMPath" runat="server" />
+    <asp:HiddenField ID="hdnAttachTime" runat="server" />
+    <asp:HiddenField ID="hdnAttachTimePath" runat="server" />
+    <asp:HiddenField ID="hdnRentAgreement" runat="server" />
+    <asp:HiddenField ID="hdnRentAgreementPath" runat="server" />
+     <asp:HiddenField ID="hdnLabEquipments" runat="server" />
+    <asp:HiddenField ID="hdnLabEquipmentsPath" runat="server" />
 
 
     <link href="/WebApp/Styles/smart_wizard.min.css" rel="stylesheet" />
@@ -2966,7 +3560,7 @@
             }
 
         .sw-theme-arrows > ul.step-anchor > li > a small, .sw-theme-arrows > ul.step-anchor > li > a small {
-            font-size: 17px;
+            font-size: 11px;
         }
 
         .sw-theme-arrows > ul.step-anchor > li > a, .sw-theme-arrows > ul.step-anchor > li > a {

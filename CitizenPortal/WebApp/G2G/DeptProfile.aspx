@@ -338,8 +338,8 @@
         <asp:HiddenField ID="HFServiceID" runat="server" Value="" />
         <asp:HiddenField ID="HFb64" runat="server" />
         <asp:HiddenField ID="HFSizeOfPhoto" runat="server" ClientIDMode="Static" />
-        <asp:HiddenField ID="HFUIDData" runat="server" />
-        <asp:HiddenField ID="HFb64Sign" runat="server" />
+        <asp:HiddenField ID="HFUIDData" runat="server" ClientIDMode="Static" />
+        <asp:HiddenField ID="HFb64Sign" runat="server" ClientIDMode="Static" />
         <asp:HiddenField ID="HFSizeOfSign" runat="server" ClientIDMode="Static" />
         <asp:HiddenField ID="HFCurrentLang" runat="server" ClientIDMode="Static" />
         <asp:HiddenField ID="HFLID" runat="server" ClientIDMode="Static" />

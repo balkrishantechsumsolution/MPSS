@@ -181,20 +181,63 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
                 txtSummittedAmt.Text = dtApp.Rows[0]["SummittedAmt"].ToString();
                 txtPhyHandStudFact.Text = dtApp.Rows[0]["PhyHandStudFact"].ToString();
 
-                //rbPhyHandStudAdPrv1.Checked = dtApp.Rows[0]["PhyHandStudAdPrv"].ToString();
-                //rbCRCS1.Checked = dtApp.Rows[0]["CRCS1"].ToString();
-                //rbElectric1.Checked = dtApp.Rows[0]["Electric"].ToString();
-                //rbSchoolType1.Checked = dtApp.Rows[0]["SchoolType"].ToString();
-                //rbSocietyBrd1.Checked = dtApp.Rows[0]["SocietyBrd1"].ToString();
-                //rbOAreaSchoolOperated1.Checked = dtApp.Rows[0]["OAreaSchoolOperated"].ToString();
+                rbPhyHandStudAdPrv1.Checked = dtApp.Rows[0]["PhyHandStudAdPrv"].ToString() == "true" ? true : false;
+                rbPhyHandStudAdPrv2.Checked = dtApp.Rows[0]["PhyHandStudAdPrv"].ToString() == "false" ? true : false;
+                rbCRCS1.Checked = dtApp.Rows[0]["CRCS1"].ToString()=="1"?true:false;
+                rbCRCS2.Checked = dtApp.Rows[0]["CRCS1"].ToString() == "2" ? true : false;
+                rbCRCS3.Checked = dtApp.Rows[0]["CRCS1"].ToString() == "3" ? true : false;
+                rbCRCS4.Checked = dtApp.Rows[0]["CRCS1"].ToString() == "4" ? true : false;
+                rbCRCS5.Checked = dtApp.Rows[0]["CRCS1"].ToString() == "5" ? true : false;
+                rbCRCS6.Checked = dtApp.Rows[0]["CRCS1"].ToString() == "6" ? true : false;
+                rbElectric1.Checked = dtApp.Rows[0]["Electric"].ToString() == "true" ? true : false;
+                rbElectric2.Checked = dtApp.Rows[0]["Electric"].ToString() == "false" ? true : false;
+                rbSocietyBrd1.Checked = dtApp.Rows[0]["SocietyBrd1"].ToString() == "true" ? true : false;
+                rbSocietyBrd2.Checked = dtApp.Rows[0]["SocietyBrd1"].ToString() == "false" ? true : false;
+                rbOAreaSchoolOperated1.Checked = dtApp.Rows[0]["OAreaSchoolOperated"].ToString() == "true" ? true : false;
+                rbOAreaSchoolOperate2.Checked = dtApp.Rows[0]["OAreaSchoolOperated"].ToString() == "false" ? true : false;
+               
 
-                //var fileLabEqip = dtApp.Rows[0]["fileLabEqip"].ToString();
-                //var fileRentAgree = dtApp.Rows[0]["fileRentAgree"].ToString();
-                //var fileKhasra = dtApp.Rows[0]["fileKhasra"].ToString();
-                //var fileAttTime = dtApp.Rows[0]["fileAttTime"].ToString();
-                //var fileTeachSht = dtApp.Rows[0]["fileTeachSht"].ToString();
+
+                rbSchoolType1.Checked = dtApp.Rows[0]["SchoolType"].ToString() == "1" ? true : false;
+                rbSchoolType2.Checked = dtApp.Rows[0]["SchoolType"].ToString() == "2" ? true : false;
+                rbSchoolType3.Checked = dtApp.Rows[0]["SchoolType"].ToString() == "3" ? true : false;
+                rbSchoolType4.Checked = dtApp.Rows[0]["SchoolType"].ToString() == "4" ? true : false;
 
 
+                var fileLabEqip = dtApp.Rows[0]["fileLabEqip"].ToString();
+                var fileRentAgree = dtApp.Rows[0]["fileRentAgree"].ToString();
+                var fileKhasra = dtApp.Rows[0]["fileKhasra"].ToString();
+                var fileAttTime = dtApp.Rows[0]["fileAttTime"].ToString();
+                var fileTeachSht = dtApp.Rows[0]["fileTeachSht"].ToString();
+                var fileSocietyMembersReg = dtApp.Rows[0]["fileSocietyMembersReg"].ToString();
+
+                
+
+                if(!string.IsNullOrEmpty(fileLabEqip))
+                {
+                    Image4.Attributes.Add("src", fileLabEqip);
+                }
+                if (!string.IsNullOrEmpty(fileRentAgree))
+                {
+                    Image3.Attributes.Add("src", fileRentAgree);
+                }
+                if (!string.IsNullOrEmpty(fileKhasra))
+                {
+                    Image2.Attributes.Add("src", fileKhasra);
+                }
+                if (!string.IsNullOrEmpty(fileAttTime))
+                {
+                    imgattchtime.Attributes.Add("src", fileAttTime);
+                }
+                if (!string.IsNullOrEmpty(fileTeachSht))
+                {
+                    imgattchsub.Attributes.Add("src", fileTeachSht);
+                }
+                if (!string.IsNullOrEmpty(fileSocietyMembersReg))
+                {
+                    Image1.Attributes.Add("src", fileSocietyMembersReg);
+                }
+               
             }
         }
       

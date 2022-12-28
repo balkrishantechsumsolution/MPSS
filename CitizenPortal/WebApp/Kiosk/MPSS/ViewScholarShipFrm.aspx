@@ -264,7 +264,7 @@
                                                     <div class="col-xs-12  col-sm-8 col-md-8 col-lg-3">
                                                         <div class="form-group">
                                                             <label class="manadatory">{{resourcesData.lblStGender}}</label>
-                                                            <asp:DropDownList ID="ddlGender" runat="server" CssClass="form-control">
+                                                            <asp:DropDownList Enabled="false"  ID="ddlGender" runat="server" CssClass="form-control">
                                                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
                                                             </asp:DropDownList>
 
@@ -291,7 +291,7 @@
                                                     <div class="col-xs-12  col-sm-8 col-md-8 col-lg-3">
                                                         <div class="form-group">
                                                             <label class="manadatory">{{resourcesData.lblScStClass}}</label>
-                                                            <asp:DropDownList ID="ddlClass" runat="server" CssClass="form-control">
+                                                            <asp:DropDownList Enabled="false"  ID="ddlClass" runat="server" CssClass="form-control">
                                                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
                                                             </asp:DropDownList>
 
@@ -309,7 +309,7 @@
                                                         <div class="form-group">
                                                             <label class="manadatory">{{resourcesData.lblScStSection}} </label>
 
-                                                            <asp:DropDownList ID="ddlSection" runat="server" CssClass="form-control">
+                                                            <asp:DropDownList Enabled="false"  ID="ddlSection" runat="server" CssClass="form-control">
                                                                 <asp:ListItem Value="0">--Select--</asp:ListItem>
                                                                 <asp:ListItem Value="8">8</asp:ListItem>
                                                             </asp:DropDownList>
@@ -373,7 +373,7 @@
                                         
                                                         </label>
 
-                                                        <asp:CheckBox ID="IsFatherDead" runat="server" />
+                                                       <asp:CheckBox Enabled="false"  ID="IsFatherDead" runat="server" />
 
                                                     </div>
                                                     <div class="clearfix"></div>
@@ -412,14 +412,14 @@
                                                     </div>
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="rbnpass1" runat="server" Text="Yes" GroupName="pass" />
+                                                            <asp:RadioButton Enabled="false"  ID="rbnpass1" runat="server" Text="Yes" GroupName="pass" />
 
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
 
-                                                            <asp:RadioButton ID="rbnpass2" runat="server" Text="No" GroupName="pass" Checked="true" />
+                                                            <asp:RadioButton Enabled="false"  ID="rbnpass2" runat="server" Text="No" GroupName="pass" Checked="true" />
                                                         </div>
                                                     </div>
                                                     <div class="clearfix"></div>
@@ -610,7 +610,7 @@
                                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
                                                 <div class="form-group">
                                                     <label class="manadatory">{{resourcesData.lblScStCaste}}</label>
-                                                    <asp:DropDownList ID="ddlCaste" runat="server" CssClass="form-control">
+                                                    <asp:DropDownList Enabled="false"  ID="ddlCaste" runat="server" CssClass="form-control">
                                                         <%-- <asp:ListItem Value="0">--Select--</asp:ListItem>--%>
                                                     </asp:DropDownList>
                                                     <div class="col-xs-12 pleft0 p5">
@@ -646,7 +646,7 @@
                                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
                                                 <div class="form-group">
                                                     <label class="manadatory">{{resourcesData.lblScStReligion}}</label>
-                                                    <asp:DropDownList ID="ddlReligion" runat="server" CssClass="form-control">
+                                                    <asp:DropDownList Enabled="false"  ID="ddlReligion" runat="server" CssClass="form-control">
                                                         <asp:ListItem Value="0">--Select--</asp:ListItem>
                                                         <asp:ListItem Value="1">Hindu</asp:ListItem>
                                                         <asp:ListItem Value="2">Muslim</asp:ListItem>
@@ -666,16 +666,16 @@
                                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
                                                 <div class="form-group">
                                                     <label>{{resourcesData.lblScStNative}}</label>
-                                                    <asp:CheckBox ID="IsMPOrigin" runat="server" Style="display: none;" />
+                                                   <asp:CheckBox Enabled="false"  ID="IsMPOrigin" runat="server" Style="display: none;" />
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="IsMPOriginY" runat="server" Text="Yes" GroupName="IsMPOrigin" />
+                                                            <asp:RadioButton Enabled="false"  ID="IsMPOriginY" runat="server" Text="Yes" GroupName="IsMPOrigin" />
 
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="IsMPOriginN" runat="server" Text="No" GroupName="IsMPOrigin" />
+                                                            <asp:RadioButton Enabled="false"  ID="IsMPOriginN" runat="server" Text="No" GroupName="IsMPOrigin" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -706,7 +706,7 @@
                                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
                                                 <div class="form-group">
                                                     <label>{{resourcesData.lblStCurrSchCls}} </label>
-                                                    <asp:DropDownList ID="ddlCuurentSchoolName" runat="server" CssClass="form-control">
+                                                    <asp:DropDownList Enabled="false"  ID="ddlCuurentSchoolName" runat="server" CssClass="form-control">
                                                         <asp:ListItem Value="0">--Select--</asp:ListItem>
                                                     </asp:DropDownList>
 
@@ -742,7 +742,7 @@
                                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
                                                 <div class="form-group">
                                                     <label>{{resourcesData.lblStudyClass}} </label>
-                                                    <asp:DropDownList ID="ddlCuurentClass" runat="server" CssClass="form-control">
+                                                    <asp:DropDownList Enabled="false"  ID="ddlCuurentClass" runat="server" CssClass="form-control">
                                                         <asp:ListItem Value="0">--Select--</asp:ListItem>
                                                     </asp:DropDownList>
 
@@ -756,7 +756,7 @@
                                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
                                                 <div class="form-group">
                                                     <label>{{resourcesData.lblPreStudyClass}}  </label>
-                                                    <asp:DropDownList ID="ddlPreviousClass" runat="server" CssClass="form-control">
+                                                    <asp:DropDownList Enabled="false"  ID="ddlPreviousClass" runat="server" CssClass="form-control">
                                                         <asp:ListItem Value="0">--Select--</asp:ListItem>
                                                     </asp:DropDownList>
 
@@ -772,7 +772,7 @@
                                                     <label>{{resourcesData.lblAllSub}} </label>
                                                     <%--  <asp:TextBox Enabled="false" ID="txtAllSubject" CssClass="form-control" runat="server" MaxLength="100" onkeypress="return ValidateAlpha(event);"></asp:TextBox>--%>
 
-                                                    <asp:DropDownList ID="ddlAllSubject" runat="server" CssClass="form-control">
+                                                    <asp:DropDownList Enabled="false"  ID="ddlAllSubject" runat="server" CssClass="form-control">
                                                         <asp:ListItem Value="0">--Select--</asp:ListItem>
                                                         <asp:ListItem Text="1" Value="1"></asp:ListItem>
                                                         <asp:ListItem Text="2" Value="2"></asp:ListItem>
@@ -795,7 +795,7 @@
                                                 <div class="form-group">
                                                     <label>{{resourcesData.lblPreAllSub}} </label>
                                                     <%--<asp:TextBox ID="txtPreAllSubject" CssClass="form-control" runat="server" MaxLength="100" onkeypress="return ValidateAlpha(event);"></asp:TextBox>--%>
-                                                    <asp:DropDownList ID="ddlPreAllSubject" runat="server" CssClass="form-control">
+                                                    <asp:DropDownList Enabled="false"  ID="ddlPreAllSubject" runat="server" CssClass="form-control">
                                                         <asp:ListItem Value="0">--Select--</asp:ListItem>
                                                         <asp:ListItem Text="1" Value="1"></asp:ListItem>
                                                         <asp:ListItem Text="2" Value="2"></asp:ListItem>
@@ -974,7 +974,7 @@
                                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
                                                 <div class="form-group">
                                                     <label class="manadatory">{{resourcesData.lblScStMediums}}</label>
-                                                    <asp:DropDownList ID="ddlMedium" runat="server" CssClass="form-control">
+                                                    <asp:DropDownList Enabled="false"  ID="ddlMedium" runat="server" CssClass="form-control">
                                                         <asp:ListItem Value="0">--Select--</asp:ListItem>
                                                         <asp:ListItem Value="S">Sanskrit</asp:ListItem>
                                                         <asp:ListItem Value="H">Hindi</asp:ListItem>
@@ -991,7 +991,7 @@
                                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
                                                 <div class="form-group">
                                                     <label class="manadatory" for="FatherName">{{resourcesData.lblScStDisability}} </label>
-                                                    <asp:DropDownList ID="ddlDisAbility" runat="server" CssClass="form-control">
+                                                    <asp:DropDownList Enabled="false"  ID="ddlDisAbility" runat="server" CssClass="form-control">
                                                         <asp:ListItem Value="0">--Select--</asp:ListItem>
                                                         <asp:ListItem Value="Y">Yes</asp:ListItem>
                                                         <asp:ListItem Value="N">No</asp:ListItem>
@@ -1004,7 +1004,7 @@
                                                 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
                                                     <div class="form-group">
                                                         <label class="manadatory" for="FatherName">{{resourcesData.lblDisavbiType}}  </label>
-                                                        <asp:DropDownList ID="ddlDisAbilityType" runat="server" CssClass="form-control">
+                                                        <asp:DropDownList Enabled="false"  ID="ddlDisAbilityType" runat="server" CssClass="form-control">
                                                             <asp:ListItem Value="0">--Select--</asp:ListItem>
                                                             <asp:ListItem Value="V">दृष्टिबाधित</asp:ListItem>
                                                             <asp:ListItem Value="O">अस्थिबाधित</asp:ListItem>
@@ -1086,7 +1086,7 @@
                                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
                                                 <div class="form-group">
                                                     <label class="manadatory">{{resourcesData.lblScStStudentStatus}}</label>
-                                                    <asp:DropDownList ID="ddlStatus" runat="server" CssClass="form-control">
+                                                    <asp:DropDownList Enabled="false"  ID="ddlStatus" runat="server" CssClass="form-control">
                                                         <asp:ListItem Value="0">--Select--</asp:ListItem>
                                                         <asp:ListItem Value="P">Pass</asp:ListItem>
                                                         <asp:ListItem Value="F">Fail</asp:ListItem>
@@ -1227,16 +1227,16 @@
                                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
                                                 <div class="form-group">
                                                     <label>{{resourcesData.lblScStParentIcomeTaxPayer}}</label>
-                                                    <asp:CheckBox ID="IsParentIcomeTaxPayer" runat="server" Style="display: none;" />
+                                                   <asp:CheckBox Enabled="false"  ID="IsParentIcomeTaxPayer" runat="server" Style="display: none;" />
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton29" runat="server" Text="Yes" GroupName="IsParentIcomeTaxPayer" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton29" runat="server" Text="Yes" GroupName="IsParentIcomeTaxPayer" />
 
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton30" runat="server" Text="No" GroupName="IsParentIcomeTaxPayer" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton30" runat="server" Text="No" GroupName="IsParentIcomeTaxPayer" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1245,16 +1245,16 @@
                                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
                                                 <div class="form-group">
                                                     <label>{{resourcesData.lblScStIsAnyHaveScholarShip}}</label>
-                                                    <asp:CheckBox ID="IsAnyHaveScholarShip" runat="server" Style="display: none;" />
+                                                   <asp:CheckBox Enabled="false"  ID="IsAnyHaveScholarShip" runat="server" Style="display: none;" />
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton27" runat="server" Text="Yes" GroupName="IsAnyHaveScholarShip" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton27" runat="server" Text="Yes" GroupName="IsAnyHaveScholarShip" />
 
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton28" runat="server" Text="No" GroupName="IsAnyHaveScholarShip" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton28" runat="server" Text="No" GroupName="IsAnyHaveScholarShip" />
                                                         </div>
                                                     </div>
 
@@ -1264,16 +1264,16 @@
                                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
                                                 <div class="form-group">
                                                     <label>{{resourcesData.lblScStIsHosteller}}</label>
-                                                    <asp:CheckBox ID="IsHosteller" runat="server" Style="display: none;" />
+                                                   <asp:CheckBox Enabled="false"  ID="IsHosteller" runat="server" Style="display: none;" />
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton25" runat="server" Text="Yes" GroupName="IsHosteller" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton25" runat="server" Text="Yes" GroupName="IsHosteller" />
 
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton26" runat="server" Text="No" GroupName="IsHosteller" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton26" runat="server" Text="No" GroupName="IsHosteller" />
                                                         </div>
                                                     </div>
 
@@ -1282,16 +1282,16 @@
                                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
                                                 <div class="form-group">
                                                     <label>{{resourcesData.lblScStIsFamilyBPL}}</label>
-                                                    <asp:CheckBox ID="IsFamilyBPL" runat="server" Style="display: none;" />
+                                                   <asp:CheckBox Enabled="false"  ID="IsFamilyBPL" runat="server" Style="display: none;" />
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="IsFamilyBPLY" runat="server" Text="Yes" GroupName="IsFamilyBPL" />
+                                                            <asp:RadioButton Enabled="false"  ID="IsFamilyBPLY" runat="server" Text="Yes" GroupName="IsFamilyBPL" />
 
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="IsFamilyBPLN" runat="server" Text="No" GroupName="IsFamilyBPL" />
+                                                            <asp:RadioButton Enabled="false"  ID="IsFamilyBPLN" runat="server" Text="No" GroupName="IsFamilyBPL" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1299,16 +1299,16 @@
                                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
                                                 <div class="form-group">
                                                     <label>{{resourcesData.lblScStIsDisadvantagedgroup}}</label>
-                                                    <asp:CheckBox ID="IsDisadvantagedgroup" runat="server" Style="display: none;" />
+                                                   <asp:CheckBox Enabled="false"  ID="IsDisadvantagedgroup" runat="server" Style="display: none;" />
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton1" runat="server" Text="Yes" GroupName="IsDisadvantagedgroup" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton1" runat="server" Text="Yes" GroupName="IsDisadvantagedgroup" />
 
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton2" runat="server" Text="No" GroupName="IsDisadvantagedgroup" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton2" runat="server" Text="No" GroupName="IsDisadvantagedgroup" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1319,16 +1319,16 @@
                                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
                                                 <div class="form-group">
                                                     <label>{{resourcesData.lblScStIsRTE}}</label>
-                                                    <asp:CheckBox ID="IsRTE" runat="server" Style="display: none;" />
+                                                   <asp:CheckBox Enabled="false"  ID="IsRTE" runat="server" Style="display: none;" />
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton3" runat="server" Text="Yes" GroupName="IsRTE" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton3" runat="server" Text="Yes" GroupName="IsRTE" />
 
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton4" runat="server" Text="No" GroupName="IsRTE" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton4" runat="server" Text="No" GroupName="IsRTE" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1337,16 +1337,16 @@
                                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
                                                 <div class="form-group">
                                                     <label>{{resourcesData.lblScStIsClsFirstEnrollStatus}}</label>
-                                                    <asp:CheckBox ID="IsClsFirstEnrollStatus" runat="server" Style="display: none;" />
+                                                   <asp:CheckBox Enabled="false"  ID="IsClsFirstEnrollStatus" runat="server" Style="display: none;" />
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton5" runat="server" Text="Yes" GroupName="IsClsFirstEnrollStatus" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton5" runat="server" Text="Yes" GroupName="IsClsFirstEnrollStatus" />
 
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton6" runat="server" Text="No" GroupName="IsClsFirstEnrollStatus" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton6" runat="server" Text="No" GroupName="IsClsFirstEnrollStatus" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1355,16 +1355,16 @@
                                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
                                                 <div class="form-group">
                                                     <label>{{resourcesData.lblScStIsDGSCaste}}</label>
-                                                    <asp:CheckBox ID="IsDGSCaste" runat="server" Style="display: none;" />
+                                                   <asp:CheckBox Enabled="false"  ID="IsDGSCaste" runat="server" Style="display: none;" />
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton7" runat="server" Text="Yes" GroupName="IsDGSCaste" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton7" runat="server" Text="Yes" GroupName="IsDGSCaste" />
 
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton8" runat="server" Text="No" GroupName="IsDGSCaste" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton8" runat="server" Text="No" GroupName="IsDGSCaste" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1374,16 +1374,16 @@
                                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
                                                 <div class="form-group">
                                                     <label>{{resourcesData.lblScStIsFreeTextbooks}}</label>
-                                                    <asp:CheckBox ID="IsFreeTextbooks" runat="server" Style="display: none;" />
+                                                   <asp:CheckBox Enabled="false"  ID="IsFreeTextbooks" runat="server" Style="display: none;" />
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton9" runat="server" Text="Yes" GroupName="IsFreeTextbooks" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton9" runat="server" Text="Yes" GroupName="IsFreeTextbooks" />
 
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton10" runat="server" Text="No" GroupName="IsFreeTextbooks" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton10" runat="server" Text="No" GroupName="IsFreeTextbooks" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1392,16 +1392,16 @@
                                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
                                                 <div class="form-group">
                                                     <label>{{resourcesData.lblScStIsFreeTransport}}</label>
-                                                    <asp:CheckBox ID="IsFreeTransport" runat="server" Style="display: none;" />
+                                                   <asp:CheckBox Enabled="false"  ID="IsFreeTransport" runat="server" Style="display: none;" />
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton11" runat="server" Text="Yes" GroupName="IsFreeTransport" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton11" runat="server" Text="Yes" GroupName="IsFreeTransport" />
 
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton12" runat="server" Text="No" GroupName="IsFreeTransport" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton12" runat="server" Text="No" GroupName="IsFreeTransport" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1412,16 +1412,16 @@
                                                     <label>{{resourcesData.lblScSIsFreeEscortDis}}</label>
 
 
-                                                    <asp:CheckBox ID="IsFreeEscortDis" runat="server" Style="display: none;" />
+                                                   <asp:CheckBox Enabled="false"  ID="IsFreeEscortDis" runat="server" Style="display: none;" />
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton13" runat="server" Text="Yes" GroupName="IsFreeEscortDis" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton13" runat="server" Text="Yes" GroupName="IsFreeEscortDis" />
 
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton14" runat="server" Text="No" GroupName="IsFreeEscortDis" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton14" runat="server" Text="No" GroupName="IsFreeEscortDis" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1431,16 +1431,16 @@
                                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
                                                 <div class="form-group">
                                                     <label>{{resourcesData.lblScStFreeBicycle}}</label>
-                                                    <asp:CheckBox ID="FreeBicycle" runat="server" Style="display: none;" />
+                                                   <asp:CheckBox Enabled="false"  ID="FreeBicycle" runat="server" Style="display: none;" />
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton15" runat="server" Text="Yes" GroupName="FreeBicycle" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton15" runat="server" Text="Yes" GroupName="FreeBicycle" />
 
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton16" runat="server" Text="No" GroupName="FreeBicycle" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton16" runat="server" Text="No" GroupName="FreeBicycle" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1449,16 +1449,16 @@
                                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
                                                 <div class="form-group">
                                                     <label>{{resourcesData.lblScStIsResidingHostel}}</label>
-                                                    <asp:CheckBox ID="IsResidingHostel" runat="server" Style="display: none;" />
+                                                   <asp:CheckBox Enabled="false"  ID="IsResidingHostel" runat="server" Style="display: none;" />
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton17" runat="server" Text="Yes" GroupName="IsResidingHostel" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton17" runat="server" Text="Yes" GroupName="IsResidingHostel" />
 
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton18" runat="server" Text="No" GroupName="IsResidingHostel" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton18" runat="server" Text="No" GroupName="IsResidingHostel" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1467,16 +1467,16 @@
                                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
                                                 <div class="form-group">
                                                     <label>{{resourcesData.lblScStIsRecSpecialTraining}}</label>
-                                                    <asp:CheckBox ID="IsRecSpecialTraining" runat="server" Style="display: none;" />
+                                                   <asp:CheckBox Enabled="false"  ID="IsRecSpecialTraining" runat="server" Style="display: none;" />
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton19" runat="server" Text="Yes" GroupName="IsRecSpecialTraining" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton19" runat="server" Text="Yes" GroupName="IsRecSpecialTraining" />
 
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton20" runat="server" Text="No" GroupName="IsRecSpecialTraining" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton20" runat="server" Text="No" GroupName="IsRecSpecialTraining" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1485,16 +1485,16 @@
                                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
                                                 <div class="form-group">
                                                     <label>{{resourcesData.lblScStIshomeless}}</label>
-                                                    <asp:CheckBox ID="Ishomeless" runat="server" Style="display: none;" />
+                                                   <asp:CheckBox Enabled="false"  ID="Ishomeless" runat="server" Style="display: none;" />
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton21" runat="server" Text="Yes" GroupName="Ishomeless" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton21" runat="server" Text="Yes" GroupName="Ishomeless" />
 
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton22" runat="server" Text="No" GroupName="Ishomeless" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton22" runat="server" Text="No" GroupName="Ishomeless" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1505,16 +1505,16 @@
                                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3">
                                                 <div class="form-group">
                                                     <label>{{resourcesData.lblScStIsRegVocationalPrg}}</label>
-                                                    <asp:CheckBox ID="IsRegVocationalPrg" runat="server" Style="display: none;" />
+                                                   <asp:CheckBox Enabled="false"  ID="IsRegVocationalPrg" runat="server" Style="display: none;" />
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton23" runat="server" Text="Yes" GroupName="IsRegVocationalPrg" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton23" runat="server" Text="Yes" GroupName="IsRegVocationalPrg" />
 
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                         <div class="form-group">
-                                                            <asp:RadioButton ID="RadioButton24" runat="server" Text="No" GroupName="IsRegVocationalPrg" />
+                                                            <asp:RadioButton Enabled="false"  ID="RadioButton24" runat="server" Text="No" GroupName="IsRegVocationalPrg" />
                                                         </div>
                                                     </div>
                                                 </div>

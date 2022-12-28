@@ -1150,7 +1150,7 @@ namespace CitizenPortalLib.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Maharishi Patanjali Sanskrit Sansthan dwaraa jaari Vidyalay ka Dice Code.
+        ///   Looks up a localized string similar to Maharishi Patanjali Sanskrit Sansthan dwaraa jaari Vidhyalay ka Dice Code.
         /// </summary>
         public static string lblDiceCode {
             get {
@@ -1630,7 +1630,7 @@ namespace CitizenPortalLib.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Digital Caste Certificate Number(Lok Shewa Kendra Dwara Pradaya).
+        ///   Looks up a localized string similar to Digital Caste Certificate Number(Lok sevakendra Dwara Pradaya).
         /// </summary>
         public static string lblScStDigitalCasteNo {
             get {
