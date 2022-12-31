@@ -105,7 +105,7 @@
 
                         <div class="box-heading form_hd">
                             <div class="box-heading form_hd">
-                                <h2>Correspondent Renewal Application Form Year 2023-24</h2>
+                                <h2> {{resourcesData.lblCorrespond1}}</h2>
 
                             </div>
                         </div>
@@ -115,8 +115,7 @@
 
                         <div class="box-heading form_hd">
                             <div class="box-heading form_hd">
-                                <h4>Sanskrit School for LKG / UKG / Class 1-4
-                                    / Praveshika / Purmadhima / Uttarmadhima class to be operated</h4>
+                                <h4>{{resourcesData.lblCorrespond2}}</h4>
 
                             </div>
                         </div>
@@ -140,61 +139,61 @@
                     <div id="smartwizard">
                         <ul>
                             <li class="done active"><a href="#step-1">Step 1<br />
-                                <small id="lblsearch">School Information</small></a></li>
+                                <small id="lblsearch">{{resourcesData.lblCorrespond560}}</small></a></li>
                             <li class="done active"><a href="#step-2">Step 2<br />
-                                <small>Society and Other Information</small></a></li>
+                                <small>{{resourcesData.lblCorrespond561}}</small></a></li>
                             <li class="done active"><a href="#step-3">Step 3<br />
-                                <small>Academic Arrangement Information</small></a></li>
+                                <small>{{resourcesData.lblCorrespond562}}</small></a></li>
                             <li class="done active"><a href="#step-4">Step 4<br />
-                                <small>Land and TimeTable Information</small></a></li>
+                                <small>{{resourcesData.lblCorrespond563}}</small></a></li>
                             <li class="done active"><a href="#step-5">Step 5<br />
-                                <small>Facilities and PHYSICAL Handicapped Information</small></a></li>
+                                <small>{{resourcesData.lblCorrespond564}}</small></a></li>
                             <li class="done active"><a href="#step-6">Step 6<br />
-                                <small>Appendix 1</small></a></li>
+                                <small>{{resourcesData.lblCorrespond565}}</small></a></li>
                             <li class="done active"><a href="#step-7">Step 7<br />
-                                <small>Appendix 2</small></a></li>
+                                <small>{{resourcesData.lblCorrespond566}}</small></a></li>
                             <li class="done active"><a href="#step-8">Step 8<br />
-                                <small>Appendix 3</small></a></li>
+                                <small>{{resourcesData.lblCorrespond567}}</small></a></li>
                             <li class="done active"><a href="#step-9">Step 9<br />
-                                <small>Appendix 4</small></a></li>
+                                <small>{{resourcesData.lblCorrespond568}}</small></a></li>
                             <li class="done active"><a href="#step-10">Step 10<br />
-                                <small>Appendix 5</small></a></li>
+                                <small>{{resourcesData.lblCorrespond569}}</small></a></li>
 
                         </ul>
                         <div class="mt-4">
                             <div id="step-1">
                                 <div class="row">
                                     <fieldset id="divStudentInnfo" style="width: 100%; margin-bottom: 15px;">
-                                        <legend>&nbsp School Detail</legend>
+                                        <legend>&nbsp {{resourcesData.lblCorrespond3}}</legend>
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 box-container row">
                                             <div class="col-xs-12  col-sm-2 col-md-2 col-lg-2">
 
                                                 <div class="form-group">
-                                                    <label class="manadatory">Correspondent Renewal Class</label>
+                                                    <label class="manadatory">{{resourcesData.lblCorrespond4}}</label>
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                                 <div class="form-group">
-                                                    <asp:RadioButton ID="rbCRCS1" runat="server" Text="LKG" GroupName="CRCS" />
+                                                    <asp:RadioButton ID="rbCRCS1" runat="server" Text="{{resourcesData.lblCorrespond5}}" GroupName="CRCS" />
 
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                                 <div class="form-group">
-                                                    <asp:RadioButton ID="rbCRCS2" runat="server" Text="UKG" GroupName="CRCS" />
+                                                    <asp:RadioButton ID="rbCRCS2" runat="server" Text="{{resourcesData.lblCorrespond6}}" GroupName="CRCS" />
 
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                 <div class="form-group">
 
-                                                    <asp:RadioButton ID="rbCRCS3" runat="server" Text="Class 1-4" GroupName="CRCS" Checked="true" />
+                                                    <asp:RadioButton ID="rbCRCS3" runat="server" Text="{{resourcesData.lblCorrespond7}}" GroupName="CRCS" Checked="true" />
                                                 </div>
                                             </div>
 
                                             <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                 <div class="form-group">
-                                                    <asp:RadioButton ID="rbCRCS4" runat="server" Text="Praveshika" GroupName="CRCS" />
+                                                    <asp:RadioButton ID="rbCRCS4" runat="server" Text="{{resourcesData.lblCorrespond8}}" GroupName="CRCS" />
 
                                                 </div>
                                             </div>
@@ -203,19 +202,19 @@
 
                                             <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                 <div class="form-group">
-                                                    <asp:RadioButton ID="rbCRCS5" runat="server" Text="Purmadhima" GroupName="CRCS" />
+                                                    <asp:RadioButton ID="rbCRCS5" runat="server" Text="{{resourcesData.lblCorrespond9}}" GroupName="CRCS" />
 
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                 <div class="form-group">
 
-                                                    <asp:RadioButton ID="rbCRCS6" runat="server" Text="Uttarmadhima" GroupName="CRCS" />
+                                                    <asp:RadioButton ID="rbCRCS6" runat="server" Text="{{resourcesData.lblCorrespond10}}" GroupName="CRCS" />
                                                 </div>
                                             </div>
                                             <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
                                                 <div class="form-group">
-                                                    <label class="manadatory">Society Name and Address</label>
+                                                    <label class="manadatory">{{resourcesData.lblCorrespond11}}</label>
                                                     <asp:TextBox ID="txtSocietyName" CssClass="form-control" TextMode="MultiLine" runat="server" MaxLength="100" onkeypress="return ValidateAlpha(event);" placeholder="Society Name and Address"></asp:TextBox>
                                                     <div class="col-xs-12 pleft0 p5">
                                                         <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="txtSocietyName" Display="Dynamic"
@@ -225,7 +224,7 @@
                                             </div>
                                             <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
                                                 <div class="form-group">
-                                                    <label class="manadatory">School Name</label>
+                                                    <label class="manadatory">{{resourcesData.lblCorrespond12}}</label>
                                                     <asp:TextBox ID="txtSchoolName" CssClass="form-control" runat="server" MaxLength="100" onkeypress="return ValidateAlpha(event);" placeholder="School Name"></asp:TextBox>
                                                     <div class="col-xs-12 pleft0 p5">
                                                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtSchoolName" Display="Dynamic"
@@ -235,7 +234,7 @@
                                             </div>
                                             <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
                                                 <div class="form-group">
-                                                    <label class="manadatory">School Address</label>
+                                                    <label class="manadatory">{{resourcesData.lblCorrespond13}}</label>
                                                     <asp:TextBox ID="txtSchoolAddress" CssClass="form-control" TextMode="MultiLine" runat="server" MaxLength="100" onkeypress="return ValidateAlpha(event);" placeholder="School Name"></asp:TextBox>
                                                     <div class="col-xs-12 pleft0 p5">
                                                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtSchoolAddress" Display="Dynamic"
@@ -247,11 +246,11 @@
                                         </div>
                                     </fieldset>
                                     <fieldset>
-                                        <legend>&nbsp School Address Details</legend>
+                                        <legend>&nbsp {{resourcesData.lblCorrespond14}}</legend>
                                         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlFullName">
-                                                    House No
+                                                   {{resourcesData.lblCorrespond15}}
                                                 </label>
 
 
@@ -269,7 +268,7 @@
                                         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlFullName">
-                                                    Colony
+                                                   {{resourcesData.lblCorrespond16}}
                                                 </label>
 
 
@@ -288,7 +287,7 @@
                                         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlFullName">
-                                                    City
+                                                   {{resourcesData.lblCorrespond17}}
                                                 </label>
 
 
@@ -306,7 +305,7 @@
                                         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlFullName">
-                                                    Block
+                                                  {{resourcesData.lblCorrespond18}}
                                                 </label>
 
 
@@ -325,7 +324,7 @@
                                         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    District
+                                                    {{resourcesData.lblCorrespond19}}
                                                 </label>
 
 
@@ -336,14 +335,14 @@
                                                 <asp:TextBox ID="txtDistrict" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                                 <div class="col-xs-12 pleft0">
                                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator37" runat="server" ControlToValidate="txtDistrict" Display="Dynamic"
-                                                        ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                        ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlFullName">
-                                                    PinCode
+                                                   {{resourcesData.lblCorrespond20}}
                                                 </label>
 
 
@@ -362,7 +361,7 @@
                                         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlFullName">
-                                                    Mobile No
+                                                    {{resourcesData.lblCorrespond21}}
                                                 </label>
 
 
@@ -382,11 +381,11 @@
                             </div>
                             <div id="step-2">
                                 <fieldset>
-                                    <legend>&nbsp Soceity Details</legend>
+                                    <legend>&nbsp  {{resourcesData.lblCorrespond24}}</legend>
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlFullName">
-                                                Soceity Registration No
+                                                {{resourcesData.lblCorrespond25}}
                                             </label>
 
 
@@ -404,7 +403,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlFullName">
-                                                Registration Date
+                                                {{resourcesData.lblCorrespond26}}
                                             </label>
 
 
@@ -423,7 +422,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlFullName">
-                                                Validity Date
+                                                {{resourcesData.lblCorrespond27}}
                                             </label>
 
 
@@ -441,7 +440,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlFullName">
-                                                PAN No(Income Tax No)
+                                                {{resourcesData.lblCorrespond28}}
                                             </label>
 
 
@@ -460,7 +459,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                No of Member in Soceity
+                                               {{resourcesData.lblCorrespond29}}
                                             </label>
 
 
@@ -471,14 +470,14 @@
                                             <asp:TextBox ID="txtSoceityNoOfMember" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="txtSoceityNoOfMember" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                         <div id="divCheque" class="col-md-12 box-container">
                                             <div class="box-heading">
-                                                <h4 class="box-title manadatory">Attach List of Society Members Registration Application form.
+                                                <h4 class="box-title manadatory">{{resourcesData.lblCorrespond30}}
                                       
                                                 </h4>
                                             </div>
@@ -499,7 +498,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Soceity Director Name
+                                                {{resourcesData.lblCorrespond31}}
                                             </label>
 
 
@@ -510,7 +509,7 @@
                                             <asp:TextBox ID="txtSocietyDirectorName" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="txtSocietyDirectorName" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
@@ -519,7 +518,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlFullName">
-                                                City/Village
+                                                 {{resourcesData.lblCorrespond32}}
                                             </label>
 
 
@@ -537,7 +536,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlFullName">
-                                                Post
+                                               {{resourcesData.lblCorrespond33}}
                                             </label>
 
 
@@ -556,7 +555,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                District
+                                                {{resourcesData.lblCorrespond34}}
                                             </label>
 
 
@@ -567,14 +566,14 @@
                                             <asp:TextBox ID="txtSocietyDistrict" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ControlToValidate="txtSocietyDistrict" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlFullName">
-                                                PinCode
+                                                {{resourcesData.lblCorrespond36}}
                                             </label>
 
 
@@ -593,7 +592,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlFullName">
-                                                Mobile No
+                                                 {{resourcesData.lblCorrespond35}}
                                             </label>
 
 
@@ -611,23 +610,23 @@
 
                                     <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
                                         <div class="form-group">
-                                            <label class="manadatory">Other Operated Society School Name and Address</label>
+                                            <label class="manadatory"> {{resourcesData.lblCorrespond37}}</label>
                                             <asp:TextBox ID="txtSocietyOtherOperated" CssClass="form-control" TextMode="MultiLine" runat="server" MaxLength="100" onkeypress="return ValidateAlpha(event);" placeholder="Other operate Society School Name and Address"></asp:TextBox>
 
                                         </div>
                                     </div>
                                 </fieldset>
                                 <fieldset>
-                                    <legend>&nbsp Other Details</legend>
+                                    <legend>&nbsp {{resourcesData.lblCorrespond38}}</legend>
                                     <div class="col-xs-12  col-sm-2 col-md-2 col-lg-2">
 
                                         <div class="form-group">
-                                            <label class="manadatory">In which area school operated</label>
+                                            <label class="manadatory"> {{resourcesData.lblCorrespond39}}</label>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                         <div class="form-group">
-                                            <asp:RadioButton ID="rbOAreaSchoolOperated1" runat="server" Text="Rural" GroupName="rbOAreaSchoolOperated1" />
+                                            <asp:RadioButton ID="rbOAreaSchoolOperated1" runat="server" Text="{{resourcesData.lblCorrespond41}}" GroupName="rbOAreaSchoolOperated1" />
 
                                         </div>
                                     </div>
@@ -636,14 +635,14 @@
 
                                     <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                         <div class="form-group">
-                                            <asp:RadioButton ID="rbOAreaSchoolOperate2" runat="server" Text="Urban" GroupName="rbOAreaSchoolOperated1" />
+                                            <asp:RadioButton ID="rbOAreaSchoolOperate2" runat="server" Text="{{resourcesData.lblCorrespond42}}" GroupName="rbOAreaSchoolOperated1" />
 
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Municipal Corporation Name
+                                                 {{resourcesData.lblCorrespond43}}
                                             </label>
 
 
@@ -654,7 +653,7 @@
                                             <asp:TextBox ID="txtMunicipalCorp" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="txtMunicipalCorp" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
@@ -662,7 +661,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Distance of School from District Headquater
+                                                 {{resourcesData.lblCorrespond44}}
                                             </label>
 
 
@@ -673,14 +672,14 @@
                                             <asp:TextBox ID="txtDisSchoolHeadQuater" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="txtDisSchoolHeadQuater" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Nearest Police Station Name
+                                                 {{resourcesData.lblCorrespond45}}
                                             </label>
 
 
@@ -691,7 +690,7 @@
                                             <asp:TextBox ID="txtNrPoliceSt" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator18" runat="server" ControlToValidate="txtNrPoliceSt" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
@@ -699,7 +698,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Nearest Police Station Distance from School
+                                                {{resourcesData.lblCorrespond46}}
                                             </label>
 
 
@@ -710,14 +709,14 @@
                                             <asp:TextBox ID="txtNrPoliceStDistance" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator19" runat="server" ControlToValidate="txtNrPoliceStDistance" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Nearest Police Station Administrative Division from School
+                                                 {{resourcesData.lblCorrespond47}}
                                             </label>
 
 
@@ -728,7 +727,7 @@
                                             <asp:TextBox ID="txtNrPoliceStDivision" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator20" runat="server" ControlToValidate="txtNrPoliceStDivision" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
@@ -736,7 +735,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Nearest Police Station Phone No from School
+                                               {{resourcesData.lblCorrespond48}}
                                             </label>
 
 
@@ -747,7 +746,7 @@
                                             <asp:TextBox ID="txtNrPolicePhNo" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator21" runat="server" ControlToValidate="txtNrPolicePhNo" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
@@ -755,7 +754,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Nearest Govt High School Name
+                                                {{resourcesData.lblCorrespond49}}
                                             </label>
 
 
@@ -766,7 +765,7 @@
                                             <asp:TextBox ID="txtNrGovtHighSch" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator22" runat="server" ControlToValidate="txtNrGovtHighSch" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
@@ -774,7 +773,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Nearest Govt High School Name Address
+                                                {{resourcesData.lblCorrespond50}}
                                             </label>
 
 
@@ -785,7 +784,7 @@
                                             <asp:TextBox ID="txtNrGovtHighSchAdd" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator23" runat="server" ControlToValidate="txtNrGovtHighSchAdd" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
@@ -793,7 +792,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Nearest Govt High School Name Distance
+                                               {{resourcesData.lblCorrespond555}}
                                             </label>
 
 
@@ -804,7 +803,7 @@
                                             <asp:TextBox ID="txtNrGovtHighSchDistance" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator24" runat="server" ControlToValidate="txtNrGovtHighSchDistance" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
@@ -815,7 +814,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Nearest Govt Higher School Name
+                                               {{resourcesData.lblCorrespond51}}
                                             </label>
 
 
@@ -826,7 +825,7 @@
                                             <asp:TextBox ID="txtNrGovtHigherSch" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator25" runat="server" ControlToValidate="txtNrGovtHigherSch" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
@@ -834,7 +833,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Nearest Govt Higher School Name Address
+                                                {{resourcesData.lblCorrespond52}}
                                             </label>
 
 
@@ -845,7 +844,7 @@
                                             <asp:TextBox ID="txtNrGovtHigherSchAdd" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator26" runat="server" ControlToValidate="txtNrGovtHigherSchAdd" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
@@ -853,7 +852,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Nearest Govt Higher School Name Distance
+                                                {{resourcesData.lblCorrespond53}}
                                             </label>
 
 
@@ -864,7 +863,7 @@
                                             <asp:TextBox ID="txtNrGovtHigherSchDist" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator27" runat="server" ControlToValidate="txtNrGovtHigherSchDist" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
@@ -874,7 +873,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Nearest Private High School Name
+                                                {{resourcesData.lblCorrespond54}}
                                             </label>
 
 
@@ -885,7 +884,7 @@
                                             <asp:TextBox ID="txtNrPvtHighSch" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator28" runat="server" ControlToValidate="txtNrPvtHighSch" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
@@ -893,7 +892,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Nearest Private High School Name Address
+                                                {{resourcesData.lblCorrespond55}}
                                             </label>
 
 
@@ -904,7 +903,7 @@
                                             <asp:TextBox ID="txtNrPvtHighSchAdd" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator29" runat="server" ControlToValidate="txtNrPvtHighSchAdd" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
@@ -912,7 +911,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Nearest Private High School Name Distance
+                                                {{resourcesData.lblCorrespond56}}
                                             </label>
 
 
@@ -923,7 +922,7 @@
                                             <asp:TextBox ID="txtNrPvtHighSchDist" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator30" runat="server" ControlToValidate="txtNrPvtHighSchDist" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
@@ -932,7 +931,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Nearest Private Higher School Name
+                                                {{resourcesData.lblCorrespond57}}
                                             </label>
 
 
@@ -943,7 +942,7 @@
                                             <asp:TextBox ID="txtNrPvtHigherSch" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator31" runat="server" ControlToValidate="txtNrPvtHigherSch" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
@@ -951,7 +950,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Nearest Private Higher School Name Address
+                                               {{resourcesData.lblCorrespond58}}
                                             </label>
 
 
@@ -962,7 +961,7 @@
                                             <asp:TextBox ID="txtNrPvtHigherSchAdd" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator32" runat="server" ControlToValidate="txtNrPvtHigherSchAdd" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
@@ -970,7 +969,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Nearest Private Higher School Name Distance
+                                               {{resourcesData.lblCorrespond59}}
                                             </label>
 
 
@@ -981,7 +980,7 @@
                                             <asp:TextBox ID="txtNrPvtHigherSchDist" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator38" runat="server" ControlToValidate="txtNrPvtHigherSchDist" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
@@ -989,12 +988,12 @@
                                     <div class="col-xs-12  col-sm-2 col-md-2 col-lg-2">
 
                                         <div class="form-group">
-                                            <label class="manadatory">School Type</label>
+                                            <label class="manadatory"> {{resourcesData.lblCorrespond60}}</label>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
-                                            <asp:RadioButton ID="rbSchoolType1" runat="server" Text="Co-ED" GroupName="rbSchoolType1" />
+                                            <asp:RadioButton ID="rbSchoolType1" runat="server" Text="{{resourcesData.lblCorrespond61}}" GroupName="rbSchoolType1" />
 
                                         </div>
                                     </div>
@@ -1003,20 +1002,20 @@
 
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
-                                            <asp:RadioButton ID="rbSchoolType2" runat="server" Text="Boys" GroupName="rbSchoolType1" />
+                                            <asp:RadioButton ID="rbSchoolType2" runat="server" Text="{{resourcesData.lblCorrespond62}}" GroupName="rbSchoolType1" />
 
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
 
-                                            <asp:RadioButton ID="rbSchoolType3" runat="server" Text="Girls" GroupName="rbSchoolType1" Checked="true" />
+                                            <asp:RadioButton ID="rbSchoolType3" runat="server" Text="{{resourcesData.lblCorrespond63}}" GroupName="rbSchoolType1" Checked="true" />
                                         </div>
                                     </div>
 
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
-                                            <asp:RadioButton ID="rbSchoolType4" runat="server" Text="Hostel" GroupName="rbSchoolType1" />
+                                            <asp:RadioButton ID="rbSchoolType4" runat="server" Text="{{resourcesData.lblCorrespond64}}" GroupName="rbSchoolType1" />
 
                                         </div>
                                     </div>
@@ -1026,7 +1025,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Is Society related to another board
+                                                 {{resourcesData.lblCorrespond65}}
                                             </label>
 
 
@@ -1035,13 +1034,13 @@
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
 
-                                            <asp:RadioButton ID="rbSocietyBrd1" runat="server" Text="Yes" GroupName="rbSocietyBrd1" Checked="true" />
+                                            <asp:RadioButton ID="rbSocietyBrd1" runat="server" Text="{{resourcesData.lblCorrespond66}}" GroupName="rbSocietyBrd1" Checked="true" />
                                         </div>
                                     </div>
 
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
-                                            <asp:RadioButton ID="rbSocietyBrd2" runat="server" Text="No" GroupName="rbSocietyBrd1" />
+                                            <asp:RadioButton ID="rbSocietyBrd2" runat="server" Text="{{resourcesData.lblCorrespond67}}" GroupName="rbSocietyBrd1" />
 
                                         </div>
                                     </div>
@@ -1049,7 +1048,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Board or university Name
+                                               {{resourcesData.lblCorrespond68}}
                                             </label>
 
 
@@ -1060,14 +1059,14 @@
                                             <asp:TextBox ID="txtBrdUni" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator40" runat="server" ControlToValidate="txtBrdUni" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                from date
+                                               {{resourcesData.lblCorrespond69}}
                                             </label>
 
 
@@ -1078,7 +1077,7 @@
                                             <asp:TextBox ID="txtFromDate" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator39" runat="server" ControlToValidate="txtFromDate" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
@@ -1086,7 +1085,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Registration No
+                                              {{resourcesData.lblCorrespond70}}
                                             </label>
 
 
@@ -1097,14 +1096,14 @@
                                             <asp:TextBox ID="txtRegNo" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator41" runat="server" ControlToValidate="txtRegNo" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Registration date
+                                                {{resourcesData.lblCorrespond71}}
                                             </label>
 
 
@@ -1115,7 +1114,7 @@
                                             <asp:TextBox ID="txtRegDate" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator42" runat="server" ControlToValidate="txtRegDate" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
@@ -1123,7 +1122,7 @@
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                By which committee is the School/College being run, is the school being run by any other Board/University or by the same name
+                                                {{resourcesData.lblCorrespond72}}
                                             </label>
 
 
@@ -1134,14 +1133,14 @@
                                             <asp:TextBox ID="txtRunCommitteeSch" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator43" runat="server" ControlToValidate="txtRunCommitteeSch" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Does the school conduct Praveshika and Pratham classes, please give details
+                                                {{resourcesData.lblCorrespond73}}
                                             </label>
 
 
@@ -1152,7 +1151,7 @@
                                             <asp:TextBox ID="txtSchPraveshika" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <div class="col-xs-12 pleft0">
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator44" runat="server" ControlToValidate="txtSchPraveshika" Display="Dynamic"
-                                                    ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                    ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                             </div>
                                         </div>
                                     </div>
@@ -1160,7 +1159,7 @@
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Sankiya details of SAROOP AVASI / GARVASI Hostel Boys and Girls of Sanskrit School par class
+                                                  {{resourcesData.lblCorrespond74}}
                                             </label>
 
 
@@ -1170,7 +1169,7 @@
                                     <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                LKG
+                                                 {{resourcesData.lblCorrespond75}}
                                             </label>
 
 
@@ -1185,7 +1184,7 @@
                                     <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                UKG
+                                               {{resourcesData.lblCorrespond76}}
                                             </label>
 
 
@@ -1200,7 +1199,7 @@
                                     <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Class 1-4
+                                                {{resourcesData.lblCorrespond77}}
                                             </label>
 
 
@@ -1215,7 +1214,7 @@
                                     <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Pravashika
+                                                {{resourcesData.lblCorrespond78}}
                                             </label>
 
 
@@ -1230,7 +1229,7 @@
                                     <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Prathama Prathakhand
+                                                {{resourcesData.lblCorrespond79}}
                                             </label>
 
 
@@ -1246,7 +1245,7 @@
                                     <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Dutikhand
+                                               {{resourcesData.lblCorrespond80}}
                                             </label>
 
 
@@ -1262,7 +1261,7 @@
                                     <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Antimkhand
+                                                  {{resourcesData.lblCorrespond81}}
                                             </label>
 
 
@@ -1277,7 +1276,7 @@
                                     <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Porve Purvamadiyama
+                                                 {{resourcesData.lblCorrespond82}}
                                             </label>
 
 
@@ -1292,7 +1291,7 @@
                                     <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Porave  Antimkhand
+                                                  {{resourcesData.lblCorrespond83}}
                                             </label>
 
 
@@ -1307,7 +1306,7 @@
                                     <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Uttar Prathakhand
+                                                  {{resourcesData.lblCorrespond84}}
                                             </label>
 
 
@@ -1322,7 +1321,7 @@
                                     <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Uttar  Antimkhand
+                                                  {{resourcesData.lblCorrespond85}}
                                             </label>
 
 
@@ -1340,11 +1339,11 @@
 
                                 <div class="row">
                                     <fieldset id="divAttachment" style="width: 100%; margin-bottom: 15px;">
-                                        <legend>&nbsp {{resourcesData.lblAttach}}</legend>
+                                        <legend>&nbsp {{resourcesData.lblCorrespond86}}</legend>
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                             <div id="divCheque" class="col-md-12 box-container">
                                                 <div class="box-heading">
-                                                    <h4 class="box-title manadatory">Attach Timetables of Classes
+                                                    <h4 class="box-title manadatory">  {{resourcesData.lblCorrespond87}}
                                       
                                                     </h4>
                                                 </div>
@@ -1363,7 +1362,7 @@
                                             </div>
                                             <div id="divPassbook" class="col-md-12 box-container">
                                                 <div class="box-heading">
-                                                    <h4 class="box-title manadatory">Attached Subject Wise Teachers Sheet
+                                                    <h4 class="box-title manadatory"> {{resourcesData.lblCorrespond88}}
                                       
                                                     </h4>
                                                 </div>
@@ -1389,11 +1388,11 @@
                             <div id="step-3">
                                 <div class="row">
                                     <fieldset id="divAttachment" style="width: 100%; margin-bottom: 15px;">
-                                        <legend>&nbsp  Academic  Arrangement Description</legend>
+                                        <legend>&nbsp  {{resourcesData.lblCorrespond202}}</legend>
                                         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Head Mistress
+                                                   {{resourcesData.lblCorrespond203}}
                                                 </label>
 
 
@@ -1404,14 +1403,14 @@
                                                 <asp:TextBox ID="txtHeadMist" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                                 <div class="col-xs-12 pleft0">
                                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator46" runat="server" ControlToValidate="txtHeadMist" Display="Dynamic"
-                                                        ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                        ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Head Mistress Qualification
+                                                   {{resourcesData.lblCorrespond204}}
                                                 </label>
 
 
@@ -1422,7 +1421,7 @@
                                                 <asp:TextBox ID="txtHeadMistQual" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                                 <div class="col-xs-12 pleft0">
                                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator47" runat="server" ControlToValidate="txtHeadMistQual" Display="Dynamic"
-                                                        ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                        ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                                 </div>
                                             </div>
                                         </div>
@@ -1431,7 +1430,7 @@
                                         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Principal Mistress
+                                                   {{resourcesData.lblCorrespond205}}
                                                 </label>
 
 
@@ -1442,14 +1441,14 @@
                                                 <asp:TextBox ID="txtPrinMist" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                                 <div class="col-xs-12 pleft0">
                                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator48" runat="server" ControlToValidate="txtPrinMist" Display="Dynamic"
-                                                        ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                        ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Principal Qualification
+                                                  {{resourcesData.lblCorrespond556}}
                                                 </label>
 
 
@@ -1460,7 +1459,7 @@
                                                 <asp:TextBox ID="txtPrinMistQual" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                                 <div class="col-xs-12 pleft0">
                                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator49" runat="server" ControlToValidate="txtPrinMistQual" Display="Dynamic"
-                                                        ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                        ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                                 </div>
                                             </div>
                                         </div>
@@ -1470,7 +1469,7 @@
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Total number of Sanskrit qualified teachers
+                                                  {{resourcesData.lblCorrespond207}}
                                                 </label>
 
 
@@ -1480,7 +1479,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    M.Ed
+                                                    {{resourcesData.lblCorrespond208}}
                                                 </label>
 
 
@@ -1495,7 +1494,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    B.Ed
+                                                    {{resourcesData.lblCorrespond209}}
                                                 </label>
 
 
@@ -1510,7 +1509,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    SHIKSHA SHASTRI
+                                                    {{resourcesData.lblCorrespond210}}
                                                 </label>
 
 
@@ -1525,7 +1524,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    D.Ed
+                                                   {{resourcesData.lblCorrespond211}}
                                                 </label>
 
 
@@ -1540,7 +1539,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    BTI
+                                                    {{resourcesData.lblCorrespond212}}
                                                 </label>
 
 
@@ -1556,7 +1555,7 @@
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Total number of Modern Subjects qualified teachers
+                                                   {{resourcesData.lblCorrespond213}}
                                                 </label>
 
 
@@ -1566,7 +1565,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    M.Ed
+                                                    {{resourcesData.lblCorrespond214}}
                                                 </label>
 
 
@@ -1581,7 +1580,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    B.Ed
+                                                   {{resourcesData.lblCorrespond215}}
                                                 </label>
 
 
@@ -1596,7 +1595,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    SHIKSHA SHASTRI
+                                                    {{resourcesData.lblCorrespond216}}
                                                 </label>
 
 
@@ -1611,7 +1610,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    D.Ed
+                                                   {{resourcesData.lblCorrespond217}}
                                                 </label>
 
 
@@ -1626,7 +1625,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    BTI
+                                                   {{resourcesData.lblCorrespond218}}
                                                 </label>
 
 
@@ -1642,7 +1641,7 @@
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Total number of Professors qualified teachers
+                                                    {{resourcesData.lblCorrespond219}}
                                                 </label>
 
 
@@ -1652,7 +1651,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    M.Ed
+                                                    {{resourcesData.lblCorrespond220}}
                                                 </label>
 
 
@@ -1667,7 +1666,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    B.Ed
+                                                    {{resourcesData.lblCorrespond221}}
                                                 </label>
 
 
@@ -1682,7 +1681,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    SHIKSHA SHASTRI
+                                                   {{resourcesData.lblCorrespond222}}
                                                 </label>
 
 
@@ -1697,7 +1696,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    D.Ed
+                                                    {{resourcesData.lblCorrespond223}}
                                                 </label>
 
 
@@ -1712,7 +1711,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    BTI
+                                                     {{resourcesData.lblCorrespond224}}
                                                 </label>
 
 
@@ -1729,7 +1728,7 @@
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Total number of High Class qualified teachers
+                                                     {{resourcesData.lblCorrespond225}}
                                                 </label>
 
 
@@ -1739,7 +1738,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    M.Ed
+                                                     {{resourcesData.lblCorrespond226}}
                                                 </label>
 
 
@@ -1754,7 +1753,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    B.Ed
+                                                    {{resourcesData.lblCorrespond227}}
                                                 </label>
 
 
@@ -1769,7 +1768,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    SHIKSHA SHASTRI
+                                                    {{resourcesData.lblCorrespond228}}
                                                 </label>
 
 
@@ -1784,7 +1783,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    D.Ed
+                                                    {{resourcesData.lblCorrespond229}}
                                                 </label>
 
 
@@ -1799,7 +1798,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    BTI
+                                                    {{resourcesData.lblCorrespond230}}
                                                 </label>
 
 
@@ -1816,7 +1815,7 @@
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Total number of Assistant qualified teachers
+                                                   {{resourcesData.lblCorrespond231}}
                                                 </label>
 
 
@@ -1826,7 +1825,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    M.Ed
+                                                    {{resourcesData.lblCorrespond232}}
                                                 </label>
 
 
@@ -1841,7 +1840,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    B.Ed
+                                                    {{resourcesData.lblCorrespond233}}
                                                 </label>
 
 
@@ -1856,7 +1855,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    SHIKSHA SHASTRI
+                                                     {{resourcesData.lblCorrespond234}}
                                                 </label>
 
 
@@ -1871,7 +1870,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    D.Ed
+                                                    {{resourcesData.lblCorrespond235}}
                                                 </label>
 
 
@@ -1886,7 +1885,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    BTI
+                                                     {{resourcesData.lblCorrespond236}}
                                                 </label>
 
 
@@ -1902,7 +1901,7 @@
                                         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    P.T.I
+                                                    {{resourcesData.lblCorrespond237}}
                                                 </label>
 
 
@@ -1913,14 +1912,14 @@
                                                 <asp:TextBox ID="txtAQTPTI" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                                 <div class="col-xs-12 pleft0">
                                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator50" runat="server" ControlToValidate="txtAQTPTI" Display="Dynamic"
-                                                        ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                        ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Assitant Teacher Science
+                                                    {{resourcesData.lblCorrespond238}}
                                                 </label>
 
 
@@ -1931,7 +1930,7 @@
                                                 <asp:TextBox ID="txtAssitTeachSci" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                                 <div class="col-xs-12 pleft0">
                                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator51" runat="server" ControlToValidate="txtAssitTeachSci" Display="Dynamic"
-                                                        ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                        ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                                 </div>
                                             </div>
                                         </div>
@@ -1940,7 +1939,7 @@
                                         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Studies Medium
+                                                    {{resourcesData.lblCorrespond239}}
                                                 </label>
 
 
@@ -1951,7 +1950,7 @@
                                                 <asp:TextBox ID="txtStudMed" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                                 <div class="col-xs-12 pleft0">
                                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator52" runat="server" ControlToValidate="txtStudMed" Display="Dynamic"
-                                                        ErrorMessage="Please enter District." ValidationGroup="G" ForeColor="Red" />
+                                                        ErrorMessage="Please enter Field." ValidationGroup="G" ForeColor="Red" />
                                                 </div>
                                             </div>
                                         </div>
@@ -1959,7 +1958,7 @@
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Details of Fees given by Students
+                                                    {{resourcesData.lblCorrespond240}}
                                                 </label>
 
 
@@ -1969,7 +1968,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Prathama
+                                                    {{resourcesData.lblCorrespond241}}
                                                 </label>
 
 
@@ -1984,7 +1983,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Purvamadiyma
+                                                     {{resourcesData.lblCorrespond242}}
                                                 </label>
 
 
@@ -1999,7 +1998,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Uttarmadiyma
+                                                    {{resourcesData.lblCorrespond243}}
                                                 </label>
 
 
@@ -2015,7 +2014,7 @@
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Working Employees Details 
+                                                    {{resourcesData.lblCorrespond244}}
                                                 </label>
 
 
@@ -2025,7 +2024,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Ledger
+                                                    {{resourcesData.lblCorrespond245}}
                                                 </label>
 
 
@@ -2040,7 +2039,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Assistant officer
+                                                     {{resourcesData.lblCorrespond246}}
                                                 </label>
 
 
@@ -2055,7 +2054,7 @@
                                         <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Fourth Grade
+                                                    {{resourcesData.lblCorrespond247}}
                                                 </label>
 
 
@@ -2073,11 +2072,11 @@
                             </div>
                             <div id="step-4">
                                 <fieldset>
-                                    <legend>&nbsp Time Table  Details</legend>
+                                    <legend>&nbsp     {{resourcesData.lblCorrespond89}}</legend>
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Information about Classes wise Time Table
+                                                {{resourcesData.lblCorrespond90}}
                                             </label>
 
 
@@ -2087,7 +2086,7 @@
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Morning First Shift Information
+                                               {{resourcesData.lblCorrespond91}}
                                             </label>
 
 
@@ -2096,11 +2095,11 @@
                                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                From Time
+                                                {{resourcesData.lblCorrespond92}}
                                             </label>
                                             <asp:TextBox ID="txtMorgFT" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <label class="manadatory" for="ddlDistrict">
-                                                From Class
+                                                  {{resourcesData.lblCorrespond93}}
                                             </label>
                                             <asp:TextBox ID="txtMorgFC" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                         </div>
@@ -2108,11 +2107,11 @@
                                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                To Time
+                                                  {{resourcesData.lblCorrespond94}}
                                             </label>
                                             <asp:TextBox ID="txtMorgTT" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <label class="manadatory" for="ddlDistrict">
-                                                To Class
+                                                  {{resourcesData.lblCorrespond95}}
                                             </label>
                                             <asp:TextBox ID="txtMorgTC" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
 
@@ -2121,7 +2120,7 @@
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                After noon First Shift Information
+                                                   {{resourcesData.lblCorrespond96}}
                                             </label>
 
 
@@ -2130,11 +2129,11 @@
                                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                From Time
+                                                 {{resourcesData.lblCorrespond97}}
                                             </label>
                                             <asp:TextBox ID="txtAFTMorgFT" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <label class="manadatory" for="ddlDistrict">
-                                                From Class
+                                                {{resourcesData.lblCorrespond98}}
                                             </label>
                                             <asp:TextBox ID="txtAFTMorgFC" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                         </div>
@@ -2142,11 +2141,11 @@
                                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                To Time
+                                              {{resourcesData.lblCorrespond99}}
                                             </label>
                                             <asp:TextBox ID="txtAFTMorgTT" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
                                             <label class="manadatory" for="ddlDistrict">
-                                                To Class
+                                                {{resourcesData.lblCorrespond100}}
                                             </label>
                                             <asp:TextBox ID="txtAFTMorgTC" runat="server" ToolTip="District" CssClass="form-control"></asp:TextBox>
 
@@ -2155,11 +2154,11 @@
                                     <div class="clearfix"></div>
                                 </fieldset>
                                 <fieldset>
-                                    <legend>&nbsp School Land/Building  Details</legend>
+                                    <legend>&nbsp  {{resourcesData.lblCorrespond570}}</legend>
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Information about School Land
+                                                {{resourcesData.lblCorrespond101}}
                                             </label>
 
                                         </div>
@@ -2167,7 +2166,7 @@
                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Khasra no
+                                               {{resourcesData.lblCorrespond102}}
                                             </label>
 
                                         </div>
@@ -2181,7 +2180,7 @@
                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Area
+                                                {{resourcesData.lblCorrespond103}}
                                             </label>
 
                                         </div>
@@ -2195,7 +2194,7 @@
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                         <div id="divCheque" class="col-md-12 box-container">
                                             <div class="box-heading">
-                                                <h4 class="box-title manadatory">Attach Copy of land Registration(Khasra/B1-Map)
+                                                <h4 class="box-title manadatory"> {{resourcesData.lblCorrespond104}}
                                       
                                                 </h4>
                                             </div>
@@ -2216,7 +2215,7 @@
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    If land rented than owner Name and Address
+                                                     {{resourcesData.lblCorrespond105}}
                                                 </label>
 
                                             </div>
@@ -2230,7 +2229,7 @@
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    If Building rented than owner Name and Address
+                                                    {{resourcesData.lblCorrespond106}}
                                                 </label>
 
                                             </div>
@@ -2244,7 +2243,7 @@
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                             <div id="divCheque" class="col-md-12 box-container">
                                                 <div class="box-heading">
-                                                    <h4 class="box-title manadatory">If rented than Copy of Rent Agreement
+                                                    <h4 class="box-title manadatory"> {{resourcesData.lblCorrespond107}}
                                       
                                                     </h4>
                                                 </div>
@@ -2265,7 +2264,7 @@
                                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                                 <div class="form-group">
                                                     <label class="manadatory" for="ddlDistrict">
-                                                        Total area of School land(sq.ft.,Hectare)  
+                                                        {{resourcesData.lblCorrespond108}}
                                                     </label>
 
                                                 </div>
@@ -2278,7 +2277,7 @@
                                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                                 <div class="form-group">
                                                     <label class="manadatory" for="ddlDistrict">
-                                                        Total area of land to build School(sq.ft.,Hectare) 
+                                                          {{resourcesData.lblCorrespond109}}
                                                     </label>
 
                                                 </div>
@@ -2292,7 +2291,7 @@
                                             <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                 <div class="form-group">
                                                     <label class="manadatory" for="ddlDistrict">
-                                                        Total build Area
+                                                       {{resourcesData.lblCorrespond110}}
                                                     </label>
 
                                                 </div>
@@ -2305,7 +2304,7 @@
                                             <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                                 <div class="form-group">
                                                     <label class="manadatory" for="ddlDistrict">
-                                                        Total Attach land from building empty space
+                                                        {{resourcesData.lblCorrespond111}}
                                                     </label>
 
                                                 </div>
@@ -2320,11 +2319,11 @@
                             </div>
                             <div id="step-5">
                                 <fieldset>
-                                    <legend>&nbsp Facilities  Details</legend>
+                                    <legend>&nbsp {{resourcesData.lblCorrespond112}}</legend>
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                No of Classes for studies
+                                                {{resourcesData.lblCorrespond113}}
                                             </label>
 
                                         </div>
@@ -2337,7 +2336,7 @@
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Area
+                                              {{resourcesData.lblCorrespond114}}
                                             </label>
 
                                         </div>
@@ -2350,7 +2349,7 @@
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Square Feet
+                                               {{resourcesData.lblCorrespond115}}
                                             </label>
 
                                         </div>
@@ -2364,7 +2363,7 @@
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                No of rooms for Teachers/Principal
+                                                {{resourcesData.lblCorrespond116}}
                                             </label>
 
                                         </div>
@@ -2377,7 +2376,7 @@
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Area
+                                                {{resourcesData.lblCorrespond117}}
                                             </label>
 
                                         </div>
@@ -2390,7 +2389,7 @@
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Square Feet
+                                                {{resourcesData.lblCorrespond118}}
                                             </label>
 
                                         </div>
@@ -2405,7 +2404,7 @@
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                No of rooms for Library and laboratory Classes
+                                               {{resourcesData.lblCorrespond119}}
                                             </label>
 
                                         </div>
@@ -2418,7 +2417,7 @@
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Area
+                                               {{resourcesData.lblCorrespond120}}
                                             </label>
 
                                         </div>
@@ -2431,7 +2430,7 @@
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Square Feet
+                                               {{resourcesData.lblCorrespond121}}
                                             </label>
 
                                         </div>
@@ -2446,7 +2445,7 @@
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Area of PlayGround 
+                                                  {{resourcesData.lblCorrespond122}}
                                             </label>
 
                                         </div>
@@ -2460,7 +2459,7 @@
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Square Feet of PlayGround 
+                                                {{resourcesData.lblCorrespond123}}
                                             </label>
 
                                         </div>
@@ -2474,7 +2473,7 @@
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Total No of Toilets
+                                                {{resourcesData.lblCorrespond124}}
                                             </label>
 
                                         </div>
@@ -2487,7 +2486,7 @@
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Girls Toilets
+                                                 {{resourcesData.lblCorrespond125}}
                                             </label>
 
                                         </div>
@@ -2500,7 +2499,7 @@
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Boys Toilets
+                                                 {{resourcesData.lblCorrespond126}}
                                             </label>
 
                                         </div>
@@ -2514,7 +2513,7 @@
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Equipment of Pure Water
+                                                 {{resourcesData.lblCorrespond127}}
                                             </label>
 
                                         </div>
@@ -2528,7 +2527,7 @@
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Information about laboratory
+                                                 {{resourcesData.lblCorrespond128}}
                                             </label>
 
                                         </div>
@@ -2536,7 +2535,7 @@
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Subject wise laboratories number 
+                                                 {{resourcesData.lblCorrespond129}}
                                             </label>
 
                                         </div>
@@ -2549,7 +2548,7 @@
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Area of  Subject wise laboratories 
+                                                 {{resourcesData.lblCorrespond130}}
                                             </label>
 
                                         </div>
@@ -2563,7 +2562,7 @@
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                Square Feet of Subject wise laboratories 
+                                                   {{resourcesData.lblCorrespond131}}
                                             </label>
 
                                         </div>
@@ -2577,7 +2576,7 @@
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                         <div id="divCheque" class="col-md-12 box-container">
                                             <div class="box-heading">
-                                                <h4 class="box-title manadatory">Attach List of Laboratories Equipments
+                                                <h4 class="box-title manadatory"> {{resourcesData.lblCorrespond559}}
                                       
                                                 </h4>
                                             </div>
@@ -2598,7 +2597,7 @@
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Information about Libraries
+                                                   {{resourcesData.lblCorrespond132}}
                                                 </label>
 
                                             </div>
@@ -2606,7 +2605,7 @@
                                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Number of Books
+                                                    {{resourcesData.lblCorrespond133}}
                                                 </label>
 
                                             </div>
@@ -2619,7 +2618,7 @@
                                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Area of  Libraries
+                                                   {{resourcesData.lblCorrespond134}}
                                                 </label>
 
                                             </div>
@@ -2633,7 +2632,7 @@
                                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Square Feet of Libraries 
+                                                    {{resourcesData.lblCorrespond135}}
                                                 </label>
 
                                             </div>
@@ -2647,7 +2646,7 @@
                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Information about furnitures
+                                                   {{resourcesData.lblCorrespond136}}
                                                 </label>
 
                                             </div>
@@ -2655,7 +2654,7 @@
                                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Total Number of furnitures
+                                                   {{resourcesData.lblCorrespond137}}
                                                 </label>
 
                                             </div>
@@ -2668,7 +2667,7 @@
                                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Total Number of furnitures for Girls/Boys
+                                                    {{resourcesData.lblCorrespond138}}
                                                 </label>
 
                                             </div>
@@ -2681,7 +2680,7 @@
                                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Total Number of Chaires
+                                                     {{resourcesData.lblCorrespond139}}
                                                 </label>
 
                                             </div>
@@ -2695,7 +2694,7 @@
                                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Total Number of Benches
+                                                    {{resourcesData.lblCorrespond140}}
                                                 </label>
 
                                             </div>
@@ -2708,7 +2707,7 @@
                                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Total Number of furnitures for Staff 
+                                                     {{resourcesData.lblCorrespond141}}
                                                 </label>
 
                                             </div>
@@ -2721,7 +2720,7 @@
                                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Total Number of Chaires for staff
+                                                   {{resourcesData.lblCorrespond142}}
                                                 </label>
 
                                             </div>
@@ -2735,7 +2734,7 @@
                                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Total Number of Almarires for staff
+                                                    {{resourcesData.lblCorrespond143}}
                                                 </label>
 
                                             </div>
@@ -2749,21 +2748,21 @@
                                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Electricity Provided
+                                                     {{resourcesData.lblCorrespond144}}
                                                 </label>
 
                                             </div>
                                         </div>
                                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                             <div class="form-group">
-                                                <asp:RadioButton ID="rbElectric1" runat="server" Text="Yes" GroupName="rbElectric1" Checked="true" />
+                                                <asp:RadioButton ID="rbElectric1" runat="server" Text="{{resourcesData.lblCorrespond66}}" GroupName="rbElectric1" Checked="true" />
 
                                             </div>
                                         </div>
                                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                             <div class="form-group">
 
-                                                <asp:RadioButton ID="rbElectric2" runat="server" Text="No" GroupName="rbElectric1" />
+                                                <asp:RadioButton ID="rbElectric2" runat="server" Text="{{resourcesData.lblCorrespond67}}" GroupName="rbElectric1" />
                                             </div>
                                         </div>
 
@@ -2772,7 +2771,7 @@
                                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Total no of Computers
+                                                    {{resourcesData.lblCorrespond147}}
                                                 </label>
 
                                             </div>
@@ -2786,7 +2785,7 @@
                                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Total no of printers
+                                                    {{resourcesData.lblCorrespond148}}
                                                 </label>
 
                                             </div>
@@ -2800,7 +2799,7 @@
                                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Total no of faxes
+                                                    {{resourcesData.lblCorrespond149}}
                                                 </label>
 
                                             </div>
@@ -2814,7 +2813,7 @@
                                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Total no of others
+                                                    {{resourcesData.lblCorrespond150}}
                                                 </label>
 
                                             </div>
@@ -2830,7 +2829,7 @@
                                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Total no of Fire Extinguishers 
+                                                     {{resourcesData.lblCorrespond151}}
                                                 </label>
 
                                             </div>
@@ -2846,7 +2845,7 @@
                                         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                             <div class="form-group">
                                                 <label class="manadatory" for="ddlDistrict">
-                                                    Summitted Amount of Correspondent Renewal
+                                                     {{resourcesData.lblCorrespond152}}
                                                 </label>
 
                                             </div>
@@ -2860,11 +2859,11 @@
                                         <div class="clearfix"></div>
                                 </fieldset>
                                 <fieldset>
-                                    <legend>&nbsp PHYSICAL handicapped Details</legend>
+                                    <legend>&nbsp  {{resourcesData.lblCorrespond153}}</legend>
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                PHYSICAL handicapped Students faciities
+                                                {{resourcesData.lblCorrespond154}}
                                             </label>
 
                                         </div>
@@ -2879,21 +2878,21 @@
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
                                             <label class="manadatory" for="ddlDistrict">
-                                                PHYSICAL handicapped Students Admission Provided
+                                                 {{resourcesData.lblCorrespond155}}
                                             </label>
 
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
-                                            <asp:RadioButton ID="rbPhyHandStudAdPrv1" runat="server" Text="Yes" GroupName="rbPhyHandStudAdPrv1" Checked="true" />
+                                            <asp:RadioButton ID="rbPhyHandStudAdPrv1" runat="server" Text="{{resourcesData.lblCorrespond66}}" GroupName="rbPhyHandStudAdPrv1" Checked="true" />
 
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                                         <div class="form-group">
 
-                                            <asp:RadioButton ID="rbPhyHandStudAdPrv2" runat="server" Text="No" GroupName="rbPhyHandStudAdPrv1" />
+                                            <asp:RadioButton ID="rbPhyHandStudAdPrv2" runat="server" Text="{{resourcesData.lblCorrespond67}}" GroupName="rbPhyHandStudAdPrv1" />
                                         </div>
                                     </div>
 
@@ -2902,51 +2901,50 @@
                                 </fieldset>
                                 <div class="clearfix"></div>
                                 <fieldset>
-                                    <legend>&nbsp Note & Signature</legend>
-                                    01. Incomplete application form will be rejected.<br />
-                                    02. Affiliation will not be provided if any information is found to be untrue and the offer received will also be terminated.
-                                        Will be given.<br />
+                                    <legend>&nbsp  {{resourcesData.lblCorrespond159}}</legend>
+                                    {{resourcesData.lblCorrespond160}}<br />
+                                    {{resourcesData.lblCorrespond161}}<br />
                                     sign<br />
                                     <br />
                                     <br />
                                     <br />
-                                    Secretary / President
+                                     {{resourcesData.lblCorrespond162}}
                                     <br />
                                     <br />
-                                    sign<br />
-                                    <br />
-                                    <br />
-                                    <br />
-
-                                    PrincipalName and term of the committee<br />
-                                    <br />
-
-                                    School Name and Padmudra<br />
-                                    <br />
-
-                                    Date<br />
-                                    <br />
-                                    Name<br />
-                                    <br />
-                                    Full Address.<br />
+                                    {{resourcesData.lblCorrespond163}}<br />
                                     <br />
                                     <br />
                                     <br />
 
-                                    Opinion of District Education Officer:-<br />
+                                     {{resourcesData.lblCorrespond164}}<br />
+                                    <br />
+
+                                     {{resourcesData.lblCorrespond165}}<br />
+                                    <br />
+
+                                     {{resourcesData.lblCorrespond166}}<br />
+                                    <br />
+                                     {{resourcesData.lblCorrespond167}}<br />
+                                    <br />
+                                    {{resourcesData.lblCorrespond168}}<br />
+                                    <br />
+                                    <br />
+                                    <br />
+
+                                     {{resourcesData.lblCorrespond169}}<br />
                                     <br />
                                     <br />
                                     <br />
                                     <br />
                                     <br />
 
-                                    Signature (with post seal)<br />
+                                   {{resourcesData.lblCorrespond170}}<br />
                                     <br />
                                     <br />
                                     <br />
                                     <br />
                                     <br />
-                                    District Education Officer
+                                      {{resourcesData.lblCorrespond171}}
                                 </fieldset>
 
                                 <%---Start of Button----%>
@@ -2954,143 +2952,103 @@
                            <div id="step-6">
                                     <div class="row">
                                           <fieldset id="divAppendix1" style="width: 100%; margin-bottom: 15px;">
-                                            <legend>&nbsp Appendix 1</legend>
+                                            <legend>&nbsp  {{resourcesData.lblCorrespond249}}</legend>
 
 
 
-                                            <div style="text-align: center;">New affiliation of Maharishi Patanjali Sanskrit Sansthan Bhopal attached for the year 2022-23 Details of records to be sent</div>
+                                            <div style="text-align: center;">{{resourcesData.lblCorrespond248}}</div>
                                           
                                            <br />
                                             <br />
 
-                                            1. Adjournment motion of the committee.                                                            yes / no 
+                                           {{resourcesData.lblCorrespond250}}
                                             <br />
                                             <br />
 
-                                            2. Registration of Society Copy of Certificate issued by Registrar and Firm Society
-                                                                                                                                        yes / no 
+                                            {{resourcesData.lblCorrespond251}}
                                             <br />
                                             <br />
 
-                                            3.Certified Manual of the Society (Issued by Registrar and Firm Society)                           
-                                                                                                                                           yes no 
+                                            {{resourcesData.lblCorrespond252}}
                                             <br />
                                             <br />
 
-                                            4.  Attested photocopy of the list of members of the managing committee (Section 27) which Be of study status.                                                                                                                         yes / no
+                                             {{resourcesData.lblCorrespond253}}                                                                                                                       
                                                                                                                                              
 
                                           <br />
                                             <br />
- 5.Along with the qualification and date of appointment of teachers working for teaching, along with the following information (Sanskrit qualified,
- including Shastri/Acharya) as mentioned in the application
- Separately for each class and each subject in the applied Sanskrit school, teachers with desired educational qualification
- It is mandatory to have  The desired educational qualification implies that L.K.G.  Related to (Arun) for Praveshika
- Regarding H.S.  / Uttar Madhyamik and D. Ed.  / b.  T.I / B.T.C.  And in the subject related to the first to the middle
- Shastri and B.Ed.  / Education Shastri and Acharya / M.A.  (Sanskrit) and B.  Ed / Education
- Shastri is mandatory to be a qualified teacher.
-                                                                                                                                  yes / no 
+                                            {{resourcesData.lblCorrespond254}}
                                            
                                             <br />
                                             <br />
 
-                                            6.Registered photocopy of land/building ownership and photo of the entire building 
-                                          
-                                            yes / no 
+                                              {{resourcesData.lblCorrespond255}}
                                             <br />
                                             <br />
 
-                                            7.Khasra copy map of ownership of land / building, urban body, village Certified by Panchayat 
-                                           
-                                            yes / no 
-                                           
+                                               {{resourcesData.lblCorrespond256}}
                                             <br />
                                             <br />
-                                            8.  If the present school building is on rent, then registered or notarized copy of rent deed
- yes / no 
+                                             {{resourcesData.lblCorrespond257}}
                                                                                       <br />
                                             <br />
                                           
                                                                       
- 9.  Attested photocopy of the map of the present school building Municipal Corporation, Municipality
- Or by Gram Panchayat.
- yes / no 
+                                                {{resourcesData.lblCorrespond258}}
                                             <br />
                                             <br />
-   10.                                         Inspection report with opinion of District Education Officer
-                                                                                    
- 
- yes / no 
+                                               {{resourcesData.lblCorrespond259}}
                                             <br />
                                             <br />
-                                          11.  Certified copy of the departmental permission payable by the District Education Officer
-
- 
- yes / no 
+                                         {{resourcesData.lblCorrespond260}}
                                             <br />
                                             <br />
-                                            12.
- Certified copy of equipment and materials available in the laboratory
- yes / no 
+                                           
+   {{resourcesData.lblCorrespond261}}
                                             <br />
                                             <br />
-                                            13.
- Attested photocopy of the last audit report (of the society)
- yes / no 
+                                           
+   {{resourcesData.lblCorrespond262}}
                                             <br />
                                             <br />
-                                            14.
- Certified records regarding the information about the playground of the school
- yes / no 
+                                          {{resourcesData.lblCorrespond263}}
                                             <br />
                                             <br />
-                                          15.   expected class wise student strength
-
- yes / no 
+                                        {{resourcesData.lblCorrespond264}}
                                             <br />
                                             <br />
-                                            16.
- Possible Class wise Time Division Cycle yes/no 
+                                            {{resourcesData.lblCorrespond265}}
                                             <br />
                                             <br />
-                                            17.
- Expected teacher wise time department cycle 
+                                            {{resourcesData.lblCorrespond266}}
                                             <br />
                                             <br />
-                                            18.
- Institution's own certificate regarding desired facilities to the disabled
- L.K.G.  (Arun) UK  Yes.  (Uday) and on the ground floor for the students of classes 1 to 4
- yes no 
+                                            {{resourcesData.lblCorrespond267}}
                                             <br />
                                             <br />
-                                            19.
- There should be arrangement.
- The building of the school should not be more than ground floor, first floor, second floor (three floors)
- yes / no 
+                                            {{resourcesData.lblCorrespond268}}
                                             <br />
                                             <br />
-                                            20.
- Required (self certification). 
+                                             {{resourcesData.lblCorrespond269}}
                                             <br />
                                             <br />
-                                            21.
- Two color photographs of the postcard size of the building are attached.
- yes no 
+                                            {{resourcesData.lblCorrespond270}}
                                             <br />
                                             <br />
-                                            Note :- 
+                                            {{resourcesData.lblCorrespond271}}
                                             <br />
                                             <br />
-                                            yes / no 
+                                             {{resourcesData.lblCorrespond272}}
                                             <br />
                                             <br />
-                                            01. Whatever photocopies of the above records are attached, get them certified by self attestation. 
+                                            {{resourcesData.lblCorrespond273}}
                                             <br />
                                             <br />
-                                            Institution Principal / Director 
+                                              {{resourcesData.lblCorrespond274}}
                                             <br />
                                             <br />
-                                            signature and stamp 
+                                             {{resourcesData.lblCorrespond275}}
                                             <br />
                                             <br />
                                         </fieldset>
@@ -3100,69 +3058,55 @@
                                 <div id="step-7">
                                     <div class="row">
                                         <fieldset id="divAppendix2" style="width: 100%; margin-bottom: 15px;">
-                                            <legend>&nbsp Appendix 2</legend>
+                                            <legend>&nbsp {{resourcesData.lblCorrespond566}}</legend>
 
-                                            <div style="text-align: center;">Appendix 2 7 A-3</div>
+                                            <div style="text-align: center;">{{resourcesData.lblCorrespond276}}</div>
                                             <br />
                                             <br />
-                                            <div style="text-align: center;">"Affidavit"</div>
+                                            <div style="text-align: center;">{{resourcesData.lblCorrespond277}}</div>
                                             <br />
                                             <br />
-                                            I _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _ _ _  _ father's name _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _ _ _  _
- age _ _  _ _  _ _  _ _  _ _ _ _  _ 
- Principal / Institution Head Secretary / Reserve _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _ _ _  _
- resident _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _ _ _  _
+                                           {{resourcesData.lblCorrespond278}}
+ 
                                             <br />
                                             <br />
-                                            Association Committee solemnly affirm that-<br />
+                                            {{resourcesData.lblCorrespond279}}<br />
                                             <br />
-                                            1. That all the entries and records mentioned in the application form given for affiliation should be kept in the original of the institution.
- Certified as per documents.  All these forms are correct and legal.<br />
+                                            {{resourcesData.lblCorrespond280}}<br />
                                             <br />
-                                            2. That no material fact/entries have been suppressed in the application if any information/record or
- I will be personally responsible if the entries are found to be incorrect.<br />
+                                           {{resourcesData.lblCorrespond281}}<br />
                                             <br />
-                                            3. Chairman/Secretary and members of the Management Committee of the society and all working principals/principals and teachers in the institution
- And the employees have no criminal background in the past and at present also there is no criminal case against them.
- Case is not pending.<br />
+                                           {{resourcesData.lblCorrespond282}}<br />
                                             <br />
-                                            4. I have read all the terms and conditions regarding affiliation of Maharishi Patanjali Sanskrit Sansthan and
- Accepts all the conditions.<br />
+                                          {{resourcesData.lblCorrespond283}}<br />
                                             <br />
-                                            5. The information given in the application form and affidavit is completely true, if any information is found false then
- The institute will have the right to cancel the affiliation application of the school and terminate the affiliation received.
+                                          {{resourcesData.lblCorrespond284}}
                                             <br />
                                             <br />
-                                            6. Students will be made to study only in the course prescribed by Maharishi Patanjali Sanskrit Sansthan.  Syllabus
- In the event of not conducting the study, the affiliation of the institution will be deemed cancelled.
+                                           {{resourcesData.lblCorrespond285}}
                                             <br />
                                             <br />
-                                            7. In case of any legal dispute, the jurisdiction will be Bhopal.
+                                           {{resourcesData.lblCorrespond286}}
                                             <br />
                                             <br />
-                                            8. The institution fulfills the criteria prescribed for classes from Arun to Uttar Madhyamik last section as mentioned in Appendix-5.
-         Is.<br />
+                                     {{resourcesData.lblCorrespond287}}<br />
                                             <br />
                                             <br />
                                             <br />
-                                            swearer<br />
+                                            {{resourcesData.lblCorrespond288}}<br />
                                             <br />
-                                            Name<br />
+                                           {{resourcesData.lblCorrespond289}}<br />
                                             <br />
-                                            President / Secretary<br />
-                                            <br />
-                                            <div style="align-items: center">"Verification"</div>
+                                            <div style="align-items: center">{{resourcesData.lblCorrespond290}}</div>
                                             <br />
                                             <br />
 
-                                           I  _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _ _ _  _ self  _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _ _ _  _   resident  _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _ _ _  _
- Self _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _  _ _  _ _  _ _  _ _  _ _ _ _ _ _  _
- Verified that in this affidavit, para no.  The information from 01 to 05 is correct and true.<br />
+                                          {{resourcesData.lblCorrespond291}}<br />
                                             <br />
-                                            Location
+                                           {{resourcesData.lblCorrespond292}}
                                              <br />
                                             <br />
- swearer
+                                           {{resourcesData.lblCorrespond293}}
                                             <br />
                                             <br />
                                         </fieldset>
@@ -3171,37 +3115,33 @@
                             <div id="step-8">
                                 <div class="row">
                                     <fieldset id="divAppendix3" style="width: 100%; margin-bottom: 15px;">
-                                        <legend>&nbsp Appendix 3</legend>
+                                        <legend>&nbsp {{resourcesData.lblCorrespond294}}</legend>
 
-                                        <div style="text-align: center;">Appendix-3</div>
+                                        <div style="text-align: center;">{{resourcesData.lblCorrespond294}}</div>
                                         <br />
                                         <br />
-                                        <div style="text-align: center;">73-4</div>
+                                        <div style="text-align: center;">{{resourcesData.lblCorrespond295}}</div>
                                         <br />
                                         <br />
-                                        Important instructions for new affiliation 2023-24 from Maharishi Patanjali Sanskrit Sansthan Bhopal -<br />
+                                        {{resourcesData.lblCorrespond296}} -<br />
                                         <br />
-                                        1. Application for new affiliation M.P.  Last date for filling online 15 November 2022<br />
+                                         {{resourcesData.lblCorrespond297}}<br />
                                         <br />
-                                        2. After filling the application, a hardcopy (in duplicate with complete records) will be sent to the District Education Officer
- Date of submission in office 15 December 2022<br />
+                                         {{resourcesData.lblCorrespond298}}<br />
                                         <br />
-                                        3. Application form (with complete records) in Maharishi Patanjali Sanskrit Sansthan, due date 30 December 20022
+                                         {{resourcesData.lblCorrespond299}}
  Submission will be mandatory.<br />
                                         <br />
-                                        4. On the basis of prescribed criteria of the applications submitted by the concerned school to the District Education Office
- For inspection, the inspection team of the school has been constituted by the District Education Officer and the departmental
- By making sure to edit the report through MP online by the permission date 15 January 2023
- Make sure to submit the office by 10 February 2023 15 Fees-<br />
+                                         {{resourcesData.lblCorrespond300}}<br />
                                         <br />
                                         <br />
                                         <br />
 
 
-                                        5. Fee  details<br />
+                                        {{resourcesData.lblCorrespond301}}<br />
                                         <br />
 
-                                       Fixed fee amount for new affiliation<br />
+                                      {{resourcesData.lblCorrespond302}}<br />
                                             <br />
                                            <br />
                                             <br />
@@ -3243,113 +3183,93 @@
  
                                             <br />
                                             <br />
-                                        6. Only for all levels for non-government oriental / traditional residential Sanskrit school (with hostel) seeking new affiliation
- Application Form Fee Rs.  500/- is fixed.  Such schools are oriental / traditional residential Sanskrit schools (with hostel) category
- apply for new affiliation in M.P.  While applying online only application fee of Rs.  500/- to be paid
- Will happen.  On the basis of which, after getting the departmental permission/recommendation of the District Education Officer, the site test will be conducted by the institute and
- The school will be recognized as a traditional residential Sanskrit school (with hostel).  Oriental / in the inspection conducted by the institute
- In case of invalidation in the category of traditional residential Sanskrit school (with hostel), the concerned school will be treated as a normal non-government school.
- Will be kept in category.  On the basis of which the fee amount prescribed for new affiliation to general non-government schools on paragraph 8 to the concerned school
- DD  to be submitted to the Institute Office.  On the basis of which the students of these schools will be eligible to appear in the examination.
+                                       {{resourcesData.lblCorrespond310}}
                                         <br />
                                         <br />
-                                        7.
- Only the application form fee is fixed for government Sanskrit schools, the rest will be free from the fee.
+                                     {{resourcesData.lblCorrespond311}}
                                         <br />
                                         <br />
-                                        8.
- As per clause 2, application can be made with late fee up to 30 days.  The late fee will be double the amount as per clause 8.
+                                        {{resourcesData.lblCorrespond312}}
                                         <br />
                                         <br />
-                                        9.
- MP.  Where the school is being conducted, or to be conducted while applying online.  Full address of that Village / Town / Place Post Office
+                                        {{resourcesData.lblCorrespond313}}
  Enter the PIN code of
                                         <br />
                                         <br />
-                                        10.
- ,  After applying from M. P. Online, if the hard copy along with supporting papers is sent to Maharishi Patanjali Sanskrit Sansthan, Sanskrit Bhavan by the stipulated time.
- Tulsi Nagar, Second Stop, Bhopal, Madhya Pradesh, -462003, then the affiliation will not be considered, the institution itself will be responsible for this.
+                                       {{resourcesData.lblCorrespond314}}
                                         <br />
                                         <br />
-                                        11. Affiliation will not be granted if the above mentioned information/certificates etc. are not attached and it appears suspicious.
- The affiliation granted will be terminated without any prior notice.
+                                         {{resourcesData.lblCorrespond315}}
                                     </fieldset>
                                 </div>
                             </div>
                             <div id="step-9">
                                 <div class="row">
                                     <fieldset id="divAppendix4" style="width: 100%; margin-bottom: 15px;">
-                                        <legend>&nbsp Appendix 4</legend>
-                                        <div style="text-align: center;">73-5</div>
+                                        <legend>&nbsp  {{resourcesData.lblCorrespond316}}</legend>
+                                        <div style="text-align: center;"> {{resourcesData.lblCorrespond317}}</div>
                                         <br />
                                         <br />
                                         <div style="text-align: center;">
-                                            Policy instructions for new affiliation year 2022-23 of Maharishi Patanjali Sanskrit Sansthan Bhopal
+                                            {{resourcesData.lblCorrespond318}}
  and criteria
                                         </div>
                                         <br />
                                         <br />
-                                        <div style="text-align: center;">Appendix-4</div>
+                                        <div style="text-align: center;">{{resourcesData.lblCorrespond319}}</div>
                                         <br />
                                         <br />
-                                        1. Adjournment Motion of the Committee.<br />
+                                       {{resourcesData.lblCorrespond320}}<br />
                                         <br />
-                                        2. Registration of Society Copy of Certificate issued by Registrar and Firm Society<br />
+                                        {{resourcesData.lblCorrespond321}}<br />
                                         <br />
-                                        3. Certified Manual of the Society (issued by Registrar and Firm Society)<br />
+                                        {{resourcesData.lblCorrespond322}}<br />
                                         <br />
-                                        4. Attested photocopy of the list of members of the Management Committee (Section 27) which is of the latest status.<br />
+                                        {{resourcesData.lblCorrespond323}}<br />
                                         <br />
-                                        5. Information as follows including qualification and appointment date of teachers working for teaching
- including] (including Sanskrit qualified, Shastri / Acharya) as mentioned in the application
- Separately for each class and each subject in the applied Sanskrit school, teachers with desired educational qualification
- It is mandatory to have  The desired educational qualification implies that L.K.G.  Related to (Arun) for Praveshika
- Regarding H.S.  / Uttar Madhyamik and D.Ed./B.  T.I / P.T.C.  And in the subject related to the first to the middle
- Shastri and B.Ed.  / Education Shastri and Acharya / M.A.  (Sanskrit) and B.  Ed / Education
- Shastri is mandatory to be a qualified teacher.<br />
+                                         {{resourcesData.lblCorrespond324}}
+                                      <br />
                                         <br />
-                                        6. Registered photocopy of land/building ownership/rent deed and photo of the entire building<br />
+                                        {{resourcesData.lblCorrespond325}}<br />
                                         <br />
-                                        7. Measles copy map of ownership of land / building, certified by urban body, gram panchayat<br />
+                                        {{resourcesData.lblCorrespond326}}<br />
                                         <br />
-                                        8. If the present school building is on rent, then the photocopy of the registered or notarized rent deed<br />
+                                         {{resourcesData.lblCorrespond327}}<br />
                                         <br />
-                                        9. Attested photocopy of the map of the present school building, Municipal Corporation, Municipality or Village
+                                        {{resourcesData.lblCorrespond328}}
  By Panchayat.<br />
                                         <br />
-                                        10. Inspection report of the District Education Officer with details<br />
+                                        {{resourcesData.lblCorrespond329}}<br />
                                         <br />
-                                        11. Certified copy of the departmental permission payable by the District Education Officer<br />
+                                       {{resourcesData.lblCorrespond330}}<br />
                                         <br />
-                                        12. Certified copy of equipment and materials available in the laboratory<br />
+                                       {{resourcesData.lblCorrespond331}}<br />
                                         <br />
-                                        13 Attested photocopy of the last audit report (of the society)<br />
+                                         {{resourcesData.lblCorrespond332}}<br />
                                         <br />
-                                        14. Certified records regarding the information about the playground of the school<br />
+                                         {{resourcesData.lblCorrespond333}}<br />
                                         <br />
-                                        15. Potential class wise student strength<br />
+                                        {{resourcesData.lblCorrespond334}}<br />
                                         <br />
-                                        16. Possible class wise time division circle<br />
+                                         {{resourcesData.lblCorrespond335}}<br />
                                         <br />
-                                        17. Possible teacher wise time department cycle<br />
+                                         {{resourcesData.lblCorrespond336}}<br />
                                         <br />
-                                        18. Institution's own certificate regarding the facilities tied to the disabled<br />
+                                        {{resourcesData.lblCorrespond337}}<br />
                                         <br />
-                                        19. L.  Of.  Yes.  (Arun) UK  Yes.  (Uday) and for the students of class 1 to 4 there should be arrangement on the ground floor.<br />
+                                        {{resourcesData.lblCorrespond338}}<br />
                                         <br />
-                                        20. The ground floor of the school building should not be more than the first floor and the second floor (three floors).
- Need self certification.<br />
+                                        {{resourcesData.lblCorrespond339}}<br />
                                         <br />
-                                        21. Two postcard size color photographs of the building are attached.<br />
+                                        {{resourcesData.lblCorrespond340}}<br />
                                         <br />
-                                        22. There should not be any disparity in the number of students of both the blocks of Pre-Madhyamik.<br />
+                                       {{resourcesData.lblCorrespond341}}<br />
                                         <br />
-                                        23. Maharishi Patanjali Sanskrit Sansthan, M.P.  In Arun, Uday for classes 1st to 4th
- The prescribed norms should be fulfilled (Appendix-5).<br />
+                                       {{resourcesData.lblCorrespond342}}<br />
                                         <br />
                                         <br />
                                         <br />
-                                        Note :- Whatever photocopies of the above records are attached, get them certified by the gazetted officer.
+                                       {{resourcesData.lblCorrespond343}}
 
                                     </fieldset>
                                 </div>
@@ -3357,125 +3277,119 @@
                             <div id="step-10">
                                 <div class="row">
                                     <fieldset id="divAppendix5" style="width: 100%; margin-bottom: 15px;">
-                                        <legend>&nbsp Appendix 5</legend>
-                                        <div style="text-align: center;">Appendix-5</div>
+                                        <legend>&nbsp {{resourcesData.lblCorrespond344}}</legend>
+                                        <div style="text-align: center;">{{resourcesData.lblCorrespond344}}</div>
                                         <br />
                                         <br />
                                         <div style="text-align: center;">
-                                            Maharishi Patanjali Sanskrit Institute<br />
+                                           {{resourcesData.lblCorrespond345}}<br />
                                             <br />
-                                            Madhya Pradesh Bhopal<br />
+                                           {{resourcesData.lblCorrespond346}}<br />
                                             <br />
-                                            Arun / Uday / Norms set for classes 1 to 4
+                                           {{resourcesData.lblCorrespond347}}
                                         </div>
                                         <br />
                                         <br />
-                                        1. Staff<br />
+                                        {{resourcesData.lblCorrespond348}}<br />
                                         <br />
-                                        (1) 1 for 20 children<br />
+                                       {{resourcesData.lblCorrespond349}}<br />
                                         <br />
-                                        (2) 20 on 1 Co.<br />
+                                        {{resourcesData.lblCorrespond350}}<br />
                                         <br />
-                                        (3) Publication will be of the staff.<br />
+                                         {{resourcesData.lblCorrespond351}}<br />
                                         <br />
-                                        (4) Police is mandatory for the appointment of staff in the school.<br />
+                                         {{resourcesData.lblCorrespond352}}<br />
                                         <br />
-                                        (5) or against any member of the Society JJ et al.<br />
+                                         {{resourcesData.lblCorrespond353}}<br />
                                         <br />
-                                        There should not be any samadhi.<br />
+                                         {{resourcesData.lblCorrespond354}}<br />
                                         <br />
-                                        2. BhaWan<br />
+                                         {{resourcesData.lblCorrespond355}}<br />
                                         <br />
-                                        (1) Schedule building for living in each<br />
+                                         {{resourcesData.lblCorrespond356}}<br />
                                         <br />
-                                        (2) The building should have a security wall.<br />
+                                          {{resourcesData.lblCorrespond357}}<br />
                                         <br />
-                                        (3) Adequate ventilation (air and light) should be arranged in the building.<br />
+                                         {{resourcesData.lblCorrespond358}}<br />
                                         <br />
-                                        (4) Seperate rest room.
+                                         {{resourcesData.lblCorrespond359}}
                                             <br />
                                         <br />
-                                        (5) Bond free site.<br />
+                                         {{resourcesData.lblCorrespond360}}<br />
                                         <br />
-                                        (6) Separate toilets for boys and girls with child friendly facilities.<br />
+                                       {{resourcesData.lblCorrespond361}}<br />
                                         <br />
-                                        (7) clean clothes,towels soap should be kept below,and wash vasins etc.Shoud be installed below(not at a height).<br />
+                                        {{resourcesData.lblCorrespond362}}<br />
                                         <br />
-                                        (8) Pantry for food etc.<br />
+                                        {{resourcesData.lblCorrespond363}}<br />
                                         <br />
-                                        (9) There should be a field of play.<br />
+                                        {{resourcesData.lblCorrespond364}}<br />
                                         <br />
-                                        (10) CCTV in the entire campus.  have cameras<br />
+                                        {{resourcesData.lblCorrespond365}}<br />
                                         <br />
-                                        (11) There should also be a fire extinguisher.<br />
+                                         {{resourcesData.lblCorrespond366}}<br />
                                         <br />
-                                        (12) The school building should be away from the road<br />
+                                        {{resourcesData.lblCorrespond367}}<br />
                                         <br />
-                                        (13) The pond should not be open.<br />
+                                        {{resourcesData.lblCorrespond368}}<br />
                                         <br />
-                                        3. Time-<br />
+                                         {{resourcesData.lblCorrespond369}}-<br />
                                         <br />
-                                        According to the National Child Protection and Education Policy 2013, 3 to 4 posts per day and
- (None residencial)School<br />
+                                       {{resourcesData.lblCorrespond370}}
                                         <br />
-                                        4. Teaching material-<br />
+                                        {{resourcesData.lblCorrespond371}}<br />
                                         <br />
-                                        Study material on the basis of student number for each story as prescribed by Maharishi Patjati Sanskrit Sansthan
- be provided<br />
+                                        {{resourcesData.lblCorrespond372}}
                                         <br />
-                                        5. Library
- The reading material should also be suitable for each small child<br />
+                                       {{resourcesData.lblCorrespond373}}<br />
                                         <br />
-                                        6. Sporting goods-<br />
+                                       {{resourcesData.lblCorrespond374}}<br />
                                         <br />
-                                        1. Sports material supplied by M.C.D.<br />
+                                        {{resourcesData.lblCorrespond375}}<br />
                                         <br />
-                                        2. Children should have places to play near the school.<br />
+                                        {{resourcesData.lblCorrespond376}}<br />
                                         <br />
-                                        7. Health-<br />
+                                       {{resourcesData.lblCorrespond377}}<br />
                                         <br />
-                                        First aid material, medicine kit, ORSU etc. Time material<br />
+                                       {{resourcesData.lblCorrespond378}}<br />
                                         <br />
-                                        Involved in treatment material by registered medical practitioner<br />
+                                       {{resourcesData.lblCorrespond379}}<br />
                                         <br />
-                                        8.  Entry-<br />
+                                        {{resourcesData.lblCorrespond380}}<br />
                                         <br />
-                                        Children below three years of age should not be given admission in Assam Udyas.<br />
+                                        {{resourcesData.lblCorrespond381}}<br />
                                         <br />
-                                        9. Records -<br />
+                                        {{resourcesData.lblCorrespond382}}<br />
                                         <br />
-                                        (A) Name of children<br />
+                                        {{resourcesData.lblCorrespond383}}<br />
                                         <br />
-                                        (B) State and nomination whose name is also the day of parents
+                                        {{resourcesData.lblCorrespond384}}
  be marked<br />
                                         <br />
-                                        (C) Attendance register also<br />
+                                        {{resourcesData.lblCorrespond385}}<br />
                                         <br />
-                                        (D) All teachers / Kiti<br />
+                                         {{resourcesData.lblCorrespond386}}<br />
                                         <br />
-                                        (E) Staff details register.<br />
+                                         {{resourcesData.lblCorrespond387}}<br />
                                         <br />
-                                        (F) Karan also has all children<br />
+                                         {{resourcesData.lblCorrespond388}}<br />
                                         <br />
-                                        (G) All the employees of the applicant institution Gazette et 2012 Junita Act<br />
+                                        {{resourcesData.lblCorrespond389}}<br />
                                         <br />
-                                        According to 2015 Child Labor Act 1960 and Child Labor Rules 2016<br />
+                                        {{resourcesData.lblCorrespond390}}<br />
                                         <br />
-                                        Responsibilities of School and Teachers<br />
+                                        {{resourcesData.lblCorrespond391}}<br />
                                         <br />
 
-                                        1. P.T.A.  It should be formed every year with admission as well as within a month.
- 75% of the parents will remain in the Guardian Teacher Association, of which 50% will be mothers, 25% will be fathers and 25% will be teachers.<br />
+                                   {{resourcesData.lblCorrespond392}}<br />
                                         <br />
-                                        3. P.T.A.  The time period of P.T.A. will be of 2 years. Every year new P.T.A.  Will be formed<br />
+                                        {{resourcesData.lblCorrespond393}}<br />
                                         <br />
-                                        4. There will be a meeting of Teacher-Parent Association every month, which will be included in the proceedings.
- P.T.A.  The main task of the KVS is to provide security, protection and proper environment to the children.<br />
+                                        {{resourcesData.lblCorrespond394}}<br />
                                         <br />
-                                        Making food arrangements for proper nutrition of food items.
- 7. Regular health check-up should be done by a registered doctor.<br />
+                                        {{resourcesData.lblCorrespond395}}<br />
                                         <br />
-                                        8. Arrangement of medicine kit for basic first aid should be ensured<br />
+                                        {{resourcesData.lblCorrespond396}}<br />
                                         <br />
 
                                     </fieldset>

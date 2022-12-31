@@ -1239,4 +1239,1239 @@ orders issued thereunder and agree to abide by them.</value>
   <data name="lblPassbook" xml:space="preserve">
     <value>Copy of Passbook</value>
   </data>
+  <data name="lblCorrespond1" xml:space="preserve">
+    <value>Correspondent Renewal Application Form Year 2023-24</value>
+  </data>
+  <data name="lblCorrespond10" xml:space="preserve">
+    <value>Uttarmadhima</value>
+  </data>
+  <data name="lblCorrespond100" xml:space="preserve">
+    <value>  School Land/Building Details</value>
+  </data>
+  <data name="lblCorrespond101" xml:space="preserve">
+    <value>Information about School Land</value>
+  </data>
+  <data name="lblCorrespond102" xml:space="preserve">
+    <value>Khasra no</value>
+  </data>
+  <data name="lblCorrespond103" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="lblCorrespond104" xml:space="preserve">
+    <value>Attach Copy of land Registration(Khasra/B1-Map)</value>
+  </data>
+  <data name="lblCorrespond105" xml:space="preserve">
+    <value>If land rented than owner Name and Address</value>
+  </data>
+  <data name="lblCorrespond106" xml:space="preserve">
+    <value>If Building rented than owner Name and Address</value>
+  </data>
+  <data name="lblCorrespond107" xml:space="preserve">
+    <value>If rented than Copy of Rent Agreement</value>
+  </data>
+  <data name="lblCorrespond108" xml:space="preserve">
+    <value>Total area of School land(sq.ft.,Hectare)</value>
+  </data>
+  <data name="lblCorrespond109" xml:space="preserve">
+    <value>Total area of land to build School(sq.ft.,Hectare)</value>
+  </data>
+  <data name="lblCorrespond11" xml:space="preserve">
+    <value>Society Name and Address</value>
+  </data>
+  <data name="lblCorrespond110" xml:space="preserve">
+    <value>Total build Area</value>
+  </data>
+  <data name="lblCorrespond111" xml:space="preserve">
+    <value>Total Attach land from building empty space</value>
+  </data>
+  <data name="lblCorrespond112" xml:space="preserve">
+    <value>  Facilities Details</value>
+  </data>
+  <data name="lblCorrespond113" xml:space="preserve">
+    <value>No of Classes for studies</value>
+  </data>
+  <data name="lblCorrespond114" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="lblCorrespond115" xml:space="preserve">
+    <value>Square Feet</value>
+  </data>
+  <data name="lblCorrespond116" xml:space="preserve">
+    <value>No of rooms for Teachers/Principal</value>
+  </data>
+  <data name="lblCorrespond117" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="lblCorrespond118" xml:space="preserve">
+    <value>Square Feet</value>
+  </data>
+  <data name="lblCorrespond119" xml:space="preserve">
+    <value>No of rooms for Library and laboratory Classes</value>
+  </data>
+  <data name="lblCorrespond12" xml:space="preserve">
+    <value>School Name</value>
+  </data>
+  <data name="lblCorrespond120" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="lblCorrespond121" xml:space="preserve">
+    <value>Square Feet</value>
+  </data>
+  <data name="lblCorrespond122" xml:space="preserve">
+    <value>Area of PlayGround</value>
+  </data>
+  <data name="lblCorrespond123" xml:space="preserve">
+    <value>Square Feet of PlayGround
+</value>
+  </data>
+  <data name="lblCorrespond124" xml:space="preserve">
+    <value>Total No of Toilets</value>
+  </data>
+  <data name="lblCorrespond125" xml:space="preserve">
+    <value>Girls Toilets</value>
+  </data>
+  <data name="lblCorrespond126" xml:space="preserve">
+    <value>Boys Toilets</value>
+  </data>
+  <data name="lblCorrespond127" xml:space="preserve">
+    <value>Equipment of Pure Water</value>
+  </data>
+  <data name="lblCorrespond128" xml:space="preserve">
+    <value>Information about laboratory</value>
+  </data>
+  <data name="lblCorrespond129" xml:space="preserve">
+    <value>Subject wise laboratories number</value>
+  </data>
+  <data name="lblCorrespond13" xml:space="preserve">
+    <value>School Address</value>
+  </data>
+  <data name="lblCorrespond130" xml:space="preserve">
+    <value>Area of Subject wise laboratories</value>
+  </data>
+  <data name="lblCorrespond131" xml:space="preserve">
+    <value>Square Feet of Subject wise laboratories</value>
+  </data>
+  <data name="lblCorrespond132" xml:space="preserve">
+    <value>Information about Libraries</value>
+  </data>
+  <data name="lblCorrespond133" xml:space="preserve">
+    <value>Number of Books</value>
+  </data>
+  <data name="lblCorrespond134" xml:space="preserve">
+    <value>Area of Libraries</value>
+  </data>
+  <data name="lblCorrespond135" xml:space="preserve">
+    <value>Square Feet of Libraries</value>
+  </data>
+  <data name="lblCorrespond136" xml:space="preserve">
+    <value>Information about furnitures</value>
+  </data>
+  <data name="lblCorrespond137" xml:space="preserve">
+    <value>Total Number of furnitures</value>
+  </data>
+  <data name="lblCorrespond138" xml:space="preserve">
+    <value>Total Number of furnitures for Girls/Boys</value>
+  </data>
+  <data name="lblCorrespond139" xml:space="preserve">
+    <value>Total Number of Chaires</value>
+  </data>
+  <data name="lblCorrespond14" xml:space="preserve">
+    <value>  School Address Details</value>
+  </data>
+  <data name="lblCorrespond140" xml:space="preserve">
+    <value>Total Number of Benches</value>
+  </data>
+  <data name="lblCorrespond141" xml:space="preserve">
+    <value>Total Number of furnitures for Staff</value>
+  </data>
+  <data name="lblCorrespond142" xml:space="preserve">
+    <value>Total Number of Chaires for staff</value>
+  </data>
+  <data name="lblCorrespond143" xml:space="preserve">
+    <value>Total Number of Almarires for staff</value>
+  </data>
+  <data name="lblCorrespond144" xml:space="preserve">
+    <value>Electricity Provided</value>
+  </data>
+  <data name="lblCorrespond145" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="lblCorrespond146" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="lblCorrespond147" xml:space="preserve">
+    <value>Total no of Computers</value>
+  </data>
+  <data name="lblCorrespond148" xml:space="preserve">
+    <value>Total no of printers</value>
+  </data>
+  <data name="lblCorrespond149" xml:space="preserve">
+    <value>Total no of faxes</value>
+  </data>
+  <data name="lblCorrespond15" xml:space="preserve">
+    <value>House No</value>
+  </data>
+  <data name="lblCorrespond150" xml:space="preserve">
+    <value>Total no of others</value>
+  </data>
+  <data name="lblCorrespond151" xml:space="preserve">
+    <value>Total no of Fire Extinguishers</value>
+  </data>
+  <data name="lblCorrespond152" xml:space="preserve">
+    <value>Summitted Amount of Correspondent Renewal</value>
+  </data>
+  <data name="lblCorrespond153" xml:space="preserve">
+    <value>  PHYSICAL handicapped Details</value>
+  </data>
+  <data name="lblCorrespond154" xml:space="preserve">
+    <value>PHYSICAL handicapped Students faciities</value>
+  </data>
+  <data name="lblCorrespond155" xml:space="preserve">
+    <value>PHYSICAL handicapped Students Admission Provided</value>
+  </data>
+  <data name="lblCorrespond156" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="lblCorrespond157" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="lblCorrespond158" xml:space="preserve">
+    <value>  Note &amp; Signature</value>
+  </data>
+  <data name="lblCorrespond159" xml:space="preserve">
+    <value>01. Incomplete application form will be rejected.</value>
+  </data>
+  <data name="lblCorrespond16" xml:space="preserve">
+    <value>Colony</value>
+  </data>
+  <data name="lblCorrespond160" xml:space="preserve">
+    <value>Affiliation will not be provided if any information is found to be untrue and the offer received will also be terminated. Will be given.</value>
+  </data>
+  <data name="lblCorrespond161" xml:space="preserve">
+    <value>sign</value>
+  </data>
+  <data name="lblCorrespond162" xml:space="preserve">
+    <value>Secretary / President</value>
+  </data>
+  <data name="lblCorrespond163" xml:space="preserve">
+    <value>sign</value>
+  </data>
+  <data name="lblCorrespond164" xml:space="preserve">
+    <value>PrincipalName and term of the committee</value>
+  </data>
+  <data name="lblCorrespond165" xml:space="preserve">
+    <value>School Name and Padmudra</value>
+  </data>
+  <data name="lblCorrespond166" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="lblCorrespond167" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="lblCorrespond168" xml:space="preserve">
+    <value>Full Address.</value>
+  </data>
+  <data name="lblCorrespond169" xml:space="preserve">
+    <value>Opinion of District Education Officer:-</value>
+  </data>
+  <data name="lblCorrespond17" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="lblCorrespond170" xml:space="preserve">
+    <value>Signature (with post seal)</value>
+  </data>
+  <data name="lblCorrespond171" xml:space="preserve">
+    <value>District Education Officer</value>
+  </data>
+  <data name="lblCorrespond172" xml:space="preserve">
+    <value>  Appendix 4</value>
+  </data>
+  <data name="lblCorrespond173" xml:space="preserve">
+    <value>Policy instructions for new affiliation year 2022-23 of Maharishi Patanjali Sanskrit Sansthan Bhopal and criteria</value>
+  </data>
+  <data name="lblCorrespond174" xml:space="preserve">
+    <value>  Appendix 4</value>
+  </data>
+  <data name="lblCorrespond175" xml:space="preserve">
+    <value>Adjournment Motion of the Committee.</value>
+  </data>
+  <data name="lblCorrespond176" xml:space="preserve">
+    <value>2. Registration of Society Copy of Certificate issued by Registrar and Firm Society</value>
+  </data>
+  <data name="lblCorrespond177" xml:space="preserve">
+    <value>Certified Manual of the Society (issued by Registrar and Firm Society)</value>
+  </data>
+  <data name="lblCorrespond178" xml:space="preserve">
+    <value>Attested photocopy of the list of members of the Management Committee (Section 27) which is of the latest status</value>
+  </data>
+  <data name="lblCorrespond179" xml:space="preserve">
+    <value>Information as follows including qualification and appointment date of teachers working for teaching including] (including Sanskrit qualified, Shastri / Acharya) as mentioned in the application Separately for each class and each subject in the applied Sanskrit school, teachers with desired educational qualification It is mandatory to have The desired educational qualification implies that L.K.G. Related to (Arun) for Praveshika Regarding H.S. / Uttar Madhyamik and D.Ed./B. T.I / P.T.C. And in the subject related to the first to the middle Shastri and B.Ed. / Education Shastri and Acharya / M.A. (Sanskrit) and B. Ed / Education Shastri is mandatory to be a qualified teacher.</value>
+  </data>
+  <data name="lblCorrespond18" xml:space="preserve">
+    <value>Block</value>
+  </data>
+  <data name="lblCorrespond180" xml:space="preserve">
+    <value>Registered photocopy of land/building ownership/rent deed and photo of the entire building</value>
+  </data>
+  <data name="lblCorrespond181" xml:space="preserve">
+    <value>Measles copy map of ownership of land / building, certified by urban body, gram panchayat</value>
+  </data>
+  <data name="lblCorrespond182" xml:space="preserve">
+    <value>If the present school building is on rent, then the photocopy of the registered or notarized rent deed</value>
+  </data>
+  <data name="lblCorrespond183" xml:space="preserve">
+    <value>Attested photocopy of the map of the present school building, Municipal Corporation, Municipality or Village By Panchayat.</value>
+  </data>
+  <data name="lblCorrespond184" xml:space="preserve">
+    <value> Inspection report of the District Education Officer with details</value>
+  </data>
+  <data name="lblCorrespond185" xml:space="preserve">
+    <value>Certified copy of the departmental permission payable by the District Education Officer</value>
+  </data>
+  <data name="lblCorrespond186" xml:space="preserve">
+    <value>Certified copy of equipment and materials available in the laboratory</value>
+  </data>
+  <data name="lblCorrespond187" xml:space="preserve">
+    <value>Attested photocopy of the last audit report (of the society)</value>
+  </data>
+  <data name="lblCorrespond188" xml:space="preserve">
+    <value>14. Certified records regarding the information about the playground of the school</value>
+  </data>
+  <data name="lblCorrespond189" xml:space="preserve">
+    <value>15. Potential class wise student strength</value>
+  </data>
+  <data name="lblCorrespond19" xml:space="preserve">
+    <value>District</value>
+  </data>
+  <data name="lblCorrespond190" xml:space="preserve">
+    <value>16. Possible class wise time division circle</value>
+  </data>
+  <data name="lblCorrespond191" xml:space="preserve">
+    <value>Possible teacher wise time department cycle</value>
+  </data>
+  <data name="lblCorrespond192" xml:space="preserve">
+    <value>18. Institution's own certificate regarding the facilities tied to the disabled</value>
+  </data>
+  <data name="lblCorrespond193" xml:space="preserve">
+    <value>19. L. Of. Yes. (Arun) UK Yes. (Uday) and for the students of class 1 to 4 there should be arrangement on the ground floor.</value>
+  </data>
+  <data name="lblCorrespond194" xml:space="preserve">
+    <value>The ground floor of the school building should not be more than the first floor and the second floor (three floors). Need self certification.</value>
+  </data>
+  <data name="lblCorrespond195" xml:space="preserve">
+    <value>21. Two postcard size color photographs of the building are attached.</value>
+  </data>
+  <data name="lblCorrespond196" xml:space="preserve">
+    <value>22. There should not be any disparity in the number of students of both the blocks of Pre-Madhyamik.</value>
+  </data>
+  <data name="lblCorrespond197" xml:space="preserve">
+    <value>Maharishi Patanjali Sanskrit Sansthan, M.P. In Arun, Uday for classes 1st to 4th The prescribed norms should be fulfilled (Appendix-5).</value>
+  </data>
+  <data name="lblCorrespond198" xml:space="preserve">
+    <value>Note :- Whatever photocopies of the above records are attached, get them certified by the gazetted officer.</value>
+  </data>
+  <data name="lblCorrespond199" xml:space="preserve">
+    <value>  Appendix 4</value>
+  </data>
+  <data name="lblCorrespond2" xml:space="preserve">
+    <value>Sanskrit School for LKG / UKG / Class 1-4 / Praveshika / Purmadhima / Uttarmadhima class to be operated</value>
+  </data>
+  <data name="lblCorrespond20" xml:space="preserve">
+    <value>PinCode</value>
+  </data>
+  <data name="lblCorrespond200" xml:space="preserve">
+    <value>Correspondent Renewal Application Form Year 2023-24</value>
+  </data>
+  <data name="lblCorrespond201" xml:space="preserve">
+    <value>Sanskrit school operated for LKG / UKG / Class 1-4 / Praveshika / Purmadhima / Uttarmadhima class</value>
+  </data>
+  <data name="lblCorrespond202" xml:space="preserve">
+    <value>  Academic Arrangement Description</value>
+  </data>
+  <data name="lblCorrespond203" xml:space="preserve">
+    <value>Head Mistress</value>
+  </data>
+  <data name="lblCorrespond204" xml:space="preserve">
+    <value>Head Mistress Qualification</value>
+  </data>
+  <data name="lblCorrespond205" xml:space="preserve">
+    <value>Principal Mistress</value>
+  </data>
+  <data name="lblCorrespond206" xml:space="preserve">
+    <value>Core Competency</value>
+  </data>
+  <data name="lblCorrespond207" xml:space="preserve">
+    <value>Total number of Sanskrit qualified teachers</value>
+  </data>
+  <data name="lblCorrespond208" xml:space="preserve">
+    <value>
+M.Ed
+</value>
+  </data>
+  <data name="lblCorrespond209" xml:space="preserve">
+    <value>B.Ed</value>
+  </data>
+  <data name="lblCorrespond21" xml:space="preserve">
+    <value>Mobile No</value>
+  </data>
+  <data name="lblCorrespond210" xml:space="preserve">
+    <value>SHIKSHA SHASTRI</value>
+  </data>
+  <data name="lblCorrespond211" xml:space="preserve">
+    <value>D.Ed</value>
+  </data>
+  <data name="lblCorrespond212" xml:space="preserve">
+    <value>BTI</value>
+  </data>
+  <data name="lblCorrespond213" xml:space="preserve">
+    <value>Total number of professor qualified teachers</value>
+  </data>
+  <data name="lblCorrespond214" xml:space="preserve">
+    <value>
+M.Ed
+</value>
+  </data>
+  <data name="lblCorrespond215" xml:space="preserve">
+    <value>B.Ed</value>
+  </data>
+  <data name="lblCorrespond216" xml:space="preserve">
+    <value>SHIKSHA SHASTRI</value>
+  </data>
+  <data name="lblCorrespond217" xml:space="preserve">
+    <value>D.Ed</value>
+  </data>
+  <data name="lblCorrespond218" xml:space="preserve">
+    <value>BTI</value>
+  </data>
+  <data name="lblCorrespond219" xml:space="preserve">
+    <value>
+Total number of Professors qualified teachers
+</value>
+  </data>
+  <data name="lblCorrespond22" xml:space="preserve">
+    <value>Correspondent Renewal Application Form Year 2023-24
+</value>
+  </data>
+  <data name="lblCorrespond220" xml:space="preserve">
+    <value>
+M.Ed
+</value>
+  </data>
+  <data name="lblCorrespond221" xml:space="preserve">
+    <value>B.Ed</value>
+  </data>
+  <data name="lblCorrespond222" xml:space="preserve">
+    <value>SHIKSHA SHASTRI</value>
+  </data>
+  <data name="lblCorrespond223" xml:space="preserve">
+    <value>D.Ed</value>
+  </data>
+  <data name="lblCorrespond224" xml:space="preserve">
+    <value>BTI</value>
+  </data>
+  <data name="lblCorrespond225" xml:space="preserve">
+    <value>Total number of highly qualified teachers</value>
+  </data>
+  <data name="lblCorrespond226" xml:space="preserve">
+    <value>
+M.Ed
+</value>
+  </data>
+  <data name="lblCorrespond227" xml:space="preserve">
+    <value>B.Ed</value>
+  </data>
+  <data name="lblCorrespond228" xml:space="preserve">
+    <value>SHIKSHA SHASTRI</value>
+  </data>
+  <data name="lblCorrespond229" xml:space="preserve">
+    <value>D.Ed</value>
+  </data>
+  <data name="lblCorrespond23" xml:space="preserve">
+    <value>Sanskrit School for LKG / UKG / Class 1-4 / Praveshika / Purmadhima / Uttarmadhima class to be operated</value>
+  </data>
+  <data name="lblCorrespond230" xml:space="preserve">
+    <value>BTI</value>
+  </data>
+  <data name="lblCorrespond231" xml:space="preserve">
+    <value>Total number of Assistant qualified teachers</value>
+  </data>
+  <data name="lblCorrespond232" xml:space="preserve">
+    <value>
+M.Ed
+</value>
+  </data>
+  <data name="lblCorrespond233" xml:space="preserve">
+    <value>B.Ed</value>
+  </data>
+  <data name="lblCorrespond234" xml:space="preserve">
+    <value>SHIKSHA SHASTRI</value>
+  </data>
+  <data name="lblCorrespond235" xml:space="preserve">
+    <value>D.Ed</value>
+  </data>
+  <data name="lblCorrespond236" xml:space="preserve">
+    <value>BTI</value>
+  </data>
+  <data name="lblCorrespond237" xml:space="preserve">
+    <value>
+P.T.I
+</value>
+  </data>
+  <data name="lblCorrespond238" xml:space="preserve">
+    <value>
+Assitant Teacher Science
+</value>
+  </data>
+  <data name="lblCorrespond239" xml:space="preserve">
+    <value>
+Studies Medium</value>
+  </data>
+  <data name="lblCorrespond24" xml:space="preserve">
+    <value>  Soceity Details</value>
+  </data>
+  <data name="lblCorrespond240" xml:space="preserve">
+    <value>Details of fees paid by the students</value>
+  </data>
+  <data name="lblCorrespond241" xml:space="preserve">
+    <value>
+Prathama
+</value>
+  </data>
+  <data name="lblCorrespond242" xml:space="preserve">
+    <value>
+Purvamadiyma
+</value>
+  </data>
+  <data name="lblCorrespond243" xml:space="preserve">
+    <value>Uttarmadiyma</value>
+  </data>
+  <data name="lblCorrespond244" xml:space="preserve">
+    <value>Working Staff Details</value>
+  </data>
+  <data name="lblCorrespond245" xml:space="preserve">
+    <value>Ledger</value>
+  </data>
+  <data name="lblCorrespond246" xml:space="preserve">
+    <value>Assistant Officer</value>
+  </data>
+  <data name="lblCorrespond247" xml:space="preserve">
+    <value>Fourth grade</value>
+  </data>
+  <data name="lblCorrespond248" xml:space="preserve">
+    <value>New affiliation of Maharishi Patanjali Sanskrit Sansthan Bhopal for the year 2022-23 attached, details of records to be sent</value>
+  </data>
+  <data name="lblCorrespond249" xml:space="preserve">
+    <value>  Appendix 1</value>
+  </data>
+  <data name="lblCorrespond25" xml:space="preserve">
+    <value>Soceity Registration No</value>
+  </data>
+  <data name="lblCorrespond250" xml:space="preserve">
+    <value>1. Adjournment motion of the committee. yes / no</value>
+  </data>
+  <data name="lblCorrespond251" xml:space="preserve">
+    <value>2. Registration of Society Copy of Certificate issued by Registrar and Firm Society yes / no</value>
+  </data>
+  <data name="lblCorrespond252" xml:space="preserve">
+    <value>3.Certified Manual of the Society (Issued by Registrar and Firm Society) yes no</value>
+  </data>
+  <data name="lblCorrespond253" xml:space="preserve">
+    <value>4. Attested photocopy of the list of members of the managing committee (Section 27) which Be of study status. yes / no</value>
+  </data>
+  <data name="lblCorrespond254" xml:space="preserve">
+    <value>5.Along with the qualification and date of appointment of teachers working for teaching, along with the following information (Sanskrit qualified, including Shastri/Acharya) as mentioned in the application Separately for each class and each subject in the applied Sanskrit school, teachers with desired educational qualification It is mandatory to have The desired educational qualification implies that L.K.G. Related to (Arun) for Praveshika Regarding H.S. / Uttar Madhyamik and D. Ed. / b. T.I / B.T.C. And in the subject related to the first to the middle Shastri and B.Ed. / Education Shastri and Acharya / M.A. (Sanskrit) and B. Ed / Education Shastri is mandatory to be a qualified teacher. yes / no</value>
+  </data>
+  <data name="lblCorrespond255" xml:space="preserve">
+    <value>6.Registered photocopy of land/building ownership and photo of the entire building yes / no</value>
+  </data>
+  <data name="lblCorrespond256" xml:space="preserve">
+    <value>7.Khasra copy map of ownership of land / building, urban body, village Certified by Panchayat yes / no</value>
+  </data>
+  <data name="lblCorrespond257" xml:space="preserve">
+    <value>8. If the present school building is on rent, then registered or notarized copy of rent deed yes / no</value>
+  </data>
+  <data name="lblCorrespond258" xml:space="preserve">
+    <value>9. Attested photocopy of the map of the present school building Municipal Corporation, Municipality Or by Gram Panchayat. yes / no</value>
+  </data>
+  <data name="lblCorrespond259" xml:space="preserve">
+    <value>10. Inspection report with opinion of District Education Officer yes / no</value>
+  </data>
+  <data name="lblCorrespond26" xml:space="preserve">
+    <value>Registration Date</value>
+  </data>
+  <data name="lblCorrespond260" xml:space="preserve">
+    <value>11. Certified copy of the departmental permission payable by the District Education Officer yes / no</value>
+  </data>
+  <data name="lblCorrespond261" xml:space="preserve">
+    <value>12. Certified copy of equipment and materials available in the laboratory yes / no</value>
+  </data>
+  <data name="lblCorrespond262" xml:space="preserve">
+    <value>13. Attested photocopy of the last audit report (of the society) yes / no</value>
+  </data>
+  <data name="lblCorrespond263" xml:space="preserve">
+    <value>14. Certified records regarding the information about the playground of the school yes / no</value>
+  </data>
+  <data name="lblCorrespond264" xml:space="preserve">
+    <value>15. expected class wise student strength yes / no</value>
+  </data>
+  <data name="lblCorrespond265" xml:space="preserve">
+    <value>16. Possible Class wise Time Division Cycle yes/no</value>
+  </data>
+  <data name="lblCorrespond266" xml:space="preserve">
+    <value>17. Expected teacher wise time department cycle</value>
+  </data>
+  <data name="lblCorrespond267" xml:space="preserve">
+    <value>18. Institution's own certificate regarding desired facilities to the disabled L.K.G. (Arun) UK Yes. (Uday) and on the ground floor for the students of classes 1 to 4 yes no</value>
+  </data>
+  <data name="lblCorrespond268" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCorrespond269" xml:space="preserve">
+    <value>19. There should be arrangement. The building of the school should not be more than ground floor, first floor, second floor (three floors) yes / no</value>
+  </data>
+  <data name="lblCorrespond27" xml:space="preserve">
+    <value>Validity Date</value>
+  </data>
+  <data name="lblCorrespond270" xml:space="preserve">
+    <value>20. Required (self certification).</value>
+  </data>
+  <data name="lblCorrespond271" xml:space="preserve">
+    <value>21. Two color photographs of the postcard size of the building are attached. yes no</value>
+  </data>
+  <data name="lblCorrespond272" xml:space="preserve">
+    <value>Note :-</value>
+  </data>
+  <data name="lblCorrespond273" xml:space="preserve">
+    <value>yes / no</value>
+  </data>
+  <data name="lblCorrespond274" xml:space="preserve">
+    <value>01. Whatever photocopies of the above records are attached, get them certified by self attestation.</value>
+  </data>
+  <data name="lblCorrespond275" xml:space="preserve">
+    <value>Institution Principal / Director</value>
+  </data>
+  <data name="lblCorrespond276" xml:space="preserve">
+    <value>Appendix 2 7 A-3</value>
+  </data>
+  <data name="lblCorrespond277" xml:space="preserve">
+    <value>Affidavit</value>
+  </data>
+  <data name="lblCorrespond278" xml:space="preserve">
+    <value>I _ _ father's name _ age _ _ Principal / Institution Head Secretary / Reserve _ _resident _ _</value>
+  </data>
+  <data name="lblCorrespond279" xml:space="preserve">
+    <value>Association Committee solemnly affirm that-</value>
+  </data>
+  <data name="lblCorrespond28" xml:space="preserve">
+    <value>PAN No(Income Tax No)</value>
+  </data>
+  <data name="lblCorrespond280" xml:space="preserve">
+    <value>1. That all the entries and records mentioned in the application form given for affiliation should be kept in the original of the institution. Certified as per documents. All these forms are correct and legal.</value>
+  </data>
+  <data name="lblCorrespond281" xml:space="preserve">
+    <value>2. That no material fact/entries have been suppressed in the application if any information/record or I will be personally responsible if the entries are found to be incorrect.</value>
+  </data>
+  <data name="lblCorrespond282" xml:space="preserve">
+    <value>3. Chairman/Secretary and members of the Management Committee of the society and all working principals/principals and teachers in the institution And the employees have no criminal background in the past and at present also there is no criminal case against them. Case is not pending.</value>
+  </data>
+  <data name="lblCorrespond283" xml:space="preserve">
+    <value>4. I have read all the terms and conditions regarding affiliation of Maharishi Patanjali Sanskrit Sansthan and Accepts all the conditions.</value>
+  </data>
+  <data name="lblCorrespond284" xml:space="preserve">
+    <value>5. The information given in the application form and affidavit is completely true, if any information is found false then The institute will have the right to cancel the affiliation application of the school and terminate the affiliation received.</value>
+  </data>
+  <data name="lblCorrespond285" xml:space="preserve">
+    <value>6. Students will be made to study only in the course prescribed by Maharishi Patanjali Sanskrit Sansthan. Syllabus In the event of not conducting the study, the affiliation of the institution will be deemed cancelled.</value>
+  </data>
+  <data name="lblCorrespond286" xml:space="preserve">
+    <value>7. In case of any legal dispute, the jurisdiction will be Bhopal.</value>
+  </data>
+  <data name="lblCorrespond287" xml:space="preserve">
+    <value>8. The institution fulfills the criteria prescribed for classes from Arun to Uttar Madhyamik last section as mentioned in Appendix-5. Is.</value>
+  </data>
+  <data name="lblCorrespond288" xml:space="preserve">
+    <value>swearer name</value>
+  </data>
+  <data name="lblCorrespond289" xml:space="preserve">
+    <value>President / Secretary</value>
+  </data>
+  <data name="lblCorrespond29" xml:space="preserve">
+    <value>No of Member in Soceity</value>
+  </data>
+  <data name="lblCorrespond290" xml:space="preserve">
+    <value>Verification</value>
+  </data>
+  <data name="lblCorrespond291" xml:space="preserve">
+    <value>I _ self _  resident  _ Self _ Verified that in this affidavit, para no. The information from 01 to 05 is correct and true.</value>
+  </data>
+  <data name="lblCorrespond292" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="lblCorrespond293" xml:space="preserve">
+    <value>swearer</value>
+  </data>
+  <data name="lblCorrespond294" xml:space="preserve">
+    <value>Appendix-3</value>
+  </data>
+  <data name="lblCorrespond295" xml:space="preserve">
+    <value>73-4</value>
+  </data>
+  <data name="lblCorrespond296" xml:space="preserve">
+    <value>Important instructions for new affiliation 2023-24 from Maharishi Patanjali Sanskrit Sansthan Bhopal -</value>
+  </data>
+  <data name="lblCorrespond297" xml:space="preserve">
+    <value>1. Application for new affiliation M.P. Last date for filling online 15 November 2022</value>
+  </data>
+  <data name="lblCorrespond298" xml:space="preserve">
+    <value>2. After filling the application, a hardcopy (in duplicate with complete records) will be sent to the District Education Officer Date of submission in office 15 December 2022</value>
+  </data>
+  <data name="lblCorrespond299" xml:space="preserve">
+    <value>3. Application form (with complete records) in Maharishi Patanjali Sanskrit Sansthan, due date 30 December 20022 Submission will be mandatory.</value>
+  </data>
+  <data name="lblCorrespond3" xml:space="preserve">
+    <value> School Detail</value>
+  </data>
+  <data name="lblCorrespond30" xml:space="preserve">
+    <value>Attach List of Society Members Registration Application form.</value>
+  </data>
+  <data name="lblCorrespond300" xml:space="preserve">
+    <value>4. On the basis of prescribed criteria of the applications submitted by the concerned school to the District Education Office For inspection, the inspection team of the school has been constituted by the District Education Officer and the departmental By making sure to edit the report through MP online by the permission date 15 January 2023 Make sure to submit the office by 10 February 2023 15 Fees-</value>
+  </data>
+  <data name="lblCorrespond301" xml:space="preserve">
+    <value>5. Fee details</value>
+  </data>
+  <data name="lblCorrespond302" xml:space="preserve">
+    <value>Fixed fee amount for new affiliation</value>
+  </data>
+  <data name="lblCorrespond303" xml:space="preserve">
+    <value>Serial No  Class level for the year  Fixed fee amount for New affiliation(for one year)</value>
+  </data>
+  <data name="lblCorrespond304" xml:space="preserve">
+    <value>1  L.K.G. (Arun) to class 04  1,000/-</value>
+  </data>
+  <data name="lblCorrespond305" xml:space="preserve">
+    <value>2  L.K.G. (Arun) to Praveshika  3,000/-</value>
+  </data>
+  <data name="lblCorrespond306" xml:space="preserve">
+    <value>3  L.K.G. (Arun) to Prathma  2,000/-</value>
+  </data>
+  <data name="lblCorrespond307" xml:space="preserve">
+    <value>4  L.K.G. (Arun) again one  11,000/-</value>
+  </data>
+  <data name="lblCorrespond308" xml:space="preserve">
+    <value>5  (From L.K.G. (Assam) to his  13,000/-</value>
+  </data>
+  <data name="lblCorrespond309" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCorrespond31" xml:space="preserve">
+    <value>Soceity president  Name</value>
+  </data>
+  <data name="lblCorrespond310" xml:space="preserve">
+    <value>6. Only for all levels for non-government oriental / traditional residential Sanskrit school (with hostel) seeking new affiliation Application Form Fee Rs. 500/- is fixed. Such schools are oriental / traditional residential Sanskrit schools (with hostel) category apply for new affiliation in M.P. While applying online only application fee of Rs. 500/- to be paid Will happen. On the basis of which, after getting the departmental permission/recommendation of the District Education Officer, the site test will be conducted by the institute and The school will be recognized as a traditional residential Sanskrit school (with hostel). Oriental / in the inspection conducted by the institute In case of invalidation in the category of traditional residential Sanskrit school (with hostel), the concerned school will be treated as a normal non-government school. Will be kept in category. On the basis of which the fee amount prescribed for new affiliation to general non-government schools on paragraph 8 to the concerned school DD to be submitted to the Institute Office. On the basis of which the students of these schools will be eligible to appear in the examination.</value>
+  </data>
+  <data name="lblCorrespond311" xml:space="preserve">
+    <value>7. Only the application form fee is fixed for government Sanskrit schools, the rest will be free from the fee.</value>
+  </data>
+  <data name="lblCorrespond312" xml:space="preserve">
+    <value>8. As per clause 2, application can be made with late fee up to 30 days. The late fee will be double the amount as per clause 8.</value>
+  </data>
+  <data name="lblCorrespond313" xml:space="preserve">
+    <value>9. MP. Where the school is being conducted, or to be conducted while applying online. Full address of that Village / Town / Place Post Office Enter the PIN code of</value>
+  </data>
+  <data name="lblCorrespond314" xml:space="preserve">
+    <value>10. , After applying from M. P. Online, if the hard copy along with supporting papers is sent to Maharishi Patanjali Sanskrit Sansthan, Sanskrit Bhavan by the stipulated time. Tulsi Nagar, Second Stop, Bhopal, Madhya Pradesh, -462003, then the affiliation will not be considered, the institution itself will be responsible for this.</value>
+  </data>
+  <data name="lblCorrespond315" xml:space="preserve">
+    <value>11. Affiliation will not be granted if the above mentioned information/certificates etc. are not attached and it appears suspicious. The affiliation granted will be terminated without any prior notice.</value>
+  </data>
+  <data name="lblCorrespond316" xml:space="preserve">
+    <value>Appendix 4</value>
+  </data>
+  <data name="lblCorrespond317" xml:space="preserve">
+    <value>73-5</value>
+  </data>
+  <data name="lblCorrespond318" xml:space="preserve">
+    <value>Policy instructions for new affiliation year 2022-23 of Maharishi Patanjali Sanskrit Sansthan Bhopal and criteria</value>
+  </data>
+  <data name="lblCorrespond319" xml:space="preserve">
+    <value>Appendix-4</value>
+  </data>
+  <data name="lblCorrespond32" xml:space="preserve">
+    <value>City/Village</value>
+  </data>
+  <data name="lblCorrespond320" xml:space="preserve">
+    <value>1. Adjournment Motion of the Committee.</value>
+  </data>
+  <data name="lblCorrespond321" xml:space="preserve">
+    <value>2. Registration of Society Copy of Certificate issued by Registrar and Firm Society</value>
+  </data>
+  <data name="lblCorrespond322" xml:space="preserve">
+    <value>3. Certified Manual of the Society (issued by Registrar and Firm Society)</value>
+  </data>
+  <data name="lblCorrespond323" xml:space="preserve">
+    <value>4. Attested photocopy of the list of members of the Management Committee (Section 27) which is of the latest status.</value>
+  </data>
+  <data name="lblCorrespond324" xml:space="preserve">
+    <value>5. Information as follows including qualification and appointment date of teachers working for teaching including] (including Sanskrit qualified, Shastri / Acharya) as mentioned in the application Separately for each class and each subject in the applied Sanskrit school, teachers with desired educational qualification It is mandatory to have The desired educational qualification implies that L.K.G. Related to (Arun) for Praveshika Regarding H.S. / Uttar Madhyamik and D.Ed./B. T.I / P.T.C. And in the subject related to the first to the middle Shastri and B.Ed. / Education Shastri and Acharya / M.A. (Sanskrit) and B. Ed / Education Shastri is mandatory to be a qualified teacher.</value>
+  </data>
+  <data name="lblCorrespond325" xml:space="preserve">
+    <value>6. Registered photocopy of land/building ownership/rent deed and photo of the entire building</value>
+  </data>
+  <data name="lblCorrespond326" xml:space="preserve">
+    <value>7. Measles copy map of ownership of land / building, certified by urban body, gram panchayat</value>
+  </data>
+  <data name="lblCorrespond327" xml:space="preserve">
+    <value>8. If the present school building is on rent, then the photocopy of the registered or notarized rent deed</value>
+  </data>
+  <data name="lblCorrespond328" xml:space="preserve">
+    <value>9. Attested photocopy of the map of the present school building, Municipal Corporation, Municipality or Village By Panchayat.</value>
+  </data>
+  <data name="lblCorrespond329" xml:space="preserve">
+    <value>10. Inspection report of the District Education Officer with details</value>
+  </data>
+  <data name="lblCorrespond33" xml:space="preserve">
+    <value>Post</value>
+  </data>
+  <data name="lblCorrespond330" xml:space="preserve">
+    <value>11. Certified copy of the departmental permission payable by the District Education Officer</value>
+  </data>
+  <data name="lblCorrespond331" xml:space="preserve">
+    <value>12. Certified copy of equipment and materials available in the laboratory</value>
+  </data>
+  <data name="lblCorrespond332" xml:space="preserve">
+    <value>13 Attested photocopy of the last audit report (of the society)</value>
+  </data>
+  <data name="lblCorrespond333" xml:space="preserve">
+    <value>14. Certified records regarding the information about the playground of the school</value>
+  </data>
+  <data name="lblCorrespond334" xml:space="preserve">
+    <value>15. Potential class wise student strength</value>
+  </data>
+  <data name="lblCorrespond335" xml:space="preserve">
+    <value>16. Possible class wise time division circle</value>
+  </data>
+  <data name="lblCorrespond336" xml:space="preserve">
+    <value>17. Possible teacher wise time department cycle</value>
+  </data>
+  <data name="lblCorrespond337" xml:space="preserve">
+    <value>18. Institution's own certificate regarding the facilities tied to the disabled</value>
+  </data>
+  <data name="lblCorrespond338" xml:space="preserve">
+    <value>19. L. Of. Yes. (Arun) UK Yes. (Uday) and for the students of class 1 to 4 there should be arrangement on the ground floor.</value>
+  </data>
+  <data name="lblCorrespond339" xml:space="preserve">
+    <value>20. The ground floor of the school building should not be more than the first floor and the second floor (three floors). Need self certification.</value>
+  </data>
+  <data name="lblCorrespond34" xml:space="preserve">
+    <value>District</value>
+  </data>
+  <data name="lblCorrespond340" xml:space="preserve">
+    <value>21. Two postcard size color photographs of the building are attached.</value>
+  </data>
+  <data name="lblCorrespond341" xml:space="preserve">
+    <value>22. There should not be any disparity in the number of students of both the blocks of Pre-Madhyamik.</value>
+  </data>
+  <data name="lblCorrespond342" xml:space="preserve">
+    <value>23. Maharishi Patanjali Sanskrit Sansthan, M.P. In Arun, Uday for classes 1st to 4th The prescribed norms should be fulfilled (Appendix-5).</value>
+  </data>
+  <data name="lblCorrespond343" xml:space="preserve">
+    <value>Note :- Whatever photocopies of the above records are attached, get them certified by the gazetted officer.</value>
+  </data>
+  <data name="lblCorrespond344" xml:space="preserve">
+    <value>Appendix-5</value>
+  </data>
+  <data name="lblCorrespond345" xml:space="preserve">
+    <value>Maharishi Patanjali Sanskrit Institute</value>
+  </data>
+  <data name="lblCorrespond346" xml:space="preserve">
+    <value>Madhya Pradesh Bhopal</value>
+  </data>
+  <data name="lblCorrespond347" xml:space="preserve">
+    <value>Arun / Uday / Norms set for classes 1 to 4</value>
+  </data>
+  <data name="lblCorrespond348" xml:space="preserve">
+    <value>1. Staff</value>
+  </data>
+  <data name="lblCorrespond349" xml:space="preserve">
+    <value>(1) 1 for 20 children</value>
+  </data>
+  <data name="lblCorrespond35" xml:space="preserve">
+    <value>Mobile No</value>
+  </data>
+  <data name="lblCorrespond350" xml:space="preserve">
+    <value>(2) 20 on 1 Co.</value>
+  </data>
+  <data name="lblCorrespond351" xml:space="preserve">
+    <value>(3) Publication will be of the staff.</value>
+  </data>
+  <data name="lblCorrespond352" xml:space="preserve">
+    <value>(4) Police is mandatory for the appointment of staff in the school.</value>
+  </data>
+  <data name="lblCorrespond353" xml:space="preserve">
+    <value>(5) or against any member of the Society JJ et al.</value>
+  </data>
+  <data name="lblCorrespond354" xml:space="preserve">
+    <value>There should not be any samadhi.</value>
+  </data>
+  <data name="lblCorrespond355" xml:space="preserve">
+    <value>2. BhaWan</value>
+  </data>
+  <data name="lblCorrespond356" xml:space="preserve">
+    <value>(1) Schedule building for living in each</value>
+  </data>
+  <data name="lblCorrespond357" xml:space="preserve">
+    <value>(2) The building should have a security wall.</value>
+  </data>
+  <data name="lblCorrespond358" xml:space="preserve">
+    <value>(3) Adequate ventilation (air and light) should be arranged in the building.</value>
+  </data>
+  <data name="lblCorrespond359" xml:space="preserve">
+    <value>(4) Seperate rest room.</value>
+  </data>
+  <data name="lblCorrespond36" xml:space="preserve">
+    <value>PinCode</value>
+  </data>
+  <data name="lblCorrespond360" xml:space="preserve">
+    <value>(5) Bond free site.</value>
+  </data>
+  <data name="lblCorrespond361" xml:space="preserve">
+    <value>(6) Separate toilets for boys and girls with child friendly facilities.</value>
+  </data>
+  <data name="lblCorrespond362" xml:space="preserve">
+    <value>(7) clean clothes,towels soap should be kept below,and wash vasins etc.Shoud be installed below(not at a height).</value>
+  </data>
+  <data name="lblCorrespond363" xml:space="preserve">
+    <value>(8) Pantry for food etc.</value>
+  </data>
+  <data name="lblCorrespond364" xml:space="preserve">
+    <value>(9) There should be a field of play.</value>
+  </data>
+  <data name="lblCorrespond365" xml:space="preserve">
+    <value>(10) CCTV in the entire campus. have cameras</value>
+  </data>
+  <data name="lblCorrespond366" xml:space="preserve">
+    <value>(11) There should also be a fire extinguisher.</value>
+  </data>
+  <data name="lblCorrespond367" xml:space="preserve">
+    <value>(12) The school building should be away from the road</value>
+  </data>
+  <data name="lblCorrespond368" xml:space="preserve">
+    <value>(13) The pond should not be open.</value>
+  </data>
+  <data name="lblCorrespond369" xml:space="preserve">
+    <value>3. Time-</value>
+  </data>
+  <data name="lblCorrespond37" xml:space="preserve">
+    <value>Other Operated Society School Name and Address</value>
+  </data>
+  <data name="lblCorrespond370" xml:space="preserve">
+    <value>According to the National Child Protection and Education Policy 2013, 3 to 4 posts per day and (None residencial)School</value>
+  </data>
+  <data name="lblCorrespond371" xml:space="preserve">
+    <value>4. Teaching material-</value>
+  </data>
+  <data name="lblCorrespond372" xml:space="preserve">
+    <value>Study material on the basis of student number for each story as prescribed by Maharishi Patjati Sanskrit Sansthan be provided</value>
+  </data>
+  <data name="lblCorrespond373" xml:space="preserve">
+    <value>5. Library The reading material should also be suitable for each small child</value>
+  </data>
+  <data name="lblCorrespond374" xml:space="preserve">
+    <value>6. Sporting goods-</value>
+  </data>
+  <data name="lblCorrespond375" xml:space="preserve">
+    <value>1. Sports material supplied by M.C.D.</value>
+  </data>
+  <data name="lblCorrespond376" xml:space="preserve">
+    <value>2. Children should have places to play near the school.</value>
+  </data>
+  <data name="lblCorrespond377" xml:space="preserve">
+    <value>7. Health-</value>
+  </data>
+  <data name="lblCorrespond378" xml:space="preserve">
+    <value>First aid material, medicine kit, ORSU etc. Time material</value>
+  </data>
+  <data name="lblCorrespond379" xml:space="preserve">
+    <value>Involved in treatment material by registered medical practitioner</value>
+  </data>
+  <data name="lblCorrespond38" xml:space="preserve">
+    <value>  Other Details</value>
+  </data>
+  <data name="lblCorrespond380" xml:space="preserve">
+    <value>8. Entry-</value>
+  </data>
+  <data name="lblCorrespond381" xml:space="preserve">
+    <value>Children below three years of age should not be given admission in Assam Udyas.</value>
+  </data>
+  <data name="lblCorrespond382" xml:space="preserve">
+    <value>9. Records -</value>
+  </data>
+  <data name="lblCorrespond383" xml:space="preserve">
+    <value>(A) Name of children</value>
+  </data>
+  <data name="lblCorrespond384" xml:space="preserve">
+    <value>(B) State and nomination whose name is also the day of parents be marked</value>
+  </data>
+  <data name="lblCorrespond385" xml:space="preserve">
+    <value>(C) Attendance register also</value>
+  </data>
+  <data name="lblCorrespond386" xml:space="preserve">
+    <value>(D) All teachers / Kiti</value>
+  </data>
+  <data name="lblCorrespond387" xml:space="preserve">
+    <value>(E) Staff details register.</value>
+  </data>
+  <data name="lblCorrespond388" xml:space="preserve">
+    <value>(F) Karan also has all children</value>
+  </data>
+  <data name="lblCorrespond389" xml:space="preserve">
+    <value>(G) All the employees of the applicant institution Gazette et 2012 Junita Act</value>
+  </data>
+  <data name="lblCorrespond39" xml:space="preserve">
+    <value>In which area school operated</value>
+  </data>
+  <data name="lblCorrespond390" xml:space="preserve">
+    <value>According to 2015 Child Labor Act 1960 and Child Labor Rules 2016</value>
+  </data>
+  <data name="lblCorrespond391" xml:space="preserve">
+    <value>Responsibilities of School and Teachers</value>
+  </data>
+  <data name="lblCorrespond4" xml:space="preserve">
+    <value>Correspondent Renewal Class</value>
+  </data>
+  <data name="lblCorrespond41" xml:space="preserve">
+    <value>Rural</value>
+  </data>
+  <data name="lblCorrespond42" xml:space="preserve">
+    <value>Urban</value>
+  </data>
+  <data name="lblCorrespond43" xml:space="preserve">
+    <value>Name of Municipal corporation/ Municipality/ nagar panchayat / village panchyat of the school area</value>
+  </data>
+  <data name="lblCorrespond44" xml:space="preserve">
+    <value>Distance of School from District Headquater(K.M.)</value>
+  </data>
+  <data name="lblCorrespond45" xml:space="preserve">
+    <value>Nearest Police Station Name</value>
+  </data>
+  <data name="lblCorrespond46" xml:space="preserve">
+    <value>Nearest Police Station Distance from School(K.M.)</value>
+  </data>
+  <data name="lblCorrespond47" xml:space="preserve">
+    <value>Nearest Police Station Administrative Division from School</value>
+  </data>
+  <data name="lblCorrespond48" xml:space="preserve">
+    <value>Nearest Police Station Phone No from School</value>
+  </data>
+  <data name="lblCorrespond49" xml:space="preserve">
+    <value>Nearest Govt High School Name</value>
+  </data>
+  <data name="lblCorrespond5" xml:space="preserve">
+    <value>LKG</value>
+  </data>
+  <data name="lblCorrespond50" xml:space="preserve">
+    <value>Nearest Govt High School Name Address</value>
+  </data>
+  <data name="lblCorrespond51" xml:space="preserve">
+    <value>Nearest Govt Higher School Name</value>
+  </data>
+  <data name="lblCorrespond52" xml:space="preserve">
+    <value>Nearest Govt Higher School Name Address</value>
+  </data>
+  <data name="lblCorrespond53" xml:space="preserve">
+    <value>Nearest Govt Higher School Name Distance(K.M.)</value>
+  </data>
+  <data name="lblCorrespond54" xml:space="preserve">
+    <value>Nearest Private High School Name</value>
+  </data>
+  <data name="lblCorrespond55" xml:space="preserve">
+    <value>Nearest Private High School Name Address</value>
+  </data>
+  <data name="lblCorrespond56" xml:space="preserve">
+    <value>Nearest Private High School Name Distance(K.M.)</value>
+  </data>
+  <data name="lblCorrespond57" xml:space="preserve">
+    <value>Nearest Private Higher School Name</value>
+  </data>
+  <data name="lblCorrespond58" xml:space="preserve">
+    <value>Nearest Private Higher School Name Address</value>
+  </data>
+  <data name="lblCorrespond59" xml:space="preserve">
+    <value>Nearest Private Higher School Name Distance(K.M.)</value>
+  </data>
+  <data name="lblCorrespond6" xml:space="preserve">
+    <value>UKG</value>
+  </data>
+  <data name="lblCorrespond60" xml:space="preserve">
+    <value>School Type</value>
+  </data>
+  <data name="lblCorrespond61" xml:space="preserve">
+    <value>Co-ED</value>
+  </data>
+  <data name="lblCorrespond62" xml:space="preserve">
+    <value>Boys</value>
+  </data>
+  <data name="lblCorrespond63" xml:space="preserve">
+    <value>Girls</value>
+  </data>
+  <data name="lblCorrespond64" xml:space="preserve">
+    <value>Hostel</value>
+  </data>
+  <data name="lblCorrespond65" xml:space="preserve">
+    <value>Is Society related to another board</value>
+  </data>
+  <data name="lblCorrespond66" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="lblCorrespond67" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="lblCorrespond68" xml:space="preserve">
+    <value>Board or university Name</value>
+  </data>
+  <data name="lblCorrespond69" xml:space="preserve">
+    <value>from date</value>
+  </data>
+  <data name="lblCorrespond7" xml:space="preserve">
+    <value>Class 1-4</value>
+  </data>
+  <data name="lblCorrespond70" xml:space="preserve">
+    <value>Registration No</value>
+  </data>
+  <data name="lblCorrespond71" xml:space="preserve">
+    <value>Registration date</value>
+  </data>
+  <data name="lblCorrespond72" xml:space="preserve">
+    <value>By which committee is the School/College being run, is the school being run by any other Board/University or by the same name</value>
+  </data>
+  <data name="lblCorrespond73" xml:space="preserve">
+    <value>Does the school conduct Praveshika and Pratham classes, please give details</value>
+  </data>
+  <data name="lblCorrespond74" xml:space="preserve">
+    <value>Sankiya details of SAROOP AVASI / GARVASI Hostel Boys and Girls of Sanskrit School par class</value>
+  </data>
+  <data name="lblCorrespond75" xml:space="preserve">
+    <value>LKG</value>
+  </data>
+  <data name="lblCorrespond76" xml:space="preserve">
+    <value>UKG</value>
+  </data>
+  <data name="lblCorrespond77" xml:space="preserve">
+    <value>Class 1-4</value>
+  </data>
+  <data name="lblCorrespond78" xml:space="preserve">
+    <value>Pravashika</value>
+  </data>
+  <data name="lblCorrespond79" xml:space="preserve">
+    <value>Prathama Prathakhand</value>
+  </data>
+  <data name="lblCorrespond8" xml:space="preserve">
+    <value>Praveshika</value>
+  </data>
+  <data name="lblCorrespond80" xml:space="preserve">
+    <value>Dutikhand</value>
+  </data>
+  <data name="lblCorrespond81" xml:space="preserve">
+    <value>Antimkhand</value>
+  </data>
+  <data name="lblCorrespond82" xml:space="preserve">
+    <value>Porve Purvamadiyama</value>
+  </data>
+  <data name="lblCorrespond83" xml:space="preserve">
+    <value>Porave Antimkhand</value>
+  </data>
+  <data name="lblCorrespond84" xml:space="preserve">
+    <value>Uttar Prathakhand</value>
+  </data>
+  <data name="lblCorrespond85" xml:space="preserve">
+    <value>Uttar Antimkhand</value>
+  </data>
+  <data name="lblCorrespond86" xml:space="preserve">
+    <value>  Attachments doc</value>
+  </data>
+  <data name="lblCorrespond87" xml:space="preserve">
+    <value>Attach Timetables of Classes</value>
+  </data>
+  <data name="lblCorrespond88" xml:space="preserve">
+    <value>Attached Subject Wise Teachers Sheet</value>
+  </data>
+  <data name="lblCorrespond89" xml:space="preserve">
+    <value>  Time Table Details</value>
+  </data>
+  <data name="lblCorrespond9" xml:space="preserve">
+    <value>Purmadhima</value>
+  </data>
+  <data name="lblCorrespond90" xml:space="preserve">
+    <value>Information about Classes wise Time Table</value>
+  </data>
+  <data name="lblCorrespond91" xml:space="preserve">
+    <value>Morning First Shift Information</value>
+  </data>
+  <data name="lblCorrespond92" xml:space="preserve">
+    <value>From Time</value>
+  </data>
+  <data name="lblCorrespond93" xml:space="preserve">
+    <value>To Time</value>
+  </data>
+  <data name="lblCorrespond94" xml:space="preserve">
+    <value>From Class</value>
+  </data>
+  <data name="lblCorrespond95" xml:space="preserve">
+    <value>To Class</value>
+  </data>
+  <data name="lblCorrespond96" xml:space="preserve">
+    <value>After noon First Shift Information</value>
+  </data>
+  <data name="lblCorrespond97" xml:space="preserve">
+    <value>From Time</value>
+  </data>
+  <data name="lblCorrespond98" xml:space="preserve">
+    <value>From Class</value>
+  </data>
+  <data name="lblCorrespond99" xml:space="preserve">
+    <value>To Class</value>
+  </data>
+  <data name="lblCorrespond555" xml:space="preserve">
+    <value>Nearest Govt High School Distance(K.M.)</value>
+  </data>
+  <data name="lblCorrespond556" xml:space="preserve">
+    <value>Qualification of Principal</value>
+  </data>
+  <data name="lblCorrespond559" xml:space="preserve">
+    <value>Attach list of laboratory equipment</value>
+  </data>
+  <data name="lblCorrespond560" xml:space="preserve">
+    <value>School Information</value>
+  </data>
+  <data name="lblCorrespond561" xml:space="preserve">
+    <value>Society and Other Information</value>
+  </data>
+  <data name="lblCorrespond562" xml:space="preserve">
+    <value>Academic Arrangement Information</value>
+  </data>
+  <data name="lblCorrespond563" xml:space="preserve">
+    <value>Land and TimeTable Information</value>
+  </data>
+  <data name="lblCorrespond564" xml:space="preserve">
+    <value>Facilities and PHYSICAL Handicapped Information</value>
+  </data>
+  <data name="lblCorrespond565" xml:space="preserve">
+    <value>Appendix 1</value>
+  </data>
+  <data name="lblCorrespond566" xml:space="preserve">
+    <value>Appendix 2</value>
+  </data>
+  <data name="lblCorrespond567" xml:space="preserve">
+    <value>Appendix 3</value>
+  </data>
+  <data name="lblCorrespond568" xml:space="preserve">
+    <value>Appendix 4</value>
+  </data>
+  <data name="lblCorrespond569" xml:space="preserve">
+    <value>Appendix 5</value>
+  </data>
+  <data name="lblCorrespond570" xml:space="preserve">
+    <value>School Land/Building Details</value>
+  </data>
 </root>

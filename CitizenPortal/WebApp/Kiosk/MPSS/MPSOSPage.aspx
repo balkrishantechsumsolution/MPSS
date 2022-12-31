@@ -202,7 +202,7 @@
                         <div class="">
                             <div class="resp-tabs-container ver_1">
                                 <div style="margin-top: 10px;">
-                                    <div style="min-height: 4.66em; z-index: -760;" class="SrvDiv" id="101">
+                                    <div style="min-height: 4.66em; z-index: -760;display:none;" class="SrvDiv" id="101">
                                         <a href="/WebApp/Citizen/Forms/Geustuser.aspx?SvcID=1466">
                                             <img src="../Images/MPSOSLogo.jpg" alt="" align="left" style="height: 93px; margin-top: 5px;" />
                                         </a>
@@ -210,6 +210,15 @@
                                         <br />
                                         <span style="font-size: 12px !important; font-weight: bold !important; color: black !important;">(SHARMODAYA EXAM 2023-24)</span><br />
                                         <span>Click to Fill Application</span>
+                                    </div>
+                                     <div style="min-height: 4.66em; z-index: -760;" class="SrvDiv" id="101">
+                                        <a href="/WebApp/Citizen/Forms/Geustuser.aspx?SvcID=1466">
+                                            <img src="../Images/MPSOSLogo.jpg" alt="" align="left" style="height: 93px; margin-top: 5px;" />
+                                        </a>
+                                        <a href="AdmitCardViewPage.aspx" onclick="javascript:return RedirectToService('/WebApp/Kiosk/MPSS/AdmitCardViewPage.aspx');">Admit Card for appearing in the Entrance Examination</a>
+                                        <br />
+                                        <span style="font-size: 12px !important; font-weight: bold !important; color: black !important;">(SHARMODAYA EXAM 2023-24)</span><br />
+                                        <span>Click to Admit Card</span>
                                     </div>
                                     <div style="min-height: 4.66em; z-index: -760; display:block;" class="SrvDiv" id="102">
                                         <a href="ViewAcknowledgementMPBO.aspx" onclick="javascript:return RedirectToService('ViewAcknowledgementMPBO.aspx');">

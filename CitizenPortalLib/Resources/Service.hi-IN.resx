@@ -735,4 +735,1249 @@
   <data name="lblPassbook" xml:space="preserve">
     <value>पासबुक की प्रति</value>
   </data>
+  <data name="lblCorrespond1" xml:space="preserve">
+    <value>प्रतिनिधि नवीनीकरण आवेदन पत्र वर्ष 2023-24</value>
+  </data>
+  <data name="lblCorrespond10" xml:space="preserve">
+    <value>उत्तरमाधिमा</value>
+  </data>
+  <data name="lblCorrespond100" xml:space="preserve">
+    <value>स्कूल भूमि / भवन विवरण</value>
+  </data>
+  <data name="lblCorrespond101" xml:space="preserve">
+    <value>विद्यालय भूमि की जानकारी
+</value>
+  </data>
+  <data name="lblCorrespond102" xml:space="preserve">
+    <value>खसरा न</value>
+  </data>
+  <data name="lblCorrespond103" xml:space="preserve">
+    <value>क्षेत्र</value>
+  </data>
+  <data name="lblCorrespond104" xml:space="preserve">
+    <value>भूमि पंजीकरण की प्रति संलग्न करें (खसरा/बी1-नक्शा)</value>
+  </data>
+  <data name="lblCorrespond105" xml:space="preserve">
+    <value>यदि भूमि किराए पर दी गई हो तो स्वामी का नाम व पता</value>
+  </data>
+  <data name="lblCorrespond106" xml:space="preserve">
+    <value>यदि भवन किराये पर लिया गया है तो स्वामी का नाम व पता</value>
+  </data>
+  <data name="lblCorrespond107" xml:space="preserve">
+    <value>यदि किराए पर लिया है तो रेंट एग्रीमेंट की कॉपी</value>
+  </data>
+  <data name="lblCorrespond108" xml:space="preserve">
+    <value>स्कूल भूमि का कुल क्षेत्रफल (वर्ग फुट, हेक्टेयर)</value>
+  </data>
+  <data name="lblCorrespond109" xml:space="preserve">
+    <value>स्कूल बनाने के लिए भूमि का कुल क्षेत्रफल (वर्ग फुट, हेक्टेयर)</value>
+  </data>
+  <data name="lblCorrespond11" xml:space="preserve">
+    <value>सोसायटी का नाम और पता</value>
+  </data>
+  <data name="lblCorrespond110" xml:space="preserve">
+    <value>कुल निर्माण क्षेत्र</value>
+  </data>
+  <data name="lblCorrespond111" xml:space="preserve">
+    <value>कुल खाली जगह के निर्माण से भूमि संलग्न करें</value>
+  </data>
+  <data name="lblCorrespond112" xml:space="preserve">
+    <value>सुविधाएं विवरण</value>
+  </data>
+  <data name="lblCorrespond113" xml:space="preserve">
+    <value>पढ़ाई के लिए कक्षाओं की संख्या</value>
+  </data>
+  <data name="lblCorrespond114" xml:space="preserve">
+    <value>क्षेत्र</value>
+  </data>
+  <data name="lblCorrespond115" xml:space="preserve">
+    <value>वर्ग फुट</value>
+  </data>
+  <data name="lblCorrespond116" xml:space="preserve">
+    <value>शिक्षकों/प्रिंसिपल के लिए कमरों की संख्या</value>
+  </data>
+  <data name="lblCorrespond117" xml:space="preserve">
+    <value>क्षेत्र</value>
+  </data>
+  <data name="lblCorrespond118" xml:space="preserve">
+    <value>वर्ग फुट</value>
+  </data>
+  <data name="lblCorrespond119" xml:space="preserve">
+    <value>पुस्तकालय और प्रयोगशाला कक्षाओं के लिए कमरों की संख्या</value>
+  </data>
+  <data name="lblCorrespond12" xml:space="preserve">
+    <value>स्कूल के नाम</value>
+  </data>
+  <data name="lblCorrespond120" xml:space="preserve">
+    <value>क्षेत्र</value>
+  </data>
+  <data name="lblCorrespond121" xml:space="preserve">
+    <value>वर्ग फुट</value>
+  </data>
+  <data name="lblCorrespond122" xml:space="preserve">
+    <value>खेल के मैदान का क्षेत्रफल</value>
+  </data>
+  <data name="lblCorrespond123" xml:space="preserve">
+    <value>खेल के मैदान का वर्ग फुट</value>
+  </data>
+  <data name="lblCorrespond124" xml:space="preserve">
+    <value>शौचालयों की कुल संख्या</value>
+  </data>
+  <data name="lblCorrespond125" xml:space="preserve">
+    <value>बालिका शौचालय
+</value>
+  </data>
+  <data name="lblCorrespond126" xml:space="preserve">
+    <value>लड़कों के शौचालय
+</value>
+  </data>
+  <data name="lblCorrespond127" xml:space="preserve">
+    <value>शुद्ध जल के उपकरण</value>
+  </data>
+  <data name="lblCorrespond128" xml:space="preserve">
+    <value>प्रयोगशाला के बारे में जानकारी</value>
+  </data>
+  <data name="lblCorrespond129" xml:space="preserve">
+    <value>विषयवार प्रयोगशालाओं की संख्या</value>
+  </data>
+  <data name="lblCorrespond13" xml:space="preserve">
+    <value>स्कूल का पता</value>
+  </data>
+  <data name="lblCorrespond130" xml:space="preserve">
+    <value>विषय वार प्रयोगशालाओं का क्षेत्र</value>
+  </data>
+  <data name="lblCorrespond131" xml:space="preserve">
+    <value>विषयवार प्रयोगशालाओं का वर्ग फुट</value>
+  </data>
+  <data name="lblCorrespond132" xml:space="preserve">
+    <value>पुस्तकालयों के बारे में जानकारी</value>
+  </data>
+  <data name="lblCorrespond133" xml:space="preserve">
+    <value>पुस्तकों की संख्या
+</value>
+  </data>
+  <data name="lblCorrespond134" xml:space="preserve">
+    <value>पुस्तकालयों का क्षेत्र</value>
+  </data>
+  <data name="lblCorrespond135" xml:space="preserve">
+    <value>पुस्तकालयों का वर्ग फुट</value>
+  </data>
+  <data name="lblCorrespond136" xml:space="preserve">
+    <value>फर्नीचर के बारे में जानकारी</value>
+  </data>
+  <data name="lblCorrespond137" xml:space="preserve">
+    <value>फर्नीचर की कुल संख्या</value>
+  </data>
+  <data name="lblCorrespond138" xml:space="preserve">
+    <value>लड़कियों/लड़कों के लिए फर्नीचर की कुल संख्या</value>
+  </data>
+  <data name="lblCorrespond139" xml:space="preserve">
+    <value>अध्यक्षों की कुल संख्या</value>
+  </data>
+  <data name="lblCorrespond14" xml:space="preserve">
+    <value>स्कूल का पता विवरण</value>
+  </data>
+  <data name="lblCorrespond140" xml:space="preserve">
+    <value>बेंचों की कुल संख्या</value>
+  </data>
+  <data name="lblCorrespond141" xml:space="preserve">
+    <value>कर्मचारियों के लिए फर्नीचर की कुल संख्या</value>
+  </data>
+  <data name="lblCorrespond142" xml:space="preserve">
+    <value>कर्मचारियों के लिए कुर्सियों की कुल संख्या</value>
+  </data>
+  <data name="lblCorrespond143" xml:space="preserve">
+    <value>कर्मचारियों के लिए अल्मेयरों की कुल संख्या</value>
+  </data>
+  <data name="lblCorrespond144" xml:space="preserve">
+    <value>बिजली प्रदान की</value>
+  </data>
+  <data name="lblCorrespond145" xml:space="preserve">
+    <value>हां</value>
+  </data>
+  <data name="lblCorrespond146" xml:space="preserve">
+    <value>नहीं</value>
+  </data>
+  <data name="lblCorrespond147" xml:space="preserve">
+    <value>कंप्यूटर की कुल संख्या
+</value>
+  </data>
+  <data name="lblCorrespond148" xml:space="preserve">
+    <value>प्रिंटर की कुल संख्या</value>
+  </data>
+  <data name="lblCorrespond149" xml:space="preserve">
+    <value>फैक्स की कुल संख्या</value>
+  </data>
+  <data name="lblCorrespond15" xml:space="preserve">
+    <value>मकान नंबर</value>
+  </data>
+  <data name="lblCorrespond150" xml:space="preserve">
+    <value>अन्य की कुल संख्या</value>
+  </data>
+  <data name="lblCorrespond151" xml:space="preserve">
+    <value>अग्निशमन यंत्रों की कुल संख्या</value>
+  </data>
+  <data name="lblCorrespond152" xml:space="preserve">
+    <value>संवाददाता नवीनीकरण की सम्‍मिलित राशि</value>
+  </data>
+  <data name="lblCorrespond153" xml:space="preserve">
+    <value>शारीरिक विकलांग विवरण</value>
+  </data>
+  <data name="lblCorrespond154" xml:space="preserve">
+    <value>शारीरिक रूप से विकलांग छात्र सुविधाएं</value>
+  </data>
+  <data name="lblCorrespond155" xml:space="preserve">
+    <value>शारीरिक रूप से विकलांग छात्रों को प्रवेश प्रदान किया गया</value>
+  </data>
+  <data name="lblCorrespond156" xml:space="preserve">
+    <value>हां</value>
+  </data>
+  <data name="lblCorrespond157" xml:space="preserve">
+    <value>नहीं</value>
+  </data>
+  <data name="lblCorrespond158" xml:space="preserve">
+    <value>नोट और हस्ताक्षर</value>
+  </data>
+  <data name="lblCorrespond159" xml:space="preserve">
+    <value>01. अपूर्ण आवेदन पत्र को अस्वीकार कर दिया जाएगा।</value>
+  </data>
+  <data name="lblCorrespond16" xml:space="preserve">
+    <value>कालोनी</value>
+  </data>
+  <data name="lblCorrespond160" xml:space="preserve">
+    <value>कोई सूचना असत्य पाये जाने पर संबद्धता प्रदान नहीं की जायेगी तथा प्राप्त प्रस्ताव भी समाप्त कर दिया जायेगा। दी जाएगी।</value>
+  </data>
+  <data name="lblCorrespond161" xml:space="preserve">
+    <value>संकेत</value>
+  </data>
+  <data name="lblCorrespond162" xml:space="preserve">
+    <value>सचिव / अध्यक्ष</value>
+  </data>
+  <data name="lblCorrespond163" xml:space="preserve">
+    <value>संकेत</value>
+  </data>
+  <data name="lblCorrespond164" xml:space="preserve">
+    <value>प्रधानाध्यापक नाम और समिति की अवधि</value>
+  </data>
+  <data name="lblCorrespond165" xml:space="preserve">
+    <value>स्कूल का नाम और पदमुद्रा</value>
+  </data>
+  <data name="lblCorrespond166" xml:space="preserve">
+    <value>तारीख</value>
+  </data>
+  <data name="lblCorrespond167" xml:space="preserve">
+    <value>नाम</value>
+  </data>
+  <data name="lblCorrespond168" xml:space="preserve">
+    <value>पूरा पता</value>
+  </data>
+  <data name="lblCorrespond169" xml:space="preserve">
+    <value>जिला शिक्षा अधिकारी की राय:-</value>
+  </data>
+  <data name="lblCorrespond17" xml:space="preserve">
+    <value>शहर</value>
+  </data>
+  <data name="lblCorrespond170" xml:space="preserve">
+    <value>हस्ताक्षर (पोस्ट सील के साथ)</value>
+  </data>
+  <data name="lblCorrespond171" xml:space="preserve">
+    <value>जिला शिक्षा अधिकारी
+</value>
+  </data>
+  <data name="lblCorrespond172" xml:space="preserve">
+    <value>परिशिष्ट 4
+</value>
+  </data>
+  <data name="lblCorrespond173" xml:space="preserve">
+    <value>महर्षि पतंजलि संस्कृत संस्थान भोपाल की नवीन संबद्धता वर्ष 2022-23 हेतु नीतिगत निर्देश एवं मानदंड</value>
+  </data>
+  <data name="lblCorrespond174" xml:space="preserve">
+    <value>परिशिष्ट 4
+</value>
+  </data>
+  <data name="lblCorrespond175" xml:space="preserve">
+    <value>समिति का स्थगन प्रस्ताव।</value>
+  </data>
+  <data name="lblCorrespond176" xml:space="preserve">
+    <value>2. सोसायटी का रजिस्ट्रेशन रजिस्ट्रार एंड फर्म सोसायटी द्वारा जारी सर्टिफिकेट की कॉपी</value>
+  </data>
+  <data name="lblCorrespond177" xml:space="preserve">
+    <value>सोसायटी का प्रमाणित मैनुअल (रजिस्ट्रार और फर्म सोसायटी द्वारा जारी)</value>
+  </data>
+  <data name="lblCorrespond178" xml:space="preserve">
+    <value>प्रबंध समिति के सदस्यों की सूची (धारा 27) की सत्यापित छाया प्रति जो नवीनतम स्थिति की हो</value>
+  </data>
+  <data name="lblCorrespond179" xml:space="preserve">
+    <value>अध्यापन हेतु कार्यरत शिक्षकों की योग्यता एवं नियुक्ति तिथि सहित निम्नानुसार सूचना] (संस्कृत योग्यताधारी, शास्त्री/आचार्य सहित) आवेदन पत्र में यथा उल्लिखित प्रत्येक कक्षा एवं प्रत्येक विषय के लिए आवेदित संस्कृत विद्यालयों में वांछित शैक्षणिक योग्यता वाले शिक्षक अनिवार्य है वांछित शैक्षणिक योग्यता रखने का अर्थ है कि एल.के.जी. प्रवेशिका के लिए (अरुण) से संबंधित एच.एस. / उत्तर माध्यमिक और डी.एड./बी. टी.आई./पी.टी.सी. तथा प्रथम से मध्य तक के विषय में शास्त्री एवं बीएड. / शिक्षा शास्त्री व आचार्य / एम.ए. (संस्कृत) व बी.एड / शिक्षा शास्त्री के लिए योग्य शिक्षक होना अनिवार्य है।</value>
+  </data>
+  <data name="lblCorrespond18" xml:space="preserve">
+    <value>खंड मैथा</value>
+  </data>
+  <data name="lblCorrespond180" xml:space="preserve">
+    <value>भूमि/भवन के स्वामित्व/किराए के विलेख की पंजीकृत फोटोकॉपी और पूरे भवन की फोटो</value>
+  </data>
+  <data name="lblCorrespond181" xml:space="preserve">
+    <value> नगरीय निकाय, ग्राम पंचायत द्वारा प्रमाणित भूमि/भवन के स्वामित्व का खसरा प्रति नक्शा</value>
+  </data>
+  <data name="lblCorrespond182" xml:space="preserve">
+    <value>यदि वर्तमान विद्यालय भवन किराये पर है तो पंजीकृत या नोटरीकृत किराया विलेख की फोटोकॉपी</value>
+  </data>
+  <data name="lblCorrespond183" xml:space="preserve">
+    <value>पंचायत द्वारा वर्तमान विद्यालय भवन, नगर निगम, नगर पालिका या ग्राम के मानचित्र की सत्यापित छायाप्रति।</value>
+  </data>
+  <data name="lblCorrespond184" xml:space="preserve">
+    <value>विवरण सहित जिला शिक्षा अधिकारी का निरीक्षण प्रतिवेदन</value>
+  </data>
+  <data name="lblCorrespond185" xml:space="preserve">
+    <value>जिला शिक्षा अधिकारी द्वारा देय विभागीय अनुमति की प्रमाणित प्रति</value>
+  </data>
+  <data name="lblCorrespond186" xml:space="preserve">
+    <value>प्रयोगशाला में उपलब्ध उपकरण और सामग्री की प्रमाणित प्रति</value>
+  </data>
+  <data name="lblCorrespond187" xml:space="preserve">
+    <value>अंतिम ऑडिट रिपोर्ट (समाज की) की सत्यापित फोटोकॉपी</value>
+  </data>
+  <data name="lblCorrespond188" xml:space="preserve">
+    <value>14. विद्यालय के खेल के मैदान की जानकारी के संबंध में प्रमाणित अभिलेख</value>
+  </data>
+  <data name="lblCorrespond189" xml:space="preserve">
+    <value>15. संभावित कक्षा वार छात्र संख्या</value>
+  </data>
+  <data name="lblCorrespond19" xml:space="preserve">
+    <value>ज़िला</value>
+  </data>
+  <data name="lblCorrespond190" xml:space="preserve">
+    <value>16. संभावित वर्ग वार समय विभाजन चक्र</value>
+  </data>
+  <data name="lblCorrespond191" xml:space="preserve">
+    <value>संभावित शिक्षक वार समय विभाग चक्र</value>
+  </data>
+  <data name="lblCorrespond192" xml:space="preserve">
+    <value>18. विकलांगों को बंधी सुविधाओं के संबंध में संस्था का अपना प्रमाण पत्र</value>
+  </data>
+  <data name="lblCorrespond193" xml:space="preserve">
+    <value>19. एल. का. हां। (अरुण) यूके हां। (उदय) तथा कक्षा 1 से 4 तक के विद्यार्थियों के लिए भूतल पर व्यवस्था हो।</value>
+  </data>
+  <data name="lblCorrespond194" xml:space="preserve">
+    <value>विद्यालय भवन का भूतल प्रथम तल तथा द्वितीय तल (तीन तल) से अधिक नहीं होना चाहिए। सेल्फ सर्टिफिकेशन चाहिए।</value>
+  </data>
+  <data name="lblCorrespond195" xml:space="preserve">
+    <value>21. भवन के दो पोस्टकार्ड आकार के रंगीन फोटो संलग्न हैं।</value>
+  </data>
+  <data name="lblCorrespond196" xml:space="preserve">
+    <value>22. प्री-माध्यमिक के दोनों प्रखंडों के छात्रों की संख्या में किसी भी तरह का अंतर नहीं होना चाहिए.</value>
+  </data>
+  <data name="lblCorrespond197" xml:space="preserve">
+    <value>महर्षि पतंजलि संस्कृत संस्थान, म.प्र. अरुण, उदय में कक्षा 1 से 4 तक के लिए निर्धारित मानकों को पूरा किया जाना चाहिए (परिशिष्ट-5)।</value>
+  </data>
+  <data name="lblCorrespond198" xml:space="preserve">
+    <value>नोट:- उपरोक्त अभिलेखों की जो भी फोटोकॉपी संलग्न है, उसे राजपत्रित अधिकारी से प्रमाणित करवा लें।</value>
+  </data>
+  <data name="lblCorrespond199" xml:space="preserve">
+    <value>परिशिष्ट 4
+</value>
+  </data>
+  <data name="lblCorrespond2" xml:space="preserve">
+    <value>एलकेजी/यूकेजी/कक्षा 1-4/प्रवेशिका/पुरमाधिमा/उत्तरमाधिमा वर्ग के लिए संस्कृत विद्यालय संचालित</value>
+  </data>
+  <data name="lblCorrespond20" xml:space="preserve">
+    <value>पिन कोड</value>
+  </data>
+  <data name="lblCorrespond200" xml:space="preserve">
+    <value>प्रतिनिधि नवीनीकरण आवेदन पत्र वर्ष 2023-24</value>
+  </data>
+  <data name="lblCorrespond201" xml:space="preserve">
+    <value>एलकेजी/यूकेजी/कक्षा 1-4/प्रवेशिका/पुरमाधिमा/उत्तरमाधिमा वर्ग के लिए संस्कृत विद्यालय संचालित</value>
+  </data>
+  <data name="lblCorrespond202" xml:space="preserve">
+    <value>शैक्षणिक व्यवस्था विवरण</value>
+  </data>
+  <data name="lblCorrespond203" xml:space="preserve">
+    <value>हेड मिस्ट्रेस</value>
+  </data>
+  <data name="lblCorrespond204" xml:space="preserve">
+    <value>हेड मिस्ट्रेस योग्यता</value>
+  </data>
+  <data name="lblCorrespond205" xml:space="preserve">
+    <value>प्रधान मालकिन</value>
+  </data>
+  <data name="lblCorrespond206" xml:space="preserve">
+    <value>प्रधान योग्यता</value>
+  </data>
+  <data name="lblCorrespond207" xml:space="preserve">
+    <value>संस्कृत योग्य शिक्षकों की कुल संख्या</value>
+  </data>
+  <data name="lblCorrespond208" xml:space="preserve">
+    <value>एम.एड</value>
+  </data>
+  <data name="lblCorrespond209" xml:space="preserve">
+    <value>बी एड</value>
+  </data>
+  <data name="lblCorrespond21" xml:space="preserve">
+    <value>मोबाइल नंबर
+</value>
+  </data>
+  <data name="lblCorrespond210" xml:space="preserve">
+    <value>शिक्षा शास्त्री</value>
+  </data>
+  <data name="lblCorrespond211" xml:space="preserve">
+    <value>डी.एड</value>
+  </data>
+  <data name="lblCorrespond212" xml:space="preserve">
+    <value>बीटीआई</value>
+  </data>
+  <data name="lblCorrespond213" xml:space="preserve">
+    <value>आधुनिक विषयों के योग्य शिक्षकों की कुल संख्या</value>
+  </data>
+  <data name="lblCorrespond214" xml:space="preserve">
+    <value>एम.एड</value>
+  </data>
+  <data name="lblCorrespond215" xml:space="preserve">
+    <value>बी एड</value>
+  </data>
+  <data name="lblCorrespond216" xml:space="preserve">
+    <value>शिक्षा शास्त्री</value>
+  </data>
+  <data name="lblCorrespond217" xml:space="preserve">
+    <value>डी.एड</value>
+  </data>
+  <data name="lblCorrespond218" xml:space="preserve">
+    <value>बीटीआई</value>
+  </data>
+  <data name="lblCorrespond219" xml:space="preserve">
+    <value>प्रोफेसर योग्य शिक्षकों की कुल संख्या</value>
+  </data>
+  <data name="lblCorrespond22" xml:space="preserve">
+    <value>प्रतिनिधि नवीनीकरण आवेदन पत्र वर्ष 2023-24</value>
+  </data>
+  <data name="lblCorrespond220" xml:space="preserve">
+    <value>एम.एड</value>
+  </data>
+  <data name="lblCorrespond221" xml:space="preserve">
+    <value>बी एड</value>
+  </data>
+  <data name="lblCorrespond222" xml:space="preserve">
+    <value>शिक्षा शास्त्री</value>
+  </data>
+  <data name="lblCorrespond223" xml:space="preserve">
+    <value>डी.एड</value>
+  </data>
+  <data name="lblCorrespond224" xml:space="preserve">
+    <value>बीटीआई</value>
+  </data>
+  <data name="lblCorrespond225" xml:space="preserve">
+    <value>उच्च श्रेणी योग्य शिक्षकों की कुल संख्या</value>
+  </data>
+  <data name="lblCorrespond226" xml:space="preserve">
+    <value>एम.एड</value>
+  </data>
+  <data name="lblCorrespond227" xml:space="preserve">
+    <value>बी एड</value>
+  </data>
+  <data name="lblCorrespond228" xml:space="preserve">
+    <value>शिक्षा शास्त्री</value>
+  </data>
+  <data name="lblCorrespond229" xml:space="preserve">
+    <value>डी.एड</value>
+  </data>
+  <data name="lblCorrespond23" xml:space="preserve">
+    <value>एलकेजी/यूकेजी/कक्षा 1-4/प्रवेशिका/पुरमाधिमा/उत्तरमाधिमा वर्ग के लिए संस्कृत विद्यालय संचालित</value>
+  </data>
+  <data name="lblCorrespond230" xml:space="preserve">
+    <value>बीटीआई</value>
+  </data>
+  <data name="lblCorrespond231" xml:space="preserve">
+    <value>सहायक योग्य शिक्षकों की कुल संख्या</value>
+  </data>
+  <data name="lblCorrespond232" xml:space="preserve">
+    <value>एम.एड</value>
+  </data>
+  <data name="lblCorrespond233" xml:space="preserve">
+    <value>बी एड</value>
+  </data>
+  <data name="lblCorrespond234" xml:space="preserve">
+    <value>शिक्षा शास्त्री</value>
+  </data>
+  <data name="lblCorrespond235" xml:space="preserve">
+    <value>डी.एड</value>
+  </data>
+  <data name="lblCorrespond236" xml:space="preserve">
+    <value>बीटीआई</value>
+  </data>
+  <data name="lblCorrespond237" xml:space="preserve">
+    <value>पी.टी.आई</value>
+  </data>
+  <data name="lblCorrespond238" xml:space="preserve">
+    <value>सहायक शिक्षक विज्ञान</value>
+  </data>
+  <data name="lblCorrespond239" xml:space="preserve">
+    <value>अध्ययन माध्यम</value>
+  </data>
+  <data name="lblCorrespond24" xml:space="preserve">
+    <value>सोसायटी विवरण</value>
+  </data>
+  <data name="lblCorrespond240" xml:space="preserve">
+    <value>छात्रों द्वारा दी गई फीस का विवरण</value>
+  </data>
+  <data name="lblCorrespond241" xml:space="preserve">
+    <value>प्रथमा</value>
+  </data>
+  <data name="lblCorrespond242" xml:space="preserve">
+    <value>पूर्वमदीयमा</value>
+  </data>
+  <data name="lblCorrespond243" xml:space="preserve">
+    <value>उत्तरमाद्यमा</value>
+  </data>
+  <data name="lblCorrespond244" xml:space="preserve">
+    <value>कार्यरत कर्मचारियों का विवरण</value>
+  </data>
+  <data name="lblCorrespond245" xml:space="preserve">
+    <value>बही खाता</value>
+  </data>
+  <data name="lblCorrespond246" xml:space="preserve">
+    <value>सहायक अधिकारी</value>
+  </data>
+  <data name="lblCorrespond247" xml:space="preserve">
+    <value>चौथी कक्षा</value>
+  </data>
+  <data name="lblCorrespond248" xml:space="preserve">
+    <value>महर्षि पतंजलि संस्कृत संस्थान भोपाल की वर्ष 2022-23 की नवीन संबद्धता संलग्न, भेजे जाने वाले अभिलेखों का विवरण</value>
+  </data>
+  <data name="lblCorrespond249" xml:space="preserve">
+    <value>परिशिष्ट 1</value>
+  </data>
+  <data name="lblCorrespond25" xml:space="preserve">
+    <value>सोसायटी रजिस्ट्रेशन नं</value>
+  </data>
+  <data name="lblCorrespond250" xml:space="preserve">
+    <value>1. समिति का स्थगन प्रस्ताव। हाँ नही</value>
+  </data>
+  <data name="lblCorrespond251" xml:space="preserve">
+    <value>2. सोसायटी का पंजीकरण पंजीयक एवं फर्म सोसायटी द्वारा जारी प्रमाण पत्र की प्रति हां/नहीं</value>
+  </data>
+  <data name="lblCorrespond252" xml:space="preserve">
+    <value>3.समिति का प्रमाणित मैनुअल (रजिस्ट्रार और फर्म सोसायटी द्वारा जारी) हाँ नहीं</value>
+  </data>
+  <data name="lblCorrespond253" xml:space="preserve">
+    <value>4. प्रबंध समिति (धारा 27) के सदस्यों की सूची की सत्यापित फोटोकॉपी जो अध्ययन की स्थिति के हों। हाँ नही</value>
+  </data>
+  <data name="lblCorrespond254" xml:space="preserve">
+    <value>5. अध्यापन कार्य करने वाले शिक्षकों की योग्यता एवं नियुक्ति की तिथि के साथ-साथ आवेदन पत्र में वर्णित निम्नलिखित सूचना (शास्त्री/आचार्य सहित संस्कृत योग्य) प्रत्येक कक्षा एवं प्रत्येक विषय के लिए अलग-अलग लागू संस्कृत विद्यालयों में शिक्षकों के साथ वांछित शैक्षणिक योग्यता होना अनिवार्य है वांछित शैक्षिक योग्यता का अर्थ है कि एल.के.जी. प्रवेशिका के लिए (अरुण) से संबंधित एच.एस. / उत्तर माध्यमिक और डी. एड. / बी। टी.आई./बी.टी.सी. तथा प्रथम से मध्य तक के विषय में शास्त्री एवं बीएड. / शिक्षा शास्त्री व आचार्य / एम.ए. (संस्कृत) व बी.एड / शिक्षा शास्त्री के लिए योग्य शिक्षक होना अनिवार्य है। हाँ नही</value>
+  </data>
+  <data name="lblCorrespond255" xml:space="preserve">
+    <value>6. भूमि/भवन के स्वामित्व की पंजीकृत फोटोकॉपी और पूरे भवन की फोटो हां/नहीं</value>
+  </data>
+  <data name="lblCorrespond256" xml:space="preserve">
+    <value>7. भूमि/भवन, नगरीय निकाय, ग्राम के स्वामित्व का खसरा नकल नक्शा पंचायत द्वारा प्रमाणित हां/नहीं</value>
+  </data>
+  <data name="lblCorrespond257" xml:space="preserve">
+    <value>8. यदि वर्तमान विद्यालय भवन किराये पर है तो किराया विलेख की पंजीकृत या नोटरीकृत प्रति हाँ/नहीं</value>
+  </data>
+  <data name="lblCorrespond258" xml:space="preserve">
+    <value>9. वर्तमान विद्यालय भवन के मानचित्र की सत्यापित छायाप्रति नगर निगम, नगर पालिका या ग्राम पंचायत द्वारा। हाँ नही</value>
+  </data>
+  <data name="lblCorrespond259" xml:space="preserve">
+    <value>10. निरीक्षण प्रतिवेदन जिला शिक्षा अधिकारी की राय से हां/नहीं</value>
+  </data>
+  <data name="lblCorrespond26" xml:space="preserve">
+    <value>पंजीकरण की तारीख</value>
+  </data>
+  <data name="lblCorrespond260" xml:space="preserve">
+    <value>11. जिला शिक्षा अधिकारी द्वारा देय विभागीय अनुमति की प्रमाणित प्रति हाँ/नहीं</value>
+  </data>
+  <data name="lblCorrespond261" xml:space="preserve">
+    <value>12. प्रयोगशाला में उपलब्ध उपकरण एवं सामग्री की प्रमाणित प्रति हाँ/नहीं</value>
+  </data>
+  <data name="lblCorrespond262" xml:space="preserve">
+    <value>13. अंतिम ऑडिट रिपोर्ट (समाज की) की सत्यापित फोटोकॉपी हां/नहीं</value>
+  </data>
+  <data name="lblCorrespond263" xml:space="preserve">
+    <value>14. विद्यालय के खेल के मैदान की जानकारी के संबंध में प्रमाणित अभिलेख हां/नहीं</value>
+  </data>
+  <data name="lblCorrespond264" xml:space="preserve">
+    <value>15. अपेक्षित कक्षावार छात्र संख्या हाँ/नहीं</value>
+  </data>
+  <data name="lblCorrespond265" xml:space="preserve">
+    <value>16. संभावित कक्षावार समय विभाजन चक्र हां/नहीं</value>
+  </data>
+  <data name="lblCorrespond266" xml:space="preserve">
+    <value>17. अपेक्षित शिक्षकवार समय विभाग चक्र</value>
+  </data>
+  <data name="lblCorrespond267" xml:space="preserve">
+    <value>18. निःशक्त एल.के.जी. (अरुण) यूके हां। (उदय) तथा भूतल पर कक्षा 1 से 4 के विद्यार्थियों के लिए हाँ नहीं</value>
+  </data>
+  <data name="lblCorrespond268" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCorrespond269" xml:space="preserve">
+    <value>19. व्यवस्था हो। विद्यालय का भवन भूतल, प्रथम तल, द्वितीय तल (तीन तल) से अधिक नहीं होना चाहिए हां/नहीं</value>
+  </data>
+  <data name="lblCorrespond27" xml:space="preserve">
+    <value>वैधता तिथि</value>
+  </data>
+  <data name="lblCorrespond270" xml:space="preserve">
+    <value>20. आवश्यक (स्व प्रमाणीकरण)।</value>
+  </data>
+  <data name="lblCorrespond271" xml:space="preserve">
+    <value>21. भवन के पोस्टकार्ड आकार के दो रंगीन फोटो संलग्न हैं। हाँ नही</value>
+  </data>
+  <data name="lblCorrespond272" xml:space="preserve">
+    <value>टिप्पणी :-</value>
+  </data>
+  <data name="lblCorrespond273" xml:space="preserve">
+    <value>हाँ नही</value>
+  </data>
+  <data name="lblCorrespond274" xml:space="preserve">
+    <value>01. उपरोक्त अभिलेखों की जो भी छायाप्रति संलग्न हैं, उन्हें स्वप्रमाणन द्वारा प्रमाणित करा लें।</value>
+  </data>
+  <data name="lblCorrespond275" xml:space="preserve">
+    <value>संस्था प्राचार्य/निदेशक</value>
+  </data>
+  <data name="lblCorrespond276" xml:space="preserve">
+    <value>परिशिष्ट 2 7 ए-3</value>
+  </data>
+  <data name="lblCorrespond277" xml:space="preserve">
+    <value>शपत पात्र</value>
+  </data>
+  <data name="lblCorrespond278" xml:space="preserve">
+    <value>मैं_ पिता का नाम_  _ आयु_  _ प्रधान / संस्था प्रमुख सचिव / रिजर्व _ _</value>
+  </data>
+  <data name="lblCorrespond279" xml:space="preserve">
+    <value>संघ समिति सत्यनिष्ठा से पुष्टि करती है कि-</value>
+  </data>
+  <data name="lblCorrespond28" xml:space="preserve">
+    <value>पैन नंबर (आयकर संख्या)</value>
+  </data>
+  <data name="lblCorrespond280" xml:space="preserve">
+    <value>1. कि संबद्धता के लिए दिए गए आवेदन पत्र में उल्लिखित सभी प्रविष्टियां और अभिलेख संस्था के मूल प्रति में रखे जाने चाहिए। दस्तावेजों के अनुसार प्रमाणित। ये सभी रूप सही और कानूनी हैं।</value>
+  </data>
+  <data name="lblCorrespond281" xml:space="preserve">
+    <value>2. यह कि आवेदन में किसी भी तथ्य/प्रविष्टियों को छुपाया नहीं गया है यदि कोई सूचना/रिकॉर्ड है या यदि प्रविष्टियां गलत पाई जाती हैं तो मैं व्यक्तिगत रूप से जिम्मेदार रहूंगा।</value>
+  </data>
+  <data name="lblCorrespond282" xml:space="preserve">
+    <value>3. संस्था की प्रबंध समिति के अध्यक्ष/सचिव एवं सदस्य एवं संस्था के समस्त कार्यरत प्राचार्य/प्राचार्य एवं शिक्षक एवं कर्मचारियों की पूर्व में कोई आपराधिक पृष्ठभूमि नहीं रही है तथा वर्तमान में भी उन पर कोई आपराधिक मामला नहीं है. केस पेंडिंग नहीं है।</value>
+  </data>
+  <data name="lblCorrespond283" xml:space="preserve">
+    <value>4. मैंने महर्षि पतंजलि संस्कृत संस्थान की संबद्धता के संबंध में सभी नियम और शर्तें पढ़ ली हैं और सभी शर्तों को स्वीकार करता हूं।</value>
+  </data>
+  <data name="lblCorrespond284" xml:space="preserve">
+    <value>5. आवेदन पत्र एवं शपथ पत्र में दी गई जानकारी पूर्णतः सत्य है, यदि कोई सूचना असत्य पायी जाती है तो विद्यालय के संबद्धता आवेदन को निरस्त करने एवं प्राप्त संबद्धता को समाप्त करने का अधिकार संस्थान के पास रहेगा।</value>
+  </data>
+  <data name="lblCorrespond285" xml:space="preserve">
+    <value>6. छात्रों को महर्षि पतंजलि संस्कृत संस्थान द्वारा निर्धारित पाठ्यक्रम में ही अध्ययन कराया जायेगा। पाठ्यक्रम अध्ययन नहीं कराने की स्थिति में संस्था की संबद्धता निरस्त मानी जायेगी।</value>
+  </data>
+  <data name="lblCorrespond286" xml:space="preserve">
+    <value>7. किसी भी कानूनी विवाद की स्थिति में क्षेत्राधिकार भोपाल होगा।</value>
+  </data>
+  <data name="lblCorrespond287" xml:space="preserve">
+    <value>8. संस्था परिशिष्ट-5 में वर्णित अरुण से उत्तर माध्यमिक अन्तिम खण्ड तक की कक्षाओं के लिए निर्धारित मानदण्डों को पूर्ण करती है। है।</value>
+  </data>
+  <data name="lblCorrespond288" xml:space="preserve">
+    <value>शपथ लेने वाला नाम</value>
+  </data>
+  <data name="lblCorrespond289" xml:space="preserve">
+    <value>अध्यक्ष / सचिव</value>
+  </data>
+  <data name="lblCorrespond29" xml:space="preserve">
+    <value>सोसायटी में सदस्य की संख्या</value>
+  </data>
+  <data name="lblCorrespond290" xml:space="preserve">
+    <value>सत्यापन</value>
+  </data>
+  <data name="lblCorrespond291" xml:space="preserve">
+    <value>मैं स्वयं _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ निवासी _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ खुद _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ सत्यापित किया जाता है कि इस हलफनामे में पैरा नं. 01 से 05 तक की सूचना सही एवं सत्य है।</value>
+  </data>
+  <data name="lblCorrespond292" xml:space="preserve">
+    <value>जगह</value>
+  </data>
+  <data name="lblCorrespond293" xml:space="preserve">
+    <value>शपथ लेने वाला</value>
+  </data>
+  <data name="lblCorrespond294" xml:space="preserve">
+    <value>परिशिष्ट -3</value>
+  </data>
+  <data name="lblCorrespond295" xml:space="preserve">
+    <value>73-4</value>
+  </data>
+  <data name="lblCorrespond296" xml:space="preserve">
+    <value>महर्षि पतंजलि संस्कृत संस्थान भोपाल की ओर से नवीन सम्बद्धता 2023-24 हेतु आवश्यक निर्देश -</value>
+  </data>
+  <data name="lblCorrespond297" xml:space="preserve">
+    <value>1. नवीन सम्बद्धता हेतु आवेदन म.प्र. ऑनलाइन भरने की अंतिम तिथि 15 नवंबर 2022</value>
+  </data>
+  <data name="lblCorrespond298" xml:space="preserve">
+    <value>2. आवेदन पत्र भरने के बाद हार्ड कॉपी (दो प्रतियों में पूरे अभिलेख के साथ) जिला शिक्षा अधिकारी को कार्यालय में जमा करने की तिथि 15 दिसंबर 2022 भेजी जाएगी</value>
+  </data>
+  <data name="lblCorrespond299" xml:space="preserve">
+    <value>3. महर्षि पतंजलि संस्कृत संस्थान में आवेदन पत्र (पूरे अभिलेख सहित) देय तिथि 30 दिसम्बर 20022 जमा करना अनिवार्य होगा।</value>
+  </data>
+  <data name="lblCorrespond3" xml:space="preserve">
+    <value>स्कूल विवरण</value>
+  </data>
+  <data name="lblCorrespond30" xml:space="preserve">
+    <value>सोसायटी सदस्यों के पंजीकरण आवेदन पत्र की सूची संलग्न करें।</value>
+  </data>
+  <data name="lblCorrespond300" xml:space="preserve">
+    <value>4. संबंधित विद्यालय द्वारा जिला शिक्षा कार्यालय को निरीक्षण हेतु प्रस्तुत आवेदन पत्रों के निर्धारित मापदण्ड के आधार पर जिला शिक्षा अधिकारी एवं विभागीय द्वारा निरीक्षण हेतु विद्यालय का निरीक्षण दल गठित कर प्रतिवेदन म.प्र. अनुमति दिनांक 15 जनवरी 2023 तक ऑनलाइन कार्यालय में 10 फरवरी 2023 तक जमा करना सुनिश्चित करें 15 शुल्क-</value>
+  </data>
+  <data name="lblCorrespond301" xml:space="preserve">
+    <value>5. शुल्क विवरण</value>
+  </data>
+  <data name="lblCorrespond302" xml:space="preserve">
+    <value>नई संबद्धता के लिए निश्चित शुल्क राशि</value>
+  </data>
+  <data name="lblCorrespond303" xml:space="preserve">
+    <value>क्रम संख्या वर्ग स्तर वर्ष के लिए निश्चित शुल्क राशि नई संबद्धता के लिए (एक वर्ष के लिए)</value>
+  </data>
+  <data name="lblCorrespond304" xml:space="preserve">
+    <value>1 एल.के.जी. (अरुण) से वर्ग 04 1,000/-</value>
+  </data>
+  <data name="lblCorrespond305" xml:space="preserve">
+    <value>2 एल.के.जी. (अरुण) से प्रवेशिका 3,000/-</value>
+  </data>
+  <data name="lblCorrespond306" xml:space="preserve">
+    <value>3 एल.के.जी. (अरुण) से प्रथमा 2,000/-</value>
+  </data>
+  <data name="lblCorrespond307" xml:space="preserve">
+    <value>4 एल.के.जी. (अरुण) फिर से एक 11,000/-</value>
+  </data>
+  <data name="lblCorrespond308" xml:space="preserve">
+    <value>5 (L.K.G. (असम) से उनके 13,000/- तक</value>
+  </data>
+  <data name="lblCorrespond309" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCorrespond31" xml:space="preserve">
+    <value>सोसायटी अध्यक्ष का नाम/ सचिव का नाम</value>
+  </data>
+  <data name="lblCorrespond310" xml:space="preserve">
+    <value>6. केवल नई संबद्धता चाहने वाले अशासकीय प्राच्य/परंपरागत आवासीय संस्कृत विद्यालयों (छात्रावास सहित) के लिए सभी स्तरों के लिए आवेदन पत्र शुल्क रु. 500/- निर्धारित है। ऐसे विद्यालय प्राच्य/पारंपरिक आवासीय संस्कृत विद्यालय (छात्रावास सहित) श्रेणी के हैं, म.प्र. में नवीन सम्बद्धता हेतु आवेदन करते हैं। ऑनलाइन आवेदन करते समय केवल रु। का आवेदन शुल्क। 500/- का भुगतान करना होगा। जिसके आधार पर जिला शिक्षा अधिकारी की विभागीय अनुमति/अनुशंसा प्राप्त होने पर संस्थान द्वारा स्थल परीक्षण किया जायेगा एवं विद्यालय को परम्परागत आवासीय संस्कृत विद्यालय (छात्रावास सहित) के रूप में मान्यता दी जायेगी। प्राच्य / संस्थान द्वारा किये गये निरीक्षण में पारम्परिक आवासीय संस्कृत विद्यालय (छात्रावास सहित) की श्रेणी में अशक्तता की स्थिति में संबंधित विद्यालय को सामान्य अशासकीय विद्यालय माना जायेगा। श्रेणी में रखा जायेगा। जिसके आधार पर सामान्य अशासकीय विद्यालयों को नवीन संबद्धता हेतु निर्धारित शुल्क की राशि संबंधित विद्यालय के डीडी को परिच्छेद 8 पर संस्थान कार्यालय में जमा करना होगा। जिसके आधार पर इन स्कूलों के छात्र परीक्षा में शामिल होने के पात्र होंगे।</value>
+  </data>
+  <data name="lblCorrespond311" xml:space="preserve">
+    <value>7. शासकीय संस्कृत विद्यालयों के लिए केवल आवेदन पत्र शुल्क निर्धारित है, शेष शुल्क से मुक्त रहेगा।</value>
+  </data>
+  <data name="lblCorrespond312" xml:space="preserve">
+    <value>8. धारा 2 के अनुसार 30 दिनों तक विलंब शुल्क के साथ आवेदन किया जा सकता है। विलम्ब शुल्क क्लॉज 8 के अनुसार राशि का दोगुना होगा।</value>
+  </data>
+  <data name="lblCorrespond313" xml:space="preserve">
+    <value>9. सांसद। ऑनलाइन आवेदन करते समय स्कूल कहाँ संचालित किया जा रहा है, या संचालित किया जाना है। उस गांव/कस्बे/स्थान का पूरा पता पोस्ट ऑफिस का पिन कोड डालें</value>
+  </data>
+  <data name="lblCorrespond314" xml:space="preserve">
+    <value>10. , म. प्र. ऑनलाइन से आवेदन करने के पश्चात यदि हार्ड कॉपी प्रमाण पत्रों सहित निर्धारित समय तक महर्षि पतंजलि संस्कृत संस्थान, संस्कृत भवन को भेज दी जाती है। तुलसी नगर, द्वितीय पड़ाव, भोपाल, मध्य प्रदेश -462003, तो संबद्धता पर विचार नहीं किया जायेगा, इसके लिए संस्था स्वयं जिम्मेवार होगी।</value>
+  </data>
+  <data name="lblCorrespond315" xml:space="preserve">
+    <value>11. उपरोक्त जानकारी/प्रमाणपत्र आदि संलग्न न होने तथा संदिग्ध प्रतीत होने पर संबद्धता प्रदान नहीं की जायेगी। दी गई संबद्धता बिना किसी पूर्व सूचना के समाप्त कर दी जाएगी।</value>
+  </data>
+  <data name="lblCorrespond316" xml:space="preserve">
+    <value>परिशिष्ट 4</value>
+  </data>
+  <data name="lblCorrespond317" xml:space="preserve">
+    <value>73-5</value>
+  </data>
+  <data name="lblCorrespond318" xml:space="preserve">
+    <value>महर्षि पतंजलि संस्कृत संस्थान भोपाल की नवीन संबद्धता वर्ष 2022-23 हेतु नीतिगत निर्देश एवं मानदंड</value>
+  </data>
+  <data name="lblCorrespond319" xml:space="preserve">
+    <value>परिशिष्ट-4</value>
+  </data>
+  <data name="lblCorrespond32" xml:space="preserve">
+    <value>शहर/गाँव</value>
+  </data>
+  <data name="lblCorrespond320" xml:space="preserve">
+    <value>1. समिति का स्थगन प्रस्ताव।</value>
+  </data>
+  <data name="lblCorrespond321" xml:space="preserve">
+    <value>2. सोसायटी का रजिस्ट्रेशन रजिस्ट्रार एंड फर्म सोसायटी द्वारा जारी सर्टिफिकेट की कॉपी</value>
+  </data>
+  <data name="lblCorrespond322" xml:space="preserve">
+    <value>3. सोसायटी का प्रमाणित मैनुअल (रजिस्ट्रार और फर्म सोसायटी द्वारा जारी)</value>
+  </data>
+  <data name="lblCorrespond323" xml:space="preserve">
+    <value>4. प्रबंध समिति के सदस्यों की सूची (धारा 27) की सत्यापित छायाप्रति जो नवीनतम स्थिति की हो।</value>
+  </data>
+  <data name="lblCorrespond324" xml:space="preserve">
+    <value>5. अध्यापन हेतु कार्यरत शिक्षकों की योग्यता एवं नियुक्ति तिथि सहित निम्नानुसार सूचना] (संस्कृत योग्यताधारी, शास्त्री/आचार्य सहित) जैसा कि आवेदन पत्र में उल्लेखित है, लागू संस्कृत विद्यालय में प्रत्येक कक्षा एवं प्रत्येक विषय के लिए अलग-अलग, वांछित शैक्षणिक योग्यता वाले शिक्षक। वांछित शैक्षणिक योग्यता का होना अनिवार्य है जिसका अर्थ है कि एल.के.जी. प्रवेशिका के लिए (अरुण) से संबंधित एच.एस. / उत्तर माध्यमिक और डी.एड./बी. टी.आई./पी.टी.सी. तथा प्रथम से मध्य तक के विषय में शास्त्री एवं बीएड. / शिक्षा शास्त्री व आचार्य / एम.ए. (संस्कृत) व बी.एड / शिक्षा शास्त्री के लिए योग्य शिक्षक होना अनिवार्य है।</value>
+  </data>
+  <data name="lblCorrespond325" xml:space="preserve">
+    <value>6. भूमि/भवन के स्वामित्व/किराया विलेख की पंजीकृत फोटोकॉपी और पूरे भवन की फोटो</value>
+  </data>
+  <data name="lblCorrespond326" xml:space="preserve">
+    <value>7. नगरीय निकाय, ग्राम पंचायत द्वारा प्रमाणित भूमि/भवन के स्वामित्व का खसरा प्रति नक्शा</value>
+  </data>
+  <data name="lblCorrespond327" xml:space="preserve">
+    <value>8. यदि वर्तमान विद्यालय भवन किराये पर है तो पंजीकृत या नोटरीकृत किराया विलेख की फोटोकॉपी</value>
+  </data>
+  <data name="lblCorrespond328" xml:space="preserve">
+    <value>9. पंचायत द्वारा वर्तमान विद्यालय भवन, नगर निगम, नगर पालिका या ग्राम के मानचित्र की सत्यापित छायाप्रति।</value>
+  </data>
+  <data name="lblCorrespond329" xml:space="preserve">
+    <value>10. जिला शिक्षा अधिकारी का निरीक्षण प्रतिवेदन विवरण सहित</value>
+  </data>
+  <data name="lblCorrespond33" xml:space="preserve">
+    <value>डाक</value>
+  </data>
+  <data name="lblCorrespond330" xml:space="preserve">
+    <value>11. जिला शिक्षा अधिकारी द्वारा देय विभागीय अनुमति की प्रमाणित प्रति</value>
+  </data>
+  <data name="lblCorrespond331" xml:space="preserve">
+    <value>12. प्रयोगशाला में उपलब्ध उपकरण एवं सामग्री की प्रमाणित प्रति</value>
+  </data>
+  <data name="lblCorrespond332" xml:space="preserve">
+    <value>13 अंतिम ऑडिट रिपोर्ट (समाज की) की सत्यापित फोटोकॉपी</value>
+  </data>
+  <data name="lblCorrespond333" xml:space="preserve">
+    <value>14. विद्यालय के खेल के मैदान की जानकारी के संबंध में प्रमाणित अभिलेख</value>
+  </data>
+  <data name="lblCorrespond334" xml:space="preserve">
+    <value>15. संभावित कक्षा वार छात्र संख्या</value>
+  </data>
+  <data name="lblCorrespond335" xml:space="preserve">
+    <value>16. संभावित वर्ग वार समय विभाजन चक्र</value>
+  </data>
+  <data name="lblCorrespond336" xml:space="preserve">
+    <value>17. संभावित शिक्षक वार समय विभाग चक्र</value>
+  </data>
+  <data name="lblCorrespond337" xml:space="preserve">
+    <value>18. विकलांगों को बंधी सुविधाओं के संबंध में संस्था का अपना प्रमाण पत्र</value>
+  </data>
+  <data name="lblCorrespond338" xml:space="preserve">
+    <value>19. एल. का. हां। (अरुण) यूके हां। (उदय) तथा कक्षा 1 से 4 तक के विद्यार्थियों के लिए भूतल पर व्यवस्था हो।</value>
+  </data>
+  <data name="lblCorrespond339" xml:space="preserve">
+    <value>20. विद्यालय भवन का भूतल प्रथम तल तथा द्वितीय तल (तीन तल) से अधिक नहीं होना चाहिए। सेल्फ सर्टिफिकेशन चाहिए।</value>
+  </data>
+  <data name="lblCorrespond34" xml:space="preserve">
+    <value>ज़िला</value>
+  </data>
+  <data name="lblCorrespond340" xml:space="preserve">
+    <value>21. भवन के दो पोस्टकार्ड आकार के रंगीन फोटो संलग्न हैं।</value>
+  </data>
+  <data name="lblCorrespond341" xml:space="preserve">
+    <value>22. प्री-माध्यमिक के दोनों प्रखंडों के छात्रों की संख्या में किसी भी तरह का अंतर नहीं होना चाहिए.</value>
+  </data>
+  <data name="lblCorrespond342" xml:space="preserve">
+    <value>23. महर्षि पतंजलि संस्कृत संस्थान, म.प्र. अरुण, उदय में कक्षा 1 से 4 तक के लिए निर्धारित मानकों को पूरा किया जाना चाहिए (परिशिष्ट-5)।</value>
+  </data>
+  <data name="lblCorrespond343" xml:space="preserve">
+    <value>नोट:- उपरोक्त अभिलेखों की जो भी फोटोकॉपी संलग्न है, उसे राजपत्रित अधिकारी से प्रमाणित करवा लें।</value>
+  </data>
+  <data name="lblCorrespond344" xml:space="preserve">
+    <value>परिशिष्ट 5</value>
+  </data>
+  <data name="lblCorrespond345" xml:space="preserve">
+    <value>महर्षि पतंजलि संस्कृत संस्थान</value>
+  </data>
+  <data name="lblCorrespond346" xml:space="preserve">
+    <value>मध्य प्रदेश भोपाल</value>
+  </data>
+  <data name="lblCorrespond347" xml:space="preserve">
+    <value>कक्षा 1 से 4 के लिए अरुण/उदय/मानदंड निर्धारित</value>
+  </data>
+  <data name="lblCorrespond348" xml:space="preserve">
+    <value>1. कर्मचारी</value>
+  </data>
+  <data name="lblCorrespond349" xml:space="preserve">
+    <value>(1) 20 बच्चों के लिए 1</value>
+  </data>
+  <data name="lblCorrespond35" xml:space="preserve">
+    <value>मोबाइल नंबर
+</value>
+  </data>
+  <data name="lblCorrespond350" xml:space="preserve">
+    <value>(2) 20 ऑन 1 कंपनी</value>
+  </data>
+  <data name="lblCorrespond351" xml:space="preserve">
+    <value>(3) प्रकाशन स्टाफ का होगा।</value>
+  </data>
+  <data name="lblCorrespond352" xml:space="preserve">
+    <value>(4) स्कूल में स्टाफ की नियुक्ति के लिए पुलिस अनिवार्य है।</value>
+  </data>
+  <data name="lblCorrespond353" xml:space="preserve">
+    <value>(5) या सोसाइटी जे जे एट अल के किसी भी सदस्य के खिलाफ।</value>
+  </data>
+  <data name="lblCorrespond354" xml:space="preserve">
+    <value>कोई समाधि नहीं होनी चाहिए।</value>
+  </data>
+  <data name="lblCorrespond355" xml:space="preserve">
+    <value>2. भवन</value>
+  </data>
+  <data name="lblCorrespond356" xml:space="preserve">
+    <value>(1) प्रत्येक में रहने के लिए शेड्यूल बिल्डिंग</value>
+  </data>
+  <data name="lblCorrespond357" xml:space="preserve">
+    <value>(2) भवन में सुरक्षा दीवार होनी चाहिए।</value>
+  </data>
+  <data name="lblCorrespond358" xml:space="preserve">
+    <value>(3) भवन में पर्याप्त संवातन (हवा और प्रकाश) की व्यवस्था होनी चाहिए।</value>
+  </data>
+  <data name="lblCorrespond359" xml:space="preserve">
+    <value>(4) अलग विश्राम कक्ष।</value>
+  </data>
+  <data name="lblCorrespond36" xml:space="preserve">
+    <value>पिन कोड</value>
+  </data>
+  <data name="lblCorrespond360" xml:space="preserve">
+    <value>(5) बंधन मुक्त साइट।</value>
+  </data>
+  <data name="lblCorrespond361" xml:space="preserve">
+    <value>(6) बच्चों के अनुकूल सुविधाओं के साथ लड़के और लड़कियों के लिए अलग-अलग शौचालय।</value>
+  </data>
+  <data name="lblCorrespond362" xml:space="preserve">
+    <value>7) साफ कपड़े, तौलिये साबुन नीचे रखना चाहिए, और वासिन आदि धोना चाहिए। नीचे स्थापित करना चाहिए (ऊंचाई पर नहीं)।</value>
+  </data>
+  <data name="lblCorrespond363" xml:space="preserve">
+    <value>(8) भोजन आदि के लिए पैंट्री।</value>
+  </data>
+  <data name="lblCorrespond364" xml:space="preserve">
+    <value>(9) खेल का मैदान होना चाहिए।</value>
+  </data>
+  <data name="lblCorrespond365" xml:space="preserve">
+    <value>(10) पूरे परिसर में सी.सी.टी.वी. कैमरे हैं</value>
+  </data>
+  <data name="lblCorrespond366" xml:space="preserve">
+    <value>(11) आग बुझाने वाला यंत्र भी होना चाहिए।</value>
+  </data>
+  <data name="lblCorrespond367" xml:space="preserve">
+    <value>(12) विद्यालय भवन सड़क से दूर होना चाहिए</value>
+  </data>
+  <data name="lblCorrespond368" xml:space="preserve">
+    <value>(13) तालाब खुला नहीं होना चाहिए।</value>
+  </data>
+  <data name="lblCorrespond369" xml:space="preserve">
+    <value>3 बार-</value>
+  </data>
+  <data name="lblCorrespond37" xml:space="preserve">
+    <value>समिति/संगठन द्वारा संचालित अन्य विद्यालयों/विद्यालयों के पत्राचार का नाम एवं पूरा पता सूची संलग्न करें</value>
+  </data>
+  <data name="lblCorrespond370" xml:space="preserve">
+    <value>राष्ट्रीय बाल संरक्षण एवं शिक्षा नीति 2013 के अनुसार प्रतिदिन 3 से 4 पद एवं (आवासीय कोई नहीं) विद्यालय</value>
+  </data>
+  <data name="lblCorrespond371" xml:space="preserve">
+    <value>4. शिक्षण सामग्री-</value>
+  </data>
+  <data name="lblCorrespond372" xml:space="preserve">
+    <value>महर्षि पतजती संस्कृत संस्थान द्वारा निर्धारित प्रत्येक कहानी के लिए छात्र संख्या के आधार पर अध्ययन सामग्री उपलब्ध कराई जाए</value>
+  </data>
+  <data name="lblCorrespond373" xml:space="preserve">
+    <value>5. पुस्तकालय प्रत्येक छोटे बच्चे के लिए पठन सामग्री भी उपयुक्त होनी चाहिए</value>
+  </data>
+  <data name="lblCorrespond374" xml:space="preserve">
+    <value>6. खेल का सामान-</value>
+  </data>
+  <data name="lblCorrespond375" xml:space="preserve">
+    <value>1. एम.सी.डी. द्वारा आपूर्ति की गई खेल सामग्री</value>
+  </data>
+  <data name="lblCorrespond376" xml:space="preserve">
+    <value>2. बच्चों के खेलने के लिए स्कूल के पास जगह होनी चाहिए।</value>
+  </data>
+  <data name="lblCorrespond377" xml:space="preserve">
+    <value>7. स्वास्थ्य-</value>
+  </data>
+  <data name="lblCorrespond378" xml:space="preserve">
+    <value>प्राथमिक चिकित्सा सामग्री, दवा किट, ओआरएसयू आदि समय सामग्री</value>
+  </data>
+  <data name="lblCorrespond379" xml:space="preserve">
+    <value>पंजीकृत चिकित्सक द्वारा उपचार सामग्री में शामिल</value>
+  </data>
+  <data name="lblCorrespond38" xml:space="preserve">
+    <value>अन्य जानकारी</value>
+  </data>
+  <data name="lblCorrespond380" xml:space="preserve">
+    <value>8. प्रवेश-</value>
+  </data>
+  <data name="lblCorrespond381" xml:space="preserve">
+    <value>तीन वर्ष से कम उम्र के बच्चों को असम उद्योग में प्रवेश नहीं दिया जाना चाहिए।</value>
+  </data>
+  <data name="lblCorrespond382" xml:space="preserve">
+    <value>9. रिकॉर्ड्स -</value>
+  </data>
+  <data name="lblCorrespond383" xml:space="preserve">
+    <value>(ए) बच्चों का नाम</value>
+  </data>
+  <data name="lblCorrespond384" xml:space="preserve">
+    <value>(ख) राज्य एवं नामंकन जिनके नाम भी माता-पिता का दिन अंकित हो</value>
+  </data>
+  <data name="lblCorrespond385" xml:space="preserve">
+    <value>(सी) उपस्थिति रजिस्टर भी</value>
+  </data>
+  <data name="lblCorrespond386" xml:space="preserve">
+    <value>(घ) समस्त शिक्षक/किटी</value>
+  </data>
+  <data name="lblCorrespond387" xml:space="preserve">
+    <value>(ई) स्टाफ विवरण रजिस्टर।</value>
+  </data>
+  <data name="lblCorrespond388" xml:space="preserve">
+    <value>(एफ) करण के भी सभी बच्चे हैं</value>
+  </data>
+  <data name="lblCorrespond389" xml:space="preserve">
+    <value>(छ) आवेदक संस्था के समस्त कर्मचारी राजपत्र एवं 2012 जूनिता अधिनियम</value>
+  </data>
+  <data name="lblCorrespond39" xml:space="preserve">
+    <value>किस क्षेत्र में स्कूल संचालित है</value>
+  </data>
+  <data name="lblCorrespond390" xml:space="preserve">
+    <value>2015 बाल श्रम अधिनियम 1960 एवं बाल श्रम नियम 2016 के अनुसार</value>
+  </data>
+  <data name="lblCorrespond391" xml:space="preserve">
+    <value>स्कूल और शिक्षकों की जिम्मेदारियां</value>
+  </data>
+  <data name="lblCorrespond392" xml:space="preserve">
+    <value>1. पी.टी.ए. यह हर साल प्रवेश के साथ-साथ एक महीने के भीतर बन जाना चाहिए। अभिभावक शिक्षक संघ में 75% माता-पिता रहेंगे, जिनमें से 50% माताएँ होंगी, 25% पिता होंगे और 25% शिक्षक होंगे।</value>
+  </data>
+  <data name="lblCorrespond393" xml:space="preserve">
+    <value>3. पी.टी.ए. पीटीए की समय अवधि 2 वर्ष का होगा। हर साल नया पी.टी.ए. गठित होगा</value>
+  </data>
+  <data name="lblCorrespond394" xml:space="preserve">
+    <value>4रत्येक माह शिक्षक-अभिभावक संघ की बैठक होगी, जिसे कार्यवाही में शामिल किया जायेगा. पी.टी.ए. केवीएस का मुख्य कार्य बच्चों को सुरक्षा, सुरक्षा और उचित वातावरण प्रदान करना है।</value>
+  </data>
+  <data name="lblCorrespond395" xml:space="preserve">
+    <value>खाद्य पदार्थों के समुचित पोषण के लिए भोजन व्यवस्था करना। 7. पंजीकृत चिकित्सक से नियमित स्वास्थ्य जांच कराएं।</value>
+  </data>
+  <data name="lblCorrespond396" xml:space="preserve">
+    <value>8. बुनियादी प्राथमिक उपचार के लिए दवा किट की व्यवस्था सुनिश्चित की जाए</value>
+  </data>
+  <data name="lblCorrespond4" xml:space="preserve">
+    <value>संवाददाता नवीनीकरण वर्ग</value>
+  </data>
+  <data name="lblCorrespond41" xml:space="preserve">
+    <value>ग्रामीण</value>
+  </data>
+  <data name="lblCorrespond42" xml:space="preserve">
+    <value>शहरी
+</value>
+  </data>
+  <data name="lblCorrespond43" xml:space="preserve">
+    <value>स्कूल क्षेत्र के नगर निगम / नगर पालिका / नगर पंचायत / ग्राम पंचायत का नाम</value>
+  </data>
+  <data name="lblCorrespond44" xml:space="preserve">
+    <value>जिला मुख्यालय से स्कूल की दूरी( कि.मी)</value>
+  </data>
+  <data name="lblCorrespond45" xml:space="preserve">
+    <value>निकटतम पुलिस स्टेशन का नाम</value>
+  </data>
+  <data name="lblCorrespond46" xml:space="preserve">
+    <value>निकटतम पुलिस स्टेशन स्कूल से दूरी( कि.मी)</value>
+  </data>
+  <data name="lblCorrespond47" xml:space="preserve">
+    <value>स्कूल से निकटतम पुलिस थाना प्रशासनिक प्रभाग</value>
+  </data>
+  <data name="lblCorrespond48" xml:space="preserve">
+    <value>स्कूल से निकटतम पुलिस स्टेशन फोन नंबर</value>
+  </data>
+  <data name="lblCorrespond49" xml:space="preserve">
+    <value>निकटतम सरकारी हाई स्कूल का नाम</value>
+  </data>
+  <data name="lblCorrespond5" xml:space="preserve">
+    <value>एलकेजी</value>
+  </data>
+  <data name="lblCorrespond50" xml:space="preserve">
+    <value>निकटतम सरकारी हाई स्कूल का नाम पता</value>
+  </data>
+  <data name="lblCorrespond51" xml:space="preserve">
+    <value>निकटतम सरकारी उच्च विद्यालय का नाम</value>
+  </data>
+  <data name="lblCorrespond52" xml:space="preserve">
+    <value>निकटतम सरकारी उच्च विद्यालय का नाम पता</value>
+  </data>
+  <data name="lblCorrespond53" xml:space="preserve">
+    <value>निकटतम सरकारी उच्च विद्यालय का नाम दूरी( कि.मी)</value>
+  </data>
+  <data name="lblCorrespond54" xml:space="preserve">
+    <value>निकटतम निजी हाई स्कूल का नाम</value>
+  </data>
+  <data name="lblCorrespond55" xml:space="preserve">
+    <value>निकटतम निजी हाई स्कूल का नाम पता</value>
+  </data>
+  <data name="lblCorrespond56" xml:space="preserve">
+    <value>निकटतम निजी हाई स्कूल का नाम दूरी( कि.मी)</value>
+  </data>
+  <data name="lblCorrespond57" xml:space="preserve">
+    <value>निकटतम निजी उच्च विद्यालय का नाम</value>
+  </data>
+  <data name="lblCorrespond58" xml:space="preserve">
+    <value>निकटतम निजी उच्च विद्यालय का नाम पता</value>
+  </data>
+  <data name="lblCorrespond59" xml:space="preserve">
+    <value>निकटतम निजी उच्च विद्यालय का नाम दूरी( कि.मी)</value>
+  </data>
+  <data name="lblCorrespond6" xml:space="preserve">
+    <value>यूकेजी</value>
+  </data>
+  <data name="lblCorrespond60" xml:space="preserve">
+    <value>स्कूल का प्रकार</value>
+  </data>
+  <data name="lblCorrespond61" xml:space="preserve">
+    <value>सह-शिक्षा
+</value>
+  </data>
+  <data name="lblCorrespond62" xml:space="preserve">
+    <value>लड़के</value>
+  </data>
+  <data name="lblCorrespond63" xml:space="preserve">
+    <value>लड़कियाँ
+</value>
+  </data>
+  <data name="lblCorrespond64" xml:space="preserve">
+    <value>छात्रावास</value>
+  </data>
+  <data name="lblCorrespond65" xml:space="preserve">
+    <value>क्या समाज दूसरे बोर्ड से संबंधित है</value>
+  </data>
+  <data name="lblCorrespond66" xml:space="preserve">
+    <value>हां</value>
+  </data>
+  <data name="lblCorrespond67" xml:space="preserve">
+    <value>नहीं</value>
+  </data>
+  <data name="lblCorrespond68" xml:space="preserve">
+    <value>बोर्ड या विश्वविद्यालय का नाम</value>
+  </data>
+  <data name="lblCorrespond69" xml:space="preserve">
+    <value>तारीख से</value>
+  </data>
+  <data name="lblCorrespond7" xml:space="preserve">
+    <value>कक्षा 1-4</value>
+  </data>
+  <data name="lblCorrespond70" xml:space="preserve">
+    <value>पंजीकरण क्रमांक</value>
+  </data>
+  <data name="lblCorrespond71" xml:space="preserve">
+    <value>पंजीकरण की तारीख</value>
+  </data>
+  <data name="lblCorrespond72" xml:space="preserve">
+    <value>विद्यालय/महाविद्यालय किस समिति द्वारा चलाया जा रहा है, क्या विद्यालय किसी अन्य मंडल/विश्वविद्यालय द्वारा या इसी नाम से चलाया जा रहा है</value>
+  </data>
+  <data name="lblCorrespond73" xml:space="preserve">
+    <value>क्या स्कूल प्रवेशिका और प्रथम कक्षाएं संचालित करता है, कृपया विवरण दें</value>
+  </data>
+  <data name="lblCorrespond74" xml:space="preserve">
+    <value>सरूप अवासी / गरवासी छात्रावास बालक एवं बालिकाओं के संस्कृत विद्यालय समवर्ग का सांख्य विवरण</value>
+  </data>
+  <data name="lblCorrespond75" xml:space="preserve">
+    <value>एलकेजी</value>
+  </data>
+  <data name="lblCorrespond76" xml:space="preserve">
+    <value>यूकेजी</value>
+  </data>
+  <data name="lblCorrespond77" xml:space="preserve">
+    <value>कक्षा 1-4
+</value>
+  </data>
+  <data name="lblCorrespond78" xml:space="preserve">
+    <value>प्रवासिका</value>
+  </data>
+  <data name="lblCorrespond79" xml:space="preserve">
+    <value>प्रथम प्रथखंड</value>
+  </data>
+  <data name="lblCorrespond8" xml:space="preserve">
+    <value>प्रवेशिका</value>
+  </data>
+  <data name="lblCorrespond80" xml:space="preserve">
+    <value>दुतीखंड</value>
+  </data>
+  <data name="lblCorrespond81" xml:space="preserve">
+    <value>अन्तिमखण्ड
+</value>
+  </data>
+  <data name="lblCorrespond82" xml:space="preserve">
+    <value>पोरवे पूर्वमदियामा</value>
+  </data>
+  <data name="lblCorrespond83" xml:space="preserve">
+    <value>पोरवे अन्तिमखण्ड</value>
+  </data>
+  <data name="lblCorrespond84" xml:space="preserve">
+    <value>उत्तर प्रतापखंड
+</value>
+  </data>
+  <data name="lblCorrespond85" xml:space="preserve">
+    <value>उत्तर अंतिमखंड</value>
+  </data>
+  <data name="lblCorrespond86" xml:space="preserve">
+    <value>अनुलग्नक दस्तावेज़</value>
+  </data>
+  <data name="lblCorrespond87" xml:space="preserve">
+    <value>कक्षाओं की समय सारिणी संलग्न करें</value>
+  </data>
+  <data name="lblCorrespond88" xml:space="preserve">
+    <value>संलग्न विषयवार शिक्षक शीट</value>
+  </data>
+  <data name="lblCorrespond89" xml:space="preserve">
+    <value>समय सारणी विवरण</value>
+  </data>
+  <data name="lblCorrespond9" xml:space="preserve">
+    <value>पुरमाधिमा</value>
+  </data>
+  <data name="lblCorrespond90" xml:space="preserve">
+    <value>कक्षा वार समय सारणी के बारे में जानकारी</value>
+  </data>
+  <data name="lblCorrespond91" xml:space="preserve">
+    <value>सुबह की पहली पाली की सूचना
+</value>
+  </data>
+  <data name="lblCorrespond92" xml:space="preserve">
+    <value>समय से</value>
+  </data>
+  <data name="lblCorrespond93" xml:space="preserve">
+    <value>समय पर</value>
+  </data>
+  <data name="lblCorrespond94" xml:space="preserve">
+    <value>कक्षा से</value>
+  </data>
+  <data name="lblCorrespond95" xml:space="preserve">
+    <value>वर्ग के लिए</value>
+  </data>
+  <data name="lblCorrespond96" xml:space="preserve">
+    <value>दोपहर बाद पहली पाली की सूचना</value>
+  </data>
+  <data name="lblCorrespond97" xml:space="preserve">
+    <value>समय पर</value>
+  </data>
+  <data name="lblCorrespond98" xml:space="preserve">
+    <value>कक्षा से</value>
+  </data>
+  <data name="lblCorrespond99" xml:space="preserve">
+    <value>वर्ग के लिए</value>
+  </data>
+  <data name="lblCorrespond555" xml:space="preserve">
+    <value>निकटतम सरकारी हाई स्कूल दूरी( कि.मी)</value>
+  </data>
+  <data name="lblCorrespond556" xml:space="preserve">
+    <value>प्राचार्य की योग्यता</value>
+  </data>
+  <data name="lblCorrespond559" xml:space="preserve">
+    <value>प्रयोगशालाओं के उपकरणों की सूची संलग्न करें</value>
+  </data>
+  <data name="lblCorrespond560" xml:space="preserve">
+    <value>स्कूल की जानकारी</value>
+  </data>
+  <data name="lblCorrespond561" xml:space="preserve">
+    <value>संस्था और अन्य जानकारी</value>
+  </data>
+  <data name="lblCorrespond562" xml:space="preserve">
+    <value>शैक्षणिक व्यवस्था की जानकारी</value>
+  </data>
+  <data name="lblCorrespond563" xml:space="preserve">
+    <value>भूमि और समय सारिणी की जानकारी</value>
+  </data>
+  <data name="lblCorrespond564" xml:space="preserve">
+    <value>सुविधाएं और शारीरिक विकलांग जानकारी</value>
+  </data>
+  <data name="lblCorrespond565" xml:space="preserve">
+    <value>परिशिष्ट 1</value>
+  </data>
+  <data name="lblCorrespond566" xml:space="preserve">
+    <value>परिशिष्ट 2</value>
+  </data>
+  <data name="lblCorrespond567" xml:space="preserve">
+    <value>परिशिष्ट 3</value>
+  </data>
+  <data name="lblCorrespond568" xml:space="preserve">
+    <value>परिशिष्ट 4</value>
+  </data>
+  <data name="lblCorrespond569" xml:space="preserve">
+    <value>परिशिष्ट 5</value>
+  </data>
+  <data name="lblCorrespond570" xml:space="preserve">
+    <value>स्कूल भूमि / भवन विवरण</value>
+  </data>
 </root>

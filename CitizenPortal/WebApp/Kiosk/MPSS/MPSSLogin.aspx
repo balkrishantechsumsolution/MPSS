@@ -160,7 +160,7 @@
             width: 100%;
             height: 100%;
             background-image: url(/mpss/mpss/images/wallpaperSchool.jpg);
-            background-repeat: no-repeat;
+            background-repeat:repeat;
             background-size: 450px;
             margin-top: -48px;
             padding-top: 3em;

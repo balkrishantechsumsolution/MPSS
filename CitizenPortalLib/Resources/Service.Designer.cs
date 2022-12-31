@@ -1087,6 +1087,3665 @@ namespace CitizenPortalLib.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Correspondent Renewal Application Form Year 2023-24.
+        /// </summary>
+        public static string lblCorrespond1 {
+            get {
+                return ResourceManager.GetString("lblCorrespond1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Uttarmadhima.
+        /// </summary>
+        public static string lblCorrespond10 {
+            get {
+                return ResourceManager.GetString("lblCorrespond10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   School Land/Building Details.
+        /// </summary>
+        public static string lblCorrespond100 {
+            get {
+                return ResourceManager.GetString("lblCorrespond100", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Information about School Land.
+        /// </summary>
+        public static string lblCorrespond101 {
+            get {
+                return ResourceManager.GetString("lblCorrespond101", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Khasra no.
+        /// </summary>
+        public static string lblCorrespond102 {
+            get {
+                return ResourceManager.GetString("lblCorrespond102", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Area.
+        /// </summary>
+        public static string lblCorrespond103 {
+            get {
+                return ResourceManager.GetString("lblCorrespond103", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attach Copy of land Registration(Khasra/B1-Map).
+        /// </summary>
+        public static string lblCorrespond104 {
+            get {
+                return ResourceManager.GetString("lblCorrespond104", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If land rented than owner Name and Address.
+        /// </summary>
+        public static string lblCorrespond105 {
+            get {
+                return ResourceManager.GetString("lblCorrespond105", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If Building rented than owner Name and Address.
+        /// </summary>
+        public static string lblCorrespond106 {
+            get {
+                return ResourceManager.GetString("lblCorrespond106", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If rented than Copy of Rent Agreement.
+        /// </summary>
+        public static string lblCorrespond107 {
+            get {
+                return ResourceManager.GetString("lblCorrespond107", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total area of School land(sq.ft.,Hectare).
+        /// </summary>
+        public static string lblCorrespond108 {
+            get {
+                return ResourceManager.GetString("lblCorrespond108", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total area of land to build School(sq.ft.,Hectare).
+        /// </summary>
+        public static string lblCorrespond109 {
+            get {
+                return ResourceManager.GetString("lblCorrespond109", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Society Name and Address.
+        /// </summary>
+        public static string lblCorrespond11 {
+            get {
+                return ResourceManager.GetString("lblCorrespond11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total build Area.
+        /// </summary>
+        public static string lblCorrespond110 {
+            get {
+                return ResourceManager.GetString("lblCorrespond110", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total Attach land from building empty space.
+        /// </summary>
+        public static string lblCorrespond111 {
+            get {
+                return ResourceManager.GetString("lblCorrespond111", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   Facilities Details.
+        /// </summary>
+        public static string lblCorrespond112 {
+            get {
+                return ResourceManager.GetString("lblCorrespond112", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No of Classes for studies.
+        /// </summary>
+        public static string lblCorrespond113 {
+            get {
+                return ResourceManager.GetString("lblCorrespond113", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Area.
+        /// </summary>
+        public static string lblCorrespond114 {
+            get {
+                return ResourceManager.GetString("lblCorrespond114", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Square Feet.
+        /// </summary>
+        public static string lblCorrespond115 {
+            get {
+                return ResourceManager.GetString("lblCorrespond115", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No of rooms for Teachers/Principal.
+        /// </summary>
+        public static string lblCorrespond116 {
+            get {
+                return ResourceManager.GetString("lblCorrespond116", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Area.
+        /// </summary>
+        public static string lblCorrespond117 {
+            get {
+                return ResourceManager.GetString("lblCorrespond117", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Square Feet.
+        /// </summary>
+        public static string lblCorrespond118 {
+            get {
+                return ResourceManager.GetString("lblCorrespond118", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No of rooms for Library and laboratory Classes.
+        /// </summary>
+        public static string lblCorrespond119 {
+            get {
+                return ResourceManager.GetString("lblCorrespond119", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to School Name.
+        /// </summary>
+        public static string lblCorrespond12 {
+            get {
+                return ResourceManager.GetString("lblCorrespond12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Area.
+        /// </summary>
+        public static string lblCorrespond120 {
+            get {
+                return ResourceManager.GetString("lblCorrespond120", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Square Feet.
+        /// </summary>
+        public static string lblCorrespond121 {
+            get {
+                return ResourceManager.GetString("lblCorrespond121", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Area of PlayGround.
+        /// </summary>
+        public static string lblCorrespond122 {
+            get {
+                return ResourceManager.GetString("lblCorrespond122", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Square Feet of PlayGround
+        ///.
+        /// </summary>
+        public static string lblCorrespond123 {
+            get {
+                return ResourceManager.GetString("lblCorrespond123", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total No of Toilets.
+        /// </summary>
+        public static string lblCorrespond124 {
+            get {
+                return ResourceManager.GetString("lblCorrespond124", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Girls Toilets.
+        /// </summary>
+        public static string lblCorrespond125 {
+            get {
+                return ResourceManager.GetString("lblCorrespond125", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Boys Toilets.
+        /// </summary>
+        public static string lblCorrespond126 {
+            get {
+                return ResourceManager.GetString("lblCorrespond126", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Equipment of Pure Water.
+        /// </summary>
+        public static string lblCorrespond127 {
+            get {
+                return ResourceManager.GetString("lblCorrespond127", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Information about laboratory.
+        /// </summary>
+        public static string lblCorrespond128 {
+            get {
+                return ResourceManager.GetString("lblCorrespond128", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Subject wise laboratories number.
+        /// </summary>
+        public static string lblCorrespond129 {
+            get {
+                return ResourceManager.GetString("lblCorrespond129", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to School Address.
+        /// </summary>
+        public static string lblCorrespond13 {
+            get {
+                return ResourceManager.GetString("lblCorrespond13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Area of Subject wise laboratories.
+        /// </summary>
+        public static string lblCorrespond130 {
+            get {
+                return ResourceManager.GetString("lblCorrespond130", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Square Feet of Subject wise laboratories.
+        /// </summary>
+        public static string lblCorrespond131 {
+            get {
+                return ResourceManager.GetString("lblCorrespond131", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Information about Libraries.
+        /// </summary>
+        public static string lblCorrespond132 {
+            get {
+                return ResourceManager.GetString("lblCorrespond132", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of Books.
+        /// </summary>
+        public static string lblCorrespond133 {
+            get {
+                return ResourceManager.GetString("lblCorrespond133", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Area of Libraries.
+        /// </summary>
+        public static string lblCorrespond134 {
+            get {
+                return ResourceManager.GetString("lblCorrespond134", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Square Feet of Libraries.
+        /// </summary>
+        public static string lblCorrespond135 {
+            get {
+                return ResourceManager.GetString("lblCorrespond135", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Information about furnitures.
+        /// </summary>
+        public static string lblCorrespond136 {
+            get {
+                return ResourceManager.GetString("lblCorrespond136", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total Number of furnitures.
+        /// </summary>
+        public static string lblCorrespond137 {
+            get {
+                return ResourceManager.GetString("lblCorrespond137", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total Number of furnitures for Girls/Boys.
+        /// </summary>
+        public static string lblCorrespond138 {
+            get {
+                return ResourceManager.GetString("lblCorrespond138", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total Number of Chaires.
+        /// </summary>
+        public static string lblCorrespond139 {
+            get {
+                return ResourceManager.GetString("lblCorrespond139", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   School Address Details.
+        /// </summary>
+        public static string lblCorrespond14 {
+            get {
+                return ResourceManager.GetString("lblCorrespond14", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total Number of Benches.
+        /// </summary>
+        public static string lblCorrespond140 {
+            get {
+                return ResourceManager.GetString("lblCorrespond140", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total Number of furnitures for Staff.
+        /// </summary>
+        public static string lblCorrespond141 {
+            get {
+                return ResourceManager.GetString("lblCorrespond141", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total Number of Chaires for staff.
+        /// </summary>
+        public static string lblCorrespond142 {
+            get {
+                return ResourceManager.GetString("lblCorrespond142", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total Number of Almarires for staff.
+        /// </summary>
+        public static string lblCorrespond143 {
+            get {
+                return ResourceManager.GetString("lblCorrespond143", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Electricity Provided.
+        /// </summary>
+        public static string lblCorrespond144 {
+            get {
+                return ResourceManager.GetString("lblCorrespond144", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes.
+        /// </summary>
+        public static string lblCorrespond145 {
+            get {
+                return ResourceManager.GetString("lblCorrespond145", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No.
+        /// </summary>
+        public static string lblCorrespond146 {
+            get {
+                return ResourceManager.GetString("lblCorrespond146", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total no of Computers.
+        /// </summary>
+        public static string lblCorrespond147 {
+            get {
+                return ResourceManager.GetString("lblCorrespond147", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total no of printers.
+        /// </summary>
+        public static string lblCorrespond148 {
+            get {
+                return ResourceManager.GetString("lblCorrespond148", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total no of faxes.
+        /// </summary>
+        public static string lblCorrespond149 {
+            get {
+                return ResourceManager.GetString("lblCorrespond149", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to House No.
+        /// </summary>
+        public static string lblCorrespond15 {
+            get {
+                return ResourceManager.GetString("lblCorrespond15", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total no of others.
+        /// </summary>
+        public static string lblCorrespond150 {
+            get {
+                return ResourceManager.GetString("lblCorrespond150", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total no of Fire Extinguishers.
+        /// </summary>
+        public static string lblCorrespond151 {
+            get {
+                return ResourceManager.GetString("lblCorrespond151", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Summitted Amount of Correspondent Renewal.
+        /// </summary>
+        public static string lblCorrespond152 {
+            get {
+                return ResourceManager.GetString("lblCorrespond152", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   PHYSICAL handicapped Details.
+        /// </summary>
+        public static string lblCorrespond153 {
+            get {
+                return ResourceManager.GetString("lblCorrespond153", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PHYSICAL handicapped Students faciities.
+        /// </summary>
+        public static string lblCorrespond154 {
+            get {
+                return ResourceManager.GetString("lblCorrespond154", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PHYSICAL handicapped Students Admission Provided.
+        /// </summary>
+        public static string lblCorrespond155 {
+            get {
+                return ResourceManager.GetString("lblCorrespond155", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes.
+        /// </summary>
+        public static string lblCorrespond156 {
+            get {
+                return ResourceManager.GetString("lblCorrespond156", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No.
+        /// </summary>
+        public static string lblCorrespond157 {
+            get {
+                return ResourceManager.GetString("lblCorrespond157", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   Note &amp; Signature.
+        /// </summary>
+        public static string lblCorrespond158 {
+            get {
+                return ResourceManager.GetString("lblCorrespond158", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 01. Incomplete application form will be rejected..
+        /// </summary>
+        public static string lblCorrespond159 {
+            get {
+                return ResourceManager.GetString("lblCorrespond159", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Colony.
+        /// </summary>
+        public static string lblCorrespond16 {
+            get {
+                return ResourceManager.GetString("lblCorrespond16", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Affiliation will not be provided if any information is found to be untrue and the offer received will also be terminated. Will be given..
+        /// </summary>
+        public static string lblCorrespond160 {
+            get {
+                return ResourceManager.GetString("lblCorrespond160", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to sign.
+        /// </summary>
+        public static string lblCorrespond161 {
+            get {
+                return ResourceManager.GetString("lblCorrespond161", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Secretary / President.
+        /// </summary>
+        public static string lblCorrespond162 {
+            get {
+                return ResourceManager.GetString("lblCorrespond162", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to sign.
+        /// </summary>
+        public static string lblCorrespond163 {
+            get {
+                return ResourceManager.GetString("lblCorrespond163", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PrincipalName and term of the committee.
+        /// </summary>
+        public static string lblCorrespond164 {
+            get {
+                return ResourceManager.GetString("lblCorrespond164", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to School Name and Padmudra.
+        /// </summary>
+        public static string lblCorrespond165 {
+            get {
+                return ResourceManager.GetString("lblCorrespond165", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date.
+        /// </summary>
+        public static string lblCorrespond166 {
+            get {
+                return ResourceManager.GetString("lblCorrespond166", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        public static string lblCorrespond167 {
+            get {
+                return ResourceManager.GetString("lblCorrespond167", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Full Address..
+        /// </summary>
+        public static string lblCorrespond168 {
+            get {
+                return ResourceManager.GetString("lblCorrespond168", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Opinion of District Education Officer:-.
+        /// </summary>
+        public static string lblCorrespond169 {
+            get {
+                return ResourceManager.GetString("lblCorrespond169", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to City.
+        /// </summary>
+        public static string lblCorrespond17 {
+            get {
+                return ResourceManager.GetString("lblCorrespond17", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Signature (with post seal).
+        /// </summary>
+        public static string lblCorrespond170 {
+            get {
+                return ResourceManager.GetString("lblCorrespond170", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to District Education Officer.
+        /// </summary>
+        public static string lblCorrespond171 {
+            get {
+                return ResourceManager.GetString("lblCorrespond171", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   Appendix 4.
+        /// </summary>
+        public static string lblCorrespond172 {
+            get {
+                return ResourceManager.GetString("lblCorrespond172", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Policy instructions for new affiliation year 2022-23 of Maharishi Patanjali Sanskrit Sansthan Bhopal and criteria.
+        /// </summary>
+        public static string lblCorrespond173 {
+            get {
+                return ResourceManager.GetString("lblCorrespond173", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   Appendix 4.
+        /// </summary>
+        public static string lblCorrespond174 {
+            get {
+                return ResourceManager.GetString("lblCorrespond174", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Adjournment Motion of the Committee..
+        /// </summary>
+        public static string lblCorrespond175 {
+            get {
+                return ResourceManager.GetString("lblCorrespond175", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2. Registration of Society Copy of Certificate issued by Registrar and Firm Society.
+        /// </summary>
+        public static string lblCorrespond176 {
+            get {
+                return ResourceManager.GetString("lblCorrespond176", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Certified Manual of the Society (issued by Registrar and Firm Society).
+        /// </summary>
+        public static string lblCorrespond177 {
+            get {
+                return ResourceManager.GetString("lblCorrespond177", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attested photocopy of the list of members of the Management Committee (Section 27) which is of the latest status.
+        /// </summary>
+        public static string lblCorrespond178 {
+            get {
+                return ResourceManager.GetString("lblCorrespond178", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Information as follows including qualification and appointment date of teachers working for teaching including] (including Sanskrit qualified, Shastri / Acharya) as mentioned in the application Separately for each class and each subject in the applied Sanskrit school, teachers with desired educational qualification It is mandatory to have The desired educational qualification implies that L.K.G. Related to (Arun) for Praveshika Regarding H.S. / Uttar Madhyamik and D.Ed./B. T.I / P.T.C. And in the subject re [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string lblCorrespond179 {
+            get {
+                return ResourceManager.GetString("lblCorrespond179", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Block.
+        /// </summary>
+        public static string lblCorrespond18 {
+            get {
+                return ResourceManager.GetString("lblCorrespond18", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Registered photocopy of land/building ownership/rent deed and photo of the entire building.
+        /// </summary>
+        public static string lblCorrespond180 {
+            get {
+                return ResourceManager.GetString("lblCorrespond180", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Measles copy map of ownership of land / building, certified by urban body, gram panchayat.
+        /// </summary>
+        public static string lblCorrespond181 {
+            get {
+                return ResourceManager.GetString("lblCorrespond181", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If the present school building is on rent, then the photocopy of the registered or notarized rent deed.
+        /// </summary>
+        public static string lblCorrespond182 {
+            get {
+                return ResourceManager.GetString("lblCorrespond182", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attested photocopy of the map of the present school building, Municipal Corporation, Municipality or Village By Panchayat..
+        /// </summary>
+        public static string lblCorrespond183 {
+            get {
+                return ResourceManager.GetString("lblCorrespond183", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  Inspection report of the District Education Officer with details.
+        /// </summary>
+        public static string lblCorrespond184 {
+            get {
+                return ResourceManager.GetString("lblCorrespond184", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Certified copy of the departmental permission payable by the District Education Officer.
+        /// </summary>
+        public static string lblCorrespond185 {
+            get {
+                return ResourceManager.GetString("lblCorrespond185", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Certified copy of equipment and materials available in the laboratory.
+        /// </summary>
+        public static string lblCorrespond186 {
+            get {
+                return ResourceManager.GetString("lblCorrespond186", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attested photocopy of the last audit report (of the society).
+        /// </summary>
+        public static string lblCorrespond187 {
+            get {
+                return ResourceManager.GetString("lblCorrespond187", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 14. Certified records regarding the information about the playground of the school.
+        /// </summary>
+        public static string lblCorrespond188 {
+            get {
+                return ResourceManager.GetString("lblCorrespond188", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 15. Potential class wise student strength.
+        /// </summary>
+        public static string lblCorrespond189 {
+            get {
+                return ResourceManager.GetString("lblCorrespond189", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to District.
+        /// </summary>
+        public static string lblCorrespond19 {
+            get {
+                return ResourceManager.GetString("lblCorrespond19", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 16. Possible class wise time division circle.
+        /// </summary>
+        public static string lblCorrespond190 {
+            get {
+                return ResourceManager.GetString("lblCorrespond190", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Possible teacher wise time department cycle.
+        /// </summary>
+        public static string lblCorrespond191 {
+            get {
+                return ResourceManager.GetString("lblCorrespond191", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 18. Institution&apos;s own certificate regarding the facilities tied to the disabled.
+        /// </summary>
+        public static string lblCorrespond192 {
+            get {
+                return ResourceManager.GetString("lblCorrespond192", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 19. L. Of. Yes. (Arun) UK Yes. (Uday) and for the students of class 1 to 4 there should be arrangement on the ground floor..
+        /// </summary>
+        public static string lblCorrespond193 {
+            get {
+                return ResourceManager.GetString("lblCorrespond193", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The ground floor of the school building should not be more than the first floor and the second floor (three floors). Need self certification..
+        /// </summary>
+        public static string lblCorrespond194 {
+            get {
+                return ResourceManager.GetString("lblCorrespond194", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 21. Two postcard size color photographs of the building are attached..
+        /// </summary>
+        public static string lblCorrespond195 {
+            get {
+                return ResourceManager.GetString("lblCorrespond195", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 22. There should not be any disparity in the number of students of both the blocks of Pre-Madhyamik..
+        /// </summary>
+        public static string lblCorrespond196 {
+            get {
+                return ResourceManager.GetString("lblCorrespond196", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maharishi Patanjali Sanskrit Sansthan, M.P. In Arun, Uday for classes 1st to 4th The prescribed norms should be fulfilled (Appendix-5)..
+        /// </summary>
+        public static string lblCorrespond197 {
+            get {
+                return ResourceManager.GetString("lblCorrespond197", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Note :- Whatever photocopies of the above records are attached, get them certified by the gazetted officer..
+        /// </summary>
+        public static string lblCorrespond198 {
+            get {
+                return ResourceManager.GetString("lblCorrespond198", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   Appendix 4.
+        /// </summary>
+        public static string lblCorrespond199 {
+            get {
+                return ResourceManager.GetString("lblCorrespond199", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sanskrit School for LKG / UKG / Class 1-4 / Praveshika / Purmadhima / Uttarmadhima class to be operated.
+        /// </summary>
+        public static string lblCorrespond2 {
+            get {
+                return ResourceManager.GetString("lblCorrespond2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PinCode.
+        /// </summary>
+        public static string lblCorrespond20 {
+            get {
+                return ResourceManager.GetString("lblCorrespond20", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Correspondent Renewal Application Form Year 2023-24.
+        /// </summary>
+        public static string lblCorrespond200 {
+            get {
+                return ResourceManager.GetString("lblCorrespond200", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sanskrit school operated for LKG / UKG / Class 1-4 / Praveshika / Purmadhima / Uttarmadhima class.
+        /// </summary>
+        public static string lblCorrespond201 {
+            get {
+                return ResourceManager.GetString("lblCorrespond201", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   Academic Arrangement Description.
+        /// </summary>
+        public static string lblCorrespond202 {
+            get {
+                return ResourceManager.GetString("lblCorrespond202", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Head Mistress.
+        /// </summary>
+        public static string lblCorrespond203 {
+            get {
+                return ResourceManager.GetString("lblCorrespond203", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Head Mistress Qualification.
+        /// </summary>
+        public static string lblCorrespond204 {
+            get {
+                return ResourceManager.GetString("lblCorrespond204", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Principal Mistress.
+        /// </summary>
+        public static string lblCorrespond205 {
+            get {
+                return ResourceManager.GetString("lblCorrespond205", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Core Competency.
+        /// </summary>
+        public static string lblCorrespond206 {
+            get {
+                return ResourceManager.GetString("lblCorrespond206", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of Sanskrit qualified teachers.
+        /// </summary>
+        public static string lblCorrespond207 {
+            get {
+                return ResourceManager.GetString("lblCorrespond207", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///M.Ed
+        ///.
+        /// </summary>
+        public static string lblCorrespond208 {
+            get {
+                return ResourceManager.GetString("lblCorrespond208", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to B.Ed.
+        /// </summary>
+        public static string lblCorrespond209 {
+            get {
+                return ResourceManager.GetString("lblCorrespond209", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mobile No.
+        /// </summary>
+        public static string lblCorrespond21 {
+            get {
+                return ResourceManager.GetString("lblCorrespond21", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SHIKSHA SHASTRI.
+        /// </summary>
+        public static string lblCorrespond210 {
+            get {
+                return ResourceManager.GetString("lblCorrespond210", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to D.Ed.
+        /// </summary>
+        public static string lblCorrespond211 {
+            get {
+                return ResourceManager.GetString("lblCorrespond211", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BTI.
+        /// </summary>
+        public static string lblCorrespond212 {
+            get {
+                return ResourceManager.GetString("lblCorrespond212", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of professor qualified teachers.
+        /// </summary>
+        public static string lblCorrespond213 {
+            get {
+                return ResourceManager.GetString("lblCorrespond213", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///M.Ed
+        ///.
+        /// </summary>
+        public static string lblCorrespond214 {
+            get {
+                return ResourceManager.GetString("lblCorrespond214", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to B.Ed.
+        /// </summary>
+        public static string lblCorrespond215 {
+            get {
+                return ResourceManager.GetString("lblCorrespond215", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SHIKSHA SHASTRI.
+        /// </summary>
+        public static string lblCorrespond216 {
+            get {
+                return ResourceManager.GetString("lblCorrespond216", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to D.Ed.
+        /// </summary>
+        public static string lblCorrespond217 {
+            get {
+                return ResourceManager.GetString("lblCorrespond217", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BTI.
+        /// </summary>
+        public static string lblCorrespond218 {
+            get {
+                return ResourceManager.GetString("lblCorrespond218", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///Total number of Professors qualified teachers
+        ///.
+        /// </summary>
+        public static string lblCorrespond219 {
+            get {
+                return ResourceManager.GetString("lblCorrespond219", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Correspondent Renewal Application Form Year 2023-24
+        ///.
+        /// </summary>
+        public static string lblCorrespond22 {
+            get {
+                return ResourceManager.GetString("lblCorrespond22", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///M.Ed
+        ///.
+        /// </summary>
+        public static string lblCorrespond220 {
+            get {
+                return ResourceManager.GetString("lblCorrespond220", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to B.Ed.
+        /// </summary>
+        public static string lblCorrespond221 {
+            get {
+                return ResourceManager.GetString("lblCorrespond221", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SHIKSHA SHASTRI.
+        /// </summary>
+        public static string lblCorrespond222 {
+            get {
+                return ResourceManager.GetString("lblCorrespond222", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to D.Ed.
+        /// </summary>
+        public static string lblCorrespond223 {
+            get {
+                return ResourceManager.GetString("lblCorrespond223", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BTI.
+        /// </summary>
+        public static string lblCorrespond224 {
+            get {
+                return ResourceManager.GetString("lblCorrespond224", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of highly qualified teachers.
+        /// </summary>
+        public static string lblCorrespond225 {
+            get {
+                return ResourceManager.GetString("lblCorrespond225", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///M.Ed
+        ///.
+        /// </summary>
+        public static string lblCorrespond226 {
+            get {
+                return ResourceManager.GetString("lblCorrespond226", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to B.Ed.
+        /// </summary>
+        public static string lblCorrespond227 {
+            get {
+                return ResourceManager.GetString("lblCorrespond227", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SHIKSHA SHASTRI.
+        /// </summary>
+        public static string lblCorrespond228 {
+            get {
+                return ResourceManager.GetString("lblCorrespond228", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to D.Ed.
+        /// </summary>
+        public static string lblCorrespond229 {
+            get {
+                return ResourceManager.GetString("lblCorrespond229", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sanskrit School for LKG / UKG / Class 1-4 / Praveshika / Purmadhima / Uttarmadhima class to be operated.
+        /// </summary>
+        public static string lblCorrespond23 {
+            get {
+                return ResourceManager.GetString("lblCorrespond23", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BTI.
+        /// </summary>
+        public static string lblCorrespond230 {
+            get {
+                return ResourceManager.GetString("lblCorrespond230", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total number of Assistant qualified teachers.
+        /// </summary>
+        public static string lblCorrespond231 {
+            get {
+                return ResourceManager.GetString("lblCorrespond231", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///M.Ed
+        ///.
+        /// </summary>
+        public static string lblCorrespond232 {
+            get {
+                return ResourceManager.GetString("lblCorrespond232", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to B.Ed.
+        /// </summary>
+        public static string lblCorrespond233 {
+            get {
+                return ResourceManager.GetString("lblCorrespond233", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SHIKSHA SHASTRI.
+        /// </summary>
+        public static string lblCorrespond234 {
+            get {
+                return ResourceManager.GetString("lblCorrespond234", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to D.Ed.
+        /// </summary>
+        public static string lblCorrespond235 {
+            get {
+                return ResourceManager.GetString("lblCorrespond235", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BTI.
+        /// </summary>
+        public static string lblCorrespond236 {
+            get {
+                return ResourceManager.GetString("lblCorrespond236", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///P.T.I
+        ///.
+        /// </summary>
+        public static string lblCorrespond237 {
+            get {
+                return ResourceManager.GetString("lblCorrespond237", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///Assitant Teacher Science
+        ///.
+        /// </summary>
+        public static string lblCorrespond238 {
+            get {
+                return ResourceManager.GetString("lblCorrespond238", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///Studies Medium.
+        /// </summary>
+        public static string lblCorrespond239 {
+            get {
+                return ResourceManager.GetString("lblCorrespond239", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   Soceity Details.
+        /// </summary>
+        public static string lblCorrespond24 {
+            get {
+                return ResourceManager.GetString("lblCorrespond24", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Details of fees paid by the students.
+        /// </summary>
+        public static string lblCorrespond240 {
+            get {
+                return ResourceManager.GetString("lblCorrespond240", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///Prathama
+        ///.
+        /// </summary>
+        public static string lblCorrespond241 {
+            get {
+                return ResourceManager.GetString("lblCorrespond241", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///Purvamadiyma
+        ///.
+        /// </summary>
+        public static string lblCorrespond242 {
+            get {
+                return ResourceManager.GetString("lblCorrespond242", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Uttarmadiyma.
+        /// </summary>
+        public static string lblCorrespond243 {
+            get {
+                return ResourceManager.GetString("lblCorrespond243", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Working Staff Details.
+        /// </summary>
+        public static string lblCorrespond244 {
+            get {
+                return ResourceManager.GetString("lblCorrespond244", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ledger.
+        /// </summary>
+        public static string lblCorrespond245 {
+            get {
+                return ResourceManager.GetString("lblCorrespond245", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Assistant Officer.
+        /// </summary>
+        public static string lblCorrespond246 {
+            get {
+                return ResourceManager.GetString("lblCorrespond246", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fourth grade.
+        /// </summary>
+        public static string lblCorrespond247 {
+            get {
+                return ResourceManager.GetString("lblCorrespond247", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New affiliation of Maharishi Patanjali Sanskrit Sansthan Bhopal for the year 2022-23 attached, details of records to be sent.
+        /// </summary>
+        public static string lblCorrespond248 {
+            get {
+                return ResourceManager.GetString("lblCorrespond248", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   Appendix 1.
+        /// </summary>
+        public static string lblCorrespond249 {
+            get {
+                return ResourceManager.GetString("lblCorrespond249", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Soceity Registration No.
+        /// </summary>
+        public static string lblCorrespond25 {
+            get {
+                return ResourceManager.GetString("lblCorrespond25", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1. Adjournment motion of the committee. yes / no.
+        /// </summary>
+        public static string lblCorrespond250 {
+            get {
+                return ResourceManager.GetString("lblCorrespond250", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2. Registration of Society Copy of Certificate issued by Registrar and Firm Society yes / no.
+        /// </summary>
+        public static string lblCorrespond251 {
+            get {
+                return ResourceManager.GetString("lblCorrespond251", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3.Certified Manual of the Society (Issued by Registrar and Firm Society) yes no.
+        /// </summary>
+        public static string lblCorrespond252 {
+            get {
+                return ResourceManager.GetString("lblCorrespond252", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4. Attested photocopy of the list of members of the managing committee (Section 27) which Be of study status. yes / no.
+        /// </summary>
+        public static string lblCorrespond253 {
+            get {
+                return ResourceManager.GetString("lblCorrespond253", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 5.Along with the qualification and date of appointment of teachers working for teaching, along with the following information (Sanskrit qualified, including Shastri/Acharya) as mentioned in the application Separately for each class and each subject in the applied Sanskrit school, teachers with desired educational qualification It is mandatory to have The desired educational qualification implies that L.K.G. Related to (Arun) for Praveshika Regarding H.S. / Uttar Madhyamik and D. Ed. / b. T.I / B.T.C. And in [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string lblCorrespond254 {
+            get {
+                return ResourceManager.GetString("lblCorrespond254", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6.Registered photocopy of land/building ownership and photo of the entire building yes / no.
+        /// </summary>
+        public static string lblCorrespond255 {
+            get {
+                return ResourceManager.GetString("lblCorrespond255", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 7.Khasra copy map of ownership of land / building, urban body, village Certified by Panchayat yes / no.
+        /// </summary>
+        public static string lblCorrespond256 {
+            get {
+                return ResourceManager.GetString("lblCorrespond256", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 8. If the present school building is on rent, then registered or notarized copy of rent deed yes / no.
+        /// </summary>
+        public static string lblCorrespond257 {
+            get {
+                return ResourceManager.GetString("lblCorrespond257", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 9. Attested photocopy of the map of the present school building Municipal Corporation, Municipality Or by Gram Panchayat. yes / no.
+        /// </summary>
+        public static string lblCorrespond258 {
+            get {
+                return ResourceManager.GetString("lblCorrespond258", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 10. Inspection report with opinion of District Education Officer yes / no.
+        /// </summary>
+        public static string lblCorrespond259 {
+            get {
+                return ResourceManager.GetString("lblCorrespond259", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Registration Date.
+        /// </summary>
+        public static string lblCorrespond26 {
+            get {
+                return ResourceManager.GetString("lblCorrespond26", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 11. Certified copy of the departmental permission payable by the District Education Officer yes / no.
+        /// </summary>
+        public static string lblCorrespond260 {
+            get {
+                return ResourceManager.GetString("lblCorrespond260", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 12. Certified copy of equipment and materials available in the laboratory yes / no.
+        /// </summary>
+        public static string lblCorrespond261 {
+            get {
+                return ResourceManager.GetString("lblCorrespond261", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 13. Attested photocopy of the last audit report (of the society) yes / no.
+        /// </summary>
+        public static string lblCorrespond262 {
+            get {
+                return ResourceManager.GetString("lblCorrespond262", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 14. Certified records regarding the information about the playground of the school yes / no.
+        /// </summary>
+        public static string lblCorrespond263 {
+            get {
+                return ResourceManager.GetString("lblCorrespond263", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 15. expected class wise student strength yes / no.
+        /// </summary>
+        public static string lblCorrespond264 {
+            get {
+                return ResourceManager.GetString("lblCorrespond264", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 16. Possible Class wise Time Division Cycle yes/no.
+        /// </summary>
+        public static string lblCorrespond265 {
+            get {
+                return ResourceManager.GetString("lblCorrespond265", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 17. Expected teacher wise time department cycle.
+        /// </summary>
+        public static string lblCorrespond266 {
+            get {
+                return ResourceManager.GetString("lblCorrespond266", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 18. Institution&apos;s own certificate regarding desired facilities to the disabled L.K.G. (Arun) UK Yes. (Uday) and on the ground floor for the students of classes 1 to 4 yes no.
+        /// </summary>
+        public static string lblCorrespond267 {
+            get {
+                return ResourceManager.GetString("lblCorrespond267", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string lblCorrespond268 {
+            get {
+                return ResourceManager.GetString("lblCorrespond268", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 19. There should be arrangement. The building of the school should not be more than ground floor, first floor, second floor (three floors) yes / no.
+        /// </summary>
+        public static string lblCorrespond269 {
+            get {
+                return ResourceManager.GetString("lblCorrespond269", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Validity Date.
+        /// </summary>
+        public static string lblCorrespond27 {
+            get {
+                return ResourceManager.GetString("lblCorrespond27", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 20. Required (self certification)..
+        /// </summary>
+        public static string lblCorrespond270 {
+            get {
+                return ResourceManager.GetString("lblCorrespond270", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 21. Two color photographs of the postcard size of the building are attached. yes no.
+        /// </summary>
+        public static string lblCorrespond271 {
+            get {
+                return ResourceManager.GetString("lblCorrespond271", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Note :-.
+        /// </summary>
+        public static string lblCorrespond272 {
+            get {
+                return ResourceManager.GetString("lblCorrespond272", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to yes / no.
+        /// </summary>
+        public static string lblCorrespond273 {
+            get {
+                return ResourceManager.GetString("lblCorrespond273", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 01. Whatever photocopies of the above records are attached, get them certified by self attestation..
+        /// </summary>
+        public static string lblCorrespond274 {
+            get {
+                return ResourceManager.GetString("lblCorrespond274", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Institution Principal / Director.
+        /// </summary>
+        public static string lblCorrespond275 {
+            get {
+                return ResourceManager.GetString("lblCorrespond275", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Appendix 2 7 A-3.
+        /// </summary>
+        public static string lblCorrespond276 {
+            get {
+                return ResourceManager.GetString("lblCorrespond276", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Affidavit.
+        /// </summary>
+        public static string lblCorrespond277 {
+            get {
+                return ResourceManager.GetString("lblCorrespond277", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I _ _ father&apos;s name _ age _ _ Principal / Institution Head Secretary / Reserve _ _resident _ _.
+        /// </summary>
+        public static string lblCorrespond278 {
+            get {
+                return ResourceManager.GetString("lblCorrespond278", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Association Committee solemnly affirm that-.
+        /// </summary>
+        public static string lblCorrespond279 {
+            get {
+                return ResourceManager.GetString("lblCorrespond279", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PAN No(Income Tax No).
+        /// </summary>
+        public static string lblCorrespond28 {
+            get {
+                return ResourceManager.GetString("lblCorrespond28", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1. That all the entries and records mentioned in the application form given for affiliation should be kept in the original of the institution. Certified as per documents. All these forms are correct and legal..
+        /// </summary>
+        public static string lblCorrespond280 {
+            get {
+                return ResourceManager.GetString("lblCorrespond280", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2. That no material fact/entries have been suppressed in the application if any information/record or I will be personally responsible if the entries are found to be incorrect..
+        /// </summary>
+        public static string lblCorrespond281 {
+            get {
+                return ResourceManager.GetString("lblCorrespond281", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3. Chairman/Secretary and members of the Management Committee of the society and all working principals/principals and teachers in the institution And the employees have no criminal background in the past and at present also there is no criminal case against them. Case is not pending..
+        /// </summary>
+        public static string lblCorrespond282 {
+            get {
+                return ResourceManager.GetString("lblCorrespond282", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4. I have read all the terms and conditions regarding affiliation of Maharishi Patanjali Sanskrit Sansthan and Accepts all the conditions..
+        /// </summary>
+        public static string lblCorrespond283 {
+            get {
+                return ResourceManager.GetString("lblCorrespond283", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 5. The information given in the application form and affidavit is completely true, if any information is found false then The institute will have the right to cancel the affiliation application of the school and terminate the affiliation received..
+        /// </summary>
+        public static string lblCorrespond284 {
+            get {
+                return ResourceManager.GetString("lblCorrespond284", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6. Students will be made to study only in the course prescribed by Maharishi Patanjali Sanskrit Sansthan. Syllabus In the event of not conducting the study, the affiliation of the institution will be deemed cancelled..
+        /// </summary>
+        public static string lblCorrespond285 {
+            get {
+                return ResourceManager.GetString("lblCorrespond285", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 7. In case of any legal dispute, the jurisdiction will be Bhopal..
+        /// </summary>
+        public static string lblCorrespond286 {
+            get {
+                return ResourceManager.GetString("lblCorrespond286", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 8. The institution fulfills the criteria prescribed for classes from Arun to Uttar Madhyamik last section as mentioned in Appendix-5. Is..
+        /// </summary>
+        public static string lblCorrespond287 {
+            get {
+                return ResourceManager.GetString("lblCorrespond287", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to swearer name.
+        /// </summary>
+        public static string lblCorrespond288 {
+            get {
+                return ResourceManager.GetString("lblCorrespond288", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to President / Secretary.
+        /// </summary>
+        public static string lblCorrespond289 {
+            get {
+                return ResourceManager.GetString("lblCorrespond289", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No of Member in Soceity.
+        /// </summary>
+        public static string lblCorrespond29 {
+            get {
+                return ResourceManager.GetString("lblCorrespond29", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Verification.
+        /// </summary>
+        public static string lblCorrespond290 {
+            get {
+                return ResourceManager.GetString("lblCorrespond290", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I _ self _  resident  _ Self _ Verified that in this affidavit, para no. The information from 01 to 05 is correct and true..
+        /// </summary>
+        public static string lblCorrespond291 {
+            get {
+                return ResourceManager.GetString("lblCorrespond291", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Location.
+        /// </summary>
+        public static string lblCorrespond292 {
+            get {
+                return ResourceManager.GetString("lblCorrespond292", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to swearer.
+        /// </summary>
+        public static string lblCorrespond293 {
+            get {
+                return ResourceManager.GetString("lblCorrespond293", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Appendix-3.
+        /// </summary>
+        public static string lblCorrespond294 {
+            get {
+                return ResourceManager.GetString("lblCorrespond294", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 73-4.
+        /// </summary>
+        public static string lblCorrespond295 {
+            get {
+                return ResourceManager.GetString("lblCorrespond295", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Important instructions for new affiliation 2023-24 from Maharishi Patanjali Sanskrit Sansthan Bhopal -.
+        /// </summary>
+        public static string lblCorrespond296 {
+            get {
+                return ResourceManager.GetString("lblCorrespond296", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1. Application for new affiliation M.P. Last date for filling online 15 November 2022.
+        /// </summary>
+        public static string lblCorrespond297 {
+            get {
+                return ResourceManager.GetString("lblCorrespond297", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2. After filling the application, a hardcopy (in duplicate with complete records) will be sent to the District Education Officer Date of submission in office 15 December 2022.
+        /// </summary>
+        public static string lblCorrespond298 {
+            get {
+                return ResourceManager.GetString("lblCorrespond298", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3. Application form (with complete records) in Maharishi Patanjali Sanskrit Sansthan, due date 30 December 20022 Submission will be mandatory..
+        /// </summary>
+        public static string lblCorrespond299 {
+            get {
+                return ResourceManager.GetString("lblCorrespond299", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  School Detail.
+        /// </summary>
+        public static string lblCorrespond3 {
+            get {
+                return ResourceManager.GetString("lblCorrespond3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attach List of Society Members Registration Application form..
+        /// </summary>
+        public static string lblCorrespond30 {
+            get {
+                return ResourceManager.GetString("lblCorrespond30", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4. On the basis of prescribed criteria of the applications submitted by the concerned school to the District Education Office For inspection, the inspection team of the school has been constituted by the District Education Officer and the departmental By making sure to edit the report through MP online by the permission date 15 January 2023 Make sure to submit the office by 10 February 2023 15 Fees-.
+        /// </summary>
+        public static string lblCorrespond300 {
+            get {
+                return ResourceManager.GetString("lblCorrespond300", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 5. Fee details.
+        /// </summary>
+        public static string lblCorrespond301 {
+            get {
+                return ResourceManager.GetString("lblCorrespond301", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fixed fee amount for new affiliation.
+        /// </summary>
+        public static string lblCorrespond302 {
+            get {
+                return ResourceManager.GetString("lblCorrespond302", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Serial No  Class level for the year  Fixed fee amount for New affiliation(for one year).
+        /// </summary>
+        public static string lblCorrespond303 {
+            get {
+                return ResourceManager.GetString("lblCorrespond303", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1  L.K.G. (Arun) to class 04  1,000/-.
+        /// </summary>
+        public static string lblCorrespond304 {
+            get {
+                return ResourceManager.GetString("lblCorrespond304", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2  L.K.G. (Arun) to Praveshika  3,000/-.
+        /// </summary>
+        public static string lblCorrespond305 {
+            get {
+                return ResourceManager.GetString("lblCorrespond305", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3  L.K.G. (Arun) to Prathma  2,000/-.
+        /// </summary>
+        public static string lblCorrespond306 {
+            get {
+                return ResourceManager.GetString("lblCorrespond306", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4  L.K.G. (Arun) again one  11,000/-.
+        /// </summary>
+        public static string lblCorrespond307 {
+            get {
+                return ResourceManager.GetString("lblCorrespond307", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 5  (From L.K.G. (Assam) to his  13,000/-.
+        /// </summary>
+        public static string lblCorrespond308 {
+            get {
+                return ResourceManager.GetString("lblCorrespond308", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string lblCorrespond309 {
+            get {
+                return ResourceManager.GetString("lblCorrespond309", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Soceity president  Name.
+        /// </summary>
+        public static string lblCorrespond31 {
+            get {
+                return ResourceManager.GetString("lblCorrespond31", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6. Only for all levels for non-government oriental / traditional residential Sanskrit school (with hostel) seeking new affiliation Application Form Fee Rs. 500/- is fixed. Such schools are oriental / traditional residential Sanskrit schools (with hostel) category apply for new affiliation in M.P. While applying online only application fee of Rs. 500/- to be paid Will happen. On the basis of which, after getting the departmental permission/recommendation of the District Education Officer, the site test will  [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string lblCorrespond310 {
+            get {
+                return ResourceManager.GetString("lblCorrespond310", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 7. Only the application form fee is fixed for government Sanskrit schools, the rest will be free from the fee..
+        /// </summary>
+        public static string lblCorrespond311 {
+            get {
+                return ResourceManager.GetString("lblCorrespond311", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 8. As per clause 2, application can be made with late fee up to 30 days. The late fee will be double the amount as per clause 8..
+        /// </summary>
+        public static string lblCorrespond312 {
+            get {
+                return ResourceManager.GetString("lblCorrespond312", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 9. MP. Where the school is being conducted, or to be conducted while applying online. Full address of that Village / Town / Place Post Office Enter the PIN code of.
+        /// </summary>
+        public static string lblCorrespond313 {
+            get {
+                return ResourceManager.GetString("lblCorrespond313", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 10. , After applying from M. P. Online, if the hard copy along with supporting papers is sent to Maharishi Patanjali Sanskrit Sansthan, Sanskrit Bhavan by the stipulated time. Tulsi Nagar, Second Stop, Bhopal, Madhya Pradesh, -462003, then the affiliation will not be considered, the institution itself will be responsible for this..
+        /// </summary>
+        public static string lblCorrespond314 {
+            get {
+                return ResourceManager.GetString("lblCorrespond314", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 11. Affiliation will not be granted if the above mentioned information/certificates etc. are not attached and it appears suspicious. The affiliation granted will be terminated without any prior notice..
+        /// </summary>
+        public static string lblCorrespond315 {
+            get {
+                return ResourceManager.GetString("lblCorrespond315", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Appendix 4.
+        /// </summary>
+        public static string lblCorrespond316 {
+            get {
+                return ResourceManager.GetString("lblCorrespond316", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 73-5.
+        /// </summary>
+        public static string lblCorrespond317 {
+            get {
+                return ResourceManager.GetString("lblCorrespond317", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Policy instructions for new affiliation year 2022-23 of Maharishi Patanjali Sanskrit Sansthan Bhopal and criteria.
+        /// </summary>
+        public static string lblCorrespond318 {
+            get {
+                return ResourceManager.GetString("lblCorrespond318", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Appendix-4.
+        /// </summary>
+        public static string lblCorrespond319 {
+            get {
+                return ResourceManager.GetString("lblCorrespond319", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to City/Village.
+        /// </summary>
+        public static string lblCorrespond32 {
+            get {
+                return ResourceManager.GetString("lblCorrespond32", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1. Adjournment Motion of the Committee..
+        /// </summary>
+        public static string lblCorrespond320 {
+            get {
+                return ResourceManager.GetString("lblCorrespond320", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2. Registration of Society Copy of Certificate issued by Registrar and Firm Society.
+        /// </summary>
+        public static string lblCorrespond321 {
+            get {
+                return ResourceManager.GetString("lblCorrespond321", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3. Certified Manual of the Society (issued by Registrar and Firm Society).
+        /// </summary>
+        public static string lblCorrespond322 {
+            get {
+                return ResourceManager.GetString("lblCorrespond322", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4. Attested photocopy of the list of members of the Management Committee (Section 27) which is of the latest status..
+        /// </summary>
+        public static string lblCorrespond323 {
+            get {
+                return ResourceManager.GetString("lblCorrespond323", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 5. Information as follows including qualification and appointment date of teachers working for teaching including] (including Sanskrit qualified, Shastri / Acharya) as mentioned in the application Separately for each class and each subject in the applied Sanskrit school, teachers with desired educational qualification It is mandatory to have The desired educational qualification implies that L.K.G. Related to (Arun) for Praveshika Regarding H.S. / Uttar Madhyamik and D.Ed./B. T.I / P.T.C. And in the subject [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string lblCorrespond324 {
+            get {
+                return ResourceManager.GetString("lblCorrespond324", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6. Registered photocopy of land/building ownership/rent deed and photo of the entire building.
+        /// </summary>
+        public static string lblCorrespond325 {
+            get {
+                return ResourceManager.GetString("lblCorrespond325", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 7. Measles copy map of ownership of land / building, certified by urban body, gram panchayat.
+        /// </summary>
+        public static string lblCorrespond326 {
+            get {
+                return ResourceManager.GetString("lblCorrespond326", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 8. If the present school building is on rent, then the photocopy of the registered or notarized rent deed.
+        /// </summary>
+        public static string lblCorrespond327 {
+            get {
+                return ResourceManager.GetString("lblCorrespond327", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 9. Attested photocopy of the map of the present school building, Municipal Corporation, Municipality or Village By Panchayat..
+        /// </summary>
+        public static string lblCorrespond328 {
+            get {
+                return ResourceManager.GetString("lblCorrespond328", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 10. Inspection report of the District Education Officer with details.
+        /// </summary>
+        public static string lblCorrespond329 {
+            get {
+                return ResourceManager.GetString("lblCorrespond329", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Post.
+        /// </summary>
+        public static string lblCorrespond33 {
+            get {
+                return ResourceManager.GetString("lblCorrespond33", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 11. Certified copy of the departmental permission payable by the District Education Officer.
+        /// </summary>
+        public static string lblCorrespond330 {
+            get {
+                return ResourceManager.GetString("lblCorrespond330", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 12. Certified copy of equipment and materials available in the laboratory.
+        /// </summary>
+        public static string lblCorrespond331 {
+            get {
+                return ResourceManager.GetString("lblCorrespond331", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 13 Attested photocopy of the last audit report (of the society).
+        /// </summary>
+        public static string lblCorrespond332 {
+            get {
+                return ResourceManager.GetString("lblCorrespond332", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 14. Certified records regarding the information about the playground of the school.
+        /// </summary>
+        public static string lblCorrespond333 {
+            get {
+                return ResourceManager.GetString("lblCorrespond333", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 15. Potential class wise student strength.
+        /// </summary>
+        public static string lblCorrespond334 {
+            get {
+                return ResourceManager.GetString("lblCorrespond334", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 16. Possible class wise time division circle.
+        /// </summary>
+        public static string lblCorrespond335 {
+            get {
+                return ResourceManager.GetString("lblCorrespond335", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 17. Possible teacher wise time department cycle.
+        /// </summary>
+        public static string lblCorrespond336 {
+            get {
+                return ResourceManager.GetString("lblCorrespond336", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 18. Institution&apos;s own certificate regarding the facilities tied to the disabled.
+        /// </summary>
+        public static string lblCorrespond337 {
+            get {
+                return ResourceManager.GetString("lblCorrespond337", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 19. L. Of. Yes. (Arun) UK Yes. (Uday) and for the students of class 1 to 4 there should be arrangement on the ground floor..
+        /// </summary>
+        public static string lblCorrespond338 {
+            get {
+                return ResourceManager.GetString("lblCorrespond338", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 20. The ground floor of the school building should not be more than the first floor and the second floor (three floors). Need self certification..
+        /// </summary>
+        public static string lblCorrespond339 {
+            get {
+                return ResourceManager.GetString("lblCorrespond339", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to District.
+        /// </summary>
+        public static string lblCorrespond34 {
+            get {
+                return ResourceManager.GetString("lblCorrespond34", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 21. Two postcard size color photographs of the building are attached..
+        /// </summary>
+        public static string lblCorrespond340 {
+            get {
+                return ResourceManager.GetString("lblCorrespond340", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 22. There should not be any disparity in the number of students of both the blocks of Pre-Madhyamik..
+        /// </summary>
+        public static string lblCorrespond341 {
+            get {
+                return ResourceManager.GetString("lblCorrespond341", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 23. Maharishi Patanjali Sanskrit Sansthan, M.P. In Arun, Uday for classes 1st to 4th The prescribed norms should be fulfilled (Appendix-5)..
+        /// </summary>
+        public static string lblCorrespond342 {
+            get {
+                return ResourceManager.GetString("lblCorrespond342", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Note :- Whatever photocopies of the above records are attached, get them certified by the gazetted officer..
+        /// </summary>
+        public static string lblCorrespond343 {
+            get {
+                return ResourceManager.GetString("lblCorrespond343", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Appendix-5.
+        /// </summary>
+        public static string lblCorrespond344 {
+            get {
+                return ResourceManager.GetString("lblCorrespond344", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Maharishi Patanjali Sanskrit Institute.
+        /// </summary>
+        public static string lblCorrespond345 {
+            get {
+                return ResourceManager.GetString("lblCorrespond345", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Madhya Pradesh Bhopal.
+        /// </summary>
+        public static string lblCorrespond346 {
+            get {
+                return ResourceManager.GetString("lblCorrespond346", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Arun / Uday / Norms set for classes 1 to 4.
+        /// </summary>
+        public static string lblCorrespond347 {
+            get {
+                return ResourceManager.GetString("lblCorrespond347", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1. Staff.
+        /// </summary>
+        public static string lblCorrespond348 {
+            get {
+                return ResourceManager.GetString("lblCorrespond348", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (1) 1 for 20 children.
+        /// </summary>
+        public static string lblCorrespond349 {
+            get {
+                return ResourceManager.GetString("lblCorrespond349", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mobile No.
+        /// </summary>
+        public static string lblCorrespond35 {
+            get {
+                return ResourceManager.GetString("lblCorrespond35", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (2) 20 on 1 Co..
+        /// </summary>
+        public static string lblCorrespond350 {
+            get {
+                return ResourceManager.GetString("lblCorrespond350", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (3) Publication will be of the staff..
+        /// </summary>
+        public static string lblCorrespond351 {
+            get {
+                return ResourceManager.GetString("lblCorrespond351", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (4) Police is mandatory for the appointment of staff in the school..
+        /// </summary>
+        public static string lblCorrespond352 {
+            get {
+                return ResourceManager.GetString("lblCorrespond352", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (5) or against any member of the Society JJ et al..
+        /// </summary>
+        public static string lblCorrespond353 {
+            get {
+                return ResourceManager.GetString("lblCorrespond353", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to There should not be any samadhi..
+        /// </summary>
+        public static string lblCorrespond354 {
+            get {
+                return ResourceManager.GetString("lblCorrespond354", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2. BhaWan.
+        /// </summary>
+        public static string lblCorrespond355 {
+            get {
+                return ResourceManager.GetString("lblCorrespond355", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (1) Schedule building for living in each.
+        /// </summary>
+        public static string lblCorrespond356 {
+            get {
+                return ResourceManager.GetString("lblCorrespond356", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (2) The building should have a security wall..
+        /// </summary>
+        public static string lblCorrespond357 {
+            get {
+                return ResourceManager.GetString("lblCorrespond357", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (3) Adequate ventilation (air and light) should be arranged in the building..
+        /// </summary>
+        public static string lblCorrespond358 {
+            get {
+                return ResourceManager.GetString("lblCorrespond358", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (4) Seperate rest room..
+        /// </summary>
+        public static string lblCorrespond359 {
+            get {
+                return ResourceManager.GetString("lblCorrespond359", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to PinCode.
+        /// </summary>
+        public static string lblCorrespond36 {
+            get {
+                return ResourceManager.GetString("lblCorrespond36", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (5) Bond free site..
+        /// </summary>
+        public static string lblCorrespond360 {
+            get {
+                return ResourceManager.GetString("lblCorrespond360", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (6) Separate toilets for boys and girls with child friendly facilities..
+        /// </summary>
+        public static string lblCorrespond361 {
+            get {
+                return ResourceManager.GetString("lblCorrespond361", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (7) clean clothes,towels soap should be kept below,and wash vasins etc.Shoud be installed below(not at a height)..
+        /// </summary>
+        public static string lblCorrespond362 {
+            get {
+                return ResourceManager.GetString("lblCorrespond362", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (8) Pantry for food etc..
+        /// </summary>
+        public static string lblCorrespond363 {
+            get {
+                return ResourceManager.GetString("lblCorrespond363", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (9) There should be a field of play..
+        /// </summary>
+        public static string lblCorrespond364 {
+            get {
+                return ResourceManager.GetString("lblCorrespond364", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (10) CCTV in the entire campus. have cameras.
+        /// </summary>
+        public static string lblCorrespond365 {
+            get {
+                return ResourceManager.GetString("lblCorrespond365", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (11) There should also be a fire extinguisher..
+        /// </summary>
+        public static string lblCorrespond366 {
+            get {
+                return ResourceManager.GetString("lblCorrespond366", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (12) The school building should be away from the road.
+        /// </summary>
+        public static string lblCorrespond367 {
+            get {
+                return ResourceManager.GetString("lblCorrespond367", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (13) The pond should not be open..
+        /// </summary>
+        public static string lblCorrespond368 {
+            get {
+                return ResourceManager.GetString("lblCorrespond368", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3. Time-.
+        /// </summary>
+        public static string lblCorrespond369 {
+            get {
+                return ResourceManager.GetString("lblCorrespond369", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Other Operated Society School Name and Address.
+        /// </summary>
+        public static string lblCorrespond37 {
+            get {
+                return ResourceManager.GetString("lblCorrespond37", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to According to the National Child Protection and Education Policy 2013, 3 to 4 posts per day and (None residencial)School.
+        /// </summary>
+        public static string lblCorrespond370 {
+            get {
+                return ResourceManager.GetString("lblCorrespond370", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4. Teaching material-.
+        /// </summary>
+        public static string lblCorrespond371 {
+            get {
+                return ResourceManager.GetString("lblCorrespond371", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Study material on the basis of student number for each story as prescribed by Maharishi Patjati Sanskrit Sansthan be provided.
+        /// </summary>
+        public static string lblCorrespond372 {
+            get {
+                return ResourceManager.GetString("lblCorrespond372", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 5. Library The reading material should also be suitable for each small child.
+        /// </summary>
+        public static string lblCorrespond373 {
+            get {
+                return ResourceManager.GetString("lblCorrespond373", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6. Sporting goods-.
+        /// </summary>
+        public static string lblCorrespond374 {
+            get {
+                return ResourceManager.GetString("lblCorrespond374", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1. Sports material supplied by M.C.D..
+        /// </summary>
+        public static string lblCorrespond375 {
+            get {
+                return ResourceManager.GetString("lblCorrespond375", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2. Children should have places to play near the school..
+        /// </summary>
+        public static string lblCorrespond376 {
+            get {
+                return ResourceManager.GetString("lblCorrespond376", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 7. Health-.
+        /// </summary>
+        public static string lblCorrespond377 {
+            get {
+                return ResourceManager.GetString("lblCorrespond377", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to First aid material, medicine kit, ORSU etc. Time material.
+        /// </summary>
+        public static string lblCorrespond378 {
+            get {
+                return ResourceManager.GetString("lblCorrespond378", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Involved in treatment material by registered medical practitioner.
+        /// </summary>
+        public static string lblCorrespond379 {
+            get {
+                return ResourceManager.GetString("lblCorrespond379", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   Other Details.
+        /// </summary>
+        public static string lblCorrespond38 {
+            get {
+                return ResourceManager.GetString("lblCorrespond38", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 8. Entry-.
+        /// </summary>
+        public static string lblCorrespond380 {
+            get {
+                return ResourceManager.GetString("lblCorrespond380", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Children below three years of age should not be given admission in Assam Udyas..
+        /// </summary>
+        public static string lblCorrespond381 {
+            get {
+                return ResourceManager.GetString("lblCorrespond381", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 9. Records -.
+        /// </summary>
+        public static string lblCorrespond382 {
+            get {
+                return ResourceManager.GetString("lblCorrespond382", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (A) Name of children.
+        /// </summary>
+        public static string lblCorrespond383 {
+            get {
+                return ResourceManager.GetString("lblCorrespond383", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (B) State and nomination whose name is also the day of parents be marked.
+        /// </summary>
+        public static string lblCorrespond384 {
+            get {
+                return ResourceManager.GetString("lblCorrespond384", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (C) Attendance register also.
+        /// </summary>
+        public static string lblCorrespond385 {
+            get {
+                return ResourceManager.GetString("lblCorrespond385", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (D) All teachers / Kiti.
+        /// </summary>
+        public static string lblCorrespond386 {
+            get {
+                return ResourceManager.GetString("lblCorrespond386", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (E) Staff details register..
+        /// </summary>
+        public static string lblCorrespond387 {
+            get {
+                return ResourceManager.GetString("lblCorrespond387", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (F) Karan also has all children.
+        /// </summary>
+        public static string lblCorrespond388 {
+            get {
+                return ResourceManager.GetString("lblCorrespond388", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (G) All the employees of the applicant institution Gazette et 2012 Junita Act.
+        /// </summary>
+        public static string lblCorrespond389 {
+            get {
+                return ResourceManager.GetString("lblCorrespond389", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In which area school operated.
+        /// </summary>
+        public static string lblCorrespond39 {
+            get {
+                return ResourceManager.GetString("lblCorrespond39", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to According to 2015 Child Labor Act 1960 and Child Labor Rules 2016.
+        /// </summary>
+        public static string lblCorrespond390 {
+            get {
+                return ResourceManager.GetString("lblCorrespond390", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Responsibilities of School and Teachers.
+        /// </summary>
+        public static string lblCorrespond391 {
+            get {
+                return ResourceManager.GetString("lblCorrespond391", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Correspondent Renewal Class.
+        /// </summary>
+        public static string lblCorrespond4 {
+            get {
+                return ResourceManager.GetString("lblCorrespond4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rural.
+        /// </summary>
+        public static string lblCorrespond41 {
+            get {
+                return ResourceManager.GetString("lblCorrespond41", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Urban.
+        /// </summary>
+        public static string lblCorrespond42 {
+            get {
+                return ResourceManager.GetString("lblCorrespond42", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name of Municipal corporation/ Municipality/ nagar panchayat / village panchyat of the school area.
+        /// </summary>
+        public static string lblCorrespond43 {
+            get {
+                return ResourceManager.GetString("lblCorrespond43", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Distance of School from District Headquater(K.M.).
+        /// </summary>
+        public static string lblCorrespond44 {
+            get {
+                return ResourceManager.GetString("lblCorrespond44", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nearest Police Station Name.
+        /// </summary>
+        public static string lblCorrespond45 {
+            get {
+                return ResourceManager.GetString("lblCorrespond45", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nearest Police Station Distance from School(K.M.).
+        /// </summary>
+        public static string lblCorrespond46 {
+            get {
+                return ResourceManager.GetString("lblCorrespond46", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nearest Police Station Administrative Division from School.
+        /// </summary>
+        public static string lblCorrespond47 {
+            get {
+                return ResourceManager.GetString("lblCorrespond47", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nearest Police Station Phone No from School.
+        /// </summary>
+        public static string lblCorrespond48 {
+            get {
+                return ResourceManager.GetString("lblCorrespond48", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nearest Govt High School Name.
+        /// </summary>
+        public static string lblCorrespond49 {
+            get {
+                return ResourceManager.GetString("lblCorrespond49", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LKG.
+        /// </summary>
+        public static string lblCorrespond5 {
+            get {
+                return ResourceManager.GetString("lblCorrespond5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nearest Govt High School Name Address.
+        /// </summary>
+        public static string lblCorrespond50 {
+            get {
+                return ResourceManager.GetString("lblCorrespond50", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nearest Govt Higher School Name.
+        /// </summary>
+        public static string lblCorrespond51 {
+            get {
+                return ResourceManager.GetString("lblCorrespond51", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nearest Govt Higher School Name Address.
+        /// </summary>
+        public static string lblCorrespond52 {
+            get {
+                return ResourceManager.GetString("lblCorrespond52", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nearest Govt Higher School Name Distance(K.M.).
+        /// </summary>
+        public static string lblCorrespond53 {
+            get {
+                return ResourceManager.GetString("lblCorrespond53", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nearest Private High School Name.
+        /// </summary>
+        public static string lblCorrespond54 {
+            get {
+                return ResourceManager.GetString("lblCorrespond54", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nearest Private High School Name Address.
+        /// </summary>
+        public static string lblCorrespond55 {
+            get {
+                return ResourceManager.GetString("lblCorrespond55", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nearest Govt High School Distance(K.M.).
+        /// </summary>
+        public static string lblCorrespond555 {
+            get {
+                return ResourceManager.GetString("lblCorrespond555", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Qualification of Principal.
+        /// </summary>
+        public static string lblCorrespond556 {
+            get {
+                return ResourceManager.GetString("lblCorrespond556", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attach list of laboratory equipment.
+        /// </summary>
+        public static string lblCorrespond559 {
+            get {
+                return ResourceManager.GetString("lblCorrespond559", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nearest Private High School Name Distance(K.M.).
+        /// </summary>
+        public static string lblCorrespond56 {
+            get {
+                return ResourceManager.GetString("lblCorrespond56", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to School Information.
+        /// </summary>
+        public static string lblCorrespond560 {
+            get {
+                return ResourceManager.GetString("lblCorrespond560", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Society and Other Information.
+        /// </summary>
+        public static string lblCorrespond561 {
+            get {
+                return ResourceManager.GetString("lblCorrespond561", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Academic Arrangement Information.
+        /// </summary>
+        public static string lblCorrespond562 {
+            get {
+                return ResourceManager.GetString("lblCorrespond562", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Land and TimeTable Information.
+        /// </summary>
+        public static string lblCorrespond563 {
+            get {
+                return ResourceManager.GetString("lblCorrespond563", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Facilities and PHYSICAL Handicapped Information.
+        /// </summary>
+        public static string lblCorrespond564 {
+            get {
+                return ResourceManager.GetString("lblCorrespond564", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Appendix 1.
+        /// </summary>
+        public static string lblCorrespond565 {
+            get {
+                return ResourceManager.GetString("lblCorrespond565", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Appendix 2.
+        /// </summary>
+        public static string lblCorrespond566 {
+            get {
+                return ResourceManager.GetString("lblCorrespond566", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Appendix 3.
+        /// </summary>
+        public static string lblCorrespond567 {
+            get {
+                return ResourceManager.GetString("lblCorrespond567", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Appendix 4.
+        /// </summary>
+        public static string lblCorrespond568 {
+            get {
+                return ResourceManager.GetString("lblCorrespond568", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Appendix 5.
+        /// </summary>
+        public static string lblCorrespond569 {
+            get {
+                return ResourceManager.GetString("lblCorrespond569", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nearest Private Higher School Name.
+        /// </summary>
+        public static string lblCorrespond57 {
+            get {
+                return ResourceManager.GetString("lblCorrespond57", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to School Land/Building Details.
+        /// </summary>
+        public static string lblCorrespond570 {
+            get {
+                return ResourceManager.GetString("lblCorrespond570", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nearest Private Higher School Name Address.
+        /// </summary>
+        public static string lblCorrespond58 {
+            get {
+                return ResourceManager.GetString("lblCorrespond58", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nearest Private Higher School Name Distance(K.M.).
+        /// </summary>
+        public static string lblCorrespond59 {
+            get {
+                return ResourceManager.GetString("lblCorrespond59", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to UKG.
+        /// </summary>
+        public static string lblCorrespond6 {
+            get {
+                return ResourceManager.GetString("lblCorrespond6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to School Type.
+        /// </summary>
+        public static string lblCorrespond60 {
+            get {
+                return ResourceManager.GetString("lblCorrespond60", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Co-ED.
+        /// </summary>
+        public static string lblCorrespond61 {
+            get {
+                return ResourceManager.GetString("lblCorrespond61", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Boys.
+        /// </summary>
+        public static string lblCorrespond62 {
+            get {
+                return ResourceManager.GetString("lblCorrespond62", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Girls.
+        /// </summary>
+        public static string lblCorrespond63 {
+            get {
+                return ResourceManager.GetString("lblCorrespond63", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hostel.
+        /// </summary>
+        public static string lblCorrespond64 {
+            get {
+                return ResourceManager.GetString("lblCorrespond64", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Is Society related to another board.
+        /// </summary>
+        public static string lblCorrespond65 {
+            get {
+                return ResourceManager.GetString("lblCorrespond65", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes.
+        /// </summary>
+        public static string lblCorrespond66 {
+            get {
+                return ResourceManager.GetString("lblCorrespond66", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No.
+        /// </summary>
+        public static string lblCorrespond67 {
+            get {
+                return ResourceManager.GetString("lblCorrespond67", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Board or university Name.
+        /// </summary>
+        public static string lblCorrespond68 {
+            get {
+                return ResourceManager.GetString("lblCorrespond68", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to from date.
+        /// </summary>
+        public static string lblCorrespond69 {
+            get {
+                return ResourceManager.GetString("lblCorrespond69", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Class 1-4.
+        /// </summary>
+        public static string lblCorrespond7 {
+            get {
+                return ResourceManager.GetString("lblCorrespond7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Registration No.
+        /// </summary>
+        public static string lblCorrespond70 {
+            get {
+                return ResourceManager.GetString("lblCorrespond70", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Registration date.
+        /// </summary>
+        public static string lblCorrespond71 {
+            get {
+                return ResourceManager.GetString("lblCorrespond71", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to By which committee is the School/College being run, is the school being run by any other Board/University or by the same name.
+        /// </summary>
+        public static string lblCorrespond72 {
+            get {
+                return ResourceManager.GetString("lblCorrespond72", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Does the school conduct Praveshika and Pratham classes, please give details.
+        /// </summary>
+        public static string lblCorrespond73 {
+            get {
+                return ResourceManager.GetString("lblCorrespond73", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sankiya details of SAROOP AVASI / GARVASI Hostel Boys and Girls of Sanskrit School par class.
+        /// </summary>
+        public static string lblCorrespond74 {
+            get {
+                return ResourceManager.GetString("lblCorrespond74", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LKG.
+        /// </summary>
+        public static string lblCorrespond75 {
+            get {
+                return ResourceManager.GetString("lblCorrespond75", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to UKG.
+        /// </summary>
+        public static string lblCorrespond76 {
+            get {
+                return ResourceManager.GetString("lblCorrespond76", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Class 1-4.
+        /// </summary>
+        public static string lblCorrespond77 {
+            get {
+                return ResourceManager.GetString("lblCorrespond77", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pravashika.
+        /// </summary>
+        public static string lblCorrespond78 {
+            get {
+                return ResourceManager.GetString("lblCorrespond78", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Prathama Prathakhand.
+        /// </summary>
+        public static string lblCorrespond79 {
+            get {
+                return ResourceManager.GetString("lblCorrespond79", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Praveshika.
+        /// </summary>
+        public static string lblCorrespond8 {
+            get {
+                return ResourceManager.GetString("lblCorrespond8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dutikhand.
+        /// </summary>
+        public static string lblCorrespond80 {
+            get {
+                return ResourceManager.GetString("lblCorrespond80", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Antimkhand.
+        /// </summary>
+        public static string lblCorrespond81 {
+            get {
+                return ResourceManager.GetString("lblCorrespond81", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Porve Purvamadiyama.
+        /// </summary>
+        public static string lblCorrespond82 {
+            get {
+                return ResourceManager.GetString("lblCorrespond82", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Porave Antimkhand.
+        /// </summary>
+        public static string lblCorrespond83 {
+            get {
+                return ResourceManager.GetString("lblCorrespond83", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Uttar Prathakhand.
+        /// </summary>
+        public static string lblCorrespond84 {
+            get {
+                return ResourceManager.GetString("lblCorrespond84", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Uttar Antimkhand.
+        /// </summary>
+        public static string lblCorrespond85 {
+            get {
+                return ResourceManager.GetString("lblCorrespond85", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   Attachments doc.
+        /// </summary>
+        public static string lblCorrespond86 {
+            get {
+                return ResourceManager.GetString("lblCorrespond86", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attach Timetables of Classes.
+        /// </summary>
+        public static string lblCorrespond87 {
+            get {
+                return ResourceManager.GetString("lblCorrespond87", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attached Subject Wise Teachers Sheet.
+        /// </summary>
+        public static string lblCorrespond88 {
+            get {
+                return ResourceManager.GetString("lblCorrespond88", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   Time Table Details.
+        /// </summary>
+        public static string lblCorrespond89 {
+            get {
+                return ResourceManager.GetString("lblCorrespond89", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Purmadhima.
+        /// </summary>
+        public static string lblCorrespond9 {
+            get {
+                return ResourceManager.GetString("lblCorrespond9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Information about Classes wise Time Table.
+        /// </summary>
+        public static string lblCorrespond90 {
+            get {
+                return ResourceManager.GetString("lblCorrespond90", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Morning First Shift Information.
+        /// </summary>
+        public static string lblCorrespond91 {
+            get {
+                return ResourceManager.GetString("lblCorrespond91", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From Time.
+        /// </summary>
+        public static string lblCorrespond92 {
+            get {
+                return ResourceManager.GetString("lblCorrespond92", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To Time.
+        /// </summary>
+        public static string lblCorrespond93 {
+            get {
+                return ResourceManager.GetString("lblCorrespond93", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From Class.
+        /// </summary>
+        public static string lblCorrespond94 {
+            get {
+                return ResourceManager.GetString("lblCorrespond94", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To Class.
+        /// </summary>
+        public static string lblCorrespond95 {
+            get {
+                return ResourceManager.GetString("lblCorrespond95", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to After noon First Shift Information.
+        /// </summary>
+        public static string lblCorrespond96 {
+            get {
+                return ResourceManager.GetString("lblCorrespond96", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From Time.
+        /// </summary>
+        public static string lblCorrespond97 {
+            get {
+                return ResourceManager.GetString("lblCorrespond97", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to From Class.
+        /// </summary>
+        public static string lblCorrespond98 {
+            get {
+                return ResourceManager.GetString("lblCorrespond98", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To Class.
+        /// </summary>
+        public static string lblCorrespond99 {
+            get {
+                return ResourceManager.GetString("lblCorrespond99", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Declaration.
         /// </summary>
         public static string lblDeclaration {

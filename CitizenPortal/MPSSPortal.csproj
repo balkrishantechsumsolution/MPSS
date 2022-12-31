@@ -2577,6 +2577,20 @@
     <Compile Include="WebApp\Kiosk\Master\AdminMaster.Master.designer.cs">
       <DependentUpon>AdminMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\AdmitCardMPSOS.aspx.cs">
+      <DependentUpon>AdmitCardMPSOS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\AdmitCardMPSOS.aspx.designer.cs">
+      <DependentUpon>AdmitCardMPSOS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\AdmitCardViewPage.aspx.cs">
+      <DependentUpon>AdmitCardViewPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\AdmitCardViewPage.aspx.designer.cs">
+      <DependentUpon>AdmitCardViewPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebApp\Kiosk\MPSS\ViewScholarShipFrm.aspx.cs">
       <DependentUpon>ViewScholarShipFrm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -7087,6 +7101,8 @@
     <Content Include="WebApp\Kiosk\Forms\KioskApproval.aspx" />
     <Content Include="WebApp\Kiosk\Forms\MakePayment.aspx" />
     <Content Include="WebApp\Kiosk\Forms\OfficeOfficer.aspx" />
+    <Content Include="WebApp\Kiosk\MPSS\AdmitCardMPSOS.aspx" />
+    <Content Include="WebApp\Kiosk\MPSS\AdmitCardViewPage.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\ViewScholarShipFrm.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\ViewAcknowledgeCorrespondent.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\CorrespondentRenewal.aspx" />
