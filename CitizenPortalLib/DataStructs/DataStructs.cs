@@ -3953,5 +3953,12 @@ Subject1, Subject2, Subject3, Subject4, Reason;
         public string fileAttTime;
         public string fileTeachSht;
         public string fileSocietyMembersReg;
+
+        public string fileLabEqipPath;
+        public string fileRentAgreePath;
+        public string fileKhasraPath;
+        public string fileAttTimePath;
+        public string fileTeachShtPath;
+        public string fileSocietyMembersRegPath;
     }
 }

@@ -126,7 +126,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
 
                 LinkButton lb = new LinkButton();
                 lb.ID = "Attachment";
-                lb.Text = "View Admin Card";
+                lb.Text = "View";
                 lb.Command += lb_Command;
 
                 lb.ToolTip = "Attachment";

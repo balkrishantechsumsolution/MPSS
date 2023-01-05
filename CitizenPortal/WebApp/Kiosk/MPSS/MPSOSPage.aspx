@@ -228,6 +228,15 @@
                                         <span style="font-size: 12px !important; font-weight: bold !important; color: black !important;">Click to Print Filled Application</span><br />
                                         <span>Click to Print Acknowledgement</span>
                                     </div>
+                                      <div style="min-height: 4.66em; z-index: -760;" class="SrvDiv" id="101">
+                                        <a href="/WebApp/Citizen/Forms/Geustuser.aspx?SvcID=1466">
+                                            <img src="../Images/MPSOSLogo.jpg" alt="" align="left" style="height: 93px; margin-top: 5px;" />
+                                        </a>
+                                        <a href="CenterCodeWiseMPSOSView.aspx" onclick="javascript:return RedirectToService('/WebApp/Kiosk/MPSS/CenterCodeWiseMPSOSView.aspx');">Center & Class Wise Exam data</a>
+                                        <br />
+                                        <span style="font-size: 12px !important; font-weight: bold !important; color: black !important;">(SHARMODAYA EXAM 2023-24)</span><br />
+                                        <span>Click to Center & Class Wise Exam data</span>
+                                    </div>
 
 
                                 </div>

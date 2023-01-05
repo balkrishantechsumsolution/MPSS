@@ -55,6 +55,8 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
                         txtSchoolName.Text = dtApp.Rows[0]["school"].ToString();
                         txtDOB.Text = dtApp.Rows[0]["Birthdate"].ToString();
                         txtClass.Text = dtApp.Rows[0]["Class"].ToString();
+                        lblExamDate.Text = dtApp.Rows[0]["ExamDate"].ToString();
+                        lblExamTime.Text = dtApp.Rows[0]["ExamTime"].ToString();
 
                         var val = dtApp.Rows[0]["Img"].ToString();
                         ProfilePhoto.Attributes.Add("src", val);

@@ -282,6 +282,13 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
                 t_ObjDT.fileTeachSht = hdnAttachedSubject.Value;
                 t_ObjDT.fileSocietyMembersReg = hdnAttachLstSocM.Value;
 
+                t_ObjDT.fileLabEqipPath = hdnLabEquipmentsPath.Value;
+                t_ObjDT.fileRentAgreePath = hdnRentAgreementPath.Value;
+                t_ObjDT.fileKhasraPath = hdnLandRegPath.Value;
+                t_ObjDT.fileAttTimePath = hdnAttachTimePath.Value;
+                t_ObjDT.fileTeachShtPath = hdnAttachedSubjectPath.Value;
+                t_ObjDT.fileSocietyMembersRegPath = hdnAttachLstSocMPath.Value;
+
                 SqlParameter[] parameter = {
             new SqlParameter("@SocietyName", t_ObjDT.SocietyName),
  new SqlParameter("@SchoolName", t_ObjDT.SchoolName),
@@ -436,6 +443,12 @@ new SqlParameter("@fileAttTime",t_ObjDT.fileAttTime),
 new SqlParameter("@fileTeachSht",t_ObjDT.fileTeachSht),
 new SqlParameter("@fileSocietyMembersReg",t_ObjDT.fileSocietyMembersReg),
 new SqlParameter("@UserID",m_UserID),
+new SqlParameter("@fileLabEqipPath",t_ObjDT.fileLabEqipPath),
+new SqlParameter("@fileRentAgreePath",t_ObjDT.fileRentAgreePath),
+new SqlParameter("@fileKhasraPath",t_ObjDT.fileKhasraPath),
+new SqlParameter("@fileAttTimePath",t_ObjDT.fileAttTimePath),
+new SqlParameter("@fileTeachShtPath",t_ObjDT.fileTeachShtPath),
+new SqlParameter("@fileSocietyMembersRegPath",t_ObjDT.fileSocietyMembersRegPath),
     };
                 
                 DataSet result = sqlhelper.ExecuteDataTableNon("InsertCorrespondendsSP", parameter);

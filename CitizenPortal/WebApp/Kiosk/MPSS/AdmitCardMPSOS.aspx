@@ -229,14 +229,14 @@
                                          <tr>
                                             <td style="padding: 5px; border: 1px solid #999; background-color: #F8F8F8; color: #383E4B; text-align: left;"><b>परीक्षा तिथि</b></td>
                                             <td style="padding: 5px; border: 1px solid #999; color: #383E4B; text-align: left;">
-                                                <asp:Label ID="Label1" runat="server"> 08-Jan-2023</asp:Label>
+                                                <asp:Label ID="lblExamDate" runat="server"> </asp:Label>
                                             </td>
                                         </tr>
 
                                         <tr>
                                             <td style="padding: 5px; border: 1px solid #999; background-color: #F8F8F8; color: #383E4B; text-align: left;"><b> परीक्षा का समय</b></td>
                                             <td style="padding: 5px; border: 1px solid #999; color: #383E4B; text-align: left; white-space: nowrap;">
-                                                <asp:Label ID="Label2" runat="server"></asp:Label>  09:45 AM to 12:15 PM (2 Hours)</td>
+                                                <asp:Label ID="lblExamTime" runat="server"></asp:Label></td>
                                              </tr>
                                        
                                     </table>

@@ -2577,6 +2577,34 @@
     <Compile Include="WebApp\Kiosk\Master\AdminMaster.Master.designer.cs">
       <DependentUpon>AdminMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\CenterCodeWiseMPSOSView.aspx.cs">
+      <DependentUpon>CenterCodeWiseMPSOSView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\CenterCodeWiseMPSOSView.aspx.designer.cs">
+      <DependentUpon>CenterCodeWiseMPSOSView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\DocketMPSOS.aspx.cs">
+      <DependentUpon>DocketMPSOS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\DocketMPSOS.aspx.designer.cs">
+      <DependentUpon>DocketMPSOS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\BulkAttendenceCheck.aspx.cs">
+      <DependentUpon>BulkAttendenceCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\BulkAttendenceCheck.aspx.designer.cs">
+      <DependentUpon>BulkAttendenceCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\AttendenceSheet.aspx.cs">
+      <DependentUpon>AttendenceSheet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\AttendenceSheet.aspx.designer.cs">
+      <DependentUpon>AttendenceSheet.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebApp\Kiosk\MPSS\AdmitCardMPSOS.aspx.cs">
       <DependentUpon>AdmitCardMPSOS.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -7101,6 +7129,10 @@
     <Content Include="WebApp\Kiosk\Forms\KioskApproval.aspx" />
     <Content Include="WebApp\Kiosk\Forms\MakePayment.aspx" />
     <Content Include="WebApp\Kiosk\Forms\OfficeOfficer.aspx" />
+    <Content Include="WebApp\Kiosk\MPSS\CenterCodeWiseMPSOSView.aspx" />
+    <Content Include="WebApp\Kiosk\MPSS\DocketMPSOS.aspx" />
+    <Content Include="WebApp\Kiosk\MPSS\BulkAttendenceCheck.aspx" />
+    <Content Include="WebApp\Kiosk\MPSS\AttendenceSheet.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\AdmitCardMPSOS.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\AdmitCardViewPage.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\ViewScholarShipFrm.aspx" />
