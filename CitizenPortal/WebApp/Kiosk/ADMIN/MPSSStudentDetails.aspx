@@ -1,10 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebApp/Kiosk/Master/AdminMaster.Master" AutoEventWireup="true" CodeBehind="AdminDashboard.aspx.cs" Inherits="CitizenPortal.WebApp.Kiosk.ADMIN.AdminDashboard" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebApp/Kiosk/Master/AdminMaster.Master" AutoEventWireup="true" CodeBehind="MPSSStudentDetails.aspx.cs" Inherits="CitizenPortal.WebApp.Kiosk.ADMIN.MPSSStudentDetails" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <!DOCTYPE html>
 
 
 
+ 
     <meta http-equiv="PRAGMA" content="NO-CACHE" />
     <meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
 
@@ -186,7 +186,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server" ClientIDMode="Static">
         <div id="page-wrapper" style="min-height: 500px !important;">
-        
+    
             <div class="row">
                 <div class="col-lg-12 cscPgehd">
                     <h2 class="form-heading"><i class="fa fa-pencil-square-o"></i>Report Viewer</h2>
@@ -200,10 +200,10 @@
                         </h4>
                     </div>
 
-                    <div class="box-body box-body-open">
+                    <div class="box-body box-body-open" style="display:none;">
                         <div class="box-container">
 
-                       <%--     <div class="box-body box-body-open ptop20">
+                            <div class="box-body box-body-open ptop20">
                                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                                     <div class="form-group">
 
@@ -239,7 +239,7 @@
                                     </div>
                                 </div>
                                 <div class="clearfix"></div>
-                            </div>--%>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -250,7 +250,7 @@
 
                     <div class="box-heading">
 
-                        <h4 class="box-title">Summary Data</h4>
+                        <h4 class="box-title">Reports Data</h4>
                     </div>
                     <div class="box-body box-body-open">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -265,6 +265,16 @@
 
                         <div class="clearfix"></div>
                         <div class="mtop15"></div>
+                          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <div class="form-group">
+                                        <asp:Button ID="btnPayment" runat="server" CausesValidation="True" ToolTip="Payment"
+                                            CssClass="btn btn-success" Text="Show Data" ValidationGroup="G" OnClick="btnPayment_Click" />
+                                      
+
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
                     </div>
 
                 </div>

@@ -1824,7 +1824,7 @@ Purvamadiyma
     <value>18. Institution's own certificate regarding desired facilities to the disabled L.K.G. (Arun) UK Yes. (Uday) and on the ground floor for the students of classes 1 to 4 yes no</value>
   </data>
   <data name="lblCorrespond268" xml:space="preserve">
-    <value />
+    <value>Signature and Stamp</value>
   </data>
   <data name="lblCorrespond269" xml:space="preserve">
     <value>19. There should be arrangement. The building of the school should not be more than ground floor, first floor, second floor (three floors) yes / no</value>
@@ -2175,7 +2175,7 @@ Purvamadiyma
     <value>Study material on the basis of student number for each story as prescribed by Maharishi Patjati Sanskrit Sansthan be provided</value>
   </data>
   <data name="lblCorrespond373" xml:space="preserve">
-    <value>5. Library The reading material should also be suitable for each small child</value>
+    <value>5. Library </value>
   </data>
   <data name="lblCorrespond374" xml:space="preserve">
     <value>6. Sporting goods-</value>
@@ -2473,5 +2473,32 @@ Purvamadiyma
   </data>
   <data name="lblCorrespond570" xml:space="preserve">
     <value>School Land/Building Details</value>
+  </data>
+  <data name="lblCorrespond392" xml:space="preserve">
+    <value>1. P.T.A. With the admission every year, the formation should be done within 1 month.</value>
+  </data>
+  <data name="lblCorrespond393" xml:space="preserve">
+    <value>2. Only 75% of the parents will remain in the Guardian Teacher Association, in which 50% will be mothers, 25% will be fathers and 25% will be teachers.</value>
+  </data>
+  <data name="lblCorrespond394" xml:space="preserve">
+    <value>3. P.T.A. The tenure will be of 2 years. New PTA in rotation every year. Will be formed</value>
+  </data>
+  <data name="lblCorrespond395" xml:space="preserve">
+    <value>6. Food items, making dietary arrangements for proper nutrition.</value>
+  </data>
+  <data name="lblCorrespond396" xml:space="preserve">
+    <value>8. Arrangement of medicine kit for basic first aid should be ensured.</value>
+  </data>
+  <data name="lblcorresponds99999" xml:space="preserve">
+    <value>Every school should have educational (audio-visual) material as well as reading material to suit the needs of young children.</value>
+  </data>
+  <data name="lblcorresponds999991" xml:space="preserve">
+    <value>4. There will be a meeting of Teacher-Parent Association every month, which will be included in the proceedings.</value>
+  </data>
+  <data name="lblcorresponds999992" xml:space="preserve">
+    <value>5. P.T.A. The main task of the organization is to provide security, protection and proper environment to the children.</value>
+  </data>
+  <data name="lblcorresponds9999921" xml:space="preserve">
+    <value>7. Regular health check-up should be done by a registered doctor.</value>
   </data>
 </root>

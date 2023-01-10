@@ -79,11 +79,21 @@ namespace CitizenPortal.WebApp.Control
                 pnlMenu.Controls.Add(new LiteralControl("</li>"));
 
 
+                if (m_UserID.ToUpper() == "ADMIN")
+                {
+                    pnlMenu.Controls.Add(new LiteralControl("<li>"));
+                    pnlMenu.Controls.Add(new LiteralControl("<a id='lpApprovalList'  href ='/WebApp/Kiosk/ADMIN/ApprovalList.aspx' ><i class='fa fa-edit fa-fw'></i>Admin Approval List</ a > "));
+                    pnlMenu.Controls.Add(new LiteralControl("</li>"));
+                }
+                else
+                {
+                    pnlMenu.Controls.Add(new LiteralControl("<li>"));
+                    pnlMenu.Controls.Add(new LiteralControl("<a id='lpApprovalList'  href ='/WebApp/Kiosk/MPSS/ApprovalList.aspx' ><i class='fa fa-edit fa-fw'></i>Approval List</ a > "));
+                    pnlMenu.Controls.Add(new LiteralControl("</li>"));
+
+                }
 
 
-                pnlMenu.Controls.Add(new LiteralControl("<li>"));
-                pnlMenu.Controls.Add(new LiteralControl("<a id='lpApprovalList'  href ='/WebApp/Kiosk/MPSS/ApprovalList.aspx' ><i class='fa fa-edit fa-fw'></i>ApprovalList</ a > "));
-                pnlMenu.Controls.Add(new LiteralControl("</li>"));
 
 
                 pnlMenu.Controls.Add(new LiteralControl("<li>"));
@@ -140,9 +150,19 @@ namespace CitizenPortal.WebApp.Control
 
 
 
-                pnlMenu.Controls.Add(new LiteralControl("<li>"));
-                pnlMenu.Controls.Add(new LiteralControl("<a id='lpApprovalList'  href ='/WebApp/Kiosk/MPSS/ApprovalList.aspx' ><i class='fa fa-edit fa-fw'></i>ApprovalList</ a > "));
-                pnlMenu.Controls.Add(new LiteralControl("</li>"));
+                if (m_UserID.ToUpper() == "ADMIN")
+                {
+                    pnlMenu.Controls.Add(new LiteralControl("<li>"));
+                    pnlMenu.Controls.Add(new LiteralControl("<a id='lpApprovalList'  href ='/WebApp/Kiosk/ADMIN/ApprovalList.aspx' ><i class='fa fa-edit fa-fw'></i>Admin Approval List</ a > "));
+                    pnlMenu.Controls.Add(new LiteralControl("</li>"));
+                }
+                else
+                {
+                    pnlMenu.Controls.Add(new LiteralControl("<li>"));
+                    pnlMenu.Controls.Add(new LiteralControl("<a id='lpApprovalList'  href ='/WebApp/Kiosk/MPSS/ApprovalList.aspx' ><i class='fa fa-edit fa-fw'></i>Approval List</ a > "));
+                    pnlMenu.Controls.Add(new LiteralControl("</li>"));
+
+                }
 
 
                 pnlMenu.Controls.Add(new LiteralControl("<li>"));
@@ -164,8 +184,8 @@ namespace CitizenPortal.WebApp.Control
 
             pnlMenu.Controls.Add(new LiteralControl("</div>"));
             pnlMenu.Controls.Add(new LiteralControl("</div>"));
-        
-    }
+
+        }
 
 
 

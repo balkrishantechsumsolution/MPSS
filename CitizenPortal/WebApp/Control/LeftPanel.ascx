@@ -166,7 +166,22 @@
     padding-left: 9px !important;
 }
 </style>
+<script type='text/javascript'>
+    function popupwindow() {
+        //var url = "/WebApp/Kiosk/MPSS/InstructionScholar.aspx";
+        //newwindow = window.open(url, 'Instruction Scholar Ship', 'WIDTH=650,HEIGHT=750,scrollbars=no, menubar=no,resizable=yes,directories=no,location=no');
+        //if (window.focus) { newwindow.focus() }
+        //return false;
 
+        var url = "/WebApp/Kiosk/MPSS/InstructionScholar.aspx";
+        window.location.href = url;
+        window.location.assign(url);
+        window.location = url;
+        window.location.replace = url;
+        return false;
+       
+    }
+</script>
 <script>
     $(document).ready(function () {
         var url = window.location;

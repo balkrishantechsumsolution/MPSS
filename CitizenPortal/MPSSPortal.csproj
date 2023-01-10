@@ -2346,6 +2346,20 @@
     <Compile Include="WebApp\Kiosk\ADMIN\AdminDashboard.aspx.designer.cs">
       <DependentUpon>AdminDashboard.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebApp\Kiosk\ADMIN\ApprovalList.aspx.cs">
+      <DependentUpon>ApprovalList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\ADMIN\ApprovalList.aspx.designer.cs">
+      <DependentUpon>ApprovalList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\ADMIN\MPSSStudentDetails.aspx.cs">
+      <DependentUpon>MPSSStudentDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\ADMIN\MPSSStudentDetails.aspx.designer.cs">
+      <DependentUpon>MPSSStudentDetails.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebApp\Kiosk\CBCS\Acknowledgement.aspx.cs">
       <DependentUpon>Acknowledgement.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2618,6 +2632,13 @@
     </Compile>
     <Compile Include="WebApp\Kiosk\MPSS\AdmitCardViewPage.aspx.designer.cs">
       <DependentUpon>AdmitCardViewPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\InstructionScholar.aspx.cs">
+      <DependentUpon>InstructionScholar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebApp\Kiosk\MPSS\InstructionScholar.aspx.designer.cs">
+      <DependentUpon>InstructionScholar.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebApp\Kiosk\MPSS\ViewScholarShipFrm.aspx.cs">
       <DependentUpon>ViewScholarShipFrm.aspx</DependentUpon>
@@ -7091,6 +7112,8 @@
     <Content Include="WebApp\G2G\Tasklist.aspx" />
     <Content Include="WebApp\G2G\TransactionDetail.aspx" />
     <Content Include="WebApp\Kiosk\ADMIN\AdminDashboard.aspx" />
+    <Content Include="WebApp\Kiosk\ADMIN\ApprovalList.aspx" />
+    <Content Include="WebApp\Kiosk\ADMIN\MPSSStudentDetails.aspx" />
     <Content Include="WebApp\Kiosk\CBCS\Acknowledgement.aspx" />
     <Content Include="WebApp\Kiosk\CBCS\Admission.js" />
     <Content Include="WebApp\Kiosk\CBCS\AdmissionForm.aspx" />
@@ -7135,6 +7158,7 @@
     <Content Include="WebApp\Kiosk\MPSS\AttendenceSheet.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\AdmitCardMPSOS.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\AdmitCardViewPage.aspx" />
+    <Content Include="WebApp\Kiosk\MPSS\InstructionScholar.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\ViewScholarShipFrm.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\ViewAcknowledgeCorrespondent.aspx" />
     <Content Include="WebApp\Kiosk\MPSS\CorrespondentRenewal.aspx" />

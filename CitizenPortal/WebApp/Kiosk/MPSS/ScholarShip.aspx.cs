@@ -23,7 +23,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
         protected void Page_Load(object sender, EventArgs e)
         {
 
-
+            if (Session["LoginID"].ToString() == null) return;
 
             if (!IsPostBack)
             {
@@ -842,7 +842,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
             string strFileName;
             string strFilePath;
             string strFolder;
-            string fileSTR = "images\\";
+            string fileSTR = "imagesTC\\";
             strFolder = Server.MapPath("./") + fileSTR;
             // Get the name of the file that is posted.
             strFileName = oFile.PostedFile.FileName;
@@ -875,7 +875,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
 
                     File.Copy(strFilePath, destFileName);
 
-                    string imgPath = "~/images/" + strf + ".jpg";
+                    string imgPath = "~/imagesTC/" + strf + ".jpg";
 
                     byte[] imageArray = System.IO.File.ReadAllBytes(destFileName);
                     string base64ImageRepresentation = Convert.ToBase64String(imageArray);
@@ -906,7 +906,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
             string strFileName;
             string strFilePath;
             string strFolder;
-            string fileSTR = "images\\";
+            string fileSTR = "imagesPhoto\\";
             strFolder = Server.MapPath("./") + fileSTR;
             // Get the name of the file that is posted.
             strFileName = File1.PostedFile.FileName;
@@ -934,7 +934,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
                 {
                     File1.PostedFile.SaveAs(strFilePath);
                     File.Copy(strFilePath, destFileName);
-                    string imgPath = "~/images/" + strf + ".jpg";
+                    string imgPath = "~/imagesPhoto/" + strf + ".jpg";
 
                     byte[] imageArray = System.IO.File.ReadAllBytes(destFileName);
                     string base64ImageRepresentation = Convert.ToBase64String(imageArray);
@@ -963,7 +963,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
             string strFileName;
             string strFilePath;
             string strFolder;
-            string fileSTR = "images\\";
+            string fileSTR = "imagesCheque\\";
             strFolder = Server.MapPath("./") + fileSTR;
             // Get the name of the file that is posted.
             strFileName = Chequeupload.PostedFile.FileName;
@@ -991,7 +991,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
                 {
                     Chequeupload.PostedFile.SaveAs(strFilePath);
                     File.Copy(strFilePath, destFileName);
-                    string imgPath = "~/images/" + strf + ".jpg";
+                    string imgPath = "~/imagesCheque/" + strf + ".jpg";
 
                     byte[] imageArray = System.IO.File.ReadAllBytes(destFileName);
                     string base64ImageRepresentation = Convert.ToBase64String(imageArray);
@@ -1019,7 +1019,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
             string strFileName;
             string strFilePath;
             string strFolder;
-            string fileSTR = "images\\";
+            string fileSTR = "imagesPassbook\\";
             strFolder = Server.MapPath("./") + fileSTR;
             // Get the name of the file that is posted.
             strFileName = Passbookupload.PostedFile.FileName;
@@ -1047,7 +1047,7 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
                 {
                     Passbookupload.PostedFile.SaveAs(strFilePath);
                     File.Copy(strFilePath, destFileName);
-                    string imgPath = "~/images/" + strf + ".jpg";
+                    string imgPath = "~/imagesPassbook/" + strf + ".jpg";
 
                     byte[] imageArray = System.IO.File.ReadAllBytes(destFileName);
                     string base64ImageRepresentation = Convert.ToBase64String(imageArray);

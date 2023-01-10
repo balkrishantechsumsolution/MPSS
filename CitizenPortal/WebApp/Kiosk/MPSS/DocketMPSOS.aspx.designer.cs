@@ -24,15 +24,6 @@ namespace CitizenPortal.WebApp.Kiosk.MPSS
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// lblCertificateName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCertificateName;
-
-        /// <summary>
         /// divENT control.
         /// </summary>
         /// <remarks>

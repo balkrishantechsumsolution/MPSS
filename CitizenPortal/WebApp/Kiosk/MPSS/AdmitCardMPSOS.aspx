@@ -3,6 +3,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <%@ Register Src="~/WebApp/Control/Infomation.ascx" TagPrefix="uc1" TagName="Infomation" %>
 <%@ Register Src="~/WebApp/Common/QRCode/QRCode.ascx" TagPrefix="uc1" TagName="QRCode" %>
+    <script src="/WebApp/Login/js/jquery-1.12.3.js"></script>
+    <script src="/Scripts/jquery-ui-1.11.4.min.js"></script>
+    <script src="/Scripts/jquery.msgBox.js"></script>
 
 <!DOCTYPE html>
 
@@ -39,6 +42,7 @@
 
         });
         function CallPrint(strid) {
+            InsertDownloadDocument();
             var prtContent = document.getElementById(strid);
             var WinPrint = window.open('', '', 'letf=0,top=0,width=860,height=2010,toolbar=0,scrollbars=0,status=0');
             WinPrint.document.write(prtContent.innerHTML);
@@ -72,6 +76,42 @@
             t_URL = ResolveUrl(t_URL);
             window.open(t_URL, "");
         }
+        function InsertDownloadDocument(){
+            var temp = "Bala";
+            var obj = "";
+          
+
+
+            var datavar = {
+                "AppID": document.getElementById('txtRegNo').innerHTML
+                , "rollNumber": document.getElementById('txtRollNo').innerHTML
+                , "UniqueCode": document.getElementById('txtUniqueCode').innerHTML
+                , "Centre_Code": document.getElementById('txtCentreNo').innerHTML
+            };
+
+            var obj = {
+                "prefix": "'" + temp + "'",
+                "Data": JSON.stringify(datavar, null, 4)
+            };
+
+            $.ajax({
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                url: '/WebApp/Kiosk/MPSS/AdmitCardMPSOS.aspx/InsertDownloadDocument',
+                data: JSON.stringify(obj, null, 4),
+                processData: false,
+                dataType: "json",
+                success: function (response) {
+                   
+                   
+                },
+                error: function (a, b, c) {
+                    alert(a.responseJSON.Message);
+                    
+                }
+            });
+        }
+
     </script>
 </head>
 <body>

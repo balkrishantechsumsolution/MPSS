@@ -489,7 +489,7 @@ new SqlParameter("@fileSocietyMembersRegPath",t_ObjDT.fileSocietyMembersRegPath)
             string strFileName;
             string strFilePath;
             string strFolder;
-            string fileSTR = "images\\";
+            string fileSTR = "imagesttachLstSocM\\";
             strFolder = Server.MapPath("./") + fileSTR;
             // Get the name of the file that is posted.
             strFileName = fileSocietyMembersReg.PostedFile.FileName;
@@ -517,7 +517,7 @@ new SqlParameter("@fileSocietyMembersRegPath",t_ObjDT.fileSocietyMembersRegPath)
                 {
                     fileSocietyMembersReg.PostedFile.SaveAs(strFilePath);
                     File.Copy(strFilePath, destFileName);
-                    string imgPath = "~/images/" + strf + ".jpg";
+                    string imgPath = "~/imagesttachLstSocM/" + strf + ".jpg";
 
                     byte[] imageArray = System.IO.File.ReadAllBytes(destFileName);
                     string base64ImageRepresentation = Convert.ToBase64String(imageArray);
@@ -544,7 +544,7 @@ new SqlParameter("@fileSocietyMembersRegPath",t_ObjDT.fileSocietyMembersRegPath)
             string strFileName;
             string strFilePath;
             string strFolder;
-            string fileSTR = "images\\";
+            string fileSTR = "imagesAttachTime\\";
             strFolder = Server.MapPath("./") + fileSTR;
             // Get the name of the file that is posted.
             strFileName = fileAttTime.PostedFile.FileName;
@@ -572,7 +572,7 @@ new SqlParameter("@fileSocietyMembersRegPath",t_ObjDT.fileSocietyMembersRegPath)
                 {
                     fileAttTime.PostedFile.SaveAs(strFilePath);
                     File.Copy(strFilePath, destFileName);
-                    string imgPath = "~/images/" + strf + ".jpg";
+                    string imgPath = "~/imagesAttachTime/" + strf + ".jpg";
 
                     byte[] imageArray = System.IO.File.ReadAllBytes(destFileName);
                     string base64ImageRepresentation = Convert.ToBase64String(imageArray);
@@ -599,7 +599,7 @@ new SqlParameter("@fileSocietyMembersRegPath",t_ObjDT.fileSocietyMembersRegPath)
             string strFileName;
             string strFilePath;
             string strFolder;
-            string fileSTR = "images\\";
+            string fileSTR = "imagesAttachedSubject\\";
             strFolder = Server.MapPath("./") + fileSTR;
             // Get the name of the file that is posted.
             strFileName = fileAttachedSubject.PostedFile.FileName;
@@ -627,7 +627,7 @@ new SqlParameter("@fileSocietyMembersRegPath",t_ObjDT.fileSocietyMembersRegPath)
                 {
                     fileAttachedSubject.PostedFile.SaveAs(strFilePath);
                     File.Copy(strFilePath, destFileName);
-                    string imgPath = "~/images/" + strf + ".jpg";
+                    string imgPath = "~/imagesAttachedSubject/" + strf + ".jpg";
 
                     byte[] imageArray = System.IO.File.ReadAllBytes(destFileName);
                     string base64ImageRepresentation = Convert.ToBase64String(imageArray);
@@ -654,7 +654,7 @@ new SqlParameter("@fileSocietyMembersRegPath",t_ObjDT.fileSocietyMembersRegPath)
             string strFileName;
             string strFilePath;
             string strFolder;
-            string fileSTR = "images\\";
+            string fileSTR = "imagesLandReg\\";
             strFolder = Server.MapPath("./") + fileSTR;
             // Get the name of the file that is posted.
             strFileName = fileLandReg.PostedFile.FileName;
@@ -682,7 +682,7 @@ new SqlParameter("@fileSocietyMembersRegPath",t_ObjDT.fileSocietyMembersRegPath)
                 {
                     fileLandReg.PostedFile.SaveAs(strFilePath);
                     File.Copy(strFilePath, destFileName);
-                    string imgPath = "~/images/" + strf + ".jpg";
+                    string imgPath = "~/imagesLandReg/" + strf + ".jpg";
 
                     byte[] imageArray = System.IO.File.ReadAllBytes(destFileName);
                     string base64ImageRepresentation = Convert.ToBase64String(imageArray);
@@ -709,7 +709,7 @@ new SqlParameter("@fileSocietyMembersRegPath",t_ObjDT.fileSocietyMembersRegPath)
             string strFileName;
             string strFilePath;
             string strFolder;
-            string fileSTR = "images\\";
+            string fileSTR = "imagesRentAgreement\\";
             strFolder = Server.MapPath("./") + fileSTR;
             // Get the name of the file that is posted.
             strFileName = fileRentAgreement.PostedFile.FileName;
@@ -737,7 +737,7 @@ new SqlParameter("@fileSocietyMembersRegPath",t_ObjDT.fileSocietyMembersRegPath)
                 {
                     fileRentAgreement.PostedFile.SaveAs(strFilePath);
                     File.Copy(strFilePath, destFileName);
-                    string imgPath = "~/images/" + strf + ".jpg";
+                    string imgPath = "~/imagesRentAgreement/" + strf + ".jpg";
 
                     byte[] imageArray = System.IO.File.ReadAllBytes(destFileName);
                     string base64ImageRepresentation = Convert.ToBase64String(imageArray);
@@ -764,7 +764,7 @@ new SqlParameter("@fileSocietyMembersRegPath",t_ObjDT.fileSocietyMembersRegPath)
             string strFileName;
             string strFilePath;
             string strFolder;
-            string fileSTR = "images\\";
+            string fileSTR = "imagesLabEquipments\\";
             strFolder = Server.MapPath("./") + fileSTR;
             // Get the name of the file that is posted.
             strFileName = fileLabEquipments.PostedFile.FileName;
@@ -792,7 +792,7 @@ new SqlParameter("@fileSocietyMembersRegPath",t_ObjDT.fileSocietyMembersRegPath)
                 {
                     fileLabEquipments.PostedFile.SaveAs(strFilePath);
                     File.Copy(strFilePath, destFileName);
-                    string imgPath = "~/images/" + strf + ".jpg";
+                    string imgPath = "~/imagesLabEquipments/" + strf + ".jpg";
 
                     byte[] imageArray = System.IO.File.ReadAllBytes(destFileName);
                     string base64ImageRepresentation = Convert.ToBase64String(imageArray);

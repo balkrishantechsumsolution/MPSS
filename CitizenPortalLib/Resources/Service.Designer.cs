@@ -2793,7 +2793,7 @@ namespace CitizenPortalLib.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Signature and Stamp.
         /// </summary>
         public static string lblCorrespond268 {
             get {
@@ -3846,7 +3846,7 @@ namespace CitizenPortalLib.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 5. Library The reading material should also be suitable for each small child.
+        ///   Looks up a localized string similar to 5. Library .
         /// </summary>
         public static string lblCorrespond373 {
             get {
@@ -4031,6 +4031,51 @@ namespace CitizenPortalLib.Resources {
         public static string lblCorrespond391 {
             get {
                 return ResourceManager.GetString("lblCorrespond391", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1. P.T.A. With the admission every year, the formation should be done within 1 month..
+        /// </summary>
+        public static string lblCorrespond392 {
+            get {
+                return ResourceManager.GetString("lblCorrespond392", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2. Only 75% of the parents will remain in the Guardian Teacher Association, in which 50% will be mothers, 25% will be fathers and 25% will be teachers..
+        /// </summary>
+        public static string lblCorrespond393 {
+            get {
+                return ResourceManager.GetString("lblCorrespond393", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3. P.T.A. The tenure will be of 2 years. New PTA in rotation every year. Will be formed.
+        /// </summary>
+        public static string lblCorrespond394 {
+            get {
+                return ResourceManager.GetString("lblCorrespond394", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6. Food items, making dietary arrangements for proper nutrition..
+        /// </summary>
+        public static string lblCorrespond395 {
+            get {
+                return ResourceManager.GetString("lblCorrespond395", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 8. Arrangement of medicine kit for basic first aid should be ensured..
+        /// </summary>
+        public static string lblCorrespond396 {
+            get {
+                return ResourceManager.GetString("lblCorrespond396", resourceCulture);
             }
         }
         
@@ -4742,6 +4787,42 @@ namespace CitizenPortalLib.Resources {
         public static string lblCorrespond99 {
             get {
                 return ResourceManager.GetString("lblCorrespond99", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Every school should have educational (audio-visual) material as well as reading material to suit the needs of young children..
+        /// </summary>
+        public static string lblcorresponds99999 {
+            get {
+                return ResourceManager.GetString("lblcorresponds99999", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4. There will be a meeting of Teacher-Parent Association every month, which will be included in the proceedings..
+        /// </summary>
+        public static string lblcorresponds999991 {
+            get {
+                return ResourceManager.GetString("lblcorresponds999991", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 5. P.T.A. The main task of the organization is to provide security, protection and proper environment to the children..
+        /// </summary>
+        public static string lblcorresponds999992 {
+            get {
+                return ResourceManager.GetString("lblcorresponds999992", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 7. Regular health check-up should be done by a registered doctor..
+        /// </summary>
+        public static string lblcorresponds9999921 {
+            get {
+                return ResourceManager.GetString("lblcorresponds9999921", resourceCulture);
             }
         }
         

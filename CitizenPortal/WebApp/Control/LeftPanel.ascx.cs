@@ -181,9 +181,10 @@ namespace CitizenPortal.WebApp.Control
                     //pnlMenu.Controls.Add(new LiteralControl("<li>"));
                     //pnlMenu.Controls.Add(new LiteralControl("<a id='lpNewRegistration'  href ='/WebApp/Kiosk/MPSS/NewRegistration.aspx' ><i class='fa fa-edit fa-fw'></i> New Registration of Student </ a > "));
                     //pnlMenu.Controls.Add(new LiteralControl("</li>"));
+                    string newWin = "window.open(\",false;\");";
 
                     pnlMenu.Controls.Add(new LiteralControl("<li>"));
-                    pnlMenu.Controls.Add(new LiteralControl("<a id='lpScholarShip'  href ='/WebApp/Kiosk/MPSS/ScholarShip.aspx' ><i class='fa fa-edit fa-fw'></i> Registration/Scholar Ship </ a > "));
+                    pnlMenu.Controls.Add(new LiteralControl("<a  href=\"#\" id='lpScholarShip'  onClick='popupwindow();' ><i class='fa fa-edit fa-fw'></i> Registration/Scholar Ship </ a > "));
                     pnlMenu.Controls.Add(new LiteralControl("</li>"));
 
                     pnlMenu.Controls.Add(new LiteralControl("<li>"));

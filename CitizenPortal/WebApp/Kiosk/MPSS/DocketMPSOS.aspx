@@ -44,8 +44,6 @@
         th {
             text-align: center;
             padding: 5px;
-       
-          
         }
     </style>
     <script type="text/javascript">
@@ -95,28 +93,6 @@
             <div id="divPrint" style="margin: 0 auto; width: 100%;">
                 <div style="width: 850px; margin: 0 auto; height: auto; border: 3px solid #000; padding: 1px; font-family: Arial">
                     <div style="width: 100%; margin: 0 auto; height: auto; border: 1px solid #000; background-image: url(''); background-image: url(''); background-size: 590px; background-repeat: no-repeat; background-position: center center;">
-
-                        <table cellpadding="5" cellspacing="0" style="width: 100%; margin: 0 auto; text-align: center">
-                            <tr>
-                                <td>
-                                    <div style="width: 165px; margin: 5px 0 0 5px; float: left; height: 115px;">
-                                        <img alt="Logo" src="../Images/MPGOVLOGO.png" style="width: 85px; margin: 16px 0px 0px 33px;" />
-                                    </div>
-                                </td>
-                                <td style="vertical-align: middle">
-                                    <asp:Label runat="server" ID="lblCertificateName" Style="font-size: 22px; font-weight: bolder; text-transform: uppercase; text-align: center">
-                                        लोक शिक्षण संचालनालय मध्य प्रदेश परीक्षा आयोजक<br />
-                                        मध्य प्रदेश राज्य मुक्त स्कूल शिक्षा बोर्ड
-                                    </asp:Label>
-                                </td>
-                                <td>
-                                    <div style="width: 165px; float: right; margin: 5px 0 0 5px">
-
-                                        <img alt="Logo" src="../Images/MPSOSLogo.jpg" style="width: 85px; margin: 16px 0px 0px 33px;" />
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
                     </div>
                     <%----------End Header section ---------%><%---------Start Title section --------%>
                     <div style="text-align: center; font-size: 20px; font-weight: bolder; padding: 5px; background-color: #808080; color: #fff;">
@@ -140,105 +116,120 @@
                                     OnItemDataBound="ItemsList_ItemDataBound"
                                     runat="server">
                                     <HeaderTemplate>
-                                        <table width="600" cellpadding="5" cellspacing="0" class="table-bordered" style="width: 98%; border: 1px solid #999; margin: 0 auto;">
-                                            <tbody>
-                                                <tr colspan="10">
-                                                    <td colspan="10" style="padding: 8px; color: #fff; font-size: 14px; border-right: 1px solid #999; border-left: 1px solid #999; text-align: left; background-color: #383E4B; -webkit-print-color-adjust: exact;">
-                                                        <b>केंद्र  का विवरण</b>
+                                       <%-- <% if(ItemsList.Items.Count() > 67) { %>--%>
+                                         <asp:Panel ID="pnlHeader" runat="server">
+                                            <table cellpadding="5" cellspacing="0" style="width: 100%; margin: 0 auto; text-align: center">
+                                                <tr>
+                                                    <td>
+                                                        <div style="width: 165px; margin: 5px 0 0 5px; float: left; height: 115px;">
+                                                            <img alt="Logo" src="../Images/MPGOVLOGO.png" style="width: 85px; margin: 16px 0px 0px 33px;" />
+                                                        </div>
+                                                    </td>
+                                                    <td style="vertical-align: middle">
+                                                        <asp:Label runat="server" ID="lblCertificateName" Style="font-size: 22px; font-weight: bolder; text-transform: uppercase; text-align: center">
+                                        लोक शिक्षण संचालनालय मध्य प्रदेश परीक्षा<br /> आयोजक<br />
+                                        मध्य प्रदेश राज्य मुक्त स्कूल शिक्षा बोर्ड
+                                                        </asp:Label>
+                                                    </td>
+                                                    <td>
+                                                        <div style="width: 165px; float: right; margin: 5px 0 0 5px">
 
+                                                            <img alt="Logo" src="../Images/MPSOSLogo.jpg" style="width: 85px; margin: 16px 0px 0px 33px;" />
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table width="600" cellpadding="5" cellspacing="0" class="table-bordered" style="width: 98%; border: 1px solid #999; margin: 0 auto;">
+                                                <tbody>
+                                                    <tr colspan="10">
+                                                        <td colspan="10" style="padding: 8px; color: #fff; font-size: 14px; border-right: 1px solid #999; border-left: 1px solid #999; text-align: left; background-color: #383E4B; -webkit-print-color-adjust: exact;">
+                                                            <b>केंद्र  का विवरण</b>
+
+                                                        </td>
+
+
+                                                    </tr>
+                                                </tbody>
+                                                <td colspan="1">परीक्षा केंद्र
+                                         
+                                                </td>
+                                                <td colspan="4">
+                                                    <asp:Label ID="txtCentreName" runat="server" Text='<%#Eval("EXAMCENTERNAME") %>' Font-Bold="true" />
+
+                                                </td>
+                                                <tr>
+                                                    <td colspan="1">परीक्षा केंद्र कोड
+                                         
+                                                    </td>
+                                                    <td colspan="1">
+                                                        <asp:Label ID="TXTCentre_Code" runat="server" Text='<%#Eval("CENTER_CODE") %>' Font-Bold="true" />
+                                                    </td>
+                                                    <td colspan="1">कक्षा
+                                         
+                                                    </td>
+                                                    <td colspan="1">
+                                                        <asp:Label ID="LBLCLASS" runat="server" Text='<%#Eval("CLASS") %>' Font-Bold="true" />
                                                     </td>
 
 
+
                                                 </tr>
-                                            </tbody>
-                                            <td colspan="1">
-                                                परीक्षा केंद्र
-                                         
-                                            </td>
-                                            <td colspan="4">
-                                                <asp:Label ID="txtCentreName" runat="server" Text='<%#Eval("EXAMCENTERNAME") %>' Font-Bold="true" />
-
-                                            </td>
-                                            <tr>
-                                                <td colspan="1">
-                                                    परीक्षा केंद्र कोड
-                                         
-                                                </td>
-                                                <td  colspan="1">
-                                                    <asp:Label ID="TXTCentre_Code" runat="server" Text='<%#Eval("CENTER_CODE") %>' Font-Bold="true" />
-                                                </td>
-                                                  <td colspan="1">
-                                                     कक्षा
-                                         
-                                                </td>
-                                                <td  colspan="1">
-                                                     <asp:Label ID="LBLCLASS" runat="server" Text='<%#Eval("CLASS") %>' Font-Bold="true" />
-                                                </td>
-
-
-
-                                            </tr>
                                             </table>
-                                        <table style="border: 1px solid black; border-collapse: collapse;table-layout: fixed; ">
-                                             <tr>
-                                                <th style="border: 1px solid black; border-collapse: collapse;width:100px">
-                                                    रोलनंबर
+                                            <table style="border: 1px solid black; border-collapse: collapse; table-layout: fixed;">
+                                                <tr>
+                                                    <th style="border: 1px solid black; border-collapse: collapse; width: 100px">रोलनंबर
                                          
-                                                </th>
-                                               
-                                                <th style="border: 1px solid black; border-collapse: collapse;width:180px">
-                                                    टिप्पणियां
+                                                    </th>
+
+                                                    <th style="border: 1px solid black; border-collapse: collapse; width: 180px">टिप्पणियां
                                          
-                                                </th>
+                                                    </th>
 
-                                               
-                                        
-                                          
 
-                                           
-                                                <th style="border: 1px solid black; border-collapse: collapse;width:100px">
-                                                    रोलनंबर
+
+
+
+
+                                                    <th style="border: 1px solid black; border-collapse: collapse; width: 100px">रोलनंबर
                                          
-                                                </th>
-                                               
+                                                    </th>
 
-                                                <th style="border: 1px solid black; border-collapse: collapse;width:180px">
-                                                    टिप्पणियां
+
+                                                    <th style="border: 1px solid black; border-collapse: collapse; width: 180px">टिप्पणियां
                                          
-                                                </th>
+                                                    </th>
 
 
-                                           
-                                                <th style="border: 1px solid black; border-collapse: collapse;width:100px">
-                                                    रोलनंबर
+
+                                                    <th style="border: 1px solid black; border-collapse: collapse; width: 100px">रोलनंबर
                                          
-                                                </th>
-                                               
+                                                    </th>
 
-                                                <th style="border: 1px solid black; border-collapse: collapse;width:180px">
-                                                    टिप्पणियां
+
+                                                    <th style="border: 1px solid black; border-collapse: collapse; width: 180px">टिप्पणियां
                                          
-                                                </th>
+                                                    </th>
 
 
-                                          
 
-                                            </tr>
-                                        </table>
+
+                                                </tr>
+                                            </table>
+                                        </asp:Panel>
+                                        <%-- <%}%>--%>
                                     </HeaderTemplate>
 
-
-
                                     <ItemTemplate>
-                                        <table style="border: 1px solid black; border-collapse: collapse;width:100px;table-layout: fixed; ">
-                                           
+                                       
+                                        <table style="border: 1px solid black; border-collapse: collapse; width: 100px; table-layout: fixed;">
+
                                             <tr>
-                                                <td style="border: 1px solid black; border-collapse: collapse;width:100px">
+                                                <td style="border: 1px solid black; border-collapse: collapse; width: 100px">
                                                     <asp:Label ID="txtRollNUmbers" runat="server" Text='<%#Eval("ROLLNUMBER") %>' Font-Bold="true" />
 
                                                 </td>
-                                              
-                                                <td style="border: 1px solid black; border-collapse: collapse;width:150px"></td>
+
+                                                <td style="border: 1px solid black; border-collapse: collapse; width: 150px"></td>
                                             </tr>
 
                                         </table>
@@ -248,30 +239,40 @@
 
 
                                     <FooterTemplate>
-                                        <table style="border: 1px solid black; border-collapse: collapse;width:780px; ">
-                                            <tr><td colspan="6" style="border: 1px solid black; border-collapse:collapse;">डॉकेट फॉर्म में पर रोल नंबर की पर्सनलाइज्ड ओएमआर शीट का विवरण</td></tr>
+                                        <table style="border: 1px solid black; border-collapse: collapse; width: 780px;">
                                             <tr>
-                                                <td style="border: 1px solid black; border-collapse:collapse;">इस डॉकेट फॉर्म पर छपे रोल नंबर की संख्या</td>
-                                                <td style="border: 1px solid black; border-collapse:collapse;"></td>
-                                                <td style="border: 1px solid black; border-collapse:collapse;">इस पैकेट में ‘ABS’प्रकरणों की संख्या</td>
-                                                <td style="border: 1px solid black; border-collapse:collapse;"></td>
-                                                <td style="border: 1px solid black; border-collapse:collapse;">इस पैकेट में ‘UFM’ प्रकरणों की संख्या</td>
-                                                <td style="border: 1px solid black; border-collapse:collapse;"></td>
+                                                <td colspan="6" style="border: 1px solid black; border-collapse: collapse;">डॉकेट फॉर्म में पर रोल नंबर की पर्सनलाइज्ड ओएमआर शीट का विवरण</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border: 1px solid black; border-collapse: collapse;">इस डॉकेट फॉर्म पर छपे रोल नंबर की संख्या</td>
+                                                <td style="border: 1px solid black; border-collapse: collapse;"></td>
+                                                <td style="border: 1px solid black; border-collapse: collapse;">इस पैकेट में ‘ABS’प्रकरणों की संख्या</td>
+                                                <td style="border: 1px solid black; border-collapse: collapse;"></td>
+                                                <td style="border: 1px solid black; border-collapse: collapse;">इस पैकेट में ‘UFM’ प्रकरणों की संख्या</td>
+                                                <td style="border: 1px solid black; border-collapse: collapse;"></td>
 
                                             </tr>
                                             <tr>
-                                                <td style="border: 1px solid black; border-collapse:collapse;">केंद्राध्यक्ष के हस्ताक्षर</td>
-                                                <td style="border: 1px solid black; border-collapse:collapse;width:150px;table-layout: fixed; "></td>
-                                                <td style="border: 1px solid black; border-collapse:collapse;">केंद्र क्रमांक</td>
-                                                <td style="border: 1px solid black; border-collapse:collapse;width:150px;table-layout: fixed; "></td>
-                                                <td style="border: 1px solid black; border-collapse:collapse;">केंद्र की मुद्रा</td>
-                                                <td style="border: 1px solid black; border-collapse:collapse;width:150px;table-layout: fixed; "></td>
+                                                <td style="border: 1px solid black; border-collapse: collapse;">केंद्राध्यक्ष के हस्ताक्षर</td>
+                                                <td style="border: 1px solid black; border-collapse: collapse; width: 150px; table-layout: fixed;"></td>
+                                                <td style="border: 1px solid black; border-collapse: collapse;">केंद्र क्रमांक</td>
+                                                <td style="border: 1px solid black; border-collapse: collapse; width: 150px; table-layout: fixed;"></td>
+                                                <td style="border: 1px solid black; border-collapse: collapse;">केंद्र की मुद्रा</td>
+                                                <td style="border: 1px solid black; border-collapse: collapse; width: 150px; table-layout: fixed;"></td>
 
                                             </tr>
-                                            <tr><td colspan="6" style="border: 1px solid black; border-collapse:collapse;">1.प्रत्येक पैकेट में इस डॉकेट में दर्शाया गया रोल नंबर केवल उपस्थित पर्सनलाइज्ड ओएमआर शीट को क्रम से लगाकर रखें |</td></tr>
-                                            <tr><td colspan="6" style="border: 1px solid black; border-collapse:collapse;">2. अनुपस्थित रोल नंबर की ओएमआर शीट अलग से लिफाफे में रखकर कक्षा वार जमा करें |</td></tr>
-                                            <tr><td colspan="6" style="border: 1px solid black; border-collapse:collapse;">3. अनुचित साधन प्रयोग करने वाले रोल नंबर पर लाल शाही से गोला लगाकर उसके सम्मुख रिमार्क के कॉलम में ‘UFM’ लिखा जावे एवं इसकी ओएमआर शीट इस बंडल में ना रखी जावे |</td></tr>
-                                            <tr><td colspan="6" style="border: 1px solid black; border-collapse:collapse;">4. अनुपस्थित छात्र के रोल नंबर पर लाल शाही  से गोला लगाकर उसके सम्मुख रिमार्क  के कॉलम में 'ABS’ लिखा जावे|</td></tr>
+                                            <tr>
+                                                <td colspan="6" style="border: 1px solid black; border-collapse: collapse;">1.प्रत्येक पैकेट में इस डॉकेट में दर्शाया गया रोल नंबर केवल उपस्थित पर्सनलाइज्ड ओएमआर शीट को क्रम से लगाकर रखें |</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="6" style="border: 1px solid black; border-collapse: collapse;">2. अनुपस्थित रोल नंबर की ओएमआर शीट अलग से लिफाफे में रखकर कक्षा वार जमा करें |</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="6" style="border: 1px solid black; border-collapse: collapse;">3. अनुचित साधन प्रयोग करने वाले रोल नंबर पर लाल शाही से गोला लगाकर उसके सम्मुख रिमार्क के कॉलम में ‘UFM’ लिखा जावे एवं इसकी ओएमआर शीट इस बंडल में ना रखी जावे |</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="6" style="border: 1px solid black; border-collapse: collapse;">4. अनुपस्थित छात्र के रोल नंबर पर लाल शाही  से गोला लगाकर उसके सम्मुख रिमार्क  के कॉलम में 'ABS’ लिखा जावे|</td>
+                                            </tr>
                                         </table>
                                     </FooterTemplate>
                                 </asp:DataList>
@@ -284,7 +285,7 @@
                             <br />
                             <br />
 
-                            
+
                         </div>
 
                         <br />

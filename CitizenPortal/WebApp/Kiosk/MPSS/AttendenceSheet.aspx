@@ -126,7 +126,7 @@
                                                             </td>
                                                             <td style="vertical-align: middle">
                                                                 <asp:Label runat="server" ID="lblCertificateName" Style="font-size: 20px; font-weight: bolder; text-transform: uppercase; text-align: center">
-                                      लोक शिक्षण संचालनालय मध्य प्रदेश परीक्षा आयोजक<br />
+                                      लोक शिक्षण संचालनालय मध्य प्रदेश परीक्षा <br />आयोजक<br />
                                         मध्य प्रदेश राज्य मुक्त स्कूल शिक्षा बोर्ड
                                                                 </asp:Label>
                                                             </td>
